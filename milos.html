@@ -22,22 +22,33 @@
             background-color: #333333;
         }
         li {
-            float: left;
+            float:left;
         }
         li a {
             display: block;
             color: white;
-            text-align: center;
             padding: 16px;
             text-decoration: none;
         }
         a:hover {
           color: black
         }
+        /*footer prelazi preko elemenata, jos je in progress, ako nadjes resenje JAVLJAJ*/
+        footer {
+            position:fixed;
+            bottom:0;
+            width:100%;
+            padding: 16px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            display: block;
+        }
 </style>
 </head>
 <body>
     <header><h1>QA Movies</h1></header>
+    <div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -49,7 +60,7 @@
                 <li><a href="milos.html">Milos</a></li>
             </ul>   
         </nav>
-
+    </div>
 </body>
-
+<footer>Copyright &copy; QA Movies</footer>
 </html>
