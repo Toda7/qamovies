@@ -136,6 +136,40 @@
             </tr>
     </table>
     </div>
-    <p style=" width: 100%; background-color: black; color: white; text-align: center; padding: 10px;">Copyright &copy; QA Movies</p>
+    <h1 style="text-align: center">Register to see new movies</h1>
+    <div>
+        <form style="padding:20px; background-image: url(./photos/milos4.jpg); background-size: cover;">
+            <h3 style="text-align: center; color: black; padding: 10px;">If you want to watch all our movies, please fill out form</h3>
+            First name:<br>
+            <input type="text" name="firstname">
+            <br>
+            Last name:<br>
+            <input type="text" name"last name"><br>
+            <br><br>
+            <input type="radio" name="gender" value="Male" checked>Male<br>
+            <input type="radio" name="gender" value="Female">Female<br>
+            <br><br>
+            <select name="cards">
+            <option value="Action">Action</option>
+            <option value="Drama">Drama</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Trailer">Trailer</option>
+            </select>
+            <br><br>
+            <input type="checkbox" name="Project" value="Project">Home movies<br>
+            <input type="checkbox" name="Foreign" value="Unit">Foreign movies<br>
+            <!--2 puta br stvara veci prostor izmedju elemenata-->
+            <br><br>
+            <textarea name"message" placeholder="Additional note" style="width:300px; height: 100px;"></textarea>
+            <br><br>
+            <!--submit je button a reset je input koji izgleda kao button, nema razlike na frontu, ima samo u kodu-->
+            <input type="submit" onclick="alert('Hello QA!')" value="Submit">
+            <input type="reset"></input>
+            <p>Fill out all fileds and click on Submit button</p>
+        </form>
+    </div>
+    <div>
+        <p style=" width: 100%; background-color: black; color: white; text-align: center; padding: 10px;">Copyright &copy; QA Movies</p>
+    </div>
 </body>
 </html>
