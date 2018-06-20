@@ -41,12 +41,16 @@
         max-width: 100%;
         padding: 1px 40px 1px 1px;
     }
-    table, th, td{
+    .tabela1, .td1, .th1 {
         border: 1px solid black;
         border-collapse: collapse;
     }
+    /*ovo je id za youtube iframe */
+    #youtube{
+        float: right;
+    }
     /*h1 je nije zavrsen..*/
-    #h1{
+    #h1 {
     }
 </style>
 </head>
@@ -78,6 +82,42 @@
         </p>
     </div> 
     <br>
+    <!--ovo je tabela od koje sam napravio listu sa glumcima i iframe za youtube-->
+    <table style="width: 100%">
+            <tr>
+                <td id="info">
+                    <div>
+                    <h2>Full Cast and Crew</h2>                
+                    <ul> 
+                        <!--koristim padding da bi slika bila odmah pored teksta-->
+                        <li><img src="./photos/milos5.jpg" alt="sorry,image is broken" style="padding: 0px 0px 0px 0px">Vin Diesel - Dominic Toretto</li>
+                        <br>
+                        <li><img src="./photos/milos6.jpg" alt="sorry,image is broken" style="padding: 0px 0px 0px 0px">Paul Walker - Brian O'Conner</li>
+                        <br>
+                        <li><img src="./photos/milos7.jpg" alt="sorry,image is broken" style="padding: 0px 0px 0px 0px">Michelle Rodriguez - Letty Ortiz</li>
+                        <br>
+                        <li><img src="./photos/milos8.jpg" alt="sorry,image is broken" style="padding: 0px 0px 0px 0px">Jordana Brewster- Mia Toretto</li>
+                        <br>
+                        <li><img src="./photos/milos9.jpg" alt="sorry,image is broken" style="padding: 0px 0px 0px 0px">Tyrese Gibson - Roman Pearce</li>
+                        <br>
+                        <li><img src="./photos/milos10.jpg" alt="sorry,image is broken" style="padding: 0px 0px 0px 0px">Ludacris - Tej Parker</li>
+                    </ul>
+                    </div>
+                </td>
+                <td id="infomov">
+                    <div>
+                        <ul>
+                            <div id="youtube">
+                                <iframe width="750" height="400"
+                                src="https://www.youtube.com/embed/uisBaTkQAEs">
+                                </iframe> 
+                            </div>   
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br>
     <div>
     <!--heading je u ovom slucaju naslov i povezan je sa projektor stranicom-->
         <h1 style="display: block; text-align: center;"><a style="color: black; text-decoration: none;"href="./projektor.html#colossal">Colossal</a></h1>
@@ -106,31 +146,31 @@
         </p>
     </div>
     <div>
-    <table style="width: 100%">
+    <table class="tabela1" style="width: 100%">
             <tr>
-                <th>Action</th>
-                <th>Comedy</th>
-                <th>Drama</th>
+                <th class="th1">Action</th>
+                <th class="th1">Comedy</th>
+                <th class="th1">Drama</th>
             </tr>
             <tr>
-                <td>The Equalizer (2014)</td>
-                <td>Dumb and Dumber</td>
-                <td>Citizen Kane (1941)</td>
+                <td class="td1">The Equalizer (2014)</td>
+                <td class="td1">Dumb and Dumber</td>
+                <td class="td1">Citizen Kane (1941)</td>
             </tr>
             <tr>
-                <td>Mad Max: Fury Road (2015)</td>
-                <td>Monty Python and the Holy Grail</td>
-                <td>Moonlight (2016)</td>
+                <td class="td1">Mad Max: Fury Road (2015)</td>
+                <td class="td1">Monty Python and the Holy Grail</td>
+                <td class="td1">Moonlight (2016)</td>
             </tr>
             <tr>
-                <td>Logan (2017)</td>
-                <td>The Hangover</td>
-                <td>All About Eve (1950)</td>
+                <td class="td1">Logan (2017)</td>
+                <td class="td1">The Hangover</td>
+                <td class="td1">All About Eve (1950)</td>
             </tr>
             <tr>
-                <td>Black Panther (2018)</td>
-                <td>The Big Lebowski</td>
-                <td>Spotlight (2015)</td>
+                <td class="td1">Black Panther (2018)</td>
+                <td class="td1">The Big Lebowski</td>
+                <td class="td1">Spotlight (2015)</td>
             </tr>
     </table>
     </div>
@@ -167,6 +207,7 @@
             <p><a style="color:black;text-decoration: none;" href="https://www.youtube.com"target="_blank">We support youtube</a></p>
         </form>
     </div>
+
     <div>
         <p style="display: block; width: 100%; background-color: black; color: white; text-align: center; margin: 0px 0px 0px 0px ;padding: 10px;">Copyright &copy; QA Movies</p>
     </div>
