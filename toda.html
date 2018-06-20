@@ -4,7 +4,7 @@
 <head><title>Toda page</title>
 <style>
     body {
-        margin:0;
+            margin: 0;
     }
     header {
             padding: 16px;
@@ -14,17 +14,17 @@
             text-align: center;
         }
         /*ovo je style za listu, koja izgleda kao navigation menu*/
-        ul { 
+        #nav { 
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
             background-color: #333333;
         }
-        li {
+        #navli {
             float:left;
         }
-        li a {
+        #ali {
             display: block;
             color: white;
             padding: 16px;
@@ -34,15 +34,37 @@
           color: black
         }
         /*footer prelazi preko elemenata, jos je in progress, ako nadjes resenje JAVLJAJ*/
-        footer {
-            position:fixed;
-            bottom:0;
-            width:100%;
-            padding: 16px;
-            background-color: black;
+        
+        #poster {
+            float: left;
+            padding: 30px;
+        }
+        #storyline {
+            float: right;
+            padding: 30px;
+            width: 640px;
+        }
+
+        #actors {
+            float: left;
+            padding: 30px;
+            width: 640px;
+        }
+
+        #similar {
+            float: right;
+            padding: 30px;
+            width: 640px;
+        }
+
+        #footer {
+            position: relative;
+            height: 40px;
+            clear: both;
+            background-color: black; 
             color: white;
             text-align: center;
-            display: block;
+            padding: 10px;
         }
 </style>
 </head>
@@ -50,17 +72,73 @@
     <header><h1>QA Movies</h1></header>
     <div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projektor.html">Projektor</a></li>
-                <li><a href="sima.html">Sima</a></li>
-                <li> <a href="toda.html">Toda</a></li>
-                <li><a href="dovla.html">Vlada</a></li>
-                <li><a href="miho.html">Miho</a></li>
-                <li><a href="milos.html">Milos</a></li>
+            <ul id="nav">
+                <li id="navli"><a id="ali" href="index.html">Home</a></li>
+                <li id="navli"><a id="ali" href="projektor.html">Projektor</a></li>
+                <li id="navli"><a id="ali" href="sima.html">Sima</a></li>
+                <li id="navli"><a id="ali" href="toda.html">Toda</a></li>
+                <li id="navli"><a id="ali" href="dovla.html">Vlada</a></li>
+                <li id="navli"><a id="ali" href="miho.html">Miho</a></li>
+                <li id="navli"><a id="ali" href="milos.html">Milos</a></li>
             </ul>   
         </nav>
     </div>
+
+    <table style="width:100%">
+        <tr>
+            <td>
+                <div>
+                    <p id="poster">
+                        <img src="photos/todavalhalaposter.jpg" alt="Slika je morala da ode to toaleta" width="640" height="480">
+                    </p>
+                </div>
+            </td>
+
+            <td>
+                <div id="storyline">
+                    <h2>
+                        Storyline
+                    </h2>
+                    <p>
+                        1000 AD, for years, One Eye, a mute warrior of supernatural strength, has been held prisoner by the Norse chieftain Barde. Aided by Are, a boy slave, One Eye slays his captor and together he and Are escape, beginning a journey into the heart of darkness. On their flight, One Eye and Are board a Viking vessel, but the ship is soon engulfed by an endless fog that clears only as the crew sights an unknown land. As the new world reveals its secrets and the Vikings confront their terrible and bloody fate, One Eye discovers his true self.
+                    </p>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div id="actors">
+                    <ul style="list-style-type:none">
+                        <li> <h2>Actors</h2></li>
+                        <li>Mads Mikkelsen</li>
+                        <li>Alexander Morton</li>
+                        <li>Stewart Porter</li>
+                        <li>Maarten Stevenson</li>
+                        <li>Matthew Zajac</li>
+                        <li>Gordon Brown</li>
+                    </ul>
+                </div>
+            </td>
+        
+            <td>
+                <div id="similar">
+                    <ul style="list-style-type:none">
+                        <li> <h2>Similar Movies</h2></li>
+                        <li><a href="https://www.imdb.com/title/tt1602613/?ref_=tt_rec_tt" target="_blank" style="text-decoration: none;display: block">Only God Forgives</a></li>
+                        <li><a href="https://www.imdb.com/title/tt0117407/?ref_=nm_flmg_dr_15" target="_blank" style="text-decoration: none;display: block">Pusher</li>
+                        <li><a href="https://www.imdb.com/title/tt1172570/?ref_=nm_flmg_dr_9" target="_blank" style="text-decoration: none;display: block">Bronson</li>
+                        <li><a href="https://www.imdb.com/title/tt1974419/?ref_=nm_flmg_dr_3" target="_blank" style="text-decoration: none;display: block">The Neon Demon</li>
+                        <li><a href="https://www.imdb.com/title/tt0780504/?ref_=nm_flmg_dr_7" target="_blank" style="text-decoration: none;display: block">Drive</li>
+                        <li><a href="https://www.imdb.com/title/tt0289944/?ref_=nm_flmg_dr_13" target="_blank" style="text-decoration: none;display: block">Fear X</li>
+                    </ul>
+                </div>
+            </td>
+         </tr>
+    </table>
+
+    <div id="footer">
+        <p>Copyright &copy; QA Movies</p>
+    </div>
 </body>
-<footer>Copyright &copy; QA Movies</footer>
 </html>
