@@ -90,11 +90,22 @@
 
             <div style="float:right; width:50%; height:400px; background-color:rgb(245, 43, 218)">
                     
-                    <!-- Pocinje tabela -->
+         <!-- Pocinje tabela -->
                     <h4 style="text-align:center;">SIMILAR MOVIES:</h4> 
-                    <br><br>
+                    <br>
                     <div>
-                            <table style="width: 100%; border: 1px solid black; border-collapse: collapse;">
+                            <table style="width: 100%;">  
+                        <!-- ubacujem stajl za margine da se vide     -->
+                                    <style>
+                                            table, th, td {
+                                                border: 1px solid black;
+                                                border-collapse: collapse;
+                                            }
+                                            th, td {
+                                                padding: 12px;
+                                            }
+                                            </style>
+                            <!-- zavrsavam se stajl za margine u tabeli -->
                                     <tr>
                                         <th>Soft</th>
                                         <th>Hard</th>
@@ -182,8 +193,7 @@
                             </select>
                             <br><br>
                             <input type="Submit">
-                          </form>
-                            
+                          </form>                           
             </div>
 
 
@@ -200,7 +210,9 @@
     </div>
 end -->
 
-    <footer>
-        <p style="display: block; background-color: black; color: white; text-align: center; margin: 0px 0px 0px 0px ;padding: 10px;">Copyright &copy; QA Movies</p>
-    </footer>
+        <div style="display: block; background-color: black; color: white; text-align: center; margin: 0px 0px 0px 0px ;padding: 10px;">&nbsp;
+            <footer>Copyright &copy; QA Movies</footer>
+        </div>
+       
+        
 </html>
