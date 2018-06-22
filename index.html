@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head><title>Home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
     body {
         margin:0;
     }
     header {
+            display: block;
             padding: 16px;
+            margin: 0px 0px 0px 0px; 
             color: white;
             background-color: black;
             clear: left;
             text-align: center;
+        }
+        .img-responsive {
+            max-width: 100%;
+            height: auto;
         }
         /*ovo je style za listu, koja izgleda kao navigation menu, napravio sam komentar jer ga ne koristimo*/
         /* ul { 
@@ -66,42 +73,42 @@
             <td style="padding:15px">
                 <ul>
                     <div>
-                        <a href="sima.html"><img src="./photos/ms.png" alt="sorry, broken image"></img></a>
+                        <a class="img-responsive" href="sima.html"><img src="./photos/ms.png" alt="sorry, broken image"></img></a>
                     </div>   
                 </ul>
             </td>
             <td style="padding:15px">
                 <ul>
                     <div>
-                        <a href="toda.html"><img src="./photos/mt.png" alt="sorry, broken image"></img></a>
+                        <a class="img-responsive" href="toda.html"><img src="./photos/mt.png" alt="sorry, broken image"></img></a>
+                    </div>   
+                </ul>
+            </td>
+            <td style="padding:15px;">
+                <ul>
+                    <div>
+                        <a class="img-responsive" href="dovla.html"><img src="./photos/md.png" alt="sorry, broken image"></img></a>
                     </div>   
                 </ul>
             </td>
             <td style="padding:15px">
                 <ul>
                     <div>
-                        <a href="dovla.html"><img src="./photos/md.png" alt="sorry, broken image"></img></a>
+                        <a class="img-responsive" href="miho.html"><img src="./photos/mm.png" alt="sorry, broken image"></img></a>
                     </div>   
                 </ul>
             </td>
             <td style="padding:15px">
                 <ul>
                     <div>
-                        <a href="miho.html"><img src="./photos/mm.png" alt="sorry, broken image"></img></a>
-                    </div>   
-                </ul>
-            </td>
-            <td style="padding:15px">
-                <ul>
-                    <div>
-                        <a href="milos.html"><img src="./photos/mm1.png" alt="sorry, broken image"></img></a>
+                        <a class="img-responsive" href="milos.html"><img src="./photos/mm1.png" alt="sorry, broken image"></img></a>
                     </div>   
                 </ul>
             </td style="padding:15px">
             <td>
                 <ul>
                     <div>
-                        <a href="projektor.html"><img src="./photos/mp.png" alt="sorry, broken image"></img></a>
+                        <a class="img-responsive" href="projektor.html"><img src="./photos/mp.png" alt="sorry, broken image"></img></a>
                     </div>   
                 </ul>
             </td>
@@ -117,7 +124,7 @@
             Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.
             Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.</p>
     <div>
-        <p style="display: block; width: 100%; background-color: black; color: white; text-align: center; margin: 0px 0px 0px 0px ; padding: 10px;">Copyright &copy; QA Movies</p>
+        <p style="display: block; background-color: black; color: white; text-align: center; margin: 0px 0px 0px 0px ; padding: 10px;">Copyright &copy; QA Movies</p>
     </div>
     </body>
 </html>
