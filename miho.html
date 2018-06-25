@@ -6,61 +6,160 @@
     body {
         margin:0;
     }
-    header {
-            padding: 16px;
+    .header {
+            display: block;
+            padding: 5px;
+            margin: 0px 0px 0px 0px; 
             color: white;
             background-color: black;
             clear: left;
             text-align: center;
         }
         /*ovo je style za listu, koja izgleda kao navigation menu*/
-        ul { 
+        #nav { 
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
             background-color: #333333;
         }
-        li {
+      
+        
+        a:hover {
+          color: black
+        }
+        
+
+        #navli {
             float:left;
         }
-        li a {
+        #ali {
             display: block;
             color: white;
             padding: 16px;
             text-decoration: none;
         }
-        a:hover {
-          color: black
-        }
-        /*footer prelazi preko elemenata, jos je in progress, ako nadjes resenje JAVLJAJ*/
-        footer {
-            position:fixed;
-            bottom:0;
-            width:100%;
-            padding: 16px;
-            background-color: black;
-            color: white;
-            text-align: center;
-            display: block;
-        }
+
 </style>
 </head>
 <body>
-    <header><h1>QA Movies</h1></header>
+    <header class="header">
+            <h1 style="font-size: 200%">QA<a href="index.html"><img style="vertical-align: -25px"src="./photos/logo.png" alt="sorry, broken image"></a>Movies</h1></img>
+    </header> 
     <div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projektor.html">Projektor</a></li>
-                <li><a href="sima.html">Sima</a></li>
-                <li> <a href="toda.html">Toda</a></li>
-                <li><a href="dovla.html">Vlada</a></li>
-                <li><a href="miho.html">Miho</a></li>
-                <li><a href="milos.html">Milos</a></li>
+        <nav class="navigation">
+            <ul id="nav">
+                <li id="navli"><a id="ali" href="index.html">Home</a></li>
+                <li id="navli"><a id="ali" href="sima.html">Sima</a></li>
+                <li id="navli"><a id="ali" href="toda.html">Toda</a></li>
+                <li id="navli"><a id="ali" href="dovla.html">Vlada</a></li>
+                <li id="navli"><a id="ali" href="miho.html">Miho</a></li>
+                <li id="navli"><a id="ali" href="milos.html">Milos</a></li>
+
+                <li id="navli"><a id="ali" href="projektor.html">Projektor</a></li>
             </ul>   
         </nav>
     </div>
+<!-- slika i opis -->
+    <div align="center">
+        
+        <h1>Stuart: A Life Backwards</h1>
+    
+    </div>
+
+    <div style="width:100%; height:400px;">
+
+
+        <img src="photos/prva-slika-div1.jpg" style="float:left;width:720px;height:320px;">
+
+        <p style="float:right;width:600px;height:320px;"><strong>When Stuart Shorter - a homeless alcoholic with a violent past - meets writer and charity worker Alexander Masters, they strike up an unlikely friendship. As Alexander learns more about Stuart's complicated life and traumatic childhood, he asks if he can write his story and Stuart advises him to tell the story backwards, so that it's "More exciting - like a Tom Clancy murder mystery". As their remarkable alliance develops, Stuart gradually recounts his life story in reverse, his resilient personality and dry sense of humour giving the story an almost tragi-comic edge. Through post office heists, attempts at suicide and spells inside numerous institutions, Alexander is given a glimpse into a totally alien world and begins to understand how Stuart's life spiralled so badly out of control.</strong></p>
+
+    </div>
+
+<!-- iframe sa trailerima -->
+<div style="width:100%; height:500px;">
+    <h1 align="center"> Trailers </h1>
+<iframe width="470" height="315" align="left"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+</iframe>
+
+<iframe width="478" height="315" align="center"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+</iframe>
+
+<iframe width="478" height="315" align="right"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+</iframe>
+
+</div>
+
+<!-- lista glumaca -->
+<div style="width:50%; height:500px;float:left;">
+    
+    <h1 align="center">Actors</h1>
+
+<ol style="text-align:center; list-style-position:inside;">
+
+    <li>Benedict Cumberbatch</li>
+    <li>Tom Hardy</li>
+    <li>Nicola Duffett</li>
+    <li>Edna Dore</li>
+    <li>Candis Nergaard</li>
+    <li>Joanna Maude</li>
+    <li>Trevor Sellers</li>
+    <li>Barbara Barnes</li>
+    <li>Hugh Armstrong</li>
+    <li>George Anton</li>
+    <li>Dominic Kemp</li>
+    <li>Shenagn Govan</li>
+    <li>Carolina Parker</li>
+    <li>Richard Cunt</li>
+
+</ol>
+
+</div>
+
+<!-- tabela similar filmova sa slikama(nije done) -->
+<div style="width:50%; height:500px;float:right;">
+    
+<h1 align="center">Similar Movies</h1>
+
+<table align="center">
+
+    <tr>
+        <td>prvi</td>
+        <td>drugi</td>
+        <td>drugi</td>
+     </tr>
+     
+     <tr>
+         <td>prvijedan</td>
+         <td>drugidva</td>
+         <td>drugidva</td>
+     </tr>   
+
+</table>
+
+</div>
+
+
+
+     <!-- Footer -->
+ <div class="footer">
+    <div style="display: block; background-color: black; color: white; text-align: center; margin: 0px 0px 0px 0px ;padding: 10px 10px 20px 10px;">&nbsp;
+       <footer>Copyright &copy; QA Movies</footer>
+           <br>
+               <a style= "color: white;" href="index.html">Home </a> |
+               <a style= "color: white;" href="sima.html">Sima</a> |
+               <a style= "color: white;" href="toda.html">Toda</a> |
+               <a style= "color: white;" href="dovla.html">Vlada</a> |
+               <a style= "color: white;" href="miho.html">Miho</a> |
+               <a style= "color: white;" href="milos.html">Milos</a> |
+           
+   </div>  
+</div>
+
+
 </body>
-<footer>Copyright &copy; QA Movies</footer>
+
 </html>

@@ -6,25 +6,27 @@
     body {
         margin:0;
     }
-    header {
-            padding: 16px;
+    .header {
+            display: block;
+            padding: 5px;
+            margin: 0px 0px 0px 0px; 
             color: white;
             background-color: black;
             clear: left;
             text-align: center;
         }
         /*ovo je style za listu, koja izgleda kao navigation menu*/
-        ul { 
+        #nav { 
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
             background-color: #333333;
         }
-        li {
+        #navli {
             float:left;
         }
-        li a {
+        #ali {
             display: block;
             color: white;
             padding: 16px;
@@ -33,8 +35,11 @@
         a:hover {
           color: black
         }
+<<<<<<< HEAD
+        
+=======
         /*footer prelazi preko elemenata, jos je in progress, ako nadjes resenje JAVLJAJ*/
-        footer {
+        /* footer {
             position:fixed;
             bottom:0;
             width:100%;
@@ -42,25 +47,51 @@
             background-color: black;
             color: white;
             text-align: center;
-            display: block;
-        }
+            display: block; */
+        /* } */
+>>>>>>> test
 </style>
 </head>
 <body>
-    <header><h1>QA Movies</h1></header>
+    <header class="header">
+            <h1 style="font-size: 200%">QA<a href="index.html"><img style="vertical-align: -25px"src="./photos/logo.png" alt="sorry, broken image"></a>Movies</h1></img>
+    </header> 
     <div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projektor.html">Projektor</a></li>
-                <li><a href="sima.html">Sima</a></li>
-                <li> <a href="toda.html">Toda</a></li>
-                <li><a href="dovla.html">Vlada</a></li>
-                <li><a href="miho.html">Miho</a></li>
-                <li><a href="milos.html">Milos</a></li>
+        <nav class="navigation">
+            <ul id="nav">
+                <li id="navli"><a id="ali" href="index.html">Home</a></li>
+                <li id="navli"><a id="ali" href="sima.html">Sima</a></li>
+                <li id="navli"><a id="ali" href="toda.html">Toda</a></li>
+                <li id="navli"><a id="ali" href="dovla.html">Vlada</a></li>
+                <li id="navli"><a id="ali" href="miho.html">Miho</a></li>
+                <li id="navli"><a id="ali" href="milos.html">Milos</a></li>
+                <li id="navli"><a id="ali" href="projektor.html">Projektor</a></li>
             </ul>   
         </nav>
     </div>
+
+<br> 
+<br> 
+<br> 
+
+
+
+
+
+
+     <!-- Footer -->
+ <div class="footer" style="display: block; background-color: black; color: white; text-align: center; margin: 0px 0px 0px 0px ;padding: 10px 10px 20px 10px;">&nbsp;
+       <footer>Copyright &copy; QA Movies</footer>
+           <br>
+               <a style= "color: white;" href="index.html">Home </a> |
+               <a style= "color: white;" href="sima.html">Sima</a> |
+               <a style= "color: white;" href="toda.html">Toda</a> |
+               <a style= "color: white;" href="dovla.html">Vlada</a> |
+               <a style= "color: white;" href="miho.html">Miho</a> |
+               <a style= "color: white;" href="milos.html">Milos</a> |
+           
+   </div>  
+<!-- END FOOTER --> 
+
 </body>
-<footer>Copyright &copy; QA Movies</footer>
 </html>
