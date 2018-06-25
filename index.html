@@ -6,54 +6,56 @@
     body {
         margin:0;
     }
-    header {
+    .header {
             display: block;
-            padding: 16px;
+            padding: 5px;
             margin: 0px 0px 0px 0px; 
             color: white;
             background-color: black;
             clear: left;
             text-align: center;
         }
-        .img-responsive {
-            max-width: 100%;
-            height: auto;
-        }
-        /*ovo je style za listu, koja izgleda kao navigation menu, napravio sam komentar jer ga ne koristimo*/
-        /* ul { 
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333333;
-    
-        li {
-            float:left;
-        }
-        li a {
-            display: block;
-            color: white;
-            padding: 16px;
-            text-decoration: none;
-        }
-        a:hover {
-          color: black
-        } */
-        /*footer prelazi preko elemenata, jos je in progress, ako nadjes resenje JAVLJAJ*/
-        /* footer {
-            position:fixed;
-            bottom:0;
-            width:100%;
-            padding: 16px;
-            background-color: black;
-            color: white;
-            text-align: center;
-            display: block;
-        } */
+    .img-responsive {
+        max-width: 100%;
+        height: auto;
+    }
+    /*ovo je style za listu, koja izgleda kao navigation menu, napravio sam komentar jer ga ne koristimo*/
+    /* ul { 
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333;
+
+    li {
+        float:left;
+    }
+    li a {
+        display: block;
+        color: white;
+        padding: 16px;
+        text-decoration: none;
+    }
+    a:hover {
+        color: black
+    } */
+    /*footer prelazi preko elemenata, jos je in progress, ako nadjes resenje JAVLJAJ*/
+    /* footer {
+        position:fixed;
+        bottom:0;
+        width:100%;
+        padding: 16px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        display: block;
+    } */
 </style>
 </head>
 <body>
-    <header><h1>QA Movies</h1></header>
+    <header class="header">
+        <h1 style="font-size: 200%">QA<a href="index.html"><img style="vertical-align: -25px"src="./photos/logo.png" alt="sorry, broken image"></a>Movies</h1></img>
+    </header>
     <!--napravio sam komentar jer navigation menu trenutno ne koristimo*/-->
     <!-- <div>
         <nav>
@@ -123,6 +125,7 @@
     <p style="text-align: center; padding: 30px">Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.
             Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.
             Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.</p>
+    
     <div style="display: block; background-color: black; color: white; text-align: center; margin: 0px 0px 0px 0px ;padding: 10px 10px 20px 10px;"><br>
         <footer>Copyright &copy; QA Movies</footer>
     </div>   
