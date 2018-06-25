@@ -1,25 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head><title>Home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
     body {
         margin:0;
     }
-    header {
-            padding: 16px;
+    .header {
+            display: block;
+            padding: 5px;
+            margin: 0px 0px 0px 0px; 
             color: white;
             background-color: black;
             clear: left;
             text-align: center;
         }
-        /*ovo je style za listu, koja izgleda kao navigation menu*/
-        ul { 
+    .img-responsive {
+        max-width: 100%;
+        height: auto;
+    }
+    /*ovo je style za listu, koja izgleda kao navigation menu, napravio sam komentar jer ga ne koristimo*/
+    /* ul { 
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333;
+
+    li {
+        float:left;
+    }
+    li a {
+        display: block;
+        color: white;
+        padding: 16px;
+        text-decoration: none;
+    }
+    a:hover {
+        color: black
+    } */
+    /*footer prelazi preko elemenata, jos je in progress, ako nadjes resenje JAVLJAJ*/
+    /* footer {
+        position:fixed;
+        bottom:0;
+        width:100%;
+        padding: 16px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        display: block;
+    } */
+        .img-responsive {
+            max-width: 100%;
+            height: auto;
+        }
+        /*ovo je style za listu, koja izgleda kao navigation menu, napravio sam komentar jer ga ne koristimo*/
+        /* ul { 
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
             background-color: #333333;
-        }
+    
         li {
             float:left;
         }
@@ -31,23 +73,16 @@
         }
         a:hover {
           color: black
-        }
-        /*footer prelazi preko elemenata, jos je in progress, ako nadjes resenje JAVLJAJ*/
-        footer {
-            position:fixed;
-            bottom:0;
-            width:100%;
-            padding: 16px;
-            background-color: black;
-            color: white;
-            text-align: center;
-            display: block;
-        }
+        } */
+      
 </style>
 </head>
 <body>
-    <header><h1>QA Movies</h1></header>
-    <div>
+    <header class="header">
+        <h1 style="font-size: 200%">QA<a href="index.html"><img style="vertical-align: -25px"src="./photos/logo.png" alt="sorry, broken image"></a>Movies</h1></img>
+    </header>
+    <!--napravio sam komentar jer navigation menu trenutno ne koristimo*/-->
+    <!-- <div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -59,7 +94,77 @@
                 <li><a href="milos.html">Milos</a></li>
             </ul>   
         </nav>
-    </div>
-</body>
-<footer>Copyright &copy; QA Movies</footer>
+    </div> -->
+    <table align=center>
+        <tr>
+            <td style="padding:15px">
+                <ul>
+                    <div>
+                        <a class="img-responsive" href="sima.html"><img src="./photos/ms.png" alt="sorry, broken image"></img></a>
+                    </div>   
+                </ul>
+            </td>
+            <td style="padding:15px">
+                <ul>
+                    <div>
+                        <a class="img-responsive" href="toda.html"><img src="./photos/mt.png" alt="sorry, broken image"></img></a>
+                    </div>   
+                </ul>
+            </td>
+            <td style="padding:15px;">
+                <ul>
+                    <div>
+                        <a class="img-responsive" href="dovla.html"><img src="./photos/md.png" alt="sorry, broken image"></img></a>
+                    </div>   
+                </ul>
+            </td>
+            <td style="padding:15px">
+                <ul>
+                    <div>
+                        <a class="img-responsive" href="miho.html"><img src="./photos/mm.png" alt="sorry, broken image"></img></a>
+                    </div>   
+                </ul>
+            </td>
+            <td style="padding:15px">
+                <ul>
+                    <div>
+                        <a class="img-responsive" href="milos.html"><img src="./photos/mm1.png" alt="sorry, broken image"></img></a>
+                    </div>   
+                </ul>
+            </td style="padding:15px">
+            <td>
+                <ul>
+                    <div>
+                        <a class="img-responsive" href="projektor.html"><img src="./photos/mp.png" alt="sorry, broken image"></img></a>
+                    </div>   
+                </ul>
+            </td>
+    </table>
+    <br>
+    <br>
+    <h1 style="text-align: center">Welcome</h1>
+    <h3 style="text-align: center; padding: 30px">Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.
+        Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.
+        Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.</h3>
+    <h1 style="text-align: center">About</h1>
+    <p style="text-align: center; padding: 30px">Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.
+            Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.
+            Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.</p>
+   <!-- Footer -->
+            <div class="footer">
+                 <div style="display: block; background-color: black; color: white; text-align: center; margin: 0px 0px 0px 0px ;padding: 10px 10px 20px 10px;">&nbsp;
+                    <footer>Copyright &copy; QA Movies</footer>
+                        <br>
+                            <a style= "color: white;" href="index.html">Home </a> |
+                            <a style= "color: white;" href="sima.html">Sima</a> |
+                            <a style= "color: white;" href="toda.html">Toda</a> |
+                            <a style= "color: white;" href="dovla.html">Vlada</a> |
+                            <a style= "color: white;" href="miho.html">Miho</a> |
+                            <a style= "color: white;" href="milos.html">Milos</a> |
+                        
+                </div>  
+            </div>
+<!-- END FOOTER -->
+
+    </body>
 </html>
