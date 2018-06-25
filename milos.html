@@ -8,13 +8,16 @@
         margin:0;
         overflow-x: hidden;
     }
-    header {
-        padding: 16px;
-        color: white;
-        background-color: black;
-        clear: left;
-        text-align: center;
-    }
+    .header {
+            display: block;
+            padding: 5px;
+            margin: 0px 0px 0px 0px; 
+            color: white;
+            background-color: black;
+            clear: left;
+            text-align: center;
+        }
+      
         /*ovo je style za listu, koja izgleda kao navigation menu*/
     #nav { 
         list-style-type: none;
@@ -37,11 +40,6 @@
     }
     p {
         float:right;
-    }
-    img {
-        float: left;
-        max-width: 100%;
-        padding: 1px 40px 1px 1px;
     }
     .tabela1, .td1, .th1 {
         border: 1px solid black;
@@ -71,7 +69,9 @@
 </head>
 <body>
     <!--heading koji se nalazi na vrhu stranice-->
-    <header><h1><a style="color:white; ;text-decoration: none;" href="index.html">QA Movies</a></h1></header>
+    <header class="header">
+            <h1 style="font-size: 200%">QA<a href="index.html"><img style="vertical-align: -25px"src="./photos/logo.png" alt="sorry, broken image"></a>Movies</h1></img>
+    </header>        
         <div>
             <nav>
                 <ul id="nav">
@@ -91,7 +91,7 @@
     </div>
     <div> 
     <!--u paragrafu se nalazi slika i text, i to cini jedan element-->
-        <p style="padding: 10px"><img src="./photos/milos2.jpg" alt="sorry,image is broken">The film is based on an article, titled "Racer X" , about New York street clubs that race Japanese cars late at night, although the film is set primarily in Los Angeles. While elite street racer and ex-convict Dominic Toretto (Vin Diesel) and his crew: Jesse (Chad Lindberg), Leon (Johnny Strong), Vince (Matt Schulze) and Letty Ortiz (Michelle Rodriguez), are under suspicion of stealing expensive electronic equipment by hijacking moving trucks, Brian O'Conner (Paul Walker) is an undercover police officer who attempts to find out who exactly is stealing the equipment. He works for FBI agent Bilkins (Thom Barry) and LAPD Sgt. Tanner (Ted Levine).
+        <p style="padding: 10px"><img style="float: left; padding: 1px 40px 1px 1px;" src="./photos/milos2.jpg" alt="sorry,image is broken">The film is based on an article, titled "Racer X" , about New York street clubs that race Japanese cars late at night, although the film is set primarily in Los Angeles. While elite street racer and ex-convict Dominic Toretto (Vin Diesel) and his crew: Jesse (Chad Lindberg), Leon (Johnny Strong), Vince (Matt Schulze) and Letty Ortiz (Michelle Rodriguez), are under suspicion of stealing expensive electronic equipment by hijacking moving trucks, Brian O'Conner (Paul Walker) is an undercover police officer who attempts to find out who exactly is stealing the equipment. He works for FBI agent Bilkins (Thom Barry) and LAPD Sgt. Tanner (Ted Levine).
         Falling for Dominic's younger sister, Mia Toretto (Jordana Brewster), Brian confesses to her his status as an undercover police officer and convinces her to come with him to save her brother and his friends from the truck drivers, who have now armed themselves to combat the robberies. He tracks Dominic's location by triangulating his cell phone signal and they arrive at the hijacking in progress to find Letty, badly injured in a car accident, and Vince critically wounded, having lacerated his arm and been shot by a truck driver. Brian and Mia work together with Dominic, Leon and Letty to rescue Vince. Brian then makes the difficult decision to blow his cover to the crew by phoning in for a medivac. The revelation enrages Dominic, who flees with Leon, Letty, and Mia as the medivac arrives for Vince.
         Brian soon follows Dominic to his house and holds him at gunpoint to prevent him from fleeing further. Jesse arrives shortly afterwards, apologizing for his actions at Race Wars and pleading for Dominic's help with Johnny Tran (Rick Yune). Moments later, Tran and his cousin Lance Nguyen (Reggie Lee) perform a drive-by shooting, killing Jesse. Brian and Dominic chase them, with Dominic driving his late father's modified 1970 Dodge Charger. Dominic forces Lance's motorcycle off the road, severely injuring him, while Brian shoots and kills Tran. Afterwards, Brian and Dominic engage in an impromptu street race, narrowly avoiding a passing train. However, Dominic collides with a semitruck and rolls his car twice, injuring himself, and rendering the Charger undrivable. Instead of arresting him, Brian hands over the keys to his Supra and lets Dominic escape, using the line "I owe you a ten-second car."
         </p>
