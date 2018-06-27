@@ -20,6 +20,9 @@
         height: auto;
 
     }
+    .imageLink {
+    text-decoration: none;
+    }
     /*ovo je style za listu, koja izgleda kao navigation menu, napravio sam komentar jer ga ne koristimo*/
     /* ul { 
         list-style-type: none;
@@ -43,15 +46,17 @@
 </style>
 </head>
 <body>
+    <!--heading koji se nalazi na vrhu stranice-->
     <header class="header">
-        <h1 style="font-size: 200%">
-            QA
-            <a href="index.html">
-                <img style="vertical-align: -25px"src="./img/logo.png" alt="sorry, broken image" />
-            </a>
-            Movies
-        </h1>
-    </header> 
+            <h1 style="font-size: 200%">
+                QA
+                <a class="imageLink" href="../index.html">
+                    <img style="vertical-align: -25px" src="../img/logo.png" alt="sorry, broken image" border="0"/>
+                </a>
+                Movies
+            </h1>
+        </header>  
+    <!--ovde pocinje navigation menu-->
     <!--napravio sam komentar jer navigation menu trenutno ne koristimo*/-->
     <!-- <div>
         <nav class="navigation">
@@ -66,6 +71,7 @@
             </ul>   
         </nav>
     </div> -->
+    <!-- ovo su slike koje su linkovane na nase stranice i sluze umesto navigation menija -->
     <table align=center>
         <tr>
             <td style="padding:15px">
@@ -124,22 +130,43 @@
             </td>
         </tr>
     </table>
-    <h1 style="text-align: center;">Welcome</h1>
-    <h3 style="text-align: center; padding: 30px">Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.<br />Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.<br />Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.</h3>
-    <h1 style="text-align: center; margin-top: 60px">About</h1>
-    <p style="text-align: center; padding: 30px">Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.
-            Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.
-            Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.</p>
+    <!-- /ovde se zavrsavaju slike koje sluze kao navigation menu-->
+    <h1 style="text-align: center;">
+        Welcome
+    </h1>
+    <h3 style="text-align: center; padding: 30px">
+        Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.<br />Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.<br />Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.
+    </h3>
+    <h1 style="text-align: center; margin-top: 60px">
+        About
+    </h1>
+    <p style="text-align: center; padding: 30px">
+        Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.
+    </p>
     <!-- Footer -->
     <footer class="footer" style="display: block; background-color: black; color: white; text-align: center; margin: 0px 0px 0px 0px ;padding: 20px 10px 20px 10px;">
-        <small style="display: block; padding: 10px">Copyright &copy; QA Movies</small>
+        <small style="display: block; padding: 10px">
+            Copyright &copy; QA Movies
+        </small>
         <br />
-        <a style= "color: white;" href="index.html">Home </a> |
-        <a style= "color: white;" href="./pages/sima.html">Sima</a> |
-        <a style= "color: white;" href="./pages/toda.html">Toda</a> |
-        <a style= "color: white;" href="./pages/dovla.html">Vlada</a> |
-        <a style= "color: white;" href="./pages/miho.html">Miho</a> |
-        <a style= "color: white;" href="./pages/milos.html">Milos</a>   
+        <a style= "color: white;" href="index.html">
+            Home
+        </a> |
+        <a style= "color: white;" href="./pages/sima.html">
+            Sima
+        </a> |
+        <a style= "color: white;" href="./pages/toda.html">
+            Toda
+        </a> |
+        <a style= "color: white;" href="./pages/dovla.html">
+            Vlada
+        </a> |
+        <a style= "color: white;" href="./pages/miho.html">
+            Miho
+        </a> |
+        <a style= "color: white;" href="./pages/milos.html">
+            Milos
+        </a>   
     </footer>  
     <!-- END FOOTER -->
 
