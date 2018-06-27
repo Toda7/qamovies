@@ -20,17 +20,17 @@
         text-align: center;
     }
     /*ovo je style za listu, koja izgleda kao navigation menu*/
-    #nav { 
+    .nav { 
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
         background-color: #333333;
     }
-    #navli {
+    .navli {
         float: left;
     }
-    #ali {
+    .ali {
         display: block;
         color: white;
         padding: 16px;
@@ -55,6 +55,16 @@
         margin: 0px 0px 0px 0px;
         padding: 20px 10px 20px 10px;
     }
+    .div_left {
+        float: left;
+        width: 50%;
+        height: 400px;
+    }
+    .div_right {
+        float: right;
+        width: 50%;
+        height: 400px;
+    }
 </style>
 </head>
 <body>
@@ -62,31 +72,31 @@
         <h1 style="font-size: 200%">
             QA
             <a href="../index.html">
-                <img style="vertical-align: -25px"src="../img/logo.png" alt="Sorry, broken logo image" />
+                <img style="vertical-align: -25px" src="../img/logo.png" alt="Sorry, broken logo image" />
             </a>
-            Movies
+          Movies
         </h1>
     </header>
     <div>
         <nav class="navigation">
-            <ul id="nav">
-                <li id="navli"><a id="ali" href="../index.html">Home</a></li>
-                <li id="navli"><a id="ali" href="sima.html">Sima</a></li>
-                <li id="navli"><a id="ali" href="toda.html">Toda</a></li>
-                <li id="navli"><a id="ali" href="dovla.html">Vlada</a></li>
-                <li id="navli"><a id="ali" href="miho.html">Miho</a></li>
-                <li id="navli"><a id="ali" href="milos.html">Milos</a></li>
-                <li id="navli"><a id="ali" href="projektor.html">Projektor</a></li>
+            <ul class="nav">
+                <li class="navli"><a class="ali" href="../index.html">Home</a></li>
+                <li class="navli"><a class="ali" href="sima.html">Sima</a></li>
+                <li class="navli"><a class="ali" href="toda.html">Toda</a></li>
+                <li class="navli"><a class="ali" href="dovla.html">Vlada</a></li>
+                <li class="navli"><a class="ali" href="miho.html">Miho</a></li>
+                <li class="navli"><a class="ali" href="milos.html">Milos</a></li>
+                <li class="navli"><a class="ali" href="projektor.html">Projektor</a></li>
             </ul>   
         </nav>
     </div>
     
     <!-- /*ovo je DA PODELI STRANU NA POLA*/ -->
-    <div style="float:left; width:50%; height:400px; background-color:lightblue">
+    <div class="div_left">
         <img style="height:400px; width:100%;" src="../img/sima_2.jpg" title="Moja Slika" alt="Crko kvar!!!" /> 
     </div>
-
-    <div style="float:right; width:50%; height:400px; background-color:rgb(50, 245, 43)">
+    <!-- ovde moram da promenim background u style da ne vuce gore is  -->
+    <div class="div_right" style="background-color:rgb(0, 255, 13);">
         <br /> 
         <p style="padding: 5px; text-align: center;">DESCRIPTION:</p>
         <br>
@@ -98,9 +108,8 @@
     </div>
     <!--/ END -->
 
-    <!-- drugi blok -->
-    <div style="float:left; width:50%; height:400px; background-color:lightblue">
-            
+    <!-- drugi blok --> 
+    <div class="div_left" style="background-color: aqua;">       
         <h4 style="text-align:center;">ACTORS:</h4> 
         <br>
         <ul>
@@ -116,8 +125,7 @@
         </ul>
     </div>
 
-    <div style="float:right; width:50%; height:400px; background-color:rgb(245, 43, 218)">
-                    
+    <div class="div_right" style="background-color:rgb(245, 43, 218)">                   
     <!-- Pocinje tabela -->
     <h4 style="text-align:center;">SIMILAR MOVIES:</h4> 
     <br>
@@ -201,7 +209,7 @@
     </div>           
 
 <!-- treci blok -->
-    <div style="float:left; width:50%; height:400px; background-color:rgb(177, 172, 180)">
+    <div class="div_left" style="background-color:rgb(177, 172, 180)">
 
     <h3 style="text-align:center;"> Biography!</h3>
     <!-- Postavljanje dugmica      -->
@@ -246,7 +254,7 @@
         </div>                 
     </div>
 
-    <div style="float:right; width:50%; height:400px; background-color:rgb(245, 97, 188)">
+    <div class="div_right" style="background-color:rgb(245, 97, 188)">
     <br> 
         <!-- postavljanje forme -->
         <h4 style="text-align:center;">Da li vasi roditelji znaju da ste gej?</h4>
