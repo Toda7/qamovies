@@ -1,674 +1,674 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <title>
-        Milos page
-    </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-        body {
-            margin:0;
-            overflow-x: hidden;
-        }
-        .header {
+    <head>
+        <title>
+            Milos page
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            body {
+                margin:0;
+                overflow-x: hidden;
+            }
+            .header {
+                    display: block;
+                    padding: 5px;
+                    margin: 0px 0px 0px 0px; 
+                    color: white;
+                    background-color: black;
+                    text-align: center;
+            }
+                /*ovo je style za listu, koja izgleda kao navigation menu*/
+            .nav { 
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333333;
+            }
+            .navli {
+                float:left;
+            }
+            .ali {
                 display: block;
-                padding: 5px;
-                margin: 0px 0px 0px 0px; 
                 color: white;
-                background-color: black;
+                padding: 16px;
+                text-decoration: none;
+            }
+            .ali:hover {
+                color: black
+            }
+            p {
+                float:right;
+            }
+            .tabela1 {
+                width: 100%;
+            }
+            .tabela1, .td1, .th1 {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            /*ovo je id za youtube iframe*/
+            #youtube{
+                float: right;
+            }
+            iframe{
+                max-width: 100%;
+            }
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                margin: auto;
                 text-align: center;
-        }
-            /*ovo je style za listu, koja izgleda kao navigation menu*/
-        .nav { 
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333333;
-        }
-        .navli {
-            float:left;
-        }
-        .ali {
-            display: block;
-            color: white;
-            padding: 16px;
+            }
+            h6 {
+                padding: 10px;
+            }
+            .imagelink {
             text-decoration: none;
-        }
-        .ali:hover {
-            color: black
-        }
-        p {
-            float:right;
-        }
-        .tabela1 {
-            width: 100%;
-        }
-        .tabela1, .td1, .th1 {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }
-        /*ovo je id za youtube iframe*/
-        #youtube{
-            float: right;
-        }
-        iframe{
-            max-width: 100%;
-        }
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            max-width: 300px;
-            margin: auto;
-            text-align: center;
-        }
-        h6 {
-            padding: 10px;
-        }
-        .imagelink {
-        text-decoration: none;
-        }
-        #head {
-            font-size: 200%"
-        }
-        #headimg {
-            vertical-align: -25px
-        }
-        #linkprojektor {
-            color:black;
-            text-decoration: none;
-        }
-        #pimg {
-            padding: 10px
-        }
-        #pimg1 {
-            float: left; 
-            padding: 1px 40px 1px 1px;
-        }
-        #table {
-            width: 100%;
-        }
-        .timg{
-            padding: 0px 0px 0px 0px
-        }
-        /*h1 je nije zavrsen..*/
-        #actors1 {
-            text-align: center
-        }
-        #table3 {
-            width: 100%; 
-            padding:10px 10px 10px 10px
-        }
-        .timg1 {
-            width:100%
-        }
-        #h12 { 
-            display: block; 
-            text-align: center;
-        }
-        #h1a {
-            color: black; text-decoration: none;
-        }
-        #pimg2 {
-            float: right;
-        }
-        #table2 {
-            width: 100%;
-        }
-        .timg2 {
-            padding: 0px 0px 0px 0px;
-        }
-        #actors2 {
-            text-align: center;
-        }
-        #table3 {
-            width: 100%; 
-            padding: 10px 10px 10px 10px;
-        }
-        .timg3 {
-            width:100%
-        }
-        #movies {
-            text-align: center;
-        }
-        #linkp {
-            text-align: center
-        }
-        #p1{
-            padding: 15px
-        }
-        #hb{
-            text-align: center;
-        }
-        #form {
-            padding:20px; 
-            background-image: url(../img/milos4.jpg); 
-            background-size: cover;
-        }
-        #hf {
-            text-align: center; 
-            color: black; 
-            padding: 10px;
-        }
-        #textarea {
-            width:300px; 
-            height: 100px; 
-            display: block;
-        }
-        #pa {
-            color:black;
-            text-decoration: none;
-        }
-        .footer {
-            display: block; 
-            background-color: black; 
-            color: white; 
-            text-align: center; 
-            margin: 0px 0px 0px 0px;
-            padding: 20px 10px 20px 10px;
-        }
-        #small {
-            display: block; 
-            padding: 10px
-        }
-        .footera {
-            color: white;
-        }
-        #h1linkp {
-            text-align: center;
-        }
-</style>
-</head>
-<body>
-    <!--heading koji se nalazi na vrhu stranice-->
-    <header class="header">
-        <h1 id="head" >
-            QA
-            <a class="imagelink" href="../index.html">
-                <img id="headimg" src="../img/logo.png" alt="sorry, broken image" border="0" />
-            </a>
-            Movies
-        </h1>
-    </header>  
-    <!--ovde pocinje navigation menu-->
-    <div>
-        <nav class="navigation">
-            <ul class="nav">
-                <li class="navli">
-                    <a class="ali" href="../index.html" hover="black">
-                        Home
-                    </a>
-                </li>
-                <li class="navli">
-                    <a class="ali" href="sima.html">
-                        Sima
-                    </a>
-                </li>
-                <li class="navli">
-                    <a class="ali" href="toda.html">
-                        Toda
-                    </a>
-                </li>
-                <li class="navli">
-                    <a class="ali" href="dovla.html">
-                        Vlada
-                    </a>
-                </li>
-                <li class="navli">
-                    <a class="ali" href="miho.html">
-                        Miho
-                    </a>
-                </li>
-                <li class="navli">
-                    <a class="ali" href="milos.html">
-                        Milos
-                    </a>
-                </li>
-                <li class="navli">
-                    <a class="ali" href="projektor.html">
-                        Projektor
-                    </a>
-                </li>
-            </ul>   
-        </nav>
-    </div>
-    <!-- / ovde se zavrsava navigation menu -->
-    <!--heading je u ovom slucaju naslov i povezan je sa projektor stranicom-->
-    <div>
-        <h1 id="h1linkp">
-            <a id="linkprojektor" href="../pages/projektor.html#fast">
-            The Fast of the Furious
-            </a>
-        </h1>
-    </div>
-    <!-- / end of heading -->
-    <!--u paragrafu se nalazi slika i text, i to cini jedan element-->
-    <div> 
-        <p id="pimg">
-            <img id="pimg1" src="../img/milos2.jpg" alt="sorry,image is broken" />
-            The film is based on an article, titled "Racer X" , about New York street clubs that race Japanese cars late at night, although the film is set primarily in Los Angeles. While elite street racer and ex-convict Dominic Toretto (Vin Diesel) and his crew: Jesse (Chad Lindberg), Leon (Johnny Strong), Vince (Matt Schulze) and Letty Ortiz (Michelle Rodriguez), are under suspicion of stealing expensive electronic equipment by hijacking moving trucks, Brian O'Conner (Paul Walker) is an undercover police officer who attempts to find out who exactly is stealing the equipment. He works for FBI agent Bilkins (Thom Barry) and LAPD Sgt. Tanner (Ted Levine).Falling for Dominic's younger sister, Mia Toretto (Jordana Brewster), Brian confesses to her his status as an undercover police officer and convinces her to come with him to save her brother and his friends from the truck drivers, who have now armed themselves to combat the robberies. He tracks Dominic's location by triangulating his cell phone signal and they arrive at the hijacking in progress to find Letty, badly injured in a car accident, and Vince critically wounded, having lacerated his arm and been shot by a truck driver. Brian and Mia work together with Dominic, Leon and Letty to rescue Vince. Brian then makes the difficult decision to blow his cover to the crew by phoning in for a medivac. The revelation enrages Dominic, who flees with Leon, Letty, and Mia as the medivac arrives for Vince.Brian soon follows Dominic to his house and holds him at gunpoint to prevent him from fleeing further. Jesse arrives shortly afterwards, apologizing for his actions at Race Wars and pleading for Dominic's help with Johnny Tran (Rick Yune). Moments later, Tran and his cousin Lance Nguyen (Reggie Lee) perform a drive-by shooting, killing Jesse. Brian and Dominic chase them, with Dominic driving his late father's modified 1970 Dodge Charger. Dominic forces Lance's motorcycle off the road, severely injuring him, while Brian shoots and kills Tran. Afterwards, Brian and Dominic engage in an impromptu street race, narrowly avoiding a passing train. However, Dominic collides with a semitruck and rolls his car twice, injuring himself, and rendering the Charger undrivable. Instead of arresting him, Brian hands over the keys to his Supra and lets Dominic escape, using the line "I owe you a ten-second car."
-        </p>
-    </div> 
-    <!-- / kraj paragrafa -->
-    <!-- ovo je tabela od koje sam napravio listu sa glumcima i iframe za youtube-->
-    <table id="table">
-        <tr>
-            <td class="info">
-                <h2>
-                Full Cast and Crew
-                </h2>                
-                <ul>
-                    <!--koristim padding da bi slika bila odmah pored teksta-->
-                    <li>
-                        <img class="timg" src="../img/milos5.jpg" alt="sorry,image is broken" />
-                        Vin Diesel - Dominic Toretto
-                    </li>
-                    <br /> 
-                    <li>
-                        <img class="timg" src="../img/milos6.jpg" alt="sorry,image is broken" />
-                        Paul Walker - Brian O'Conner
-                    </li>
-                    <br />
-                    <li>
-                        <img class="timg" src="../img/milos7.jpg" alt="sorry,image is broken" />
-                        Michelle Rodriguez - Letty Ortiz
-                    </li>
-                    <br />
-                    <li>
-                        <img class="timg" src="../img/milos8.jpg" alt="sorry,image is broken" />
-                        Jordana Brewster- Mia Toretto
-                    </li>
-                    <br />
-                    <li>
-                        <img class="timg" src="../img/milos9.jpg" alt="sorry,image is broken" />
-                        Tyrese Gibson - Roman Pearce
-                    </li>
-                    <br />
-                    <li>
-                        <img class="timg" src="../img/milos10.jpg" alt="sorry,image is broken" />
-                        Ludacris - Tej Parker
-                    </li>
-                </ul>
-            </td>
-            <td>
-                <ul>
-                    <div id="youtube">
-                        <iframe width="750" height="400"
-                        src="https://www.youtube.com/embed/uisBaTkQAEs">
-                        </iframe> 
-                    </div>   
-                </ul>
-            </td>
-        </tr>
-    </table>
-    <!-- / ovde se zavrsava tabela  -->
-    <h1 id="actors1">
-        Main actors
-    </h1>
-    <!-- ovde pocinje tabela za cards za glavne glumce-->
-    <table id="table3">
-        <tr>
-            <td>
-                <div class="card">
-                    <img class="timg1" src="../img/card2.jpg" />
-                    <h1>
-                        Vin Diesel
-                    </h1>
-                    <h6>
-                        Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea. Quo putent tritani ut, id eum deleniti definiebas, vis nullam habemus facilisi ex. Sed ne mundi consetetur. Cu numquam tractatos eos. Cum no nobis feugait principes. Ex sed laudem consulatu. Utroque eleifend splendide ad eos, et assum sonet duo. Vel elaboraret temporibus ex, veri summo repudiare no qui.
-                    </h6>
-                </div>
-            </td>
-            <td>
-                <div class="card">
-                    <img class="timg1" src="../img/card1.jpg" />
-                    <h1>
-                        Michelle Rodriguez
-                    </h1>
-                    <h6>
-                        Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea. Quo putent tritani ut, id eum deleniti definiebas, vis nullam habemus facilisi ex. Sed ne mundi consetetur. Cu numquam tractatos eos. Cum no nobis feugait principes. Ex sed laudem consulatu. Utroque eleifend splendide ad eos, et assum sonet duo. Vel elaboraret temporibus ex, veri summo repudiare no qui.
-                    </h6>
-                </div>
-            </td>
-            <td>
-                <div class="card">
-                    <img class="timg1" src="../img/card3.jpg" />
-                    <h1>
-                        Jordana Brewster
-                    </h1>
-                    <h6>
-                        Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea. Quo putent tritani ut, id eum deleniti definiebas, vis nullam habemus facilisi ex. Sed ne mundi consetetur. Cu numquam tractatos eos. Cum no nobis feugait principes. Ex sed laudem consulatu. Utroque eleifend splendide ad eos, et assum sonet duo. Vel elaboraret temporibus ex, veri summo repudiare no qui.
-                    </h6>
-                </div>
-            </td>
-            <td>
-                <div class="card">
-                    <img class="timg1" src="../img/card5.jpg" />
-                    <h1>
-                        Tyrese Gibson
-                    </h1>
-                    <h6>
-                        Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea. Quo putent tritani ut, id eum deleniti definiebas, vis nullam habemus facilisi ex. Sed ne mundi consetetur. Cu numquam tractatos eos. Cum no nobis feugait principes. Ex sed laudem consulatu. Utroque eleifend splendide ad eos, et assum sonet duo. Vel elaboraret temporibus ex, veri summo repudiare no qui.
-                    </h6>
-                </div>
-            </td>
-            <td>
-                <div class="card">
-                    <img class="timg1" src="../img/card4.jpg" />
-                    <h1>
-                        Ludacris
-                    </h1>
-                    <h6>
-                        Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea. Quo putent tritani ut, id eum deleniti definiebas, vis nullam habemus facilisi ex. Sed ne mundi consetetur. Cu numquam tractatos eos. Cum no nobis feugait principes. Ex sed laudem consulatu. Utroque eleifend splendide ad eos, et assum sonet duo. Vel elaboraret temporibus ex, veri summo repudiare no qui.
-                    </h6>
-                </div>
-            </td>
-        <tr>
-    </table>
-    <!-- / ovde se zavrsava tabela -->
-    <!--heading je u ovom slucaju naslov i povezan je sa projektor stranicom-->
-    <div>
-        <h1 id="h12">
-            <a id="h1a" href="../pages/projektor.html#colossal" />
-            Colossal
-            </a>
-        </h1>
-    </div>
-    <div>
-    <!--u paragrafu se nalazi slika i text, i to cini jedan element-->
-        <p>
-            <img id="pimg2" src="../img/milos3.jpg" alt="sorry,image is broken" />
-            Gloria is an unemployed writer struggling with alcoholism. Her errant behavior prompts her frustrated boyfriend Tim to break up with her and evict her from their New York City apartment. Forced to move back to her hometown in New England (the fictional Mainhead), Gloria reunites with her childhood friend Oscar, who now runs his late father's bar. Oscar is warm and welcoming to Gloria; he brings her an old television set for her unfurnished house and offers her a job at the bar to help her, which Gloria accepts.Working at the bar aggravates Gloria's alcohol problem. Each shift, she hangs out and drinks until morning with Oscar and his friends, Garth and Joel, while sleeping it off on a bench near a children's playground. At the same time, a giant reptilian monster appears in Seoul, leaving death and destruction in its wake. Gradually, Gloria realizes that when she walks through the playground at exactly 8:05 am, she causes the monster to manifest and the creature's movements correspond with her own.Gloria reveals her secret to Oscar and his friends; however, when Oscar steps onto the playground, he causes a giant robot to appear in Seoul. Gloria ultimately tries to make amends by having the monster spell out an apology in Korean, to the delight of the South Koreans and the media, and begins to avoid both the playground and alcohol.After spending the night with Joel, Gloria discovers that a drunken Oscar is using the robot to taunt South Korea. After a tense confrontation, Gloria manages to make him leave. Oscar is jealous, believing that something happened between Gloria and Joel. Later that night at the bar, he drunkenly insults his friends and demands that Gloria drinks, then orders her to do so by threatening to return to the playground if she does not. The next morning, a sobered-up Oscar confesses his remorse and pleads with Gloria to forgive him. Gloria accepts his apology, but Oscar's controlling attitude becomes clear.
-        </p>    
-    </div>
-    <!-- /ovde se zavrsava paragraf -->
-    <table id="table2">
-        <tr>
-            <td>
-                <ul>
-                    <div id="youtube2">
-                        <iframe width="750" height="400"
-                        src="https://www.youtube.com/embed/fqcZtz8VXXE">
-                        </iframe> 
-                    </div>   
-                </ul>
-            </td>
-            <td id="info1">
-                <h2>
-                    Full Cast and Crew
-                </h2>                
-                <ul>
-                    <!--koristim padding da bi slika bila odmah pored teksta-->
-                    <li>
-                        <img class="timg2" src="../img/milos11.jpg" alt="sorry,image is broken" />
-                        Anne Hathaway - Gloria
-                    </li>
-                    <br />
-                    <li>
-                        <img class="timg2" src="../img/milos12.jpg" alt="sorry,image is broken" />
-                        Jason Sudeikis - Oscar
-                    </li>
-                    <br />
-                    <li>
-                        <img class="timg2" src="../img/milos13.jpg" alt="sorry,image is broken" />
-                        Austin Stowell	- Joel
-                    </li>
-                    <br />
-                    <li>
-                        <img class="timg2" src="../img/milos14.jpg" alt="sorry,image is broken" />
-                        Tim Blake Nelson - Garth
-                    </li>
-                    <br />
-                    <li>
-                        <img class="timg2" src="../img/milos15.jpg" alt="sorry,image is broken" />
-                        Dan Stevens - Tim
-                    </li>
-                    <br />
-                    <li>
-                        <img class="timg2" src="../img/milos16.png" alt="sorry,image is broken" />
-                        Hannah Cheramy	- Young Gloria
-                    </li>
-                </ul>
-            </td>
-        </tr>
-    </table>
-    <!-- / ovde se zavrsava tabela  -->
-    <!-- ovde pocinje main actors section -->
-    <div>
-    <h1 id="actors2">Main actors</h1>
-    <!--ovo je tabela za cards za glavne glumce-->
-    <table id="table3">
-        <tr>
-            <td>
-                <div class="card">
-                    <img class="timg3" src="../img/card7.png" />
-                    <h1>
-                        Anne Hathaway
-                    </h1>
-                    <h6>
-                        Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea. Quo putent tritani ut, id eum deleniti definiebas, vis nullam habemus facilisi ex. Sed ne mundi consetetur. Cu numquam tractatos eos. Cum no nobis feugait principes. Ex sed laudem consulatu. Utroque eleifend splendide ad eos, et assum sonet duo. Vel elaboraret temporibus ex, veri summo repudiare no qui.
-                    </h6>
-                </div>
-            </td>
-            <td>
-                <div class="card">
-                    <img class="timg3" src="../img/card6.jpg" />
-                    <h1>
-                        Jason Sudeikis
-                    </h1>
-                    <h6>Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea. Quo putent tritani ut, id eum deleniti definiebas, vis nullam habemus facilisi ex. Sed ne mundi consetetur. Cu numquam tractatos eos. Cum no nobis feugait principes. Ex sed laudem consulatu. Utroque eleifend splendide ad eos, et assum sonet duo. Vel elaboraret temporibus ex, veri summo repudiare no q
-                    </h6>
-                </div>
-            </td>
-            <td>
-                <div class="card">
-                    <img class="timg3" src="../img/card8.jpg" />
-                    <h1>
-                        Austin Stowell
-                    </h1>
-                    <h6>
-                        Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea. Quo putent tritani ut, id eum deleniti definiebas, vis nullam habemus facilisi ex. Sed ne mundi consetetur. Cu numquam tractatos eos. Cum no nobis feugait principes. Ex sed laudem consulatu. Utroque eleifend splendide ad eos, et assum sonet duo. Vel elaboraret temporibus ex, veri summo repudiare no q
-                    </h6>
-                </div>
-            </td>
-            <td>
-                <div class="card">
-                    <img class="timg3" src="../img/card9.jpg" />
-                    <h1>
-                        Tim Blake Nelson
-                    </h1>
-                    <h6>
-                        Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea. Quo putent tritani ut, id eum deleniti definiebas, vis nullam habemus facilisi ex. Sed ne mundi consetetur. Cu numquam tractatos eos. Cum no nobis feugait principes. Ex sed laudem consulatu. Utroque eleifend splendide ad eos, et assum sonet duo. Vel elaboraret temporibus ex, veri summo repudiare no q
-                    </h6>
-                </div>
-            </td>
-            <td>
-                <div class="card">
-                    <img class="timg3" src="../img/card10.jpg" />
-                    <h1>
-                        Dan Stevens
-                    </h1>
-                    <h6>
-                        Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea. Quo putent tritani ut, id eum deleniti definiebas, vis nullam habemus facilisi ex. Sed ne mundi consetetur. Cu numquam tractatos eos. Cum no nobis feugait principes. Ex sed laudem consulatu. Utroque eleifend splendide ad eos, et assum sonet duo. Vel elaboraret temporibus ex, veri summo repudiare no q
-                    </h6>
-                </div>
-            </td>
-        <tr>
-    </table>
-    </div>
-    <!-- /ovde se zavrsava tebala za glavne glumce -->
-    <!--/ovde se zatvara main actors section -->
-    <!--heading je u ovom slucaju naslov-->
-    <h1 id="movies">
-        The 12 best movies of 2017 so far
-    </h1>
-    <!--ovo je link koji je povezan sa projektor stranicom-->
-    <div id="linkp" title="Going to projektor file">
-        <a href="projektor.html">
-            There is the link, if you want to see our movies!
-        </a>
-    </div>
-    <!-- /ovde se zavrsava link koji je povezan sa projektor stranicom -->
-    <!-- ovde pocinje div koji ima paragraf -->
-    <div>
-    <!--paragraf koji se nalazi ispod linka-->
-    <p id="p1">
-        One idea to ultimately keep in mind, as you count down the best movies of the year with us, is that this list is theresult of math. Each staff writer put together a top 20 of their favorite movies of the year, contributing to an aggregate list based on points assigned according to where each film ranked. The goal was and has always been to provide an overview of staff tastes, however much individual lists differed. Which is to say: if you’re pissed or elated about anything being on here ornot being on here, then chances are at least one Paste Movies staff writer agrees with you.
-    </p>
-    </div>
-    <!-- / ovde se zavrsva div koji ima paragraf -->
-    <!-- ovde pocinje tabela sa filmovima -->
-    <div>
-    <table class="tabela1">
-            <tr>
-                <th class="th1">
-                    Action
-                </th>
-                <th class="th1">
-                    Comedy
-                </th>
-                <th class="th1">
-                    Drama
-                </th>
-            </tr>
-            <tr>
-                <td class="td1">
-                    The Equalizer (2014)
-                </td>
-                <td class="td1">
-                    Dumb and Dumber
-                </td>
-                <td class="td1">
-                    Citizen Kane (1941)
-                </td>
-            </tr>
-            <tr>
-                <td class="td1">
-                    Mad Max: Fury Road (2015)
-                </td>
-                <td class="td1">
-                    Monty Python and the Holy Grail
-                </td>
-                <td class="td1">
-                    Moonlight (2016)
-                </td>
-            </tr>
-            <tr>
-                <td class="td1">
-                    Logan (2017)
-                </td>
-                <td class="td1">
-                    The Hangover
-                </td>
-                <td class="td1">
-                    All About Eve (1950)
-                </td>
-            </tr>
-            <tr>
-                <td class="td1">
-                    Black Panther (2018)
-                </td>
-                <td class="td1">
-                    The Big Lebowski
-                </td>
-                <td class="td1">
-                    Spotlight (2015)
-                </td>
-            </tr>
-    </table>
-    </div>
-    <!-- ovde se zavrsava tabela sa filmovima -->
-    <h1 id="hb">
-        Register to see new movies
-    </h1>
-    <!--ovde pocinje forma-->
-    <div>
-        <form id="form">
-            <h3 id="hf">
-                If you want to watch all our movies, please fill out form to became our gold member
-            </h3>
-            First name:<br />
-            <input type="text" name="firstname">
-            <br />
-            Last name:<br />
-            <input type="text" name"last name"><br>
-            <br /><br />
-            <input type="radio" name="gender" value="Male" checked>
-            Male
-            <br />
-            <input type="radio" name="gender" value="Female">
-            Female
-            <br />
-            <br /><br />
-            <h4>
-                What are you interested in?
-            </h4>
-            <select name="cards">
-            <option value="Action">
-                Action
-            </option>
-            <option value="Drama">
-                Drama
-            </option>
-            <option value="Comedy">
-                Comedy
-            </option>
-            <option value="Thriller">
-                Thriller
-            </option>
-            </select>
-            <br /><br />
-            <input type="checkbox" name="Project" value="Project">
-                Home
-            <br />
-            <input type="checkbox" name="Foreign" value="Unit">
-                Foreign
-            <br />
-            <!--2 puta br stvara veci prostor izmedju elemenata-->
-            <br /><br />
-            <textarea id="textarea"name"message" placeholder="Additional note"></textarea>
-            <br /><br />
-            <!--submit je button a reset je input koji izgleda kao button, nema razlike na frontu, ima samo u kodu-->
-            <input type="submit" onclick="alert('Hello QA!')" value="Submit"> 
-            </input>
-            <input type="reset">
-            </input>
-            <p>
-                <a id="pa" href="https://www.youtube.com"target="_blank">
-                    We support youtube
+            }
+            #head {
+                font-size: 200%"
+            }
+            #headimg {
+                vertical-align: -25px
+            }
+            #linkprojektor {
+                color:black;
+                text-decoration: none;
+            }
+            #pimg {
+                padding: 10px
+            }
+            #pimg1 {
+                float: left; 
+                padding: 1px 40px 1px 1px;
+            }
+            #table {
+                width: 100%;
+            }
+            .timg{
+                padding: 0px 0px 0px 0px
+            }
+            /*h1 je nije zavrsen..*/
+            #actors1 {
+                text-align: center
+            }
+            #table3 {
+                width: 100%; 
+                padding:10px 10px 10px 10px
+            }
+            .timg1 {
+                width:100%
+            }
+            #h12 { 
+                display: block; 
+                text-align: center;
+            }
+            #h1a {
+                color: black; text-decoration: none;
+            }
+            #pimg2 {
+                float: right;
+            }
+            #table2 {
+                width: 100%;
+            }
+            .timg2 {
+                padding: 0px 0px 0px 0px;
+            }
+            #actors2 {
+                text-align: center;
+            }
+            #table3 {
+                width: 100%; 
+                padding: 10px 10px 10px 10px;
+            }
+            .timg3 {
+                width:100%
+            }
+            #movies {
+                text-align: center;
+            }
+            #linkp {
+                text-align: center
+            }
+            #p1{
+                padding: 15px
+            }
+            #hb{
+                text-align: center;
+            }
+            #form {
+                padding:20px; 
+                background-image: url(../img/milos4.jpg); 
+                background-size: cover;
+            }
+            #hf {
+                text-align: center; 
+                color: black; 
+                padding: 10px;
+            }
+            #textarea {
+                width:300px; 
+                height: 100px; 
+                display: block;
+            }
+            #pa {
+                color:black;
+                text-decoration: none;
+            }
+            .footer {
+                display: block; 
+                background-color: black; 
+                color: white; 
+                text-align: center; 
+                margin: 0px 0px 0px 0px;
+                padding: 20px 10px 20px 10px;
+            }
+            #small {
+                display: block; 
+                padding: 10px
+            }
+            .footera {
+                color: white;
+            }
+            #h1linkp {
+                text-align: center;
+            }
+    </style>
+    </head>
+    <body>
+        <!--heading koji se nalazi na vrhu stranice-->
+        <header class="header">
+            <h1 id="head" >
+                QA
+                <a class="imagelink" href="../index.html">
+                    <img id="headimg" src="../img/logo.png" alt="sorry, broken image" border="0" />
                 </a>
+                Movies
+            </h1>
+        </header>  
+        <!--ovde pocinje navigation menu-->
+        <div>
+            <nav class="navigation">
+                <ul class="nav">
+                    <li class="navli">
+                        <a class="ali" href="../index.html" hover="black">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navli">
+                        <a class="ali" href="sima.html">
+                            Sima
+                        </a>
+                    </li>
+                    <li class="navli">
+                        <a class="ali" href="toda.html">
+                            Toda
+                        </a>
+                    </li>
+                    <li class="navli">
+                        <a class="ali" href="dovla.html">
+                            Vlada
+                        </a>
+                    </li>
+                    <li class="navli">
+                        <a class="ali" href="miho.html">
+                            Miho
+                        </a>
+                    </li>
+                    <li class="navli">
+                        <a class="ali" href="milos.html">
+                            Milos
+                        </a>
+                    </li>
+                    <li class="navli">
+                        <a class="ali" href="projektor.html">
+                            Projektor
+                        </a>
+                    </li>
+                </ul>   
+            </nav>
+        </div>
+        <!-- / ovde se zavrsava navigation menu -->
+        <!--heading je u ovom slucaju naslov i povezan je sa projektor stranicom-->
+        <div>
+            <h1 id="h1linkp">
+                <a id="linkprojektor" href="../pages/projektor.html#fast">
+                The Fast of the Furious
+                </a>
+            </h1>
+        </div>
+        <!-- / end of heading -->
+        <!--u paragrafu se nalazi slika i text, i to cini jedan element-->
+        <div> 
+            <p id="pimg">
+                <img id="pimg1" src="../img/milos2.jpg" alt="sorry,image is broken" />
+                The film is based on an article, titled "Racer X" , about New York street clubs that race Japanese cars late at night, although the film is set primarily in Los Angeles. While elite street racer and ex-convict Dominic Toretto (Vin Diesel) and his crew: Jesse (Chad Lindberg), Leon (Johnny Strong), Vince (Matt Schulze) and Letty Ortiz (Michelle Rodriguez), are under suspicion of stealing expensive electronic equipment by hijacking moving trucks, Brian O'Conner (Paul Walker) is an undercover police officer who attempts to find out who exactly is stealing the equipment. He works for FBI agent Bilkins (Thom Barry) and LAPD Sgt. Tanner (Ted Levine).Falling for Dominic's younger sister, Mia Toretto (Jordana Brewster), Brian confesses to her his status as an undercover police officer and convinces her to come with him to save her brother and his friends from the truck drivers, who have now armed themselves to combat the robberies. He tracks Dominic's location by triangulating his cell phone signal and they arrive at the hijacking in progress to find Letty, badly injured in a car accident, and Vince critically wounded, having lacerated his arm and been shot by a truck driver. Brian and Mia work together with Dominic, Leon and Letty to rescue Vince. Brian then makes the difficult decision to blow his cover to the crew by phoning in for a medivac. The revelation enrages Dominic, who flees with Leon, Letty, and Mia as the medivac arrives for Vince.Brian soon follows Dominic to his house and holds him at gunpoint to prevent him from fleeing further. Jesse arrives shortly afterwards, apologizing for his actions at Race Wars and pleading for Dominic's help with Johnny Tran (Rick Yune). Moments later, Tran and his cousin Lance Nguyen (Reggie Lee) perform a drive-by shooting, killing Jesse. Brian and Dominic chase them, with Dominic driving his late father's modified 1970 Dodge Charger. Dominic forces Lance's motorcycle off the road, severely injuring him, while Brian shoots and kills Tran. Afterwards, Brian and Dominic engage in an impromptu street race, narrowly avoiding a passing train. However, Dominic collides with a semitruck and rolls his car twice, injuring himself, and rendering the Charger undrivable. Instead of arresting him, Brian hands over the keys to his Supra and lets Dominic escape, using the line "I owe you a ten-second car."
             </p>
-        </form>
-    </div>
-    <!--/ ovde se zavrsava form -->
-    <!-- Footer -->
-     <footer class="footer">
-        <small id="small">
-            Copyright &copy; QA Movies
-        </small>
-        <br />
-        <a class="footera" href="../index.html">
-            Home
-        </a> |
-        <a class="footera" href="sima.html">
-            Sima
-        </a> |
-        <a class="footera" href="toda.html">
-            Toda
-        </a> |
-        <a class="footera" href="dovla.html">
-            Vlada
-        </a> |
-        <a class="footera" href="miho.html">
-            Miho
-        </a> |
-        <a class="footera" href="milos.html">
-            Milos
-        </a> | 
-        <a class="footera" href="projektor.html">
-            Projektor
-        </a>
-    </footer>  
-    <!-- END FOOTER --> 
-</body>
+        </div> 
+        <!-- / kraj paragrafa -->
+        <!-- ovo je tabela od koje sam napravio listu sa glumcima i iframe za youtube-->
+        <table id="table">
+            <tr>
+                <td class="info">
+                    <h2>
+                    Full Cast and Crew
+                    </h2>                
+                    <ul>
+                        <!--koristim padding da bi slika bila odmah pored teksta-->
+                        <li>
+                            <img class="timg" src="../img/milos5.jpg" alt="sorry,image is broken" />
+                            Vin Diesel - Dominic Toretto
+                        </li>
+                        <br /> 
+                        <li>
+                            <img class="timg" src="../img/milos6.jpg" alt="sorry,image is broken" />
+                            Paul Walker - Brian O'Conner
+                        </li>
+                        <br />
+                        <li>
+                            <img class="timg" src="../img/milos7.jpg" alt="sorry,image is broken" />
+                            Michelle Rodriguez - Letty Ortiz
+                        </li>
+                        <br />
+                        <li>
+                            <img class="timg" src="../img/milos8.jpg" alt="sorry,image is broken" />
+                            Jordana Brewster- Mia Toretto
+                        </li>
+                        <br />
+                        <li>
+                            <img class="timg" src="../img/milos9.jpg" alt="sorry,image is broken" />
+                            Tyrese Gibson - Roman Pearce
+                        </li>
+                        <br />
+                        <li>
+                            <img class="timg" src="../img/milos10.jpg" alt="sorry,image is broken" />
+                            Ludacris - Tej Parker
+                        </li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <div id="youtube">
+                            <iframe width="750" height="400"
+                            src="https://www.youtube.com/embed/uisBaTkQAEs">
+                            </iframe> 
+                        </div>   
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <!-- / ovde se zavrsava tabela  -->
+        <h1 id="actors1">
+            Main actors
+        </h1>
+        <!-- ovde pocinje tabela za cards za glavne glumce-->
+        <table id="table3">
+            <tr>
+                <td>
+                    <div class="card">
+                        <img class="timg1" src="../img/card2.jpg" />
+                        <h1>
+                            Vin Diesel
+                        </h1>
+                        <h6>
+                            Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea. Quo putent tritani ut, id eum deleniti definiebas, vis nullam habemus facilisi ex. Sed ne mundi consetetur. Cu numquam tractatos eos. Cum no nobis feugait principes. Ex sed laudem consulatu. Utroque eleifend splendide ad eos, et assum sonet duo. Vel elaboraret temporibus ex, veri summo repudiare no qui.
+                        </h6>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img class="timg1" src="../img/card1.jpg" />
+                        <h1>
+                            Michelle Rodriguez
+                        </h1>
+                        <h6>
+                            Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea. Quo putent tritani ut, id eum deleniti definiebas, vis nullam habemus facilisi ex. Sed ne mundi consetetur. Cu numquam tractatos eos. Cum no nobis feugait principes. Ex sed laudem consulatu. Utroque eleifend splendide ad eos, et assum sonet duo. Vel elaboraret temporibus ex, veri summo repudiare no qui.
+                        </h6>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img class="timg1" src="../img/card3.jpg" />
+                        <h1>
+                            Jordana Brewster
+                        </h1>
+                        <h6>
+                            Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea. Quo putent tritani ut, id eum deleniti definiebas, vis nullam habemus facilisi ex. Sed ne mundi consetetur. Cu numquam tractatos eos. Cum no nobis feugait principes. Ex sed laudem consulatu. Utroque eleifend splendide ad eos, et assum sonet duo. Vel elaboraret temporibus ex, veri summo repudiare no qui.
+                        </h6>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img class="timg1" src="../img/card5.jpg" />
+                        <h1>
+                            Tyrese Gibson
+                        </h1>
+                        <h6>
+                            Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea. Quo putent tritani ut, id eum deleniti definiebas, vis nullam habemus facilisi ex. Sed ne mundi consetetur. Cu numquam tractatos eos. Cum no nobis feugait principes. Ex sed laudem consulatu. Utroque eleifend splendide ad eos, et assum sonet duo. Vel elaboraret temporibus ex, veri summo repudiare no qui.
+                        </h6>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img class="timg1" src="../img/card4.jpg" />
+                        <h1>
+                            Ludacris
+                        </h1>
+                        <h6>
+                            Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea. Quo putent tritani ut, id eum deleniti definiebas, vis nullam habemus facilisi ex. Sed ne mundi consetetur. Cu numquam tractatos eos. Cum no nobis feugait principes. Ex sed laudem consulatu. Utroque eleifend splendide ad eos, et assum sonet duo. Vel elaboraret temporibus ex, veri summo repudiare no qui.
+                        </h6>
+                    </div>
+                </td>
+            <tr>
+        </table>
+        <!-- / ovde se zavrsava tabela -->
+        <!--heading je u ovom slucaju naslov i povezan je sa projektor stranicom-->
+        <div>
+            <h1 id="h12">
+                <a id="h1a" href="../pages/projektor.html#colossal" />
+                Colossal
+                </a>
+            </h1>
+        </div>
+        <div>
+        <!--u paragrafu se nalazi slika i text, i to cini jedan element-->
+            <p>
+                <img id="pimg2" src="../img/milos3.jpg" alt="sorry,image is broken" />
+                Gloria is an unemployed writer struggling with alcoholism. Her errant behavior prompts her frustrated boyfriend Tim to break up with her and evict her from their New York City apartment. Forced to move back to her hometown in New England (the fictional Mainhead), Gloria reunites with her childhood friend Oscar, who now runs his late father's bar. Oscar is warm and welcoming to Gloria; he brings her an old television set for her unfurnished house and offers her a job at the bar to help her, which Gloria accepts.Working at the bar aggravates Gloria's alcohol problem. Each shift, she hangs out and drinks until morning with Oscar and his friends, Garth and Joel, while sleeping it off on a bench near a children's playground. At the same time, a giant reptilian monster appears in Seoul, leaving death and destruction in its wake. Gradually, Gloria realizes that when she walks through the playground at exactly 8:05 am, she causes the monster to manifest and the creature's movements correspond with her own.Gloria reveals her secret to Oscar and his friends; however, when Oscar steps onto the playground, he causes a giant robot to appear in Seoul. Gloria ultimately tries to make amends by having the monster spell out an apology in Korean, to the delight of the South Koreans and the media, and begins to avoid both the playground and alcohol.After spending the night with Joel, Gloria discovers that a drunken Oscar is using the robot to taunt South Korea. After a tense confrontation, Gloria manages to make him leave. Oscar is jealous, believing that something happened between Gloria and Joel. Later that night at the bar, he drunkenly insults his friends and demands that Gloria drinks, then orders her to do so by threatening to return to the playground if she does not. The next morning, a sobered-up Oscar confesses his remorse and pleads with Gloria to forgive him. Gloria accepts his apology, but Oscar's controlling attitude becomes clear.
+            </p>    
+        </div>
+        <!-- /ovde se zavrsava paragraf -->
+        <table id="table2">
+            <tr>
+                <td>
+                    <ul>
+                        <div id="youtube2">
+                            <iframe width="750" height="400"
+                            src="https://www.youtube.com/embed/fqcZtz8VXXE">
+                            </iframe> 
+                        </div>   
+                    </ul>
+                </td>
+                <td id="info1">
+                    <h2>
+                        Full Cast and Crew
+                    </h2>                
+                    <ul>
+                        <!--koristim padding da bi slika bila odmah pored teksta-->
+                        <li>
+                            <img class="timg2" src="../img/milos11.jpg" alt="sorry,image is broken" />
+                            Anne Hathaway - Gloria
+                        </li>
+                        <br />
+                        <li>
+                            <img class="timg2" src="../img/milos12.jpg" alt="sorry,image is broken" />
+                            Jason Sudeikis - Oscar
+                        </li>
+                        <br />
+                        <li>
+                            <img class="timg2" src="../img/milos13.jpg" alt="sorry,image is broken" />
+                            Austin Stowell	- Joel
+                        </li>
+                        <br />
+                        <li>
+                            <img class="timg2" src="../img/milos14.jpg" alt="sorry,image is broken" />
+                            Tim Blake Nelson - Garth
+                        </li>
+                        <br />
+                        <li>
+                            <img class="timg2" src="../img/milos15.jpg" alt="sorry,image is broken" />
+                            Dan Stevens - Tim
+                        </li>
+                        <br />
+                        <li>
+                            <img class="timg2" src="../img/milos16.png" alt="sorry,image is broken" />
+                            Hannah Cheramy	- Young Gloria
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <!-- / ovde se zavrsava tabela  -->
+        <!-- ovde pocinje main actors section -->
+        <div>
+        <h1 id="actors2">Main actors</h1>
+        <!--ovo je tabela za cards za glavne glumce-->
+        <table id="table3">
+            <tr>
+                <td>
+                    <div class="card">
+                        <img class="timg3" src="../img/card7.png" />
+                        <h1>
+                            Anne Hathaway
+                        </h1>
+                        <h6>
+                            Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea. Quo putent tritani ut, id eum deleniti definiebas, vis nullam habemus facilisi ex. Sed ne mundi consetetur. Cu numquam tractatos eos. Cum no nobis feugait principes. Ex sed laudem consulatu. Utroque eleifend splendide ad eos, et assum sonet duo. Vel elaboraret temporibus ex, veri summo repudiare no qui.
+                        </h6>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img class="timg3" src="../img/card6.jpg" />
+                        <h1>
+                            Jason Sudeikis
+                        </h1>
+                        <h6>Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea. Quo putent tritani ut, id eum deleniti definiebas, vis nullam habemus facilisi ex. Sed ne mundi consetetur. Cu numquam tractatos eos. Cum no nobis feugait principes. Ex sed laudem consulatu. Utroque eleifend splendide ad eos, et assum sonet duo. Vel elaboraret temporibus ex, veri summo repudiare no q
+                        </h6>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img class="timg3" src="../img/card8.jpg" />
+                        <h1>
+                            Austin Stowell
+                        </h1>
+                        <h6>
+                            Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea. Quo putent tritani ut, id eum deleniti definiebas, vis nullam habemus facilisi ex. Sed ne mundi consetetur. Cu numquam tractatos eos. Cum no nobis feugait principes. Ex sed laudem consulatu. Utroque eleifend splendide ad eos, et assum sonet duo. Vel elaboraret temporibus ex, veri summo repudiare no q
+                        </h6>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img class="timg3" src="../img/card9.jpg" />
+                        <h1>
+                            Tim Blake Nelson
+                        </h1>
+                        <h6>
+                            Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea. Quo putent tritani ut, id eum deleniti definiebas, vis nullam habemus facilisi ex. Sed ne mundi consetetur. Cu numquam tractatos eos. Cum no nobis feugait principes. Ex sed laudem consulatu. Utroque eleifend splendide ad eos, et assum sonet duo. Vel elaboraret temporibus ex, veri summo repudiare no q
+                        </h6>
+                    </div>
+                </td>
+                <td>
+                    <div class="card">
+                        <img class="timg3" src="../img/card10.jpg" />
+                        <h1>
+                            Dan Stevens
+                        </h1>
+                        <h6>
+                            Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea. Quo putent tritani ut, id eum deleniti definiebas, vis nullam habemus facilisi ex. Sed ne mundi consetetur. Cu numquam tractatos eos. Cum no nobis feugait principes. Ex sed laudem consulatu. Utroque eleifend splendide ad eos, et assum sonet duo. Vel elaboraret temporibus ex, veri summo repudiare no q
+                        </h6>
+                    </div>
+                </td>
+            <tr>
+        </table>
+        </div>
+        <!-- /ovde se zavrsava tebala za glavne glumce -->
+        <!--/ovde se zatvara main actors section -->
+        <!--heading je u ovom slucaju naslov-->
+        <h1 id="movies">
+            The 12 best movies of 2017 so far
+        </h1>
+        <!--ovo je link koji je povezan sa projektor stranicom-->
+        <div id="linkp" title="Going to projektor file">
+            <a href="projektor.html">
+                There is the link, if you want to see our movies!
+            </a>
+        </div>
+        <!-- /ovde se zavrsava link koji je povezan sa projektor stranicom -->
+        <!-- ovde pocinje div koji ima paragraf -->
+        <div>
+        <!--paragraf koji se nalazi ispod linka-->
+        <p id="p1">
+            One idea to ultimately keep in mind, as you count down the best movies of the year with us, is that this list is theresult of math. Each staff writer put together a top 20 of their favorite movies of the year, contributing to an aggregate list based on points assigned according to where each film ranked. The goal was and has always been to provide an overview of staff tastes, however much individual lists differed. Which is to say: if you’re pissed or elated about anything being on here ornot being on here, then chances are at least one Paste Movies staff writer agrees with you.
+        </p>
+        </div>
+        <!-- / ovde se zavrsva div koji ima paragraf -->
+        <!-- ovde pocinje tabela sa filmovima -->
+        <div>
+        <table class="tabela1">
+                <tr>
+                    <th class="th1">
+                        Action
+                    </th>
+                    <th class="th1">
+                        Comedy
+                    </th>
+                    <th class="th1">
+                        Drama
+                    </th>
+                </tr>
+                <tr>
+                    <td class="td1">
+                        The Equalizer (2014)
+                    </td>
+                    <td class="td1">
+                        Dumb and Dumber
+                    </td>
+                    <td class="td1">
+                        Citizen Kane (1941)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1">
+                        Mad Max: Fury Road (2015)
+                    </td>
+                    <td class="td1">
+                        Monty Python and the Holy Grail
+                    </td>
+                    <td class="td1">
+                        Moonlight (2016)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1">
+                        Logan (2017)
+                    </td>
+                    <td class="td1">
+                        The Hangover
+                    </td>
+                    <td class="td1">
+                        All About Eve (1950)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td1">
+                        Black Panther (2018)
+                    </td>
+                    <td class="td1">
+                        The Big Lebowski
+                    </td>
+                    <td class="td1">
+                        Spotlight (2015)
+                    </td>
+                </tr>
+        </table>
+        </div>
+        <!-- ovde se zavrsava tabela sa filmovima -->
+        <h1 id="hb">
+            Register to see new movies
+        </h1>
+        <!--ovde pocinje forma-->
+        <div>
+            <form id="form">
+                <h3 id="hf">
+                    If you want to watch all our movies, please fill out form to became our gold member
+                </h3>
+                First name:<br />
+                <input type="text" name="firstname">
+                <br />
+                Last name:<br />
+                <input type="text" name"last name"><br>
+                <br /><br />
+                <input type="radio" name="gender" value="Male" checked>
+                Male
+                <br />
+                <input type="radio" name="gender" value="Female">
+                Female
+                <br />
+                <br /><br />
+                <h4>
+                    What are you interested in?
+                </h4>
+                <select name="cards">
+                <option value="Action">
+                    Action
+                </option>
+                <option value="Drama">
+                    Drama
+                </option>
+                <option value="Comedy">
+                    Comedy
+                </option>
+                <option value="Thriller">
+                    Thriller
+                </option>
+                </select>
+                <br /><br />
+                <input type="checkbox" name="Project" value="Project">
+                    Home
+                <br />
+                <input type="checkbox" name="Foreign" value="Unit">
+                    Foreign
+                <br />
+                <!--2 puta br stvara veci prostor izmedju elemenata-->
+                <br /><br />
+                <textarea id="textarea"name"message" placeholder="Additional note"></textarea>
+                <br /><br />
+                <!--submit je button a reset je input koji izgleda kao button, nema razlike na frontu, ima samo u kodu-->
+                <input type="submit" onclick="alert('Hello QA!')" value="Submit"> 
+                </input>
+                <input type="reset">
+                </input>
+                <p>
+                    <a id="pa" href="https://www.youtube.com"target="_blank">
+                        We support youtube
+                    </a>
+                </p>
+            </form>
+        </div>
+        <!--/ ovde se zavrsava form -->
+        <!-- Footer -->
+        <footer class="footer">
+            <small id="small">
+                Copyright &copy; QA Movies
+            </small>
+            <br />
+            <a class="footera" href="../index.html">
+                Home
+            </a> |
+            <a class="footera" href="sima.html">
+                Sima
+            </a> |
+            <a class="footera" href="toda.html">
+                Toda
+            </a> |
+            <a class="footera" href="dovla.html">
+                Vlada
+            </a> |
+            <a class="footera" href="miho.html">
+                Miho
+            </a> |
+            <a class="footera" href="milos.html">
+                Milos
+            </a> | 
+            <a class="footera" href="projektor.html">
+                Projektor
+            </a>
+        </footer>  
+        <!-- END FOOTER --> 
+    </body>
 </html>
