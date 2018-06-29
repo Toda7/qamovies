@@ -1,0 +1,175 @@
+body {
+    margin:0;
+    overflow-x: hidden;
+}
+.header {
+        display: block;
+        padding: 5px;
+        margin: 0px 0px 0px 0px; 
+        color: white;
+        background-color: black;
+        text-align: center;
+}
+    /*ovo je style za listu, koja izgleda kao navigation menu*/
+.nav { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+.navli {
+    float:left;
+}
+.ali {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+.ali:hover {
+    color: black
+}
+p {
+    float:right;
+}
+.tabela1 {
+    width: 100%;
+}
+.tabela1, .td1, .th1 {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+/*ovo je id za youtube iframe*/
+#youtube{
+    float: right;
+}
+iframe{
+    max-width: 100%;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+}
+h6 {
+    padding: 10px;
+}
+.imagelink {
+text-decoration: none;
+}
+#head {
+    font-size: 200%"
+}
+#headimg {
+    vertical-align: -25px
+}
+#linkprojektor {
+    color:black;
+    text-decoration: none;
+}
+#pimg {
+    padding: 10px
+}
+#pimg1 {
+    float: left; 
+    padding: 1px 40px 1px 1px;
+}
+#table {
+    width: 100%;
+}
+.timg{
+    padding: 0px 0px 0px 0px
+}
+/*h1 je nije zavrsen..*/
+#actors1 {
+    text-align: center
+}
+#table3 {
+    width: 100%; 
+    padding:10px 10px 10px 10px
+}
+.timg1 {
+    width:100%
+}
+#h12 { 
+    display: block; 
+    text-align: center;
+}
+#h1a {
+    color: black; text-decoration: none;
+}
+#par{
+    padding: 20px;
+}
+#pimg2 {
+    float: right;
+    padding: 10px 10px 10px 5px;
+}
+#table2 {
+    width: 100%;
+}
+.timg2 {
+    padding: 0px 0px 0px 0px;
+}
+#actors2 {
+    text-align: center;
+}
+#table3 {
+    width: 100%; 
+    padding: 10px 10px 10px 10px;
+}
+.timg3 {
+    width:100%
+}
+#movies {
+    text-align: center;
+}
+#linkp {
+    text-align: center
+}
+#p1{
+    padding: 15px
+}
+#hb{
+    text-align: center;
+}
+#form {
+    padding:20px; 
+    background-image: url(../img/milos4.jpg); 
+    background-size: cover;
+}
+#hf {
+    text-align: center; 
+    color: black; 
+    padding: 10px;
+}
+#textarea {
+    width:300px; 
+    height: 100px; 
+    display: block;
+}
+#pa {
+    color:black;
+    text-decoration: none;
+}
+.footer {
+    display: block; 
+    background-color: black; 
+    color: white; 
+    text-align: center; 
+    margin: 0px 0px 0px 0px;
+    padding: 20px 10px 20px 10px;
+}
+#small {
+    display: block; 
+    padding: 10px;
+    margin: 10px;
+}
+.footera {
+    color: white;
+}
+#h1linkp {
+    text-align: center;
+}
