@@ -10,7 +10,7 @@ body {
         background-color: black;
         text-align: center;
 }
-    /*ovo je style za listu, koja izgleda kao navigation menu*/
+/*ovo je style za listu, koja izgleda kao navigation menu*/
 .nav { 
     list-style-type: none;
     margin: 0;
