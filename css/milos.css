@@ -37,8 +37,12 @@ p {
     width: 100%;
 }
 .tabela1, .td1, .th1 {
-    border: 1px solid black;
+    border: 2px solid black;
     border-collapse: collapse;
+}
+.th1 {
+    height: 50px;
+    text-align: center;
 }
 /*ovo je id za youtube iframe*/
 #youtube{
@@ -89,8 +93,7 @@ text-decoration: none;
     text-shadow: 2px 1px grey;
 }
 #table3 {
-    width: 100%; 
-    padding:10px 10px 10px 10px
+    width: 100%;
 }
 .timg1 {
     width:100%
@@ -143,6 +146,7 @@ text-decoration: none;
     border: 5px solid gray;
     margin: 5px;
     line-height: 1.8;
+    text-align: center;
 }
 #hb {
     text-align: center;
