@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 
 <html>
-     <head>
-        <title>
-        Miho page
-    </title>
-<style>
+<head>
+        <title>Miho page</title>
+    <style>
     body {
         margin:0;
     }
@@ -43,11 +41,44 @@
             text-decoration: none;
         }
 
-</style>
+        #listag {
+            width:50%;
+            height:500px;
+            float:left;
+             background-color: grey;
+        }
+        /*lista glumaca*/
+        #listag2 {
+            text-align:center;
+            list-style-position:inside;
+        }
+        /*lista filmova*/
+        #tabelaf { 
+            width:50%; 
+            height:1023px;
+            float:right;
+            background-color: grey;
+        }
+        /*iframe*/
+        #iframed {
+            width:100%; 
+            height:500px;
+        }
+        #iframelevo {
+            width: 470;
+            height: 315; 
+            align: left;
+        }
+        #iframedesno {
+            width: 478;
+            height: 315;
+            align: right;
+        }
+    </style>
 </head>
 <body>
     <header class="header">
-            <h1 style="font-size: 200%">QA<a href="index.html"><img style="vertical-align: -25px"src="./photos/logo.png" alt="sorry, broken image"></a>Movies</h1></img>
+            <h1 style="font-size: 200%">QA<a href="index.html"><img style="vertical-align: -25px"src="../img/logo.png" alt="sorry, broken image"></a>Movies</h1></img>
     </header> 
     <div>
         <nav class="navigation">
@@ -80,59 +111,54 @@
     </div>
 
 <!-- iframe sa trailerima -->
-<div style="width:100%; height:500px;">
-    <h1 align="center"> Trailers </h1>
-<iframe width="470" height="315" align="left"
+    <div id="iframed">
+        <h1 align="center"> Trailers </h1>
+        <iframe id="iframelevo" 
         src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
-</iframe>
-
-<iframe width="478" height="315" align="center"
+        </iframe>
+        <iframe id="iframedesno" 
         src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
-</iframe>
+        </iframe>
 
-<iframe width="478" height="315" align="right"
-        src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
-</iframe>
-
-</div>
+    </div>
 
 <!-- lista glumaca -->
-<div style="width:50%; height:500px;float:left; background-color: grey">
+    <div id="listag">
     
-    <h1 align="center">Actors</h1>
+        <h1 align="center">Actors</h1>
 
-<ol style="text-align:center; list-style-position:inside;">
+        <ol id="listag2">
 
-    <li>Benedict Cumberbatch</li>
-    <li>Tom Hardy</li>
-    <li>Nicola Duffett</li>
-    <li>Edna Dore</li>
-    <li>Candis Nergaard</li>
-    <li>Joanna Maude</li>
-    <li>Trevor Sellers</li>
-    <li>Barbara Barnes</li>
-    <li>Hugh Armstrong</li>
-    <li>George Anton</li>
-    <li>Dominic Kemp</li>
-    <li>Shenagn Govan</li>
-    <li>Carolina Parker</li>
-    <li>Richard Cunt</li>
+            <li>Benedict Cumberbatch</li>
+            <li>Tom Hardy</li>
+            <li>Nicola Duffett</li>
+            <li>Edna Dore</li>
+            <li>Candis Nergaard</li>
+            <li>Joanna Maude</li>
+            <li>Trevor Sellers</li>
+            <li>Barbara Barnes</li>
+            <li>Hugh Armstrong</li>
+            <li>George Anton</li>
+            <li>Dominic Kemp</li>
+            <li>Shenagn Govan</li>
+            <li>Carolina Parker</li>
+            <li>Richard Cunt</li>
 
-</ol>
+        </ol>
 
-</div>
+    </div>
 
 <!-- tabela filmova  -->
-<div style="width:50%; height:1023px;float:right;background-color: grey">
+    <div id="tabelaf">
     
-<h1 align="center">According to IMDB</h1>
+        <h1 align="center">According to IMDB</h1>
 
-<table align="center">
+        <table align="center">
 
-    <tr>
+            <tr>
                 <th>MOVIE</th>
                 <th>YEAR</th>
-   </tr>
+            </tr>
             <tr>
                 <td>The Shawshank Redemption</td>
                 <td>1994</td>
@@ -169,74 +195,72 @@
                 
             </tr>
             <tr>
-                <td>The Lord of the Rings: The Return of the King</td>
-                <td>2003</td>
+                <td>Psyho</td>
+                <td>1960</td>
                 
             </tr>
             <tr>
-                <td>The Lord of the Rings: The Return of the King</td>
-                <td>2003</td>
+                <td>City Lignts</td>
+                <td>1931</td>
                 
             </tr>
             <tr>
-                <td>The Lord of the Rings: The Return of the King</td>
-                <td>2003</td>
+                <td>Casablanka</td>
+                <td>1942</td>
                 
             </tr>
             <tr>
-                <td>The Lord of the Rings: The Return of the King</td>
-                <td>2003</td>
+                <td>Modern Times</td>
+                <td>1936</td>
             </tr>
             <tr>
-                <td>The Lord of the Rings: The Return of the King</td>
-                <td>2003</td>
+                <td>Untouchable</td>
+                <td>2011</td>
                 
             </tr>
 
-</table>
+        </table>
 
-</div>
+    </div>
 
 
-<div style="width:100%; height:1000px; text-align:center; background-color:#ADD8E6">
-	<div>
-                        <h1 style"left: 100px">Your Comment</h1>
-                        <form style="padding: 0px 0px 0px 0px">
+    <div style="width:100%; height:1000px; text-align:center; background-color:#ADD8E6">
+	   <div>
+            <h1 style"left: 100px">Your Comment</h1>
+                <form style="padding: 0px 0px 0px 0px">
                             First Name:<br>
-                            <input type="text" name="firstname"><br>
-                            <br>
-                            Last Name:<br>
-                            <input type="text" name="lastname"><br>
+                        <input type="text" name="firstname"><br>
+                        <br>
+                        Last Name:<br>
+                        <input type="text" name="lastname"><br>
                             
-                            <br>
-                          
-                           Leave a Comment:<br>
-                            <textarea name="message" rows="10" cols="30"></textarea><br>
-                            <br>
-                            <input type="submit" value="Submit">
-                        </form>
-                    </div>
+                        <br>Leave a Comment:<br>
+                        <textarea name="message" rows="10" cols="30"></textarea><br>
+                        <br>
+                        <input type="submit" value="Submit">
+                </form>
+        </div>
 
-</div>
+    </div>
 
 
 <!-- clearfix -->
-<div style="clear: both; display: table"></div>
+    <div style="clear: both; display: table"></div>
 
 
 
      <!-- Footer -->
- <div class="footer" style="display: block; background-color: black; color: white; text-align: center; margin: 0px 0px 0px 0px ;padding: 10px 10px 20px 10px;">&nbsp;
-       <footer>Copyright &copy; QA Movies</footer>
-           <br>
-               <a style= "color: white;" href="index.html">Home </a> |
-               <a style= "color: white;" href="sima.html">Sima</a> |
-               <a style= "color: white;" href="toda.html">Toda</a> |
-               <a style= "color: white;" href="dovla.html">Vlada</a> |
-               <a style= "color: white;" href="miho.html">Miho</a> |
-               <a style= "color: white;" href="milos.html">Milos</a> |
+        <div class="footer" style="display: block; background-color: black; color: white; text-align: center; margin: 0px 0px 0px 0px ;padding: 10px 10px 20px 10px;">&nbsp;
+            <footer>Copyright &copy; QA Movies</footer>
+                <br>
+                    <a style= "color: white;" href="index.html">Home </a> |
+                    <a style= "color: white;" href="sima.html">Sima</a> |
+                    <a style= "color: white;" href="toda.html">Toda</a> |
+                    <a style= "color: white;" href="dovla.html">Vlada</a> |
+                    <a style= "color: white;" href="miho.html">Miho</a> |
+                    <a style= "color: white;" href="milos.html">Milos</a> |
            
-   </div>  
+        </div>  
 
 
 
