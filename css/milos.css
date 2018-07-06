@@ -89,6 +89,7 @@ text-decoration: none;
 }
 /*h1 je nije zavrsen..*/
 #actors1 {
+    padding: 50px 0;
     text-align: center;
     text-shadow: 2px 1px grey;
 }
@@ -99,14 +100,15 @@ text-decoration: none;
     width:100%
 }
 #h12 { 
+    padding: 50px 0;
     display: block; 
     text-align: center;
 }
 #h1a {
+    padding: 50px 0;
     color: black; 
     text-decoration: none;
     text-shadow: 2px 1px grey;
-
 }
 #par{
     padding: 20px;
@@ -123,6 +125,7 @@ text-decoration: none;
     padding: 0px 0px 0px 0px;
 }
 #actors2 {
+    padding: 70px 0;
     text-align: center;
     text-shadow: 2px 1px grey;
 }
@@ -134,6 +137,7 @@ text-decoration: none;
     width:100%
 }
 #movies {
+    padding: 70px 0;
     text-align: center;
     text-shadow: 2px 1px grey;
 }
@@ -150,6 +154,7 @@ text-decoration: none;
     border: 2px solid black;
 }
 #hb {
+    padding: 50px 0;
     text-align: center;
     text-shadow: 2px 1px grey;
 }
@@ -189,6 +194,7 @@ text-decoration: none;
     color: white;
 }
 #h1linkp {
+    padding: 30px 0;
     text-align: center;
     text-shadow: 2px 1px grey;
 }
