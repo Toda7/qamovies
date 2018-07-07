@@ -10,7 +10,7 @@ body {
         background-color: black;
         text-align: center;
 }
-    /*ovo je style za listu, koja izgleda kao navigation menu*/
+/*ovo je style za listu, koja izgleda kao navigation menu*/
 .nav { 
     list-style-type: none;
     margin: 0;
@@ -37,8 +37,12 @@ p {
     width: 100%;
 }
 .tabela1, .td1, .th1 {
-    border: 1px solid black;
+    border: 2px solid black;
     border-collapse: collapse;
+}
+.th1 {
+    height: 50px;
+    text-align: center;
 }
 /*ovo je id za youtube iframe*/
 #youtube{
@@ -70,7 +74,8 @@ text-decoration: none;
     text-decoration: none;
 }
 #pimg {
-    padding: 10px
+    padding: 10px;
+    line-height: 1.8;
 }
 #pimg1 {
     float: left; 
@@ -84,24 +89,30 @@ text-decoration: none;
 }
 /*h1 je nije zavrsen..*/
 #actors1 {
-    text-align: center
+    padding: 50px 0;
+    text-align: center;
+    text-shadow: 2px 1px grey;
 }
 #table3 {
-    width: 100%; 
-    padding:10px 10px 10px 10px
+    width: 100%;
 }
 .timg1 {
     width:100%
 }
 #h12 { 
+    padding: 50px 0;
     display: block; 
     text-align: center;
 }
 #h1a {
-    color: black; text-decoration: none;
+    padding: 50px 0;
+    color: black; 
+    text-decoration: none;
+    text-shadow: 2px 1px grey;
 }
 #par{
     padding: 20px;
+    line-height: 1.8;
 }
 #pimg2 {
     float: right;
@@ -114,7 +125,9 @@ text-decoration: none;
     padding: 0px 0px 0px 0px;
 }
 #actors2 {
+    padding: 70px 0;
     text-align: center;
+    text-shadow: 2px 1px grey;
 }
 #table3 {
     width: 100%; 
@@ -124,16 +137,37 @@ text-decoration: none;
     width:100%
 }
 #movies {
+    padding: 50px 0;
     text-align: center;
+    text-shadow: 2px 1px grey;
 }
-#linkp {
-    text-align: center
-}
-#p1{
-    padding: 15px
-}
-#hb{
+#linka {
     text-align: center;
+    background: grey;
+    width: 40%;
+    padding: 15px 0;
+    border: 2px solid black;
+    margin: auto;
+}
+#linka1 {
+    color: white;
+}
+#best {
+    margin: 10px 0px 0px 0px;
+ }
+#p1 {
+    background: grey;
+    color: white;
+    padding: 15px 15px;
+    max-width: 100%;
+    height: 80px;
+    overflow: scroll;
+    border: 2px solid black;
+}
+#hb {
+    padding: 50px 0;
+    text-align: center;
+    text-shadow: 2px 1px grey;
 }
 #form {
     padding:20px; 
@@ -171,5 +205,29 @@ text-decoration: none;
     color: white;
 }
 #h1linkp {
+    padding: 30px 0;
     text-align: center;
+    text-shadow: 2px 1px grey;
+}
+.names {
+    border: 1px solid black;
+    background-color: wheat;
+}
+#textarea {
+    background-color: wheat;
+}
+#tab {
+    margin: 15px 0px 15px 0;
+}
+.button {
+    background-color: gray;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
