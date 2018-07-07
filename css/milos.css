@@ -33,6 +33,9 @@ body {
 p {
     float:right;
 }
+#tab {
+    margin: 15px 0px 15px 0;
+}
 .tabela1 {
     width: 100%;
 }
@@ -137,13 +140,24 @@ text-decoration: none;
     width:100%
 }
 #movies {
-    padding: 70px 0;
+    padding: 50px 0;
     text-align: center;
     text-shadow: 2px 1px grey;
 }
-#linkp {
-    text-align: center
+#linka {
+    text-align: center;
+    background: grey;
+    width: 40%;
+    padding: 15px 0;
+    border: 2px solid black;
+    margin: auto;
 }
+#linka1 {
+    color: white;
+}
+#best {
+    margin: 10px 0px 0px 0px;
+ }
 #p1 {
     background: grey;
     color: white;
