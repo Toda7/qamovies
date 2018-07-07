@@ -10,7 +10,7 @@ body {
         background-color: black;
         text-align: center;
 }
-    /*ovo je style za listu, koja izgleda kao navigation menu*/
+/*ovo je style za listu, koja izgleda kao navigation menu*/
 .nav { 
     list-style-type: none;
     margin: 0;
@@ -92,7 +92,10 @@ text-decoration: none;
 }
 /*h1 je nije zavrsen..*/
 #actors1 {
+<<<<<<< HEAD
     padding: 50px 0;
+=======
+>>>>>>> 1e2243370f87556ce160b8e5672d67be5111f343
     text-align: center;
     text-shadow: 2px 1px grey;
 }
@@ -108,10 +111,17 @@ text-decoration: none;
     text-align: center;
 }
 #h1a {
+<<<<<<< HEAD
     padding: 50px 0;
     color: black; 
     text-decoration: none;
     text-shadow: 2px 1px grey;
+=======
+    color: black; 
+    text-decoration: none;
+    text-shadow: 2px 1px grey;
+
+>>>>>>> 1e2243370f87556ce160b8e5672d67be5111f343
 }
 #par{
     padding: 20px;
@@ -168,7 +178,10 @@ text-decoration: none;
     border: 2px solid black;
 }
 #hb {
+<<<<<<< HEAD
     padding: 50px 0;
+=======
+>>>>>>> 1e2243370f87556ce160b8e5672d67be5111f343
     text-align: center;
     text-shadow: 2px 1px grey;
 }
