@@ -94,7 +94,7 @@ text-decoration: none;
     padding: 1px 40px 1px 1px;
 }
 /* tabela za glumce fast f  */
-#table {
+.table {
     width: 100%;
 }
 /* timg su slike u tabeli */
@@ -268,11 +268,4 @@ text-decoration: none;
     font-size: 14px;
     margin: 4px 2px;
     cursor: pointer;
-}
-.fastc {
-    padding: 30px 0;
-    text-align: center;
-}
-.info {
-    padding: 30px;
 }
