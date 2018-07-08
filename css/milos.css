@@ -1,26 +1,27 @@
+/* ovo je skrpita za sakrivanje class i id u responsive */
 @media(max-width:967px){
-    #table2 {
-        display: block!important; 
-    }
-    #table3 {
-        display: none !important; 
-    }
-    .table {
-        display: none !important;
-    }
-    #actors1 {
-        display: none !important;
-    }
-    #actors2 {
-        display: none !important;
-    }
-    #youtube2 {
-        display: none !important;
-    }
-    #info {
-        display: none !important;
-    }
+#table2 {
+    display: block!important; 
 }
+#table3 {
+    display: none !important; 
+}
+.table {
+    display: none !important;
+}
+#actors1 {
+    display: none !important;
+}
+#actors2 {
+    display: none !important;
+}
+#youtube2 {
+    display: none !important;
+}
+#info {
+    display: none !important;
+}
+/* /ovde se zavrsava responsive */
 body {
     margin:0;
     overflow-x: hidden;
