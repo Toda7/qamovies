@@ -1,4 +1,26 @@
-
+@media(max-width:967px){
+    #table2 {
+        display: block!important; 
+    }
+    #table3 {
+        display: none !important; 
+    }
+    .table {
+        display: none !important;
+    }
+    #actors1 {
+        display: none !important;
+    }
+    #actors2 {
+        display: none !important;
+    }
+    #youtube2 {
+        display: none !important;
+    }
+    #info {
+        display: none !important;
+    }
+}
 body {
     margin:0;
     overflow-x: hidden;
@@ -92,6 +114,7 @@ text-decoration: none;
 #pimg1 {
     float: left; 
     padding: 1px 40px 1px 1px;
+    max-width: 100%;
 }
 /* tabela za glumce fast f  */
 .table {
@@ -109,7 +132,7 @@ text-decoration: none;
 }
 /* ovo je tabela za colossal */
 #table3 {
-    width: 100%;
+    max-width: 100%;
 }
 /* timg3 je za slike u tabeli */
 .timg1 {
@@ -134,6 +157,7 @@ text-decoration: none;
 }
 /* pimg2 je slika u paragrafu */
 #pimg2 {
+    max-width: 100%;
     float: right;
     padding: 10px 10px 10px 5px;
 }
