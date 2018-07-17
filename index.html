@@ -1,147 +1,138 @@
 <!DOCTYPE html>
 <html>
-<head><title>Home page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-    body {
-        margin:0;
-    }
-    .header {
-        display: block;
-        padding: 5px;
-        margin: 0px 0px 0px 0px; 
-        color: white;
-        background-color: black;
-        clear: left;
-        text-align: center;
-    }
-        .img-responsive {
-        max-width: 100%;
-        height: auto;
-
-    }
-    /*ovo je style za listu, koja izgleda kao navigation menu, napravio sam komentar jer ga ne koristimo*/
-    /* ul { 
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333333;
-
-    li {
-        float:left;
-    }
-    li a {
-        display: block;
-        color: white;
-        padding: 16px;
-        text-decoration: none;
-    }
-    a:hover {
-        color: black
-    } */
-</style>
-</head>
-<body>
-    <header class="header">
-        <h1 style="font-size: 200%">
-            QA
-            <a href="index.html">
-                <img style="vertical-align: -25px"src="./img/logo.png" alt="sorry, broken image" />
-            </a>
-            Movies
+    <head>
+        <title>
+            Home page
+        </title>
+        <link rel="stylesheet" type="text/css" href="./css/index.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--heading koji se nalazi na vrhu stranice-->
+        <header class="header">
+                <h1 style="font-size: 200%">
+                    QA
+                    <a class="imageLink" href="./index.html">
+                        <img style="vertical-align: -25px" src="./img/logo.png" alt="sorry, broken image" border="0" />
+                    </a>
+                    Movies
+                </h1>
+            </header>  
+        <!--ovde pocinje navigation menu-->
+        <!--napravio sam komentar jer navigation menu trenutno ne koristimo*/-->
+        <!-- <div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projektor.html">Projektor</a></li>
+                    <li><a href="sima.html">Sima</a></li>
+                    <li> <a href="toda.html">Toda</a></li>
+                    <li><a href="dovla.html">Vlada</a></li>
+                    <li><a href="miho.html">Miho</a></li>
+                    <li><a href="milos.html">Milos</a></li>
+                </ul>   
+            </nav>
+        </div> -->
+        <!-- ovo su slike koje su linkovane na nase stranice i sluze umesto navigation menija -->
+        <table align=center>
+            <tr>
+                <td style="padding:15px">
+                    <ul>
+                        <div>
+                            <a class="img-responsive" href="./pages/sima.html">
+                                <img src="./img/ms.png" alt="sorry, broken image" />
+                            </a>
+                        </div>   
+                    </ul>
+                </td>
+                <td style="padding:15px">
+                    <ul>
+                        <div>
+                            <a class="img-responsive" href="./pages/toda.html">
+                                <img src="./img/mt.png" alt="sorry, broken image" />
+                            </a>
+                        </div>   
+                    </ul>
+                </td>
+                <td style="padding:15px;">
+                    <ul>
+                        <div>
+                            <a class="img-responsive" href="./pages/dovla.html">
+                                <img src="./img/md.png" alt="sorry, broken image" />
+                            </a>
+                        </div>   
+                    </ul>
+                </td>
+                <td style="padding:15px">
+                    <ul>
+                        <div>
+                            <a class="img-responsive" href="./pages/miho.html">
+                                <img src="./img/mm.png" alt="sorry, broken image" />
+                            </a>
+                        </div>   
+                    </ul>
+                </td>
+                <td style="padding:15px">
+                    <ul>
+                        <div>
+                            <a class="img-responsive" href="./pages/milos.html">
+                                <img src="./img/mm1.png" alt="sorry, broken image" />
+                            </a>
+                        </div>   
+                    </ul>
+                </td>
+                <td style="padding:15px">
+                    <ul>
+                        <div>
+                            <a class="img-responsive" href="./pages/projektor.html">
+                                <img src="./img/mp.png" alt="sorry, broken image" />
+                            </a>
+                        </div>   
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <!-- /ovde se zavrsavaju slike koje sluze kao navigation menu-->
+        <h1 style="text-align: center;">
+            Welcome
         </h1>
-    </header> 
-    <!--napravio sam komentar jer navigation menu trenutno ne koristimo*/-->
-    <!-- <div>
-        <nav class="navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projektor.html">Projektor</a></li>
-                <li><a href="sima.html">Sima</a></li>
-                <li> <a href="toda.html">Toda</a></li>
-                <li><a href="dovla.html">Vlada</a></li>
-                <li><a href="miho.html">Miho</a></li>
-                <li><a href="milos.html">Milos</a></li>
-            </ul>   
-        </nav>
-    </div> -->
-    <table align=center>
-        <tr>
-            <td style="padding:15px">
-                <ul>
-                    <div>
-                        <a class="img-responsive" href="./pages/sima.html">
-                            <img src="./img/ms.png" alt="sorry, broken image" />
-                        </a>
-                    </div>   
-                </ul>
-            </td>
-            <td style="padding:15px">
-                <ul>
-                    <div>
-                        <a class="img-responsive" href="./pages/toda.html">
-                            <img src="./img/mt.png" alt="sorry, broken image" />
-                        </a>
-                    </div>   
-                </ul>
-            </td>
-            <td style="padding:15px;">
-                <ul>
-                    <div>
-                        <a class="img-responsive" href="./pages/dovla.html">
-                            <img src="./img/md.png" alt="sorry, broken image" />
-                        </a>
-                    </div>   
-                </ul>
-            </td>
-            <td style="padding:15px">
-                <ul>
-                    <div>
-                        <a class="img-responsive" href="./pages/miho.html">
-                            <img src="./img/mm.png" alt="sorry, broken image" />
-                        </a>
-                    </div>   
-                </ul>
-            </td>
-            <td style="padding:15px">
-                <ul>
-                    <div>
-                        <a class="img-responsive" href="./pages/milos.html">
-                            <img src="./img/mm1.png" alt="sorry, broken image" />
-                        </a>
-                    </div>   
-                </ul>
-            </td>
-            <td style="padding:15px">
-                <ul>
-                    <div>
-                        <a class="img-responsive" href="./pages/projektor.html">
-                            <img src="./img/mp.png" alt="sorry, broken image" />
-                        </a>
-                    </div>   
-                </ul>
-            </td>
-        </tr>
-    </table>
-    <h1 style="text-align: center;">Welcome</h1>
-    <h3 style="text-align: center; padding: 30px">Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.<br />Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.<br />Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.</h3>
-    <h1 style="text-align: center; margin-top: 60px">About</h1>
-    <p style="text-align: center; padding: 30px">Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.
-            Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.
-            Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.</p>
-    <!-- Footer -->
-    <footer class="footer" style="display: block; background-color: black; color: white; text-align: center; margin: 0px 0px 0px 0px ;padding: 20px 10px 20px 10px;">
-        <small style="display: block; padding: 10px">Copyright &copy; QA Movies</small>
-        <br />
-        <a style= "color: white;" href="index.html">Home </a> |
-        <a style= "color: white;" href="./pages/sima.html">Sima</a> |
-        <a style= "color: white;" href="./pages/toda.html">Toda</a> |
-        <a style= "color: white;" href="./pages/dovla.html">Vlada</a> |
-        <a style= "color: white;" href="./pages/miho.html">Miho</a> |
-        <a style= "color: white;" href="./pages/milos.html">Milos</a>   
-    </footer>  
-    <!-- END FOOTER -->
-
+        <h3 class="heading-index"style="text-align: center; padding: 30px">
+            Lorem ipsum dolor sit amet, eu iusto deserunt hass. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.<br />Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.<br />Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.
+        </h3>
+        <h1 style="text-align: center; margin-top: 60px">
+            About
+        </h1>
+        <p style="text-align: center; padding: 30px">
+            Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.Lorem ipsum dolor sit amet, eu iusto deserunt has. In postulant conclusionemque pri, id duo oporteat apeirian, est nulla vidisse intellegat eu. Habemus deserunt democritum sed cu, vix sumo vide harum ex, in vocibus legendos mel. Te facilis accusam mea.
+        </p>
+        <!-- Footer -->
+        <footer class="footer">
+            <small id="small">
+                Copyright &copy; QA Movies
+            </small>
+            <br />
+            <a class="footera" href="index.html">
+                Home
+            </a> |
+            <a class="footera" href="./pages/sima.html">
+                Sima
+            </a> |
+            <a class="footera" href="./pages/toda.html">
+                Toda
+            </a> |
+            <a class="footera" href="./pages/dovla.html">
+                Vlada
+            </a> |
+            <a class="footera" href="./pages/miho.html">
+                Miho
+            </a> |
+            <a class="footera" href="./pages/milos.html">
+                Milos
+            </a> | 
+            <a class="footera" href="./pages/projektor.html">
+                Projektor
+            </a>
+        </footer>  
+        <!-- END FOOTER --> 
     </body>
 </html>
