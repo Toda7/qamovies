@@ -270,6 +270,9 @@ text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
 }
+.button:hover {
+    color: rgb(94, 58, 5);
+}
 /* ovo je skrpita za sakrivanje class i id u responsive */
 @media(max-width:967px){
     #table2 {
