@@ -1,0 +1,98 @@
+
+body {
+    margin: 0;
+}
+.header {
+    display: block;
+    padding: 5px;
+    margin: 0px 0px 0px 0px; 
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+#head {
+    font-size: 200%;
+}
+.imagelink {
+    text-decoration: none;
+}
+    /*ovo je style za listu, koja izgleda kao navigation menu*/
+.nav { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+.navli {
+    float:left;
+}
+.ali {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+.ali:hover {
+    color: black
+}
+/*footer prelazi preko elemenata, jos je in progress, ako nadjes resenje JAVLJAJ*/
+#poster {
+    float: left;
+    padding: 30px;
+}
+#storyline {
+    float: right;
+    padding: 30px;
+    width: 640px;
+}
+.todaul {
+    list-style-type: none;
+}
+.todaa {
+    text-decoration: none;
+    display: block;
+}
+.actorspace {
+    padding: 30p;
+    margin-bottom: 70px;
+}
+.actordesc {
+    text-indent: 50px;
+    width: 640px;
+}
+.trailer {
+    float: right; 
+    padding: 30px; 
+    width: 640px;
+}
+#todaactors {
+    float: left;
+    padding: 30px;
+    width: 640px;
+}
+#similar {
+    float: right;
+    padding: 30px;
+    width: 640px;
+}
+.formtitle {
+    left: 100px;
+}
+.footer {
+    display: block; 
+    background-color: black; 
+    color: white; 
+    text-align: center; 
+    margin: 0px 0px 0px 0px;
+    padding: 10px 10px 20px 10px;
+}
+.footer_a {
+    color: white;
+}
+#small {
+    display: block;
+    padding: 10;
+    margin: 10;
+}
