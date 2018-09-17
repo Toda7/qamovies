@@ -14,8 +14,8 @@
             background-color: black;
             clear: left;
             text-align: center;
-        }
-        #nav { 
+    }
+    #nav { 
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -34,17 +34,9 @@
     nav a:hover {
         color: black
     }
-    p {
-        float:right;
-    }
-    img {
-        float: left;
-        max-width: 100%;
-        padding: 1px 40px 1px 1px;
-    }
     .tabela1, .td1, .th1 {
-        border: 1px solid black;
-        border-collapse: collapse;
+        border: 2px solid black;
+        border-collapse:collapse; text-align-last: center;
     }
     #youtube{
         float: right;
@@ -56,7 +48,7 @@
 </head>
 <body>
     <header class="header">
-            <h1 style="font-size: 200%">QA<a href="index.html"><img style="vertical-align: -25px"src="./photos/logo.png" alt="sorry, broken image"></a>Movies</h1></img>
+            <h1 style="font-size: 200%">QA<a href="../index.html"><img style="vertical-align: -25px"src="../img/logo.png" alt="sorry, broken image"></a>Movies</h1></img>
     </header> 
     <div>
         <nav class="navigation">
@@ -74,9 +66,9 @@
         <h1 style="text-align: center"><a style="color:black;text-decoration: none;"href="./projektor.html#dovla">RED SPARROW</a></h1>
     </div>
     <div> 
-        <p><img src="../img/red_sparrow.jpg" alt="sorry,image is broken">Ballerina Dominika Egorova is recruited to 'Sparrow School,' a Russian intelligence service where she is forced to use her body as a weapon. Her first mission, targeting a C.I.A. agent, threatens to unravel the security of both nations.</p>
+        <p><img style="float: left; padding: 1px 40px 1px 1px;" src="../img/red_sparrow.jpg" alt="sorry,image is broken">Ballerina Dominika Egorova is recruited to 'Sparrow School,' a Russian intelligence service where she is forced to use her body as a weapon. Her first mission, targeting a C.I.A. agent, threatens to unravel the security of both nations.</p>
     </div> 
-    <br><hr>
+    <br /><hr>
     <table style="width: 100%">
         <tr>
             <td id="info">
@@ -115,7 +107,7 @@
         <br>
         <h2>People who liked this also liked...</h2>
     <div>
-    <table class="tabela1" style="width: 100%">
+    <table class="tabela1" style="width: 50%">
             <tr>
                 <th class="th1">MOVIE</th>
                 <th class="th1">YEAR</th>
@@ -147,36 +139,39 @@
                 <td class="td1">6.3 of 10</td>
             </tr>
     </table>
-    <br>
-    <br><hr>
+    <br />
+    <br /><hr>
     </div>
     <h1 style="text-align: center">Your Impressions</h1>
     <div>
         <form style="padding:20px;">
             <input type="text" name="firstname" placeholder="First Name">
-            <br><br>
+            <br /><br />
             <input type="text" name"last name" placeholder="Last Name"><br>
-            <br><br>
+            <br />< /br>
             <input type="radio" name="gender" value="Male" checked>Male<br>
             <input type="radio" name="gender" value="Female">Female<br>
-            <br><br>
-            <br><br>
+            <br /><br />
+            <br /><br />
             <textarea name"message" placeholder="Impressions" style="width:300px; height: 100px;"></textarea>
-            <br><br>
+            <br /><br />
             <input type="submit" onclick="alert('Test Mode')" value="Submit">
         </form>
+        <p role="navigation" id="header">
+                <a href="#header"></a></p>
     </div>
-<br> 
- <div class="footer" style="display: block; background-color: black; color: white; text-align: center; margin: 0px 0px 0px 0px ;padding: 10px 10px 20px 10px;">&nbsp;
+<br />
+    <div class="footer" style="display: block; background-color: black; color: white; text-align: center; margin: 0px 0px 0px 0px ;padding: 10px 10px 20px 10px;">&nbsp;
        <footer>Copyright &copy; QA Movies</footer>
-           <br>
+           <br />
                <a style= "color: white;" href="../index.html">Home </a> |
                <a style= "color: white;" href="sima.html">Sima</a> |
                <a style= "color: white;" href="toda.html">Toda</a> |
                <a style= "color: white;" href="dovla.html">Vlada</a> |
                <a style= "color: white;" href="miho.html">Miho</a> |
                <a style= "color: white;" href="milos.html">Milos</a> |
+               <a style= "color: white;" href="projektor.html">Projektor</a> |
            
-   </div>  
+    </div>  
 </body>
 </html>

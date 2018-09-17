@@ -1,1 +1,62 @@
-readme
+body {
+    margin:0;
+}
+.header {
+    display: block;
+    padding: 5px;
+    margin: 0px 0px 0px 0px; 
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+.img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+.imageLink {
+    text-decoration: none;
+}
+.footer {
+    display: block; 
+    background-color: black; 
+    color: white; 
+    text-align: center; 
+    margin: 0px 0px 0px 0px;
+    padding: 20px 10px 20px 10px;
+}
+.footera {
+    color: white;
+}
+#small {
+    display: block; 
+    padding: 10px;
+}
+.heading-index {
+    -webkit-column-count: 3; /* ovo je za chrome i safari "webkit"*/
+    -moz-column-count: 3; /* ovo je za FF "moz" */
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+}
+/*ovo je style za listu, koja izgleda kao navigation menu, napravio sam komentar jer ga ne koristimo*/
+/* ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+
+li {
+    float:left;
+}
+li a {
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+a:hover {
+    color: black
+} */
