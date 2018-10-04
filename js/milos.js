@@ -1,5 +1,12 @@
+var p = "Please confirm your application"
 var c = "Congratulations, your application has been sent! Enjoy"
-function funkcija1(){
-    alert("Please confirm your application");
+var t = "Please try again"
+
+function funkcija1() {
+    alert(p);
+if (p) {
     alert(c);
+} else {
+    alert(t); 
+}
 }
