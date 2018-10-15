@@ -273,6 +273,10 @@ text-decoration: none;
 .button:hover {
     color: rgb(94, 58, 5);
 }
+/* ovo je text ispod forme */
+#jsbutton{
+    color: white;
+}
 /* ovo je skrpita za sakrivanje class i id u responsive */
 @media(max-width:967px){
     #table2 {

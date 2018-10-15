@@ -15,7 +15,7 @@
             <h1 id="head" >
                 QA
                 <a class="imagelink" href="../index.html">
-                    <img id="headimg" src="../img/logo.png" alt="sorry, broken image" border="0" />
+                    <img id="headimg" src="../img/logo.png" alt="sorry, broken image" border:0 />
                 </a>
                 Movies
             </h1>
@@ -427,15 +427,15 @@
         </h1>
         <!--ovde pocinje forma-->
         <div>
-            <form id="form">
+            <form id="form" method="post">
                 <h3 id="hf">
                     If you want to watch all our movies, please fill out form to became our gold member
                 </h3>
                 First name:<br />
-                <input class="names" type="text" name="firstname">
+                <input class="names" type="text" name="firstname" required>
                 <br />
                 Last name:<br />
-                <input class="names" type="text" name"last name"><br>
+                <input class="names" type="text" name="lastname" required><br>
                 <br /><br />
                 <input type="radio" name="gender" value="Male" checked>
                 Male
@@ -462,7 +462,7 @@
                 </option>
                 </select>
                 <br /><br />
-                <input type="checkbox" name="Project" value="Project">
+                <input type="checkbox" name="Project" value="Project" checked>
                     Home
                 <br />
                 <input type="checkbox" name="Foreign" value="Unit">
@@ -470,15 +470,14 @@
                 <br />
                 <!--2 puta br stvara veci prostor izmedju elemenata-->
                 <br /><br />
-                <textarea id="textarea"name"message" placeholder="Additional note"></textarea>
+                <textarea id="textarea" name="message" placeholder="Additional note"></textarea>
                 <br /><br />
                 <!--submit je button a reset je input koji izgleda kao button, nema razlike na frontu, ima samo u kodu-->
-                <input type="button" class="button" value="Submit" onclick=funkcija1()> 
-                </input>
-                <input type="reset" class="button">
-                </input>
+                <input type="submit" class="button" value="Submit" onclick=funkcija1()> 
+                <input type="reset" class="button" onclick=funkcija2()>
+                <h3 id=jsbutton ></h3>
                 <p>
-                    <a id="pa" href="https://www.youtube.com"target="_blank" >
+                    <a id="pa" href="https://www.youtube.com"target="_blank">
                         We support youtube
                     </a>
                 </p>
