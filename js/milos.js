@@ -24,3 +24,4 @@ function funkcija2 (){
 if (t);
     document.getElementById("jsbutton").innerHTML = d;
 }
+console.log("Milos tested nodejs on this page.");
