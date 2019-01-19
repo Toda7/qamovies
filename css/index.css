@@ -40,6 +40,9 @@ body {
     -moz-column-rule-style: solid; /* Firefox */
     column-rule-style: solid;
 }
+p{
+    text-align: right;
+}
 /*ovo je style za listu, koja izgleda kao navigation menu, napravio sam komentar jer ga ne koristimo*/
 /* ul { 
     list-style-type: none;
