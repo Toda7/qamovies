@@ -41,7 +41,7 @@ body {
     column-rule-style: solid;
 }
 p{
-    text-align: right;
+    text-align: center;
 }
 /*ovo je style za listu, koja izgleda kao navigation menu, napravio sam komentar jer ga ne koristimo*/
 /* ul { 
