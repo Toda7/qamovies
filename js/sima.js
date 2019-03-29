@@ -1,3 +1,0 @@
-function funkcija(){
-    alert("Congratulations!")
-}
