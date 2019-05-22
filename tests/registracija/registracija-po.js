@@ -1,4 +1,4 @@
-function landOnPage() {
+function landOnHomePage() {
     browser.get('https://qa.cbancnetwork.com'); 
 }
 
@@ -11,7 +11,7 @@ function checkJoinUrl() {
     browser.wait(EC.urlContains('https://qa.cbancnetwork.com/membership/join/'), 5000);
 }
 
-function enterEmail() {
+function enterNewEmail() {
     element(by.name('email')).sendKeys('pera2@hotmail.com');
 }
 
@@ -31,10 +31,10 @@ function submit() {
 }
 
 module.exports = {
-    landOnPage,
+    landOnHomePage,
     clickSignUp,
     checkJoinUrl,
-    enterEmail,
+    enterNewEmail,
     enterPass,
     confirmPass,
     submit

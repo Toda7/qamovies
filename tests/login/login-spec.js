@@ -8,7 +8,7 @@ beforeAll(function(){
 });
 
     it('Dolazak na stranu', function(){
-        register.landOnPage();
+        register.landOnHomePage();
     });
 
     it('Sign in', function(){
