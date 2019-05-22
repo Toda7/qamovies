@@ -11,9 +11,9 @@ exports.config = {
  seleniumAddress: 'http://localhost:4444/wd/hub',
 
  suites: {
-  opt: [
-    './todo-spec.js',
-  ],
+  // opt: [
+  //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluzi nicemu. to je samo primer)
+  // ],
 
   registracija: [
     './registracija/registracija-spec.js',
