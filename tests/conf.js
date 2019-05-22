@@ -23,6 +23,10 @@ exports.config = {
     './login/login-spec.js',
   ],
 
+  home: [
+    './home/home-spec.js',
+  ],
+  
  },
  capabilities: {
    browserName: 'chrome',
