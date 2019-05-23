@@ -21,6 +21,12 @@ beforeAll(function(){
     it('Provera lendwell linka', function(){
         lendwell.checkLendwell();
     }); 
+    it('Provera da li se ucitao page title', function(){
+        lendwell.checkLendwellPageTitle();
+    });
+    it('Provera da li se ucitala forma', function(){
+        lendwell.checkForm();
+    });
 
     afterAll(function(){
         browser.waitForAngularEnabled(true); //stavlja se na kraj fajla

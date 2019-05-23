@@ -10,9 +10,21 @@ function clickOnLink() {
     var EC = protractor.ExpectedConditions;
     browser.wait(EC.urlContains('https://qa.cbancnetwork.com/lendwell'), 5000);
 }
+function checkLendwellPageTitle(){
+    var EC = protractor.ExpectedConditions;
+    //  Provera da li se ucitao page title
+    browser.wait(EC.titleIs('Lendwell Mortgage Settlement Services | CBANC'), 5000);
+}
+function checkForm(){
+    var EC = protractor.ExpectedConditions;
+    // Provera da li su se ucitali button for join
+    browser.wait(EC.textToBePresentInElement($('#request_form'), 'Contact us to learn more'), 5000);
+}
 module.exports = {
     clickOnDrop,
     clickOnLink,
     checkLendwell,
+    checkLendwellPageTitle,
+    checkForm,
  }
  
