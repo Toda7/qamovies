@@ -10,10 +10,13 @@ describe('Public home page', function(){
             register.landOnHomePage();
         });
         it('Provera da li se ucitao page title', function(){
-            home.checkTitle();
+            home.checkPageTitle();
         });
-        it('Provera da li su se ucitali button for join', function(){
+        it('Provera da li se ucitao button for join', function(){
             home.checkButton();
+        });
+        it('Provera da li se ucitao intercome', function(){
+            home.checkIntercom();
         });
 
     afterAll(function(){
