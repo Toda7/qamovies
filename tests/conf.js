@@ -26,6 +26,10 @@ exports.config = {
   home: [
     './home/home-spec.js',
   ],
+
+  lendwell: [
+    './lendwell/lendwell-spec.js',
+  ],
   
  },
  capabilities: {
