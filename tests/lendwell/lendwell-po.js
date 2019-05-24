@@ -18,12 +18,12 @@ function checkLendwellPageTitle(){
 }
 function checkForm(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li su se ucitala forma na strani
+    // Provera da li se ucitala forma na strani
     browser.wait(EC.textToBePresentInElement($('#request_form'), 'Contact us to learn more'), 5000);
 }
 function checkPSbox(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li su se ucitali button for join
+    // Provera da li se ucitao Integrated Products and Services box
     browser.wait(EC.textToBePresentInElement($('.middle_section'), 'Integrated Products and Services'), 5000);
     browser.sleep(2000);
 }    

@@ -15,7 +15,19 @@ describe('Public home page', function(){
         it('Provera da li se ucitao button for join', function(){
             home.checkButton();
         });
-        it('Provera da li se ucitao intercome', function(){
+        it('Provera da li se ucitao title on page', function(){
+            home.checkTitleOnPage();
+        });
+        it('Provera da li su se ucitali brojevi za downloads', function(){
+            home.checkNumbersOfDownloads();
+        });
+        it('Provera da li su se ucitali brojevi za answers', function(){
+            home.checkNumberOfAnswers();
+        });
+        it('Provera da li su se ucitali brojevi za financial institutions', function(){
+            home.checkNumbersOfFinancialInstitutions();
+        });
+        it('Provera da li se ucitao intercom', function(){
             home.checkIntercom();
         });
 

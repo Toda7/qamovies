@@ -7,7 +7,7 @@ beforeAll(function(){
     browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
 });   
 
-    it('Dolazak na stranu', function(){
+    it('Dolazak na home stranu', function(){
         register.landOnHomePage();
     });  
 
