@@ -1,5 +1,6 @@
 function landOnHomePage() {
     browser.get('https://qa.cbancnetwork.com'); 
+    browser.sleep(2000);
 }
 
 function clickSignUp() {
@@ -12,7 +13,7 @@ function checkJoinUrl() {
 }
 
 function enterNewEmail() {
-    element(by.name('email')).sendKeys('pera2@hotmail.com');
+    element(by.name('email')).sendKeys('9@hotmail.com');
 }
 
 function enterPass() {
@@ -29,6 +30,11 @@ function confirmPass() {
 function submit() {
     element(by.className('cta')).click();
 }
+function checkJoinSuccess(){
+    var EC = protractor.ExpectedConditions;
+    // Provera da li su ucitali brojevi za financial institutions
+    browser.wait(EC.textToBePresentInElement($('.page_content'), 'Welcome to CBANC Network!'), 5000);
+}
 
 module.exports = {
     landOnHomePage,
@@ -37,5 +43,6 @@ module.exports = {
     enterNewEmail,
     enterPass,
     confirmPass,
-    submit
+    submit,
+    checkJoinSuccess,
 }

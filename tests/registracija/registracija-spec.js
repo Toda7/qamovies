@@ -35,7 +35,10 @@ beforeAll(function(){
         register.submit();
         browser.sleep(2000);
     });
-
+    it('Provera da li je join uspesno prosao', function(){
+        register.checkJoinSuccess();
+        browser.sleep(2000);
+    });
     afterAll(function(){
         browser.waitForAngularEnabled(true); //stavlja se na kraj fajla
     });
