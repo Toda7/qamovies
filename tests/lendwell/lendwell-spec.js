@@ -27,6 +27,9 @@ beforeAll(function(){
     it('Provera da li se ucitala forma', function(){
         lendwell.checkForm();
     });
+    it('Provera da li se ucitao Integrated Products and Services box', function(){
+        lendwell.checkPSbox();
+    });
 
     afterAll(function(){
         browser.waitForAngularEnabled(true); //stavlja se na kraj fajla
