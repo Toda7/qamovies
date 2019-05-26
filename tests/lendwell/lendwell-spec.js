@@ -12,13 +12,13 @@ beforeAll(function(){
     });  
 
     it('Hover to open on drop menu', function(){
-        lendwell.clickOnDrop();
+        lendwell.HoverToOpenDrop();
     });  
 
     it('Klik na lendwell link iz drop menu', function(){
         lendwell.clickOnLink();
     }); 
-    it('Provera lendwell linka', function(){
+    it('Provera lendwell URL-a', function(){
         lendwell.checkLendwell();
     }); 
     it('Provera da li se ucitao page title', function(){

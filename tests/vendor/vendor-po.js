@@ -1,7 +1,9 @@
 function clickOnVendor() {
+    // Klik na Vendor link iz headera
     element(by.className('menu_item link_viewfinder')).click();
  }
  function checkVendorUrl() {
+    //  Provera da li se ucitao view_finder url
     var EC = protractor.ExpectedConditions;
     browser.wait(EC.urlContains('https://qa.cbancnetwork.com/view-finder'), 5000);
     browser.sleep(2000);
@@ -18,6 +20,7 @@ function checkButton(){
     browser.sleep(2000);
 }
 function checkIntercom(){
+    // Provera da li se ucitao intercom
     var interc = element(by.id('intercom-modal-container'));
     expect(interc.isDisplayed()).toBe(false);
 }
