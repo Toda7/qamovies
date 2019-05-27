@@ -1,13 +1,16 @@
-function clickOnDrop() {
-browser.actions().mouseMove(element(by.css('.menu_item.link_apps.has_submenu'))).perform();
-expect(element(by.css('.menu_item.link_apps.has_submenu')).isDisplayed()).toBeTruthy();
-browser.sleep(2000);
+function HoverToOpenDrop() {
+    // Hover to open on drop menu
+    browser.actions().mouseMove(element(by.css('.menu_item.link_apps.has_submenu'))).perform();
+    expect(element(by.css('.menu_item.link_apps.has_submenu')).isDisplayed()).toBeTruthy();
+    browser.sleep(2000);
   
  }
 function clickOnLink() {
+    //  Klik na lendwell link iz drop menu
     element(by.className('lendwell')).click();
  }
  function checkLendwell() {
+    // Provera lendwell URL-a
     var EC = protractor.ExpectedConditions;
     browser.wait(EC.urlContains('https://qa.cbancnetwork.com/lendwell'), 5000);
 }
@@ -29,7 +32,7 @@ function checkPSbox(){
 }    
 
 module.exports = {
-    clickOnDrop,
+    HoverToOpenDrop,
     clickOnLink,
     checkLendwell,
     checkLendwellPageTitle,
