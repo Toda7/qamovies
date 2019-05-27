@@ -5,7 +5,7 @@ function checkPageTitle(){
 }
 function checkButton(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li se ucitao button for join
+    // Provera da li se ucitao join button 
     browser.wait(EC.textToBePresentInElement($('#cta_join_1'), 'JOIN FOR FREE'), 5000);
     browser.sleep(2000);
 }

@@ -12,7 +12,7 @@ describe('Public home page', function(){
         it('Provera da li se ucitao page title', function(){
             home.checkPageTitle();
         });
-        it('Provera da li se ucitao button for join', function(){
+        it('Provera da li se ucitao join button', function(){
             home.checkButton();
         });
         it('Provera da li se ucitao title on page', function(){
