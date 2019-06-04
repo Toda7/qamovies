@@ -1,7 +1,8 @@
 var register = require('../registracija/registracija-po');
 var lendwell = require('./lendwell-po');
+var home = require('../home/home-po');
 
-describe('Klik na lendwell link iz drop meni', function(){
+describe('Public lendwell strana', function(){
 
 beforeAll(function(){
     browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
@@ -11,7 +12,7 @@ beforeAll(function(){
         register.landOnHomePage();
     });  
 
-    it('Hover to open on drop menu', function(){
+    it('Hover to open drop menu', function(){
         lendwell.HoverToOpenDrop();
     });  
 
@@ -27,12 +28,20 @@ beforeAll(function(){
         lendwell.checkLendwellPageTitle();
     });
 
-    it('Provera da li se ucitala forma', function(){
+    it('Provera da li se ucitala forma na strani', function(){
         lendwell.checkForm();
     });
     
     it('Provera da li se ucitao Integrated Products and Services box', function(){
         lendwell.checkPSbox();
+    });
+
+    it('Provera da li se ucitao footer', function(){
+        lendwell.checkFooter();
+    });
+
+    it('Provera da li se ucitao intercom', function(){
+        home.checkIntercom();
     });
 
     afterAll(function(){

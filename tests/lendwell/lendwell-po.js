@@ -1,5 +1,5 @@
 function HoverToOpenDrop() {
-    // Hover to open on drop menu
+    // Hover to open drop menu
     browser.actions().mouseMove(element(by.css('.menu_item.link_apps.has_submenu'))).perform();
     expect(element(by.css('.menu_item.link_apps.has_submenu')).isDisplayed()).toBeTruthy();
     browser.sleep(2000);
@@ -30,6 +30,12 @@ function checkPSbox(){
     browser.wait(EC.textToBePresentInElement($('.middle_section'), 'Integrated Products and Services'), 5000);
     browser.sleep(2000);
 }    
+function checkFooter(){
+    var EC = protractor.ExpectedConditions;
+    // Provera da li se ucitao footer
+    browser.wait(EC.textToBePresentInElement($('.legal'), '2008 - 2019 CBANC Network. All rights reserved.'), 5000);
+    browser.sleep(2000);
+}    
 
 module.exports = {
     HoverToOpenDrop,
@@ -38,4 +44,5 @@ module.exports = {
     checkLendwellPageTitle,
     checkForm,
     checkPSbox,
+    checkFooter,
  }
