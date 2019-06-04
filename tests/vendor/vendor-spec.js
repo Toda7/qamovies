@@ -10,18 +10,27 @@ beforeAll(function(){
     it('Dolazak na home stranu', function(){
         register.landOnHomePage();
     });
+
     it('Klik na Vendor link iz headera', function(){
         vendor.clickOnVendor();
     });
+
     it('Provera da li se ucitao view_finder url', function(){
         vendor.checkVendorUrl();
     });
+
     it('Provera da li se ucitao CBANC Sales & Marketing Solutions box', function(){
         vendor.checkCBANCbox();
     });
+
     it('Provera da li se ucitao Get Started Today button', function(){
         vendor.checkButton();
     });
+
+    it('Provera da li se ucitao footer', function(){
+        vendor.checkFooter();
+    });
+
     it('Provera da li se ucitao intercom', function(){
         vendor.checkIntercom();
     });

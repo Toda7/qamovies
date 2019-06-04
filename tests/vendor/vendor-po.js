@@ -19,6 +19,12 @@ function checkButton(){
     browser.wait(EC.textToBePresentInElement($('.top_cta'), 'GET STARTED TODAY'), 5000);
     browser.sleep(2000);
 }
+function checkFooter(){
+    var EC = protractor.ExpectedConditions;
+    // Provera da li se ucitao footer
+    browser.wait(EC.textToBePresentInElement($('.copy'), 'Copyright © 2008 - 2019 CBANC Network. All rights reserved.'), 5000);
+    browser.sleep(2000);
+}    
 function checkIntercom(){
     // Provera da li se ucitao intercom
     var interc = element(by.id('intercom-modal-container'));
@@ -31,4 +37,5 @@ module.exports = {
     checkCBANCbox,
     checkButton,
     checkIntercom,
+    checkFooter,
 }

@@ -1,5 +1,5 @@
 function clickOnLink() {
-    //  Klik na vendor_management link iz drop menu
+    //  Klik na CO link iz drop menu
     element(by.className('cielostar')).click();
  }
  function checkCoUrl() {
