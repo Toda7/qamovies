@@ -46,7 +46,11 @@ exports.config = {
   ],    
   co: [
     './co/co-spec.js',
-  ],    
+  ],  
+  footAbout: [
+    './footAbout/footer-spec.js',
+  ],   
+
  },
  capabilities: {
    browserName: 'chrome',
