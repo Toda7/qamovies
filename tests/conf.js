@@ -11,6 +11,7 @@ exports.config = {
  seleniumAddress: 'http://localhost:4444/wd/hub',
 
  suites: {
+  
   // opt: [
   //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluzi nicemu. to je samo primer)
   // ],
@@ -46,6 +47,9 @@ exports.config = {
   ],    
   co: [
     './co/co-spec.js',
+  ],    
+  questions: [
+    './questions/questions-spec.js',
   ],    
  },
  capabilities: {
