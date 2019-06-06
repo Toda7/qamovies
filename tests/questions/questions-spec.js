@@ -33,11 +33,13 @@ describe('Public "Get asnwers" strana', function(){
     it('Provera 10 article', function(){
         questions.counterOfArticle();
     });  
+    it('Da li se ucitala paginacija', function(){
+        questions.chekcPagination();
+    });
 
     it('Provera da li se ucitao footer', function(){
         lendwell.checkFooter();
     });
-    
 
     afterAll(function(){
         browser.waitForAngularEnabled(true); //stavlja se na kraj fajla

@@ -28,6 +28,11 @@ function counterOfArticle(){
     let list = element.all(by.css('.thread.card_thread'));
     expect(list.count()).toBe(10); 
 }
+function chekcPagination(){
+    var EC = protractor.ExpectedConditions;
+    // Da li se ucitala paginacija
+    browser.wait(EC.presenceOf($('.pagination')), 5000);
+}
 
  module.exports = {
     HoverToOpenDrop,
@@ -36,4 +41,5 @@ function counterOfArticle(){
     checkQuestionsPageTitle,
     checkButton,
     counterOfArticle,
+    chekcPagination,
 }
