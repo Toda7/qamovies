@@ -47,6 +47,18 @@ exports.config = {
   co: [
     './co/co-spec.js',
   ],    
+  topics: [
+    './topics/topics-spec.js',
+  ],
+  topicsearch: [
+    './topicSearch/topicSearch-spec.js',
+  ],
+  docss: [
+    './docLibSearch/docLibSearch-spec.js',
+  ],
+  doc: [
+    './docLib/docLib-spec.js',
+  ],  
  },
  capabilities: {
    browserName: 'chrome',
