@@ -11,6 +11,7 @@ exports.config = {
  seleniumAddress: 'http://localhost:4444/wd/hub',
 
  suites: {
+  
   // opt: [
   //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluzi nicemu. to je samo primer)
   // ],
@@ -46,7 +47,72 @@ exports.config = {
   ],    
   co: [
     './co/co-spec.js',
+    
+  ],  
+  upcoming: [
+    './upcoming/upcoming-spec.js',
+  ],  
+  ondemand: [
+    './ondemand/ondemand-spec.js',
+  ],
+  orders: [
+    './orders/orders-spec.js',
+  ],
+  accessplus: [
+    './accessplus/accessplus-spec.js',
+  ],
+  reserveseat: [
+    './reserveseat/reserveseat-spec.js',
   ],    
+
+  topics: [
+    './topics/topics-spec.js',
+  ],
+  topicsearch: [
+    './topicSearch/topicSearch-spec.js',
+  ],
+  docss: [
+    './docLibSearch/docLibSearch-spec.js',
+  ],
+  doc: [
+    './docLib/docLib-spec.js',
+  ],  
+
+  questions: [
+    './questions/questions-spec.js',
+  ],    
+  searchWebinars: [
+    './searchWebinars/searchWebinars-spec.js',
+  ],    
+  footAbout: [
+    './footAbout/footAbout-spec.js',
+  ],   
+  footFAQ: [
+    './footFAQ/footFAQ-spec.js',
+  ],  
+  footContact: [
+    './footContact/footContact-spec.js'
+  ],
+  footVendors: [
+    './footVendors/footVendors-spec.js'
+  ],
+  footCareers: [
+  './footCareers/footCareers-spec.js'
+  ],
+  footBlog: [
+  './footBlog/footBlog-spec.js'
+  ],
+  footPrivacy: [
+  './footPrivacy/footPrivacy-spec.js'
+  ],
+  footTerms: [
+  './footTerms/footTerms-spec.js'
+  ],
+  footCode: [
+  './footCode/footCode-spec.js'
+  ]
+
+
  },
  capabilities: {
    browserName: 'chrome',
