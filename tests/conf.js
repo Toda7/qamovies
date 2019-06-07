@@ -51,6 +51,9 @@ exports.config = {
   questions: [
     './questions/questions-spec.js',
   ],    
+  searchWebinars: [
+    './searchWebinars/searchWebinars-spec.js',
+  ],    
  },
  capabilities: {
    browserName: 'chrome',

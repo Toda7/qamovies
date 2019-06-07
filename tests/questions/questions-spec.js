@@ -22,6 +22,7 @@ describe('Public "Get asnwers" strana', function(){
 
     it('Provera Questions URL-a', function(){
         questions.checQuestionsURL();
+        
     });  
 
     it('Provera da li se ucitao page title', function(){
