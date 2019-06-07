@@ -1,7 +1,7 @@
 var register = require('../registracija/registracija-po');
-var footer = require('./footer-po')
+var footVendors = require('./footVendors-po')
 
-describe('Public Linkovi iz Footera', function(){
+describe('Public Vendors Link iz Footera', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
@@ -11,15 +11,13 @@ describe('Public Linkovi iz Footera', function(){
         register.landOnHomePage();
     });
 
-    it('Klik na About link', function(){
-        footer.clickOnLink();
+    it('Klik na Vendors link', function(){
+        footVendors.clickOnLink();
     });
 
-    it('Provera About URL-a', function(){
-        footer.checkAboutURL();
+    it('Provera Vendors URL-a', function(){
+        footVendors.checkVendorsURL();
     });
-
-    
 
     afterAll(function(){
         browser.waitForAngularEnabled(true); 
