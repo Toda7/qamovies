@@ -47,6 +47,22 @@ exports.config = {
   ],    
   co: [
     './co/co-spec.js',
+    
+  ],  
+  upcoming: [
+    './upcoming/upcoming-spec.js',
+  ],  
+  ondemand: [
+    './ondemand/ondemand-spec.js',
+  ],
+  orders: [
+    './orders/orders-spec.js',
+  ],
+  accessplus: [
+    './accessplus/accessplus-spec.js',
+  ],
+  reserveseat: [
+    './reserveseat/reserveseat-spec.js',
   ],    
 
   topics: [
@@ -95,6 +111,7 @@ exports.config = {
   footCode: [
   './footCode/footCode-spec.js'
   ]
+
 
  },
  capabilities: {
