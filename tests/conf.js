@@ -54,6 +54,33 @@ exports.config = {
   searchWebinars: [
     './searchWebinars/searchWebinars-spec.js',
   ],    
+  footAbout: [
+    './footAbout/footAbout-spec.js',
+  ],   
+  footFAQ: [
+    './footFAQ/footFAQ-spec.js',
+  ],  
+  footContact: [
+    './footContact/footContact-spec.js'
+  ],
+  footVendors: [
+    './footVendors/footVendors-spec.js'
+  ],
+  footCareers: [
+  './footCareers/footCareers-spec.js'
+  ],
+  footBlog: [
+  './footBlog/footBlog-spec.js'
+  ],
+  footPrivacy: [
+  './footPrivacy/footPrivacy-spec.js'
+  ],
+  footTerms: [
+  './footTerms/footTerms-spec.js'
+  ],
+  footCode: [
+  './footCode/footCode-spec.js'
+  ]
  },
  capabilities: {
    browserName: 'chrome',
