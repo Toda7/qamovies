@@ -1,7 +1,7 @@
 var register = require('../registracija/registracija-po');
 var lendwell = require('../lendwell/lendwell-po');
 var home = require('../home/home-po');
-var vm = require('./vm-po')
+var vm = require('./vendor_management-po')
 
 describe('Public vendor management strana', function(){
 

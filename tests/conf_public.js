@@ -27,42 +27,42 @@ exports.config = {
   // ],
 
   home: [
-    './home/home-spec.js',
+    './public/home/home-spec.js',
   ],
 
   lendwell: [
-    './lendwell/lendwell-spec.js',
+    './public/lendwell/lendwell-spec.js',
   ],
   vendor: [
-    './vendor/vendor-spec.js',
+    './public/vendor/vendor-spec.js',
   ],
   vm: [
-    './vm/vm-spec.js',
+    './public/vendor_management/vendor_management-spec.js',
   ],  
   ra: [
-    './ra/ra-spec.js',
+    './public/risk_assessment/risk_assessment-spec.js',
   ],
   pa: [
-    './pa/pa-spec.js',
+    './public/peer_analysis/peer_analysis-spec.js',
   ],    
-  co: [
-    './co/co-spec.js',
+  cielostar: [
+    './public/cielostar/cielostar-spec.js',
     
   ],  
   upcoming: [
-    './upcoming/upcoming-spec.js',
+    './public/upcoming/upcoming-spec.js',
   ],  
   ondemand: [
-    './ondemand/ondemand-spec.js',
+    './public/ondemand/ondemand-spec.js',
   ],
   orders: [
-    './orders/orders-spec.js',
+    './public/orders/orders-spec.js',
   ],
   accessplus: [
-    './accessplus/accessplus-spec.js',
+    './public/accessplus/accessplus-spec.js',
   ],
   reserveseat: [
-    './reserveseat/reserveseat-spec.js',
+    './public/reserveseat/reserveseat-spec.js',
   ],    
 
   topics: [
