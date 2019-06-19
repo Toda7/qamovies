@@ -1,7 +1,7 @@
 var register = require('../registracija/registracija-po');
 var lendwell = require('../lendwell/lendwell-po');
 var home = require('../home/home-po');
-var co = require('./co-po')
+var co = require('./cielostar-po')
 
 describe('Public cielostar strana', function(){
 

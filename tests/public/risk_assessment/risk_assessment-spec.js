@@ -1,6 +1,6 @@
 var register = require('../registracija/registracija-po');
 var lendwell = require('../lendwell/lendwell-po');
-var ra = require('./ra-po')
+var ra = require('./risk_assessment-po')
 
 describe('Public risk assessment strana', function(){
 
