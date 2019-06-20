@@ -20,18 +20,18 @@ exports.config = {
     './private/account/login/login-spec.js'
   ],
 
-  // ra_home: [
-  //   './private/ra_premium/ra_home/ra_home-spec.js'
-  // ],
+  ra_home: [
+    './private/ra_premium/ra_home/ra_home-spec.js'
+  ],
 
-  // ra_drop_menu: [
-  //   './private/ra_premium/ra_drop_menu/ra_drop_menu-spec.js'
-  // ],
+  ra_drop_menu: [
+    './private/ra_premium/ra_drop_menu/ra_drop_menu-spec.js'
+  ],
 
-  // ra_go_to_legacy_app: [
-  //   './private/ra_premium/ra_go_to_legacy_app/ra_go_to_legacy_app-spec.js'
-  // ],
-  
+  ra_go_to_legacy_app: [
+    './private/ra_premium/ra_go_to_legacy_app/ra_go_to_legacy_app-spec.js'
+  ],
+
   ra_create_inprogress_template: [
     './private/ra_premium/ra_create_inprogress_template/ra_create_inprogress_template-spec.js'
   ],
