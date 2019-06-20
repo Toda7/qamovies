@@ -24,10 +24,25 @@ exports.config = {
   //   './private/ra_premium/ra_home/ra_home-spec.js'
   // ],
 
-  ra_drop_menu: [
-    './private/ra_premium/ra_drop_menu/ra_drop_menu-spec.js'
-  ],
+  // ra_drop_menu: [
+  //   './private/ra_premium/ra_drop_menu/ra_drop_menu-spec.js'
+  // ],
+
+  // ra_go_to_legacy_app: [
+  //   './private/ra_premium/ra_go_to_legacy_app/ra_go_to_legacy_app-spec.js'
+  // ],
   
+  ra_create_inprogress_template: [
+    './private/ra_premium/ra_create_inprogress_template/ra_create_inprogress_template-spec.js'
+  ],
+
+  ra_edit_inprogress_template: [
+    './private/ra_premium/ra_edit_inprogress_template/ra_edit_inprogress_template-spec.js'
+  ],
+
+  ra_delete_inprogress_template: [
+    './private/ra_premium/ra_delete_inprogress_template/ra_delete_inprogress_template-spec.js'
+  ],
   
  },
  capabilities: {

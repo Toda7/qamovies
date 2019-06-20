@@ -2,7 +2,7 @@ var ra_home = require('../ra_home/ra_home-po');
 var ra_drop_menu = require('./ra_drop_menu-po');
 
 
-describe('Home risk_assessment premium page', function(){
+describe('Provera drop menija iz headera', function(){
 
 beforeAll(function(){
     browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element

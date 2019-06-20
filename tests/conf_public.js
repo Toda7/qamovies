@@ -18,7 +18,7 @@ exports.config = {
 
   // reg smo stavili u comment da ne bi okidali non stop emailove za novu registraciju(slobodno upaliti po potrebi)
   // registracija: [
-  //   './registracija/registracija-spec.js',
+  //   './public/registracija/registracija-spec.js',
   // ],
 
   // Test za log smo stavili u comment da bi mogli da pokrecemo ceo conf.js fajl (jer smo dobijali greske u terminalu zbog log in - slobodno upaliti po potrebi)
