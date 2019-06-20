@@ -16,9 +16,18 @@ exports.config = {
   //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluzi nicemu. to je samo primer)
   // ],
   
-    login: [
+  login: [
     './private/account/login/login-spec.js'
   ],
+
+  // ra_home: [
+  //   './private/ra_premium/ra_home/ra_home-spec.js'
+  // ],
+
+  ra_drop_menu: [
+    './private/ra_premium/ra_drop_menu/ra_drop_menu-spec.js'
+  ],
+  
   
  },
  capabilities: {
