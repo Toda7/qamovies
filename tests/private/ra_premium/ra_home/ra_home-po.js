@@ -46,7 +46,7 @@ function counterOfTemplates(){
 function checkTitleOfTemplate(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao title of template
-    browser.wait(EC.textToBePresentInElement($('.card-title'), 'Sima Template - 1'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-title'), 'START UP TEMPLATE'), 5000);
     browser.sleep(2000);
 }   
 function checkCreateButton(){

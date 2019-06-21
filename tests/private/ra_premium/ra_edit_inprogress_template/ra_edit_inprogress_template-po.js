@@ -10,17 +10,17 @@ function clickOnEditLink() {
 }
 function enterFirstEditTextInTheSecondAnswerField() {
     // Unosenje prvog text u polje
-    element(by.className('materialize-textarea')).sendKeys('This first edited text');
+    element(by.className('materialize-textarea')).sendKeys('This is first edited text');
     browser.sleep(2000);
 }
 function enterSecondEditTextInTheSecondAnswerField() {
     // Unosenje drugog text u polje
-    element(by.className('materialize-textarea')).sendKeys('This second edited text');
+    element(by.className('materialize-textarea')).sendKeys('This is second edited text');
     browser.sleep(2000);
 }
 function enterThirdEditTextInTheSecondAnswerField() {
     // Unosenje treceg text u polje
-    element(by.className('materialize-textarea')).sendKeys('This third edited text');
+    element(by.className('materialize-textarea')).sendKeys('This is third edited text');
     browser.sleep(2000);
 }
 

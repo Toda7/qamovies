@@ -1,6 +1,6 @@
 function clickStartNewLink() {
     //  Klik na lendwell link iz drop menu
-    element(by.xpath('//*[@id="root"]/div/div[2]/div/div[2]/div[2]/div[2]/div[2]/a')).click();
+    element(by.xpath('//*[@id="root"]/div/div[2]/div/div[2]/div[3]/div[2]/div[2]/a')).click();
     browser.sleep(2000);
  }
 function checkTitleOfTemplate(){
