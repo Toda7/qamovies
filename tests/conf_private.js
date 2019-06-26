@@ -43,6 +43,14 @@ exports.config = {
   ra_delete_inprogress_template: [
     './private/ra_premium/ra_delete_inprogress_template/ra_delete_inprogress_template-spec.js'
   ],
+
+  ra_create_complete_template: [
+    './private/ra_premium/ra_create_complete_template/ra_create_complete_template-spec.js'
+  ],
+
+  ra_edit_complete_template: [
+  './private/ra_premium/ra_edit_complete_template/ra_edit_complete_template-spec.js'
+  ],
   
  },
  capabilities: {

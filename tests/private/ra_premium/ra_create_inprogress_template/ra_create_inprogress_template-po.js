@@ -1,5 +1,5 @@
 function clickStartNewLink() {
-    //  Klik na lendwell link iz drop menu
+    //  Klik na Start New 
     element(by.xpath('//*[@id="root"]/div/div[2]/div/div[2]/div[3]/div[2]/div[2]/a')).click();
     browser.sleep(2000);
  }
@@ -8,14 +8,14 @@ function checkTitleOfTemplate(){
     // Provera da li se ucitao title of template
     browser.wait(EC.textToBePresentInElement($('.card-content.top_content'), 'Sima Template - 1 Risk Assessment'), 5000);
 }   
-function checkFirstTitleOfQuestions(){
+function checkFirstTitleOfQuestion(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitalo prvo pitanje
     browser.wait(EC.textToBePresentInElement($('.collection-item.inherent_risk'), 'Inherent Risk'), 5000);
 }   
 function enterTextInTheAnswerField() {
     // Unosenje texta u prvo answer polje
-    element(by.className('materialize-textarea')).sendKeys('Answer on first questions');
+    element(by.className('materialize-textarea')).sendKeys('Answer on first question');
     browser.sleep(2000);
 }
 function clickContinueLink() {
@@ -23,24 +23,24 @@ function clickContinueLink() {
     element(by.className('btn')).click();
     browser.sleep(2000);
  }
- function checkSecondTitleOfQuestions(){
+ function checkSecondTitleOfQuestion(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitalo drugo pitanje
     browser.wait(EC.textToBePresentInElement($('.collection-item.controls'), 'Controls'), 5000);
 }   
  function enterTextInTheSecondAnswerField() {
     // Unosenje texta u drugo answer polje
-    element(by.className('materialize-textarea')).sendKeys('Answer on second questions');
+    element(by.className('materialize-textarea')).sendKeys('Answer on second question');
     browser.sleep(2000);
 }
-function checkThirdTitleOfQuestions(){
+function checkThirdTitleOfQuestion(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitalo trece pitanje
     browser.wait(EC.textToBePresentInElement($('.collection-item.residual_risk'), 'Residual Risk & Mitigation Steps'), 5000);
 }   
 function enterTextInTheThirdAnswerField() {
     // Unosenje texta u trece answer polje
-    element(by.className('materialize-textarea')).sendKeys('Answer on third questions');
+    element(by.className('materialize-textarea')).sendKeys('Answer on third question');
     browser.sleep(2000);
 }
 function clickCloseLink() {
@@ -63,12 +63,12 @@ function checkTemplateInProgress(){
 module.exports = {
     clickStartNewLink,
     checkTitleOfTemplate,
-    checkFirstTitleOfQuestions,
+    checkFirstTitleOfQuestion,
     enterTextInTheAnswerField,
     clickContinueLink,
-    checkSecondTitleOfQuestions,
+    checkSecondTitleOfQuestion,
     enterTextInTheSecondAnswerField,
-    checkThirdTitleOfQuestions,
+    checkThirdTitleOfQuestion,
     enterTextInTheThirdAnswerField,
     clickCloseLink,
     checkInProgressURL,

@@ -3,9 +3,6 @@ var ra_delete_inprogress_template = require('../ra_delete_inprogress_template/ra
 var ra_create_inprogress_template = require('../ra_create_inprogress_template/ra_create_inprogress_template-po');
 var ra_edit_inprogress_template = require('./ra_edit_inprogress_template-po');
 
-
-
-
 describe('Edit in progress template', function(){
 
 it('Dolazak na home risk assesment premium stranu', function(){

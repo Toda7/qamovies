@@ -2,7 +2,7 @@ var ra_home = require('../ra_home/ra_home-po');
 var ra_create_inprogress_template = require('./ra_create_inprogress_template-po');
 
 
-describe('Crate in progress template', function(){
+describe('Create in progress template', function(){
 
 beforeAll(function(){
     browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
@@ -25,7 +25,7 @@ it('Provera da li se ucitao title of template', function(){
 });
 
 it('Provera da li se ucitalo prvo pitanje', function(){
-    ra_create_inprogress_template.checkFirstTitleOfQuestions();
+    ra_create_inprogress_template.checkFirstTitleOfQuestion();
 });
 
 it('Unosenje texta u answer polje', function(){
@@ -37,7 +37,7 @@ it('Klik na Continue button', function(){
 });
 
 it('Provera da li se ucitalo drugo pitanje', function(){
-    ra_create_inprogress_template.checkSecondTitleOfQuestions();
+    ra_create_inprogress_template.checkSecondTitleOfQuestion();
 });
 
 it('Unosenje texta u drugo answer polje', function(){
@@ -49,7 +49,7 @@ it('Klik na Continue button', function(){
 });
 
 it('Provera da li se ucitalo trece pitanje', function(){
-    ra_create_inprogress_template.checkSecondTitleOfQuestions();
+    ra_create_inprogress_template.checkSecondTitleOfQuestion();
 });
 
 it('Unosenje texta u trece answer polje', function(){
