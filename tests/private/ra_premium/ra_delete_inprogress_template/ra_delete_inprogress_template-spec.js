@@ -42,6 +42,10 @@ it('Potvrda brisanja InProgress template', function(){
     ra_delete_inprogress_template.confirmDelete();
 });
 
+it('Provera da li se pojavila successfully message', function(){
+    ra_delete_inprogress_template.checkSuccessfullyMessage();
+});
+
 it('Provera da li se pojavila "There are no assessments in progress" message ', function(){
     ra_delete_inprogress_template.checkNoAssessmentMessage();
 });

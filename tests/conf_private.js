@@ -51,6 +51,10 @@ exports.config = {
   ra_edit_complete_template: [
   './private/ra_premium/ra_edit_complete_template/ra_edit_complete_template-spec.js'
   ],
+
+  ra_delete_complete_template: [
+  './private/ra_premium/ra_delete_complete_template/ra_delete_complete_template-spec.js'
+  ],
   
  },
  capabilities: {

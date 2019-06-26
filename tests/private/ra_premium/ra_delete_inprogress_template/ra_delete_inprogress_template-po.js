@@ -21,11 +21,16 @@ function clickDeleteLink() {
  }
  function confirmDelete() {
     //  Potvrda brisanja InProgress template
-    element(by.xpath('//*[@id="root"]/div/div[3]/div[1]/div[2]/button[1]')).click();
+    element(by.buttonText('Delete')).click();
  }
+ function checkSuccessfullyMessage(){
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.textToBePresentInElement($('.success'), 'Assessment Sima Template - 1 was successfully deleted.'), 5000);
+    browser.sleep(2000);
+}   
+
  function checkNoAssessmentMessage(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li se pojavio template koji smo zapoceli - treba da bude na in progress strani
     browser.wait(EC.textToBePresentInElement($('.card-content'), 'There are no assessments in progress'), 5000);
     browser.sleep(2000);
 }   
@@ -36,5 +41,6 @@ module.exports = {
     clickToOpenDropDownMenu,
     clickDeleteLink,
     confirmDelete,
+    checkSuccessfullyMessage,
     checkNoAssessmentMessage,
 }
