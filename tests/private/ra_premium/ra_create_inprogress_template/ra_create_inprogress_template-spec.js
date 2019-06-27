@@ -1,6 +1,7 @@
 var ra_home = require('../ra_home/ra_home-po');
 var ra_create_inprogress_template = require('./ra_create_inprogress_template-po');
-
+var ra_delete_inprogress_template = require('../ra_delete_inprogress_template/ra_delete_inprogress_template-po');
+var ra_edit_inprogress_template = require('../ra_edit_inprogress_template/ra_edit_inprogress_template-po');
 
 describe('Create in progress template', function(){
 
@@ -24,7 +25,7 @@ it('Provera da li se ucitao title of template', function(){
     ra_create_inprogress_template.checkTitleOfTemplate();
 });
 
-it('Provera da li se ucitalo prvo pitanje', function(){
+it('Provera da li se ucitao title za prvo pitanje', function(){
     ra_create_inprogress_template.checkFirstTitleOfQuestion();
 });
 
@@ -36,7 +37,7 @@ it('Klik na Continue button', function(){
     ra_create_inprogress_template.clickContinueLink();
 });
 
-it('Provera da li se ucitalo drugo pitanje', function(){
+it('Provera da li se ucitao title za drugo pitanje', function(){
     ra_create_inprogress_template.checkSecondTitleOfQuestion();
 });
 
@@ -48,7 +49,7 @@ it('Klik na Continue button', function(){
     ra_create_inprogress_template.clickContinueLink();
 });
 
-it('Provera da li se ucitalo trece pitanje', function(){
+it('Provera da li se ucitao title za trece pitanje', function(){
     ra_create_inprogress_template.checkSecondTitleOfQuestion();
 });
 
@@ -71,6 +72,35 @@ it('Provera da li smo dobili InProgress stranu, provera URL-a', function(){
 it('Provera da li se pojavio template koji smo zapoceli - treba da bude na in progress strani', function(){
     ra_create_inprogress_template.checkTemplateInProgress();
 });
+
+it('Click to open drop down menu with edit and delete links', function(){
+    ra_delete_inprogress_template.clickToOpenDropDownMenu();
+});
+
+it('Click on Edit button from drop down menu', function(){
+    ra_edit_inprogress_template.clickOnEditLink();
+});
+
+it('Provera da li se prvi text koji smo uneli na create nalazi u formi', function(){
+    ra_create_inprogress_template.checkFirstAnswer();
+});
+
+it('Klik na Continue button', function(){
+    ra_create_inprogress_template.clickContinueLink();
+});
+
+it('Provera da li se drugi text koji smo uneli na create nalazi u formi', function(){
+    ra_create_inprogress_template.checkSecondAnswer();
+});
+
+it('Klik na Continue button', function(){
+    ra_create_inprogress_template.clickContinueLink();
+});
+
+it('Provera da li se treci text koji smo uneli na create nalazi u formi', function(){
+    ra_create_inprogress_template.checkThirdAnswer();
+});
+
 
 afterAll(function(){
     browser.waitForAngularEnabled(true); //stavlja se na kraj fajla

@@ -1,5 +1,5 @@
 function clickOnLink() {
-    //  Klik na lendwell link iz drop menu
+    //  Click on "Click here to go to legacy app." link
     element(by.className('card-content flow-text center-align')).click();
     browser.sleep(2000);
  }

@@ -89,7 +89,7 @@ it('Provera da li se ucitala icon za print', function(){
     ra_create_complete_template.checkPrintInHeader();
 });
 
-it('Provera da li se ucitao title on page', function(){
+it('Provera da li se ucitala print icon in header', function(){
     ra_create_complete_template.checkTitleOnPage();
 });
 
@@ -129,11 +129,11 @@ it('Provera da li se ucitao my first answer', function(){
     ra_create_complete_template.checkMyFirstAnswer();
 });
 
-it('Provera da li se ucitao my first answer', function(){
+it('Provera da li se ucitao my second answer', function(){
     ra_create_complete_template.checkMySecondAnswer();
 });
 
-it('Provera da li se ucitao my first answer', function(){
+it('Provera da li se ucitao my third answer', function(){
     ra_create_complete_template.checkMyThirdAnswer();
 });
 

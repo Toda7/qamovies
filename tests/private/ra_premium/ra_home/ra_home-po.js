@@ -15,7 +15,7 @@ function checkRaPageTitle(){
 }
 function checkRaDropMenu(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li se ucitao RA drop menu u headeru
+    // Provera da li se ucitao RA drop menu in headeru
     browser.wait(EC.presenceOf($('.app_selector.hide-on-small-only')), 5000);
 }
 function checkTitleInHeader(){
@@ -25,7 +25,7 @@ function checkTitleInHeader(){
 }    
 function checkAvatarInHeader(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li se ucitao avatar u headeru
+    // Provera da li se ucitao avatar in headeru
     browser.wait(EC.presenceOf($('.avatar')), 5000);
 }
 function checkMenuOnLeftSide(){

@@ -1,5 +1,6 @@
 function clickOnEditLink() {
     //  Klik na edit link iz drop down menu
+    // element(by.cssContainingText('li.collection-item','Edit')).click(); 
     element(by.xpath('//*[@id="root"]/div/div[2]/div/div[2]/ul/li[2]/div[3]/div[2]/div/ul/li[1]')).click();
     browser.sleep(2000);
  }

@@ -18,15 +18,15 @@ it('Provera da li se ucitao page title', function(){
     ra_home.checkRaPageTitle();
 });
 
-it('Provera da li se ucitao RA drop menu u headeru', function(){
+it('Provera da li se ucitao RA drop menu in headeru', function(){
     ra_home.checkRaDropMenu();
 });
 
-it('Provera da li se ucitao title u header', function(){
+it('Provera da li se ucitao title in header', function(){
     ra_home.checkTitleInHeader();
 });
 
-it('Provera da li se ucitao avatar u header', function(){
+it('Provera da li se ucitao avatar in header', function(){
     ra_home.checkAvatarInHeader();
 });
 

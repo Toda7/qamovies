@@ -36,10 +36,18 @@ exports.config = {
     './private/ra_premium/ra_create_inprogress_template/ra_create_inprogress_template-spec.js'
   ],
 
+  ra_unsaved_changes_message: [
+    './private/ra_premium/ra_unsaved_changes_message/ra_unsaved_changes_message-spec.js'
+    ],
+
+  ra_saved_changes_message: [
+    './private/ra_premium/ra_saved_changes_message/ra_saved_changes_message-spec.js'
+    ],
+    
   ra_edit_inprogress_template: [
     './private/ra_premium/ra_edit_inprogress_template/ra_edit_inprogress_template-spec.js'
   ],
-
+  
   ra_delete_inprogress_template: [
     './private/ra_premium/ra_delete_inprogress_template/ra_delete_inprogress_template-spec.js'
   ],
@@ -55,7 +63,7 @@ exports.config = {
   ra_delete_complete_template: [
   './private/ra_premium/ra_delete_complete_template/ra_delete_complete_template-spec.js'
   ],
-  
+
  },
  capabilities: {
    browserName: 'chrome',

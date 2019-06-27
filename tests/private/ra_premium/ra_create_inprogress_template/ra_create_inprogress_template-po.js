@@ -10,11 +10,11 @@ function checkTitleOfTemplate(){
 }   
 function checkFirstTitleOfQuestion(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li se ucitalo prvo pitanje
+    // Provera da li se ucitao title za prvo pitanje
     browser.wait(EC.textToBePresentInElement($('.collection-item.inherent_risk'), 'Inherent Risk'), 5000);
 }   
 function enterTextInTheAnswerField() {
-    // Unosenje texta u prvo answer polje
+    // Unosenje texta u answer polje
     element(by.className('materialize-textarea')).sendKeys('Answer on first question');
     browser.sleep(2000);
 }
@@ -25,7 +25,7 @@ function clickContinueLink() {
  }
  function checkSecondTitleOfQuestion(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li se ucitalo drugo pitanje
+    // Provera da li se ucitao title za drugo pitanje
     browser.wait(EC.textToBePresentInElement($('.collection-item.controls'), 'Controls'), 5000);
 }   
  function enterTextInTheSecondAnswerField() {
@@ -35,7 +35,7 @@ function clickContinueLink() {
 }
 function checkThirdTitleOfQuestion(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li se ucitalo trece pitanje
+    // Provera da li se ucitao title za trece pitanje
     browser.wait(EC.textToBePresentInElement($('.collection-item.residual_risk'), 'Residual Risk & Mitigation Steps'), 5000);
 }   
 function enterTextInTheThirdAnswerField() {
@@ -60,6 +60,27 @@ function checkTemplateInProgress(){
     browser.wait(EC.textToBePresentInElement($('.truncate'), 'Sima Template - 1'), 5000);
 }   
 
+function checkFirstAnswer() {
+    var EC = protractor.ExpectedConditions;
+    // Unosenje prvog text u polje
+    browser.wait(EC.textToBePresentInElement($('.input-field'), 'Answer on first question'), 5000);
+    browser.sleep(2000);
+}
+
+function checkSecondAnswer() {
+    var EC = protractor.ExpectedConditions;
+    // Unosenje prvog text u polje
+    browser.wait(EC.textToBePresentInElement($('.input-field'), 'Answer on second question'), 5000);
+    browser.sleep(2000);
+}
+
+function checkThirdAnswer() {
+    var EC = protractor.ExpectedConditions;
+    // Unosenje prvog text u polje
+    browser.wait(EC.textToBePresentInElement($('.input-field'), 'Answer on third question'), 5000);
+    browser.sleep(2000);
+}
+
 module.exports = {
     clickStartNewLink,
     checkTitleOfTemplate,
@@ -73,4 +94,7 @@ module.exports = {
     clickCloseLink,
     checkInProgressURL,
     checkTemplateInProgress,
+    checkFirstAnswer,
+    checkSecondAnswer,
+    checkThirdAnswer,
 }

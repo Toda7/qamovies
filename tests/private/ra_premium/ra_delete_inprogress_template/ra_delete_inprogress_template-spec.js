@@ -18,7 +18,7 @@ it('Provera da li se ucitao home URL sa IDem od premium accounta', function(){
     ra_home.checkRaHomeURL();
 });
 
-it('Klik InProgress link u side menu ', function(){
+it('Klik InProgress link u side menu', function(){
     ra_delete_inprogress_template.clickInProgressLink();
 });
 
@@ -30,7 +30,7 @@ it('Provera da li se pojavio template koji smo zapoceli u prethodnom testu', fun
     ra_create_inprogress_template.checkTemplateInProgress();
 });
 
-it('Click to open drop down menu', function(){
+it('Click to open drop down menu with the edit and delete links', function(){
     ra_delete_inprogress_template.clickToOpenDropDownMenu();
 });
 
@@ -46,7 +46,7 @@ it('Provera da li se pojavila successfully message', function(){
     ra_delete_inprogress_template.checkSuccessfullyMessage();
 });
 
-it('Provera da li se pojavila "There are no assessments in progress" message ', function(){
+it('Provera da li se pojavila "There are no assessments in progress" message', function(){
     ra_delete_inprogress_template.checkNoAssessmentMessage();
 });
 

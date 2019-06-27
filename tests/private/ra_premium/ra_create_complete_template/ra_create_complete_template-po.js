@@ -1,5 +1,5 @@
 function clickStartNewLink() {
-    //  Klik na lendwell link iz drop menu
+    // Klik na Start new button
     element(by.xpath('//*[@id="root"]/div/div[2]/div/div[2]/div[2]/div[2]/div[2]/a')).click();
     browser.sleep(2000);
  }
@@ -10,38 +10,41 @@ function clickStartNewLink() {
 }   
 function checkFirstTitleOfQuestion(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li se ucitalo prvo pitanje
+    // Provera da li se ucitao first title of question
     browser.wait(EC.textToBePresentInElement($('#factor_0'), 'Test Factor'), 5000);
 }   
 function clickOnOption() {
+    // In first question click on option
     element(by.xpath('//*[@id="factor_0"]/form/div/div[1]/div[1]/p[1]/label')).click(); 
     browser.sleep(2000);
  }
  function checkSecondTitleOfQuestion(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li se ucitalo prvo pitanje
+    // Provera da li se ucitao second title of question
     browser.wait(EC.textToBePresentInElement($('.collection-item.controls'), 'Controls'), 5000);
 }   
 function clickOnSecondOption() {
+    // In second question click on option
     element(by.xpath('//*[@id="factor_0"]/form/div/div[2]/div[1]/p[1]/label')).click(); 
     browser.sleep(2000);
  }
  function checkThirdTitleOfQuestion(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li se ucitalo prvo pitanje
+    // Provera da li se ucitao third title of question
     browser.wait(EC.textToBePresentInElement($('.collection-item.residual_risk'), 'Residual Risk & Mitigation Steps'), 5000);
 }   
 function clickOnThirdOption() {
+    // In third question click on option
     element(by.xpath('//*[@id="factor_0"]/form/div/div[3]/div[1]/p[3]/label')).click(); 
     browser.sleep(2000);
  }
  function checkProgress(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li se ucitalo prvo pitanje
+    // Provera da li je progress 100%
     browser.wait(EC.textToBePresentInElement($('.progress_text'), '100%'), 5000);
 }   
 function clickOnGenerateReport() {
-    //  Klik na Close link
+    //  Klik na Generate Report button
     element(by.className('view_report')).click();
     browser.sleep(2000);
  }
@@ -57,7 +60,7 @@ function checkTitleReportInHeader(){
 } 
 function checkPrintInHeader(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li se ucitao print icon in header
+    // Provera da li se ucitala print icon in header
     browser.wait(EC.textToBePresentInElement($('.right'), 'local_printshop'), 5000);
 } 
 function checkTitleOnPage(){
@@ -87,7 +90,7 @@ function checkRiskComponent() {
 } 
 function checkAverageResidual() {
     var EC = protractor.ExpectedConditions;
-    // Provera da li se ucitao Average Residual
+    // Provera da li se ucitao Average Residual Risk Rating
     browser.wait(EC.textToBePresentInElement($('.card'), '3.0'), 5000);
 } 
 function checkRiskLevel() {
@@ -112,12 +115,12 @@ function checkMyFirstAnswer() {
 }
 function checkMySecondAnswer() {
     var EC = protractor.ExpectedConditions;
-    // Provera da li se ucitao my first answer
+    // Provera da li se ucitao my second answer
     browser.wait(EC.textToBePresentInElement($('.card'), 'Answer on second question'), 5000);
 }
 function checkMyThirdAnswer() {
     var EC = protractor.ExpectedConditions;
-    // Provera da li se ucitao my first answer
+    // Provera da li se ucitao my third answer
     browser.wait(EC.textToBePresentInElement($('.card'), 'Answer on third question'), 5000);
 }
 function clickBackIcon() {
@@ -126,7 +129,7 @@ function clickBackIcon() {
     browser.sleep(2000);
  }
  function checkCompletedURL() {
-    // Provera da li se ucitao home URL sa IDem od premium accounta
+    // Provera da li se ucitao complete url'
     var EC = protractor.ExpectedConditions;
     browser.wait(EC.urlIs('https://qa.cbancnetwork.com/ra/b0fcf98f-a435-4c19-bae0-bb9b15bb94b4/completed'), 5000);
     browser.sleep(2000);
