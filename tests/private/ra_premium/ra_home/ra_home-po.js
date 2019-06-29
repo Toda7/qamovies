@@ -1,4 +1,5 @@
 function landOnRaHome() {
+    // dolazak na RA premium home page
     browser.get('https://qa.cbancnetwork.com/ra/home'); 
     browser.sleep(3000);
 }
