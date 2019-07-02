@@ -55,23 +55,18 @@ function deleteTextFromTheTitleField() {
     element(by.name('title')).clear();
     browser.sleep(2000);
 }
-function selectFunctional() {
-    // Unosenje treceg text u polje
-    element(by.cssContainingText('option', '')).click();
-    browser.sleep(2000);
-}
 function unselectFunctionalArea() {
-    // Unosenje treceg text u polje
+    // Unselect functional area 
     element(by.cssContainingText('option', '')).click();
     browser.sleep(2000);
 }
 function unselectFunctionalLevel() {
-    // Unosenje treceg text u polje
+    // Unselect functional level 
     $('[name="functional_level"]').element(by.cssContainingText('option', '')).click();
     browser.sleep(2000);
 }
 function clickOnNextButton() {
-    // Unosenje treceg text u polje
+    // Klik on NEXT button
     element(by.buttonText('Next')).click();
     browser.sleep(2000);
 }
@@ -118,12 +113,12 @@ function enterTextInTheJobTitleField() {
     browser.sleep(2000);
 }
 function selectFunctionalArea() {
-    // Unosenje treceg text u polje
+    // Select function area 
     element(by.cssContainingText('option', 'Technology')).click();
     browser.sleep(2000);
 }
 function selectFunctionalLevel() {
-    // Unosenje treceg text u polje
+    // Select function level
     $('[name="functional_level"]').element(by.cssContainingText('option', 'Employee')).click();
     browser.sleep(2000);
 }

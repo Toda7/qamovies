@@ -1,6 +1,6 @@
 var complete_your_profile = require('./complete_your_profile-po');
 
-describe('Prvi dumbleform', function(){
+describe('Prvi dumbleform - Complete your profile', function(){
 
 beforeAll(function(){
     browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
