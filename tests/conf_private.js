@@ -19,13 +19,17 @@ exports.config = {
   login: [
     './private/account/login/login-spec.js'
   ],
-
+  
   dumbleform_first_form: [
     './private/dumbleform/complete_your_profile/complete_your_profile-spec.js'
   ],
 
   dumbleform_second_form: [
     './private/dumbleform/follow_colleagues/follow_colleagues-spec.js'
+  ],
+
+  dumbleform_third_form: [
+    './private/dumbleform/vendor_mapping/vendor_mapping-spec.js'
   ],
   
   // ra_home: [

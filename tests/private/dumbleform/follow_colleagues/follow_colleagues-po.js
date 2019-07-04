@@ -39,7 +39,7 @@ function clickOnCheckbox() {
     browser.sleep(2000);
 }
 function clickOnNextButton() {
-    // Click to unselect checkbox
+    // Click to Next button
     element(by.buttonText('Next')).click();
     browser.sleep(2000);
 }
@@ -59,7 +59,7 @@ function checkInvitesThatWellSend(){
     browser.wait(EC.textToBePresentInElement($('.main.dumbleform_invite_colleagues h4'), '0'), 5000);
 }   
 function enterEmailInTheField() {
-    // Unosenje text u invite email field
+    // Unosenje email u invite email field
     element(by.name('email_of_colleague')).sendKeys('test@test.com');
     browser.sleep(2000);
 }
@@ -79,7 +79,7 @@ function enterTextInSearchField() {
     browser.sleep(2000);
 }
 function clickOnSearchButton() {
-    // Click to unselect checkbox
+    // Click to searcb button
     element(by.buttonText('Search')).click();
     browser.sleep(2000);
 }

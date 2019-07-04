@@ -64,7 +64,7 @@ it('Provera da li postoji vec uneti email u invite formu, trebalo bi da bude 0',
     follow_colleagues.checkInvitesThatWellSend();
 });
 
-it('Unosenje text u invite email field', function(){
+it('Unosenje email u invite email field', function(){
     follow_colleagues.enterEmailInTheField();
 });
 
@@ -102,7 +102,7 @@ it('Provera da li se pojavio Thank you title on page', function(){
 });
 
 it('Klik on Continue to CBANC button', function(){
-    follow_colleagues.clickOnGetStartedButton();
+    complete_your_profile.clickOnContinueToCBANCButton();
 });
 
 

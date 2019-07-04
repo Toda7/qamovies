@@ -1,5 +1,5 @@
 function landOnCompleteYourProfileDumbleformHomePage() {
-    // Dolazak na Complete Your Profile Dumbleform Home Page koja treba da nas redirektuje na first step in wizard 
+    // Dolazak na Dumbleform Home Page koja treba da nas redirektuje na Complete Your Profile first step in wizard
     browser.get('https://qa.cbancnetwork.com/dumbleform/24b2a16c-448f-11e6-81f3-7831c1baaeec/home'); 
     browser.sleep(3000);
 }
@@ -41,17 +41,17 @@ function checkInstructionsOnPage(){
     browser.wait(EC.textToBePresentInElement($('.instructions'), 'We use this info to help you connect with the most relevant content and people.'), 5000);
 }   
 function deleteTextFromTheFirstNameField() {
-    // Brisanje texa iz polja
+    // Brisanje text from the first name field
     element(by.name('first_name')).clear();
     browser.sleep(2000);
 }
 function deleteTextFromTheLastNameField() {
-    // Brisanje texa iz polja
+    // Brisanje text from the last name field
     element(by.name('last_name')).clear();
     browser.sleep(2000);
 }
 function deleteTextFromTheTitleField() {
-    // Brisanje texa iz polja
+    // Brisanje text from the title field
     element(by.name('title')).clear();
     browser.sleep(2000);
 }
@@ -98,7 +98,7 @@ function checkMessageErrorForEmptyFunctionalLevel(){
     browser.wait(EC.textToBePresentInElement($('#page_message'), 'Role Level is required'), 5000);
 }    
 function enterTextInTheFirstNameField() {
-    // Unosenje texta u drugo answer polje
+    // Unosenje text u first name field
     element(by.name('first_name')).sendKeys('Chicago Alberto1');
     browser.sleep(2000);
 }
@@ -129,34 +129,33 @@ function checkSubscribeToTopicsURL() {
 }
 function checkTitleOnSubscribeToTopicPage(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li se pojavila error poruka za Functional Level prazno polje
+    // Provera da li se ucitao Subscribe To Topics title
     browser.wait(EC.textToBePresentInElement($('.dumbleform'), 'Subscribe to Topics'), 5000);
 }    
 function checkSummaryOnSubscribeToTopicPage(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li se pojavila error poruka za Functional Level prazno polje
+    // Provera da li se ucitao summary ispod title on page
     browser.wait(EC.textToBePresentInElement($('.dumbleform'), 'Pick the topics that interest you most.'), 5000);
 }    
 function clickToUnselectTopic() {
-    // Unosenje treceg text u polje
+    // Klik to unselect selected topic
     element(by.css('main.dumbleform_subscribe_topics .topics_field .selected_topics li span')).click();
     // element(by.cssContainingText('selected_topics', 'Stress Testing')).click();
     browser.sleep(2000);
 }
 function checkMessageErrorForSelecAtLeast3Topics(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li se pojavila error poruka za Job Title  prazno polje
+    // Provera da li se pojavila error poruka for select at least 3 topics
     browser.wait(EC.textToBePresentInElement($('#page_message'), 'Please select at least 3 topics.'), 5000);
 }   
 function clickToSelectTopic() {
-    // Unosenje treceg text u polje
+    // Klik to select topic
     element(by.css('main.dumbleform_subscribe_topics .topics_field .topics_list .topics_results ul li span')).click();
-    // element(by.cssContainingText('selected_topics', 'Stress Testing')).click();
     browser.sleep(2000);
 }
 function checkMessageLooksGood(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li se pojavila error poruka za Job Title  prazno polje
+    // Provera da li se pojavila Looks Good! message
     browser.wait(EC.textToBePresentInElement($('#page_message'), 'Looks good!'), 5000);
 }   
 function checkUpdateYourProfilePicURL() {
@@ -166,15 +165,16 @@ function checkUpdateYourProfilePicURL() {
 }
 function checkTitleOnUpdateYourProfilePicPage(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li se pojavila error poruka za Functional Level prazno polje
+    // Provera da li se ucitao title on Update Your Profile Pic page
     browser.wait(EC.textToBePresentInElement($('.dumbleform'), 'Update Your Profile Pic'), 5000);
 }    
 function checkSummaryOnUpdateYourProfilePicPage(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li se pojavila error poruka za Functional Level prazno polje
+    // Provera da li se ucitao summary ispod title on page
     browser.wait(EC.textToBePresentInElement($('.dumbleform'), 'Add a profile pic to make your contributions stand out.'), 5000);
 }    
 function addPicture() {
+    // Upload myphoto to profile picture
     var path = require('path');
     var fileToUpload = './myphoto.jpg',
     absolutePath = path.resolve(__dirname, fileToUpload);
@@ -183,10 +183,14 @@ function addPicture() {
  }
  function checkThankYouMessage(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li se pojavila error poruka za Functional Level prazno polje
+    // Provera da li se pojavila Thank You message
     browser.wait(EC.textToBePresentInElement($('.dumbleform'), 'Thank You'), 5000);
 }    
-
+function clickOnContinueToCBANCButton() {
+    // Klik on Continue to CBANC button
+    element(by.className('cta')).click();
+    browser.sleep(2000);
+}
 module.exports = {
     landOnCompleteYourProfileDumbleformHomePage,
     checkCompleteYourProfileDumbleformURL,
@@ -224,4 +228,5 @@ module.exports = {
     checkSummaryOnUpdateYourProfilePicPage,
     addPicture,
     checkThankYouMessage,
+    clickOnContinueToCBANCButton,
 }

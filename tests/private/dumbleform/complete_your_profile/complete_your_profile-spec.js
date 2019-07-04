@@ -6,7 +6,7 @@ beforeAll(function(){
     browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
 });
 
-it('Dolazak na Complete Your Profile Dumbleform Home Page koja treba da nas redirektuje na first step in wizard', function(){
+it('Dolazak na Dumbleform Home Page koja treba da nas redirektuje na Complete Your Profile first step in wizard', function(){
     complete_your_profile.landOnCompleteYourProfileDumbleformHomePage();
 });
 
@@ -46,11 +46,11 @@ it('Brisanje text from the title field', function(){
     complete_your_profile.deleteTextFromTheTitleField();
 });
 
-it('Unselektovanje functional area option', function(){
+it('Unselect functional area', function(){
     complete_your_profile.unselectFunctionalArea();
 });
 
-it('Unselektovanje functional level option', function(){
+it('Unselect functional level', function(){
     complete_your_profile.unselectFunctionalLevel();
 });
 
@@ -90,11 +90,11 @@ it('Unosenje text u job title field', function(){
     complete_your_profile.enterTextInTheJobTitleField();
 });
 
-it('Selektovanje functional area option', function(){
+it('Select function area', function(){
     complete_your_profile.selectFunctionalArea();
 });
 
-it('Selektovanje functional level option', function(){
+it('Select function level', function(){
     complete_your_profile.selectFunctionalLevel();
 });
 
@@ -146,7 +146,7 @@ it('Klik to select topic', function(){
     complete_your_profile.clickToSelectTopic();
 });
 
-it('Provera da li se pojavila Looks Good! poruka', function(){
+it('Provera da li se pojavila Looks Good! message', function(){
     complete_your_profile.checkMessageLooksGood();
 });
 
@@ -176,6 +176,10 @@ it('Klik on Next button', function(){
 
 it('Provera da li se pojavila Thank You message', function(){
     complete_your_profile.checkThankYouMessage();
+});
+
+it('Klik on Continue to CBANC button', function(){
+    complete_your_profile.clickOnContinueToCBANCButton();
 });
 
 afterAll(function(){
