@@ -64,7 +64,7 @@ it('Klik on + Add another button', function(){
     vendor_mapping.clickOnAddAnotherButton();
 });
 
-it('Enter text in my category', function(){
+it('Enter text in my category field', function(){
     vendor_mapping.enterThirdTextInTheCatagoryField();
 });
 
