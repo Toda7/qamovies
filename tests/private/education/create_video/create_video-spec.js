@@ -1,7 +1,8 @@
-var create_outsourced_webinar = require('./create_outsourced_webinar-po.js');
 var create_hosted_webinar = require('../create_hosted_webinar/create_hosted_webinar-po.js');
+var create_video = require('./create_video-po.js');
 
-describe('Create outsourced webinar', function(){
+
+describe('Create video', function(){
 
 beforeAll(function(){
     browser.waitForAngularEnabled(false);
@@ -11,20 +12,20 @@ it('Dolazak na admin stranu', function(){
     create_hosted_webinar.landOnEducationAdminPage();
 });
 
-it('Klik on webinars link', function(){
-    create_hosted_webinar.clickOnWebinarsLink();
+it('Klik on video link', function(){
+    create_video.clickOnVideoLink();
 });
 
-it('Klik on create outsourced webinar button', function(){
-    create_outsourced_webinar.clickOnCreateHostedWebinarButton();
+it('Klik on create video button', function(){
+    create_video.clickOnCreateVideoButton();
 });
-
+ 
 it('Provera da li se ucitao title on page', function(){
-    create_outsourced_webinar.checkTitleOnPage();
+    create_video.checkTitleOnPage();
 });
 
 it('Unosenje texta u title field', function(){
-    create_outsourced_webinar.enterTextInTitleField();
+    create_video.enterTextInTitleField();
 });
 
 it('Unosenje texta u synopsis field', function(){
@@ -47,28 +48,24 @@ it('Unosenje text u price field', function(){
     create_hosted_webinar.enterTextInPriceField();
 });
 
-it('Setovaje start date', function(){
-    create_hosted_webinar.enterTextInStartDateField();
+it('Setovanje date', function(){
+    create_video.enterDateField();
 });
 
-it('Setovaje PM in start date', function(){
-    create_hosted_webinar.enterTextInStartDateField2();
+it('Setovanje date', function(){
+    create_video.enterDateField2();
 });
 
-it('Setovaje end date', function(){
-    create_hosted_webinar.enterTextInEndDateField();
+it('Unosenje video urla u video field', function(){
+    create_video.enterVideoUrlInVideoField();
 });
 
-it('Setovaje PM in end date', function(){
-    create_hosted_webinar.enterTextInEndDateField2();
+it('Unosenje text u Purchase Details field', function(){
+    create_hosted_webinar.enterTextInPurchaseDetailsField();
 });
 
-it('Unosenje texta u watch info field', function(){
-    create_outsourced_webinar.enterTextInWatchInfoField();
-});
-
-it('Klik on Save Webinar button', function(){
-    create_hosted_webinar.clickOnSaveWebinarButton();
+it('Klik on Save video button', function(){
+    create_video.clickOnVideoButton();
     browser.sleep(3000);
 });
 
