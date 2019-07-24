@@ -80,10 +80,14 @@ exports.config = {
     './private/education/login_as_admin/login_as_admin-spec.js'
   ],
 
-  create_hosted_webinar: [
-    './private/education/create_hosted_webinar/create_hosted_webinar-spec.js'
-  ],
+  // create_hosted_webinar: [
+  //   './private/education/create_hosted_webinar/create_hosted_webinar-spec.js'
+  // ],
   
+  create_outsourced_webinar: [
+    './private/education/create_outsourced_webinar/create_outsourced_webinar-spec.js'
+  ],
+
  },
  capabilities: {
    browserName: 'chrome',
