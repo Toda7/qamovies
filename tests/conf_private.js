@@ -80,21 +80,34 @@ exports.config = {
     './private/education/login_as_admin/login_as_admin-spec.js'
   ],
 
-  create_hosted_webinar: [
-    './private/education/create_hosted_webinar/create_hosted_webinar-spec.js'
-  ],
+  // create_hosted_webinar: [
+  //   './private/education/create_hosted_webinar/create_hosted_webinar-spec.js'
+  // ],
   
-  create_outsourced_webinar: [
-    './private/education/create_outsourced_webinar/create_outsourced_webinar-spec.js'
+  // create_outsourced_webinar: [
+  //   './private/education/create_outsourced_webinar/create_outsourced_webinar-spec.js'
+  // ],
+
+  // create_video: [
+  //   './private/education/create_video/create_video-spec.js'
+  // ],
+
+  // all_access: [
+  //   './private/education/all_access/all_access-spec.js'
+  // ],
+
+  // buying_hosted_webinar: [
+  //   './private/education/buying_hosted_webinar/buying_hosted_webinar-spec.js'
+  // ],
+
+  // buying_outsourced_webinar: [
+  //   './private/education/buying_outsourced_webinar/buying_outsourced_webinar-spec.js'
+  // ],
+
+  buying_video: [
+    './private/education/buying_video/buying_video-spec.js'
   ],
 
-  create_video: [
-    './private/education/create_video/create_video-spec.js'
-  ],
-
-  all_access: [
-    './private/education/all_access/all_access-spec.js'
-  ],
 
  },
  capabilities: {

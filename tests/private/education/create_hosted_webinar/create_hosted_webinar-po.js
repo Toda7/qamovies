@@ -16,7 +16,7 @@ function clickOnCreateHostedWebinarButton() {
     browser.sleep(2000);
  }
 
- function checkTitleOnPage(){
+function checkTitleOnPage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao title on page
     browser.wait(EC.textToBePresentInElement($('#admin_webinars_create_gtw'), 'Create Hosted Webinar'), 5000);
