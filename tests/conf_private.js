@@ -80,33 +80,54 @@ exports.config = {
     './private/education/login_as_admin/login_as_admin-spec.js'
   ],
 
-  // create_hosted_webinar: [
-  //   './private/education/create_hosted_webinar/create_hosted_webinar-spec.js'
-  // ],
+  create_hosted_webinar: [
+    './private/education/create_hosted_webinar/create_hosted_webinar-spec.js'
+  ],
   
-  // create_outsourced_webinar: [
-  //   './private/education/create_outsourced_webinar/create_outsourced_webinar-spec.js'
-  // ],
+  create_outsourced_webinar: [
+    './private/education/create_outsourced_webinar/create_outsourced_webinar-spec.js'
+  ],
 
-  // create_video: [
-  //   './private/education/create_video/create_video-spec.js'
-  // ],
+  create_video: [
+    './private/education/create_video/create_video-spec.js'
+  ],
 
-  // all_access: [
-  //   './private/education/all_access/all_access-spec.js'
-  // ],
+  all_access: [
+    './private/education/all_access/all_access-spec.js'
+  ],
 
-  // buying_hosted_webinar: [
-  //   './private/education/buying_hosted_webinar/buying_hosted_webinar-spec.js'
-  // ],
+  buying_hosted_webinar: [
+    './private/education/buying_hosted_webinar/buying_hosted_webinar-spec.js'
+  ],
 
-  // buying_outsourced_webinar: [
-  //   './private/education/buying_outsourced_webinar/buying_outsourced_webinar-spec.js'
-  // ],
+  buying_outsourced_webinar: [
+    './private/education/buying_outsourced_webinar/buying_outsourced_webinar-spec.js'
+  ],
 
   buying_video: [
     './private/education/buying_video/buying_video-spec.js'
   ],
+
+  log_out_as_admin: [
+    './private/education/log_out_as_admin/log_out_as_admin-spec.js'
+  ],
+
+  login: [
+    './private/account/login/login-spec.js'
+  ],
+
+  using_invoice_video: [
+    './private/education/using_invoice_video/using_invoice_video-spec.js'
+  ],
+  
+  using_invoice_outsourced: [
+    './private/education/using_invoice_outsourced/using_invoice_outsourced-spec.js'
+  ],
+
+  using_invoice_hosted: [
+    './private/education/using_invoice_hosted/using_invoice_hosted-spec.js'
+  ],
+
 
 
  },
