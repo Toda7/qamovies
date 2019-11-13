@@ -1,7 +1,7 @@
 function clickOnTBDLink() {
     //  Klik na complete link from side menu
     element(by.partialLinkText('TBD')).click();
-    browser.sleep(2000);
+    browser.sleep(4000);
  }
  
  function clickOnVendorLink() {

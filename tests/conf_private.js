@@ -20,69 +20,97 @@ exports.config = {
     './private/account/login/login-spec.js'
   ],
 
-  // vm_add_vendor: [
-  //   './private/vm/vm_add_vendor/vm_add_vendor-spec.js'
-  // ],
+  vm_add_vendor: [
+    './private/vm/vm_add_vendor/vm_add_vendor-spec.js'
+  ],
 
-  // vm_add_unverified_vendor: [
-  //   './private/vm/vm_add_unverified_vendor/vm_add_unverified_vendor-spec.js'
-  // ],
+  vm_add_unverified_vendor: [
+    './private/vm/vm_add_unverified_vendor/vm_add_unverified_vendor-spec.js'
+  ],
 
-  // vm_upload_document: [
-  //   './private/vm/vm_upload_document/vm_upload_document-spec.js'
-  // ],
+  vm_upload_document: [
+    './private/vm/vm_upload_document/vm_upload_document-spec.js'
+  ],
 
-  // vm_add_task: [
-  //   './private/vm/vm_add_task/vm_add_task-spec.js'
-  // ],
+  vm_add_task: [
+    './private/vm/vm_add_task/vm_add_task-spec.js'
+  ],
 
-  // vm_delete_doc: [
-  //   './private/vm/vm_delete_doc/vm_delete_doc-spec.js'
-  // ],
+  vm_edit_task: [
+    './private/vm/vm_edit_task/vm_edit_task-spec.js'
+  ],
 
-  // ra_home: [
-  //   './private/ra_premium/ra_home/ra_home-spec.js'
-  // ],
+  vm_delete_task: [
+    './private/vm/vm_delete_task/vm_delete_task-spec.js'
+  ],
 
-  // ra_drop_menu: [
-  //   './private/ra_premium/ra_drop_menu/ra_drop_menu-spec.js'
-  // ],
+  vm_delete_doc: [
+    './private/vm/vm_delete_doc/vm_delete_doc-spec.js'
+  ],
 
-  // ra_go_to_legacy_app: [
-  //   './private/ra_premium/ra_go_to_legacy_app/ra_go_to_legacy_app-spec.js'
-  // ],
+  vm_report: [
+    './private/vm/vm_report/vm_report-spec.js'
+  ],
 
-  // ra_create_inprogress_template: [
-  //   './private/ra_premium/ra_create_inprogress_template/ra_create_inprogress_template-spec.js'
-  // ],
+  vm_add_user: [
+    './private/vm/vm_add_user/vm_add_user-spec.js'
+  ],
 
-  // ra_unsaved_changes_message: [
-  //   './private/ra_premium/ra_unsaved_changes_message/ra_unsaved_changes_message-spec.js'
-  //   ],
+  vm_remove_user: [
+    './private/vm/vm_remove_user/vm_remove_user-spec.js'
+  ],
 
-  // ra_saved_changes_message: [
-  //   './private/ra_premium/ra_saved_changes_message/ra_saved_changes_message-spec.js'
-  //   ],
+  vm_remove_vendor: [
+    './private/vm/vm_remove_vendor/vm_remove_vendor-spec.js'
+  ],
+
+  vm_remove_unverified_vendor: [
+    './private/vm/vm_remove_unverified_vendor/vm_remove_unverified_vendor-spec.js'
+  ],
+
+  ra_home: [
+    './private/ra_premium/ra_home/ra_home-spec.js'
+  ],
+
+  ra_drop_menu: [
+    './private/ra_premium/ra_drop_menu/ra_drop_menu-spec.js'
+  ],
+
+  ra_go_to_legacy_app: [
+    './private/ra_premium/ra_go_to_legacy_app/ra_go_to_legacy_app-spec.js'
+  ],
+
+  ra_create_inprogress_template: [
+    './private/ra_premium/ra_create_inprogress_template/ra_create_inprogress_template-spec.js'
+  ],
+
+  ra_unsaved_changes_message: [
+    './private/ra_premium/ra_unsaved_changes_message/ra_unsaved_changes_message-spec.js'
+    ],
+
+  ra_saved_changes_message: [
+    './private/ra_premium/ra_saved_changes_message/ra_saved_changes_message-spec.js'
+    ],
     
-  // ra_edit_inprogress_template: [
-  //   './private/ra_premium/ra_edit_inprogress_template/ra_edit_inprogress_template-spec.js'
-  // ],
+  ra_edit_inprogress_template: [
+    './private/ra_premium/ra_edit_inprogress_template/ra_edit_inprogress_template-spec.js'
+  ],
   
-  // ra_delete_inprogress_template: [
-  //   './private/ra_premium/ra_delete_inprogress_template/ra_delete_inprogress_template-spec.js'
-  // ],
+  ra_delete_inprogress_template: [
+    './private/ra_premium/ra_delete_inprogress_template/ra_delete_inprogress_template-spec.js'
+  ],
 
-  // ra_create_complete_template: [
-  //   './private/ra_premium/ra_create_complete_template/ra_create_complete_template-spec.js'
-  // ],
+  ra_create_complete_template: [
+    './private/ra_premium/ra_create_complete_template/ra_create_complete_template-spec.js'
+  ],
 
-  // ra_edit_complete_template: [
-  // './private/ra_premium/ra_edit_complete_template/ra_edit_complete_template-spec.js'
-  // ],
+  ra_edit_complete_template: [
+  './private/ra_premium/ra_edit_complete_template/ra_edit_complete_template-spec.js'
+  ],
 
-  // ra_delete_complete_template: [
-  // './private/ra_premium/ra_delete_complete_template/ra_delete_complete_template-spec.js'
-  // ],
+  ra_delete_complete_template: [
+  './private/ra_premium/ra_delete_complete_template/ra_delete_complete_template-spec.js'
+  ],
 
   // dumbleform_first_form: [
   //   './private/dumbleform/complete_your_profile/complete_your_profile-spec.js'
