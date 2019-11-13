@@ -9,15 +9,35 @@ exports.config = {
  },
  framework: 'jasmine',
  seleniumAddress: 'http://localhost:4444/wd/hub',
-
+ 
  suites: {
   
   // opt: [
   //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluzi nicemu. to je samo primer)
   // ],
   
-  // login: [
-  //   './private/account/login/login-spec.js'
+  login: [
+    './private/account/login/login-spec.js'
+  ],
+
+  // vm_add_vendor: [
+  //   './private/vm/vm_add_vendor/vm_add_vendor-spec.js'
+  // ],
+
+  // vm_add_unverified_vendor: [
+  //   './private/vm/vm_add_unverified_vendor/vm_add_unverified_vendor-spec.js'
+  // ],
+
+  // vm_upload_document: [
+  //   './private/vm/vm_upload_document/vm_upload_document-spec.js'
+  // ],
+
+  // vm_add_task: [
+  //   './private/vm/vm_add_task/vm_add_task-spec.js'
+  // ],
+
+  // vm_delete_doc: [
+  //   './private/vm/vm_delete_doc/vm_delete_doc-spec.js'
   // ],
 
   // ra_home: [
@@ -76,67 +96,71 @@ exports.config = {
   //   './private/dumbleform/vendor_mapping/vendor_mapping-spec.js'
   // ],
 
-  login_as_admin: [
-    './private/education/login_as_admin/login_as_admin-spec.js'
-  ],
+  // log_out: [
+  //   './private/education/log_out_as_admin/log_out_as_admin-spec.js'
+  // ],
 
-  create_hosted_webinar: [
-    './private/education/create_hosted_webinar/create_hosted_webinar-spec.js'
-  ],
+  // login_as_admin: [
+  //   './private/education/login_as_admin/login_as_admin-spec.js'
+  // ],
+
+  // create_hosted_webinar: [
+  //   './private/education/create_hosted_webinar/create_hosted_webinar-spec.js'
+  // ],
   
-  create_outsourced_webinar: [
-    './private/education/create_outsourced_webinar/create_outsourced_webinar-spec.js'
-  ],
+  // create_outsourced_webinar: [
+  //   './private/education/create_outsourced_webinar/create_outsourced_webinar-spec.js'
+  // ],
 
-  create_video: [
-    './private/education/create_video/create_video-spec.js'
-  ],
+  // create_video: [
+  //   './private/education/create_video/create_video-spec.js'
+  // ],
 
-  all_access: [
-    './private/education/all_access/all_access-spec.js'
-  ],
+  // all_access: [
+  //   './private/education/all_access/all_access-spec.js'
+  // ],
 
-  buying_hosted_webinar: [
-    './private/education/buying_hosted_webinar/buying_hosted_webinar-spec.js'
-  ],
+  // buying_hosted_webinar: [
+  //   './private/education/buying_hosted_webinar/buying_hosted_webinar-spec.js'
+  // ],
 
-  buying_outsourced_webinar: [
-    './private/education/buying_outsourced_webinar/buying_outsourced_webinar-spec.js'
-  ],
+  // buying_outsourced_webinar: [
+  //   './private/education/buying_outsourced_webinar/buying_outsourced_webinar-spec.js'
+  // ],
 
-  buying_video: [
-    './private/education/buying_video/buying_video-spec.js'
-  ],
+  // buying_video: [
+  //   './private/education/buying_video/buying_video-spec.js'
+  // ],
 
-  log_out_as_admin: [
-    './private/education/log_out_as_admin/log_out_as_admin-spec.js'
-  ],
+  // log_out_as_admin: [
+  //   './private/education/log_out_as_admin/log_out_as_admin-spec.js'
+  // ],
 
-  login: [
-    './private/account/login/login-spec.js'
-  ],
+  // login: [
+  //   './private/account/login/login-spec.js'
+  // ],
 
-  using_invoice_video: [
-    './private/education/using_invoice_video/using_invoice_video-spec.js'
-  ],
+  // using_invoice_video: [
+  //   './private/education/using_invoice_video/using_invoice_video-spec.js'
+  // ],
   
-  using_invoice_outsourced: [
-    './private/education/using_invoice_outsourced/using_invoice_outsourced-spec.js'
-  ],
+  // using_invoice_outsourced: [
+  //   './private/education/using_invoice_outsourced/using_invoice_outsourced-spec.js'
+  // ],
 
-  using_invoice_hosted: [
-    './private/education/using_invoice_hosted/using_invoice_hosted-spec.js'
-  ],
-
-
+  // using_invoice_hosted: [
+  //   './private/education/using_invoice_hosted/using_invoice_hosted-spec.js'
+  // ],
 
  },
+ 
  capabilities: {
-   browserName: 'chrome',
-   'chromeOptions': {
-     'args': ['--disable-gpu', '--window-size=2880,1800']
-   }
- },
+  browserName: 'chrome',
+  'chromeOptions': {
+    'args': ['--disable-gpu', '--window-size=2880,1800']
+  }
+},
+
  jasmineNodeOpts: {
    print: function () { },
    showColors: true,
