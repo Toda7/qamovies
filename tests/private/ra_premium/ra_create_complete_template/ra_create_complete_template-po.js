@@ -1,6 +1,7 @@
 function clickStartNewLink() {
     // Klik na Start new button
-    element(by.xpath('//*[@id="root"]/div/div[2]/div/div[2]/div[2]/div[2]/div[2]/a')).click();
+    element.all(by.css('.card.horizontal')).get(0).all(by.tagName('a')).get(0).click(); 
+    // element(by.xpath('//*[@id="root"]/div/div[2]/div/div[2]/div[2]/div[2]/div[2]/a')).click();
     browser.sleep(2000);
  }
  function checkTitleOfTemplate(){

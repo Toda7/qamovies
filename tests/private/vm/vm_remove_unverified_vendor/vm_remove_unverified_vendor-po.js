@@ -1,11 +1,11 @@
 function clickOnThreeDotsLink() {
-    element(by.xpath('//*[@id="main_wrapper"]/div/div/div[2]/div/div[1]/div/div[1]/div/span')).click(); 
+    element(by.className('dropdown')).click(); 
      browser.sleep(2000);
 }
 function clickArhiveVendor() {
-    element(by.xpath('//*[@id="main_wrapper"]/div/div/div[2]/div/div[1]/div/div[1]/div/ul/li[3]')).click(); 
+  element(by.css('.dropdown-actions-menu')).all(by.tagName('ul li')).get(2).click(); 
      browser.sleep(2000);
-  }
+}
 
 function clickOnDeleteToConfirm() {
     element(by.className('btn-flat right')).click();

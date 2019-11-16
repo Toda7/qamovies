@@ -1,18 +1,18 @@
 function clickOnDocLink() {
     //  Klik na photo 
-    element(by.xpath('//*[@id="main_wrapper"]/div/div/div[2]/div/div[2]/div/div[2]/table/tbody/tr/td[1]')).click();
+    element(by.css('.provider_page .sub_items table tr td')).click();
     browser.sleep(2000);
  }
 
  function clickOnThreeDots() {
     //  Klik na three dots 
-    element(by.xpath('//*[@id="main_wrapper"]/div/div/div[2]/div/div[1]/div/div[1]/div/span')).click();
+    element(by.className('dropdown')).click(); 
     browser.sleep(2000);
  }
 
  function clickOnDeleteButton() {
     //  Klik na complete link from side menu
-    element(by.xpath('//*[@id="main_wrapper"]/div/div/div[2]/div/div[1]/div/div[1]/div/ul/li[2]')).click();
+    element(by.css('.dropdown-actions-menu')).all(by.tagName('ul li')).get(1).click(); 
     browser.sleep(2000);
  }
  function clickOnDeleteToConfirm() {

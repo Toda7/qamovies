@@ -4,7 +4,7 @@ function clickOnTask() {
 } 
 
 function clickOnDeleteButton() {
-    element(by.xpath('//*[@id="main_wrapper"]/div/div/div[2]/section[1]/div/div[1]/div/div/ul/li[2]')).click();
+    element(by.css('.dropdown-actions-menu')).all(by.tagName('ul li')).get(1).click(); 
     browser.sleep(2000);
  }
 

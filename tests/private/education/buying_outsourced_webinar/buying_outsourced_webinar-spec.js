@@ -1,8 +1,6 @@
 var buying_hosted_webinar = require('../buying_hosted_webinar/buying_hosted_webinar-po.js');
 var buying_outsourced_webinar = require('./buying_outsourced_webinar-po.js');
 
-
-
 describe('Buying outsourced webinar', function(){
 
 beforeAll(function(){

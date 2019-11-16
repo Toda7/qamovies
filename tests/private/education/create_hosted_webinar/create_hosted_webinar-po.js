@@ -1,3 +1,15 @@
+function landDashboardtoopennewtab() {
+    // Dolazak na admin stranu
+    browser.get('https://qa.cbancnetwork.com/membership/dashboard/'); 
+    browser.sleep(2000);
+}
+
+function clickOnCommunityink() {
+    //  Klik on webinars link
+    element(by.className('home')).click();
+    browser.sleep(2000);
+ }
+
 function landOnEducationAdminPage() {
     // Dolazak na admin stranu
     browser.get('https://qa.cbancnetwork.com/education/admin'); 
@@ -103,7 +115,8 @@ function addDoc() {
 
  function selectPaidForVisibility() {
     // Select paid option
-    element(by.xpath('//*[@id="education_files_form"]/div[3]/div[1]/input')).click(); 
+    element(by.css('input[value="paid"]')).click();
+    // element(by.xpath('//*[@id="education_files_form"]/div[3]/div[1]/input')).click(); 
     browser.sleep(2000);
 }
 
@@ -143,6 +156,9 @@ function clickOnSaveTopicsButton() {
 }
 
 module.exports = {
+    landDashboardtoopennewtab,
+    clickOnCommunityink,
+    clickOnWebinarsLink,
     landOnEducationAdminPage,
     clickOnWebinarsLink,
     clickOnCreateHostedWebinarButton,

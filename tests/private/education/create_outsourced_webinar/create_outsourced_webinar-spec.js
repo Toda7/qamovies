@@ -102,6 +102,9 @@ it('Klik to Select Topic', function(){
 
 it('Klik on Save Topics button', function(){
     create_hosted_webinar.clickOnSaveTopicsButton();
+    browser.getAllWindowHandles().then(function (handles) {
+    browser.switchTo().window(handles[1]);
+    });
 });
 
 afterAll(function(){

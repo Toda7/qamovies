@@ -6,8 +6,29 @@ beforeAll(function(){
     browser.waitForAngularEnabled(false);
 });
 
+// it("should open the first tab", function() {
+
+//     browser.getAllWindowHandles().then(function (handles) {
+    
+//     browser.switchTo().window(handles[0]);
+    
+//     });
+    
+//     });
+
+it('Dolazak na dashboard stranu da bi otvorili novi tab', function(){
+    create_hosted_webinar.landDashboardtoopennewtab();
+});
+
+it('Klik na community to get new tab', function(){
+    create_hosted_webinar.clickOnCommunityink();
+});
+
 it('Dolazak na admin stranu', function(){
     create_hosted_webinar.landOnEducationAdminPage();
+    browser.getAllWindowHandles().then(function (handles) {
+    browser.switchTo().window(handles[0]);
+    });
 });
 
 it('Klik on webinars link', function(){
@@ -105,7 +126,12 @@ it('Klik to Select Topic', function(){
 
 it('Klik on Save Topics button', function(){
     create_hosted_webinar.clickOnSaveTopicsButton();
+    browser.getAllWindowHandles().then(function (handles) {
+    browser.switchTo().window(handles[1]);
+    });
 });
+
+
 
 afterAll(function(){
     browser.waitForAngularEnabled(true); //stavlja se na kraj fajla
