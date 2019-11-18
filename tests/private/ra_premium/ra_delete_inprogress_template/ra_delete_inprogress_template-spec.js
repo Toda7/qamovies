@@ -3,7 +3,6 @@ var ra_delete_inprogress_template = require('./ra_delete_inprogress_template-po'
 var ra_create_inprogress_template = require('../ra_create_inprogress_template/ra_create_inprogress_template-po');
 
 
-
 describe('Delete in progress template', function(){
 
 beforeAll(function(){

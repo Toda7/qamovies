@@ -16,7 +16,8 @@ function checkFirstTitleOfQuestion(){
 }   
 function clickOnOption() {
     // In first question click on option
-    element(by.xpath('//*[@id="factor_0"]/form/div/div[1]/div[1]/p[1]/label')).click(); 
+    element.all(by.css('[type=radio]:not(:checked)+label')).get(0).click();
+    // element(by.xpath('//*[@id="factor_0"]/form/div/div[1]/div[1]/p[1]/label')).click(); 
     browser.sleep(2000);
  }
  function checkSecondTitleOfQuestion(){
@@ -26,7 +27,7 @@ function clickOnOption() {
 }   
 function clickOnSecondOption() {
     // In second question click on option
-    element(by.xpath('//*[@id="factor_0"]/form/div/div[2]/div[1]/p[1]/label')).click(); 
+    element.all(by.css('[type=radio]:not(:checked)+label')).get(1).click();
     browser.sleep(2000);
  }
  function checkThirdTitleOfQuestion(){
@@ -36,7 +37,7 @@ function clickOnSecondOption() {
 }   
 function clickOnThirdOption() {
     // In third question click on option
-    element(by.xpath('//*[@id="factor_0"]/form/div/div[3]/div[1]/p[3]/label')).click(); 
+    element.all(by.css('[type=radio]:not(:checked)+label')).get(2).click();
     browser.sleep(2000);
  }
  function checkProgress(){

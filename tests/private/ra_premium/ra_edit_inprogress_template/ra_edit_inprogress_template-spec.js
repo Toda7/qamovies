@@ -21,7 +21,7 @@ it('Provera InProgrees URLa', function(){
     ra_delete_inprogress_template.checkInProgressURL();
 });
 
-it('Provera da li se pojavio template koji smo zapoceli u prethodnom testu', function(){
+it('Provera da li se pojavio template koji smo zapoceli - treba da bude na in progress strani', function(){
     ra_create_inprogress_template.checkTemplateInProgress();
 });
 
