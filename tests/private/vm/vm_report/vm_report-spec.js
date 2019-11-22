@@ -54,10 +54,12 @@ describe('Open report page', function(){
     });
 
     it("should back focus to the first tab", function() {
-        browser.getAllWindowHandles().then(function (handles) {
-        browser.switchTo().window(handles[0]);
-            });
+            browser.getAllWindowHandles().then(function (handles) {
+            browser.driver.switchTo().window(handles[1]);
+            browser.driver.close();
+            browser.driver.switchTo().window(handles[0]);
         });
+    });
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);

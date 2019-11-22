@@ -143,8 +143,8 @@ exports.config = {
     './private/education/buying_hosted_webinar/buying_hosted_webinar-spec.js'
   ],
 
-  log_out_as_admin: [
-    './private/education/log_out_as_admin/log_out_as_admin-spec.js'
+  log_out_as_admin7: [
+    './private/education/log_out_as_admin7/log_out_as_admin7-spec.js'
   ],
 
   login: [
