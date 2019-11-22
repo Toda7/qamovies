@@ -7,13 +7,13 @@ function clickOnVendorName() {
 function clickOnContactButton() {
     //  Klikni na Contact dugme
     element(by.className('contact_cta', 'Contact')).click();
-    browser.sleep(1000);
+    browser.sleep(2000);
 }
 
 function enterMessageText() {
     // Unos texta poruke
     element(by.id('inquiry_details')).sendKeys('ATQA message to a Vendor');
-    browser.sleep(1000);
+    browser.sleep(2000);
 }
 
  function clickOnSendButton() {

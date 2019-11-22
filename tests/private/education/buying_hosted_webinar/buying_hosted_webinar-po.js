@@ -62,13 +62,13 @@ function clickOnAddAttendeeButton() {
 function clickOnReserveMySpotButton() {
     //  Klik on Reserve My Spot button
     element(by.buttonText('Reserve My Spot')).click();
-    browser.sleep(2000);
+    browser.sleep(3000);
 }
 
 function clickOnAgreePayButton() {
     //  Klik on Agree & Pay button
     element(by.buttonText('Agree & Pay $99')).click();
-    browser.sleep(2000);
+    browser.sleep(3000);
 }
 
 function checkFirstErrorMessage(){
