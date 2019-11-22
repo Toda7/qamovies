@@ -1,5 +1,5 @@
 let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
-let failFast = require('protractor-fail-fast');
+let failFast = require('.protractor-fail-fast');
 
 exports.config = {
  plugins: [failFast.init()],
