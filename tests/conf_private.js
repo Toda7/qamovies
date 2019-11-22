@@ -19,6 +19,94 @@ exports.config = {
     './private/account/login/login-spec.js'
   ],
 
+  createDiscussion: [
+    './private/community/createDiscussion/createDiscussion-spec.js'
+  ],
+
+  replyDiscussion: [
+    './private/community/replyDiscussion/replyDiscussion-spec.js'
+  ],
+
+  commentDiscussion: [
+    './private/community/commentDiscussion/commentDiscussion-spec.js'
+  ],
+
+  downloadDoc: [
+    './private/community/downloadDoc/downloadDoc-spec.js'
+  ],
+
+  replyDiscussion: [
+    './private/community/replyDiscussion/replyDiscussion-spec.js'
+  ],
+
+  deleteDiscussion: [
+    './private/community/deleteDiscussion/deleteDiscussion-spec.js'
+  ],
+
+  undoDeleteDiscussion: [
+    './private/community/undoDeleteDiscussion/undoDeleteDiscussion-spec.js'
+  ],
+
+  createDiscussion: [
+    './private/community/createDiscussion/createDiscussion-spec.js'
+  ],
+
+  searchForDiscussion: [
+   './private/community/searchForDiscussion/searchForDiscussion-spec.js'
+  ],
+
+  createAnonymousDiscussion: [
+    './private/community/createAnonymousDiscussion/createAnonymousDiscussion-spec.js'
+   ],
+ 
+   thankDiscussion: [
+    './private/community/thankDiscussion/thankDiscussion-spec.js'
+   ],
+  
+  searchVendors: [
+    './private/community/searchVendors/searchVendors-spec.js'
+  ],
+
+  sendMessageToVendor: [
+    './private/community/sendMessageToVendor/sendMessageToVendor-spec.js'
+  ],
+  
+  searchTopic: [
+    './private/community/searchTopic/searchTopic-spec.js'
+  ],
+
+  inviteColleagues: [
+    './private/community/inviteColleagues/inviteColleagues-spec.js'
+  ],
+  
+  searchDoc: [
+    './private/community/searchDoc/searchDoc-spec.js'
+  ],
+
+  thankDoc: [
+    './private/community/thankDoc/thankDoc-spec.js'
+  ],
+
+  reputationSystemAndLeaderboard: [
+    './private/community/reputationSystemAndLeaderboard/reputationSystemAndLeaderboard-spec.js'
+  ],
+
+  sendFile: [
+    './private/inbox/sendFile/sendFile-spec.js'
+  ],
+
+  sendMessage: [
+    './private/inbox/sendMessage/sendMessage-spec.js'
+  ],
+
+  reportSpam: [
+    './private/inbox/reportSpam/reportSpam-spec.js'
+  ],
+
+  downloadFile: [
+    './private/inbox/downloadFile/downloadFile-spec.js'
+  ],
+
   vm_add_vendor: [
     './private/vm/vm_add_vendor/vm_add_vendor-spec.js'
   ],
@@ -258,7 +346,7 @@ exports.config = {
     'args': ['--disable-gpu', '--window-size=2880,1800']
   }
 },
-
+  
  jasmineNodeOpts: {
    print: function () { },
    showColors: true,
