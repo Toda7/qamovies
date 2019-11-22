@@ -96,6 +96,30 @@ it('Provera da li se pojavila "This video has been purchased. message', function
     buying_video.checkPurchaseMessage();
 });
 
+it('Hover To Open User Drop', function(){
+    buying_hosted_webinar.HoverToOpenUserDrop();
+});
+
+it('Klik on SingOut', function(){
+    buying_hosted_webinar.clickOnSignOutLink();
+});
+
+it('Klik on SinIn', function(){
+    buying_hosted_webinar.clickOnSignIn();
+});
+
+it('Enter email', function(){
+    buying_hosted_webinar.enterEmail();
+});
+
+it('Enter password', function(){
+    buying_hosted_webinar.enterPass();
+});
+
+it('Klik na Submit', function(){
+    buying_hosted_webinar.submit();
+});
+
 afterAll(function(){
     browser.waitForAngularEnabled(true); //stavlja se na kraj fajla
 });

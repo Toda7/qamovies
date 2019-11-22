@@ -231,24 +231,8 @@ exports.config = {
     './private/education/buying_hosted_webinar/buying_hosted_webinar-spec.js'
   ],
 
-  log_out_as_admin7: [
-    './private/education/log_out_as_admin7/log_out_as_admin7-spec.js'
-  ],
-
-  login: [
-    './private/account/login/login-spec.js'
-  ],
-
   using_invoice_hosted: [
     './private/education/using_invoice_hosted/using_invoice_hosted-spec.js'
-  ],
-
-  log_out_as_admin2: [
-    './private/education/log_out_as_admin2/log_out_as_admin2-spec.js'
-  ],
-
-  login_as_admin2: [
-    './private/education/login_as_admin2/login_as_admin2-spec.js'
   ],
 
   set_inactive_hosted: [
@@ -263,36 +247,8 @@ exports.config = {
     './private/education/buying_outsourced_webinar/buying_outsourced_webinar-spec.js'
   ],
 
-  log_out_as_admin3: [
-    './private/education/log_out_as_admin3/log_out_as_admin3-spec.js'
-  ],
-
-  login_as_user: [
-    './private/education/login_as_user/login_as_user-spec.js'
-  ],
-
   using_invoice_outsourced: [
     './private/education/using_invoice_outsourced/using_invoice_outsourced-spec.js'
-  ],
-
-  log_out_as_admin3: [
-    './private/education/log_out_as_admin3/log_out_as_admin3-spec.js'
-  ],
-
-  login_as_admin2: [
-    './private/education/login_as_admin2/login_as_admin2-spec.js'
-  ],
-
-  using_invoice_outsourced: [
-    './private/education/using_invoice_outsourced/using_invoice_outsourced-spec.js'
-  ],
-
-  log_out_as_admin4: [
-    './private/education/log_out_as_admin4/log_out_as_admin4-spec.js'
-  ],
-
-  login_as_admin3: [
-    './private/education/login_as_admin3/login_as_admin3-spec.js'
   ],
   
   set_inactive_outsourced: [
@@ -306,25 +262,9 @@ exports.config = {
   buying_video: [
     './private/education/buying_video/buying_video-spec.js'
   ],
-
-  log_out_as_admin5: [
-    './private/education/log_out_as_admin5/log_out_as_admin5-spec.js'
-  ],
-
-  login_as_user2: [
-    './private/education/login_as_user2/login_as_user2-spec.js'
-  ],
   
   using_invoice_video: [
     './private/education/using_invoice_video/using_invoice_video-spec.js'
-  ],
-
-  log_out_as_admin6: [
-    './private/education/log_out_as_admin6/log_out_as_admin6-spec.js'
-  ],
-
-  login_as_admin4: [
-    './private/education/login_as_admin4/login_as_admin4-spec.js'
   ],
 
   set_inactive_video: [

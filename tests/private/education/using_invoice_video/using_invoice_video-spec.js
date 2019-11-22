@@ -2,6 +2,7 @@ var buying_video = require('../buying_video/buying_video-po.js');
 var buying_hosted_webinar = require('../buying_hosted_webinar/buying_hosted_webinar-po.js');
 var using_invoice_outsourced = require('../using_invoice_outsourced/using_invoice_outsourced-po.js');
 var using_invoice_video = require('./using_invoice_video-po.js');
+var using_invoice_hosted = require('../using_invoice_hosted/using_invoice_hosted-po.js');
 
 
 describe('Using invoice in buying video ', function(){
@@ -52,6 +53,33 @@ it('Klik on first video on the list of search', function(){
 
 it('Provera da li se pojavila This webinar has been purchased. message', function(){
     buying_video.checkPurchaseMessage();
+});
+
+it('Hover To Open User Drop', function(){
+    using_invoice_hosted.HoverToOpenUserDrop();
+});
+
+it('Klik on SingOut', function(){
+    using_invoice_hosted.clickOnSignOutLink();
+});
+
+it('Klik on SinIn', function(){
+    using_invoice_hosted.clickOnSignIn();
+});
+
+it('Enter email', function(){
+    using_invoice_hosted.enterEmail();
+});
+
+it('Enter password', function(){
+    using_invoice_hosted.enterPass();
+});
+
+it('Klik na Submit', function(){
+    using_invoice_hosted.submit();
+    browser.getAllWindowHandles().then(function (handles) {
+    browser.switchTo().window(handles[0]);
+    });
 });
 
 afterAll(function(){

@@ -9,6 +9,7 @@ beforeAll(function(){
 
 it('Dolazak na webinras stranu', function(){
     buying_hosted_webinar.landOnEducationPage();
+    browser.sleep(2000);
 });
 
 it('Unosenje texta u search polje', function(){
@@ -82,6 +83,35 @@ it('Klik on first webinar on the list of search', function(){
 it('Provera da li se pojavila This webinar has been purchased. message', function(){
     using_invoice_hosted.checkPurchaseMessage();
 });
+
+it('Hover To Open User Drop', function(){
+    using_invoice_hosted.HoverToOpenUserDrop();
+});
+
+it('Klik on SingOut', function(){
+    using_invoice_hosted.clickOnSignOutLink();
+});
+
+it('Klik on SinIn', function(){
+    using_invoice_hosted.clickOnSignIn();
+});
+
+it('Enter email', function(){
+    using_invoice_hosted.enterEmail();
+});
+
+it('Enter password', function(){
+    using_invoice_hosted.enterPass();
+});
+
+it('Klik na Submit', function(){
+    using_invoice_hosted.submit();
+    browser.getAllWindowHandles().then(function (handles) {
+    browser.switchTo().window(handles[0]);
+    });
+});
+
+
 
 afterAll(function(){
     browser.waitForAngularEnabled(true); //stavlja se na kraj fajla
