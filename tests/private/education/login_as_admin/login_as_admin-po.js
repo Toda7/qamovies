@@ -4,35 +4,27 @@ function landOnHomePage() {
 }
 function clickOnSignIn() {
    element(by.className('sign_in')).click();
-}
-
-function checkSignInUrl() {
-    var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://cbancnetwork-edge.auth0.com/login'), 5000);
+   browser.sleep(2000);
 }
 
 function enterEmail() {
-    element(by.name('email')).sendKeys('1@chicago.com');
+    element(by.name('email')).sendKeys('mpejic@cbancnetwork.com');
 }
 
 function enterPass() {
     element(by.name('password')).clear().sendKeys('test1234');
+    browser.sleep(2000);
 }
 
 function submit() {
     element(by.className('auth0-label-submit')).click();
+    browser.sleep(2000);
 }
 
-function checkLogInUrl() {
-    var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/membership/dashboard/'), 8000);
-}
 module.exports = {
     landOnHomePage,
     clickOnSignIn,
-    checkSignInUrl,
     enterEmail,
     enterPass,
     submit,
-    checkLogInUrl
 }
