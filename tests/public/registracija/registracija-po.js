@@ -13,7 +13,7 @@ function checkJoinUrl() {
 }
 
 function enterNewEmail() {
-    element(by.name('email')).sendKeys('11@hotmail.com');
+    element(by.name('email')).sendKeys('testuser02@hotmail.com');
 }
 
 function enterPass() {

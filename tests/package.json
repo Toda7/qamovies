@@ -2,7 +2,10 @@
     "name": "tests",
     "version": "0.0.1",
     "dependencies": {
+        "driver": "^1.0.0",
+        "firefox": "0.0.1",
         "imap": "0.8.19",
+        "nodemailer": "^6.3.1",
         "protractor-fail-fast": "3.1.0",
         "quoted-printable": "1.0.1"
     },
