@@ -1,4 +1,4 @@
-var prepareTestUser = require('./prepareTestUser-po.js');
+var PrepareTestUser = require('./PrepareTestUser-po.js');
 
 describe('Prepare Test User', function(){
 
@@ -7,11 +7,11 @@ describe('Prepare Test User', function(){
     }); 
 
     it('Dolazak na home page', function(){
-        prepareTestUser.LandOnHomePage();
+        PrepareTestUser.LandOnHomePage();
     });
 
     it('Klik on Sign In button', function(){
-        prepareTestUser.clickOnSignIn();
+        PrepareTestUser.clickOnSignIn();
     });
 
         afterAll(function(){
