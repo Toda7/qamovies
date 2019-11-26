@@ -16,7 +16,7 @@ exports.config = {
   // ],
 
 PrepareTestUser: [
-    './gfShop/prepareTestUser/prepareTestUser-spec.js'
+    './gfShop/prepareMagentoCoupon/prepareMagentoCoupon-spec.js'
   ],
   
 
