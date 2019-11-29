@@ -1,6 +1,6 @@
 var prepareMagentoCoupon = require('./prepareMagentoCoupon-po.js');
 
-describe('Prepare Test User', function(){
+describe('Prepare Maghento coupon', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
