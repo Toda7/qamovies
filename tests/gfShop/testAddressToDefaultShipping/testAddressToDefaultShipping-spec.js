@@ -61,8 +61,6 @@ describe('Adding new address on Address Book page', function(){
         testAddressToDefaultShipping.checkBoxContent2();
     });
 
-
-
         afterAll(function(){
         browser.waitForAngularEnabled(true); 
     });
