@@ -15,6 +15,26 @@ exports.config = {
   //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluzi nicemu. to je samo primer)
   // ],
 
+ logInAsUser: [
+    './gfShop/logInAsUser/logInAsUser-spec.js'
+  ],
+
+  // testTwentyProductsOrder: [
+  //   './gfShop/testTwentyProductsOrder/testTwentyProductsOrder-spec.js'
+  // ],
+
+  // testPagination: [
+  //   './gfShop/testPagination/testPagination-spec.js'
+  // ],
+
+  // testSearchShop: [
+  //   './gfShop/testSearchShop/testSearchShop-spec.js'
+  // ],
+
+  testSearchShop: [
+    './gfShop/tetsMyAccount/tetsMyAccount-spec.js'
+  ],
+
  },
  capabilities: {
   browserName: 'chrome',

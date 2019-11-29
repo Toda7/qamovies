@@ -67,7 +67,7 @@ function specificCoupon() {
 function couponCode() {
    // Unesi kupon kod
    element(by.name('coupon_code')).sendKeys('ATQA_Coupon');
-   browser.sleep(1000);
+   browser.sleep(2000);
 }
 
 function selectFromDate() {
@@ -84,7 +84,8 @@ function clickGoToday() {
 
 function clickClose() {
    //  Klik na Close dugme
-   element(by.buttonText('Close')).click();
+   // element(by.buttonText('Close')).click();
+   element(by.className('ui-datepicker-buttonpane ui-widget-content')).element(by.buttonText('Close')).click();
    browser.sleep(2000);
 }
 
@@ -104,12 +105,6 @@ function freeShippingDrop() {
    //  Odaberi iz Free Shipping drop menija
    element.all(by.className('admin__control-select')).get(2).all(by.tagName('option')).get(3).click();
    browser.sleep(2000);
-}
-
-function clickSave() {
-   //  Klik na Save dugme
-   element(by.id('save')).click();
-   browser.sleep(7000);
 }
 
 function clickSave() {
