@@ -57,6 +57,15 @@ describe('Prepare Credit card user', function(){
     it('Unosenje cvv numbers', function(){
         prepareTestCreditCard.enterCvvNumber();
     });
+
+    it('Unosenje numbers credit card1', function(){
+        prepareTestCreditCard.enterNumbersCreditCard1();
+    });
+
+    // it('Unosenje numbers credit card2', function(){
+    //     prepareTestCreditCard.enterNumbersCreditCard2();
+    // });
+
     
     it('Klik on PLACE ORDER button', function(){
         prepareTestCreditCard.clickOnPlaceOrder();
