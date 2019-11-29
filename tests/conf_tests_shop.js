@@ -15,9 +15,45 @@ exports.config = {
   //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluzi nicemu. to je samo primer)
   // ],
 
+  logInAsUser: [
+    './gfShop/logInAsUser/logInAsUser-spec.js'
+  ],
+
+  // testPlaceFFLOrder: [
+  //   './gfShop/testPlaceFFLOrder/testPlaceFFLOrder-spec.js'
+  // ],
+
+  // testSortingByName: [
+  //   './gfShop/testSortingByName/testSortingByName-spec.js'
+  // ],
+
+  // testSortingByPrice: [
+  //   './gfShop/testSortingByPrice/testSortingByPrice-spec.js'
+  // ],
+
+  // testSortingByPosition: [
+  //   './gfShop/testSortingByPosition/testSortingByPosition-spec.js'
+  // ],
+
+  // testSortingByShoppingOptions: [
+  //   './gfShop/testSortingByShoppingOptions/testSortingByShoppingOptions-spec.js'
+  // ],
+
+  // testSortingByDescendingDirection: [
+  //   './gfShop/testSortingByDescendingDirection/testSortingByDescendingDirection-spec.js'
+  // ],
+
+  // testAddNewAddress: [
+  //   './gfShop/testAddNewAddress/testAddNewAddress-spec.js'
+  // ],
+
+  testAddressToDefaultShipping: [
+    './gfShop/testAddressToDefaultShipping/testAddressToDefaultShipping-spec.js'
+  ],
+
  },
  capabilities: {
-  browserName: 'chrome',
+  browserName: 'chrome', 
   'chromeOptions': {
     'args': ['--disable-gpu', '--window-size=2880,1800']
   }

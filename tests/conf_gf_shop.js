@@ -11,20 +11,24 @@ exports.config = {
  
  suites: {
   
-  // opt: [
-  //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluzi nicemu. to je samo primer)
-  // ],
+// opt: [
+//   './todo-spec.js',     (poziva 'todo' fajl koji ne sluzi nicemu. to je samo primer)
+// ],
    
 prepareTestUser: [
     './gfShop/prepareTestUser/prepareTestUser-spec.js'
   ],
 
-prepareTestCreditCard: [
-    './gfShop/prepareTestCreditCard/prepareTestCreditCard-spec.js'
-  ],
+// prepareTestCreditCard: [
+//     './gfShop/prepareTestCreditCard/prepareTestCreditCard-spec.js'
+//   ],
    
 prepareMagentoCoupon: [
     './gfShop/prepareMagentoCoupon/prepareMagentoCoupon-spec.js'
+  ],
+
+prepareTestCreditCardMagento: [
+    './gfShop/prepareTestCreditCardMagento/prepareTestCreditCardMagento-spec.js'
   ],
   
 

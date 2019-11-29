@@ -32,49 +32,52 @@ function clickOnNextButton() {
 function clickOnCreditCartToOpenDrop() {
     //  Klik on credit cart to open drop 
     element(by.id('authnetcim-card-id')).click();
-    browser.sleep(3000);
+    browser.sleep(6000);
 }
 
 function clickToAddNewCard() {
     //  Klik na complete link from side menu
     element(by.css('select#authnetcim-card-id.select')).all(by.tagName('option')).get(0).click(); 
     // element(by.css('select#authnetcim-card-id.select')).click();
-    browser.sleep(3000);
+    browser.sleep(6000);
 }
 
- function enterNumbersCreditCard() {
+function enterNumbersCreditCard() {
     // Unosenje numbers credit card 
-    element(by.css('.checkout-payment-method .ccard .number .input-text')).clear().sendKeys('4111111111111111');
+    element(by.css('.checkout-payment-method .ccard .number .input-text')).clear().sendKeys('5105105105105100');
     // element(by.id('gf-input-1')).sendKeys('milos@idp.com');
+    browser.sleep(6000);
  }
 
 function clickToOpenMonth() {
     //  Klik to open month drop 
     element(by.className('select month')).click();
-    browser.sleep(3000);
+    browser.sleep(6000);
 }
 
 function selectMonth() {
     // Selektovanje meseca
     element(by.css('select#authnetcim-cc-exp-month.select.month')).all(by.tagName('option')).get(3).click(); 
     // element(by.id('gf-input-1')).sendKeys('milos@idp.com');
+    browser.sleep(6000);
 }
 
 function clickToOpenYear() {
     //  Klik to open year drop 
     element(by.className('select year')).click();
-    browser.sleep(3000);
+    browser.sleep(6000);
 }
 
 function selectYear() {
     // Selektovanje godine 
     element(by.css('select#authnetcim-cc-exp-year.select.year')).all(by.tagName('option')).get(3).click(); 
     // element(by.id('gf-input-1')).sendKeys('milos@idp.com');
+    browser.sleep(6000);
  }
 
 function enterCvvNumber() {
     // Unosenje cvv numbers
-    element(by.css('.checkout-payment-method .ccard .cvv .input-text')).sendKeys('1234');
+    element(by.css('.checkout-payment-method .ccard .cvv .input-text')).sendKeys('123');
     // element(by.id('gf-input-1')).sendKeys('milos@idp.com');
     browser.sleep(6000);
  }
@@ -84,6 +87,20 @@ function clickOnPlaceOrder() {
     element(by.className(' action primary checkout')).click();
     browser.sleep(9000);
 }
+
+function enterNumbersCreditCard1() {
+    // Unosenje numbers credit card 
+    element(by.css('.checkout-payment-method .ccard .number .input-text')).clear().sendKeys('4111111111111111');
+    // element(by.id('gf-input-1')).sendKeys('milos@idp.com');
+    browser.sleep(6000);
+ }
+
+//  function enterNumbersCreditCard2() {
+//     // Unosenje numbers credit card 
+//     element(by.css('.checkout-payment-method .ccard .number .input-text')).clear().sendKeys('6011000990139424');
+//     // element(by.id('gf-input-1')).sendKeys('milos@idp.com');
+//     browser.sleep(6000);
+//  }
 
 
  module.exports = {
@@ -101,4 +118,6 @@ function clickOnPlaceOrder() {
     selectYear,
     enterCvvNumber,
     clickOnPlaceOrder,
+    enterNumbersCreditCard1,
+    // enterNumbersCreditCard2,
  }
