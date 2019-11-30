@@ -67,7 +67,7 @@ function clickProvince() {
 
 function clickToSelectProvince() {
    //  Klik to select option from drop
-   element(by.css('select#region_id.validate-select.required-entry')).all(by.tagName('option')).get(42).click(); 
+   element(by.css('select#region_id.validate-select.required-entry')).all(by.tagName('option')).get(43).click(); 
    // element(by.css('select#authnetcim-card-id.select')).click();
    browser.sleep(6000);
 }
