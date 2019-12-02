@@ -1,4 +1,4 @@
-function landOnWeatherbyPage() {
+function landOnTrugloPage() {
    // Dolazak na home page
    browser.get('https://shop.outfitterextreme.com/truglo'); 
    browser.sleep(2000);
@@ -93,7 +93,7 @@ function checkPaginationURL() {
 
 
  module.exports = {
-   landOnWeatherbyPage,
+   landOnTrugloPage,
    clickOnLinkInNavMenu,
    checkFireamHuntingURL,
    checkPageTitle,

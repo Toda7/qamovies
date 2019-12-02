@@ -1,7 +1,7 @@
 let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
 let failFast = require('protractor-fail-fast');
-
 exports.config = {
+
   plugins: [failFast.init()],
   afterLaunch: function () {
     failFast.clean(); // Removes the fail file once all test runners have completed.

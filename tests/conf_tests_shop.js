@@ -115,14 +115,13 @@ exports.config = {
 
   allScriptsTimeout: 60 * 1000 * 60,
 
-
   onPrepare: function () {
     jasmine.getEnv().addReporter(new SpecReporter({
       spec: {
         displayStacktrace: true
       }
     }));
-
+    
   }
 
 };

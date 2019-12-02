@@ -6,7 +6,7 @@ function landOnArcheryPage() {
 
 function clickPageTwo() {
    // klik na 2 u paginaciji 
-   element.all(by.className('items pages-items')).get(1).element(by.tagName('a')).click();
+   element.all(by.className('items pages-items')).get(1).all(by.tagName('a')).get(0).click();
    browser.sleep(2000);
 }
 
