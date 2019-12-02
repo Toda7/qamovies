@@ -225,9 +225,11 @@ exports.config = {
     vm_delete_doc: [
       './private/vm/vm_delete_doc/vm_delete_doc-spec.js'
     ],
+
     vm_report: [
       './private/vm/vm_report/vm_report-spec.js'
     ],
+
     vm_add_user: [
       './private/vm/vm_add_user/vm_add_user-spec.js'
     ],
@@ -259,6 +261,7 @@ exports.config = {
     ra_create_inprogress_template: [
       './private/ra_premium/ra_create_inprogress_template/ra_create_inprogress_template-spec.js'
     ],
+    
     ra_unsaved_changes_message: [
       './private/ra_premium/ra_unsaved_changes_message/ra_unsaved_changes_message-spec.js'
     ],

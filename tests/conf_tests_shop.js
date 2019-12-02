@@ -90,8 +90,8 @@ exports.config = {
     testSkuOneDrop: [
       './gfShop/testSkuOneDrop/testSkuOneDrop-spec.js'
     ],
-
   },
+
   capabilities: {
     browserName: 'chrome',
     'chromeOptions': {
