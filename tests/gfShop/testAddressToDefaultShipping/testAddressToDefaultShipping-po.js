@@ -19,13 +19,20 @@ function clickOnShipping() {
 function checkBoxContent() {
    // Provera da li je nasa nova addresa otisla na mesto Building addrese addrese 
    var xxx = element.all(by.className('box-content')).get(0);
-   expect(xxx.getText()).toEqual('Bradly Seales\nStreet 1\nNew York, New Mexico, 90001\nUnited States\nT: 5553332');
+   expect(xxx.getText()).toEqual('Bradly Seales\nStreet 1\nNew York, New York, 90001\nUnited States\nT: 555333');
 }
 
 function checkBoxContent2() {
    // Provera da li je nasa nova addresa otisla na mesto Shipping addrese 
    var xxx = element.all(by.className('box-content')).get(1);
-   expect(xxx.getText()).toEqual('Bradly Seales\nStreet 1\nNew York, New Mexico, 90001\nUnited States\nT: 5553332');
+   expect(xxx.getText()).toEqual('Bradly Seales\nStreet 1\nNew York, New York, 90001\nUnited States\nT: 555333');
+}
+
+function checkIsOurNewAddressIsSelected() {
+   // Provera da li je nasa nova addresa selektovana kao default shipping address
+   var xxx = element.all(by.className('shipping-address-item selected-item')).get(0);
+   expect(xxx.getText()).toEqual('Bradly Seales\nStreet 1\nNew York, New York 90001\nUnited States\n555333');
+   
 }
 
 
@@ -35,4 +42,5 @@ function checkBoxContent2() {
    clickOnShipping,
    checkBoxContent,
    checkBoxContent2,
+   checkIsOurNewAddressIsSelected,
 }
