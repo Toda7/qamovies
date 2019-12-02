@@ -91,6 +91,14 @@ exports.config = {
       './gfShop/testSkuOneDrop/testSkuOneDrop-spec.js'
     ],
 
+    testViewProduct: [
+      './gfShop/testViewProduct/testViewProduct-spec.js'
+    ],
+  
+    testProductMessage: [
+      './gfShop/testProductMessage/testProductMessage-spec.js'
+    ],
+  
   },
   capabilities: {
     browserName: 'chrome',
@@ -107,14 +115,13 @@ exports.config = {
 
   allScriptsTimeout: 60 * 1000 * 60,
 
-
   onPrepare: function () {
     jasmine.getEnv().addReporter(new SpecReporter({
       spec: {
         displayStacktrace: true
       }
     }));
-
+    
   }
 
 };
