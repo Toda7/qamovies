@@ -80,7 +80,7 @@ exports.config = {
   // ],
 
   // testSearchShop: [
-  //   './gfShop/tetsMyAccount/tetsMyAccount-spec.js'
+  //   './gfShop/testMyAccount/testMyAccount-spec.js'
   // ],
 
  },
