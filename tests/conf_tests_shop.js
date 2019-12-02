@@ -23,9 +23,9 @@ exports.config = {
       './gfShop/testPlaceFFLOrder/testPlaceFFLOrder-spec.js'
     ],
 
-    //  testTwentyProductsOrder: [
-    //   './gfShop/testTwentyProductsOrder/testTwentyProductsOrder-spec.js'
-    // ],
+     testTwentyProductsOrder: [
+      './gfShop/testTwentyProductsOrder/testTwentyProductsOrder-spec.js'
+    ],
 
     testSortingByName: [
       './gfShop/testSortingByName/testSortingByName-spec.js'
@@ -71,21 +71,21 @@ exports.config = {
       './gfShop/testShowPerPage/testShowPerPage-spec.js'
     ],
 
-    // testPagination: [
-    //   './gfShop/testPagination/testPagination-spec.js'
-    // ],
+    testPagination: [
+      './gfShop/testPagination/testPagination-spec.js'
+    ],
 
-    // testSearchShop: [
-    //   './gfShop/testSearchShop/testSearchShop-spec.js'
-    // ],
+    testSearchShop: [
+      './gfShop/testSearchShop/testSearchShop-spec.js'
+    ],
 
-    // testMyAccount: [
-    //   './gfShop/testMyAccount/testMyAccount-spec.js'
-    // ],
+    testMyAccount: [
+      './gfShop/testMyAccount/testMyAccount-spec.js'
+    ],
 
-    // testMyOrders: [
-    //   './gfShop/testMyOrders/testMyOrders-spec.js'
-    // ],
+    testMyOrders: [
+      './gfShop/testMyOrders/testMyOrders-spec.js'
+    ],
 
     testSkuOneDrop: [
       './gfShop/testSkuOneDrop/testSkuOneDrop-spec.js'
