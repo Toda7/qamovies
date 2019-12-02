@@ -2,7 +2,6 @@ let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
 let failFast = require('protractor-fail-fast');
 
 exports.config = {
-
   plugins: [failFast.init()],
   afterLaunch: function () {
     failFast.clean(); // Removes the fail file once all test runners have completed.
@@ -24,7 +23,7 @@ exports.config = {
       './gfShop/testPlaceFFLOrder/testPlaceFFLOrder-spec.js'
     ],
 
-    testTwentyProductsOrder: [
+     testTwentyProductsOrder: [
       './gfShop/testTwentyProductsOrder/testTwentyProductsOrder-spec.js'
     ],
 
@@ -107,6 +106,7 @@ exports.config = {
   },
 
   allScriptsTimeout: 60 * 1000 * 60,
+
 
   onPrepare: function () {
     jasmine.getEnv().addReporter(new SpecReporter({
