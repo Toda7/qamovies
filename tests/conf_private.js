@@ -18,7 +18,6 @@ exports.config = {
   
   login: [
     './private/account/login/login-spec.js'
-<<<<<<< HEAD
   ], 
 
   dashPage: [
@@ -145,46 +144,6 @@ exports.config = {
    './private/community/searchForDiscussion/searchForDiscussion-spec.js'
   ],
 
-=======
-  ],
-
-  createDiscussion: [
-    './private/community/createDiscussion/createDiscussion-spec.js'
-  ],
-
-  replyDiscussion: [
-    './private/community/replyDiscussion/replyDiscussion-spec.js'
-  ],
-
-  commentDiscussion: [
-    './private/community/commentDiscussion/commentDiscussion-spec.js'
-  ],
-
-  downloadDoc: [
-    './private/community/downloadDoc/downloadDoc-spec.js'
-  ],
-
-  replyDiscussion: [
-    './private/community/replyDiscussion/replyDiscussion-spec.js'
-  ],
-
-  deleteDiscussion: [
-    './private/community/deleteDiscussion/deleteDiscussion-spec.js'
-  ],
-
-  undoDeleteDiscussion: [
-    './private/community/undoDeleteDiscussion/undoDeleteDiscussion-spec.js'
-  ],
-
-  createDiscussion: [
-    './private/community/createDiscussion/createDiscussion-spec.js'
-  ],
-
-  searchForDiscussion: [
-   './private/community/searchForDiscussion/searchForDiscussion-spec.js'
-  ],
-
->>>>>>> push samo na moju granu
   createAnonymousDiscussion: [
     './private/community/createAnonymousDiscussion/createAnonymousDiscussion-spec.js'
    ],

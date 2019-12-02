@@ -71,10 +71,6 @@ exports.config = {
       './gfShop/testShowPerPage/testShowPerPage-spec.js'
     ],
 
-    // testAddressToDefaultShipping: [
-    //   './gfShop/testAddressToDefaultShipping/testAddressToDefaultShipping-spec.js'
-    // ],
-
     // testPagination: [
     //   './gfShop/testPagination/testPagination-spec.js'
     // ],
