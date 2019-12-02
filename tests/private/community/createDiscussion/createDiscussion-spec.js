@@ -6,13 +6,6 @@ describe('Create Discussion Action', function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
     }); 
 
-    it('Dolazak na Community', function(){
-        createDiscussion.clickOnHomeButton();
-        browser.getAllWindowHandles().then(function (handles) {
-        browser.switchTo().window(handles[1]);
-    });
-    });
-
     it('Dolazak na Home stranu', function(){
         createDiscussion.landOnHome();
     });

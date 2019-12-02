@@ -1,9 +1,3 @@
-function clickOnHomeButton() {
-    //  Klik na Community link na Dashboardu
-    element(by.className('home')).click(); 
-    browser.sleep(2000);
- }
-
 function landOnHome() {
    // dolazak na Home stranu
    browser.get('https://qa.cbancnetwork.com/community/home'); 
@@ -63,7 +57,6 @@ function checkSuccess(){
 
  module.exports = {
     landOnHome,
-    clickOnHomeButton,
     clickOnStartDiscussion,
     selectGroup,
     discussionTitle,
