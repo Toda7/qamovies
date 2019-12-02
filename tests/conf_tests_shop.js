@@ -97,8 +97,7 @@ exports.config = {
   
     testProductMessage: [
       './gfShop/testProductMessage/testProductMessage-spec.js'
-    ],
-  
+    ],  
   },
 
   capabilities: {
