@@ -16,10 +16,10 @@ describe('Reputation System and Leaderboard', function(){
 
     it('Klik na LeaderboardLink link', function(){
         reputationSystemAndLeaderboard.clickLeaderboardLink();
-        browser.getAllWindowHandles().then(function (handles) {
-        browser.driver.close();
-        browser.driver.switchTo().window(handles[0]);
-        })
+        // browser.getAllWindowHandles().then(function (handles) {
+        // browser.driver.close();
+        // browser.driver.switchTo().window(handles[0]);
+        // })
     });
 
     // it('Dolazak na Doc Library stranu', function(){

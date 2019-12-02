@@ -1,6 +1,6 @@
 function clickOnEditLink() {
    // Klik on edit link for address
-   element.all(by.className('action edit')).get(5).click();
+   element.all(by.className('action edit')).get(4).click();
    browser.sleep(3000);
 }
 

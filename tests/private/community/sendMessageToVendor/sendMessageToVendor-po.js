@@ -7,7 +7,7 @@ function clickOnVendorName() {
 function clickOnContactButton() {
     //  Klikni na Contact dugme
     element(by.className('contact_cta', 'Contact')).click();
-    browser.sleep(2000);
+    browser.sleep(3000);
 }
 
 function enterMessageText() {

@@ -9,7 +9,7 @@ describe('Sorting by product name in truglo', function(){
     }); 
 
     it(' Dolazak na home page', function(){
-        testSortingByName.landOnWeatherbyPage();
+        testSortingByName.landOnTrugloPage();
     });
 
     it('Klik on link from navigation menu', function(){

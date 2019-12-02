@@ -1,10 +1,10 @@
 var testAddNewAddress = require('../testAddNewAddress/testAddNewAddress-po.js');
 var testSortingByName = require('../testSortingByName/testSortingByName-po.js');
-var testAddressToDefaultShipping = require('./testAddressToDefaultShipping-po.js');
-var testTwentyProductsOrder = require('../testTwentyProductsOrder/testTwentyProductsOrder-po.js');
+var testAddressToDefaultShipping = require('../testAddressToDefaultShipping/testAddressToDefaultShipping-po.js');
+var testDeleteAddress = require('./testDeleteAddress-po.js');
 
 
-describe('Setovanje nase nove addrese za shipping/billing page', function(){
+describe('Setovanje stare addrese za shipping/billing page i brisanje nove addresse', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
@@ -55,53 +55,24 @@ describe('Setovanje nase nove addrese za shipping/billing page', function(){
     });
 
     it('Provera da li je nasa nova addresa otisla na mesto billing addrese', function(){
-        testAddressToDefaultShipping.checkBoxContent();
+        testDeleteAddress.checkBoxContent();
     });
 
     it('Provera da li je nasa nova addresa otisla na mesto shipping addrese', function(){
-        testAddressToDefaultShipping.checkBoxContent2();
+        testDeleteAddress.checkBoxContent2();
     });
 
-    it('Dolazak na Archery page', function () {
-        testTwentyProductsOrder.landOnArcheryPage();
+    it('Klik on delete link for address', function(){
+        testDeleteAddress.clickOnDeletetLink();
     });
 
-    it('Klik na prvi proizvod', function () {
-        testTwentyProductsOrder.click1stProduct();
+    it('Klik on OK link to confirm delete ', function(){
+        testDeleteAddress.clickToConfirmToDelete();
     });
 
-    it('Dodaj prvi proizvod u korpu', function () {
-        testTwentyProductsOrder.addToCart();
+    it(' Da li se pojavila success poruka za delete', function(){
+        testDeleteAddress.checkSucessDeleteMessage();
     });
-
-    it('Otvori mini korpu', function () {
-        testTwentyProductsOrder.openMiniCart();
-        browser.sleep(3000);
-    });
-
-    it('Klik na View And Edit Cart', function () {
-        testTwentyProductsOrder.clickViewAndEditCart();
-        browser.sleep(2000);
-    });
-
-    it('Klik na Proceed to Checkout dugme', function () {
-        testTwentyProductsOrder.clickProceedToCheckout();
-        browser.sleep(5000);
-    });
-
-    it('Provera da li je nasa nova addresa selektovana kao default shipping address', function () {
-        testAddressToDefaultShipping.checkIsOurNewAddressIsSelected();
-        browser.sleep(5000);
-    });
-
-    it('Klik na Next dugme', function () {
-        testTwentyProductsOrder.clickNext();
-    });
-
-    it('Klik na Place Order dugme', function () {
-        testTwentyProductsOrder.clickPlaceOrder();
-    });
-
 
         afterAll(function(){
         browser.waitForAngularEnabled(true); 

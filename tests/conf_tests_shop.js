@@ -19,33 +19,33 @@ exports.config = {
     './gfShop/logInAsUser/logInAsUser-spec.js'
   ],
 
-  // testPlaceFFLOrder: [
-  //   './gfShop/testPlaceFFLOrder/testPlaceFFLOrder-spec.js'
-  // ],
+  testPlaceFFLOrder: [
+    './gfShop/testPlaceFFLOrder/testPlaceFFLOrder-spec.js'
+  ],
    
-   // testTwentyProductsOrder: [
+  //  testTwentyProductsOrder: [
   //   './gfShop/testTwentyProductsOrder/testTwentyProductsOrder-spec.js'
   // ],
 
-  // testSortingByName: [
-  //   './gfShop/testSortingByName/testSortingByName-spec.js'
-  // ],
+  testSortingByName: [
+    './gfShop/testSortingByName/testSortingByName-spec.js'
+  ],
 
-  // testSortingByPrice: [
-  //   './gfShop/testSortingByPrice/testSortingByPrice-spec.js'
-  // ],
+  testSortingByPrice: [
+    './gfShop/testSortingByPrice/testSortingByPrice-spec.js'
+  ],
 
-  // testSortingByPosition: [
-  //   './gfShop/testSortingByPosition/testSortingByPosition-spec.js'
-  // ],
+  testSortingByPosition: [
+    './gfShop/testSortingByPosition/testSortingByPosition-spec.js'
+  ],
 
-  // testSortingByShoppingOptions: [
-  //   './gfShop/testSortingByShoppingOptions/testSortingByShoppingOptions-spec.js'
-  // ],
+  testSortingByShoppingOptions: [
+    './gfShop/testSortingByShoppingOptions/testSortingByShoppingOptions-spec.js'
+  ],
 
-  // testSortingByDescendingDirection: [
-  //   './gfShop/testSortingByDescendingDirection/testSortingByDescendingDirection-spec.js'
-  // ],
+  testSortingByDescendingDirection: [
+    './gfShop/testSortingByDescendingDirection/testSortingByDescendingDirection-spec.js'
+  ],
 
   testAddNewAddress: [
     './gfShop/testAddNewAddress/testAddNewAddress-spec.js'
@@ -53,6 +53,22 @@ exports.config = {
 
   testAddressToDefaultShipping: [
     './gfShop/testAddressToDefaultShipping/testAddressToDefaultShipping-spec.js'
+  ],
+
+  testDeleteAddress: [
+    './gfShop/testDeleteAddress/testDeleteAddress-spec.js'
+  ],
+
+    testReturnPolicy: [
+    './gfShop/testReturnPolicy/testReturnPolicy-spec.js'
+  ],
+
+      testAdminSwitch: [
+    './gfShop/testAdminSwitch/testAdminSwitch-spec.js'
+  ],
+
+    testShowPerPage: [
+    './gfShop/testShowPerPage/testShowPerPage-spec.js'
   ],
 
   // testPagination: [

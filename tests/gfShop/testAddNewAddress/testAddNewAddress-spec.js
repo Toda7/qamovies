@@ -9,7 +9,7 @@ describe('Adding new address on Address Book page', function(){
     }); 
 
     it(' Dolazak na home page', function(){
-        testSortingByName.landOnWeatherbyPage();
+        testSortingByName.landOnTrugloPage();
     });
 
     it('Klik to open user menu', function(){
