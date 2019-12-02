@@ -51,12 +51,8 @@ exports.config = {
   //   './gfShop/testAddNewAddress/testAddNewAddress-spec.js'
   // ],
 
-  testAddressToDefaultShipping: [
-    './gfShop/testAddressToDefaultShipping/testAddressToDefaultShipping-spec.js'
-  ],
-
-  // testTwentyProductsOrder: [
-  //   './gfShop/testTwentyProductsOrder/testTwentyProductsOrder-spec.js'
+  // testAddressToDefaultShipping: [
+  //   './gfShop/testAddressToDefaultShipping/testAddressToDefaultShipping-spec.js'
   // ],
 
   // testPagination: [
@@ -67,8 +63,16 @@ exports.config = {
   //   './gfShop/testSearchShop/testSearchShop-spec.js'
   // ],
 
-  testSearchShop: [
-    './gfShop/tetsMyAccount/tetsMyAccount-spec.js'
+  // testMyAccount: [
+  //   './gfShop/testMyAccount/testMyAccount-spec.js'
+  // ],
+
+  // testMyOrders: [
+  //   './gfShop/testMyOrders/testMyOrders-spec.js'
+  // ],
+
+  testSkuOneDrop: [
+    './gfShop/testSkuOneDrop/testSkuOneDrop-spec.js'
   ],
 
  },
