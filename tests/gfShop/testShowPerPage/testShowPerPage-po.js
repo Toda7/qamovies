@@ -1,7 +1,7 @@
 function clickToSelectShow24PerPage() {
    // click to select show 24 per page 
    element.all(by.css('select#limiter.limiter-options')).get(1).all(by.tagName('option')).get(2).click();
-   browser.sleep(3000); 
+   browser.sleep(5000); 
 }
 
 function checkNumberOfItems(){
