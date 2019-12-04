@@ -23,7 +23,7 @@ exports.config = {
       './gfShop/testPlaceFFLOrder/testPlaceFFLOrder-spec.js'
     ],
 
-     testTwentyProductsOrder: [
+    testTwentyProductsOrder: [
       './gfShop/testTwentyProductsOrder/testTwentyProductsOrder-spec.js'
     ],
 
@@ -90,6 +90,23 @@ exports.config = {
     testSkuOneDrop: [
       './gfShop/testSkuOneDrop/testSkuOneDrop-spec.js'
     ],
+
+    testCartWithFFLAndRegularProduct: [
+      './gfShop/testCartWithFFLAndRegularProduct/testCartWithFFLAndRegularProduct-spec.js'
+    ],
+
+    testPrintOrderPage: [
+      './gfShop/testPrintOrderPage/testPrintOrderPage-spec.js'
+    ],
+
+    testCouponOrder: [
+      './gfShop/testCouponOrder/testCouponOrder-spec.js'
+    ],
+
+    testWrongCouponCode: [
+      './gfShop/testWrongCouponCode/testWrongCouponCode-spec.js'
+    ],
+
   },
 
   capabilities: {
@@ -106,7 +123,6 @@ exports.config = {
   },
 
   allScriptsTimeout: 60 * 1000 * 60,
-
 
   onPrepare: function () {
     jasmine.getEnv().addReporter(new SpecReporter({
