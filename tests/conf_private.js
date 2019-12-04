@@ -261,7 +261,7 @@ exports.config = {
     ra_create_inprogress_template: [
       './private/ra_premium/ra_create_inprogress_template/ra_create_inprogress_template-spec.js'
     ],
-    
+
     ra_unsaved_changes_message: [
       './private/ra_premium/ra_unsaved_changes_message/ra_unsaved_changes_message-spec.js'
     ],

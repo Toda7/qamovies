@@ -91,6 +91,7 @@ exports.config = {
       './gfShop/testSkuOneDrop/testSkuOneDrop-spec.js'
     ],
 
+<<<<<<< HEAD
     testCartWithFFLAndRegularProduct: [
       './gfShop/testCartWithFFLAndRegularProduct/testCartWithFFLAndRegularProduct-spec.js'
     ],
@@ -107,6 +108,16 @@ exports.config = {
       './gfShop/testWrongCouponCode/testWrongCouponCode-spec.js'
     ],
 
+=======
+    testViewProduct: [
+      './gfShop/testViewProduct/testViewProduct-spec.js'
+    ],
+  
+    testProductMessage: [
+      './gfShop/testProductMessage/testProductMessage-spec.js'
+    ],
+  
+>>>>>>> b7cded024358ed47991ca219d9fcaf0f06b8d568
   },
 
   capabilities: {
@@ -130,7 +141,7 @@ exports.config = {
         displayStacktrace: true
       }
     }));
-
+    
   }
 
 };
