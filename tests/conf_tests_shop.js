@@ -147,6 +147,21 @@ exports.config = {
       './gfShop/testProductMessage/testProductMessage-spec.js'
     ],
 
+    testEditQtyCart: [
+      './gfShop/testEditQtyCart/testEditQtyCart-spec.js'
+    ],
+
+    testDeleteProductCart: [
+      './gfShop/testDeleteProductCart/testDeleteProductCart-spec.js'
+    ],
+
+    testEditQtyEditPage: [
+      './gfShop/testEditQtyEditPage/testEditQtyEditPage-spec.js'
+    ],
+
+    testDeleteProductEditCart: [
+      './gfShop/testDeleteProductEditCart/testDeleteProductEditCart-spec.js'
+    ],
   },
 
   capabilities: {
