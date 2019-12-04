@@ -75,6 +75,38 @@ exports.config = {
       './gfShop/testPagination/testPagination-spec.js'
     ],
 
+    testProductWithOneBox: [
+      './gfShop/testProductWithOneBox/testProductWithOneBox-spec.js'
+    ],
+
+    testProductWithTwoBoxes: [
+      './gfShop/testProductWithTwoBoxes/testProductWithTwoBoxes-spec.js'
+    ],
+
+    testProductWithTwoDrops: [
+      './gfShop/testProductWithTwoDrops/testProductWithTwoDrops-spec.js'
+    ],
+
+    testGrowlMessageToSelectOption: [
+      './gfShop/testGrowlMessageToSelectOption/testGrowlMessageToSelectOption-spec.js'
+    ],
+
+    TestAttentionWindow: [
+      './gfShop/TestAttentionWindow/TestAttentionWindow-spec.js'
+    ],
+
+    TestSecondAttentionWindow: [
+      './gfShop/TestSecondAttentionWindow/TestSecondAttentionWindow-spec.js'
+    ],
+
+    TestZendesk: [
+      './gfShop/TestZendesk/TestZendesk-spec.js'
+    ],
+
+    testRegularVSDiscountPrice: [
+      './gfShop/testRegularVSDiscountPrice/testRegularVSDiscountPrice-spec.js'
+    ],
+
     testSearchShop: [
       './gfShop/testSearchShop/testSearchShop-spec.js'
     ],
@@ -110,11 +142,11 @@ exports.config = {
     testViewProduct: [
       './gfShop/testViewProduct/testViewProduct-spec.js'
     ],
-  
+
     testProductMessage: [
       './gfShop/testProductMessage/testProductMessage-spec.js'
     ],
-  
+
   },
 
   capabilities: {
@@ -138,7 +170,7 @@ exports.config = {
         displayStacktrace: true
       }
     }));
-    
+
   }
 
 };

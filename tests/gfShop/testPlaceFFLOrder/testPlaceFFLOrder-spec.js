@@ -22,7 +22,7 @@ describe('Narucivanje FFL ordera', function(){
         testPlaceFFLOrder.clickOnAddToCart();
     });
 
-    it('Klik to open credit cart', function(){
+    it('Klik to open mini cart', function(){
         testPlaceFFLOrder.clickToOpenCart();
     });
 
