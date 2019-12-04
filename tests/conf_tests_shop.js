@@ -75,6 +75,38 @@ exports.config = {
       './gfShop/testPagination/testPagination-spec.js'
     ],
 
+    testProductWithOneBox: [
+      './gfShop/testProductWithOneBox/testProductWithOneBox-spec.js'
+    ],
+
+    testProductWithTwoBoxes: [
+      './gfShop/testProductWithTwoBoxes/testProductWithTwoBoxes-spec.js'
+    ],
+
+    testProductWithTwoDrops: [
+      './gfShop/testProductWithTwoDrops/testProductWithTwoDrops-spec.js'
+    ],
+
+    testGrowlMessageToSelectOption: [
+      './gfShop/testGrowlMessageToSelectOption/testGrowlMessageToSelectOption-spec.js'
+    ],
+
+    TestAttentionWindow: [
+      './gfShop/TestAttentionWindow/TestAttentionWindow-spec.js'
+    ],
+
+    TestSecondAttentionWindow: [
+      './gfShop/TestSecondAttentionWindow/TestSecondAttentionWindow-spec.js'
+    ],
+
+    TestZendesk: [
+      './gfShop/TestZendesk/TestZendesk-spec.js'
+    ],
+
+    testRegularVSDiscountPrice: [
+      './gfShop/testRegularVSDiscountPrice/testRegularVSDiscountPrice-spec.js'
+    ],
+
     testSearchShop: [
       './gfShop/testSearchShop/testSearchShop-spec.js'
     ],
@@ -89,6 +121,22 @@ exports.config = {
 
     testSkuOneDrop: [
       './gfShop/testSkuOneDrop/testSkuOneDrop-spec.js'
+    ],
+
+    testCartWithFFLAndRegularProduct: [
+      './gfShop/testCartWithFFLAndRegularProduct/testCartWithFFLAndRegularProduct-spec.js'
+    ],
+
+    testPrintOrderPage: [
+      './gfShop/testPrintOrderPage/testPrintOrderPage-spec.js'
+    ],
+
+    testCouponOrder: [
+      './gfShop/testCouponOrder/testCouponOrder-spec.js'
+    ],
+
+    testWrongCouponCode: [
+      './gfShop/testWrongCouponCode/testWrongCouponCode-spec.js'
     ],
 
     testViewProduct: [
