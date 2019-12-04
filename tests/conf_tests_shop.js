@@ -23,7 +23,7 @@ exports.config = {
       './gfShop/testPlaceFFLOrder/testPlaceFFLOrder-spec.js'
     ],
 
-     testTwentyProductsOrder: [
+    testTwentyProductsOrder: [
       './gfShop/testTwentyProductsOrder/testTwentyProductsOrder-spec.js'
     ],
 
@@ -94,10 +94,26 @@ exports.config = {
     testViewProduct: [
       './gfShop/testViewProduct/testViewProduct-spec.js'
     ],
-  
+
     testProductMessage: [
       './gfShop/testProductMessage/testProductMessage-spec.js'
-    ],  
+    ],
+
+    testEditQtyCart: [
+      './gfShop/testEditQtyCart/testEditQtyCart-spec.js'
+    ],
+
+    testDeleteProductCart: [
+      './gfShop/testDeleteProductCart/testDeleteProductCart-spec.js'
+    ],
+
+    testEditQtyEditPage: [
+      './gfShop/testEditQtyEditPage/testEditQtyEditPage-spec.js'
+    ],
+
+    testDeleteProductEditCart: [
+      './gfShop/testDeleteProductEditCart/testDeleteProductEditCart-spec.js'
+    ],
   },
 
   capabilities: {
@@ -121,7 +137,7 @@ exports.config = {
         displayStacktrace: true
       }
     }));
-    
+
   }
 
 };

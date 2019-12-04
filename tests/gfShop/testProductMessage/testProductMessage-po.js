@@ -23,20 +23,20 @@ function click6Product() {
  }
 
  function enterNumber() {
-    // Unosenje admin's email
-    element(by.id('qty')).sendKeys('50');
+    // Unos broja Producta
+    element(by.id('qty')).clear().sendKeys('50');
     browser.sleep(5000);
  }
 
  function clickAddToCart() {
-    // klik na List View Producta 
+    // klik na Add to cart 
     element(by.className('action primary tocart btn-lg')).click();
     browser.sleep(5000);
  }
 
  function checkErrorMsg(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li je dobra paginacija
+    // Provera da li je dobra Error poruka
     browser.wait(EC.textToBePresentInElement($('.message-error.error.message'), '"SPEED SHOT™ BOWFISHING ARROW" as you requested.'), 5000);
     browser.sleep(5000);
  }
