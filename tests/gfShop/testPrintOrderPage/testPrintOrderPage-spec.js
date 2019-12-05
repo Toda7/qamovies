@@ -46,6 +46,11 @@ describe('Print Order page', function () {
 
     it('Provera da li je dobar title za Order Information sekciju', function () {
         testPrintOrderPage.checkOrderInformationTitle();
+        browser.getAllWindowHandles().then(function (handles) {
+            browser.driver.switchTo().window(handles[1]);
+            browser.driver.close();
+            browser.driver.switchTo().window(handles[0]);
+            });
     });
 
     afterAll(function () {

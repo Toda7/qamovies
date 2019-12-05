@@ -13,7 +13,7 @@ function clickEsc() {
 function checkGFLogo() {
    // Provera da li je dobar GF logo na print order strani
    var xxx = element.all(by.tagName('img')).get(0);
-   expect(xxx.getAttribute('src')).toEqual('https://shop.outfitterextreme.com/pub/static/version1574353829/frontend/Guidefitter/luma/en_US/images/logo-shop-print.jpg');
+   expect(xxx.getAttribute('src')).toEqual('https://shop.outfitterextreme.com/pub/static/version1575471651/frontend/Guidefitter/luma/en_US/images/logo-shop-print.jpg');
    browser.sleep(500);
 }
 

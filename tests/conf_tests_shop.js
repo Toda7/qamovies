@@ -27,6 +27,10 @@ exports.config = {
       './gfShop/testTwentyProductsOrder/testTwentyProductsOrder-spec.js'
     ],
 
+    testMyAccount: [
+      './gfShop/testMyAccount/testMyAccount-spec.js'
+    ],
+
     testSortingByName: [
       './gfShop/testSortingByName/testSortingByName-spec.js'
     ],
@@ -109,10 +113,6 @@ exports.config = {
 
     testSearchShop: [
       './gfShop/testSearchShop/testSearchShop-spec.js'
-    ],
-
-    testMyAccount: [
-      './gfShop/testMyAccount/testMyAccount-spec.js'
     ],
 
     testMyOrders: [
