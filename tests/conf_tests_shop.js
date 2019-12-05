@@ -162,6 +162,14 @@ exports.config = {
     testDeleteProductEditCart: [
       './gfShop/testDeleteProductEditCart/testDeleteProductEditCart-spec.js'
     ],
+
+    testAdvanceSearchProductName: [
+      './gfShop/testAdvanceSearchProductName/testAdvanceSearchProductName-spec.js'
+    ],
+
+    testAdvanceSearchSKU: [
+      './gfShop/testAdvanceSearchSKU/testAdvanceSearchSKU-spec.js'
+    ],
   },
 
   capabilities: {
