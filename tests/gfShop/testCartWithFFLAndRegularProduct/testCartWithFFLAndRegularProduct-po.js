@@ -30,7 +30,7 @@ function chooseOptionRegular() {
 
 function checkRestrictionMessage() {
    // Provera da li se ucitao restriction warning
-   var xxx = element.all(by.className('messages')).get(2);
+   var xxx = element(by.className('message-error error message'));
    expect(xxx.getText()).toEqual('This product could not be added to your cart since it already contains FFL restricted items - please complete your current transaction, then purchase non-FFL restricted items on another order.');
    browser.sleep(1000);
 }
