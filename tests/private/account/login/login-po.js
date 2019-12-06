@@ -25,7 +25,7 @@ function submit() {
 
 function checkLogInUrl() {
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/membership/dashboard/'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/membership/dashboard/'), 8000);
 }
 module.exports = {
     landOnHomePage,
