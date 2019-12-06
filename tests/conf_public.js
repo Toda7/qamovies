@@ -33,6 +33,7 @@ exports.config = {
   lendwell: [
     './public/lendwell/lendwell-spec.js',
   ],
+   
   // vendor: [
   //   './public/vendor/vendor-spec.js',
   // ],
@@ -111,7 +112,6 @@ exports.config = {
   // footCode: [
   // './footCode/footCode-spec.js'
   // ]
-
 
  },
  capabilities: {
