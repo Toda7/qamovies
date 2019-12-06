@@ -86,3 +86,28 @@ sudo npm install -g npm (da updatuje/instalira novu verziju ako ima)
 	1.	Test Node. To see if Node is installed, type node -v in Terminal. This should print the version number so you'll see something like this v0.10.31 
 	
 	2.	Test NPM. To see if NPM is installed, type npm -v in Terminal.
+
+<-- Restart protractora --> ovo smo radili kada se promenila verzija chrome
+npm uninstall protractor
+sudo npm install -g protractor
+sudo webdriver-manager update
+sudo webdriver-manager start 
++
+https://www.oracle.com/technetwork/java/javase/downloads/index.html 
+
+
+Steps for push; 
+1. Odkomentarisi sve testove u conf fajlu (ako ih imas komentarisanih) - opt je uvek komentarian<- ne dirati 
+2. Selektuj ceo kod u conf fajlu -> CMD + a, zatim CMD + k, CMD + f 
+3. U conf fajlu ne smemo da imamo 2 prazna reda
+4. U terminalu; 
+git add . 
+git commit -m"poruka" 
+git push origin miho <- miho je grana na kojoj se nalazimo 
+Steps for merge 
+1. Go to https://github.com/Toda7/qamovies 
+2. Za Branch izaberemo granu na kojoj smo pushovali 
+3. Klik na New pull request button 
+4. Za "base" izaberemo develop granu a za compare granu koju hocemo da mergujemo sa developom 
+5. Klik na create pull request 
+6. Klik na merge pull reguest 
