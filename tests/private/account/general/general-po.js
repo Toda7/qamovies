@@ -112,13 +112,13 @@ function checkSuccessMessage(){
 
 function insertPrimaryRole(){
     //izaberi Primary Role
-    element.all(by.className('field select_field functional_area')).get(0).all(by.tagName('option')).get(2).click();
+    element.all(by.className('field select_field functional_area')).get(0).all(by.tagName('option')).get(13).click();
     browser.sleep(2000);
 }
 
 function insertRoleLevel(){
     //izaberi Role Level
-    element.all(by.className('field select_field functional_level')).get(0).all(by.tagName('option')).get(2).click();
+    element.all(by.className('field select_field functional_level')).get(0).all(by.tagName('option')).get(16).click();
     browser.sleep(2000);
 }
 
