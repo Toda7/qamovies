@@ -1,6 +1,6 @@
 function clickOnLink() {
     //  Klik na ondemand link iz drop menu
-    element(by.className('submenu_item link_all_access_plus')).click();
+    element(by.className('submenu_item link_allAccess_plus')).click();
  }
 
  function checkAccessPlus() {
