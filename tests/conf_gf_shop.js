@@ -23,17 +23,17 @@ exports.config = {
       './gfShop/prepareTestUser/prepareTestUser-spec.js'
     ],
 
-    prepareTestCreditCard: [
-      './gfShop/prepareTestCreditCard/prepareTestCreditCard-spec.js'
-    ],
+    // prepareTestCreditCard: [
+    //   './gfShop/prepareTestCreditCard/prepareTestCreditCard-spec.js'
+    // ],
 
-    prepareMagentoCoupon: [
-      './gfShop/prepareMagentoCoupon/prepareMagentoCoupon-spec.js'
-    ],
+    // prepareMagentoCoupon: [
+    //   './gfShop/prepareMagentoCoupon/prepareMagentoCoupon-spec.js'
+    // ],
 
-    prepareTestCreditCardMagento: [
-      './gfShop/prepareTestCreditCardMagento/prepareTestCreditCardMagento-spec.js'
-    ],
+    // prepareTestCreditCardMagento: [
+    //   './gfShop/prepareTestCreditCardMagento/prepareTestCreditCardMagento-spec.js'
+    // ],
 
   },
   capabilities: {

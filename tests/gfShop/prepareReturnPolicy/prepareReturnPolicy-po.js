@@ -35,7 +35,7 @@ function landOnSettingsPageInCockpit() {
 
 function enterOurReturnPolicy() {
     // Unosenje nas text u return policy polje u cockpitu
-    element.all(by.css('.form-control.hasvalue')).get(3).clear().sendKeys('Testing from PROT. We are TRUGLO!');
+    element(by.css('textarea#textarea-return-policy.form-control.hasvalue')).clear().sendKeys('Testing from PROT. We are TRUGLO!');
     browser.sleep(10000);
  }
 
