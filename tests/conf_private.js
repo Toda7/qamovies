@@ -18,337 +18,337 @@ exports.config = {
       './private/account/login/login-spec.js'
     ],
 
-    // dashPage: [
-    //   './private/dashboard/dashPage/dashPage-spec.js'
-    // ],
+    dashPage: [
+      './private/dashboard/dashPage/dashPage-spec.js'
+    ],
 
-    // loginAsVendor: [
-    //   './private/dashboard/loginAsVendor/loginAsVendor-spec.js'
-    // ],
+    loginAsVendor: [
+      './private/dashboard/loginAsVendor/loginAsVendor-spec.js'
+    ],
 
-    // dashComunity: [
-    //   './private/dashboard/dashComunity/dashComunity-spec.js'
-    // ],
+    dashComunity: [
+      './private/dashboard/dashComunity/dashComunity-spec.js'
+    ],
 
-    // dashLendwell: [
-    //   './private/dashboard/dashLendwell/dashLendwell-spec.js'
-    // ],
+    dashLendwell: [
+      './private/dashboard/dashLendwell/dashLendwell-spec.js'
+    ],
 
-    // dashWorkspace: [
-    //   './private/dashboard/dashWorkspace/dashWorkspace-spec.js'
-    // ],
+    dashWorkspace: [
+      './private/dashboard/dashWorkspace/dashWorkspace-spec.js'
+    ],
 
-    // dashPeer: [
-    //   './private/dashboard/dashPeerAnalysis/dashPeer-spec.js'
-    // ],
+    dashPeer: [
+      './private/dashboard/dashPeerAnalysis/dashPeer-spec.js'
+    ],
 
-    // dashRisk: [
-    //   './private/dashboard/dashRiskAsses/dashRisk-spec.js'
-    // ],
+    dashRisk: [
+      './private/dashboard/dashRiskAsses/dashRisk-spec.js'
+    ],
 
-    // dashCielostar: [
-    //   './private/dashboard/dashCielostar/dashCielostar-spec.js'
-    // ],
+    dashCielostar: [
+      './private/dashboard/dashCielostar/dashCielostar-spec.js'
+    ],
 
-    // dashEducation: [
-    //   './private/dashboard/dashEducation/dashEducation-spec.js'
-    // ],
+    dashEducation: [
+      './private/dashboard/dashEducation/dashEducation-spec.js'
+    ],
 
-    // dashVendorMng: [
-    //   './private/dashboard/dashVendorMng/dashVendorMng-spec.js'
-    // ],
+    dashVendorMng: [
+      './private/dashboard/dashVendorMng/dashVendorMng-spec.js'
+    ],
 
-    // dashCbancPremium: [
-    //   './private/dashboard/dashCbancPremium/dashCbancPremium-spec.js'
-    // ],
+    dashCbancPremium: [
+      './private/dashboard/dashCbancPremium/dashCbancPremium-spec.js'
+    ],
 
-    // dashAbout: [
-    //   './private/dashboard/dashAbout/dashAbout-spec.js'
-    // ],
+    dashAbout: [
+      './private/dashboard/dashAbout/dashAbout-spec.js'
+    ],
 
-    // dashFAQ: [
-    //   './private/dashboard/dashFAQ/dashFAQ-spec.js'
-    // ],
+    dashFAQ: [
+      './private/dashboard/dashFAQ/dashFAQ-spec.js'
+    ],
 
-    // dashContact: [
-    //   './private/dashboard/dashContact/dashContact-spec.js'
-    // ],
+    dashContact: [
+      './private/dashboard/dashContact/dashContact-spec.js'
+    ],
 
-    // dashVendors: [
-    //   './private/dashboard/dashVendors/dashVendors-spec.js'
-    // ],
+    dashVendors: [
+      './private/dashboard/dashVendors/dashVendors-spec.js'
+    ],
 
-    // dashCareers: [
-    //   './private/dashboard/dashCareers/dashCareers-spec.js'
-    // ],
+    dashCareers: [
+      './private/dashboard/dashCareers/dashCareers-spec.js'
+    ],
 
-    // dashBlog: [
-    //   './private/dashboard/dashBlog/dashBlog-spec.js'
-    // ],
+    dashBlog: [
+      './private/dashboard/dashBlog/dashBlog-spec.js'
+    ],
 
-    // dashPrivacyPolicy: [
-    //   './private/dashboard/dashPrivacyPolicy/dashPrivacyPolicy-spec.js'
-    // ],
+    dashPrivacyPolicy: [
+      './private/dashboard/dashPrivacyPolicy/dashPrivacyPolicy-spec.js'
+    ],
 
-    // dashTermsOfService: [
-    //   './private/dashboard/dashTermsOfService/dashTermsOfService-spec.js'
-    // ],
+    dashTermsOfService: [
+      './private/dashboard/dashTermsOfService/dashTermsOfService-spec.js'
+    ],
 
-    // dashCodeOfConduct: [
-    //   './private/dashboard/dashCodeOfConduct/dashCodeOfConduct-spec.js'
-    // ],
+    dashCodeOfConduct: [
+      './private/dashboard/dashCodeOfConduct/dashCodeOfConduct-spec.js'
+    ],
 
-    // peerA: [
-    //   './private/peer_analysis/peerGroupAnalysis/peerGroupAnalysis-spec.js'
-    // ],
+    peerA: [
+      './private/peer_analysis/peerGroupAnalysis/peerGroupAnalysis-spec.js'
+    ],
 
-    // peerToolLunch: [
-    //   './private/peer_analysis/peerToolLunch/peerToolLunch-spec.js'
-    // ],
+    peerToolLunch: [
+      './private/peer_analysis/peerToolLunch/peerToolLunch-spec.js'
+    ],
 
-    // peerToolShortReport: [
-    //   './private/peer_analysis/peerToolShortReport/peerToolShortReport-spec.js'
-    // ],
+    peerToolShortReport: [
+      './private/peer_analysis/peerToolShortReport/peerToolShortReport-spec.js'
+    ],
 
-    // peerToolReport: [
-    //   './private/peer_analysis/peerToolReport/peerToolReport-spec.js'
-    // ],
+    peerToolReport: [
+      './private/peer_analysis/peerToolReport/peerToolReport-spec.js'
+    ],
     
-    // checkLinksOnFVHomePage: [
-    //   './private/fileVault/checkLinksOnFVHomePage/checkLinksOnFVHomePage-spec.js',
-    // ],
+    checkLinksOnFVHomePage: [
+      './private/fileVault/checkLinksOnFVHomePage/checkLinksOnFVHomePage-spec.js',
+    ],
 
-    // addSpace: [
-    //   './private/fileVault/addSpace/addSpace-spec.js',
-    // ],
+    addSpace: [
+      './private/fileVault/addSpace/addSpace-spec.js',
+    ],
 
-    // addTask: [
-    //   './private/fileVault/addTask/addTask-spec.js',
-    // ],
+    addTask: [
+      './private/fileVault/addTask/addTask-spec.js',
+    ],
 
-    // addDoc: [
-    //   './private/fileVault/addDoc/addDoc-spec.js',
-    // ],
+    addDoc: [
+      './private/fileVault/addDoc/addDoc-spec.js',
+    ],
 
-    // addUser: [
-    //   './private/fileVault/addUser/addUser-spec.js',
-    // ],
+    addUser: [
+      './private/fileVault/addUser/addUser-spec.js',
+    ],
 
-    // taskReport: [
-    //   './private/fileVault/taskReport/taskReport-spec.js',
-    // ],
+    taskReport: [
+      './private/fileVault/taskReport/taskReport-spec.js',
+    ],
 
-    // allActivity: [
-    //   './private/fileVault/allActivity/allActivity-spec.js',
-    // ],
+    allActivity: [
+      './private/fileVault/allActivity/allActivity-spec.js',
+    ],
 
-    // search: [
-    //   './private/fileVault/search/search-spec.js',
-    // ],
+    search: [
+      './private/fileVault/search/search-spec.js',
+    ],
 
-    // adminland: [
-    //   './private/fileVault/adminland/adminland-spec.js',
-    // ],
+    adminland: [
+      './private/fileVault/adminland/adminland-spec.js',
+    ],
 
-    // deleteSpace: [
-    //   './private/fileVault/deleteSpace/deleteSpace-spec.js',
-    // ],
+    deleteSpace: [
+      './private/fileVault/deleteSpace/deleteSpace-spec.js',
+    ],
 
-    // general: [
-    //   './private/account/general/general-spec.js',
-    // ],
+    general: [
+      './private/account/general/general-spec.js',
+    ],
 
-    // notifications: [
-    //   './private/account/notifications/notifications-spec.js',
-    // ],
+    notifications: [
+      './private/account/notifications/notifications-spec.js',
+    ],
 
-    // avatar: [
-    //   './private/account/avatar/avatar-spec.js',
-    // ],
+    avatar: [
+      './private/account/avatar/avatar-spec.js',
+    ],
 
-    // password: [
-    //   './private/account/password/password-spec.js',
-    // ],
+    password: [
+      './private/account/password/password-spec.js',
+    ],
 
-    // alerts: [
-    //   './private/account/alerts/alerts-spec.js',
-    // ],
+    alerts: [
+      './private/account/alerts/alerts-spec.js',
+    ],
 
-    // createDiscussion: [
-    //   './private/community/createDiscussion/createDiscussion-spec.js'
-    // ],
+    createDiscussion: [
+      './private/community/createDiscussion/createDiscussion-spec.js'
+    ],
 
-    // replyDiscussion: [
-    //   './private/community/replyDiscussion/replyDiscussion-spec.js'
-    // ],
+    replyDiscussion: [
+      './private/community/replyDiscussion/replyDiscussion-spec.js'
+    ],
 
-    // commentDiscussion: [
-    //   './private/community/commentDiscussion/commentDiscussion-spec.js'
-    // ],
+    commentDiscussion: [
+      './private/community/commentDiscussion/commentDiscussion-spec.js'
+    ],
 
-    // downloadDoc: [
-    //   './private/community/downloadDoc/downloadDoc-spec.js'
-    // ],
+    downloadDoc: [
+      './private/community/downloadDoc/downloadDoc-spec.js'
+    ],
 
-    // deleteDiscussion: [
-    //   './private/community/deleteDiscussion/deleteDiscussion-spec.js'
-    // ],
+    deleteDiscussion: [
+      './private/community/deleteDiscussion/deleteDiscussion-spec.js'
+    ],
 
-    // undoDeleteDiscussion: [
-    //   './private/community/undoDeleteDiscussion/undoDeleteDiscussion-spec.js'
-    // ],
+    undoDeleteDiscussion: [
+      './private/community/undoDeleteDiscussion/undoDeleteDiscussion-spec.js'
+    ],
 
-    // searchForDiscussion: [
-    //   './private/community/searchForDiscussion/searchForDiscussion-spec.js'
-    // ],
+    searchForDiscussion: [
+      './private/community/searchForDiscussion/searchForDiscussion-spec.js'
+    ],
 
-    // createAnonymousDiscussion: [
-    //   './private/community/createAnonymousDiscussion/createAnonymousDiscussion-spec.js'
-    // ],
+    createAnonymousDiscussion: [
+      './private/community/createAnonymousDiscussion/createAnonymousDiscussion-spec.js'
+    ],
 
-    // thankDiscussion: [
-    //   './private/community/thankDiscussion/thankDiscussion-spec.js'
-    // ],
+    thankDiscussion: [
+      './private/community/thankDiscussion/thankDiscussion-spec.js'
+    ],
 
-    // searchVendors: [
-    //   './private/community/searchVendors/searchVendors-spec.js'
-    // ],
+    searchVendors: [
+      './private/community/searchVendors/searchVendors-spec.js'
+    ],
 
-    // sendMessageToVendor: [
-    //   './private/community/sendMessageToVendor/sendMessageToVendor-spec.js'
-    // ],
+    sendMessageToVendor: [
+      './private/community/sendMessageToVendor/sendMessageToVendor-spec.js'
+    ],
 
-    // searchTopic: [
-    //   './private/community/searchTopic/searchTopic-spec.js'
-    // ],
+    searchTopic: [
+      './private/community/searchTopic/searchTopic-spec.js'
+    ],
 
-    // inviteColleagues: [
-    //   './private/community/inviteColleagues/inviteColleagues-spec.js'
-    // ],
+    inviteColleagues: [
+      './private/community/inviteColleagues/inviteColleagues-spec.js'
+    ],
 
-    // searchDoc: [
-    //   './private/community/searchDoc/searchDoc-spec.js'
-    // ],
+    searchDoc: [
+      './private/community/searchDoc/searchDoc-spec.js'
+    ],
 
-    // thankDoc: [
-    //   './private/community/thankDoc/thankDoc-spec.js'
-    // ],
+    thankDoc: [
+      './private/community/thankDoc/thankDoc-spec.js'
+    ],
 
-    // reputationSystemAndLeaderboard: [
-    //   './private/community/reputationSystemAndLeaderboard/reputationSystemAndLeaderboard-spec.js'
-    // ],
+    reputationSystemAndLeaderboard: [
+      './private/community/reputationSystemAndLeaderboard/reputationSystemAndLeaderboard-spec.js'
+    ],
 
-    // sendFile: [
-    //   './private/inbox/sendFile/sendFile-spec.js'
-    // ],
+    sendFile: [
+      './private/inbox/sendFile/sendFile-spec.js'
+    ],
 
-    // sendMessage: [
-    //   './private/inbox/sendMessage/sendMessage-spec.js'
-    // ],
+    sendMessage: [
+      './private/inbox/sendMessage/sendMessage-spec.js'
+    ],
 
-    // reportSpam: [
-    //   './private/inbox/reportSpam/reportSpam-spec.js'
-    // ],
+    reportSpam: [
+      './private/inbox/reportSpam/reportSpam-spec.js'
+    ],
 
-    // downloadFile: [
-    //   './private/inbox/downloadFile/downloadFile-spec.js'
-    // ],
+    downloadFile: [
+      './private/inbox/downloadFile/downloadFile-spec.js'
+    ],
 
-    // vmAddVendor: [
-    //   './private/vm/vmAddVendor/vmAddVendor-spec.js'
-    // ],
+    vmAddVendor: [
+      './private/vm/vmAddVendor/vmAddVendor-spec.js'
+    ],
 
-    // vmAddUnverifiedVendor: [
-    //   './private/vm/vmAddUnverifiedVendor/vmAddUnverifiedVendor-spec.js'
-    // ],
+    vmAddUnverifiedVendor: [
+      './private/vm/vmAddUnverifiedVendor/vmAddUnverifiedVendor-spec.js'
+    ],
 
-    // vmUploadDocument: [
-    //   './private/vm/vmUploadDocument/vmUploadDocument-spec.js'
-    // ],
+    vmUploadDocument: [
+      './private/vm/vmUploadDocument/vmUploadDocument-spec.js'
+    ],
 
-    // vmAddTask: [
-    //   './private/vm/vmAddTask/vmAddTask-spec.js'
-    // ],
+    vmAddTask: [
+      './private/vm/vmAddTask/vmAddTask-spec.js'
+    ],
 
-    // vmEditTask: [
-    //   './private/vm/vmEditTask/vmEditTask-spec.js'
-    // ],
+    vmEditTask: [
+      './private/vm/vmEditTask/vmEditTask-spec.js'
+    ],
 
-    // vmCompleteTask: [
-    //   './private/vm/vmCompleteTask/vmCompleteTask-spec.js'
-    // ],
+    vmCompleteTask: [
+      './private/vm/vmCompleteTask/vmCompleteTask-spec.js'
+    ],
 
-    // vmDeleteTask: [
-    //   './private/vm/vmDeleteTask/vmDeleteTask-spec.js'
-    // ],
+    vmDeleteTask: [
+      './private/vm/vmDeleteTask/vmDeleteTask-spec.js'
+    ],
 
-    // vmDeleteDoc: [
-    //   './private/vm/vmDeleteDoc/vmDeleteDoc-spec.js'
-    // ],
+    vmDeleteDoc: [
+      './private/vm/vmDeleteDoc/vmDeleteDoc-spec.js'
+    ],
 
-    // vmReport: [
-    //   './private/vm/vmReport/vmReport-spec.js'
-    // ],
+    vmReport: [
+      './private/vm/vmReport/vmReport-spec.js'
+    ],
 
-    // vmAddUser: [
-    //   './private/vm/vmAddUser/vmAddUser-spec.js'
-    // ],
+    vmAddUser: [
+      './private/vm/vmAddUser/vmAddUser-spec.js'
+    ],
 
-    // vmRemoveUser: [
-    //   './private/vm/vmRemoveUser/vmRemoveUser-spec.js'
-    // ],
+    vmRemoveUser: [
+      './private/vm/vmRemoveUser/vmRemoveUser-spec.js'
+    ],
 
-    // vmRemoveVendor: [
-    //   './private/vm/vmRemoveVendor/vmRemoveVendor-spec.js'
-    // ],
+    vmRemoveVendor: [
+      './private/vm/vmRemoveVendor/vmRemoveVendor-spec.js'
+    ],
 
-    // vmRemoveUnverifiedVendor: [
-    //   './private/vm/vmRemoveUnverifiedVendor/vmRemoveUnverifiedVendor-spec.js'
-    // ],
+    vmRemoveUnverifiedVendor: [
+      './private/vm/vmRemoveUnverifiedVendor/vmRemoveUnverifiedVendor-spec.js'
+    ],
 
-    // raHome: [
-    //   './private/raPremium/raHome/raHome-spec.js'
-    // ],
+    raHome: [
+      './private/raPremium/raHome/raHome-spec.js'
+    ],
 
-    // raDropMenu: [
-    //   './private/raPremium/raDropMenu/raDropMenu-spec.js'
-    // ],
+    raDropMenu: [
+      './private/raPremium/raDropMenu/raDropMenu-spec.js'
+    ],
 
-    // raGoToLegacyApp: [
-    //   './private/raPremium/raGoToLegacyApp/raGoToLegacyApp-spec.js'
-    // ],
+    raGoToLegacyApp: [
+      './private/raPremium/raGoToLegacyApp/raGoToLegacyApp-spec.js'
+    ],
 
-    // raCreateInprogressTemplate: [
-    //   './private/raPremium/raCreateInprogressTemplate/raCreateInprogressTemplate-spec.js'
-    // ],
+    raCreateInprogressTemplate: [
+      './private/raPremium/raCreateInprogressTemplate/raCreateInprogressTemplate-spec.js'
+    ],
 
-    // raUnsavedChangesMessage: [
-    //   './private/raPremium/raUnsavedChangesMessage/raUnsavedChangesMessage-spec.js'
-    // ],
+    raUnsavedChangesMessage: [
+      './private/raPremium/raUnsavedChangesMessage/raUnsavedChangesMessage-spec.js'
+    ],
 
-    // raSavedChangesMessage: [
-    //   './private/raPremium/raSavedChangesMessage/raSavedChangesMessage-spec.js'
-    // ],
+    raSavedChangesMessage: [
+      './private/raPremium/raSavedChangesMessage/raSavedChangesMessage-spec.js'
+    ],
 
-    // raEditInprogressTemplate: [
-    //   './private/raPremium/raEditInprogressTemplate/raEditInprogressTemplate-spec.js'
-    // ],
+    raEditInprogressTemplate: [
+      './private/raPremium/raEditInprogressTemplate/raEditInprogressTemplate-spec.js'
+    ],
 
-    // raDeleteInprogressTemplate: [
-    //   './private/raPremium/raDeleteInprogressTemplate/raDeleteInprogressTemplate-spec.js'
-    // ],
+    raDeleteInprogressTemplate: [
+      './private/raPremium/raDeleteInprogressTemplate/raDeleteInprogressTemplate-spec.js'
+    ],
 
-    // raCreateCompleteTemplate: [
-    //   './private/raPremium/raCreateCompleteTemplate/raCreateCompleteTemplate-spec.js'
-    // ],
+    raCreateCompleteTemplate: [
+      './private/raPremium/raCreateCompleteTemplate/raCreateCompleteTemplate-spec.js'
+    ],
 
-    // raEditCompleteTemplate: [
-    //   './private/raPremium/raEditCompleteTemplate/raEditCompleteTemplate-spec.js'
-    // ],
+    raEditCompleteTemplate: [
+      './private/raPremium/raEditCompleteTemplate/raEditCompleteTemplate-spec.js'
+    ],
 
-    // raDeleteCompleteTemplate: [
-    //   './private/raPremium/raDeleteCompleteTemplate/raDeleteCompleteTemplate-spec.js'
-    // ],
+    raDeleteCompleteTemplate: [
+      './private/raPremium/raDeleteCompleteTemplate/raDeleteCompleteTemplate-spec.js'
+    ],
 
     dumbleformFirstForm: [
       './private/dumbleform/completeYourProfile/completeYourProfile-spec.js'
@@ -362,69 +362,69 @@ exports.config = {
       './private/dumbleform/vendorMapping/vendorMapping-spec.js'
     ],
 
-    // logOut: [
-    //   './private/education/logOutAsAdmin/logOutAsAdmin-spec.js'
-    // ],
+    logOut: [
+      './private/education/logOutAsAdmin/logOutAsAdmin-spec.js'
+    ],
 
-    // loginAsAdmin: [
-    //   './private/education/loginAsAdmin/loginAsAdmin-spec.js'
-    // ],
+    loginAsAdmin: [
+      './private/education/loginAsAdmin/loginAsAdmin-spec.js'
+    ],
 
-    // createHostedWebinar: [
-    //   './private/education/createHostedWebinar/createHostedWebinar-spec.js'
-    // ],
+    createHostedWebinar: [
+      './private/education/createHostedWebinar/createHostedWebinar-spec.js'
+    ],
 
-    // buyingHostedWebinar: [
-    //   './private/education/buyingHostedWebinar/buyingHostedWebinar-spec.js'
-    // ],
+    buyingHostedWebinar: [
+      './private/education/buyingHostedWebinar/buyingHostedWebinar-spec.js'
+    ],
 
-    // usingInvoiceHosted: [
-    //   './private/education/usingInvoiceHosted/usingInvoiceHosted-spec.js'
-    // ],
+    usingInvoiceHosted: [
+      './private/education/usingInvoiceHosted/usingInvoiceHosted-spec.js'
+    ],
 
-    // setInactiveHosted: [
-    //   './private/education/setInactiveHosted/setInactiveHosted-spec.js'
-    // ],
+    setInactiveHosted: [
+      './private/education/setInactiveHosted/setInactiveHosted-spec.js'
+    ],
 
-    // createOutsourcedWebinar: [
-    //   './private/education/createOutsourcedWebinar/createOutsourcedWebinar-spec.js'
-    // ],
+    createOutsourcedWebinar: [
+      './private/education/createOutsourcedWebinar/createOutsourcedWebinar-spec.js'
+    ],
 
-    // buyingOutsourcedWebinar: [
-    //   './private/education/buyingOutsourcedWebinar/buyingOutsourcedWebinar-spec.js'
-    // ],
+    buyingOutsourcedWebinar: [
+      './private/education/buyingOutsourcedWebinar/buyingOutsourcedWebinar-spec.js'
+    ],
 
-    // usingInvoiceOutsourced: [
-    //   './private/education/usingInvoiceOutsourced/usingInvoiceOutsourced-spec.js'
-    // ],
+    usingInvoiceOutsourced: [
+      './private/education/usingInvoiceOutsourced/usingInvoiceOutsourced-spec.js'
+    ],
 
-    // setInactiveOutsourced: [
-    //   './private/education/setInactiveOutsourced/setInactiveOutsourced-spec.js'
-    // ],
+    setInactiveOutsourced: [
+      './private/education/setInactiveOutsourced/setInactiveOutsourced-spec.js'
+    ],
 
-    // createVideo: [
-    //   './private/education/createVideo/createVideo-spec.js'
-    // ],
+    createVideo: [
+      './private/education/createVideo/createVideo-spec.js'
+    ],
 
-    // buyingVideo: [
-    //   './private/education/buyingVideo/buyingVideo-spec.js'
-    // ],
+    buyingVideo: [
+      './private/education/buyingVideo/buyingVideo-spec.js'
+    ],
 
-    // usingInvoiceVideo: [
-    //   './private/education/usingInvoiceVideo/usingInvoiceVideo-spec.js'
-    // ],
+    usingInvoiceVideo: [
+      './private/education/usingInvoiceVideo/usingInvoiceVideo-spec.js'
+    ],
 
-    // setInactiveVideo: [
-    //   './private/education/setInactiveVideo/setInactiveVideo-spec.js'
-    // ],
+    setInactiveVideo: [
+      './private/education/setInactiveVideo/setInactiveVideo-spec.js'
+    ],
 
-    // allAccess: [
-    //   './private/education/allAccess/allAccess-spec.js'
-    // ],
+    allAccess: [
+      './private/education/allAccess/allAccess-spec.js'
+    ],
 
-    // setAllAccessToFalse: [
-    //   './private/education/setAllAccessToFalse/setAllAccessToFalse-spec.js'
-    // ],
+    setAllAccessToFalse: [
+      './private/education/setAllAccessToFalse/setAllAccessToFalse-spec.js'
+    ],
   },
 
   capabilities: {
