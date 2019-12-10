@@ -179,6 +179,10 @@ exports.config = {
       './gfShop/testPrintOrderPage/testPrintOrderPage-spec.js'
     ],
 
+    testPrintInvoicePage: [
+      './gfShop/testPrintInvoicePage/testPrintInvoicePage-spec.js'
+    ],
+
     testCouponOrder: [
       './gfShop/testCouponOrder/testCouponOrder-spec.js'
     ],
@@ -217,6 +221,34 @@ exports.config = {
 
     testAdvanceSearchSKU: [
       './gfShop/testAdvanceSearchSKU/testAdvanceSearchSKU-spec.js'
+    ],
+
+    testAdvanceSearchDescription: [
+      './gfShop/testAdvanceSearchDescription/testAdvanceSearchDescription-spec.js'
+    ],
+
+    testAdvanceSearchShortDescription: [
+      './gfShop/testAdvanceSearchShortDescription/testAdvanceSearchShortDescription-spec.js'
+    ],
+
+    testAdvanceSearchPriceRange: [
+      './gfShop/testAdvanceSearchPriceRange/testAdvanceSearchPriceRange-spec.js'
+    ],
+
+    testAdvanceSearchProductView: [
+      './gfShop/testAdvanceSearchProductView/testAdvanceSearchProductView-spec.js'
+    ],
+
+    testCartBetweenShops: [
+      './gfShop/testCartBetweenShops/testCartBetweenShops-spec.js'
+    ],
+
+    testCuddebackShipping: [
+      './gfShop/testCuddebackShipping/testCuddebackShipping-spec.js'
+    ],
+
+    testAddBillingAddress: [
+      './gfShop/testAddBillingAddress/testAddBillingAddress-spec.js'
     ],
   },
 
