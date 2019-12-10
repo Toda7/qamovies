@@ -27,8 +27,16 @@ exports.config = {
       './gfShop/testTwentyProductsOrder/testTwentyProductsOrder-spec.js'
     ],
 
+    testBreadcrumbs: [
+      './gfShop/testBreadcrumbs/testBreadcrumbs-spec.js'
+    ],
+
     testMyAccount: [
       './gfShop/testMyAccount/testMyAccount-spec.js'
+    ],
+
+    testUserMenuLinks: [
+      './gfShop/testUserMenuLinks/testUserMenuLinks-spec.js'
     ],
 
     testSortingByName: [
@@ -187,8 +195,17 @@ exports.config = {
       './gfShop/testCouponOrder/testCouponOrder-spec.js'
     ],
 
+    testSaveCcForNextTime: [
+      // Ovo sranje ne radi dok ne provalimo u cemu je fora sa Authorize.net errorom na Payment strani
+      './gfShop/testSaveCcForNextTime/testSaveCcForNextTime-spec.js'
+    ],
+
     testWrongCouponCode: [
       './gfShop/testWrongCouponCode/testWrongCouponCode-spec.js'
+    ],
+
+    testCancelCoupon: [
+      './gfShop/testCancelCoupon/testCancelCoupon-spec.js'
     ],
 
     testViewProduct: [
@@ -221,6 +238,14 @@ exports.config = {
 
     testAdvanceSearchSKU: [
       './gfShop/testAdvanceSearchSKU/testAdvanceSearchSKU-spec.js'
+    ],
+
+    testAdvancedSearchPagination: [
+      './gfShop/testAdvancedSearchPagination/testAdvancedSearchPagination-spec.js'
+    ],
+
+    testTwoShippingMethods: [
+      './gfShop/testTwoShippingMethods/testTwoShippingMethods-spec.js'
     ],
 
     testAdvanceSearchDescription: [
