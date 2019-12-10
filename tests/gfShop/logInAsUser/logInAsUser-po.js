@@ -13,6 +13,8 @@ function clickOnSignIn() {
 function enterEmail() {
    // Unosenje admin's email
    element(by.id('gf-input-1')).sendKeys('bradlyseales@gmail.com');
+   // element(by.id('gf-input-1')).sendKeys('trappercreekllc@gmail.com');
+
 }
 
 function enterPass() {

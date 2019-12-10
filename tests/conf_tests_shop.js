@@ -171,6 +171,10 @@ exports.config = {
       './gfShop/testNotSaveInAddressBookForNewAddress/testNotSaveInAddressBookForNewAddress-spec.js'
     ],
 
+    testErrorMessageOnProductDetails: [
+      './gfShop/testErrorMessageOnProductDetails/testErrorMessageOnProductDetails-spec.js'
+    ],
+
     testMyOrders: [
       './gfShop/testMyOrders/testMyOrders-spec.js'
     ],
@@ -183,6 +187,10 @@ exports.config = {
       './gfShop/testCartWithFFLAndRegularProduct/testCartWithFFLAndRegularProduct-spec.js'
     ],
 
+    testAddFirstAddressOnAddressBook: [
+      './gfShop/testAddFirstAddressOnAddressBook/testAddFirstAddressOnAddressBook-spec.js'
+    ],
+
     testPrintOrderPage: [
       './gfShop/testPrintOrderPage/testPrintOrderPage-spec.js'
     ],
@@ -191,14 +199,10 @@ exports.config = {
       './gfShop/testPrintInvoicePage/testPrintInvoicePage-spec.js'
     ],
 
-    testCouponOrder: [
-      './gfShop/testCouponOrder/testCouponOrder-spec.js'
-    ],
-
-    testSaveCcForNextTime: [
-      // Ovo sranje ne radi dok ne provalimo u cemu je fora sa Authorize.net errorom na Payment strani
-      './gfShop/testSaveCcForNextTime/testSaveCcForNextTime-spec.js'
-    ],
+    // testSaveCcForNextTime: [
+    //   // Ovo sranje ne radi dok ne provalimo u cemu je fora sa Authorize.net errorom na Payment strani
+    //   './gfShop/testSaveCcForNextTime/testSaveCcForNextTime-spec.js'
+    // ],
 
     testWrongCouponCode: [
       './gfShop/testWrongCouponCode/testWrongCouponCode-spec.js'
