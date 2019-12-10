@@ -7,13 +7,13 @@ function landOnArcheryPage() {
 function click1stProduct() {
    // Klik na prvi proizvod 
    element(by.className('column main')).all(by.className('product-image-photo')).get(0).click();
-   browser.sleep(2000);
+   browser.sleep(3000);
 }
 
 function addToCart() {
    // Dodaj proizvod u korpu
    element(by.buttonText('Add to Cart')).click();
-   browser.sleep(2000);
+   browser.sleep(5000);
 }
 
 function click2ndProduct() {
@@ -200,7 +200,7 @@ function checkSuccess1() {
 function clickProceedToCheckout() {
    // Klik na Proceed to Checkout dugme
    element(by.buttonText('Proceed to Checkout')).click();
-   browser.sleep(2000);
+   browser.sleep(3000);
 }
 
 function clickNext() {
