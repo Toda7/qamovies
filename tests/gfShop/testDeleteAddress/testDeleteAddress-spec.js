@@ -54,11 +54,11 @@ describe('Setovanje stare addrese za shipping/billing page i brisanje nove addre
         testAddNewAddress.checkIsAddressIsSaved();
     });
 
-    it('Provera da li je nasa nova addresa otisla na mesto billing addrese', function(){
+    it('Provera da li je stara addresa otisla na mesto billing addrese', function(){
         testDeleteAddress.checkBoxContent();
     });
 
-    it('Provera da li je nasa nova addresa otisla na mesto shipping addrese', function(){
+    it('Provera da li je stara addresa otisla na mesto Shipping addrese', function(){
         testDeleteAddress.checkBoxContent2();
     });
 
