@@ -5,7 +5,7 @@ var testDeleteAddress = require('../testDeleteAddress/testDeleteAddress-po.js');
 var testAttentionWindow = require('../testAttentionWindow/testAttentionWindow-po.js');
 var testRestrictedAreaMessage = require('../testRestrictedAreaMessage/testRestrictedAreaMessage-po.js');
 
-describe('Test restricted area message', function(){
+describe('Test PO box address from address book', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element

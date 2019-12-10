@@ -19,129 +19,129 @@ exports.config = {
       './gfShop/logInAsUser/logInAsUser-spec.js'
     ],
 
-    // testPlaceFFLOrder: [
-    //   './gfShop/testPlaceFFLOrder/testPlaceFFLOrder-spec.js'
-    // ],
+    testPlaceFFLOrder: [
+      './gfShop/testPlaceFFLOrder/testPlaceFFLOrder-spec.js'
+    ],
 
-    // testTwentyProductsOrder: [
-    //   './gfShop/testTwentyProductsOrder/testTwentyProductsOrder-spec.js'
-    // ],
+    testTwentyProductsOrder: [
+      './gfShop/testTwentyProductsOrder/testTwentyProductsOrder-spec.js'
+    ],
 
-    // testMyAccount: [
-    //   './gfShop/testMyAccount/testMyAccount-spec.js'
-    // ],
+    testMyAccount: [
+      './gfShop/testMyAccount/testMyAccount-spec.js'
+    ],
 
-    // testSortingByName: [
-    //   './gfShop/testSortingByName/testSortingByName-spec.js'
-    // ],
+    testSortingByName: [
+      './gfShop/testSortingByName/testSortingByName-spec.js'
+    ],
 
-    // testSortingByPrice: [
-    //   './gfShop/testSortingByPrice/testSortingByPrice-spec.js'
-    // ],
+    testSortingByPrice: [
+      './gfShop/testSortingByPrice/testSortingByPrice-spec.js'
+    ],
 
-    // testSortingByPosition: [
-    //   './gfShop/testSortingByPosition/testSortingByPosition-spec.js'
-    // ],
+    testSortingByPosition: [
+      './gfShop/testSortingByPosition/testSortingByPosition-spec.js'
+    ],
 
-    // testSortingByShoppingOptions: [
-    //   './gfShop/testSortingByShoppingOptions/testSortingByShoppingOptions-spec.js'
-    // ],
+    testSortingByShoppingOptions: [
+      './gfShop/testSortingByShoppingOptions/testSortingByShoppingOptions-spec.js'
+    ],
 
-    // testSortingByDescendingDirection: [
-    //   './gfShop/testSortingByDescendingDirection/testSortingByDescendingDirection-spec.js'
-    // ],
+    testSortingByDescendingDirection: [
+      './gfShop/testSortingByDescendingDirection/testSortingByDescendingDirection-spec.js'
+    ],
 
-    // testAddNewAddress: [
-    //   './gfShop/testAddNewAddress/testAddNewAddress-spec.js'
-    // ],
+    testAddNewAddress: [
+      './gfShop/testAddNewAddress/testAddNewAddress-spec.js'
+    ],
 
-    // testAddressToDefaultShipping: [
-    //   './gfShop/testAddressToDefaultShipping/testAddressToDefaultShipping-spec.js'
-    // ],
+    testAddressToDefaultShipping: [
+      './gfShop/testAddressToDefaultShipping/testAddressToDefaultShipping-spec.js'
+    ],
 
-    // testDeleteAddress: [
-    //   './gfShop/testDeleteAddress/testDeleteAddress-spec.js'
-    // ],
+    testDeleteAddress: [
+      './gfShop/testDeleteAddress/testDeleteAddress-spec.js'
+    ],
 
-    // testReturnPolicy: [
-    //   './gfShop/testReturnPolicy/testReturnPolicy-spec.js'
-    // ],
+    testReturnPolicy: [
+      './gfShop/testReturnPolicy/testReturnPolicy-spec.js'
+    ],
 
-    // testAdminSwitch: [
-    //   './gfShop/testAdminSwitch/testAdminSwitch-spec.js'
-    // ],
+    testAdminSwitch: [
+      './gfShop/testAdminSwitch/testAdminSwitch-spec.js'
+    ],
 
-    // testShowPerPage: [
-    //   './gfShop/testShowPerPage/testShowPerPage-spec.js'
-    // ],
+    testShowPerPage: [
+      './gfShop/testShowPerPage/testShowPerPage-spec.js'
+    ],
 
-    // testAdvancedSorting: [
-    //   './gfShop/testAdvancedSorting/testAdvancedSorting-spec.js'
-    // ],
+    testAdvancedSorting: [
+      './gfShop/testAdvancedSorting/testAdvancedSorting-spec.js'
+    ],
 
-    // testPagination: [
-    //   './gfShop/testPagination/testPagination-spec.js'
-    // ],
+    testPagination: [
+      './gfShop/testPagination/testPagination-spec.js'
+    ],
 
-    // testProductWithOneBox: [
-    //   './gfShop/testProductWithOneBox/testProductWithOneBox-spec.js'
-    // ],
+    testProductWithOneBox: [
+      './gfShop/testProductWithOneBox/testProductWithOneBox-spec.js'
+    ],
 
-    // testProductWithTwoBoxes: [
-    //   './gfShop/testProductWithTwoBoxes/testProductWithTwoBoxes-spec.js'
-    // ],
+    testProductWithTwoBoxes: [
+      './gfShop/testProductWithTwoBoxes/testProductWithTwoBoxes-spec.js'
+    ],
 
-    // testProductWithTwoDrops: [
-    //   './gfShop/testProductWithTwoDrops/testProductWithTwoDrops-spec.js'
-    // ],
+    testProductWithTwoDrops: [
+      './gfShop/testProductWithTwoDrops/testProductWithTwoDrops-spec.js'
+    ],
 
-    // testGrowlMessageToSelectOption: [
-    //   './gfShop/testGrowlMessageToSelectOption/testGrowlMessageToSelectOption-spec.js'
-    // ],
+    testGrowlMessageToSelectOption: [
+      './gfShop/testGrowlMessageToSelectOption/testGrowlMessageToSelectOption-spec.js'
+    ],
 
-    // TestAttentionWindow: [
-    //   './gfShop/TestAttentionWindow/TestAttentionWindow-spec.js'
-    // ],
+    TestAttentionWindow: [
+      './gfShop/TestAttentionWindow/TestAttentionWindow-spec.js'
+    ],
 
-    // TestSecondAttentionWindow: [
-    //   './gfShop/TestSecondAttentionWindow/TestSecondAttentionWindow-spec.js'
-    // ],
+    TestSecondAttentionWindow: [
+      './gfShop/TestSecondAttentionWindow/TestSecondAttentionWindow-spec.js'
+    ],
 
-    // TestZendesk: [
-    //   './gfShop/TestZendesk/TestZendesk-spec.js'
-    // ],
+    TestZendesk: [
+      './gfShop/TestZendesk/TestZendesk-spec.js'
+    ],
 
-    // testMessageForNoOrders: [
-    //   './gfShop/testMessageForNoOrders/testMessageForNoOrders-spec.js'
-    // ],
+    testMessageForNoOrders: [
+      './gfShop/testMessageForNoOrders/testMessageForNoOrders-spec.js'
+    ],
 
-    // testMessageNoPayment: [
-    //   './gfShop/testMessageNoPayment/testMessageNoPayment-spec.js'
-    // ],
+    testMessageNoPayment: [
+      './gfShop/testMessageNoPayment/testMessageNoPayment-spec.js'
+    ],
 
-    // testFooterLinks: [
-    //   './gfShop/testFooterLinks/testFooterLinks-spec.js'
-    // ],
+    testFooterLinks: [
+      './gfShop/testFooterLinks/testFooterLinks-spec.js'
+    ],
 
-    // testRestrictedAreaMessage: [
-    //   './gfShop/testRestrictedAreaMessage/testRestrictedAreaMessage-spec.js'
-    // ],
+    testRestrictedAreaMessage: [
+      './gfShop/testRestrictedAreaMessage/testRestrictedAreaMessage-spec.js'
+    ],
 
-    // testRegularVSDiscountPrice: [
-    //   './gfShop/testRegularVSDiscountPrice/testRegularVSDiscountPrice-spec.js'
-    // ],
+    testRegularVSDiscountPrice: [
+      './gfShop/testRegularVSDiscountPrice/testRegularVSDiscountPrice-spec.js'
+    ],
 
-    // testSearchShop: [
-    //   './gfShop/testSearchShop/testSearchShop-spec.js'
-    // ],
+    testSearchShop: [
+      './gfShop/testSearchShop/testSearchShop-spec.js'
+    ],
 
-    // testColorLinksOnProductsListPage: [
-    //   './gfShop/testColorLinksOnProductsListPage/testColorLinksOnProductsListPage-spec.js'
-    // ],
+    testColorLinksOnProductsListPage: [
+      './gfShop/testColorLinksOnProductsListPage/testColorLinksOnProductsListPage-spec.js'
+    ],
 
-    // testColorLinksonProductsListPage: [
-    //   './gfShop/testColorLinksonProductsListPage/testColorLinksonProductsListPage-spec.js'
-    // ],
+    testColorLinksonProductsListPage: [
+      './gfShop/testColorLinksonProductsListPage/testColorLinksonProductsListPage-spec.js'
+    ],
 
     testPoBoxAddress: [
       './gfShop/testPoBoxAddress/testPoBoxAddress-spec.js'
@@ -151,61 +151,73 @@ exports.config = {
       './gfShop/testPoBoxAddressFromCheckout/testPoBoxAddressFromCheckout-spec.js'
     ],
 
-    // testMyOrders: [
-    //   './gfShop/testMyOrders/testMyOrders-spec.js'
-    // ],
+    testCouponOrder: [
+      './gfShop/testCouponOrder/testCouponOrder-spec.js'
+    ],
 
-    // testSkuOneDrop: [
-    //   './gfShop/testSkuOneDrop/testSkuOneDrop-spec.js'
-    // ],
+    testSaveInAddressBookOptionForNewAddress: [
+      './gfShop/testSaveInAddressBookOptionForNewAddress/testSaveInAddressBookOptionForNewAddress-spec.js'
+    ],
 
-    // testCartWithFFLAndRegularProduct: [
-    //   './gfShop/testCartWithFFLAndRegularProduct/testCartWithFFLAndRegularProduct-spec.js'
-    // ],
+    testNotSaveInAddressBookForNewAddress: [
+      './gfShop/testNotSaveInAddressBookForNewAddress/testNotSaveInAddressBookForNewAddress-spec.js'
+    ],
 
-    // testPrintOrderPage: [
-    //   './gfShop/testPrintOrderPage/testPrintOrderPage-spec.js'
-    // ],
+    testMyOrders: [
+      './gfShop/testMyOrders/testMyOrders-spec.js'
+    ],
 
-    // testCouponOrder: [
-    //   './gfShop/testCouponOrder/testCouponOrder-spec.js'
-    // ],
+    testSkuOneDrop: [
+      './gfShop/testSkuOneDrop/testSkuOneDrop-spec.js'
+    ],
 
-    // testWrongCouponCode: [
-    //   './gfShop/testWrongCouponCode/testWrongCouponCode-spec.js'
-    // ],
+    testCartWithFFLAndRegularProduct: [
+      './gfShop/testCartWithFFLAndRegularProduct/testCartWithFFLAndRegularProduct-spec.js'
+    ],
 
-    // testViewProduct: [
-    //   './gfShop/testViewProduct/testViewProduct-spec.js'
-    // ],
+    testPrintOrderPage: [
+      './gfShop/testPrintOrderPage/testPrintOrderPage-spec.js'
+    ],
 
-    // testProductMessage: [
-    //   './gfShop/testProductMessage/testProductMessage-spec.js'
-    // ],
+    testCouponOrder: [
+      './gfShop/testCouponOrder/testCouponOrder-spec.js'
+    ],
 
-    // testEditQtyCart: [
-    //   './gfShop/testEditQtyCart/testEditQtyCart-spec.js'
-    // ],
+    testWrongCouponCode: [
+      './gfShop/testWrongCouponCode/testWrongCouponCode-spec.js'
+    ],
 
-    // testDeleteProductCart: [
-    //   './gfShop/testDeleteProductCart/testDeleteProductCart-spec.js'
-    // ],
+    testViewProduct: [
+      './gfShop/testViewProduct/testViewProduct-spec.js'
+    ],
 
-    // testEditQtyEditPage: [
-    //   './gfShop/testEditQtyEditPage/testEditQtyEditPage-spec.js'
-    // ],
+    testProductMessage: [
+      './gfShop/testProductMessage/testProductMessage-spec.js'
+    ],
 
-    // testDeleteProductEditCart: [
-    //   './gfShop/testDeleteProductEditCart/testDeleteProductEditCart-spec.js'
-    // ],
+    testEditQtyCart: [
+      './gfShop/testEditQtyCart/testEditQtyCart-spec.js'
+    ],
 
-    // testAdvanceSearchProductName: [
-    //   './gfShop/testAdvanceSearchProductName/testAdvanceSearchProductName-spec.js'
-    // ],
+    testDeleteProductCart: [
+      './gfShop/testDeleteProductCart/testDeleteProductCart-spec.js'
+    ],
 
-    // testAdvanceSearchSKU: [
-    //   './gfShop/testAdvanceSearchSKU/testAdvanceSearchSKU-spec.js'
-    // ],
+    testEditQtyEditPage: [
+      './gfShop/testEditQtyEditPage/testEditQtyEditPage-spec.js'
+    ],
+
+    testDeleteProductEditCart: [
+      './gfShop/testDeleteProductEditCart/testDeleteProductEditCart-spec.js'
+    ],
+
+    testAdvanceSearchProductName: [
+      './gfShop/testAdvanceSearchProductName/testAdvanceSearchProductName-spec.js'
+    ],
+
+    testAdvanceSearchSKU: [
+      './gfShop/testAdvanceSearchSKU/testAdvanceSearchSKU-spec.js'
+    ],
   },
 
   capabilities: {

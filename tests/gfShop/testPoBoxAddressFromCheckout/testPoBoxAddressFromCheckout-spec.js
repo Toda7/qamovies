@@ -2,7 +2,7 @@ var testPoBoxAddressFromCheckout = require('./testPoBoxAddressFromCheckout-po.js
 var testTwentyProductsOrder = require('../testTwentyProductsOrder/testTwentyProductsOrder-po.js');
 var testPoBoxAddress = require('../testPoBoxAddress/testPoBoxAddress-po.js');
 
-describe('Test restricted area message from checkout', function(){
+describe('Test PO box address from checkout', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
