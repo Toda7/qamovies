@@ -29,6 +29,7 @@ describe('Prepare Return policy in cockpit', function(){
 
     it('Dolazak u Cockpit na Settings za GOP useress', function(){
         prepareReturnPolicy.landOnSettingsPageInCockpit();
+        browser.sleep(3000);
     });
 
     it('Unosenje nas text u return policy polje u cockpitu', function(){

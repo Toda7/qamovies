@@ -61,6 +61,11 @@ describe('Coupon order', function () {
         testCouponOrder.checkShippingPriceWithCoupon();
     });
 
+    
+    it('Klik na first address to select it as ship address', function () {
+        testCouponOrder.clickToSelectFirstAddressToShip();
+    });
+
     it('Klik na Next dugme', function () {
         testTwentyProductsOrder.clickNext();
     });
