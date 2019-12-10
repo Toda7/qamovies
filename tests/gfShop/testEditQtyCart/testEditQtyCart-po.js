@@ -9,6 +9,7 @@ function click1Product() {
     element(by.className('column main')).all(by.className('product-image-photo')).get(0).click();
     browser.sleep(2000);
  }
+ 
  function clickAddToCart() {
     // klik na Add to cart 
     element(by.className('action primary tocart btn-lg')).click();
