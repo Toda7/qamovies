@@ -2,19 +2,19 @@ function landOnAplsHomePage() {
     // Dolazak na ALPS product details page in shop
     browser.get('https://shop.outfitterextreme.com/stealthcam/accessories/security-bear-box-for-px-series.html'); 
     browser.sleep(2000);
- }
+}
 
 function clickOnAddToCart() {
     //  Klik na add to cart button
     element(by.className('action primary tocart btn-lg')).click();
     browser.sleep(2000);
- }
+}
 
 function clickToOpenCart() {
     //  Klik to open credit cart
     element(by.className('action showcart')).click();
     browser.sleep(2000);
- }
+}
 
 function clickToGoToCheckoutPage() {
     //  Klik to go to checkout page 

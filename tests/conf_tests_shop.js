@@ -170,6 +170,25 @@ exports.config = {
     testAdvanceSearchSKU: [
       './gfShop/testAdvanceSearchSKU/testAdvanceSearchSKU-spec.js'
     ],
+
+    allTab: [
+      './gfShop/allTab/allTab-spec.js'
+    ],
+
+    testMessageForNoOrders: [
+      './gfShop/testMessageForNoOrders/testMessageForNoOrders-spec.js'
+    ],
+    testMessageNoPayment: [
+      './gfShop/testMessageNoPayment/testMessageNoPayment-spec.js'
+    ],
+
+    moultrie: [
+      './gfShop/moultrieShipping/moultrieShipping-spec.js'
+    ],
+
+    addFirstAddressOnCheckout: [
+      './gfShop/addFirstAddressOnCheckout/addFirstAddressOnCheckout-spec.js'
+    ],
   },
 
   capabilities: {
