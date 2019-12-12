@@ -66,11 +66,11 @@ describe('Adding first address on Address Book page', function(){
     });
 
     it('Unesi first name', function(){
-        testAddNewAddress.enterFirstName();
+        testAddFirstAddressOnAddressBook.enterFirstName();
     });
     
     it('Unesi last name', function(){
-        testAddNewAddress.enterLastName();
+        testAddFirstAddressOnAddressBook.enterLastName();
     });
 
     it('Unesi Phone Number', function(){
@@ -127,6 +127,14 @@ describe('Adding first address on Address Book page', function(){
 
     it('Klik na Addresses link', function(){
         testAddFirstAddressOnAddressBook.clickOnAddressesLink();
+    });
+
+    it('Klik na Remove link', function(){
+        testAddFirstAddressOnAddressBook.clickOnRemoveLink();
+    });
+
+    it('Klik to confirm delete link', function(){
+        testAddFirstAddressOnAddressBook.clickToConfirmDelete();
     });
 
         afterAll(function(){

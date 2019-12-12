@@ -44,7 +44,6 @@ function selectOptionFromDrop() {
    element(by.css('select#attribute414.super-attribute-select')).all(by.tagName('option')).get(1).click(); 
 }
 
-
  module.exports = {
    checkRequiredMessageForBox,
    clearQtyField,
