@@ -4,7 +4,7 @@ function landOnTrugloShop() {
     browser.sleep(2000);
 }
 
-function clickOnAllTab() {
+function clickOntestAllTab() {
     //  Klik na All tab
     element(by.className('secondary-navigation-button-wrap')).click();
     browser.sleep(2000);
@@ -354,7 +354,7 @@ function checkGearDiscountsUrl() {
 
  module.exports = {
     landOnTrugloShop,
-    clickOnAllTab,
+    clickOntestAllTab,
     clickOnSights,
     checkSightsTitle,
     checkSightsUrl,

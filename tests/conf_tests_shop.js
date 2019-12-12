@@ -187,10 +187,6 @@ exports.config = {
       './gfShop/testCartWithFFLAndRegularProduct/testCartWithFFLAndRegularProduct-spec.js'
     ],
 
-    testAddFirstAddressOnAddressBook: [
-      './gfShop/testAddFirstAddressOnAddressBook/testAddFirstAddressOnAddressBook-spec.js'
-    ],
-
     testPrintOrderPage: [
       './gfShop/testPrintOrderPage/testPrintOrderPage-spec.js'
     ],
@@ -199,10 +195,10 @@ exports.config = {
       './gfShop/testPrintInvoicePage/testPrintInvoicePage-spec.js'
     ],
 
-    // testSaveCcForNextTime: [
-    //   // Ovo sranje ne radi dok ne provalimo u cemu je fora sa Authorize.net errorom na Payment strani
-    //   './gfShop/testSaveCcForNextTime/testSaveCcForNextTime-spec.js'
-    // ],
+    testSaveCcForNextTime: [
+      // Ovo sranje ne radi dok ne provalimo u cemu je fora sa Authorize.net errorom na Payment strani
+      './gfShop/testSaveCcForNextTime/testSaveCcForNextTime-spec.js'
+    ],
 
     testWrongCouponCode: [
       './gfShop/testWrongCouponCode/testWrongCouponCode-spec.js'
@@ -244,23 +240,36 @@ exports.config = {
       './gfShop/testAdvanceSearchSKU/testAdvanceSearchSKU-spec.js'
     ],
 
-    allTab: [
-      './gfShop/allTab/allTab-spec.js'
+    testAllTab: [
+      './gfShop/testAllTab/testAllTab-spec.js'
     ],
 
     testMessageForNoOrders: [
       './gfShop/testMessageForNoOrders/testMessageForNoOrders-spec.js'
     ],
+
+    testAddFirstAddressOnAddressBook: [
+      './gfShop/testAddFirstAddressOnAddressBook/testAddFirstAddressOnAddressBook-spec.js'
+    ],
+
+    testAddFirstAddressOnCheckout: [
+      './gfShop/testAddFirstAddressOnCheckout/testAddFirstAddressOnCheckout-spec.js'
+    ],
+  
+    testMessageForNoOrders: [
+      './gfShop/testMessageForNoOrders/testMessageForNoOrders-spec.js'
+    ],
+
     testMessageNoPayment: [
       './gfShop/testMessageNoPayment/testMessageNoPayment-spec.js'
     ],
 
-    moultrie: [
-      './gfShop/moultrieShipping/moultrieShipping-spec.js'
+    testMoultrieShipping: [
+      './gfShop/testMoultrieShipping/testMoultrieShipping-spec.js'
     ],
 
-    addFirstAddressOnCheckout: [
-      './gfShop/addFirstAddressOnCheckout/addFirstAddressOnCheckout-spec.js'
+    testAddFirstAddressOnCheckout: [
+      './gfShop/testAddFirstAddressOnCheckout/testAddFirstAddressOnCheckout-spec.js'
     ],
     
     testAdvancedSearchPagination: [
