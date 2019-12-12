@@ -10,19 +10,19 @@ describe('Add billing adresu i error poruke za required polja', function () {
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
     });
 
-    it(' Dolazak u Peak Shop', function(){
+    it(' Dolazak u Peak Shop', function () {
         testAddBillingAddress.landOnPeakShop();
     });
 
-    it('Click na Cudelink sekciju', function(){
+    it('Click na Cudelink sekciju', function () {
         testAddBillingAddress.clickOnMealsLink();
     });
 
-    it('Click na product 1', function(){
+    it('Click na product 1', function () {
         testCuddebackShipping.click1Product();
     });
 
-    it('Dodavanje Producta u cart', function(){
+    it('Dodavanje Producta u cart', function () {
         testCuddebackShipping.clickAddToCart();
     });
 
@@ -30,20 +30,37 @@ describe('Add billing adresu i error poruke za required polja', function () {
         testEditQtyCart.clickOnCart();
     });
 
-    it('Go to Checkout', function(){
+    it('Go to Checkout', function () {
         testCuddebackShipping.clickGoToCheckout();
         browser.sleep(2000);
     });
 
     it('Klik na Next dugme', function () {
         testTwentyProductsOrder.clickNext();
+        browser.sleep(5000);
     });
 
-    it('Click na Uncheck same shipping and billing', function(){
+    it('Click na Uncheck same shipping and billing', function () {
         testAddBillingAddress.clickToUncheck();
     });
 
-    afterAll(function(){
-        browser.waitForAngularEnabled(true); 
+    it('Click na Address select', function () {
+        testAddBillingAddress.clickOnAddressSelect();
+    });
+
+    // it('klik na iem imena', function () {
+        // testAddBillingAddress.clickOnFirst();
+    // });
+
+    it('BRisanje imena', function () {
+        testAddBillingAddress.deleteFirstName();
+    });
+
+    it('BRisanje prezimena', function () {
+        testAddBillingAddress.deleteLastName();
+    });
+
+    afterAll(function () {
+        browser.waitForAngularEnabled(true);
     });
 });
