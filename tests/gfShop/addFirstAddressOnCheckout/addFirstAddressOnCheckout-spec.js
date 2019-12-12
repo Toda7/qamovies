@@ -1,43 +1,9 @@
 var addFirstAddressOnCheckout = require('./addFirstAddressOnCheckout-po.js');
-var testMessageForNoOrders = require('../testMessageForNoOrders/testMessageForNoOrders-po.js');
-var logInAsUser = require('../logInAsUser/logInAsUser-po.js');
 
 describe('Pravljenje adrese na Checkout strani', function () {
 
     beforeAll(function () {
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
-    });
-
-    it('Dolazak na MDP page da bi uradili sign out', function () {
-        testMessageForNoOrders.landOnMdpAsSecondUser();
-    });
-
-    it('Klik on avatar to open user menu', function () {
-        testMessageForNoOrders.clickOnAvatarToOpenDropMenu();
-    });
-
-    it('Klik on Sign Out link', function () {
-        testMessageForNoOrders.clickOnSignOut();
-    });
-
-    it('Dolazak na MDP page da bi uradili sign in', function () {
-        testMessageForNoOrders.landOnMdpAsSecondUser();
-    });
-
-    it('Klik on click On Continue With Email', function () {
-        testMessageForNoOrders.clickOnContinueWithEmail();
-    });
-
-    it('Unosenje users email', function () {
-        testMessageForNoOrders.enterUserEmail();
-    });
-
-    it('Unosenje users email', function () {
-        testMessageForNoOrders.enterUserPass();
-    });
-
-    it('Klik on Sign in', function () {
-        testMessageForNoOrders.submit1();
     });
 
     it('Dolazak na Spypoint shop', function () {
@@ -115,38 +81,6 @@ describe('Pravljenje adrese na Checkout strani', function () {
 
     it('Provera da li je Adresa vidljiva na Review & Payments', function () {
         addFirstAddressOnCheckout.checkEnteredAddress();
-    });
-
-    it('Dolazak na MDP page da bi uradili sign out', function () {
-        testMessageForNoOrders.landOnMdpAsSecondUser();
-    });
-
-    it('Klik on avatar to open user menu', function () {
-        testMessageForNoOrders.clickOnAvatarToOpenDropMenu();
-    });
-
-    it('Klik on Sign Out link', function () {
-        testMessageForNoOrders.clickOnSignOut();
-    });
-
-    it('Dolazak na MDP page da bi uradili sign in', function () {
-        testMessageForNoOrders.landOnMdpAsSecondUser();
-    });
-
-    it('Klik on click On Continue With Email', function () {
-        testMessageForNoOrders.clickOnContinueWithEmail();
-    });
-
-    it('Unosenje user email', function () {
-        logInAsUser.enterEmail();
-    });
-
-    it('Unosenje users email', function () {
-        testMessageForNoOrders.enterUserPass();
-    });
-
-    it('Klik on Sign in', function () {
-        testMessageForNoOrders.submit1();
     });
 
     // Order treba da se zavrsi kada prorade kartice
