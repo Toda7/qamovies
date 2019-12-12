@@ -33,6 +33,31 @@ function clickAddNewAddress() {
    browser.sleep(3000);
 }
 
+function clearFirstNameField() {
+   // Brisanje texta iz first name polja
+   element(by.id('firstname')).clear();
+   browser.sleep(1000);
+}
+
+function clearLastNameField() {
+   // Brisanje texta iz last name polja
+   element(by.id('lastname')).clear();
+   browser.sleep(1000);
+}
+
+function checkRequiredMessageForFirstName(){
+   // provera da li se ucitala required message for phone
+   var EC = protractor.ExpectedConditions;
+   browser.wait(EC.textToBePresentInElement($('div#firstname-error.mage-error'), 'This is a required field.'), 5000);
+}
+
+function checkRequiredMessageForLastName(){
+   // provera da li se ucitala required message for phone
+   var EC = protractor.ExpectedConditions;
+   browser.wait(EC.textToBePresentInElement($('div#lastname-error.mage-error'), 'This is a required field.'), 5000);
+}
+
+
 function checkRequiredMessageForPhone(){
 // provera da li se ucitala required message for phone
 var EC = protractor.ExpectedConditions;
@@ -69,21 +94,33 @@ function checkAddNewAddressURL() {
    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/customer/address/new/'), 5000);
 }
 
+function enterFirstName() {
+   // Unesi Phone Number 
+   element(by.id('firstname')).sendKeys('Bradly');
+   browser.sleep(1000);
+}
+
+function enterLastName() {
+   // Unesi Phone Number 
+   element(by.id('lastname')).sendKeys('Seales');
+   browser.sleep(1000);
+}
+
 function enterPhoneNumber() {
    // Unesi Phone Number 
-   element(by.id('telephone')).clear().sendKeys('555333');
+   element(by.id('telephone')).sendKeys('555333');
    browser.sleep(1000);
 }
 
 function enterStreet() {
    // Unesi Street  
-   element(by.id('street_1')).clear().sendKeys('Street 1');
+   element(by.id('street_1')).sendKeys('Street 1');
    browser.sleep(1000);
 }
 
 function enterCity() {
    // Unesi Street  
-   element(by.id('city')).clear().sendKeys('New York');
+   element(by.id('city')).sendKeys('New York');
    browser.sleep(1000);
 }
 
@@ -98,13 +135,12 @@ function clickProvince() {
 function clickToSelectProvince() {
    //  Klik to select option from drop
    element(by.css('select#region_id.validate-select.required-entry')).all(by.tagName('option')).get(43).click(); 
-   // element(by.css('select#authnetcim-card-id.select')).click();
    browser.sleep(6000);
 }
 
 function enterZip() {
    // Unesi Zip  
-   element(by.id('zip')).clear().sendKeys('90001');
+   element(by.id('zip')).sendKeys('90001');
    browser.sleep(1000);
 }
 
@@ -130,6 +166,8 @@ browser.wait(EC.textToBePresentInElement($('.message-success.success.message'), 
    checkAddressBookURL,
    clickAddNewAddress,
    checkAddNewAddressURL,
+   enterFirstName,
+   enterLastName,
    enterPhoneNumber,
    enterStreet,
    enterCity,
@@ -143,4 +181,8 @@ browser.wait(EC.textToBePresentInElement($('.message-success.success.message'), 
    checkRequiredMessageForcity,
    checkRequiredMessageForState,
    checkRequiredMessageForZip,
+   clearFirstNameField,
+   clearLastNameField,
+   checkRequiredMessageForFirstName,
+   checkRequiredMessageForLastName
  }
