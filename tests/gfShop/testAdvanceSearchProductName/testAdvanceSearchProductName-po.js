@@ -44,8 +44,8 @@ function clickOnSearchField() {
  function checkSerchedProduct() {
     var EC = protractor.ExpectedConditions;
     // Da lis e ucitao trazeni product
-    browser.wait(EC.textToBePresentInElement($('.product.name.product-item-name'), 'ACCU X™ CAPTURE BOWFISHING REST'), 5000);
-    browser.sleep(2000);
+    var xxx = element.all(by.className('product name product-item-name')).get(0);
+    expect(xxx.getText()).toEqual('ACCU X™ CAPTURE BOWFISHING REST');
  }
 
  function clickModifySearch() {

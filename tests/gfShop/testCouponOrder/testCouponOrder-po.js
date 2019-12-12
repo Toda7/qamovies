@@ -51,6 +51,12 @@ function checkShippingPriceWithCoupon3() {
    browser.sleep(500);
 }
 
+function clickToSelectFirstAddressToShip() {
+   // Klik na first address to select it as ship address
+element.all(by.className('action action-select-shipping-item')).get(1).click();
+browser.sleep(5000);
+}
+
 module.exports = {
    checkShippingPriceWithoutCoupon,
    clickApplyDiscountCoupon,
@@ -60,4 +66,5 @@ module.exports = {
    checkShippingPriceWithCoupon,
    checkShippingPriceWithCoupon2,
    checkShippingPriceWithCoupon3,
+   clickToSelectFirstAddressToShip,
 }

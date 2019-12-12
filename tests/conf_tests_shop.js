@@ -27,8 +27,16 @@ exports.config = {
       './gfShop/testTwentyProductsOrder/testTwentyProductsOrder-spec.js'
     ],
 
+    testBreadcrumbs: [
+      './gfShop/testBreadcrumbs/testBreadcrumbs-spec.js'
+    ],
+
     testMyAccount: [
       './gfShop/testMyAccount/testMyAccount-spec.js'
+    ],
+
+    testUserMenuLinks: [
+      './gfShop/testUserMenuLinks/testUserMenuLinks-spec.js'
     ],
 
     testSortingByName: [
@@ -75,6 +83,10 @@ exports.config = {
       './gfShop/testShowPerPage/testShowPerPage-spec.js'
     ],
 
+    testAdvancedSorting: [
+      './gfShop/testAdvancedSorting/testAdvancedSorting-spec.js'
+    ],
+
     testPagination: [
       './gfShop/testPagination/testPagination-spec.js'
     ],
@@ -107,12 +119,56 @@ exports.config = {
       './gfShop/TestZendesk/TestZendesk-spec.js'
     ],
 
+    testMessageForNoOrders: [
+      './gfShop/testMessageForNoOrders/testMessageForNoOrders-spec.js'
+    ],
+
+    testMessageNoPayment: [
+      './gfShop/testMessageNoPayment/testMessageNoPayment-spec.js'
+    ],
+
+    testFooterLinks: [
+      './gfShop/testFooterLinks/testFooterLinks-spec.js'
+    ],
+
+    testRestrictedAreaMessage: [
+      './gfShop/testRestrictedAreaMessage/testRestrictedAreaMessage-spec.js'
+    ],
+
     testRegularVSDiscountPrice: [
       './gfShop/testRegularVSDiscountPrice/testRegularVSDiscountPrice-spec.js'
     ],
 
     testSearchShop: [
       './gfShop/testSearchShop/testSearchShop-spec.js'
+    ],
+
+    testColorLinksOnProductsListPage: [
+      './gfShop/testColorLinksOnProductsListPage/testColorLinksOnProductsListPage-spec.js'
+    ],
+
+    testColorLinksonProductsListPage: [
+      './gfShop/testColorLinksonProductsListPage/testColorLinksonProductsListPage-spec.js'
+    ],
+
+    testPoBoxAddress: [
+      './gfShop/testPoBoxAddress/testPoBoxAddress-spec.js'
+    ],
+
+    testPoBoxAddressFromCheckout: [
+      './gfShop/testPoBoxAddressFromCheckout/testPoBoxAddressFromCheckout-spec.js'
+    ],
+
+    testCouponOrder: [
+      './gfShop/testCouponOrder/testCouponOrder-spec.js'
+    ],
+
+    testSaveInAddressBookOptionForNewAddress: [
+      './gfShop/testSaveInAddressBookOptionForNewAddress/testSaveInAddressBookOptionForNewAddress-spec.js'
+    ],
+
+    testNotSaveInAddressBookForNewAddress: [
+      './gfShop/testNotSaveInAddressBookForNewAddress/testNotSaveInAddressBookForNewAddress-spec.js'
     ],
 
     testMyOrders: [
@@ -131,12 +187,25 @@ exports.config = {
       './gfShop/testPrintOrderPage/testPrintOrderPage-spec.js'
     ],
 
+    testPrintInvoicePage: [
+      './gfShop/testPrintInvoicePage/testPrintInvoicePage-spec.js'
+    ],
+
     testCouponOrder: [
       './gfShop/testCouponOrder/testCouponOrder-spec.js'
     ],
 
+    testSaveCcForNextTime: [
+      // Ovo sranje ne radi dok ne provalimo u cemu je fora sa Authorize.net errorom na Payment strani
+      './gfShop/testSaveCcForNextTime/testSaveCcForNextTime-spec.js'
+    ],
+
     testWrongCouponCode: [
       './gfShop/testWrongCouponCode/testWrongCouponCode-spec.js'
+    ],
+
+    testCancelCoupon: [
+      './gfShop/testCancelCoupon/testCancelCoupon-spec.js'
     ],
 
     testViewProduct: [
@@ -188,6 +257,42 @@ exports.config = {
 
     addFirstAddressOnCheckout: [
       './gfShop/addFirstAddressOnCheckout/addFirstAddressOnCheckout-spec.js'
+    ],
+    
+    testAdvancedSearchPagination: [
+      './gfShop/testAdvancedSearchPagination/testAdvancedSearchPagination-spec.js'
+    ],
+
+    testTwoShippingMethods: [
+      './gfShop/testTwoShippingMethods/testTwoShippingMethods-spec.js'
+    ],
+
+    testAdvanceSearchDescription: [
+      './gfShop/testAdvanceSearchDescription/testAdvanceSearchDescription-spec.js'
+    ],
+
+    testAdvanceSearchShortDescription: [
+      './gfShop/testAdvanceSearchShortDescription/testAdvanceSearchShortDescription-spec.js'
+    ],
+
+    testAdvanceSearchPriceRange: [
+      './gfShop/testAdvanceSearchPriceRange/testAdvanceSearchPriceRange-spec.js'
+    ],
+
+    testAdvanceSearchProductView: [
+      './gfShop/testAdvanceSearchProductView/testAdvanceSearchProductView-spec.js'
+    ],
+
+    testCartBetweenShops: [
+      './gfShop/testCartBetweenShops/testCartBetweenShops-spec.js'
+    ],
+
+    testCuddebackShipping: [
+      './gfShop/testCuddebackShipping/testCuddebackShipping-spec.js'
+    ],
+
+    testAddBillingAddress: [
+      './gfShop/testAddBillingAddress/testAddBillingAddress-spec.js'
     ],
   },
 

@@ -1,8 +1,14 @@
 
 
-function landOnAccountUsersPage() {
-   // dolazak na User's account page on MDP 
+function landOnBradlySealesAccountUsersPage() {
+   // dolazak na Bradly Seales user's account page on MDP 
    browser.get('https://www.outfitterextreme.com/manage/member/28384/settings'); 
+   browser.sleep(2000);
+}
+
+function landOnBrentSnyderAccountUsersPage() {
+   // dolazak na Brent Snyder user's account page on MDP 
+   browser.get('https://www.outfitterextreme.com/manage/member/93867/settings'); 
    browser.sleep(2000);
 }
 
@@ -53,6 +59,12 @@ function landOnMdpAsUser() {
    browser.sleep(2000);
 }
 
+function landOnMdpAsSecondUser() {
+   // logovanje sa userom da bi potvrdili da li smo promenili sifru
+   browser.get('https://www.outfitterextreme.com/manage/member/93867/'); 
+   browser.sleep(2000);
+}
+
 function clickOnContinueWithEmail() {
    //  Klik na Contine with email button
    element(by.buttonText('Continue with email')).click();
@@ -62,6 +74,12 @@ function clickOnContinueWithEmail() {
 function enterUserEmail() {
    // Unosenje user's email
    element(by.id('gf-input-1')).sendKeys('bradlyseales@gmail.com');
+   // element(by.id('gf-input-1')).sendKeys('milos@idp.com');
+}
+
+function enterSecondUserEmail() {
+   // Unosenje user's email
+   element(by.id('gf-input-1')).sendKeys('trappercreekllc@gmail.com');
    // element(by.id('gf-input-1')).sendKeys('milos@idp.com');
 }
 
@@ -77,7 +95,8 @@ function submit1() {
 }
 
  module.exports = {
-   landOnAccountUsersPage,
+   landOnBradlySealesAccountUsersPage,
+   landOnBrentSnyderAccountUsersPage,
    clickOnChoosePasswordButton,
    enterNewPass,
    enterNewPass2,
@@ -86,8 +105,10 @@ function submit1() {
    clickOnAvatarToOpenDropMenu,
    clickOnSignOut,
    landOnMdpAsUser,
+   landOnMdpAsSecondUser,
    clickOnContinueWithEmail,
    enterUserEmail,
    enterUserPass,
    submit1,
+   enterSecondUserEmail,
  }
