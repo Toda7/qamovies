@@ -1,4 +1,4 @@
-var moultrie = require('./moultrieShipping-po.js');
+var testMoultrieShipping = require('./testMoultrieShipping-po.js.js');
 
 describe('Provera cene shipping-a za odredjene proizvode', function(){
 
@@ -7,63 +7,63 @@ describe('Provera cene shipping-a za odredjene proizvode', function(){
     });
 
     it('Dolazak na Moultrie shop', function(){
-        moultrie.landOnMoultrieHomePage();
+        testMoultrieShipping.landOnMoultrieHomePage();
     });
 
     it('Dolazak na detail stranu kamere', function(){
-        moultrie.landOnCameraDetailPage();
+        testMoultrieShipping.landOnCameraDetailPage();
     });
 
     it('Klik na add to cart button', function(){
-        moultrie.clickOnAddToCart();
+        testMoultrieShipping.clickOnAddToCart();
     });
 
     it('Dolazak na detail stranu feeder-a', function(){
-        moultrie.landOnFeederDetailPage();
+        testMoultrieShipping.landOnFeederDetailPage();
     });
 
     it('Klik na add to cart button', function(){
-        moultrie.clickOnAddToCart();
+        testMoultrieShipping.clickOnAddToCart();
     });
 
     it('Dolazak na detail stranu Attractant-a', function(){
-        moultrie.landOnAttractantsDetailPage();
+        testMoultrieShipping.landOnAttractantsDetailPage();
     });
 
     it('Klik na add to cart button', function(){
-        moultrie.clickOnAddToCart();
+        testMoultrieShipping.clickOnAddToCart();
     });
 
     it('Klik to open cart', function(){
-        moultrie.clickToOpenCart();
+        testMoultrieShipping.clickToOpenCart();
     });
 
     it('Klik to go to checkout page', function(){
-        moultrie.clickToGoToCheckoutPage();
+        testMoultrieShipping.clickToGoToCheckoutPage();
     });
 
     it('Provera da li je shipping $27,00', function(){
-        moultrie.checkShippingPrice();
+        testMoultrieShipping.checkShippingPrice();
     });
 
     it('Klik to go to Review & Payments page', function(){
-        moultrie.clickOnNext();
+        testMoultrieShipping.clickOnNext();
     });
 
     it('Klik on PLACE ORDER button', function(){
-        moultrie.clickOnPlaceOrder();
+        testMoultrieShipping.clickOnPlaceOrder();
     });
 
     it('Dolazak na My Orders stranu', function(){
-        moultrie.landOnMyOrdersPage();
+        testMoultrieShipping.landOnMyOrdersPage();
     });
 
     it('Klik na prvi View Order link', function(){
-        moultrie.clickFirstViewOrderLink();
+        testMoultrieShipping.clickFirstViewOrderLink();
     });
 
     it('Provera da li je shipping $27,00 na My Orders', function(){
-        moultrie.checkShippingPrice2();
+        testMoultrieShipping.checkShippingPrice2();
     });
 
     afterAll(function(){

@@ -40,6 +40,11 @@ function clickToConfirmDelete(){
    browser.sleep(3000);
 }
 
+function clickOnSaveButton(){
+   // Klik on SAVE button
+  element(by.className('action- scalable save primary ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only')).click();
+   browser.sleep(4000);
+}
 
  module.exports = {
     lendOnBadlands,
@@ -49,4 +54,5 @@ function clickToConfirmDelete(){
     enterLastName,
     clickOnRemoveLink,
     clickToConfirmDelete,
+    clickOnSaveButton,
  }

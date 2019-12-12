@@ -137,6 +137,11 @@ describe('Adding first address on Address Book page', function(){
         testAddFirstAddressOnAddressBook.clickToConfirmDelete();
     });
 
+    it('Klik on SAVE button', function(){
+        testAddFirstAddressOnAddressBook.clickOnSaveButton();
+    });
+
+
         afterAll(function(){
         browser.waitForAngularEnabled(true); 
     });
