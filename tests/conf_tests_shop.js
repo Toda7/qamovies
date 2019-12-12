@@ -119,14 +119,6 @@ exports.config = {
       './gfShop/TestZendesk/TestZendesk-spec.js'
     ],
 
-    testMessageForNoOrders: [
-      './gfShop/testMessageForNoOrders/testMessageForNoOrders-spec.js'
-    ],
-
-    testMessageNoPayment: [
-      './gfShop/testMessageNoPayment/testMessageNoPayment-spec.js'
-    ],
-
     testFooterLinks: [
       './gfShop/testFooterLinks/testFooterLinks-spec.js'
     ],
@@ -141,10 +133,6 @@ exports.config = {
 
     testSearchShop: [
       './gfShop/testSearchShop/testSearchShop-spec.js'
-    ],
-
-    testColorLinksOnProductsListPage: [
-      './gfShop/testColorLinksOnProductsListPage/testColorLinksOnProductsListPage-spec.js'
     ],
 
     testColorLinksonProductsListPage: [
@@ -252,14 +240,6 @@ exports.config = {
       './gfShop/testAddFirstAddressOnAddressBook/testAddFirstAddressOnAddressBook-spec.js'
     ],
 
-    testAddFirstAddressOnCheckout: [
-      './gfShop/testAddFirstAddressOnCheckout/testAddFirstAddressOnCheckout-spec.js'
-    ],
-  
-    testMessageForNoOrders: [
-      './gfShop/testMessageForNoOrders/testMessageForNoOrders-spec.js'
-    ],
-
     testMessageNoPayment: [
       './gfShop/testMessageNoPayment/testMessageNoPayment-spec.js'
     ],
@@ -271,7 +251,7 @@ exports.config = {
     testAddFirstAddressOnCheckout: [
       './gfShop/testAddFirstAddressOnCheckout/testAddFirstAddressOnCheckout-spec.js'
     ],
-    
+
     testAdvancedSearchPagination: [
       './gfShop/testAdvancedSearchPagination/testAdvancedSearchPagination-spec.js'
     ],
