@@ -1,4 +1,4 @@
-var testMoultrieShipping = require('./testMoultrieShipping-po.js.js');
+var testMoultrieShipping = require('./testMoultrieShipping-po.js');
 
 describe('Provera cene shipping-a za odredjene proizvode', function(){
 

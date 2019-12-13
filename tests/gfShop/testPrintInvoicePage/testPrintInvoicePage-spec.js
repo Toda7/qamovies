@@ -37,9 +37,9 @@ describe('Print Order page', function () {
 
     });
 
-    it('Provera da li je dobar GF logo na print order strani', function () {
-        testPrintOrderPage.checkGFLogo();
-    });
+    // it('Provera da li je dobar GF logo na print order strani', function () {
+    //     testPrintOrderPage.checkGFLogo();
+    // });
 
     it('Provera da li je dobar Truglo logo na print order strani', function () {
         testPrintOrderPage.checkTrugloLogo();

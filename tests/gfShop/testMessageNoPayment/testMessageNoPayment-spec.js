@@ -8,6 +8,10 @@ describe('Message for no payment', function () {
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
     });
 
+    it('Dolazak na My Orders stranu', function () {
+        testMessageForNoOrders.landOnMyOrdersPage();
+    });
+
     it('Dolazak na My account stranu', function () {
         testMessageNoPayment.landOnMyPaymentInfo();
     });

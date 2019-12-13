@@ -52,5 +52,4 @@ function landOnShop2() {
     checkSuccessMsg,
     checkCartQty,
     landOnShop2,
-    checkCartQty1,
- }
+}

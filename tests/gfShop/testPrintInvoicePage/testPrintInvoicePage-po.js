@@ -6,7 +6,7 @@ function clickPrintInvoice() {
 
  function clickOnInvoices() {
     // Klik na Print Order link 
-    element(by.className('nav item current')).click();
+    element(by.className('nav item')).click();
     browser.sleep(2000);
  }
 

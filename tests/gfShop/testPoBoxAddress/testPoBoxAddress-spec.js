@@ -40,7 +40,7 @@ describe('Test PO box address from address book', function(){
     });
 
     it('Unesi City', function(){
-        testAddNewAddress.enterCity();
+        testPoBoxAddress.enterCity();
     });
 
     it('Klik on Privince link to get drop down options', function(){
@@ -70,7 +70,7 @@ describe('Test PO box address from address book', function(){
     });
 
     it('Otvori mini korpu', function () {
-        testTwentyProductsOrder.openMiniCart();
+        testPoBoxAddress.openMiniCart();
     });
 
     it('Klik na View And Edit Cart', function () {

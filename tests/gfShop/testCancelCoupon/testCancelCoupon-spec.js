@@ -3,7 +3,7 @@ var testCouponOrder = require('../testCouponOrder/testCouponOrder-po.js');
 var testWrongCouponCode = require('../testWrongCouponCode/testWrongCouponCode-po.js');
 var testCancelCoupon = require('./testCancelCoupon-po.js');
 
-describe('Coupon order', function () {
+describe('Cancel coupon order', function () {
 
     beforeAll(function () {
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
