@@ -255,7 +255,7 @@ exports.config = {
     testMoultrieShipping: [
       './gfShop/testMoultrieShipping/testMoultrieShipping-spec.js'
     ],
-    
+
     testAdvancedSearchPagination: [
       './gfShop/testAdvancedSearchPagination/testAdvancedSearchPagination-spec.js'
     ],

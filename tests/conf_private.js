@@ -22,9 +22,9 @@ exports.config = {
       './private/dashboard/dashPage/dashPage-spec.js'
     ],
 
-    // loginAsVendor: [
-    //   './private/dashboard/loginAsVendor/loginAsVendor-spec.js'
-    // ],
+    loginAsVendor: [
+      './private/dashboard/loginAsVendor/loginAsVendor-spec.js'
+    ],
 
     dashComunity: [
       './private/dashboard/dashComunity/dashComunity-spec.js'
@@ -50,9 +50,9 @@ exports.config = {
       './private/dashboard/dashCielostar/dashCielostar-spec.js'
     ],
 
-    // dashEducation: [
-    //   './private/dashboard/dashEducation/dashEducation-spec.js'
-    // ],
+    dashEducation: [
+      './private/dashboard/dashEducation/dashEducation-spec.js'
+    ],
 
     dashVendorMng: [
       './private/dashboard/dashVendorMng/dashVendorMng-spec.js'
