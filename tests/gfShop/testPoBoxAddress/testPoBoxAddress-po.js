@@ -3,6 +3,12 @@ function lendOnHornady(){
    browser.get('https://shop.outfitterextreme.com/hornady'); 
 }
 
+function enterCity() {
+   // Unesi Street  
+   element(by.id('city')).sendKeys('Austin');
+   browser.sleep(1000);
+}
+
 function enterStreet() {
    // Unesi Street  
    element(by.id('street_1')).clear().sendKeys('PO Box 2413');
@@ -33,6 +39,12 @@ var EC = protractor.ExpectedConditions;
 browser.wait(EC.textToBePresentInElement($('.message.message-error.error'), 'Shipping to P.O. Boxes is not allowed'), 5000);
 }
 
+function openMiniCart() {
+   // Otvori mini korpu
+   element(by.className('action showcart')).click();
+   browser.sleep(2000);
+}
+
  module.exports = {
    lendOnHornady,
    enterStreet,
@@ -40,4 +52,6 @@ browser.wait(EC.textToBePresentInElement($('.message.message-error.error'), 'Shi
    clickOnPoBoxAddress,
    checkPoBoxNotAllowedMessage,
    clickToSelectProvince,
+   openMiniCart,
+   enterCity,
  }

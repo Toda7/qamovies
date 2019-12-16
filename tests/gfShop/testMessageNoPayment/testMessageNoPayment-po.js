@@ -6,7 +6,7 @@ function enterUserEmail() {
 
 function landOnMyPaymentInfo() {
    // Dolazak na My Orders stranu 
-   browser.get('https://shop.outfitterextreme.com/badlands/customer/paymentinfo/');
+   browser.get('https://shop.outfitterextreme.com/badlands/customer/paymentinfo');
    browser.sleep(5000);
 }
 
@@ -30,5 +30,4 @@ module.exports = {
    landOnMyPaymentInfo,
    checkNoPaymentMessage,
    checkURLAfterRedirect,
-
 }

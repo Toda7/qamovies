@@ -7,7 +7,7 @@ function landOnTrugloShop() {
 function clickOntestAllTab() {
     //  Klik na All tab
     element(by.className('secondary-navigation-button-wrap')).click();
-    browser.sleep(2000);
+    browser.sleep(5000);
 }
 
 function clickOnSights() {
@@ -129,6 +129,8 @@ function checkBroadheadsTitle() {
     var EC = protractor.ExpectedConditions;
     browser.wait(EC.textToBePresentInElement($('.page-title'), 'Broadheads'), 5000);
 }
+
+
 
 function checkBroadheadsUrl() {
     // Provera da li se ucitao Broadheads URL
