@@ -198,9 +198,9 @@ exports.config = {
       './private/community/undoDeleteDiscussion/undoDeleteDiscussion-spec.js'
     ],
 
-    searchForDiscussion: [
-      './private/community/searchForDiscussion/searchForDiscussion-spec.js'
-    ],
+    // searchForDiscussion: [
+    //   './private/community/searchForDiscussion/searchForDiscussion-spec.js'
+    // ],
 
     createAnonymousDiscussion: [
       './private/community/createAnonymousDiscussion/createAnonymousDiscussion-spec.js'
@@ -361,7 +361,7 @@ exports.config = {
     dumbleformThirdForm: [
       './private/dumbleform/vendorMapping/vendorMapping-spec.js'
     ],
-    
+
     logOut: [
       './private/education/logOutAsAdmin/logOutAsAdmin-spec.js'
     ],

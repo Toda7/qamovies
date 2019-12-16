@@ -2,7 +2,7 @@ var testAddBillingAddress = require('./testAddBillingAddress-po.js');
 var testCuddebackShipping = require('../testCuddebackShipping/testCuddebackShipping-po.js');
 var testEditQtyCart = require('../testEditQtyCart/testEditQtyCart-po.js');
 var testTwentyProductsOrder = require('../testTwentyProductsOrder/testTwentyProductsOrder-po.js');
-var testMyOrders = require('../testMyOrders/testMyOrders-po.js');
+var prepareMagentoCoupon = require('../prepareMagentoCoupon/prepareMagentoCoupon-po.js');
 
 describe('Add billing adresu i error poruke za required polja', function () {
 
@@ -48,16 +48,116 @@ describe('Add billing adresu i error poruke za required polja', function () {
         testAddBillingAddress.clickOnAddressSelect();
     });
 
-    // it('klik na iem imena', function () {
-        // testAddBillingAddress.clickOnFirst();
-    // });
-
-    it('BRisanje imena', function () {
+    it('Brisanje imena', function () {
         testAddBillingAddress.deleteFirstName();
     });
 
-    it('BRisanje prezimena', function () {
+    it('Check error poruke za first name', function () {
+        testAddBillingAddress.checkMsg1();
+    });
+
+    it('Brisanje prezimena', function () {
         testAddBillingAddress.deleteLastName();
+    });
+
+    it('Check error poruke za last name', function () {
+        testAddBillingAddress.checkMsg2();
+    });
+
+    it('Klik na Update dugme', function () {
+        testAddBillingAddress.clickOnUpdate();
+    });
+
+    it('Check error poruke za Street', function () {
+        testAddBillingAddress.checkMsg3();
+    });
+
+    it('Check error poruke za City', function () {
+        testAddBillingAddress.checkMsg4();
+    });
+
+    it('Check error poruke za State/Province', function () {
+        testAddBillingAddress.checkMsg5();
+    });
+
+    it('Check error poruke za ZIP code', function () {
+        testAddBillingAddress.checkMsg6();
+    });
+
+    it('Check error poruke za Phone number', function () {
+        testAddBillingAddress.checkMsg7();
+    });
+
+    it('unos First name', function () {
+        testAddBillingAddress.enterFirstName();
+    });
+
+    it('unos Last name', function () {
+        testAddBillingAddress.enterLastName();
+    });
+
+    it('unos street Address', function () {
+        testAddBillingAddress.enterStreetAddress();
+    });
+
+    it('unos City', function () {
+        testAddBillingAddress.enterCity();
+    });
+
+    it('Select State', function () {
+        testAddBillingAddress.clickToSelectProvince();
+    });
+
+    it('unos Zip coda', function () {
+        testAddBillingAddress.enterZip();
+    });
+
+    it('Unos telefona', function () {
+        testAddBillingAddress.enterPhone();
+    });
+
+    it('Klik na Update dugme', function () {
+        testAddBillingAddress.clickOnUpdate();
+    });
+
+    it('Klik na PlaceOrder', function () {
+        testAddBillingAddress.clickPlaceOrder();
+    });
+
+    it('Dolazak u manento', function(){
+        testAddBillingAddress.lendOnMagento();
+    });
+
+    it('Unesi Username', function(){
+        prepareMagentoCoupon.enterUsername();
+    });
+
+    it('Unesi Password', function(){
+        prepareMagentoCoupon.enterPass();
+    });
+
+    it('Klik na Sign In dugme', function(){
+        prepareMagentoCoupon.clickOnSignIn();
+    });
+
+    it('odi na user datail', function(){
+        testAddBillingAddress.goToUserDetail();
+    });
+
+    it('Click na address', function(){
+        testAddBillingAddress.clickOnAddressesLink();
+    });
+
+    it('Click Remove link', function(){
+        testAddBillingAddress.clickOnRemoveLink();
+    });
+
+    it('Confirm delete address', function(){
+        testAddBillingAddress.clickToConfirmDelete();
+    });
+
+    it('Click na Save', function(){
+        testAddBillingAddress.clickOnSaveButton();
     });
 
     afterAll(function () {
