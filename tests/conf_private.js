@@ -6,10 +6,10 @@ exports.config = {
   afterLaunch: function () {
     failFast.clean(); // Removes the fail file once all test runners have completed.
   },
-
   framework: 'jasmine',
   seleniumAddress: 'http://localhost:4444/wd/hub',
   suites: {
+
     // opt: [
     //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluzi nicemu. to je samo primer)
     // ],
@@ -114,6 +114,66 @@ exports.config = {
       './private/peer_analysis/peerToolReport/peerToolReport-spec.js'
     ],
 
+    checkLinksOnFVHomePage: [
+      './private/fileVault/checkLinksOnFVHomePage/checkLinksOnFVHomePage-spec.js',
+    ],
+
+    addSpace: [
+      './private/fileVault/addSpace/addSpace-spec.js',
+    ],
+
+    addTask: [
+      './private/fileVault/addTask/addTask-spec.js',
+    ],
+
+    addDoc: [
+      './private/fileVault/addDoc/addDoc-spec.js',
+    ],
+
+    addUser: [
+      './private/fileVault/addUser/addUser-spec.js',
+    ],
+
+    taskReport: [
+      './private/fileVault/taskReport/taskReport-spec.js',
+    ],
+
+    allActivity: [
+      './private/fileVault/allActivity/allActivity-spec.js',
+    ],
+
+    search: [
+      './private/fileVault/search/search-spec.js',
+    ],
+
+    adminland: [
+      './private/fileVault/adminland/adminland-spec.js',
+    ],
+
+    deleteSpace: [
+      './private/fileVault/deleteSpace/deleteSpace-spec.js',
+    ],
+
+    general: [
+      './private/account/general/general-spec.js',
+    ],
+
+    notifications: [
+      './private/account/notifications/notifications-spec.js',
+    ],
+
+    avatar: [
+      './private/account/avatar/avatar-spec.js',
+    ],
+
+    password: [
+      './private/account/password/password-spec.js',
+    ],
+
+    alerts: [
+      './private/account/alerts/alerts-spec.js',
+    ],
+
     createDiscussion: [
       './private/community/createDiscussion/createDiscussion-spec.js'
     ],
@@ -138,9 +198,9 @@ exports.config = {
       './private/community/undoDeleteDiscussion/undoDeleteDiscussion-spec.js'
     ],
 
-    searchForDiscussion: [
-      './private/community/searchForDiscussion/searchForDiscussion-spec.js'
-    ],
+    // searchForDiscussion: [
+    //   './private/community/searchForDiscussion/searchForDiscussion-spec.js'
+    // ],
 
     createAnonymousDiscussion: [
       './private/community/createAnonymousDiscussion/createAnonymousDiscussion-spec.js'
@@ -194,176 +254,176 @@ exports.config = {
       './private/inbox/downloadFile/downloadFile-spec.js'
     ],
 
-    vm_add_vendor: [
-      './private/vm/vm_add_vendor/vm_add_vendor-spec.js'
+    vmAddVendor: [
+      './private/vm/vmAddVendor/vmAddVendor-spec.js'
     ],
 
-    vm_add_unverified_vendor: [
-      './private/vm/vm_add_unverified_vendor/vm_add_unverified_vendor-spec.js'
+    vmAddUnverifiedVendor: [
+      './private/vm/vmAddUnverifiedVendor/vmAddUnverifiedVendor-spec.js'
     ],
 
-    vm_upload_document: [
-      './private/vm/vm_upload_document/vm_upload_document-spec.js'
+    vmUploadDocument: [
+      './private/vm/vmUploadDocument/vmUploadDocument-spec.js'
     ],
 
-    vm_add_task: [
-      './private/vm/vm_add_task/vm_add_task-spec.js'
+    vmAddTask: [
+      './private/vm/vmAddTask/vmAddTask-spec.js'
     ],
 
-    vm_edit_task: [
-      './private/vm/vm_edit_task/vm_edit_task-spec.js'
+    vmEditTask: [
+      './private/vm/vmEditTask/vmEditTask-spec.js'
     ],
 
-    vm_complete_task: [
-      './private/vm/vm_complete_task/vm_complete_task-spec.js'
+    vmCompleteTask: [
+      './private/vm/vmCompleteTask/vmCompleteTask-spec.js'
     ],
 
-    vm_delete_task: [
-      './private/vm/vm_delete_task/vm_delete_task-spec.js'
+    vmDeleteTask: [
+      './private/vm/vmDeleteTask/vmDeleteTask-spec.js'
     ],
 
-    vm_delete_doc: [
-      './private/vm/vm_delete_doc/vm_delete_doc-spec.js'
+    vmDeleteDoc: [
+      './private/vm/vmDeleteDoc/vmDeleteDoc-spec.js'
     ],
 
-    vm_report: [
-      './private/vm/vm_report/vm_report-spec.js'
+    vmReport: [
+      './private/vm/vmReport/vmReport-spec.js'
     ],
 
-    vm_add_user: [
-      './private/vm/vm_add_user/vm_add_user-spec.js'
+    vmAddUser: [
+      './private/vm/vmAddUser/vmAddUser-spec.js'
     ],
 
-    vm_remove_user: [
-      './private/vm/vm_remove_user/vm_remove_user-spec.js'
+    vmRemoveUser: [
+      './private/vm/vmRemoveUser/vmRemoveUser-spec.js'
     ],
 
-    vm_remove_vendor: [
-      './private/vm/vm_remove_vendor/vm_remove_vendor-spec.js'
+    vmRemoveVendor: [
+      './private/vm/vmRemoveVendor/vmRemoveVendor-spec.js'
     ],
 
-    vm_remove_unverified_vendor: [
-      './private/vm/vm_remove_unverified_vendor/vm_remove_unverified_vendor-spec.js'
+    vmRemoveUnverifiedVendor: [
+      './private/vm/vmRemoveUnverifiedVendor/vmRemoveUnverifiedVendor-spec.js'
     ],
 
-    ra_home: [
-      './private/ra_premium/ra_home/ra_home-spec.js'
+    raHome: [
+      './private/raPremium/raHome/raHome-spec.js'
     ],
 
-    ra_drop_menu: [
-      './private/ra_premium/ra_drop_menu/ra_drop_menu-spec.js'
+    raDropMenu: [
+      './private/raPremium/raDropMenu/raDropMenu-spec.js'
     ],
 
-    ra_go_to_legacy_app: [
-      './private/ra_premium/ra_go_to_legacy_app/ra_go_to_legacy_app-spec.js'
+    raGoToLegacyApp: [
+      './private/raPremium/raGoToLegacyApp/raGoToLegacyApp-spec.js'
     ],
 
-    ra_create_inprogress_template: [
-      './private/ra_premium/ra_create_inprogress_template/ra_create_inprogress_template-spec.js'
+    raCreateInprogressTemplate: [
+      './private/raPremium/raCreateInprogressTemplate/raCreateInprogressTemplate-spec.js'
     ],
 
-    ra_unsaved_changes_message: [
-      './private/ra_premium/ra_unsaved_changes_message/ra_unsaved_changes_message-spec.js'
+    raUnsavedChangesMessage: [
+      './private/raPremium/raUnsavedChangesMessage/raUnsavedChangesMessage-spec.js'
     ],
 
-    ra_saved_changes_message: [
-      './private/ra_premium/ra_saved_changes_message/ra_saved_changes_message-spec.js'
+    raSavedChangesMessage: [
+      './private/raPremium/raSavedChangesMessage/raSavedChangesMessage-spec.js'
     ],
 
-    ra_edit_inprogress_template: [
-      './private/ra_premium/ra_edit_inprogress_template/ra_edit_inprogress_template-spec.js'
+    raEditInprogressTemplate: [
+      './private/raPremium/raEditInprogressTemplate/raEditInprogressTemplate-spec.js'
     ],
 
-    ra_delete_inprogress_template: [
-      './private/ra_premium/ra_delete_inprogress_template/ra_delete_inprogress_template-spec.js'
+    raDeleteInprogressTemplate: [
+      './private/raPremium/raDeleteInprogressTemplate/raDeleteInprogressTemplate-spec.js'
     ],
 
-    ra_create_complete_template: [
-      './private/ra_premium/ra_create_complete_template/ra_create_complete_template-spec.js'
+    raCreateCompleteTemplate: [
+      './private/raPremium/raCreateCompleteTemplate/raCreateCompleteTemplate-spec.js'
     ],
 
-    ra_edit_complete_template: [
-      './private/ra_premium/ra_edit_complete_template/ra_edit_complete_template-spec.js'
+    raEditCompleteTemplate: [
+      './private/raPremium/raEditCompleteTemplate/raEditCompleteTemplate-spec.js'
     ],
 
-    ra_delete_complete_template: [
-      './private/ra_premium/ra_delete_complete_template/ra_delete_complete_template-spec.js'
+    raDeleteCompleteTemplate: [
+      './private/raPremium/raDeleteCompleteTemplate/raDeleteCompleteTemplate-spec.js'
     ],
 
-    dumbleform_first_form: [
-      './private/dumbleform/complete_your_profile/complete_your_profile-spec.js'
+    dumbleformFirstForm: [
+      './private/dumbleform/completeYourProfile/completeYourProfile-spec.js'
     ],
 
-    dumbleform_second_form: [
-      './private/dumbleform/follow_colleagues/follow_colleagues-spec.js'
+    dumbleformSecondForm: [
+      './private/dumbleform/followColleagues/followColleagues-spec.js'
     ],
 
-    dumbleform_third_form: [
-      './private/dumbleform/vendor_mapping/vendor_mapping-spec.js'
+    dumbleformThirdForm: [
+      './private/dumbleform/vendorMapping/vendorMapping-spec.js'
     ],
 
-    log_out: [
-      './private/education/log_out_as_admin/log_out_as_admin-spec.js'
+    logOut: [
+      './private/education/logOutAsAdmin/logOutAsAdmin-spec.js'
     ],
 
-    login_as_admin: [
-      './private/education/login_as_admin/login_as_admin-spec.js'
+    loginAsAdmin: [
+      './private/education/loginAsAdmin/loginAsAdmin-spec.js'
     ],
 
-    create_hosted_webinar: [
-      './private/education/create_hosted_webinar/create_hosted_webinar-spec.js'
+    createHostedWebinar: [
+      './private/education/createHostedWebinar/createHostedWebinar-spec.js'
     ],
 
-    buying_hosted_webinar: [
-      './private/education/buying_hosted_webinar/buying_hosted_webinar-spec.js'
+    buyingHostedWebinar: [
+      './private/education/buyingHostedWebinar/buyingHostedWebinar-spec.js'
     ],
 
-    using_invoice_hosted: [
-      './private/education/using_invoice_hosted/using_invoice_hosted-spec.js'
+    usingInvoiceHosted: [
+      './private/education/usingInvoiceHosted/usingInvoiceHosted-spec.js'
     ],
 
-    set_inactive_hosted: [
-      './private/education/set_inactive_hosted/set_inactive_hosted-spec.js'
+    setInactiveHosted: [
+      './private/education/setInactiveHosted/setInactiveHosted-spec.js'
     ],
 
-    create_outsourced_webinar: [
-      './private/education/create_outsourced_webinar/create_outsourced_webinar-spec.js'
+    createOutsourcedWebinar: [
+      './private/education/createOutsourcedWebinar/createOutsourcedWebinar-spec.js'
     ],
 
-    buying_outsourced_webinar: [
-      './private/education/buying_outsourced_webinar/buying_outsourced_webinar-spec.js'
+    buyingOutsourcedWebinar: [
+      './private/education/buyingOutsourcedWebinar/buyingOutsourcedWebinar-spec.js'
     ],
 
-    using_invoice_outsourced: [
-      './private/education/using_invoice_outsourced/using_invoice_outsourced-spec.js'
+    usingInvoiceOutsourced: [
+      './private/education/usingInvoiceOutsourced/usingInvoiceOutsourced-spec.js'
     ],
 
-    set_inactive_outsourced: [
-      './private/education/set_inactive_outsourced/set_inactive_outsourced-spec.js'
+    setInactiveOutsourced: [
+      './private/education/setInactiveOutsourced/setInactiveOutsourced-spec.js'
     ],
 
-    create_video: [
-      './private/education/create_video/create_video-spec.js'
+    createVideo: [
+      './private/education/createVideo/createVideo-spec.js'
     ],
 
-    buying_video: [
-      './private/education/buying_video/buying_video-spec.js'
+    buyingVideo: [
+      './private/education/buyingVideo/buyingVideo-spec.js'
     ],
 
-    using_invoice_video: [
-      './private/education/using_invoice_video/using_invoice_video-spec.js'
+    usingInvoiceVideo: [
+      './private/education/usingInvoiceVideo/usingInvoiceVideo-spec.js'
     ],
 
-    set_inactive_video: [
-      './private/education/set_inactive_video/set_inactive_video-spec.js'
+    setInactiveVideo: [
+      './private/education/setInactiveVideo/setInactiveVideo-spec.js'
     ],
 
-    all_access: [
-      './private/education/all_access/all_access-spec.js'
+    allAccess: [
+      './private/education/allAccess/allAccess-spec.js'
     ],
 
-    set_all_access_to_false: [
-      './private/education/set_all_access_to_false/set_all_access_to_false-spec.js'
+    setAllAccessToFalse: [
+      './private/education/setAllAccessToFalse/setAllAccessToFalse-spec.js'
     ],
   },
 
@@ -373,7 +433,6 @@ exports.config = {
       'args': ['--disable-gpu', '--window-size=2880,1800']
     }
   },
-
   jasmineNodeOpts: {
     print: function () { },
     showColors: true,
@@ -381,11 +440,14 @@ exports.config = {
   },
 
   allScriptsTimeout: 60 * 1000 * 60,
+
   onPrepare: function () {
-    jasmine.getEnv().addReporter(new SpecReporter({
+    jasmine.getEnv().addRgieporter(new SpecReporter({
       spec: {
         displayStacktrace: true
       }
     }));
+
   }
+
 };

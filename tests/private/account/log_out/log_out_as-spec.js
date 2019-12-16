@@ -1,4 +1,4 @@
-var log_out = require('./log_out-po.js');
+var logOut = require('./logOut-po.js');
 
 
 describe('Log out as admin', function(){
@@ -8,11 +8,11 @@ beforeAll(function(){
 });
 
 it('Hover to open user drop menu', function(){
-    log_out.HoverToOpenUserDrop();
+    logOut.HoverToOpenUserDrop();
 }); 
 
 it('Click on Sign out link', function(){
-    log_out.clickOnSignOutLink();
+    logOut.clickOnSignOutLink();
 }); 
 
 afterAll(function(){

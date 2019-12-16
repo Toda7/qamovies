@@ -39,19 +39,19 @@ function checkAttentionContentOfBox() {
 function clickOnOK() {
    // Klik na cart 
    element(by.className('action-primary action-accept')).click();
-   browser.sleep(5000);
+   browser.sleep(3000);
 } 
 
 function clickOnDeleteProductIcon() {
    // Klik on Delete product icon
    element(by.css('a.action.delete')).click();
-   browser.sleep(5000);
+   browser.sleep(3000);
 } 
 
 function clickOnDeleteConfirmation() {
    // Potvrda brisanja Producta  
    element(by.className('action-primary action-accept action primary')).click();
-   browser.sleep(5000);
+   browser.sleep(3000);
 } 
 
  module.exports = {

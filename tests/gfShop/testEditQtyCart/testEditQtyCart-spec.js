@@ -1,6 +1,6 @@
 var testEditQtyCart = require('./testEditQtyCart-po.js');
 
-describe('Brisanje Producta sa Edit Cart strane', function () {
+describe('Editovanje QTY iz mini cart-a', function () {
 
     beforeAll(function () {
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element

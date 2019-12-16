@@ -27,8 +27,16 @@ exports.config = {
       './gfShop/testTwentyProductsOrder/testTwentyProductsOrder-spec.js'
     ],
 
+    testBreadcrumbs: [
+      './gfShop/testBreadcrumbs/testBreadcrumbs-spec.js'
+    ],
+
     testMyAccount: [
       './gfShop/testMyAccount/testMyAccount-spec.js'
+    ],
+
+    testUserMenuLinks: [
+      './gfShop/testUserMenuLinks/testUserMenuLinks-spec.js'
     ],
 
     testSortingByName: [
@@ -75,6 +83,10 @@ exports.config = {
       './gfShop/testShowPerPage/testShowPerPage-spec.js'
     ],
 
+    testAdvancedSorting: [
+      './gfShop/testAdvancedSorting/testAdvancedSorting-spec.js'
+    ],
+
     testPagination: [
       './gfShop/testPagination/testPagination-spec.js'
     ],
@@ -107,12 +119,48 @@ exports.config = {
       './gfShop/TestZendesk/TestZendesk-spec.js'
     ],
 
+    testFooterLinks: [
+      './gfShop/testFooterLinks/testFooterLinks-spec.js'
+    ],
+
+    testRestrictedAreaMessage: [
+      './gfShop/testRestrictedAreaMessage/testRestrictedAreaMessage-spec.js'
+    ],
+
     testRegularVSDiscountPrice: [
       './gfShop/testRegularVSDiscountPrice/testRegularVSDiscountPrice-spec.js'
     ],
 
     testSearchShop: [
       './gfShop/testSearchShop/testSearchShop-spec.js'
+    ],
+
+    testColorLinksonProductsListPage: [
+      './gfShop/testColorLinksonProductsListPage/testColorLinksonProductsListPage-spec.js'
+    ],
+
+    testPoBoxAddress: [
+      './gfShop/testPoBoxAddress/testPoBoxAddress-spec.js'
+    ],
+
+    testPoBoxAddressFromCheckout: [
+      './gfShop/testPoBoxAddressFromCheckout/testPoBoxAddressFromCheckout-spec.js'
+    ],
+
+    testCouponOrder: [
+      './gfShop/testCouponOrder/testCouponOrder-spec.js'
+    ],
+
+    testSaveInAddressBookOptionForNewAddress: [
+      './gfShop/testSaveInAddressBookOptionForNewAddress/testSaveInAddressBookOptionForNewAddress-spec.js'
+    ],
+
+    testNotSaveInAddressBookForNewAddress: [
+      './gfShop/testNotSaveInAddressBookForNewAddress/testNotSaveInAddressBookForNewAddress-spec.js'
+    ],
+
+    testErrorMessageOnProductDetails: [
+      './gfShop/testErrorMessageOnProductDetails/testErrorMessageOnProductDetails-spec.js'
     ],
 
     testMyOrders: [
@@ -131,12 +179,21 @@ exports.config = {
       './gfShop/testPrintOrderPage/testPrintOrderPage-spec.js'
     ],
 
-    testCouponOrder: [
-      './gfShop/testCouponOrder/testCouponOrder-spec.js'
+    testPrintInvoicePage: [
+      './gfShop/testPrintInvoicePage/testPrintInvoicePage-spec.js'
     ],
+
+    // testSaveCcForNextTime: [
+    //   // Ovo sranje ne radi dok ne provalimo u cemu je fora sa Authorize.net errorom na Payment strani
+    //   './gfShop/testSaveCcForNextTime/testSaveCcForNextTime-spec.js'
+    // ],
 
     testWrongCouponCode: [
       './gfShop/testWrongCouponCode/testWrongCouponCode-spec.js'
+    ],
+
+    testCancelCoupon: [
+      './gfShop/testCancelCoupon/testCancelCoupon-spec.js'
     ],
 
     testViewProduct: [
@@ -170,6 +227,70 @@ exports.config = {
     testAdvanceSearchSKU: [
       './gfShop/testAdvanceSearchSKU/testAdvanceSearchSKU-spec.js'
     ],
+
+    testAllTab: [
+      './gfShop/testAllTab/testAllTab-spec.js'
+    ],
+
+    testMessageForNoOrders: [
+      './gfShop/testMessageForNoOrders/testMessageForNoOrders-spec.js'
+    ],
+
+    testAddFirstAddressOnAddressBook: [
+      './gfShop/testAddFirstAddressOnAddressBook/testAddFirstAddressOnAddressBook-spec.js'
+    ],
+
+    testMessageNoPayment: [
+      './gfShop/testMessageNoPayment/testMessageNoPayment-spec.js'
+    ],
+
+    testMoultrieShipping: [
+      './gfShop/testMoultrieShipping/testMoultrieShipping-spec.js'
+    ],
+
+    testAddFirstAddressOnCheckout: [
+      './gfShop/testAddFirstAddressOnCheckout/testAddFirstAddressOnCheckout-spec.js'
+    ],
+
+    testMoultrieShipping: [
+      './gfShop/testMoultrieShipping/testMoultrieShipping-spec.js'
+    ],
+
+    testAdvancedSearchPagination: [
+      './gfShop/testAdvancedSearchPagination/testAdvancedSearchPagination-spec.js'
+    ],
+
+    testTwoShippingMethods: [
+      './gfShop/testTwoShippingMethods/testTwoShippingMethods-spec.js'
+    ],
+
+    testAdvanceSearchDescription: [
+      './gfShop/testAdvanceSearchDescription/testAdvanceSearchDescription-spec.js'
+    ],
+
+    testAdvanceSearchShortDescription: [
+      './gfShop/testAdvanceSearchShortDescription/testAdvanceSearchShortDescription-spec.js'
+    ],
+
+    testAdvanceSearchPriceRange: [
+      './gfShop/testAdvanceSearchPriceRange/testAdvanceSearchPriceRange-spec.js'
+    ],
+
+    testAdvanceSearchProductView: [
+      './gfShop/testAdvanceSearchProductView/testAdvanceSearchProductView-spec.js'
+    ],
+
+    testCartBetweenShops: [
+      './gfShop/testCartBetweenShops/testCartBetweenShops-spec.js'
+    ],
+
+    testCuddebackShipping: [
+      './gfShop/testCuddebackShipping/testCuddebackShipping-spec.js'
+    ],
+
+    testAddBillingAddress: [
+      './gfShop/testAddBillingAddress/testAddBillingAddress-spec.js'
+    ],
   },
 
   capabilities: {
@@ -188,12 +309,47 @@ exports.config = {
   allScriptsTimeout: 60 * 1000 * 60,
 
   onPrepare: function () {
+
+    var jasmineReporters = require('jasmine-reporters');
+    jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
+      consolidateAll: true,
+      savePath: './',
+      filePrefix: 'xmlresults'
+    }));
+
     jasmine.getEnv().addReporter(new SpecReporter({
       spec: {
         displayStacktrace: true
       }
     }));
 
+  },
+
+  //HTMLReport called once tests are finished
+  onComplete: function () {
+    var browserName, browserVersion;
+    var capsPromise = browser.getCapabilities();
+
+    capsPromise.then(function (caps) {
+      browserName = caps.get('browserName');
+      browserVersion = caps.get('version');
+      platform = caps.get('platform');
+
+      var HTMLReport = require('protractor-html-reporter-2');
+
+      testConfig = {
+        reportTitle: 'GF Shop Test Report',
+        outputPath: './',
+        outputFilename: 'GF Shop Test Report',
+        screenshotPath: './screenshots',
+        testBrowser: browserName,
+        browserVersion: browserVersion,
+        modifiedSuiteName: false,
+        screenshotsOnlyOnFailure: true,
+        testPlatform: platform
+      };
+      new HTMLReport().from('xmlresults.xml', testConfig);
+    });
   }
 
 };

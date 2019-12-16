@@ -1,7 +1,6 @@
 var testAddNewAddress = require('./testAddNewAddress-po.js');
 var testSortingByName = require('../testSortingByName/testSortingByName-po.js');
 
-
 describe('Adding new address on Address Book page', function(){
 
     beforeAll(function(){
@@ -40,6 +39,54 @@ describe('Adding new address on Address Book page', function(){
         testAddNewAddress.checkAddNewAddressURL();
     });
 
+    it('Brisanje texta iz first name polja', function(){
+        testAddNewAddress.clearFirstNameField();
+    });
+
+    it('Brisanje texta iz last name polja', function(){
+        testAddNewAddress.clearLastNameField();
+    });
+
+    it('Klik on Save button to get error messages', function(){
+        testAddNewAddress.clickOnSave();
+    });
+
+    it('Provera da li se ucitala required message for First Name', function(){
+        testAddNewAddress.checkRequiredMessageForFirstName();
+    });
+
+    it('Provera da li se ucitala required message for Last Name', function(){
+        testAddNewAddress.checkRequiredMessageForLastName();
+    });
+
+    it('Provera da li se ucitala required message for phone', function(){
+        testAddNewAddress.checkRequiredMessageForPhone();
+    });
+
+    it('Provera da li se ucitala required message for street', function(){
+        testAddNewAddress.checkRequiredMessageForStreet();
+    });
+
+    it('Provera da li se ucitala required message for city', function(){
+        testAddNewAddress.checkRequiredMessageForcity();
+    });
+
+    it('Provera da li se ucitala required message for state', function(){
+        testAddNewAddress.checkRequiredMessageForState();
+    });
+
+    it('Provera da li se ucitala required message for zip', function(){
+        testAddNewAddress.checkRequiredMessageForZip();
+    });
+
+    it('Unesi first name', function(){
+        testAddNewAddress.enterFirstName();
+    });
+    
+    it('Unesi last name', function(){
+        testAddNewAddress.enterLastName();
+    });
+    
     it('Unesi Phone Number', function(){
         testAddNewAddress.enterPhoneNumber();
     });

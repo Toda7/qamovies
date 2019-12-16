@@ -31,8 +31,8 @@ function clickOnListView() {
  function checkItemsNumber(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je dobra paginacija
-    browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 1-5 of 6'), 5000);
-    browser.sleep(2500);
+    var xxx = element.all(by.className('toolbar-amount')).get(0);
+    expect(xxx.getText()).toEqual('Items 1-5 of 6');
  }
 
  function clickPageTwoPagination() {
@@ -44,7 +44,8 @@ function clickOnListView() {
  function checkOneProductOnPage() {
     var EC = protractor.ExpectedConditions;
     // Da li se ucitao jedan Product na strani
-    browser.wait(EC.textToBePresentInElement($('.product.name.product-item-name'), 'LUNKER™ BOWFISHING ARROW'), 5000);
+    var xxx = element.all(by.className('product name product-item-name')).get(0);
+    expect(xxx.getText()).toEqual('LUNKER™ BOWFISHING ARROW');
  }
 
  function checkPage2URL() {
@@ -56,8 +57,10 @@ function clickOnListView() {
  function checkItemsNumberOn2Page(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je dobra paginacija
-    browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 6-6 of 6'), 5000);
-    browser.sleep(2500);
+    var xxx = element.all(by.className('toolbar-amount')).get(0);
+    expect(xxx.getText()).toEqual('Items 6-6 of 6');
+   //  browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 6-6 of 6'), 5000);
+   //  browser.sleep(2500);
  }
 
 
