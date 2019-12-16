@@ -121,5 +121,5 @@ Kako obrisati granu iz lokala;
 
 Kako obrisati remote granu 
 
-git branch -d -r origin/{branch name}   
+- git branch -d -r origin/{branch name}   
 
