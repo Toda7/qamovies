@@ -104,6 +104,7 @@ Steps for push;
 git add . 
 git commit -m"poruka" 
 git push origin miho <- miho je grana na kojoj se nalazimo 
+
 Steps for merge 
 1. Go to https://github.com/Toda7/qamovies 
 2. Za Branch izaberemo granu na kojoj smo pushovali 
@@ -111,3 +112,14 @@ Steps for merge
 4. Za "base" izaberemo develop granu a za compare granu koju hocemo da mergujemo sa developom 
 5. Klik na create pull request 
 6. Klik na merge pull reguest 
+
+
+Kako obrisati granu iz lokala;
+
+- git branch -d {branch name}
+- git branch -D {branch name} <- veliko D da forsiramo brisnaje i ako imamo neki commit ili merge koji nije pushovan/zavrsen 
+
+Kako obrisati remote granu 
+
+git branch -d -r origin/{branch name}   
+
