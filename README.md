@@ -123,3 +123,48 @@ Kako obrisati remote granu
 
 - git branch -d -r origin/{branch name}   
 
+
+
+REPORT U PROTRACTORU 
+
+- instaliraj protractor-html-reporter-2: npm i protractor-html-reporter-2
+
+- u svaki conf.js fajl treba da se doda u onPrepare funkciju: 
+
+var jasmineReporters = require('jasmine-reporters');
+jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
+    consolidateAll: true,
+    savePath: './',
+    filePrefix: 'xmlresults'
+}));
+
+
+
+- u svaki conf.js fajl treba da se doda na kraj fajla:  
+
+//HTMLReport called once tests are finished
+onComplete: function() {
+     var browserName, browserVersion;
+     var capsPromise = browser.getCapabilities();
+ 
+     capsPromise.then(function (caps) {
+        browserName = caps.get('browserName');
+        browserVersion = caps.get('version');
+        platform = caps.get('platform');
+ 
+        var HTMLReport = require('protractor-html-reporter-2');
+ 
+        testConfig = {
+            reportTitle: 'Protractor Test Execution Report',
+            outputPath: './',
+            outputFilename: 'ProtractorTestReport',
+            screenshotPath: './screenshots',
+            testBrowser: browserName,
+            browserVersion: browserVersion,
+            modifiedSuiteName: false,
+            screenshotsOnlyOnFailure: true,
+            testPlatform: platform
+        };
+        new HTMLReport().from('xmlresults.xml', testConfig);
+    });
+ }
