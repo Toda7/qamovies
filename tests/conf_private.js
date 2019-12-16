@@ -1,11 +1,11 @@
 let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
-let failFast = require('protractor-fail-fast');
+// let failFast = require('protractor-fail-fast');
 
 exports.config = {
-  plugins: [failFast.init()],
-  afterLaunch: function () {
-    failFast.clean(); // Removes the fail file once all test runners have completed.
-  },
+  // plugins: [failFast.init()],
+  // afterLaunch: function () {
+  //   failFast.clean(); // Removes the fail file once all test runners have completed.
+  // },
   framework: 'jasmine',
   seleniumAddress: 'http://localhost:4444/wd/hub',
   suites: {
@@ -22,9 +22,9 @@ exports.config = {
       './private/dashboard/dashPage/dashPage-spec.js'
     ],
 
-    // loginAsVendor: [
-    //   './private/dashboard/loginAsVendor/loginAsVendor-spec.js'
-    // ],
+    loginAsVendor: [
+      './private/dashboard/loginAsVendor/loginAsVendor-spec.js'
+    ],
 
     dashComunity: [
       './private/dashboard/dashComunity/dashComunity-spec.js'
@@ -198,9 +198,10 @@ exports.config = {
       './private/community/undoDeleteDiscussion/undoDeleteDiscussion-spec.js'
     ],
 
-    searchForDiscussion: [
-      './private/community/searchForDiscussion/searchForDiscussion-spec.js'
-    ],
+    // searchForDiscussion: [
+    // Zakomentarisano dok Jenny ne gurne General Search u Prod
+    //   './private/community/searchForDiscussion/searchForDiscussion-spec.js'
+    // ],
 
     createAnonymousDiscussion: [
       './private/community/createAnonymousDiscussion/createAnonymousDiscussion-spec.js'
@@ -361,7 +362,7 @@ exports.config = {
     dumbleformThirdForm: [
       './private/dumbleform/vendorMapping/vendorMapping-spec.js'
     ],
-    
+
     logOut: [
       './private/education/logOutAsAdmin/logOutAsAdmin-spec.js'
     ],
@@ -442,12 +443,47 @@ exports.config = {
   allScriptsTimeout: 60 * 1000 * 60,
 
   onPrepare: function () {
+
+    var jasmineReporters = require('jasmine-reporters');
+    jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
+      consolidateAll: true,
+      savePath: './',
+      filePrefix: 'xmlresults'
+    }));
+
     jasmine.getEnv().addReporter(new SpecReporter({
       spec: {
         displayStacktrace: true
       }
     }));
 
+  },
+
+  //HTMLReport called once tests are finished
+  onComplete: function () {
+    var browserName, browserVersion;
+    var capsPromise = browser.getCapabilities();
+
+    capsPromise.then(function (caps) {
+      browserName = caps.get('browserName');
+      browserVersion = caps.get('version');
+      platform = caps.get('platform');
+
+      var HTMLReport = require('protractor-html-reporter-2');
+
+      testConfig = {
+        reportTitle: 'CBANC Private Report',
+        outputPath: './',
+        outputFilename: 'CBANC Private Report',
+        screenshotPath: './screenshots',
+        testBrowser: browserName,
+        browserVersion: browserVersion,
+        modifiedSuiteName: false,
+        screenshotsOnlyOnFailure: true,
+        testPlatform: platform
+      };
+      new HTMLReport().from('xmlresults.xml', testConfig);
+    });
   }
 
 };
