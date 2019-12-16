@@ -7,38 +7,38 @@ function lendOnProductDetails(){
 function clickOnNewAddressButton(){
    // Klik on NEW ADDRESS button
    element(by.className('action action-show-popup')).click();
-   browser.sleep(6000);
+   browser.sleep(2000);
 }
 
 function enterStreet() {
    // Unesi Street  
    element(by.name('street[0]')).clear().sendKeys('PO Box 2413');
-   browser.sleep(3000);
+   browser.sleep(2000);
 }
 
 function enterCity() {
    // Unesi city 
    element(by.name('city')).clear().sendKeys('Texas');
-   browser.sleep(3000);
+   browser.sleep(2000);
 }
 
 function clickToSelectProvince() {
-   //  Klik to select option from drop
+   //  Select Texas from drop
    element(by.name('shippingAddress.region_id')).all(by.tagName('option')).get(57).click(); 
    // element(by.css('select#authnetcim-card-id.select')).click();
-   browser.sleep(6000);
+   browser.sleep(2000);
 }
 
 function enterZip() {
    // Unesi city 
    element(by.name('postcode')).clear().sendKeys('90001');
-   browser.sleep(3000);
+   browser.sleep(2000);
 }
 
 function enterPhoneNumber() {
    // Unesi phone number 
    element(by.name('telephone')).clear().sendKeys('333444');
-   browser.sleep(3000);
+   browser.sleep(2000);
 }
 
 function clickOnSaveNewAddressButton(){

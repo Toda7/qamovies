@@ -1,15 +1,15 @@
-var testAddNewAddress = require('./testAddNewAddress-po.js');
-var testSortingByName = require('../testSortingByName/testSortingByName-po.js');
+var testAddFirstAddressOnAddressBook = require('./testAddFirstAddressOnAddressBook-po.js');
+var testAddNewAddress = require('../testAddNewAddress/testAddNewAddress-po.js');
+var prepareMagentoCoupon = require('../prepareMagentoCoupon/prepareMagentoCoupon-po.js');
 
-
-describe('Adding new address on Address Book page', function(){
+describe('Adding first address on Address Book page', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
     }); 
 
     it(' Dolazak na home page', function(){
-        testSortingByName.landOnTrugloPage();
+        testAddFirstAddressOnAddressBook.lendOnBadlands();
     });
 
     it('Klik to open user menu', function(){
@@ -20,29 +20,30 @@ describe('Adding new address on Address Book page', function(){
         testAddNewAddress.clickOnMyAccountLink();
     });
 
-    it('Provera da li se ucitao My Account URL', function(){
-        testAddNewAddress.checkMyAccountURL();
-    });
-
     it('Klik on Address Book', function(){
         testAddNewAddress.clickAddressBook();
     });
 
-    it('Provera da li se ucitao Address Book URL', function(){
-        testAddNewAddress.checkAddressBookURL();
+    it('Brisanje texta iz first name polja', function(){
+        testAddNewAddress.clearFirstNameField();
     });
 
-    it('Klik on Add New Address button', function(){
-        testAddNewAddress.clickAddNewAddress();
-    });
-
-    it('Provera da li se ucitao Add New Address URL', function(){
-        testAddNewAddress.checkAddNewAddressURL();
+    it('Brisanje texta iz last name polja', function(){
+        testAddNewAddress.clearLastNameField();
     });
 
     it('Klik on Save button to get error messages', function(){
         testAddNewAddress.clickOnSave();
     });
+
+    it('Provera da li se ucitala required message for First Name', function(){
+        testAddNewAddress.checkRequiredMessageForFirstName();
+    });
+
+    it('Provera da li se ucitala required message for Last Name', function(){
+        testAddNewAddress.checkRequiredMessageForLastName();
+    });
+
 
     it('Provera da li se ucitala required message for phone', function(){
         testAddNewAddress.checkRequiredMessageForPhone();
@@ -60,8 +61,16 @@ describe('Adding new address on Address Book page', function(){
         testAddNewAddress.checkRequiredMessageForState();
     });
 
-    it('Provera da li se ucitala required message for state', function(){
+    it('Provera da li se ucitala required message for zip', function(){
         testAddNewAddress.checkRequiredMessageForZip();
+    });
+
+    it('Unesi first name', function(){
+        testAddFirstAddressOnAddressBook.enterFirstName();
+    });
+    
+    it('Unesi last name', function(){
+        testAddFirstAddressOnAddressBook.enterLastName();
     });
 
     it('Unesi Phone Number', function(){
@@ -95,6 +104,43 @@ describe('Adding new address on Address Book page', function(){
     it('Da li se pojavila success poruka saved', function(){
         testAddNewAddress.checkIsAddressIsSaved();
     });
+
+    it('Dolazak u manento na user details ', function(){
+        testAddFirstAddressOnAddressBook.lendOnUserDetailsInAdmin();
+    });
+
+    it('Unesi Username', function(){
+        prepareMagentoCoupon.enterUsername();
+    });
+
+    it('Unesi Password', function(){
+        prepareMagentoCoupon.enterPass();
+    });
+
+    it('Klik na Sign In dugme', function(){
+        prepareMagentoCoupon.clickOnSignIn();
+    });
+
+    it('Dolazak u manento na user details ', function(){
+        testAddFirstAddressOnAddressBook.lendOnUserDetailsInAdmin();
+    });
+
+    it('Klik na Addresses link', function(){
+        testAddFirstAddressOnAddressBook.clickOnAddressesLink();
+    });
+
+    it('Klik na Remove link', function(){
+        testAddFirstAddressOnAddressBook.clickOnRemoveLink();
+    });
+
+    it('Klik to confirm delete link', function(){
+        testAddFirstAddressOnAddressBook.clickToConfirmDelete();
+    });
+
+    it('Klik on SAVE button', function(){
+        testAddFirstAddressOnAddressBook.clickOnSaveButton();
+    });
+
 
         afterAll(function(){
         browser.waitForAngularEnabled(true); 

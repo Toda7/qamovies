@@ -119,14 +119,6 @@ exports.config = {
       './gfShop/TestZendesk/TestZendesk-spec.js'
     ],
 
-    testMessageForNoOrders: [
-      './gfShop/testMessageForNoOrders/testMessageForNoOrders-spec.js'
-    ],
-
-    testMessageNoPayment: [
-      './gfShop/testMessageNoPayment/testMessageNoPayment-spec.js'
-    ],
-
     testFooterLinks: [
       './gfShop/testFooterLinks/testFooterLinks-spec.js'
     ],
@@ -141,10 +133,6 @@ exports.config = {
 
     testSearchShop: [
       './gfShop/testSearchShop/testSearchShop-spec.js'
-    ],
-
-    testColorLinksOnProductsListPage: [
-      './gfShop/testColorLinksOnProductsListPage/testColorLinksOnProductsListPage-spec.js'
     ],
 
     testColorLinksonProductsListPage: [
@@ -171,6 +159,10 @@ exports.config = {
       './gfShop/testNotSaveInAddressBookForNewAddress/testNotSaveInAddressBookForNewAddress-spec.js'
     ],
 
+    testErrorMessageOnProductDetails: [
+      './gfShop/testErrorMessageOnProductDetails/testErrorMessageOnProductDetails-spec.js'
+    ],
+
     testMyOrders: [
       './gfShop/testMyOrders/testMyOrders-spec.js'
     ],
@@ -189,10 +181,6 @@ exports.config = {
 
     testPrintInvoicePage: [
       './gfShop/testPrintInvoicePage/testPrintInvoicePage-spec.js'
-    ],
-
-    testCouponOrder: [
-      './gfShop/testCouponOrder/testCouponOrder-spec.js'
     ],
 
     testSaveCcForNextTime: [
@@ -238,6 +226,30 @@ exports.config = {
 
     testAdvanceSearchSKU: [
       './gfShop/testAdvanceSearchSKU/testAdvanceSearchSKU-spec.js'
+    ],
+
+    testAllTab: [
+      './gfShop/testAllTab/testAllTab-spec.js'
+    ],
+
+    testMessageForNoOrders: [
+      './gfShop/testMessageForNoOrders/testMessageForNoOrders-spec.js'
+    ],
+
+    testAddFirstAddressOnAddressBook: [
+      './gfShop/testAddFirstAddressOnAddressBook/testAddFirstAddressOnAddressBook-spec.js'
+    ],
+
+    testMessageNoPayment: [
+      './gfShop/testMessageNoPayment/testMessageNoPayment-spec.js'
+    ],
+
+    testMoultrieShipping: [
+      './gfShop/testMoultrieShipping/testMoultrieShipping-spec.js'
+    ],
+
+    testAddFirstAddressOnCheckout: [
+      './gfShop/testAddFirstAddressOnCheckout/testAddFirstAddressOnCheckout-spec.js'
     ],
 
     testAdvancedSearchPagination: [
