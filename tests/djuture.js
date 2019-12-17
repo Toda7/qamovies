@@ -19,8 +19,16 @@ exports.config = {
             './gfShop/logInAsUser/logInAsUser-spec.js'
         ],
 
+        // mojkomentar : [
+        //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluz32131231231231232131231232131i nicemu. to je samo primer)
+        // ],
+
         loginAsVendor: [
             './private/dashboard/loginAsVendor/loginAsVendor-spec.js'
+        ],
+
+        addUser: [
+            './private/fileVault/addUser/addUser-spec.js',
         ],
 
         checkLinksOnFVHomePage: [
@@ -34,6 +42,15 @@ exports.config = {
         // opt321321312312312321312312312312312312321312321321: [
         //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluz32131231231231232131231232131i nicemu. to je samo primer)
         // ],
+
+        dashComunity: [
+            './private/dashboard/dashComunity/dashComunity-spec.js'
+        ],
+
+        loginToda2: [
+            './private/account/login/login-spec.js'
+        ],
+
 
         loginToda: [
             './private/account/login/login-spec.js'
