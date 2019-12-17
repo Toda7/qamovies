@@ -21,6 +21,10 @@ exports.config = {
     // opt321321312312312321312312312312312312321312321321: [
     //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluz32131231231231232131231232131i nicemu. to je samo primer)
     // ],
+
+    // mojkomentar : [
+    //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluz32131231231231232131231232131i nicemu. to je samo primer)
+    // ],
   },
 
   capabilities: {
