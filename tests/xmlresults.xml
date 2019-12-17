@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="8" time="8.763">
+ <testsuite name="Public home page" timestamp="2019-12-17T14:36:08" hostname="localhost" time="8.763" errors="0" tests="8" skipped="0" disabled="0" failures="0">
+  <testcase classname="Public home page" name="Dolazak na home stranu" time="4.378" />
+  <testcase classname="Public home page" name="Provera da li se ucitao page title" time="0.014" />
+  <testcase classname="Public home page" name="Provera da li se ucitao join button" time="2.072" />
+  <testcase classname="Public home page" name="Provera da li se ucitao title on page" time="0.068" />
+  <testcase classname="Public home page" name="Provera da li su se ucitali brojevi za downloads" time="0.063" />
+  <testcase classname="Public home page" name="Provera da li su se ucitali brojevi za answers" time="0.052" />
+  <testcase classname="Public home page" name="Provera da li su se ucitali brojevi za financial institutions" time="2.057" />
+  <testcase classname="Public home page" name="Provera da li se ucitao intercom" time="0.052" />
+ </testsuite>
+</testsuites>
