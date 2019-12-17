@@ -1,6 +1,6 @@
 var setInactiveVideo = require('./setInactiveVideo-po.js'); 
 
-describe('Set hosted webinar to the inactive status', function(){
+describe('Set video to the inactive status', function(){
 
 beforeAll(function(){
     browser.waitForAngularEnabled(false);
