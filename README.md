@@ -122,9 +122,11 @@ Kako obrisati granu iz lokala;
 Kako obrisati remote granu 
 
     git branch -d -r origin/{branch name}   
+
     
     
-<<<< Da bi testovi nastavli da rade cak i ako neki padne >>>> 
+   <<<< Da bi testovi nastavli da rade cak i ako neki padne >>>> 
+		
 
 	   let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
 	   // let failFast = require('protractor-fail-fast');
@@ -134,6 +136,7 @@ Kako obrisati remote granu
 	   // afterLaunch: function () {
 	   //   failFast.clean(); // Removes the fail file once all test runners have completed.
 	   // },
+
 
 <<<< REPORT U PROTRACTORU >>>> 
 
