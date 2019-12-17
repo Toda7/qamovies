@@ -122,6 +122,18 @@ Kako obrisati granu iz lokala;
 Kako obrisati remote granu 
 
     git branch -d -r origin/{branch name}   
+    
+    
+<<<< Da bi testovi nastavli da rade cak i ako neki padne >>>> 
+
+	   let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
+	   // let failFast = require('protractor-fail-fast');
+
+	   exports.config = {
+	   // plugins: [failFast.init()],
+	   // afterLaunch: function () {
+	   //   failFast.clean(); // Removes the fail file once all test runners have completed.
+	   // },
 
 <<<< REPORT U PROTRACTORU >>>> 
 
@@ -167,5 +179,5 @@ Kako obrisati remote granu
 	    });
 	  }
 
-Video: https://www.youtube.com/watch?v=5OJaWFoWwdw&list=PLhW3qG5bs-L_dgIr3hiOlnNIO8NGlXQnP&index=12
+Video: https://www.youtube.com/watch?v=5OJaWFoWwdw&list=PLhW3qG5bs-L_dgIr3hiOlnNIO8NGlXQnP&index=12   
 
