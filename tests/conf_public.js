@@ -1,12 +1,12 @@
 let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
-let failFast = require('protractor-fail-fast');
+// let failFast = require('protractor-fail-fast');
 
 
 exports.config = {
-  plugins: [failFast.init()],
-  afterLaunch: function () {
-    failFast.clean(); // Removes the fail file once all test runners have completed.
-  },
+  // plugins: [failFast.init()],
+  // afterLaunch: function () {
+  //   failFast.clean(); // Removes the fail file once all test runners have completed.
+  // },
   framework: 'jasmine',
   seleniumAddress: 'http://localhost:4444/wd/hub',
 
@@ -142,9 +142,8 @@ exports.config = {
 
   allScriptsTimeout: 60 * 1000 * 60,
 
-
   onPrepare: function () {
-
+    // Ovaj deo koda je za HTML reporter
     var jasmineReporters = require('jasmine-reporters');
     jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
       consolidateAll: true,
@@ -152,6 +151,29 @@ exports.config = {
       filePrefix: 'xmlresults'
     }));
 
+    // Ovaj deo koda je za Screenshotove
+    var fs = require('fs-extra');
+
+    fs.emptyDir('screenshots/', function (err) {
+      console.log(err);
+    });
+
+    jasmine.getEnv().addReporter({
+      specDone: function (result) {
+        if (result.status == 'failed') {
+          browser.getCapabilities().then(function (caps) {
+            var browserName = caps.get('browserName');
+
+            browser.takeScreenshot().then(function (png) {
+              var stream = fs.createWriteStream('screenshots/' + browserName + '-' + result.fullName + '.png');
+              stream.write(new Buffer(png, 'base64'));
+              stream.end();
+            });
+          });
+        }
+      }
+    });
+    // Ovaj deo koda je za Jasmin reporter u terminalu
     jasmine.getEnv().addReporter(new SpecReporter({
       spec: {
         displayStacktrace: true

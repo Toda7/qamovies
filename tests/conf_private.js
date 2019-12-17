@@ -1,11 +1,11 @@
 let SpecReporter = require('jasmine-spec-reporter').SpecReporter;
-let failFast = require('protractor-fail-fast');
+// let failFast = require('protractor-fail-fast');
 
 exports.config = {
-  plugins: [failFast.init()],
-  afterLaunch: function () {
-    failFast.clean(); // Removes the fail file once all test runners have completed.
-  },
+  // plugins: [failFast.init()],
+  // afterLaunch: function () {
+  //   failFast.clean(); // Removes the fail file once all test runners have completed.
+  // },
   framework: 'jasmine',
   seleniumAddress: 'http://localhost:4444/wd/hub',
   suites: {
@@ -442,12 +442,70 @@ exports.config = {
   allScriptsTimeout: 60 * 1000 * 60,
 
   onPrepare: function () {
-    jasmine.getEnv().addRgieporter(new SpecReporter({
+    // Ovaj deo koda je za HTML reporter
+    var jasmineReporters = require('jasmine-reporters');
+    jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
+      consolidateAll: true,
+      savePath: './',
+      filePrefix: 'xmlresults'
+    }));
+
+    // Ovaj deo koda je za Screenshotove
+    var fs = require('fs-extra');
+
+    fs.emptyDir('screenshots/', function (err) {
+      console.log(err);
+    });
+
+    jasmine.getEnv().addReporter({
+      specDone: function (result) {
+        if (result.status == 'failed') {
+          browser.getCapabilities().then(function (caps) {
+            var browserName = caps.get('browserName');
+
+            browser.takeScreenshot().then(function (png) {
+              var stream = fs.createWriteStream('screenshots/' + browserName + '-' + result.fullName + '.png');
+              stream.write(new Buffer(png, 'base64'));
+              stream.end();
+            });
+          });
+        }
+      }
+    });
+    // Ovaj deo koda je za Jasmin reporter u terminalu
+    jasmine.getEnv().addReporter(new SpecReporter({
       spec: {
         displayStacktrace: true
       }
     }));
 
+  },
+
+  //HTMLReport called once tests are finished
+  onComplete: function () {
+    var browserName, browserVersion;
+    var capsPromise = browser.getCapabilities();
+
+    capsPromise.then(function (caps) {
+      browserName = caps.get('browserName');
+      browserVersion = caps.get('version');
+      platform = caps.get('platform');
+
+      var HTMLReport = require('protractor-html-reporter-2');
+
+      testConfig = {
+        reportTitle: 'CABNC Private Test Report',
+        outputPath: './',
+        outputFilename: 'CABNC Private Test Report',
+        screenshotPath: './screenshots',
+        testBrowser: browserName,
+        browserVersion: browserVersion,
+        modifiedSuiteName: false,
+        screenshotsOnlyOnFailure: true,
+        testPlatform: platform
+      };
+      new HTMLReport().from('xmlresults.xml', testConfig);
+    });
   }
 
 };
