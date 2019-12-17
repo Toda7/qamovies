@@ -22,6 +22,10 @@ exports.config = {
       './private/account/login/login-spec.js'
     ],
 
+    loginToda2: [
+      './private/account/login/login-spec.js'
+    ],
+
   },
 
   capabilities: {
