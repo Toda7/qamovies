@@ -116,10 +116,56 @@ Steps for merge
 
 Kako obrisati granu iz lokala;
 
-- git branch -d {branch name}
-- git branch -D {branch name} <- veliko D da forsiramo brisnaje i ako imamo neki commit ili merge koji nije pushovan/zavrsen 
+    git branch -d {branch name}
+    git branch -D {branch name} <- veliko D da forsiramo brisnaje i ako imamo neki commit ili merge koji nije pushovan/zavrsen 
 
 Kako obrisati remote granu 
 
-- git branch -d -r origin/{branch name}   
+    git branch -d -r origin/{branch name}   
+
+<<<< REPORT U PROTRACTORU >>>> 
+
+- instaliraj protractor-html-reporter-2: npm i protractor-html-reporter-2
+
+- u svaki conf.js fajl treba da se doda u onPrepare funkciju: 
+
+	  var jasmineReporters = require('jasmine-reporters');
+	  jasmine.getEnv().addReporter(new jasmineReporters.JUnitXmlReporter({
+	      consolidateAll: true,
+	      savePath: './',
+	      filePrefix: 'xmlresults'
+	  }));
+
+
+
+- u svaki conf.js fajl treba da se doda na kraj fajla:  
+
+	  //HTMLReport called once tests are finished
+	  onComplete: function() {
+	     var browserName, browserVersion;
+	     var capsPromise = browser.getCapabilities();
+
+	     capsPromise.then(function (caps) {
+		browserName = caps.get('browserName');
+		browserVersion = caps.get('version');
+		platform = caps.get('platform');
+
+		var HTMLReport = require('protractor-html-reporter-2');
+
+		testConfig = {
+		    reportTitle: 'Protractor Test Execution Report',
+		    outputPath: './',
+		    outputFilename: 'ProtractorTestReport',
+		    screenshotPath: './screenshots',
+		    testBrowser: browserName,
+		    browserVersion: browserVersion,
+		    modifiedSuiteName: false,
+		    screenshotsOnlyOnFailure: true,
+		    testPlatform: platform
+		};
+		new HTMLReport().from('xmlresults.xml', testConfig);
+	    });
+	  }
+
+Video: https://www.youtube.com/watch?v=5OJaWFoWwdw&list=PLhW3qG5bs-L_dgIr3hiOlnNIO8NGlXQnP&index=12
 
