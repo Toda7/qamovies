@@ -25,6 +25,10 @@ exports.config = {
     addSpace: [
       './private/fileVault/addSpace/addSpace-spec.js',
     ],
+
+    addUser: [
+      './private/fileVault/addUser/addUser-spec.js',
+    ],
   },
 
   capabilities: {
