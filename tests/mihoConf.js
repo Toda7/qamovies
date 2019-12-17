@@ -21,6 +21,10 @@ exports.config = {
     loginAsVendor: [
       './private/dashboard/loginAsVendor/loginAsVendor-spec.js'
     ],
+
+    dashComunity: [
+      './private/dashboard/dashComunity/dashComunity-spec.js'
+    ],
   },
 
   capabilities: {
