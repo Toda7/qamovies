@@ -17,7 +17,7 @@ function HoverToOpenDrop() {
 
 function submit() {
     // Klik na search button
-    element.all(by.xpath('//*[@id="main"]/div/div/div[1]/div/div[2]/form/div[2]/button')).click();
+   element(by.className('cta')).click();
     browser.sleep(2000);
 }
 

@@ -30,16 +30,6 @@ describe('Create Discussion Action', function(){
         createDiscussion.attachDoc();
     });
 
-//     var path = require('path');
-
-//     it('should upload a file', function() {
-//     var fileToUpload = './TestTXT.txt',
-//     absolutePath = path.resolve(__dirname, fileToUpload);
-
-//     //element(by.xpath('//*[@id="root"]/div/div[2]/div/div/div[2]/div[1]/div/div[3]/div/div/input')).sendKeys(absolutePath);   
-//     element(by.css('input[type="file"]')).sendKeys(absolutePath); 
-// });
-
     it('Dodavanje topika', function(){
         createDiscussion.selectTopic();
     });

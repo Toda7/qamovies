@@ -51,12 +51,12 @@ function clickOnInvoice(){
 }
 
 function addInvoiceEmail() {
-    element(by.xpath('//*[@id="main"]/div/div/div[2]/aside/div/div/form/div/input')).sendKeys('vdrobnjak@cbancnetwork.com');
+    element(by.className('field text_field')).element(by.tagName('input')).sendKeys('vdrobnjak@cbancnetwork.com');
 }
 
 function clickOnAgreeButton() {
     //  Klik na Agree and Pay Button 
-    element(by.xpath('//*[@id="main"]/div/div/div[2]/aside/div/div/form/button')).click();
+    element(by.className('invoice_form')).element(by.tagName('button')).click();
 }
 
 
