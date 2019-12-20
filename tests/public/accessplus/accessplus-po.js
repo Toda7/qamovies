@@ -1,7 +1,7 @@
 function clickOnLink() {
     //  Klik na ondemand link iz drop menu
-    element(by.className('submenu_item link_allAccess_plus')).click();
- }
+    element(by.className('submenu_item link_all_access_plus')).click();
+}
 
  function checkAccessPlus() {
     // Provera accessplus URL-a
@@ -21,8 +21,6 @@ function checkTitleOnPage(){
     //  Provera da li se ucitao page title
     browser.wait(EC.textToBePresentInElement($('.hero_text_wrapper'), 'Hassle-free training for your entire financial institution'), 5000);
 }
-
-
 
 
 module.exports = {

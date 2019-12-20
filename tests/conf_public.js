@@ -26,29 +26,29 @@ exports.config = {
     //   './login/login-spec.js',
     // ],
 
-    home: [
-      './public/home/home-spec.js',
-    ],
+    // home: [
+    //   './public/home/home-spec.js',
+    // ],
 
-    lendwell: [
-      './public/lendwell/lendwell-spec.js',
-    ],
+    // lendwell: [
+    //   './public/lendwell/lendwell-spec.js',
+    // ],
 
-    vendor: [
-      './public/vendor/vendor-spec.js',
-    ],
-    vm: [
-      './public/vendor_management/vendor_management-spec.js',
-    ],
-    ra: [
-      './public/risk_assessment/risk_assessment-spec.js',
-    ],
-    pa: [
-      './public/peer_analysis/peer_analysis-spec.js',
-    ],
-    cielostar: [
-      './public/cielostar/cielostar-spec.js',
-    ],
+    // vendor: [
+    //   './public/vendor/vendor-spec.js',
+    // ],
+    // vm: [
+    //   './public/vendor_management/vendor_management-spec.js',
+    // ],
+    // ra: [
+    //   './public/risk_assessment/risk_assessment-spec.js',
+    // ],
+    // pa: [
+    //   './public/peer_analysis/peer_analysis-spec.js',
+    // ],
+    // cielostar: [
+    //   './public/cielostar/cielostar-spec.js',
+    // ],
 
     upcoming: [
       './public/upcoming/upcoming-spec.js',
@@ -66,69 +66,69 @@ exports.config = {
       './public/accessplus/accessplus-spec.js',
     ],
 
-    reserveseat: [
-      './public/reserveseat/reserveseat-spec.js',
-    ],
+    // reserveseat: [
+    //   './public/reserveseat/reserveseat-spec.js',
+    // ],
 
-    topics: [
-      './public/topics/topics-spec.js',
-    ],
+    // topics: [
+    //   './public/topics/topics-spec.js',
+    // ],
 
-    topicsearch: [
-      './public/topicSearch/topicSearch-spec.js',
-    ],
+    // topicsearch: [
+    //   './public/topicSearch/topicSearch-spec.js',
+    // ],
 
-    docss: [
-      './public/docLibSearch/docLibSearch-spec.js',
-    ],
+    // docss: [
+    //   './public/docLibSearch/docLibSearch-spec.js',
+    // ],
 
-    doc: [
-      './public/docLib/docLib-spec.js',
-    ],
+    // doc: [
+    //   './public/docLib/docLib-spec.js',
+    // ],
 
-    questions: [
-      './questions/questions-spec.js',
-    ],
+    // questions: [
+    //   './questions/questions-spec.js',
+    // ],
 
-    searchWebinars: [
-      './public/searchWebinars/searchWebinars-spec.js',
-    ],
+    // searchWebinars: [
+    //   './public/searchWebinars/searchWebinars-spec.js',
+    // ],
 
-    footAbout: [
-      './public/footAbout/footAbout-spec.js',
-    ],
+    // footAbout: [
+    //   './public/footAbout/footAbout-spec.js',
+    // ],
 
-    footFAQ: [
-      './public/footFAQ/footFAQ-spec.js',
-    ],
+    // footFAQ: [
+    //   './public/footFAQ/footFAQ-spec.js',
+    // ],
 
-    footContact: [
-      './public/footContact/footContact-spec.js'
-    ],
+    // footContact: [
+    //   './public/footContact/footContact-spec.js'
+    // ],
 
-    footVendors: [
-      './public/footVendors/footVendors-spec.js'
-    ],
+    // footVendors: [
+    //   './public/footVendors/footVendors-spec.js'
+    // ],
 
-    footCareers: [
-      './public/footCareers/footCareers-spec.js'
-    ],
+    // footCareers: [
+    //   './public/footCareers/footCareers-spec.js'
+    // ],
 
-    footBlog: [
-      './public/footBlog/footBlog-spec.js'
-    ],
+    // footBlog: [
+    //   './public/footBlog/footBlog-spec.js'
+    // ],
 
-    footPrivacy: [
-      './public/footPrivacy/footPrivacy-spec.js'
-    ],
+    // footPrivacy: [
+    //   './public/footPrivacy/footPrivacy-spec.js'
+    // ],
 
-    footTerms: [
-      './public/footTerms/footTerms-spec.js'
-    ],
+    // footTerms: [
+    //   './public/footTerms/footTerms-spec.js'
+    // ],
 
-    footCode: [
-      './public/footCode/footCode-spec.js'
-    ],
+    // footCode: [
+    //   './public/footCode/footCode-spec.js'
+    // ],
 
   },
   capabilities: {
