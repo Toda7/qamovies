@@ -13,18 +13,19 @@ function checkJoinUrl() {
 }
 
 function enterNewEmail() {
-    element(by.name('email')).sendKeys('testuser02@hotmail.com');
+    element(by.name('email')).sendKeys('testuser03@hotmail.com');
 }
 
 function enterPass() {
-    element.all(by.xpath('//*[@id="main_content"]/div/div/form/div[1]/div[3]/input')).sendKeys('test1234');
+    // element.all(by.xpath('//*[@id="main_content"]/div/div/form/div[1]/div[3]/input')).sendKeys('test1234');
     //element.all(by.css('.field.text_field.password')).then(function(){    ovo radi i ovo ispod
-        //element(by.name('password')).clear().sendKeys('test1234');
+        element(by.name('password')).clear().sendKeys('test1234');
    // });
 }
 
 function confirmPass() {
-    element.all(by.xpath('/html/body/div[1]/div/div/div/div/form/div[1]/div[4]/input')).sendKeys('test1234');
+    element.all(by.name('password')).get(1).clear().sendKeys('test1234');
+    // element.all(by.xpath('/html/body/div[1]/div/div/div/div/form/div[1]/div[4]/input')).sendKeys('test1234');
 }
 
 function submit() {

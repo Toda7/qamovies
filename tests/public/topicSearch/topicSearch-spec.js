@@ -25,10 +25,6 @@ describe('Public Topics Search', function(){
         topicsearch.enterSearchTerm();
     });
 
-    it('Submit searcha terma', function(){
-        topicsearch.submit();
-    });
-
     it('Provera Topic search URL-a', function(){
         topicsearch.checkSearchUrl();
     });

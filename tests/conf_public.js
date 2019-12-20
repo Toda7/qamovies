@@ -73,12 +73,15 @@ exports.config = {
     topics: [
       './public/topics/topics-spec.js',
     ],
+
     topicsearch: [
       './public/topicSearch/topicSearch-spec.js',
     ],
+
     docss: [
       './public/docLibSearch/docLibSearch-spec.js',
     ],
+
     doc: [
       './public/docLib/docLib-spec.js',
     ],
@@ -125,7 +128,7 @@ exports.config = {
 
     footCode: [
       './public/footCode/footCode-spec.js'
-    ]
+    ],
 
   },
   capabilities: {

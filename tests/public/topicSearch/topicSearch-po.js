@@ -14,11 +14,8 @@ function clickOnLink() {
 function enterSearchTerm() {
     // unos texta za search
     element(by.name('q')).clear().sendKeys('test');
-}
-
-function submit() {
-    // click na search dugme
-    element.all(by.xpath('//*[@id="top_section"]/div/div[2]/div/form/div[2]/button')).click();
+    element(by.name('q')).sendKeys(protractor.Key.ENTER);
+    browser.sleep(2500);
 }
 
 function checkSearchUrl() {
@@ -32,7 +29,6 @@ module.exports = {
     HoverToOpenDrop,
     clickOnLink,
     enterSearchTerm,
-    submit,
     checkSearchUrl,
 
 }
