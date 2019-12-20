@@ -79,12 +79,12 @@ function checkFirstErrorMessage(){
 
 function enterNumbersInCreditCardField() {
     //  Enter numbers in credit card field
-    element(by.xpath('//*[@id="main"]/div/div/div[2]/aside/div/div/form/div[1]/input')).sendKeys('4111111111111111');
+    element(by.className('stripe_cc_form')).all(by.tagName('input')).get(0).sendKeys('4111111111111111');
     browser.sleep(2000);
 }
 function enterNameOfCreditCard() {
     //  Enter name of credit card field
-    element(by.xpath('//*[@id="main"]/div/div/div[2]/aside/div/div/form/div[2]/input')).sendKeys('Testing');
+    element(by.className('stripe_cc_form')).all(by.tagName('input')).get(1).sendKeys('Test');
     browser.sleep(2000);
 }
 
@@ -138,7 +138,8 @@ function checkErrorMessageForZipCode(){
 
 function enterNumbersInZipField() {
     //  Enter numbers in zip code field
-    element(by.xpath('//*[@id="main"]/div/div/div[2]/aside/div/div/form/div[3]/div[2]/input')).sendKeys('12345');
+    element(by.className('field text_field zip')).all(by.tagName('input')).get(0).sendKeys('12345');
+
     browser.sleep(2000);
 }
 

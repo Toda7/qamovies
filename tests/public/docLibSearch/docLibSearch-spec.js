@@ -23,10 +23,6 @@ describe('Public Document librery', function(){
         docss.enterSearchTerm();
     });
 
-    it('Submit searcha terma', function(){
-        docss.submit();
-    });
-
     it('Provera DOC search URL-a', function(){
         docss.checkSearchUrl();
     }); 
