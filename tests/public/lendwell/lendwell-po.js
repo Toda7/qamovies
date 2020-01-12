@@ -33,7 +33,7 @@ function checkPSbox(){
 function checkFooter(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao footer
-    browser.wait(EC.textToBePresentInElement($('.legal'), '2008 - 2019 CBANC Network. All rights reserved.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.legal'), '2008 - 2020 CBANC Network. All rights reserved.'), 5000);
     browser.sleep(2000);
 }    
 
