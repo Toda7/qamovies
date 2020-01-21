@@ -36,6 +36,7 @@ exports.config = {
     ],
 
   },
+  
   capabilities: {
     browserName: 'chrome',
     'chromeOptions': {
@@ -63,10 +64,6 @@ exports.config = {
     // Ovaj deo koda je za Screenshotove
     var fs = require('fs-extra');
 
-    fs.emptyDir('screenshots/', function (err) {
-      console.log(err);
-    });
-
     jasmine.getEnv().addReporter({
       specDone: function (result) {
         if (result.status == 'failed') {
@@ -74,7 +71,7 @@ exports.config = {
             var browserName = caps.get('browserName');
 
             browser.takeScreenshot().then(function (png) {
-              var stream = fs.createWriteStream('screenshots/' + browserName + '-' + result.fullName + '.png');
+              var stream = fs.createWriteStream('reports/GF/screenshots/' + browserName + '-' + result.fullName + '.png');
               stream.write(new Buffer(png, 'base64'));
               stream.end();
             });
@@ -102,11 +99,14 @@ exports.config = {
       platform = caps.get('platform');
 
       var HTMLReport = require('protractor-html-reporter-2');
+      var today = new Date(),
+      timeStamp = today.getMonth() + 1 + '-' + today.getDate() + '-' + today.getFullYear() + '-' + today.getHours() + '-' + today.getMinutes() + '-' + + today.getSeconds();
+      
 
       testConfig = {
         reportTitle: 'GF Shop Prepare Test Report',
-        outputPath: './',
-        outputFilename: 'GF Shop Prepare Test Report',
+        outputPath: './reports/GF/',
+        outputFilename: 'GF Shop Prepare Test Report - '+timeStamp,
         screenshotPath: './screenshots',
         testBrowser: browserName,
         browserVersion: browserVersion,

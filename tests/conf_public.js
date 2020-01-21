@@ -131,6 +131,7 @@ exports.config = {
     ],
 
   },
+  
   capabilities: {
     browserName: 'chrome',
     'chromeOptions': {
@@ -157,18 +158,16 @@ exports.config = {
     // Ovaj deo koda je za Screenshotove
     var fs = require('fs-extra');
 
-    fs.emptyDir('screenshots/', function (err) {
-      console.log(err);
-    });
-
     jasmine.getEnv().addReporter({
       specDone: function (result) {
         if (result.status == 'failed') {
           browser.getCapabilities().then(function (caps) {
             var browserName = caps.get('browserName');
 
+            
+
             browser.takeScreenshot().then(function (png) {
-              var stream = fs.createWriteStream('screenshots/' + browserName + '-' + result.fullName + '.png');
+              var stream = fs.createWriteStream('reports/Cbanc/screenshots/' + browserName + '-' + result.fullName + '.png');
               stream.write(new Buffer(png, 'base64'));
               stream.end();
             });
@@ -197,10 +196,13 @@ exports.config = {
 
       var HTMLReport = require('protractor-html-reporter-2');
 
+      var today = new Date(),
+      timeStamp = today.getMonth() + 1 + '-' + today.getDate() + '-' + today.getFullYear() + '-' + today.getHours() + '-' + today.getMinutes() + '-' + + today.getSeconds();
+      
       testConfig = {
         reportTitle: 'CBANC Public Report',
-        outputPath: './',
-        outputFilename: 'CBANC Public Report',
+        outputPath: './reports/Cbanc/',
+        outputFilename: 'CBANC Public Report - '+timeStamp,
         screenshotPath: './screenshots',
         testBrowser: browserName,
         browserVersion: browserVersion,
