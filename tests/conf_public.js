@@ -21,11 +21,6 @@ exports.config = {
     //   './public/registracija/registracija-spec.js',
     // ],
 
-    // Test za log smo stavili u comment da bi mogli da pokrecemo ceo conf.js fajl (jer smo dobijali greske u terminalu zbog log in - slobodno upaliti po potrebi)
-    // login: [
-    //   './login/login-spec.js',
-    // ],
-
     home: [
       './public/home/home-spec.js',
     ],
