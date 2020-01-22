@@ -17,7 +17,7 @@ function enterStreet() {
 
 function lendOnProductDetails(){
    // Dolazak na product details 
-   browser.get('https://shop.outfitterextreme.com/hornady/50-cal-500-gr-interlock-flat-point.html'); 
+   browser.get('https://shop.outfitterextreme.com/hornady/350-legend-170-gr-interlock-american-whitetail.html'); 
 }
 
 function clickOnPoBoxAddress() {

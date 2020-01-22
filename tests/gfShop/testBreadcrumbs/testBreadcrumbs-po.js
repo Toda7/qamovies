@@ -6,7 +6,7 @@ function checkProductDetailsPageUrl() {
 
 function checkProductBreadcrumb() {
    // Provera da li se ucitao poslednji breadcrumb (ime proizvoda)
-   var xxx = element(by.className('item productt'));
+   var xxx = element(by.className('item product'));
    expect(xxx.getText()).toEqual('ACCU X™ CAPTURE BOWFISHING REST');
    browser.sleep(500);
 }

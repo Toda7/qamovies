@@ -2,7 +2,7 @@ var register = require('../registracija/registracija-po.js');
 var upcoming = require('../upcoming/upcoming-po.js');
 var ondemand = require('./ondemand-po.js');
 
-describe('Upcoming webinars strana', function(){
+describe('Provera On Demand strane', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element

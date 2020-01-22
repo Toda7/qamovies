@@ -1,6 +1,6 @@
 function lendOnProductDetails(){
    // Dolazak na product details 
-   browser.get('https://shop.outfitterextreme.com/hornady/223-rem-55-gr-v-max.html'); 
+   browser.get('https://shop.outfitterextreme.com/hornady/300-blackout-125-gr-fmj-frontier-1.html'); 
    browser.sleep(5000);
 }
 

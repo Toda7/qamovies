@@ -1,27 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="0" tests="20" time="65.044">
- <testsuite name="Prepare Test User" timestamp="2020-01-21T19:26:59" hostname="localhost" time="13.766" errors="0" tests="5" skipped="0" disabled="0" failures="0">
-  <testcase classname="Prepare Test User" name="Dolazak na home page" time="5.305" />
-  <testcase classname="Prepare Test User" name="Klik na Contine with email button" time="2.055" />
-  <testcase classname="Prepare Test User" name="Unosenje user email" time="0.18" />
-  <testcase classname="Prepare Test User" name="Unosenje user passworda" time="0.114" />
-  <testcase classname="Prepare Test User" name="Klik on Sign in button" time="6.106" />
+testsuites disabled="0" errors="0" failures="0" tests="39" time="112.53">
+ <testsuite name="Prepare Test User" timestamp="2020-01-21T19:07:33" hostname="localhost" time="12.428" errors="0" tests="5" skipped="0" disabled="0" failures="0">
+  <testcase classname="Prepare Test User" name="Dolazak na home page" time="3.968" />
+  <testcase classname="Prepare Test User" name="Klik na Contine with email button" time="2.057" />
+  <testcase classname="Prepare Test User" name="Unosenje user email" time="0.183" />
+  <testcase classname="Prepare Test User" name="Unosenje user passworda" time="0.111" />
+  <testcase classname="Prepare Test User" name="Klik on Sign in button" time="6.103" />
  </testsuite>
- <testsuite name="Provera cene shipping-a za odredjene proizvode" timestamp="2020-01-21T19:27:13" hostname="localhost" time="51.278" errors="0" tests="15" skipped="0" disabled="0" failures="0">
-  <testcase classname="Provera cene shipping-a za odredjene proizvode" name="Dolazak na Moultrie shop" time="5.515" />
-  <testcase classname="Provera cene shipping-a za odredjene proizvode" name="Dolazak na detail stranu kamere" time="2.958" />
-  <testcase classname="Provera cene shipping-a za odredjene proizvode" name="Klik na add to cart button" time="2.073" />
-  <testcase classname="Provera cene shipping-a za odredjene proizvode" name="Dolazak na detail stranu feeder-a" time="2.802" />
-  <testcase classname="Provera cene shipping-a za odredjene proizvode" name="Klik na add to cart button" time="2.062" />
-  <testcase classname="Provera cene shipping-a za odredjene proizvode" name="Dolazak na detail stranu Attractant-a" time="2.785" />
-  <testcase classname="Provera cene shipping-a za odredjene proizvode" name="Klik na add to cart button" time="2.063" />
-  <testcase classname="Provera cene shipping-a za odredjene proizvode" name="Klik to open cart" time="2.075" />
-  <testcase classname="Provera cene shipping-a za odredjene proizvode" name="Klik to go to checkout page" time="6.478" />
-  <testcase classname="Provera cene shipping-a za odredjene proizvode" name="Provera da li je shipping $27,00" time="2.039" />
-  <testcase classname="Provera cene shipping-a za odredjene proizvode" name="Klik to go to Review &amp; Payments page" time="5.08" />
-  <testcase classname="Provera cene shipping-a za odredjene proizvode" name="Klik on PLACE ORDER button" time="9.075" />
-  <testcase classname="Provera cene shipping-a za odredjene proizvode" name="Dolazak na My Orders stranu" time="3.426" />
-  <testcase classname="Provera cene shipping-a za odredjene proizvode" name="Klik na prvi View Order link" time="2.789" />
-  <testcase classname="Provera cene shipping-a za odredjene proizvode" name="Provera da li je shipping $27,00 na My Orders" time="0.056" />
+ <testsuite name="Message for no orders" timestamp="2020-01-21T19:07:45" hostname="localhost" time="30.067" errors="0" tests="10" skipped="0" disabled="0" failures="0">
+  <testcase classname="Message for no orders" name="Dolazak na MDP page da bi uradili sign out" time="2.828" />
+  <testcase classname="Message for no orders" name="Klik on avatar to open user menu" time="3.066" />
+  <testcase classname="Message for no orders" name="Klik on Sign Out link" time="6.035" />
+  <testcase classname="Message for no orders" name="Dolazak na MDP page da bi uradili sign in" time="2.751" />
+  <testcase classname="Message for no orders" name="Klik on click On Continue With Email" time="2.051" />
+  <testcase classname="Message for no orders" name="Unosenje users email" time="0.179" />
+  <testcase classname="Message for no orders" name="Unosenje users email" time="0.117" />
+  <testcase classname="Message for no orders" name="Klik on Sign in" time="3.113" />
+  <testcase classname="Message for no orders" name="Dolazak na My Orders stranu" time="7.875" />
+  <testcase classname="Message for no orders" name="Provera no orders message" time="2.047" />
+ </testsuite>
+ <testsuite name="Pravljenje adrese na Checkout strani" timestamp="2020-01-21T19:08:15" hostname="localhost" time="70.035" errors="0" tests="24" skipped="0" disabled="0" failures="0">
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Dolazak na Spypoint shop" time="3.379" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Dolazak na detail stranu Product-a" time="2.918" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Klik na add to cart button" time="2.076" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Klik to open cart" time="2.062" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Klik to go to checkout page" time="6.287" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Klik on NEXT" time="7.066" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Provera error poruke1 &quot;This is a required field&quot;" time="0.036" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Provera error poruke2 &quot;This is a required field&quot;" time="0.023" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Provera error poruke3 &quot;This is a required field&quot;" time="0.021" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Provera error poruke4 &quot;This is a required field&quot;" time="0.022" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Provera error poruke5 &quot;This is a required field&quot;" time="0.022" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Unesi Company name" time="5.107" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Unesi Street name" time="2.213" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Unesi City name" time="2.116" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Klik to select Province from drop" time="6.089" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Unesi Zip" time="2.112" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Unesi broj telefona" time="8.143" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Klik on NEXT" time="7.075" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Provera da li je Adresa vidljiva na Review &amp; Payments" time="0.029" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Dolazak na detail stranu Product-a" time="2.931" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Klik na add to cart button" time="2.075" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name="Klik to open cart" time="2.082" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name=" Klik on Delete product icon" time="3.075" />
+  <testcase classname="Pravljenje adrese na Checkout strani" name=" Klik on Ok in confirm message" time="3.071" />
  </testsuite>
 </testsuites>
