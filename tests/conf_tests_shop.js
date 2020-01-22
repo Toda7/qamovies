@@ -244,10 +244,6 @@ exports.config = {
       './gfShop/testMessageNoPayment/testMessageNoPayment-spec.js'
     ],
 
-    testMoultrieShipping: [
-      './gfShop/testMoultrieShipping/testMoultrieShipping-spec.js'
-    ],
-
     testAddFirstAddressOnCheckout: [
       './gfShop/testAddFirstAddressOnCheckout/testAddFirstAddressOnCheckout-spec.js'
     ],
