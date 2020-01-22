@@ -123,9 +123,9 @@ exports.config = {
       './gfShop/testFooterLinks/testFooterLinks-spec.js'
     ],
 
-    testRestrictedAreaMessage: [
-      './gfShop/testRestrictedAreaMessage/testRestrictedAreaMessage-spec.js'
-    ],
+    // testRestrictedAreaMessage: [
+    //   './gfShop/testRestrictedAreaMessage/testRestrictedAreaMessage-spec.js'
+    // ],
 
     testRegularVSDiscountPrice: [
       './gfShop/testRegularVSDiscountPrice/testRegularVSDiscountPrice-spec.js'
@@ -240,12 +240,12 @@ exports.config = {
       './gfShop/testAddFirstAddressOnAddressBook/testAddFirstAddressOnAddressBook-spec.js'
     ],
 
-    testMessageNoPayment: [
-      './gfShop/testMessageNoPayment/testMessageNoPayment-spec.js'
-    ],
-
     testAddFirstAddressOnCheckout: [
       './gfShop/testAddFirstAddressOnCheckout/testAddFirstAddressOnCheckout-spec.js'
+    ],
+
+    testMessageNoPayment: [
+      './gfShop/testMessageNoPayment/testMessageNoPayment-spec.js'
     ],
 
     testMoultrieShipping: [

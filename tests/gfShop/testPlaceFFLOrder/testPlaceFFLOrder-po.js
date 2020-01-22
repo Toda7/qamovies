@@ -12,7 +12,7 @@ function clickToOpenDrop() {
 
 function selectOptionFromDrop() {
    // Select option
-   element(by.css('select#attribute467.super-attribute-select')).all(by.tagName('option')).get(1).click(); 
+   element(by.css('select#attribute467.super-attribute-select')).all(by.tagName('option')).get(2).click(); 
 }
 
 function clickOnAddToCart() {

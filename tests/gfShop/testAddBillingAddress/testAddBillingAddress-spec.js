@@ -88,19 +88,19 @@ describe('Add billing adresu i error poruke za required polja', function () {
         testAddBillingAddress.checkMsg7();
     });
 
-    it('unos First name', function () {
+    it('Unosenje First name', function () {
         testAddBillingAddress.enterFirstName();
     });
 
-    it('unos Last name', function () {
+    it('Unosenje Last name', function () {
         testAddBillingAddress.enterLastName();
     });
 
-    it('unos street Address', function () {
+    it('Unosenje street Address', function () {
         testAddBillingAddress.enterStreetAddress();
     });
 
-    it('unos City', function () {
+    it('Unosenje City', function () {
         testAddBillingAddress.enterCity();
     });
 
@@ -108,11 +108,11 @@ describe('Add billing adresu i error poruke za required polja', function () {
         testAddBillingAddress.clickToSelectProvince();
     });
 
-    it('unos Zip coda', function () {
+    it('Unosenje Zip coda', function () {
         testAddBillingAddress.enterZip();
     });
 
-    it('Unos telefona', function () {
+    it('Unosenje telefona', function () {
         testAddBillingAddress.enterPhone();
     });
 
@@ -124,23 +124,23 @@ describe('Add billing adresu i error poruke za required polja', function () {
         testAddBillingAddress.clickPlaceOrder();
     });
 
-    it('Dolazak u manento', function(){
-        testAddBillingAddress.lendOnMagento();
-    });
+    // it('Dolazak u magento', function(){
+    //     testAddBillingAddress.lendOnMagento();
+    // });
 
-    it('Unesi Username', function(){
-        prepareMagentoCoupon.enterUsername();
-    });
+    // it('Unesi Username', function(){
+    //     prepareMagentoCoupon.enterUsername();
+    // });
 
-    it('Unesi Password', function(){
-        prepareMagentoCoupon.enterPass();
-    });
+    // it('Unesi Password', function(){
+    //     prepareMagentoCoupon.enterPass();
+    // });
 
-    it('Klik na Sign In dugme', function(){
-        prepareMagentoCoupon.clickOnSignIn();
-    });
+    // it('Klik na Sign In dugme', function(){
+    //     prepareMagentoCoupon.clickOnSignIn();
+    // });
 
-    it('odi na user datail', function(){
+    it('Dolazak na user datail', function(){
         testAddBillingAddress.goToUserDetail();
     });
 
