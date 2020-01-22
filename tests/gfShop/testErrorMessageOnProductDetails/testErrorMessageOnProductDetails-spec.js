@@ -3,7 +3,7 @@ var testProductWithOneBox = require('../testProductWithOneBox/testProductWithOne
 var testTwentyProductsOrder = require('../testTwentyProductsOrder/testTwentyProductsOrder-po.js');
 var testAttentionWindow = require('../testAttentionWindow/testAttentionWindow-po.js');
 
-describe('Provera error poruke kada ne selektujemo option/box i kada ne staviom broj u qty polje', function () {
+describe('Provera error poruke kada ne selektujemo option or box i kada ne staviom broj u qty polje', function () {
 
     beforeAll(function () {
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
