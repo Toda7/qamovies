@@ -1,7 +1,7 @@
 var register = require('../registracija/registracija-po');
 var searchWebinars = require('./searchWebinars-po.js');
 
-describe('Public lendwell strana', function(){
+describe('Search upcoming webinars', function(){
 
 beforeAll(function(){
     browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element

@@ -99,17 +99,17 @@ function checkMessageErrorForEmptyFunctionalLevel(){
 }    
 function enterTextInTheFirstNameField() {
     // Unosenje text u first name field
-    element(by.name('first_name')).sendKeys('Chicago Alberto1');
+    element(by.name('first_name')).sendKeys('Chicago Alberto');
     browser.sleep(2000);
 }
 function enterTextInTheLastNameField() {
     // Unosenje text u last name field
-    element(by.name('last_name')).sendKeys('Diaz FI1');
+    element(by.name('last_name')).sendKeys('Diaz FI');
     browser.sleep(2000);
 }
 function enterTextInTheJobTitleField() {
     // Unosenje text u job title field
-    element(by.name('title')).sendKeys('QA1');
+    element(by.name('title')).sendKeys('QA');
     browser.sleep(2000);
 }
 function selectFunctionalArea() {

@@ -38,8 +38,12 @@ describe('Prepare Maghento coupon', function(){
         prepareMagentoCoupon.enterDescription();
     });
 
-    it('Odaberi shop', function(){
-        prepareMagentoCoupon.selectShop();
+    // it('Odaberi shop', function(){
+    //     prepareMagentoCoupon.selectShop();
+    // });
+
+    it('Odaberi sve shopove', function(){
+        prepareMagentoCoupon.selectAllShops();
     });
 
     it('Odaberi grupu', function(){

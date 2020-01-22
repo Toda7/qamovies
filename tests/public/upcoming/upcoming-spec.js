@@ -1,7 +1,7 @@
 var register = require('../registracija/registracija-po.js');
 var upcoming = require('./upcoming-po.js');
 
-describe('Upcoming webinars strana', function(){
+describe('Provera Upcoming webinars stranae', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
