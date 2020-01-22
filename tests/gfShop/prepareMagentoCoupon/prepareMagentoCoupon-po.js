@@ -46,9 +46,15 @@ function enterDescription() {
    browser.sleep(1000);
 }
 
-function selectShop() {
-   //  Odaberi shop
-   element.all(by.css('select.admin__control-multiselect')).get(0).all(by.tagName('option')).get(115).click();
+// function selectShop() {
+//    //  Odaberi shop
+//    element.all(by.css('select.admin__control-multiselect')).get(0).all(by.tagName('option')).get(115).click();
+//    browser.sleep(2000);
+// }
+
+function selectAllShops() {
+   //  Selektuj sve shopove
+   element.all(by.css('select.admin__control-multiselect')).click().sendKeys('tru');
    browser.sleep(2000);
 }
 
@@ -129,7 +135,8 @@ function clickSave() {
    clickOnAddNewRule,
    enterRuleName,
    enterDescription,
-   selectShop,
+   // selectShop,
+   selectAllShops,
    selectGroup,
    specificCoupon,
    couponCode,

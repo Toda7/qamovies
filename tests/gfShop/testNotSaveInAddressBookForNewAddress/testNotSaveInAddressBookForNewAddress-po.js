@@ -1,6 +1,6 @@
 function clickToUnselectSaveInAddressBookOption() {
    // Klik to unselect Save in address book option  
-   element(by.id('shipping-save-in-address-book')).click();
+   element.all(by.className('label')).last().click();
    browser.sleep(3000);
 }
 function checkBoxContent() {
