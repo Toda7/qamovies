@@ -212,7 +212,7 @@ function clickNext() {
 function clickPlaceOrder() {
    // Klik na Place Order dugme
    element(by.buttonText('Place Order')).click();
-   browser.sleep(5000);
+   browser.sleep(10000);
 }
 
 function clickAvatarInHeader() {
