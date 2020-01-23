@@ -1,6 +1,6 @@
 function landOnAplsHomePage() {
     // Dolazak na ALPS product details page in shop
-    browser.get('https://shop.outfitterextreme.com/stealthcam/accessories/security-bear-box-for-px-series.html'); 
+    browser.get('https://shop.outfitterextreme.com/truglo/tfx-pro-handgun-day-night-sights-tfx-sw-j-frm-frnt-pro-orn.html'); 
     browser.sleep(2000);
 }
 
@@ -85,7 +85,7 @@ function enterCvvNumber() {
 function clickOnPlaceOrder() {
     //  Klik on PLACE ORDER button
     element(by.className(' action primary checkout')).click();
-    browser.sleep(4000);
+    browser.sleep(7000);
 }
 
 function enterNumbersCreditCard1() {

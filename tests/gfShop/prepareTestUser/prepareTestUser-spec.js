@@ -65,8 +65,8 @@ describe('Prepare Test User', function(){
         prepareTestUser.clickOnSignOut();
     });
 
-    it('Logovanje sa prvim userom da bi potvrdili da li smo promenili sifru', function(){
-        prepareTestUser.landOnMdpAsUser();
+    it('Logovanje sa drugim userom da bi potvrdili da li smo promenili sifru', function(){
+        prepareTestUser.landOnMdpAsSecondUser();
     });
 
     it('Klik on click On Continue With Email', function(){
@@ -74,7 +74,7 @@ describe('Prepare Test User', function(){
     });
 
     it('Unosenje users email', function(){
-        prepareTestUser.enterUserEmail();
+        prepareTestUser.enterSecondUserEmail();
     });
 
     it('Unosenje users email', function(){
@@ -97,8 +97,8 @@ describe('Prepare Test User', function(){
         prepareTestUser.clickOnSignOut();
     });
 
-    it('Logovanje sa drugim userom da bi potvrdili da li smo promenili sifru', function(){
-        prepareTestUser.landOnMdpAsSecondUser();
+    it('Logovanje sa prvim userom da bi potvrdili da li smo promenili sifru', function(){
+        prepareTestUser.landOnMdpAsUser();
     });
 
     it('Klik on click On Continue With Email', function(){
@@ -106,7 +106,7 @@ describe('Prepare Test User', function(){
     });
 
     it('Unosenje users email', function(){
-        prepareTestUser.enterSecondUserEmail();
+        prepareTestUser.enterUserEmail();
     });
 
     it('Unosenje users email', function(){
@@ -116,6 +116,8 @@ describe('Prepare Test User', function(){
     it('Klik on Sign in', function(){
         prepareTestUser.submit1();
     });
+
+
 
         afterAll(function(){
         browser.waitForAngularEnabled(true); 
