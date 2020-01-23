@@ -15,11 +15,11 @@ describe('Prepare Return policy in cockpit', function(){
         prepareReturnPolicy.clickOnContinueWithEmail();
     });
 
-    it('Unosenje users email', function(){
+    it('Unosenje admin email', function(){
         prepareReturnPolicy.enterEmail();
     });
 
-    it('Unosenje users email', function(){
+    it('Unosenje admin email', function(){
         prepareReturnPolicy.enterPass();
     });
 
@@ -35,8 +35,6 @@ describe('Prepare Return policy in cockpit', function(){
     it('Unosenje nas text u return policy polje u cockpitu', function(){
         prepareReturnPolicy.enterOurReturnPolicy();
     });
-
-
 
 
     afterAll(function(){
