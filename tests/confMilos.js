@@ -14,8 +14,16 @@ exports.config = {
     //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluzi nicemu. to je samo primer)
     // ],
 
-    login: [
-      './private/account/login/login-spec.js'
+    miloslogin: [
+      './private/community/milosLogIn/login-spec.js'
+    ],
+
+    docLibraryCheck: [
+      './private/community/docLibraryCheck/docLibraryCheck-spec.js'
+    ],
+
+    loadMoreOnDocLibPage: [
+      './private/community/loadMoreOnDocLibPage/loadMoreOnDocLibPage-spec.js'
     ],
   },
 
