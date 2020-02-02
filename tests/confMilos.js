@@ -18,21 +18,26 @@ exports.config = {
       './private/community/milosLogIn/login-spec.js'
     ],
 
-    // docLibraryCheck: [
-    //   './private/community/docLibraryCheck/docLibraryCheck-spec.js'
-    // ],
+    docLibraryCheck: [
+      './private/community/docLibraryCheck/docLibraryCheck-spec.js'
+    ],
 
-    // loadMoreOnDocLibPage: [
-    //   './private/community/loadMoreOnDocLibPage/loadMoreOnDocLibPage-spec.js'
-    // ],
+    loadMoreOnDocLibPage: [
+      './private/community/loadMoreOnDocLibPage/loadMoreOnDocLibPage-spec.js'
+    ],
 
-    // searchOnDocLibPage: [
-    //   './private/community/searchOnDocLibPage/searchOnDocLibPage-spec.js'
-    // ],
+    searchOnDocLibPage: [
+      './private/community/searchOnDocLibPage/searchOnDocLibPage-spec.js'
+    ],
 
     documentDetailsPage: [
       './private/community/documentDetailsPage/documentDetailsPage-spec.js'
     ],
+
+    anonymousDocumentDetailsPage: [
+      './private/community/anonymousDocumentDetailsPage/anonymousDocumentDetailsPage-spec.js'
+    ],
+
   },
 
   capabilities: {

@@ -1,8 +1,9 @@
-var documentDetailsPage = require('./documentDetailsPage-po.js');
+var anonymousDocumentDetailsPage = require('./anonymousDocumentDetailsPage-po.js');
+var documentDetailsPage = require('../documentDetailsPage/documentDetailsPage-po.js');
 var docLibraryCheck = require('../docLibraryCheck/docLibraryCheck-po.js');
 var searchOnDocLibPage = require('../searchOnDocLibPage/searchOnDocLibPage-po.js');
 
-describe('Document details page', function(){
+describe('Anonymous Document details page', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
@@ -13,22 +14,17 @@ describe('Document details page', function(){
         browser.sleep(3000);
     });
 
-    it('Unosenje texta u search polje', function(){
-        searchOnDocLibPage.enterValidSearchWord();
-        browser.sleep(2000);
+    it('Dolazak na Documents Library page', function(){
+        anonymousDocumentDetailsPage.enterSearchWord();
     });
 
     it('Klik na document iz rezultata', function(){
         searchOnDocLibPage.clickOnDocToSeeDocDetailsPage();
-        browser.sleep(1000);
-    });
-
-    it('Provera URLa nakon klika na doc iz rezultata', function(){
-        searchOnDocLibPage.checkDocumentDetailsURL();
+        browser.sleep(3000);
     });
 
     it('Provera da li se ucitao breadcrumbs', function(){
-        documentDetailsPage.checkBreadcrumbs();
+        anonymousDocumentDetailsPage.checkBreadcrumbs();
     });
 
     it('Provera da li se ucitao doc icon(pdf)', function(){
@@ -36,43 +32,32 @@ describe('Document details page', function(){
     });
 
     it('Provera da li se ucitao doc title', function(){
-        documentDetailsPage.checkDocTitle();
+        anonymousDocumentDetailsPage.checkDocTitle();
     });
 
     it('Provera da li su se ucitali topici u kartici', function(){
-        documentDetailsPage.checkTopics();
+        anonymousDocumentDetailsPage.checkTopics();
     });
 
-    it('Provera da li je dobar user avatar na document details page', function(){
-        documentDetailsPage.checkUserAvatar();
+    it('Provera da li je dobar default user avatar na document details page', function(){
+        anonymousDocumentDetailsPage.checkDefaultUserAvatar();
     });
+
 
     it('Provera da li se ucitao user name', function(){
-        documentDetailsPage.checkUserName();
-    });
-    
-    it('Provera da li se ucitao reputation score', function(){
-        documentDetailsPage.checkReputationScore();
+        anonymousDocumentDetailsPage.checkAnonymousUserName();
     });
 
-    it('Provera da li se ucitao direct message link', function(){
-        documentDetailsPage.checkDirectMessage();
-    });
-
-    it('Provera da li se ucitao user function level', function(){
-        documentDetailsPage.checkFunctionLevel();
-    });
-
-    it('Provera da li se ucitao org link', function(){
-        documentDetailsPage.checkOrgLink();
+    it('Provera da li se ucitao org', function(){
+        anonymousDocumentDetailsPage.checkOrg();
     });
 
     it('Provera da li se ucitao org size', function(){
-        documentDetailsPage.checkOrgSize();
+        anonymousDocumentDetailsPage.checkOrgSize();
     });
 
     it('Provera da li se ucitala discussion gde smo objavili document', function(){
-        documentDetailsPage.checkDiscussionLinkWhereDocIsPosted();
+        anonymousDocumentDetailsPage.checkDiscussionLinkWhereDocIsPosted();
     });
 
     it('Provera da li se ucitao Download button', function(){
