@@ -5,21 +5,21 @@ function landOnDocsLibraryPage() {
 }
 
 function checkPageTitle() {
-    // Pronadji napravljenu diskusiju i klikni
+    // Provera page title
     var EC = protractor.ExpectedConditions;
     browser.wait(EC.titleIs('Document Library - CBANC'), 5000);
-}
-
-function checkAddNewAddressURL() {
-    // Provera da li se ucitao Docs Library URL
-    var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/documents'), 5000);
 }
 
 function checkBreadcrumbs() {
     // Provera da li se ucitao breadcrumbs
     var EC = protractor.ExpectedConditions;
     browser.wait(EC.textToBePresentInElement($('.nav_title'), 'Document Library'), 5000);
+}
+
+function checkSearchInHeader() {
+    // Provera da li se placeholder in search field 
+    var xxx = element(by.className('search_button'));
+    expect(xxx.getText()).toEqual('Search');
 }
 
 function checkForYouInSideMenu() {
@@ -123,8 +123,8 @@ function checkRadioButtonInThirdQuestion() {
  module.exports = {
     landOnDocsLibraryPage,
     checkPageTitle,
-    checkAddNewAddressURL,
     checkBreadcrumbs,
+    checkSearchInHeader,
     checkForYouInSideMenu,
     checkDiscoverInSideMenu,
     checkDocumentLibraryInSideMenu,

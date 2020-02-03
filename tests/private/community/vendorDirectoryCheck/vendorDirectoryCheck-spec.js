@@ -1,21 +1,23 @@
-var docLibraryCheck = require('./docLibraryCheck-po.js');
+var vendorDirectoryCheck = require('./vendorDirectoryCheck-po.js');
+var docLibraryCheck = require('../docLibraryCheck/docLibraryCheck-po.js');
 
-describe('Provera document library page', function(){
+describe('Provera vendor directory page', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
     }); 
 
-    it('Dolazak na Documents Library page', function(){
-        docLibraryCheck.landOnDocsLibraryPage();
+    it('Dolazak na vendor directory page', function(){
+        vendorDirectoryCheck.landOnVendorDirectoryPage();
+        browser.sleep(3000);
     });
-    
+
     it('Provera page title', function(){
-        docLibraryCheck.checkPageTitle();
+        vendorDirectoryCheck.checkPageTitle();
     });
 
     it('Provera da li se ucitao breadcrumbs', function(){
-        docLibraryCheck.checkBreadcrumbs();
+        vendorDirectoryCheck.checkBreadcrumbs();
     });
 
     it('Provera da li se ucitao search u headeru', function(){
@@ -55,37 +57,27 @@ describe('Provera document library page', function(){
     });
 
     it('Provera da li se placeholder in search field', function(){
-        docLibraryCheck.checkPlaceholderInSearch();
+        vendorDirectoryCheck.checkPlaceholderInSearch();
     });
 
     it('Provera da li se START DISCUSSION button ucitao na strani', function(){
         docLibraryCheck.checkStartDiscussionButton();
     });
 
-    it('Provera da li se poll header ucitao', function(){
-        docLibraryCheck.checkPollHeader();
-        browser.switchTo().frame(element(by.tagName('iframe')).getWebElement());
-        browser.sleep(5000);
+    it('Provera da li se Featured title ucitao', function(){
+        vendorDirectoryCheck.checkFeaturedTitleOnPage();
     });
 
-    it('Provera da li se poll title ucitao', function(){
-        docLibraryCheck.checkPollTitle();
+    it('Provera prvog vendora u featured sekciji', function(){
+        vendorDirectoryCheck.checkFirstVendorInFeaturedSection();
     });
 
-    it('Provera da li se ucitalo prvo pitanje', function(){
-        docLibraryCheck.checkFirstQuestion();
+    it('Provera drugog vendora u featured sekciji', function(){
+        vendorDirectoryCheck.checkSecondVendorInFeaturedSection();
     });
 
-    it('Provera da li se prvi radio button u prvom pitanju', function(){
-        docLibraryCheck.checkFirstRadioButton();
-    });
-    
-    it('Provera da li se ucitalo trece pitanje', function(){
-        docLibraryCheck.checkThirdQuestion();
-    });
-
-    it('Provera da li se ucitalo sesti radio button u trecem pitanju', function(){
-        docLibraryCheck.checkRadioButtonInThirdQuestion();
+    it('Provera treceg vendora u featured sekciji', function(){
+        vendorDirectoryCheck.checkThirdVendorInFeaturedSection();
     });
 
         afterAll(function(){
