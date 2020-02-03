@@ -22,6 +22,10 @@ describe('Reply Discussion Action', function(){
         replyDiscussion.replyText();
     });
 
+    it('Attach Document', function(){
+        replyDiscussion.attachDoc();
+    });
+
     it('Klik na Post Reply dugme', function(){
         replyDiscussion.postReply();
     });

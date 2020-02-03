@@ -22,6 +22,13 @@ function replyText() {
     browser.sleep(1000);
  }
 
+ function attachDoc() {
+   var path = require('path');
+   var fileToUpload = './TestTXT.txt',
+   absolutePath = path.resolve(__dirname, fileToUpload);
+   element(by.css('input[type="file"]')).sendKeys(absolutePath); 
+}
+
  function postReply() {
     // klik na Reply dugme
     element(by.buttonText('Reply')).click();
@@ -32,7 +39,7 @@ function checkSuccess(){
    var EC = protractor.ExpectedConditions;
    // Provera da li je uspesno objavljen Reply
    browser.wait(EC.textToBePresentInElement($('.reply'), 'ATQA Reply'), 5000);
-   browser.sleep(2000);
+   browser.sleep(500);
 }  
 
  module.exports = {
@@ -40,6 +47,7 @@ function checkSuccess(){
     findDiscussion,
     clickReply,
     replyText,
+    attachDoc,
     postReply,
     checkSuccess,
  }

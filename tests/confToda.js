@@ -17,6 +17,86 @@ exports.config = {
     login: [
       './private/account/login/login-spec.js'
     ],
+
+    createDiscussion: [
+      './private/community/createDiscussion/createDiscussion-spec.js'
+    ],
+
+    replyDiscussion: [
+      './private/community/replyDiscussion/replyDiscussion-spec.js'
+    ],
+
+    editReply: [
+      './private/community/editReply/editReply-spec.js'
+    ],
+
+    commentDiscussion: [
+      './private/community/commentDiscussion/commentDiscussion-spec.js'
+    ],
+
+    editComment: [
+      './private/community/editComment/editComment-spec.js'
+    ],
+
+    // downloadDoc: [
+    //   './private/community/downloadDoc/downloadDoc-spec.js'
+    // ],
+
+    // deleteDiscussion: [
+    //   './private/community/deleteDiscussion/deleteDiscussion-spec.js'
+    // ],
+
+    // undoDeleteDiscussion: [
+    //   './private/community/undoDeleteDiscussion/undoDeleteDiscussion-spec.js'
+    // ],
+
+    // searchForDiscussion: [
+    //   './private/community/searchForDiscussion/searchForDiscussion-spec.js'
+    // ],
+
+    // createAnonymousDiscussion: [
+    //   './private/community/createAnonymousDiscussion/createAnonymousDiscussion-spec.js'
+    // ],
+
+    // thankDiscussion: [
+    //   './private/community/thankDiscussion/thankDiscussion-spec.js'
+    // ],
+
+    // thankReply: [
+    //   './private/community/thankReply/thankReply-spec.js'
+    // ],
+
+    thankComment: [
+      './private/community/thankComment/thankComment-spec.js'
+    ],
+
+    // searchVendors: [
+    //   './private/community/searchVendors/searchVendors-spec.js'
+    // ],
+
+    // sendMessageToVendor: [
+    //   './private/community/sendMessageToVendor/sendMessageToVendor-spec.js'
+    // ],
+
+    // searchTopic: [
+    //   './private/community/searchTopic/searchTopic-spec.js'
+    // ],
+
+    // inviteColleagues: [
+    //   './private/community/inviteColleagues/inviteColleagues-spec.js'
+    // ],
+
+    // searchDoc: [
+    //   './private/community/searchDoc/searchDoc-spec.js'
+    // ],
+
+    // thankDoc: [
+    //   './private/community/thankDoc/thankDoc-spec.js'
+    // ],
+
+    // reputationSystemAndLeaderboard: [
+    //   './private/community/reputationSystemAndLeaderboard/reputationSystemAndLeaderboard-spec.js'
+    // ],
   },
 
   capabilities: {

@@ -22,6 +22,10 @@ describe('Comment Discussion Action', function(){
         commentDiscussion.commentText();
     });
 
+    it('Attach Document', function(){
+        commentDiscussion.attachDoc();
+    });
+
     it('klik na Comment dugme', function(){
         commentDiscussion.postComment();
     });
