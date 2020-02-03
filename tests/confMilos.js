@@ -38,6 +38,18 @@ exports.config = {
       './private/community/anonymousDocumentDetailsPage/anonymousDocumentDetailsPage-spec.js'
     ],
 
+    shareDocument: [
+      './private/community/shareDocument/shareDocument-spec.js'
+    ],
+
+    shareDocument: [
+      './private/community/shareDocument/shareDocument-spec.js'
+    ],
+
+    checkOptInMsgAfterDownloadDoc: [
+      './private/community/checkOptInMsgAfterDownloadDoc/checkOptInMsgAfterDownloadDoc-spec.js'
+    ],
+
   },
 
   capabilities: {

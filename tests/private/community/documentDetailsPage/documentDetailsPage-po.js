@@ -89,6 +89,55 @@ function checkShareButton(){
     expect(xxx.getText()).toEqual('Share');
 }
 
+function clickOnTopicLink(){
+    // Klik on Testing topic
+    element(by.partialLinkText('Testing')).click();
+}
+
+function checkTopicURL() {
+    // Provera da li se ucitao Topic URL
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/topics/view/907e0d79-2e57-449e-9864-8e75eb1a59f3'), 5000);
+}
+
+ function landOnDocDetailsPage() {
+    // Dolazak na Documents details page
+    browser.get('https://qa.cbancnetwork.com/community/documents/view/a271d842-ae40-481b-9327-54c1c56c8f53?q=laqasadipapel'); 
+}
+
+function clickOnDirectMessageLink(){
+    // Klik on Direct message link
+    element(by.partialLinkText('Direct message')).click();
+}
+
+function checkDirectMessageURL() {
+    // Provera da li se ucitao direct message URL
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/dm/compose?person_key=18c37233-abbf-428a-b586-2cb97014bafc'), 5000);
+}
+
+function clickOnBankink(){
+    // Klik on org link
+    element(by.partialLinkText('Bank of Memphis')).click();
+}
+
+function checkBankURL() {
+    // Provera da li se ucitao org URL
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/fis/view/b5d7eb00-76bd-41c3-92ec-0a8f5b7048e9'), 5000);
+}
+
+function clickOnDiscussionLink(){
+    // Klik on discussion link
+    element(by.partialLinkText('testing 1 2 3')).click();
+}
+
+function checkDiscussionURL() {
+    // Provera da li se ucitao discussion URL
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/discussions/view/67d84c00-9730-494e-993c-a835b9ea5d31'), 5000);
+}
+
  module.exports = {
     checkBreadcrumbs,
     checkDocIcon,
@@ -105,4 +154,13 @@ function checkShareButton(){
     checkDownloadButton,
     checkThanksButton,
     checkShareButton,
+    clickOnTopicLink,
+    checkTopicURL,
+    landOnDocDetailsPage,
+    clickOnDirectMessageLink,
+    checkDirectMessageURL,
+    clickOnBankink,
+    checkBankURL,
+    clickOnDiscussionLink,
+    checkDiscussionURL,
 }

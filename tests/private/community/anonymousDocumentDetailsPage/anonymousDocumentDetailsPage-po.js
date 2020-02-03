@@ -52,6 +52,22 @@ function checkTopics(){
     expect(xxx.getText()).toEqual('Topics: Stress Testing, Testing');
 }
 
+function landOnDocDetailsPage() {
+    // Dolazak na Documents details page
+    browser.get('https://qa.cbancnetwork.com/community/documents/view/1617b398-48dc-47a4-8f75-a6654f80cde4?q=papeldilaqasa'); 
+}
+
+function clickOnDiscussionLink(){
+    // Klik on discussion link
+    element(by.partialLinkText('Vel elaboraret temporibus ex, veri summo repudiare no qui.')).click();
+}
+
+function checkDiscussionURL() {
+    // Provera da li se ucitao discussion URL
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/discussions/view/47d0d3b2-fed6-4bdb-9e26-33a98d37771b'), 5000);
+}
+
 
  module.exports = {
     enterSearchWord,
@@ -63,4 +79,7 @@ function checkTopics(){
     checkOrgSize,
     checkDiscussionLinkWhereDocIsPosted,
     checkTopics,
+    landOnDocDetailsPage,
+    clickOnDiscussionLink,
+    checkDiscussionURL,
 }

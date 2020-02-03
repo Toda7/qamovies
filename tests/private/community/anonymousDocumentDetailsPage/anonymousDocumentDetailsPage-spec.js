@@ -14,8 +14,9 @@ describe('Anonymous Document details page', function(){
         browser.sleep(3000);
     });
 
-    it('Dolazak na Documents Library page', function(){
+    it('Unosenje texta u search polje', function(){
         anonymousDocumentDetailsPage.enterSearchWord();
+        browser.sleep(1000);
     });
 
     it('Klik na document iz rezultata', function(){
@@ -74,6 +75,34 @@ describe('Anonymous Document details page', function(){
 
     it('Provera da li se START DISCUSSION button ucitao na strani', function(){
         docLibraryCheck.checkStartDiscussionButton();
+    });
+
+    it('Klik on Testing topic', function(){
+        documentDetailsPage.clickOnTopicLink();
+        browser.sleep(2000);
+    });
+
+    it('Provera da li se ucitao Topic URL', function(){
+        documentDetailsPage.clickOnTopicLink();
+    });
+
+    it('Dolazak na Documents details page', function(){
+        anonymousDocumentDetailsPage.landOnDocDetailsPage();
+        browser.sleep(2000);
+    });
+
+    it('Klik on discussion link', function(){
+        anonymousDocumentDetailsPage.clickOnDiscussionLink();
+        browser.sleep(2000);
+    });
+
+    it('Provera da li se ucitao discussion URL', function(){
+        anonymousDocumentDetailsPage.checkDiscussionURL();
+    });
+
+    it('Dolazak na Documents details page', function(){
+        anonymousDocumentDetailsPage.landOnDocDetailsPage();
+        browser.sleep(2000);
     });
 
     it('Provera da li se poll header ucitao', function(){

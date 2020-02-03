@@ -91,6 +91,63 @@ describe('Document details page', function(){
         docLibraryCheck.checkStartDiscussionButton();
     });
 
+    it('Klik on Testing topic', function(){
+        documentDetailsPage.clickOnTopicLink();
+        browser.sleep(2000);
+    });
+
+    it('Provera da li se ucitao Topic URL', function(){
+        documentDetailsPage.clickOnTopicLink();
+    });
+
+    it('Dolazak na Documents details page', function(){
+        documentDetailsPage.landOnDocDetailsPage();
+        browser.sleep(2000);
+    });
+
+    it('Klik on Direct message link', function(){
+        documentDetailsPage.clickOnDirectMessageLink();
+        browser.sleep(2000);
+        browser.getAllWindowHandles().then(function (handles) {
+        browser.switchTo().window(handles[1]);
+        });
+    });
+
+    it('Provera da li se ucitao direct message URL', function(){
+        documentDetailsPage.checkDirectMessageURL();
+        browser.getAllWindowHandles().then(function (handles) {
+        browser.driver.switchTo().window(handles[1]);
+        browser.driver.close();
+        browser.driver.switchTo().window(handles[0]);
+        });
+    });
+
+    it('Klik on org link', function(){
+        documentDetailsPage.clickOnBankink();
+    });
+
+    it('Provera da li se ucitao org URL', function(){
+        documentDetailsPage.checkBankURL();
+    });
+
+    it('Dolazak na Documents details page', function(){
+        documentDetailsPage.landOnDocDetailsPage();
+        browser.sleep(2000);
+    });
+
+    it('Klik on discussion link', function(){
+        documentDetailsPage.clickOnDiscussionLink();
+    });
+
+    it('Provera da li se ucitao discussion URL', function(){
+        documentDetailsPage.checkDiscussionURL();
+    });
+
+    it('Dolazak na Documents details page', function(){
+        documentDetailsPage.landOnDocDetailsPage();
+        browser.sleep(2000);
+    });
+
     it('Provera da li se poll header ucitao', function(){
         docLibraryCheck.checkPollHeader();
         browser.switchTo().frame(element(by.tagName('iframe')).getWebElement());
