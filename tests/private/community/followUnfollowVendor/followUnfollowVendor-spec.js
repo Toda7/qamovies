@@ -33,14 +33,14 @@ describe('Follow i Unfollow vendora', function(){
         browser.sleep(2000);
     });
 
-    it('Provera da li se ucitao UNFOLLOW button', function(){
-        followUnfollowVendor.checkUnfollowButton();
-    });
-
 
     it('Refresh page', function(){
         browser.refresh(); 
         browser.sleep(3000);
+    });
+
+    it('Provera da li se ucitao UNFOLLOW button', function(){
+        followUnfollowVendor.checkUnfollowButton();
     });
 
     it('Klik on vendor name da dobijemo details page', function(){
@@ -100,7 +100,10 @@ describe('Follow i Unfollow vendora', function(){
         browser.sleep(2000);
     });
 
-
+    it('Provera da li se ucitao FOLLOW button', function(){
+        searchOnVendorDirectoryPage.checkFollowButton();
+        browser.sleep(1000);
+    });
         afterAll(function(){
         browser.waitForAngularEnabled(true); 
     });
