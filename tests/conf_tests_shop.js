@@ -123,9 +123,9 @@ exports.config = {
       './gfShop/testFooterLinks/testFooterLinks-spec.js'
     ],
 
-    // testRestrictedAreaMessage: [
-    //   './gfShop/testRestrictedAreaMessage/testRestrictedAreaMessage-spec.js'
-    // ],
+    testRestrictedAreaMessage: [
+      './gfShop/testRestrictedAreaMessage/testRestrictedAreaMessage-spec.js'
+    ],
 
     testRegularVSDiscountPrice: [
       './gfShop/testRegularVSDiscountPrice/testRegularVSDiscountPrice-spec.js'
@@ -175,13 +175,14 @@ exports.config = {
       './gfShop/testCartWithFFLAndRegularProduct/testCartWithFFLAndRegularProduct-spec.js'
     ],
 
-    testPrintOrderPage: [
-      './gfShop/testPrintOrderPage/testPrintOrderPage-spec.js'
-    ],
+    // testPrintOrderPage: [
+    // ne radimo testove za Print strane na windowsu, jer imamo problem sa zatvaranjem print windowsa
+    //   './gfShop/testPrintOrderPage/testPrintOrderPage-spec.js'
+    // ],
 
-    testPrintInvoicePage: [
-      './gfShop/testPrintInvoicePage/testPrintInvoicePage-spec.js'
-    ],
+    // testPrintInvoicePage: [
+    //   './gfShop/testPrintInvoicePage/testPrintInvoicePage-spec.js'
+    // ],
 
     // testSaveCcForNextTime: [
     //   // Ovo sranje ne radi dok ne provalimo u cemu je fora sa Authorize.net errorom na Payment strani
