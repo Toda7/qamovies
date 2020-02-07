@@ -1,6 +1,6 @@
 var logInAsUser = require('./logInAsUser-po.js');
 
-describe('Prepare Test User', function(){
+describe('Log in as Bradly Seales', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element

@@ -2,7 +2,7 @@ var testMyOrders = require('../testMyOrders/testMyOrders-po.js');
 var testPrintOrderPage = require('../testPrintOrderPage/testPrintOrderPage-po.js');
 var testPrintInvoicePage = require ('./testPrintInvoicePage-po.js');
 
-describe('Print Order page', function () {
+describe('Print invoice page', function () {
 
     beforeAll(function () {
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
