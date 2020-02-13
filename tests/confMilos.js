@@ -18,50 +18,54 @@ exports.config = {
       './private/community/milosLogIn/login-spec.js'
     ],
 
-    docLibraryCheck: [
-      './private/community/docLibraryCheck/docLibraryCheck-spec.js'
-    ],
+    // docLibraryCheck: [
+    //   './private/community/docLibraryCheck/docLibraryCheck-spec.js'
+    // ],
 
-    loadMoreOnDocLibPage: [
-      './private/community/loadMoreOnDocLibPage/loadMoreOnDocLibPage-spec.js'
-    ],
+    // loadMoreOnDocLibPage: [
+    //   './private/community/loadMoreOnDocLibPage/loadMoreOnDocLibPage-spec.js'
+    // ],
 
-    searchOnDocLibPage: [
-      './private/community/searchOnDocLibPage/searchOnDocLibPage-spec.js'
-    ],
+    // searchOnDocLibPage: [
+    //   './private/community/searchOnDocLibPage/searchOnDocLibPage-spec.js'
+    // ],
 
-    documentDetailsPage: [
-      './private/community/documentDetailsPage/documentDetailsPage-spec.js'
-    ],
+    // documentDetailsPage: [
+    //   './private/community/documentDetailsPage/documentDetailsPage-spec.js'
+    // ],
 
-    anonymousDocumentDetailsPage: [
-      './private/community/anonymousDocumentDetailsPage/anonymousDocumentDetailsPage-spec.js'
-    ],
+    // anonymousDocumentDetailsPage: [
+    //   './private/community/anonymousDocumentDetailsPage/anonymousDocumentDetailsPage-spec.js'
+    // ],
 
-    shareDocument: [
-      './private/community/shareDocument/shareDocument-spec.js'
-    ],
+    // shareDocument: [
+    //   './private/community/shareDocument/shareDocument-spec.js'
+    // ],
 
-    checkOptInMsgAfterDownloadDoc: [
-      './private/community/checkOptInMsgAfterDownloadDoc/checkOptInMsgAfterDownloadDoc-spec.js'
-    ],
+    // checkOptInMsgAfterDownloadDoc: [
+    //   './private/community/checkOptInMsgAfterDownloadDoc/checkOptInMsgAfterDownloadDoc-spec.js'
+    // ],
 
-    vendorDirectoryCheck: [
-      './private/community/vendorDirectoryCheck/vendorDirectoryCheck-spec.js'
-    ],    
+    // vendorDirectoryCheck: [
+    //   './private/community/vendorDirectoryCheck/vendorDirectoryCheck-spec.js'
+    // ],    
 
-    loadMoreOnVendorDirectoryPage: [
-      './private/community/loadMoreOnVendorDirectoryPage/loadMoreOnVendorDirectoryPage-spec.js'
-    ],   
+    // loadMoreOnVendorDirectoryPage: [
+    //   './private/community/loadMoreOnVendorDirectoryPage/loadMoreOnVendorDirectoryPage-spec.js'
+    // ],   
     
-    searchOnVendorDirectoryPage: [
-      './private/community/searchOnVendorDirectoryPage/searchOnVendorDirectoryPage-spec.js'
+    // searchOnVendorDirectoryPage: [
+    //   './private/community/searchOnVendorDirectoryPage/searchOnVendorDirectoryPage-spec.js'
+    // ],
+
+    // followUnfollowVendor: [
+    //   './private/community/followUnfollowVendor/followUnfollowVendor-spec.js'
+    // ],
+    
+    vendorDetailsPage: [
+      './private/community/vendorDetailsPage/vendorDetailsPage-spec.js'
     ],
 
-    followUnfollowVendor: [
-      './private/community/followUnfollowVendor/followUnfollowVendor-spec.js'
-    ],
-    
   },
 
   capabilities: {
