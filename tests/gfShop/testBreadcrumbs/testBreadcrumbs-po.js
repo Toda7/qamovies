@@ -1,7 +1,7 @@
 function checkProductDetailsPageUrl() {
    // Provera da li se ucitao dobar URL za Product Details stranu
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/accu-x-capture-bowfishing-rest.html'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/accu-x-capture-bowfishing-rest.html'), 5000);
 }
 
 function checkProductBreadcrumb() {
@@ -13,7 +13,7 @@ function checkProductBreadcrumb() {
 
 function checkCategoryBreadcrumb() {
    // Provera da li se ucitao srednji breadcrumb (kategorija)
-   var xxx = element(by.className('item category1089'));
+   var xxx = element(by.className('item category'));
    expect(xxx.getText()).toEqual('ARCHERY');
    browser.sleep(500);
 }
@@ -27,7 +27,7 @@ function checkHomeBreadcrumb() {
 
 function clickCategoryBreadcrumb() {
    // Klik srednji breadcrumb (kategorija) 
-   element(by.className('item category1089')).click();
+   element(by.className('item category')).click();
    browser.sleep(2000);
 } 
 
@@ -41,6 +41,13 @@ function clickHomeBreadcrumb() {
    // Klik prvi breadcrumb (Home) 
    element(by.className('item home')).click();
    browser.sleep(2000);
+}
+
+function checkCategoryBreadcrumb1() {
+   // Provera da li se ucitao srednji breadcrumb (kategorija)
+   var xxx = element(by.className('item category1089'));
+   expect(xxx.getText()).toEqual('ARCHERY');
+   browser.sleep(500);
 }
 
 function checkHomepageUrl() {
@@ -59,4 +66,5 @@ module.exports = {
    checkCategoryPageUrl,
    clickHomeBreadcrumb,
    checkHomepageUrl,
+   checkCategoryBreadcrumb1,
 }

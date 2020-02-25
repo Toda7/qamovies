@@ -42,7 +42,6 @@ function submit1() {
 function landOnMyOrdersPage() {
    // Dolazak na My Orders stranu 
    browser.get('https://shop.outfitterextreme.com/badlands/sales/order/history/');
-   browser.sleep(5000);
 }
 
 function checkNoOrdersMessage() {
