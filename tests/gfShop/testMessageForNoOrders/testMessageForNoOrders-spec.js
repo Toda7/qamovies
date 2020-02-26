@@ -41,6 +41,7 @@ describe('Message for no orders', function () {
 
     it('Dolazak na My Orders stranu', function () {
         testMessageForNoOrders.landOnMyOrdersPage();
+        browser.sleep(6000);
     });
 
     it('Provera no orders message', function () {

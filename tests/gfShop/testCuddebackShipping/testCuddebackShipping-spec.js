@@ -39,6 +39,11 @@ describe('Test Shipping Cuddeback shop', function () {
         browser.sleep(2000);
     });
 
+    it(' Dolazak u Cuddeback Shop', function(){
+        testCuddebackShipping.landOnCuddebackShop();
+        browser.sleep(2000);
+    });
+
     it('Click na Cudelink sekciju', function(){
         testCuddebackShipping.clickOnCuddeLink();
     });
@@ -63,6 +68,11 @@ describe('Test Shipping Cuddeback shop', function () {
         testCuddebackShipping.checkShipping2Product();
         browser.navigate().back();
         browser.sleep(2000);
+    });
+
+    it('Dolazak u Cuddeback Shop', function(){
+        testCuddebackShipping.landOnCuddebackShop();
+        browser.sleep(3000);
     });
 
     it('Click na Cudelink sekciju', function(){

@@ -40,7 +40,7 @@ describe('Breadcrumbs', function () {
     });
 
     it('Provera da li se ucitao srednji breadcrumb (kategorija)', function () {
-        testBreadcrumbs.checkCategoryBreadcrumb();
+        testBreadcrumbs.checkCategoryBreadcrumb1();
     });
 
     it('Provera da li se ucitao prvi breadcrumb (Home)', function () {
