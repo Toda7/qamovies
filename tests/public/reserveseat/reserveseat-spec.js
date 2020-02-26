@@ -18,6 +18,7 @@ describe('Kupovina webinara preko invoice', function(){
 
     it('Click na Upcoming link', function(){
         upcoming.clickOnLink();
+        browser.sleep(5000);
     });
 
     it('Click na Webinar Karticu', function(){
