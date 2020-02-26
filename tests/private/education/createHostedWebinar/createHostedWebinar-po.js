@@ -65,25 +65,25 @@ function enterTextInPriceField() {
 
 function enterTextInStartDateField() {
     // Setovaje start date
-    element(by.name('start_date')).sendKeys('2020-02-02T03:00:00');
+    element(by.name('start_date')).sendKeys('2020-02-021T01:00:00');
     browser.sleep(2000);
 }
 
 function enterTextInStartDateField2() {
     // Setovaje start date
-    element(by.name('start_date')).sendKeys('2020-02-02T03:00:00');
+    element(by.name('start_date')).sendKeys('2020-02-02T01:00:00');
     browser.sleep(2000);
 }
 
 function enterTextInEndDateField() {
     // Setovaje end date
-    element(by.name('end_date')).sendKeys('2020-02-02T01:00:00');
+    element(by.name('end_date')).sendKeys('2020-02-021T03:00:00');
     browser.sleep(2000);
 }
 
 function enterTextInEndDateField2() {
     // Setovaje end date
-    element(by.name('end_date')).sendKeys('2020-02-02T01:00:00');
+    element(by.name('end_date')).sendKeys('2020-02-02T03:00:00');
     browser.sleep(2000);
 }
 
