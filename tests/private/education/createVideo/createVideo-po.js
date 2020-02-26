@@ -22,7 +22,7 @@ function enterTextInTitleField() {
 
 function enterDateField() {
     // Setovaje start date
-    element(by.name('date')).sendKeys('2020-02-02T03:00:00');
+    element(by.name('date')).sendKeys('2020-02-021T03:00:00');
     browser.sleep(2000);
 }
 
