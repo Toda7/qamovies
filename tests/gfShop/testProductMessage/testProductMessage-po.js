@@ -5,26 +5,20 @@ function landOnBowfishingPage() {
 }
 
 function click6Product() {
-    // Klik na Cetvrti proizvod 
+    // Klik na 6 proizvod 
     element(by.className('column main')).all(by.className('product-image-photo')).get(5).click();
     browser.sleep(2000);
  }
 
-//  function clickOnOptions() {
-//     // klik na List View Producta 
-//     element(by.className('super-attribute-select')).click();
-//     browser.sleep(2000);
-//  }
-
  function clickOnOptions() {
-    // klik na Limiter 5 procucta po strani 
+    // seletovanje opcije iz dropa 
     element.all(by.className('super-attribute-select')).get(0).all(by.tagName('option')).get(1).click();
     browser.sleep(5000);
  }
 
  function enterNumber() {
     // Unos broja Producta
-    element(by.id('qty')).clear().sendKeys('50');
+    element(by.id('qty')).clear().sendKeys('100');
     browser.sleep(5000);
  }
 
@@ -37,8 +31,8 @@ function click6Product() {
  function checkErrorMsg(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je dobra Error poruka
-    browser.wait(EC.textToBePresentInElement($('.message-error.error.message'), '"SPEED SHOT™ BOWFISHING ARROW" as you requested.'), 5000);
-    browser.sleep(5000);
+    browser.wait(EC.textToBePresentInElement($('.message-error.error.message'),  '"SPEED SHOT BOWFISHING ARROW-ARROW FG STD PNT"'), 5000);
+    browser.sleep(7000);
  }
 
  module.exports = {

@@ -22,9 +22,9 @@ describe('Test Search in Shop', function () {
         testSearchShop.enterSearchWord2();
     });
 
-    // it('Kliikni Enter na tastaturi', function () {
-    //     testSearchShop.clickEnter();
-    // });
+    it('Provera da li je dobar drugi search search', function () {
+        testSearchShop.checkSuccess2();
+    });
 
     afterAll(function () {
         browser.waitForAngularEnabled(true);
