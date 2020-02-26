@@ -24,7 +24,7 @@ function clickOnSearchField() {
 
  function enterProductDescription() {
     // Unos SKU Producta
-    element(by.id('description')).clear().sendKeys('BRUSH BLK');
+    element(by.id('description')).clear().sendKeys('magnification');
     browser.sleep(2000);
  }
 
@@ -45,7 +45,7 @@ function clickOnSearchField() {
     var EC = protractor.ExpectedConditions;
     // Da li se ucitao trazeni product
     var xxx = element.all(by.className('product name product-item-name')).get(0);
-    expect(xxx.getText()).toEqual('ACCU X™ CAPTURE BOWFISHING REST');
+    expect(xxx.getText()).toEqual('EMINUS™ 3-9X42 30MM IR ML 1PC ILLUMINATED RETICLE TACTICAL SCOPE');
  }
 
  function clickModifySearch() {

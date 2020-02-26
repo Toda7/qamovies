@@ -11,7 +11,7 @@ describe('Test PO box address from checkout', function(){
         testPoBoxAddressFromCheckout.lendOnProductDetails();
     });
 
-    it('Dodaj prvi proizvod u korpu', function () {
+    it('Klik na Add To Cart', function () {
         testTwentyProductsOrder.addToCart();
         browser.sleep(6000);
     });
