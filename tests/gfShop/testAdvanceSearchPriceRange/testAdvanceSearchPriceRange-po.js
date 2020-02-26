@@ -1,11 +1,11 @@
 function enterProductPriceTo() {
-    // Unos SKU Producta
+    // Unos najnize cene Producta
     element(by.id('price')).clear().sendKeys('11.82');
     browser.sleep(2000);
  }
 
  function enterProductPriceFrom() {
-    // Unos SKU Producta
+    // Unos Price to 16
     element(by.id('price_to')).clear().sendKeys('16');
     browser.sleep(2000);
  }
@@ -19,19 +19,19 @@ function enterProductPriceTo() {
 
  function checkSerchedProduct2() {
     var EC = protractor.ExpectedConditions;
-    // Da lis e ucitao trazeni product
-    var xxx = element.all(by.className('product name product-item-name')).get(0);
-    expect(xxx.getText()).toEqual('SPEED SHOT™ BOWFISHING ARROW');
+    // Da li se ucitao trazeni product
+    var xxx = element.all(by.className('product name product-item-name')).get(1);
+    expect(xxx.getText()).toEqual('CARPEDO™ BOWFISHING ARROW');
  }
 
  function enterProductPriceTo1() {
-    // Unos SKU Producta
+    // Unos cene od 16
     element(by.id('price')).clear().sendKeys('16');
     browser.sleep(2000);
  }
 
  function enterProductPriceFrom1() {
-    // Unos SKU Producta
+    // Unos cene do 20
     element(by.id('price_to')).clear().sendKeys('20');
     browser.sleep(2000);
  }
@@ -39,37 +39,37 @@ function enterProductPriceTo() {
  function checkSerchedProduct3() {
     // Da li se ucitao trazeni product
     var xxx = element.all(by.className('product name product-item-name')).get(0);
-    expect(xxx.getText()).toEqual('FAT-BEAD™ DUAL-COLOR');
+    expect(xxx.getText()).toEqual("SPRINGFISHER™ BOWFISHING ARROW");
  }
 
  function enterProductPriceToWrong() {
-    // Unos SKU Producta
+    // Unos pogresne cene od
     element(by.id('price')).clear().sendKeys('1312');
     browser.sleep(2000);
  }
 
  function enterProductPriceFromWrong() {
-    // Unos SKU Producta
+    // Unos pogresne cene do
     element(by.id('price_to')).clear().sendKeys('0');
     browser.sleep(2000);
  }
 
  function enterProductPriceToWrong1() {
-    // Unos SKU Producta
+    // Unos pogresne cene od 1312
     element(by.id('price')).clear().sendKeys('1312');
     browser.sleep(2000);
  }
 
  function enterProductPriceFromWrong1() {
-    // Unos SKU Producta
+    // Unos pogresne cene do 8456
     element(by.id('price_to')).clear().sendKeys('8456');
     browser.sleep(2000);
  }
 
  function checkSerchedProducts() {
     var EC = protractor.ExpectedConditions;
-    // Da li smo dobila 52 produkta
-    browser.wait(EC.textToBePresentInElement($('.search.found'), '52 items'), 5000);
+    // Da li smo dobila 48 produkta
+    browser.wait(EC.textToBePresentInElement($('.search.found'), '48 items'), 5000);
     browser.sleep(2000);
  }
 

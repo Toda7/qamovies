@@ -1,6 +1,6 @@
 function lendOnProductDetails(){
    // Dolazak na product details 
-   browser.get('https://shop.outfitterextreme.com/hornady/300-blackout-125-gr-fmj-frontier-1.html'); 
+   browser.get('https://shop.outfitterextreme.com/hornady/762-x-39mm-123-gr-hp-match-american-gunner.html'); 
    browser.sleep(5000);
 }
 

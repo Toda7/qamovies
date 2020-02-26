@@ -16,6 +16,7 @@ describe('Two Shipping methods', function () {
 
     it('Dodaj proizvod u korpu', function () {
         testTwentyProductsOrder.addToCart();
+        browser.sleep(2000);
     });
 
     it('Otvori mini korpu', function () {
@@ -24,10 +25,12 @@ describe('Two Shipping methods', function () {
 
     it('Klik Go To Checkout page', function(){
         prepareTestCreditCard.clickToGoToCheckoutPage();
+        browser.sleep(2000);
     });
 
     it('Klik on NEW ADDRESS button', function () {
         testPoBoxAddressFromCheckout.clickOnNewAddressButton();
+        browser.sleep(2000);
     });
 
     it('Unesi Street', function () {
@@ -48,27 +51,33 @@ describe('Two Shipping methods', function () {
 
     it('Unesi phone number', function () {
         testPoBoxAddressFromCheckout.enterPhoneNumber();
+        browser.sleep(2000);
     });
 
     it('Klik on SAVE ADDRESS button', function () {
         testPoBoxAddressFromCheckout.clickOnSaveNewAddressButton();
+        browser.sleep(2000);
     });
 
     it('Klik on United Parcel Service opciju', function () {
         testTwoShippingMethods.clickUnitedParcelService();
+        browser.sleep(2000);
     });
 
     it('Klik na Next dugme', function () {
         testTwentyProductsOrder.clickNext();
+        browser.sleep(2000);
     });
 
     it('Provera United Parcel shipping metode na Payment strani', function () {
         testTwoShippingMethods.checkUnitedParcelMethodOnPaymentPage();
         browser.navigate().back();
+        browser.sleep(2000);
     });
 
     it('Dolazak na Shipping page', function () {
         testTwoShippingMethods.landOnShippingPage();
+        browser.sleep(2000);
     });
 
     it('Klik on United States Postal Service opciju', function () {
@@ -77,6 +86,7 @@ describe('Two Shipping methods', function () {
 
     it('Klik na Next dugme', function () {
         testTwentyProductsOrder.clickNext();
+        browser.sleep(2000);
     });
 
     it('Provera United States Postal shipping metode na Payment strani', function () {
@@ -85,6 +95,7 @@ describe('Two Shipping methods', function () {
 
     it('Klik na Place Order dugme', function () {
         testTwentyProductsOrder.clickPlaceOrder();
+        browser.sleep(2000);
     });
 
     it('Dolazak na Address Book page', function () {
