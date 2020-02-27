@@ -28,15 +28,6 @@ describe('Wrong coupon code', function () {
         testTwentyProductsOrder.clickViewAndEditCart();
     });
 
-    it('Klik na Proceed to Checkout dugme', function () {
-        testTwentyProductsOrder.clickProceedToCheckout();
-    });
-
-    it('Provera shipping cene bez iskoriscenog kupona', function () {
-        testCouponOrder.checkShippingPriceWithoutCoupon();
-        browser.navigate().back();
-    });
-
     it('Klik na Apply Discount Coupon link', function () {
         testCouponOrder.clickApplyDiscountCoupon();
     });
