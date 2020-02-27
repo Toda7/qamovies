@@ -24,13 +24,13 @@ function clickOnAddressSelect() {
 
 function deleteFirstName() {
     // brisanje first name 
-    element.all(by.className('field _required')).get(8).element(by.className('input-text')).clear();
+    element.all(by.className('field _required')).get(9).element(by.className('input-text')).clear();
     browser.sleep(2000);
  } 
 
  function checkMsg1() {
     // Provera error poruke "This is a required field za First name"
-    var zzz = element.all(by.className('mage-error')).get(0);
+    var zzz = element.all(by.className('field-error')).get(0);
     expect(zzz.getText()).toEqual('This is a required field.');
     browser.sleep(2000);
  }  
@@ -38,13 +38,13 @@ function deleteFirstName() {
  function deleteLastName() {
     // brisanje last name 
     // element.all(by.name('billingAddressauthnetcim.lastname')).clear();
-    element.all(by.className('field _required')).get(9).element(by.className('input-text')).clear();
+    element.all(by.className('field _required')).get(10).element(by.className('input-text')).clear();
     browser.sleep(2000);
  }
 
  function checkMsg2() {
     // Provera error poruke "This is a required field za Last name"
-    var zzz = element.all(by.className('mage-error')).get(1);
+    var zzz = element.all(by.className('field-error')).get(1);
     expect(zzz.getText()).toEqual('This is a required field.');
     browser.sleep(2000);
  }
@@ -57,60 +57,60 @@ function deleteFirstName() {
 
 function checkMsg3() {
     // Provera error poruke "This is a required field za First name"
-    var zzz = element.all(by.className('mage-error')).get(2);
+    var zzz = element.all(by.className('field-error')).get(2);
     expect(zzz.getText()).toEqual('This is a required field.');
     browser.sleep(2000);
  }  
 
  function checkMsg4() {
     // Provera error poruke "This is a required field za First name"
-    var zzz = element.all(by.className('mage-error')).get(3);
+    var zzz = element.all(by.className('field-error')).get(3);
     expect(zzz.getText()).toEqual('This is a required field.');
     browser.sleep(2000);
  }  
 
  function checkMsg5() {
     // Provera error poruke "This is a required field za First name"
-    var zzz = element.all(by.className('mage-error')).get(4);
+    var zzz = element.all(by.className('field-error')).get(4);
     expect(zzz.getText()).toEqual('This is a required field.');
     browser.sleep(2000);
  }  
 
  function checkMsg6() {
     // Provera error poruke "This is a required field za First name"
-    var zzz = element.all(by.className('mage-error')).get(5);
+    var zzz = element.all(by.className('field-error')).get(5);
     expect(zzz.getText()).toEqual('This is a required field.');
     browser.sleep(2000);
  }  
 
  function checkMsg7() {
     // Provera error poruke "This is a required field za First name"
-    var zzz = element.all(by.className('mage-error')).get(6);
+    var zzz = element.all(by.className('field-error')).get(6);
     expect(zzz.getText()).toEqual('This is a required field.');
     browser.sleep(2000);
  } 
 
  function enterFirstName() {
     //  unos imena
-    element.all(by.className('field _required')).get(8).element(by.className('input-text')).sendKeys('Bradly');;
+    element.all(by.className('field _required')).get(9).element(by.className('input-text')).sendKeys('Bradly');;
     browser.sleep(2000);
 }
 
 function enterLastName() {
     //  Unesi prezime
-    element.all(by.className('field _required')).get(9).element(by.className('input-text')).sendKeys('Seales');;
+    element.all(by.className('field _required')).get(10).element(by.className('input-text')).sendKeys('Seales');;
     browser.sleep(2000);
 }
 
 function enterStreetAddress() {
     //  Unesi prezime
-    element.all(by.className('field _required')).get(10).element(by.className('input-text')).sendKeys('Sunset Blvd');;
+    element.all(by.className('field _required')).get(11).element(by.className('input-text')).sendKeys('Sunset Blvd');;
     browser.sleep(2000);
 }
 
 function enterCity() {
     //  Unesi prezime
-    element.all(by.className('field _required')).get(11).element(by.className('input-text')).sendKeys('Los angeles');;
+    element.all(by.className('field _required')).get(12).element(by.className('input-text')).sendKeys('Los angeles');;
     browser.sleep(2000);
 }
 
@@ -123,19 +123,19 @@ function enterCity() {
 
  function clickToSelectProvince() {
     //  Klik to select Province from drop
-    element.all(by.className('field _required')).get(13).all(by.tagName('option')).get(12).click();
+    element.all(by.className('field _required')).get(14).all(by.tagName('option')).get(12).click();
     browser.sleep(6000);
  }
 
  function enterZip() {
     //  Unesi prezime
-    element.all(by.className('field _required')).get(14).element(by.className('input-text')).sendKeys('90001');;
+    element.all(by.className('field _required')).get(16).element(by.className('input-text')).sendKeys('90001');;
     browser.sleep(2000);
 }
 
 function enterPhone() {
     //  Unesi prezime
-    element.all(by.className('field _required')).get(15).element(by.className('input-text')).sendKeys('66611188');;
+    element.all(by.className('field _required')).get(17).element(by.className('input-text')).sendKeys('66611188');;
     browser.sleep(2000);
 }
 
