@@ -10,7 +10,7 @@ describe('Add billing adresu i error poruke za required polja', function () {
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
     });
 
-    it(' Dolazak u Peak Shop', function () {
+    it('Dolazak u Peak Shop', function () {
         testAddBillingAddress.landOnPeakShop();
     });
 
@@ -50,6 +50,7 @@ describe('Add billing adresu i error poruke za required polja', function () {
 
     it('Brisanje imena', function () {
         testAddBillingAddress.deleteFirstName();
+        browser.sleep(2000);
     });
 
     it('Check error poruke za first name', function () {
@@ -58,6 +59,7 @@ describe('Add billing adresu i error poruke za required polja', function () {
 
     it('Brisanje prezimena', function () {
         testAddBillingAddress.deleteLastName();
+        browser.sleep(2000);
     });
 
     it('Check error poruke za last name', function () {

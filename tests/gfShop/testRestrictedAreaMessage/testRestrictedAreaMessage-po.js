@@ -19,7 +19,7 @@ function enterZip() {
 
 function lendOnProductThatHasRestricted(){
    // Dolazak na product details 
-   browser.get('https://shop.outfitterextreme.com/nemoequipment/endurance-2p-expedition-tent.html'); 
+   browser.get('https://shop.outfitterextreme.com/nemoequipment/spike-1p-ultralight-tent.html'); 
 }
 
 function clickOnRestrictedAddress() {
