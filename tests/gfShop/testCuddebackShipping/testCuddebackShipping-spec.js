@@ -62,6 +62,7 @@ describe('Test Shipping Cuddeback shop', function () {
 
     it('Go to Checkout', function(){
         testCuddebackShipping.clickGoToCheckout();
+        browser.sleep(5000);
     });
 
     it('Check shipping to be 13$', function(){
