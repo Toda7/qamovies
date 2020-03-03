@@ -37,6 +37,10 @@ describe('Coupon order', function () {
         browser.navigate().back();
     });
 
+    it('Povratak na view and edit cart stranu', function () {
+        testCouponOrder.landOnViewAndEditCart();
+    });
+
     it('Klik na Apply Discount Coupon link', function () {
         testCouponOrder.clickApplyDiscountCoupon();
     });
