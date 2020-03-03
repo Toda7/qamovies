@@ -28,7 +28,7 @@ function checkThankCount1() {
  function clickOnThanked() {
     //  Klikni na Thanked dugme
     element(by.cssContainingText('span.text_link', 'Thanked')).click();
-    browser.sleep(500);
+    browser.sleep(1000);
 }
 
 function checkThankCount2() {

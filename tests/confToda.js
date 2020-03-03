@@ -22,6 +22,34 @@ exports.config = {
       './private/community/createDiscussion/createDiscussion-spec.js'
     ],
 
+    editDiscussion: [
+      './private/community/editDiscussion/editDiscussion-spec.js'
+    ],
+
+    searchVendors: [
+      './private/community/searchVendors/searchVendors-spec.js'
+    ],
+
+    sendMessageToVendor: [
+      './private/community/sendMessageToVendor/sendMessageToVendor-spec.js'
+    ],
+
+    searchTopic: [
+      './private/community/searchTopic/searchTopic-spec.js'
+    ],
+
+    inviteColleagues: [
+      './private/community/inviteColleagues/inviteColleagues-spec.js'
+    ],
+
+    createAnonymousDiscussion: [
+      './private/community/createAnonymousDiscussion/createAnonymousDiscussion-spec.js'
+    ],
+
+    thankDiscussion: [
+      './private/community/thankDiscussion/thankDiscussion-spec.js'
+    ],
+
     replyDiscussion: [
       './private/community/replyDiscussion/replyDiscussion-spec.js'
     ],
@@ -38,65 +66,61 @@ exports.config = {
       './private/community/editComment/editComment-spec.js'
     ],
 
-    // downloadDoc: [
-    //   './private/community/downloadDoc/downloadDoc-spec.js'
-    // ],
+    deleteComment: [
+      './private/community/deleteComment/deleteComment-spec.js'
+    ],
 
-    // deleteDiscussion: [
-    //   './private/community/deleteDiscussion/deleteDiscussion-spec.js'
-    // ],
+    deleteReply: [
+      './private/community/deleteReply/deleteReply-spec.js'
+    ],
 
-    // undoDeleteDiscussion: [
-    //   './private/community/undoDeleteDiscussion/undoDeleteDiscussion-spec.js'
-    // ],
+    downloadDoc: [
+      './private/community/downloadDoc/downloadDoc-spec.js'
+    ],
 
-    // searchForDiscussion: [
-    //   './private/community/searchForDiscussion/searchForDiscussion-spec.js'
-    // ],
+    deleteDiscussion: [
+      './private/community/deleteDiscussion/deleteDiscussion-spec.js'
+    ],
 
-    // createAnonymousDiscussion: [
-    //   './private/community/createAnonymousDiscussion/createAnonymousDiscussion-spec.js'
-    // ],
+    undoDeleteDiscussion: [
+      './private/community/undoDeleteDiscussion/undoDeleteDiscussion-spec.js'
+    ],
 
-    // thankDiscussion: [
-    //   './private/community/thankDiscussion/thankDiscussion-spec.js'
-    // ],
-
-    // thankReply: [
-    //   './private/community/thankReply/thankReply-spec.js'
-    // ],
+    thankReply: [
+      './private/community/thankReply/thankReply-spec.js'
+    ],
 
     thankComment: [
       './private/community/thankComment/thankComment-spec.js'
     ],
 
-    // searchVendors: [
-    //   './private/community/searchVendors/searchVendors-spec.js'
-    // ],
+    searchDoc: [
+      './private/community/searchDoc/searchDoc-spec.js'
+    ],
 
-    // sendMessageToVendor: [
-    //   './private/community/sendMessageToVendor/sendMessageToVendor-spec.js'
-    // ],
+    thankDoc: [
+      './private/community/thankDoc/thankDoc-spec.js'
+    ],
 
-    // searchTopic: [
-    //   './private/community/searchTopic/searchTopic-spec.js'
-    // ],
+    reputationSystemAndLeaderboard: [
+      './private/community/reputationSystemAndLeaderboard/reputationSystemAndLeaderboard-spec.js'
+    ],
 
-    // inviteColleagues: [
-    //   './private/community/inviteColleagues/inviteColleagues-spec.js'
-    // ],
+    rundeckReindex: [
+      './private/community/rundeckReindex/rundeckReindex-spec.js'
+    ],
 
-    // searchDoc: [
-    //   './private/community/searchDoc/searchDoc-spec.js'
-    // ],
+    deleteDiscussionWithUndoneDeletion: [
+      './private/community/deleteDiscussionWithUndoneDeletion/deleteDiscussionWithUndoneDeletion-spec.js'
+    ],
 
-    // thankDoc: [
-    //   './private/community/thankDoc/thankDoc-spec.js'
-    // ],
+    deleteAnonymousDiscussion: [
+      './private/community/deleteAnonymousDiscussion/deleteAnonymousDiscussion-spec.js'
+    ],
 
-    // reputationSystemAndLeaderboard: [
-    //   './private/community/reputationSystemAndLeaderboard/reputationSystemAndLeaderboard-spec.js'
-    // ],
+    myProfilePage: [
+      './private/community/myProfilePage/myProfilePage-spec.js'
+    ],
   },
 
   capabilities: {

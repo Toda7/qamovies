@@ -10,8 +10,16 @@ describe('Reply Discussion Action', function(){
         replyDiscussion.landOnFIProfessionalsHome();
     });
 
-    it('Pronadji napravljenu diskusiju i klikni', function(){
-        replyDiscussion.findDiscussion();
+    it('Klikni na Search polje', function(){
+        replyDiscussion.clickSearch();
+    });
+
+    it('Unesi rec za pretragu u Search polje', function(){
+        replyDiscussion.enterSearchWord();
+    });
+
+    it('Klikni na prvi search rezultat', function(){
+        replyDiscussion.clickFirstResult();
     });
 
     it('Klik na Reply dugme', function(){

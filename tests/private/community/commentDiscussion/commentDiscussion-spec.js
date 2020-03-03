@@ -1,4 +1,5 @@
 var commentDiscussion = require('./commentDiscussion-po.js');
+var replyDiscussion = require('../replyDiscussion/replyDiscussion-po.js');
 
 describe('Comment Discussion Action', function(){
 
@@ -6,12 +7,20 @@ describe('Comment Discussion Action', function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
     }); 
 
-    it('dolazak na FI Professionals page', function(){
-        commentDiscussion.landOnFIProfessionalsHome();
+    it('Dolazak na FI Professionals', function(){
+        replyDiscussion.landOnFIProfessionalsHome();
     });
 
-    it('Pronadji napravljenu diskusiju i klikni', function(){
-        commentDiscussion.findDiscussion();
+    it('Klikni na Search polje', function(){
+        replyDiscussion.clickSearch();
+    });
+
+    it('Unesi rec za pretragu u Search polje', function(){
+        replyDiscussion.enterSearchWord();
+    });
+
+    it('Klikni na prvi search rezultat', function(){
+        replyDiscussion.clickFirstResult();
     });
 
     it('Klik na Comment dugme', function(){

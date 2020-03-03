@@ -1,14 +1,3 @@
-function landOnFIProfessionalsHome() {
-    // dolazak na FI Professionals page
-    browser.get('https://qa.cbancnetwork.com/community/groups/view/8182a044-d055-427f-ae7b-9dcf06e58e46'); 
-    browser.sleep(2000);
-}
-
-function findDiscussion() {
-    // Pronadji napravljenu diskusiju i klikni
-    element(by.className('title', 'ATQA')).click(); 
-    browser.sleep(1000);
-}
 function clickDoc() {
     // Klik na Dokument
     element(by.className('attachment txt')).click(); 
@@ -37,8 +26,6 @@ function refreshPage() {
 
   
  module.exports = {
-    landOnFIProfessionalsHome,
-    findDiscussion,
     clickDoc,
     clickDownload,
     refreshPage,

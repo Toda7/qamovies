@@ -1,7 +1,7 @@
-var deleteAnonymousDiscussion = require('./deleteAnonymousDiscussion-po.js');
+var deleteDiscussionWithUndoneDeletion = require('./deleteDiscussionWithUndoneDeletion-po.js');
 var replyDiscussion = require('../replyDiscussion/replyDiscussion-po.js');
 
-describe('Obrisi anonimnu diskusiju', function(){
+describe('Orisi diskusiju koja je vec bila obrisana pa je uradjen Undo brisanja', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
@@ -16,7 +16,7 @@ describe('Obrisi anonimnu diskusiju', function(){
     });
 
     it('Unesi rec za pretragu u Search polje', function(){
-        deleteAnonymousDiscussion.enterSearchWord();
+        replyDiscussion.enterSearchWord();
     });
 
     it('Klikni na prvi search rezultat', function(){
@@ -24,15 +24,15 @@ describe('Obrisi anonimnu diskusiju', function(){
     });
 
     it('Klik na Action menu', function(){
-        deleteAnonymousDiscussion.clickAction();
+        deleteDiscussionWithUndoneDeletion.clickAction();
     });
 
     it('Klik na Delete dugme', function(){
-        deleteAnonymousDiscussion.clickDelete();
+        deleteDiscussionWithUndoneDeletion.clickDelete();
     });
 
     it('Provera da li obrisana diskusija', function(){
-        deleteAnonymousDiscussion.checkSuccess();
+        deleteDiscussionWithUndoneDeletion.checkSuccess();
     });
 
     
