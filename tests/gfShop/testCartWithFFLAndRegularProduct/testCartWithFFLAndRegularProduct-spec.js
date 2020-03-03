@@ -38,7 +38,6 @@ describe('Cart With FFL And Regular Product', function () {
 
     it('Dodaj proizvod u korpu', function () {
         testTwentyProductsOrder.addToCart();
-        browser.sleep(5000);
         browser.sleep(7000);
     });
 

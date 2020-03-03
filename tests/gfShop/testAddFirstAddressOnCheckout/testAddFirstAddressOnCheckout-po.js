@@ -34,35 +34,35 @@ function clickOnNext() {
     browser.sleep(7000);
 }
 
-function checkSuccess1() {
-    // Provera error poruke "This is a required field"
-    var zzz = element.all(by.className('mage-error')).get(0);
-    expect(zzz.getText()).toEqual('This is a required field.');
-}
+// function checkSuccess1() {
+//     // Provera error poruke "This is a required field"
+//     var zzz = element.all(by.className('mage-error')).get(0);
+//     expect(zzz.getText()).toEqual('This is a required field.');
+// }
 
-function checkSuccess2() {
-    // Provera error poruke "This is a required field"
-    var zzz = element.all(by.className('mage-error')).get(1);
-    expect(zzz.getText()).toEqual('This is a required field.');
-}
+// function checkSuccess2() {
+//     // Provera error poruke "This is a required field"
+//     var zzz = element.all(by.className('mage-error')).get(1);
+//     expect(zzz.getText()).toEqual('This is a required field.');
+// }
 
-function checkSuccess3() {
-    // Provera error poruke "This is a required field"
-    var zzz = element.all(by.className('mage-error')).get(2);
-    expect(zzz.getText()).toEqual('This is a required field.');
-}
+// function checkSuccess3() {
+//     // Provera error poruke "This is a required field"
+//     var zzz = element.all(by.className('mage-error')).get(2);
+//     expect(zzz.getText()).toEqual('This is a required field.');
+// }
 
-function checkSuccess4() {
-    // Provera error poruke "This is a required field"
-    var zzz = element.all(by.className('mage-error')).get(3);
-    expect(zzz.getText()).toEqual('This is a required field.');
-}
+// function checkSuccess4() {
+//     // Provera error poruke "This is a required field"
+//     var zzz = element.all(by.className('mage-error')).get(3);
+//     expect(zzz.getText()).toEqual('This is a required field.');
+// }
 
-function checkSuccess5() {
-    // Provera error poruke "This is a required field"
-    var zzz = element.all(by.className('mage-error')).get(4);
-    expect(zzz.getText()).toEqual('This is a required field.');
-}
+// function checkSuccess5() {
+//     // Provera error poruke "This is a required field"
+//     var zzz = element.all(by.className('mage-error')).get(4);
+//     expect(zzz.getText()).toEqual('This is a required field.');
+// }
 
 function enterCompanyName() {
     //  Unesi Company name
@@ -113,11 +113,11 @@ module.exports = {
     clickToOpenCart,
     clickToGoToCheckoutPage,
     clickOnNext,
-    checkSuccess1,
-    checkSuccess2,
-    checkSuccess3,
-    checkSuccess4,
-    checkSuccess5,
+    // checkSuccess1,
+    // checkSuccess2,
+    // checkSuccess3,
+    // checkSuccess4,
+    // checkSuccess5,
     enterCompanyName,
     enterStreetName,
     enterCityName,

@@ -149,10 +149,9 @@ exports.config = {
       './gfShop/testPoBoxAddressFromCheckout/testPoBoxAddressFromCheckout-spec.js'
     ],
 
-    // testCouponOrder: [
-    //   imamo tiket -  https://guidefitter.atlassian.net/browse/SHOP-1113
-    //   './gfShop/testCouponOrder/testCouponOrder-spec.js'
-    // ],
+    testCouponOrder: [
+      './gfShop/testCouponOrder/testCouponOrder-spec.js'
+    ],
 
     testSaveInAddressBookOptionForNewAddress: [
       './gfShop/testSaveInAddressBookOptionForNewAddress/testSaveInAddressBookOptionForNewAddress-spec.js'
@@ -244,28 +243,25 @@ exports.config = {
       './gfShop/testAddFirstAddressOnAddressBook/testAddFirstAddressOnAddressBook-spec.js'
     ],
 
-    // testAddFirstAddressOnCheckout: [
-    // zakomentarisno jer ne radi sad, a trenutno nije test pa ne mozemo da pisemo tiket 
-    //   './gfShop/testAddFirstAddressOnCheckout/testAddFirstAddressOnCheckout-spec.js'
-    // ],
+    testAddFirstAddressOnCheckout: [
+      './gfShop/testAddFirstAddressOnCheckout/testAddFirstAddressOnCheckout-spec.js'
+    ],
 
     testMessageNoPayment: [
       './gfShop/testMessageNoPayment/testMessageNoPayment-spec.js'
     ],
 
-    // testMoultrieShipping: [
-    // imamo tiket - https://guidefitter.atlassian.net/browse/SHOP-1110 
-    //   './gfShop/testMoultrieShipping/testMoultrieShipping-spec.js'
-    // ],
+    testMoultrieShipping: [
+      './gfShop/testMoultrieShipping/testMoultrieShipping-spec.js'
+    ],
 
     testAdvancedSearchPagination: [
       './gfShop/testAdvancedSearchPagination/testAdvancedSearchPagination-spec.js'
     ],
 
-    // testTwoShippingMethods: [
-    // imamo tiket - https://guidefitter.atlassian.net/browse/SHOP-1124
-    //   './gfShop/testTwoShippingMethods/testTwoShippingMethods-spec.js'
-    // ],
+    testTwoShippingMethods: [
+      './gfShop/testTwoShippingMethods/testTwoShippingMethods-spec.js'
+    ],
 
     testAdvanceSearchDescription: [
       './gfShop/testAdvanceSearchDescription/testAdvanceSearchDescription-spec.js'

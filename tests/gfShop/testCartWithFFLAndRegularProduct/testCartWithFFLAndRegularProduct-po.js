@@ -1,6 +1,6 @@
 function chooseOptionFFL() {
    // Izaberi opciju iz dropa 
-   element(by.name('super_attribute[467]')).all(by.tagName('option')).get(4).click();
+   element(by.name('super_attribute[467]')).all(by.tagName('option')).get(3).click();
    browser.sleep(2000);
 }
 
@@ -24,7 +24,7 @@ function checkImportantNotice() {
 
 function chooseOptionRegular() {
    // Izaberi opciju iz dropa 
-   element(by.name('super_attribute[467]')).all(by.tagName('option')).get(15).click();
+   element(by.name('super_attribute[467]')).all(by.tagName('option')).get(4).click();
    browser.sleep(2000);
 }
 

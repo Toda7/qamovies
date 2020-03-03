@@ -28,29 +28,30 @@ describe('Pravljenje adrese na Checkout strani', function () {
         testAddFirstAddressOnCheckout.clickToGoToCheckoutPage();
     });
 
-    it('Klik on NEXT', function () {
-        testAddFirstAddressOnCheckout.clickOnNext();
-    });
+    // nakon update magenta, nemamo vise NEXT button jer nemamo addresu 
+    // it('Klik on NEXT', function () {
+    //     testAddFirstAddressOnCheckout.clickOnNext();
+    // });
 
-    it('Provera error poruke1 "This is a required field"', function () {
-        testAddFirstAddressOnCheckout.checkSuccess1();
-    });
+    // it('Provera error poruke1 "This is a required field"', function () {
+    //     testAddFirstAddressOnCheckout.checkSuccess1();
+    // });
 
-    it('Provera error poruke2 "This is a required field"', function () {
-        testAddFirstAddressOnCheckout.checkSuccess2();
-    });
+    // it('Provera error poruke2 "This is a required field"', function () {
+    //     testAddFirstAddressOnCheckout.checkSuccess2();
+    // });
 
-    it('Provera error poruke3 "This is a required field"', function () {
-        testAddFirstAddressOnCheckout.checkSuccess3();
-    });
+    // it('Provera error poruke3 "This is a required field"', function () {
+    //     testAddFirstAddressOnCheckout.checkSuccess3();
+    // });
 
-    it('Provera error poruke4 "This is a required field"', function () {
-        testAddFirstAddressOnCheckout.checkSuccess4();
-    });
+    // it('Provera error poruke4 "This is a required field"', function () {
+    //     testAddFirstAddressOnCheckout.checkSuccess4();
+    // });
 
-    it('Provera error poruke5 "This is a required field"', function () {
-        testAddFirstAddressOnCheckout.checkSuccess5();
-    });
+    // it('Provera error poruke5 "This is a required field"', function () {
+    //     testAddFirstAddressOnCheckout.checkSuccess5();
+    // });
 
     it('Unesi Company name', function () {
         testAddFirstAddressOnCheckout.enterCompanyName();
