@@ -56,37 +56,39 @@ describe('Two Shipping methods', function () {
 
     it('Klik on SAVE ADDRESS button', function () {
         testPoBoxAddressFromCheckout.clickOnSaveNewAddressButton();
-        browser.sleep(2000);
+        browser.sleep(5000);
     });
 
     it('Klik on United Parcel Service opciju', function () {
         testTwoShippingMethods.clickUnitedParcelService();
-        browser.sleep(2000);
+        browser.sleep(5000);
     });
 
     it('Klik na Next dugme', function () {
         testTwentyProductsOrder.clickNext();
-        browser.sleep(2000);
+        browser.sleep(5000);
     });
 
     it('Provera United Parcel shipping metode na Payment strani', function () {
         testTwoShippingMethods.checkUnitedParcelMethodOnPaymentPage();
         browser.navigate().back();
-        browser.sleep(2000);
+        browser.sleep(5000);
+
     });
 
     it('Dolazak na Shipping page', function () {
         testTwoShippingMethods.landOnShippingPage();
-        browser.sleep(2000);
+        browser.sleep(5000);
     });
 
     it('Klik on United States Postal Service opciju', function () {
         testTwoShippingMethods.clickUnitedStatesPostalService();
+        browser.sleep(5000);
     });
 
     it('Klik na Next dugme', function () {
         testTwentyProductsOrder.clickNext();
-        browser.sleep(2000);
+        browser.sleep(5000);
     });
 
     it('Provera United States Postal shipping metode na Payment strani', function () {
@@ -95,7 +97,7 @@ describe('Two Shipping methods', function () {
 
     it('Klik na Place Order dugme', function () {
         testTwentyProductsOrder.clickPlaceOrder();
-        browser.sleep(2000);
+        browser.sleep(5000);
     });
 
     it('Dolazak na Address Book page', function () {

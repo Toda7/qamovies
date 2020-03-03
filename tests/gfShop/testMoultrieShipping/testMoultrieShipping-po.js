@@ -1,12 +1,12 @@
 function landOnMoultrieHomePage() {
     // Dolazak na Moultrie shop
-    browser.get('https://shop.outfitterextreme.com/moultrie'); 
+    browser.get('https://shop.outfitterextreme.com/Moultrie'); 
     browser.sleep(2000);
 }
 
 function landOnCameraDetailPage() {
     // Dolazak na detail stranu kamere
-    browser.get('https://shop.outfitterextreme.com/moultrie/moultrie/cameras/game-cameras/a300-game-camera.html'); 
+    browser.get('https://shop.outfitterextreme.com/Moultrie/moultrie/cameras/game-cameras/a300-game-camera.html'); 
     browser.sleep(2000);
 }
 
@@ -18,13 +18,13 @@ function clickOnAddToCart() {
 
 function landOnFeederDetailPage() {
     // Dolazak na detail stranu feeder-a
-    browser.get('https://shop.outfitterextreme.com/moultrie/wildlife-directional-feeder-1.html'); 
+    browser.get('https://shop.outfitterextreme.com/Moultrie/wildlife-directional-feeder-1.html'); 
     browser.sleep(2000);
 }
 
 function landOnAttractantsDetailPage() {
     // Dolazak na detail stranu Attractant-a
-    browser.get('https://shop.outfitterextreme.com/moultrie/bear-magnet-savory-bacon-1.html'); 
+    browser.get('https://shop.outfitterextreme.com/Moultrie/bear-magnet-savory-bacon-1.html'); 
     browser.sleep(2000);
 }
 
@@ -61,7 +61,7 @@ function clickOnPlaceOrder() {
 
 function landOnMyOrdersPage() {
     // Dolazak na My Orders stranu 
-    browser.get('https://shop.outfitterextreme.com/moultrie/sales/order/history/');
+    browser.get('https://shop.outfitterextreme.com/Moultrie/sales/order/history/');
     browser.sleep(2000);
  }
 
