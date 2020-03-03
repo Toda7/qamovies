@@ -18,13 +18,13 @@ function clickOnStartDiscussion() {
 
 function discussionTitle() {
    // Unos texta za Discussion Title
-   element(by.id('input-field title')).sendKeys('ATQA Anonymous Discussion Title');
+   element(by.id('input-field title')).sendKeys('Anonymoussssly');
    browser.sleep(2000);
 }
 
 function discussionDesc() {
    // Unos texta za Discussion Desription
-   element(by.className('rte')).sendKeys('ATQA Anonymous Discussion description testing credit');
+   element(by.className('rte')).sendKeys('Anonymoussssly Discussion description testing credit');
    browser.sleep(2000);
 }
 

@@ -1,7 +1,7 @@
-var deleteDiscussion = require('./deleteDiscussion-po.js');
+var deleteReply = require('./deleteReply-po.js');
 var replyDiscussion = require('../replyDiscussion/replyDiscussion-po.js');
 
-describe('Delete Discussion Action', function(){
+describe('Delete Reply Action', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
@@ -24,15 +24,15 @@ describe('Delete Discussion Action', function(){
     });
 
     it('Klik na Action menu', function(){
-        deleteDiscussion.clickAction();
+        deleteReply.clickAction();
     });
 
     it('Klik na Delete dugme', function(){
-        deleteDiscussion.clickDelete();
+        deleteReply.clickDelete();
     });
 
     it('Provera da li obrisana diskusija', function(){
-        deleteDiscussion.checkSuccess();
+        deleteReply.checkSnackbar();
     });
 
     

@@ -1,7 +1,7 @@
-var deleteDiscussion = require('./deleteDiscussion-po.js');
+var editReply = require('./editReply-po.js');
 var replyDiscussion = require('../replyDiscussion/replyDiscussion-po.js');
 
-describe('Delete Discussion Action', function(){
+describe('Edit Reply', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
@@ -24,18 +24,25 @@ describe('Delete Discussion Action', function(){
     });
 
     it('Klik na Action menu', function(){
-        deleteDiscussion.clickAction();
+        editReply.clickAction();
     });
 
-    it('Klik na Delete dugme', function(){
-        deleteDiscussion.clickDelete();
+    it('Klik na Edit dugme', function(){
+        editReply.clickEditButton();
     });
 
-    it('Provera da li obrisana diskusija', function(){
-        deleteDiscussion.checkSuccess();
+    it('Edit Reply texta', function(){
+        editReply.editReplyText();
     });
 
-    
+    it('Klik na Update Reply dugme', function(){
+        editReply.clickUpdateReplyButton();
+    });
+
+    it('Provera da li je uspesno editovan Reply', function(){
+        editReply.checkSuccess();
+    });
+
         afterAll(function(){
         browser.waitForAngularEnabled(true); 
     });
