@@ -62,9 +62,9 @@ exports.config = {
     //   './private/community/followUnfollowVendor/followUnfollowVendor-spec.js'
     // ],
     
-    vendorDetailsPage: [
-      './private/community/vendorDetailsPage/vendorDetailsPage-spec.js'
-    ],
+    // vendorDetailsPage: [
+    //   './private/community/vendorDetailsPage/vendorDetailsPage-spec.js'
+    // ],
 
   },
 
