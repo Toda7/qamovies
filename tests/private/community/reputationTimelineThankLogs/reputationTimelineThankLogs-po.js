@@ -15,7 +15,7 @@ function clickOnSignOut() {
 
 function clickOnSignIn() {
     element(by.className('sign_in')).click();
-    
+    browser.sleep(3000)
 }
 
 function enterEmail() {
