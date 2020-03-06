@@ -60,12 +60,7 @@ function checkFiProfessionalsGroupURL() {
    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/groups/view/8182a044-d055-427f-ae7b-9dcf06e58e46'), 5000);
 }
 
-// function checkSuccess1(){
-//    var EC = protractor.ExpectedConditions;
-//    // Provera da li je uspesno objavljen Reply
-//    browser.wait(EC.textToBePresentInElement($('.reply'), 'ATQA Reply'), 5000);
-//    browser.sleep(500);
-// } 
+// proba za git
 
 module.exports = {
    landOnMyProfile,
@@ -81,5 +76,4 @@ module.exports = {
    clickFiProfessionalsGroup,
    checkFiProfessionalsGroupURL,
    clickOnStartDiscussion,
-   // checkSuccess1,
 }
