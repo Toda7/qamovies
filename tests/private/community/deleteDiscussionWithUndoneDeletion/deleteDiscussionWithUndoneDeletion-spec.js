@@ -1,7 +1,7 @@
-var deleteDiscussion = require('./deleteDiscussion-po.js');
+var deleteDiscussionWithUndoneDeletion = require('./deleteDiscussionWithUndoneDeletion-po.js');
 var replyDiscussion = require('../replyDiscussion/replyDiscussion-po.js');
 
-describe('Delete Discussion Action', function(){
+describe('Orisi diskusiju koja je vec bila obrisana pa je uradjen Undo brisanja', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
@@ -24,15 +24,15 @@ describe('Delete Discussion Action', function(){
     });
 
     it('Klik na Action menu', function(){
-        deleteDiscussion.clickAction();
+        deleteDiscussionWithUndoneDeletion.clickAction();
     });
 
     it('Klik na Delete dugme', function(){
-        deleteDiscussion.clickDelete();
+        deleteDiscussionWithUndoneDeletion.clickDelete();
     });
 
     it('Provera da li obrisana diskusija', function(){
-        deleteDiscussion.checkSuccess();
+        deleteDiscussionWithUndoneDeletion.checkSuccess();
     });
 
     

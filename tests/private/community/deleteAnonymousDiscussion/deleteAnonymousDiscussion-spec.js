@@ -1,7 +1,7 @@
-var deleteDiscussion = require('./deleteDiscussion-po.js');
+var deleteAnonymousDiscussion = require('./deleteAnonymousDiscussion-po.js');
 var replyDiscussion = require('../replyDiscussion/replyDiscussion-po.js');
 
-describe('Delete Discussion Action', function(){
+describe('Obrisi anonimnu diskusiju', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
@@ -16,7 +16,7 @@ describe('Delete Discussion Action', function(){
     });
 
     it('Unesi rec za pretragu u Search polje', function(){
-        replyDiscussion.enterSearchWord();
+        deleteAnonymousDiscussion.enterSearchWord();
     });
 
     it('Klikni na prvi search rezultat', function(){
@@ -24,15 +24,15 @@ describe('Delete Discussion Action', function(){
     });
 
     it('Klik na Action menu', function(){
-        deleteDiscussion.clickAction();
+        deleteAnonymousDiscussion.clickAction();
     });
 
     it('Klik na Delete dugme', function(){
-        deleteDiscussion.clickDelete();
+        deleteAnonymousDiscussion.clickDelete();
     });
 
     it('Provera da li obrisana diskusija', function(){
-        deleteDiscussion.checkSuccess();
+        deleteAnonymousDiscussion.checkSuccess();
     });
 
     
