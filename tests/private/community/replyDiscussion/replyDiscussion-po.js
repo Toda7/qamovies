@@ -4,11 +4,23 @@ function landOnFIProfessionalsHome() {
     browser.sleep(2000);
 }
 
-function findDiscussion() {
-    // Pronadji napravljenu diskusiju i klikni
-    element(by.className('title', 'ATQA')).click(); 
-    browser.sleep(1000);
- }
+function clickSearch() {
+   //  Klikni na Search polje
+   element(by.className('search_button')).click();
+   browser.sleep(1000);
+}
+
+function enterSearchWord() {
+   //  Unesi rec za pretragu u Search polje
+   element(by.id('navbar_search_id')).clear().sendKeys('ATQA');
+   browser.sleep(2000);
+}
+
+function clickFirstResult() {
+   //  Klikni na prvi search rezultat
+   element(by.className('content_title')).click();
+   browser.sleep(2000);
+}
 
 function clickReply() {
     //  Klikni na Reply dugme
@@ -22,6 +34,13 @@ function replyText() {
     browser.sleep(1000);
  }
 
+ function attachDoc() {
+   var path = require('path');
+   var fileToUpload = './TestTXT.txt',
+   absolutePath = path.resolve(__dirname, fileToUpload);
+   element(by.css('input[type="file"]')).sendKeys(absolutePath); 
+}
+
  function postReply() {
     // klik na Reply dugme
     element(by.buttonText('Reply')).click();
@@ -32,14 +51,18 @@ function checkSuccess(){
    var EC = protractor.ExpectedConditions;
    // Provera da li je uspesno objavljen Reply
    browser.wait(EC.textToBePresentInElement($('.reply'), 'ATQA Reply'), 5000);
-   browser.sleep(2000);
+   browser.sleep(500);
 }  
 
  module.exports = {
     landOnFIProfessionalsHome,
-    findDiscussion,
+    clickSearch,
+    enterSearchWord,
+    clickFirstResult,
+   //  findDiscussion,
     clickReply,
     replyText,
+    attachDoc,
     postReply,
     checkSuccess,
  }
