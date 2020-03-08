@@ -15,24 +15,12 @@ describe('Load more na Document Library strani', function(){
         loadMoreOnDocLibPage.count15docs();
     });
 
-    it('Scoll 1 ', function(){
-        loadMoreOnDocLibPage.scrollDown();
-        browser.sleep(1000);
-    });
-
-    it('Scroll 2', function(){
-        loadMoreOnDocLibPage.scrollDown();
-        browser.sleep(1000);
-    });
-
-    it('Scroll 3', function(){
-        loadMoreOnDocLibPage.scrollDown();
-        browser.sleep(1000);
-    });
-
-    it('Scroll 4', function(){
-        loadMoreOnDocLibPage.scrollDown();
-        browser.sleep(1000);
+    it('Klik na Space na tastaturi za Load More na strani', function(){
+        var step;
+        for (step = 0; step < 4; step++) {
+            loadMoreOnDocLibPage.scrollDown();
+            browser.sleep(1000);
+        }
     });
 
     it('Provera da li se na strani nalazi 30 documenta', function(){

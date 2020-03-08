@@ -22,9 +22,9 @@ exports.config = {
     //   './private/community/docLibraryCheck/docLibraryCheck-spec.js'
     // ],
 
-    // loadMoreOnDocLibPage: [
-    //   './private/community/loadMoreOnDocLibPage/loadMoreOnDocLibPage-spec.js'
-    // ],
+    loadMoreOnDocLibPage: [
+      './private/community/loadMoreOnDocLibPage/loadMoreOnDocLibPage-spec.js'
+    ],
 
     // searchOnDocLibPage: [
     //   './private/community/searchOnDocLibPage/searchOnDocLibPage-spec.js'
@@ -50,9 +50,9 @@ exports.config = {
     //   './private/community/vendorDirectoryCheck/vendorDirectoryCheck-spec.js'
     // ],    
 
-    // loadMoreOnVendorDirectoryPage: [
-    //   './private/community/loadMoreOnVendorDirectoryPage/loadMoreOnVendorDirectoryPage-spec.js'
-    // ],   
+    loadMoreOnVendorDirectoryPage: [
+      './private/community/loadMoreOnVendorDirectoryPage/loadMoreOnVendorDirectoryPage-spec.js'
+    ],   
     
     // searchOnVendorDirectoryPage: [
     //   './private/community/searchOnVendorDirectoryPage/searchOnVendorDirectoryPage-spec.js'
