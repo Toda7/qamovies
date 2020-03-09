@@ -3,12 +3,6 @@ function landOnMyProfile() {
    browser.get('https://qa.cbancnetwork.com/community/users/view/e340806a-b6fd-4fe2-8f52-7858e3ad5408');    
 }
 
-function checkIfFifteenthDiscussionsOnPage() {
-   // Provera da li se na strani pojavilo 15 diskusija 
-   var list = element.all(by.className('card item_card'));
-   expect(list.count()).toBe(14);
-}
-
 function checkNameInProfileBox() {
    // Provera imena membera u Profile boxu 
    var xxx = element(by.className('card-title'));
@@ -60,12 +54,8 @@ function checkFiProfessionalsGroupURL() {
    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/groups/view/8182a044-d055-427f-ae7b-9dcf06e58e46'), 5000);
 }
 
-// proba za git
-
 module.exports = {
    landOnMyProfile,
-   checkIfFifteenthDiscussionsOnPage,
-   clickSpace,
    checkNameInProfileBox,
    checkAvatarInProfileBox,
    clickBankNameInProfileBox,
@@ -75,5 +65,5 @@ module.exports = {
    checkPageTitle,
    clickFiProfessionalsGroup,
    checkFiProfessionalsGroupURL,
-   clickOnStartDiscussion,
+   // clickOnStartDiscussion,
 }
