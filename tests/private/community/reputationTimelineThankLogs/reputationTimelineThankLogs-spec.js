@@ -21,6 +21,7 @@ describe('Reputation Timeline cekiranje Thanks logova', function () {
 
     it('Klik na Sign out', function(){
         reputationTimelineThankLogs.clickOnSignOut();
+        browser.sleep(2000);
     });
 
     it('Klik na Sign in', function () {
