@@ -11,11 +11,6 @@ describe('My Profile strana', function(){
         browser.sleep(2000);
     });
 
-    it('Provera da li se na strani pojavilo 15 diskusija', function(){
-        myProfilePage.checkIfFifteenthDiscussionsOnPage();
-        browser.sleep(2000);
-    });
-
     it('Provera imena membera u Profile boxu', function(){
         myProfilePage.checkNameInProfileBox();
         browser.sleep(500);
