@@ -20,6 +20,7 @@ describe('Provera document library page', function () {
         docLibraryCheck.checkBreadcrumbs();
     });
 
+    // cekeri za side menu i search u headeru
     it('Provera da li se placeholder in search field u headeru', function () {
         docLibraryCheck.checkSearchInHeader();
     });
@@ -33,6 +34,103 @@ describe('Provera document library page', function () {
         docLibraryCheck.checkSearchURL();
         browser.navigate().back();
         browser.sleep(1000);
+    });
+
+    it('Provera da li je dobar default avatar in header', function () {
+        docLibraryCheck.checkUserAvatarInHeader();
+    });
+
+    it('Klik na user avatar da otvorimo user menu', function () {
+        docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
+    });
+
+    it('Provera da li se ucitao Inbox link u user meniju', function () {
+        docLibraryCheck.checkInboxInUserMenu();
+    });
+
+    it('Klik na Inbox link', function () {
+        docLibraryCheck.clickOnInboxLink();
+        browser.getAllWindowHandles().then(function (handles) {
+        browser.switchTo().window(handles[1]);
+        });
+    });
+
+    it('Provera da li se ucitao Inbox URL', function () {
+        docLibraryCheck.checkInboxURL();
+        browser.getAllWindowHandles().then(function (handles) {
+        browser.driver.close();
+        browser.driver.switchTo().window(handles[0]);
+        });
+        browser.sleep(2000);
+    });
+
+    it('Klik na user avatar da otvorimo user menu', function () {
+        docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
+    });
+
+    it('Provera da li se ucitao My Profile link u user meniju', function () {
+        docLibraryCheck.checkMyProfileInUserMenu();
+    });
+
+    it('Klik na My Profile link', function () {
+        docLibraryCheck.clickOnMyProfileLink();
+        browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao My Profile URL', function () {
+        docLibraryCheck.checkMyProfileURL();
+        browser.navigate().back();
+        browser.sleep(1000);
+    });
+
+    it('Klik na user avatar da otvorimo user menu', function () {
+        docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
+    });
+
+    it('Provera da li se ucitao Org link u user meniju', function () {
+        docLibraryCheck.checkOrgLinkInUserMenu();
+    });
+
+    it('Klik na My org link', function () {
+        docLibraryCheck.clickOnMyOrgLink();
+        browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao org URL', function () {
+        docLibraryCheck.checkMyOrgURL();
+        browser.navigate().back();
+        browser.sleep(1000);
+    });
+
+    it('Klik na user avatar da otvorimo user menu', function () {
+        docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
+    });
+
+    it('Provera da li se ucitao Account Settings link u user meniju', function () {
+        docLibraryCheck.checkAccountSettingsInUserMenu();
+    });
+
+    it('Klik na Account Settings link', function () {
+        docLibraryCheck.clickOnAccountSettingsLink();
+        browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Account Settings URL', function () {
+        docLibraryCheck.checkAccountSettingsURL();
+        browser.navigate().back();
+        browser.sleep(1000);
+    });
+
+    it('Klik na user avatar da otvorimo user menu', function () {
+        docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
+    });
+
+    it('Provera da li se ucitao sign out link u user meniju', function () {
+        docLibraryCheck.checkSignOutUserMenu();
+    });
+
+    it('Klik na user avatar da zatvorimo user menu', function () {
+        docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
     });
 
     it('Provera da li se ucitao FOR YOU link u side meniju', function () {
@@ -145,12 +243,6 @@ describe('Provera document library page', function () {
         browser.sleep(1000);
     });
 
-    it('Provera da li se placeholder in search field', function () {
-        docLibraryCheck.checkPlaceholderInSearch();
-        browser.sleep(1000);
-    });
-
-
     it('Klik na Space na tastaturi za Load More na strani', function () {
         var step;
         for (step = 0; step < 3; step++) {
@@ -158,7 +250,7 @@ describe('Provera document library page', function () {
             browser.sleep(1000);
         }
     });
-    
+
     it('Provera da li se START DISCUSSION button ucitao na strani', function () {
         docLibraryCheck.checkStartDiscussionButton();
     });
@@ -173,32 +265,39 @@ describe('Provera document library page', function () {
         browser.navigate().back();
         browser.sleep(1000);
     });
+    // ovde se zavrsavaju cekeri za side menu i search u headeru
 
-    it('Provera da li se poll header ucitao', function () {
-        docLibraryCheck.checkPollHeader();
-        browser.switchTo().frame(element(by.tagName('iframe')).getWebElement());
-        browser.sleep(5000);
+    it('Provera da li se placeholder in search field', function () {
+        docLibraryCheck.checkPlaceholderInSearch();
+        browser.sleep(1000);
     });
 
-    it('Provera da li se poll title ucitao', function () {
-        docLibraryCheck.checkPollTitle();
-    });
+    // ovo treba u odvojeni test
+    // it('Provera da li se poll header ucitao', function () {
+    //     docLibraryCheck.checkPollHeader();
+    //     browser.switchTo().frame(element(by.tagName('iframe')).getWebElement());
+    //     browser.sleep(5000);
+    // });
 
-    it('Provera da li se ucitalo prvo pitanje', function () {
-        docLibraryCheck.checkFirstQuestion();
-    });
+    // it('Provera da li se poll title ucitao', function () {
+    //     docLibraryCheck.checkPollTitle();
+    // });
 
-    it('Provera da li se prvi radio button u prvom pitanju', function () {
-        docLibraryCheck.checkFirstRadioButton();
-    });
+    // it('Provera da li se ucitalo prvo pitanje', function () {
+    //     docLibraryCheck.checkFirstQuestion();
+    // });
 
-    it('Provera da li se ucitalo trece pitanje', function () {
-        docLibraryCheck.checkThirdQuestion();
-    });
+    // it('Provera da li se prvi radio button u prvom pitanju', function () {
+    //     docLibraryCheck.checkFirstRadioButton();
+    // });
 
-    it('Provera da li se ucitalo sesti radio button u trecem pitanju', function () {
-        docLibraryCheck.checkRadioButtonInThirdQuestion();
-    });
+    // it('Provera da li se ucitalo trece pitanje', function () {
+    //     docLibraryCheck.checkThirdQuestion();
+    // });
+
+    // it('Provera da li se ucitalo sesti radio button u trecem pitanju', function () {
+    //     docLibraryCheck.checkRadioButtonInThirdQuestion();
+    // });
 
     afterAll(function () {
         browser.waitForAngularEnabled(true);

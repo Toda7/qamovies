@@ -16,6 +16,7 @@ function checkBreadcrumbs() {
     browser.wait(EC.textToBePresentInElement($('.nav_title'), 'Document Library'), 5000);
 }
 
+// cekeri za side menu i search u headeru
 function checkSearchInHeader() {
     // Provera da li se placeholder in search field 
     var xxx = element(by.className('search_button'));
@@ -31,6 +32,92 @@ function checkSearchURL() {
     // Provera da li se ucitao search URL
     var EC = protractor.ExpectedConditions;
     browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/search?q='), 5000);
+}
+
+function checkUserAvatarInHeader() {
+    // Provera da li je dobar default avatar in header
+    var xxx = element(by.tagName('img'));
+    expect(xxx.getAttribute('src')).toEqual('https://qa.cbancnetwork.com/membership/public/avatar/e340806a-b6fd-4fe2-8f52-7858e3ad5408');
+    browser.sleep(500);
+}
+
+function clickOnUserAvatarToOpenDropMenu() {
+    // Klik na user avatar da otvorimo user menu
+    element(by.className('nav_user_auth')).click();
+}
+
+function checkInboxInUserMenu() {
+    // Provera da li se ucitao Inbox link u user meniju
+    var xxx = element.all(by.css('nav .user_menu_overlay .collection .collection-item')).get(0);
+    expect(xxx.getText()).toEqual('mail_outline\nInbox');
+}
+
+function clickOnInboxLink() {
+    // Klik na inbox link
+    element(by.partialLinkText('Inbox')).click();
+}
+
+function checkInboxURL() {
+    // Provera da li se ucitao Inbox URL
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/dm/inbox'), 5000);
+}
+
+function checkMyProfileInUserMenu() {
+    // Provera da li se ucitao My Profile link u user meniju
+    var xxx = element.all(by.css('nav .user_menu_overlay .collection .collection-item')).get(1);
+    expect(xxx.getText()).toEqual('person\nMy Profile');
+}
+
+function clickOnMyProfileLink() {
+    // Klik na My Profile link
+    element(by.partialLinkText('My Profile')).click();
+}
+
+function checkMyProfileURL() {
+    // Provera da li se ucitao My Profile URL
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/users/view/e340806a-b6fd-4fe2-8f52-7858e3ad5408'), 5000);
+}
+
+function checkOrgLinkInUserMenu() {
+    // Provera da li se ucitao Org link u user meniju
+    var xxx = element.all(by.css('nav .user_menu_overlay .collection .collection-item')).get(2);
+    expect(xxx.getText()).toEqual('account_balance\nBank of Chicago');
+}
+
+function clickOnMyOrgLink() {
+    // Klik na My ORg link
+    element(by.partialLinkText('Bank of Chicago')).click();
+}
+
+function checkMyOrgURL() {
+    // Provera da li se ucitao My Org URL
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/fis/view/83b7fdaf-7b6f-4934-bca4-a235a725c1af'), 5000);
+}
+
+function checkAccountSettingsInUserMenu() {
+    // Provera da li se ucitao Account Settings link u user meniju
+    var xxx = element.all(by.css('nav .user_menu_overlay .collection .collection-item')).get(3);
+    expect(xxx.getText()).toEqual('settings\nAccount Settings');
+}
+
+function clickOnAccountSettingsLink() {
+    // Klik na Account Settings link
+    element(by.partialLinkText('Account Settings')).click();
+}
+
+function checkAccountSettingsURL() {
+    // Provera da li se ucitao Account Settings URL
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/membership/profile/'), 5000);
+}
+
+function checkSignOutUserMenu() {
+    // Provera da li se ucitao sign out link u user meniju
+    var xxx = element.all(by.css('nav .user_menu_overlay .collection .collection-item')).get(4);
+    expect(xxx.getText()).toEqual('keyboard_tab\nSign out');
 }
 
 function checkForYouInSideMenu() {
@@ -182,6 +269,7 @@ function checkCreateDiscussionURL() {
     var EC = protractor.ExpectedConditions;
     browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/discussions/create'), 5000);
 }
+// ovde se zavrsavaju cekeri za side menu i search u headeru
 
 function checkPollHeader() {
     // Provera da li se poll header ucitao
@@ -223,6 +311,21 @@ module.exports = {
     landOnDocsLibraryPage,
     checkPageTitle,
     checkBreadcrumbs,
+    checkUserAvatarInHeader,
+    clickOnUserAvatarToOpenDropMenu,
+    checkInboxInUserMenu,
+    clickOnInboxLink,
+    checkInboxURL,
+    checkMyProfileInUserMenu,
+    clickOnMyProfileLink,
+    checkMyProfileURL,
+    checkOrgLinkInUserMenu,
+    clickOnMyOrgLink,
+    checkMyOrgURL,
+    checkAccountSettingsInUserMenu,
+    clickOnAccountSettingsLink,
+    checkAccountSettingsURL,
+    checkSignOutUserMenu,
     checkSearchInHeader,
     clickOnSearchField,
     checkSearchURL,

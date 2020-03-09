@@ -19,7 +19,7 @@ function checkDocTitle(){
 function checkTopics(){
     // Provera da li su se ucitali topici u kartici
     var xxx = element(by.className('tags'));
-    expect(xxx.getText()).toEqual('Topics: Testing, Stress Testing');
+    expect(xxx.getText()).toEqual('Topics: Stress Testing, Testing');
 }
 
 function checkUserAvatar() {
@@ -102,7 +102,7 @@ function checkTopicURL() {
 
  function landOnDocDetailsPage() {
     // Dolazak na Documents details page
-    browser.get('https://qa.cbancnetwork.com/community/documents/view/a271d842-ae40-481b-9327-54c1c56c8f53?q=laqasadipapel'); 
+    browser.get('https://qa.cbancnetwork.com/community/documents/view/06aaf193-f96c-48b6-8a5f-ae09e1ae0bb4?q=laqasadipapel'); 
 }
 
 function clickOnDirectMessageLink(){

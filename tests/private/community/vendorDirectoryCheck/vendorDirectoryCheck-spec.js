@@ -1,26 +1,27 @@
 var vendorDirectoryCheck = require('./vendorDirectoryCheck-po.js');
 var docLibraryCheck = require('../docLibraryCheck/docLibraryCheck-po.js');
 
-describe('Provera vendor directory page', function(){
+describe('Provera vendor directory page', function () {
 
-    beforeAll(function(){
+    beforeAll(function () {
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
-    }); 
+    });
 
-    it('Dolazak na vendor directory page', function(){
+    it('Dolazak na vendor directory page', function () {
         vendorDirectoryCheck.landOnVendorDirectoryPage();
         browser.sleep(3000);
     });
 
-    it('Provera page title', function(){
+    it('Provera page title', function () {
         vendorDirectoryCheck.checkPageTitle();
     });
 
-    it('Provera da li se ucitao breadcrumbs', function(){
+    it('Provera da li se ucitao breadcrumbs', function () {
         vendorDirectoryCheck.checkBreadcrumbs();
     });
 
-    it('Provera da li se ucitao search u headeru', function(){
+    // cekeri za side menu i search u headeru
+    it('Provera da li se placeholder in search field u headeru', function () {
         docLibraryCheck.checkSearchInHeader();
     });
 
@@ -34,6 +35,104 @@ describe('Provera vendor directory page', function(){
         browser.navigate().back();
         browser.sleep(1000);
     });
+
+    it('Provera da li je dobar default avatar in header', function () {
+        docLibraryCheck.checkUserAvatarInHeader();
+    });
+
+    it('Klik na user avatar da otvorimo user menu', function () {
+        docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
+    });
+
+    it('Provera da li se ucitao Inbox link u user meniju', function () {
+        docLibraryCheck.checkInboxInUserMenu();
+    });
+
+    it('Klik na Inbox link', function () {
+        docLibraryCheck.clickOnInboxLink();
+        browser.getAllWindowHandles().then(function (handles) {
+            browser.switchTo().window(handles[1]);
+        });
+    });
+
+    it('Provera da li se ucitao Inbox URL', function () {
+        docLibraryCheck.checkInboxURL();
+        browser.getAllWindowHandles().then(function (handles) {
+            browser.driver.close();
+            browser.driver.switchTo().window(handles[0]);
+        });
+        browser.sleep(2000);
+    });
+
+    it('Klik na user avatar da otvorimo user menu', function () {
+        docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
+    });
+
+    it('Provera da li se ucitao My Profile link u user meniju', function () {
+        docLibraryCheck.checkMyProfileInUserMenu();
+    });
+
+    it('Klik na My Profile link', function () {
+        docLibraryCheck.clickOnMyProfileLink();
+        browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao My Profile URL', function () {
+        docLibraryCheck.checkMyProfileURL();
+        browser.navigate().back();
+        browser.sleep(1000);
+    });
+
+    it('Klik na user avatar da otvorimo user menu', function () {
+        docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
+    });
+
+    it('Provera da li se ucitao Org link u user meniju', function () {
+        docLibraryCheck.checkOrgLinkInUserMenu();
+    });
+
+    it('Klik na My org link', function () {
+        docLibraryCheck.clickOnMyOrgLink();
+        browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao org URL', function () {
+        docLibraryCheck.checkMyOrgURL();
+        browser.navigate().back();
+        browser.sleep(1000);
+    });
+
+    it('Klik na user avatar da otvorimo user menu', function () {
+        docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
+    });
+
+    it('Provera da li se ucitao Account Settings link u user meniju', function () {
+        docLibraryCheck.checkAccountSettingsInUserMenu();
+    });
+
+    it('Klik na Account Settings link', function () {
+        docLibraryCheck.clickOnAccountSettingsLink();
+        browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Account Settings URL', function () {
+        docLibraryCheck.checkAccountSettingsURL();
+        browser.navigate().back();
+        browser.sleep(1000);
+    });
+
+    it('Klik na user avatar da otvorimo user menu', function () {
+        docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
+    });
+
+    it('Provera da li se ucitao sign out link u user meniju', function () {
+        docLibraryCheck.checkSignOutUserMenu();
+    });
+
+    it('Klik na user avatar da zatvorimo user menu', function () {
+        docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
+    });
+
 
     it('Provera da li se ucitao FOR YOU link u side meniju', function () {
         docLibraryCheck.checkForYouInSideMenu();
@@ -69,12 +168,12 @@ describe('Provera vendor directory page', function(){
         docLibraryCheck.checkDocumentLibraryInSideMenu();
     });
 
-    it('Klik na Document Library link link', function(){
+    it('Klik na Document Library link link', function () {
         docLibraryCheck.clickOnDocumentLibraryLink();
         browser.sleep(1000);
     });
 
-    it('Provera da li se ucitao Document Library URL', function(){
+    it('Provera da li se ucitao Document Library URL', function () {
         docLibraryCheck.checkDocumentLibraryURL();
         browser.navigate().back();
         browser.sleep(1000);
@@ -159,24 +258,26 @@ describe('Provera vendor directory page', function(){
         browser.navigate().back();
         browser.sleep(1000);
     });
+    // ovde se zavrsavaju cekeri za side menu i search u headeru
 
-    it('Provera da li se Featured title ucitao', function(){
+
+    it('Provera da li se Featured title ucitao', function () {
         vendorDirectoryCheck.checkFeaturedTitleOnPage();
     });
 
-    it('Provera prvog vendora u featured sekciji', function(){
+    it('Provera prvog vendora u featured sekciji', function () {
         vendorDirectoryCheck.checkFirstVendorInFeaturedSection();
     });
 
-    it('Provera drugog vendora u featured sekciji', function(){
+    it('Provera drugog vendora u featured sekciji', function () {
         vendorDirectoryCheck.checkSecondVendorInFeaturedSection();
     });
 
-    it('Provera treceg vendora u featured sekciji', function(){
+    it('Provera treceg vendora u featured sekciji', function () {
         vendorDirectoryCheck.checkThirdVendorInFeaturedSection();
     });
 
-        afterAll(function(){
-        browser.waitForAngularEnabled(true); 
+    afterAll(function () {
+        browser.waitForAngularEnabled(true);
     });
 });
