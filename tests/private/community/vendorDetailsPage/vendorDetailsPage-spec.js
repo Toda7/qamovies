@@ -4,6 +4,10 @@ var searchOnVendorDirectoryPage = require('../searchOnVendorDirectoryPage/search
 var followUnfollowVendor = require('../followUnfollowVendor/followUnfollowVendor-po.js');
 var docLibraryCheck = require('../docLibraryCheck/docLibraryCheck-po.js');
 
+
+docLibraryCheck.checkVendorLinkURL
+
+
 describe('Vendor details page', function () {
 
     beforeAll(function () {
@@ -24,9 +28,25 @@ describe('Vendor details page', function () {
         browser.sleep(5000);
     });
 
+    it('Provera da li je dobar vendor avatar', function () {
+        vendorDetailsPage.checkVendorAvatarImage();
+        browser.sleep(2000);
+    });
+
     it('Provera Vendor name, Urla, follow and Contact buttona na details page', function () {
         vendorDetailsPage.checkDetailsPage();
         browser.sleep(2000);
+    });
+
+    it('Klik na link ispod vendorovog imena', function () {
+        vendorDetailsPage.clickOnVendorURLLink();
+        browser.sleep(2000);
+    });
+
+    it('Provera da li se ucitao vendor link URL', function () {
+        vendorDetailsPage.checkVendorLinkURL();
+        browser.navigate().back();
+        browser.sleep(1000);
     });
 
     it('Provera da li je dobar AFT logo na vendor details page', function () {

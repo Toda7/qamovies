@@ -52,6 +52,22 @@ function count15dics() {
     expect(list.count()).toBe(15);
 }
 
+function checkVendorAvatarImage() {
+    // Provera da li je dobar vendor avatar
+    var xxx = element.all(by.tagName('img')).get(1);
+    expect(xxx.getAttribute('src')).toEqual('https://s3.amazonaws.com/cbanc/Public/education_assets/qa/ORG+AVATARS/Vendor+Mandrill.jpg');
+}
+
+function clickOnVendorURLLink(){
+    // Klik na link ispod vendorovog imena
+    element(by.partialLinkText('https://www.mandrill.com')).click();
+}
+
+function checkVendorLinkURL() {
+    // Provera da li se ucitao vendor link URL
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://www.mandrill.com/'), 5000);
+}
 
  module.exports = {
     checkDetailsPage,
@@ -63,4 +79,8 @@ function count15dics() {
     clickOnMore,
     checkMoreDetails,
     count15dics,
+    checkVendorAvatarImage,
+    clickOnVendorURLLink,
+    checkVendorLinkURL,
  }
+ 

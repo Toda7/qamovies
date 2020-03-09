@@ -14,9 +14,9 @@ exports.config = {
     //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluzi nicemu. to je samo primer)
     // ],
 
-    // login: [
-    //   './private/account/login/login-spec.js'
-    // ],
+    login: [
+      './private/account/login/login-spec.js'
+    ],
 
     // docLibraryCheck: [
     //   './private/community/docLibraryCheck/docLibraryCheck-spec.js'
@@ -38,42 +38,54 @@ exports.config = {
       './private/community/milosLogIn/login-spec.js'
     ],
 
-    loadMoreOnDocLibPage: [
-      './private/community/loadMoreOnDocLibPage/loadMoreOnDocLibPage-spec.js'
-    ],
+    // loadMoreOnDocLibPage: [
+    //   './private/community/loadMoreOnDocLibPage/loadMoreOnDocLibPage-spec.js'
+    // ],
 
-    searchOnDocLibPage: [
-      './private/community/searchOnDocLibPage/searchOnDocLibPage-spec.js'
-    ],
-
-    // poll
-    documentDetailsPage: [
-      './private/community/documentDetailsPage/documentDetailsPage-spec.js'
-    ],
+    // searchOnDocLibPage: [
+    //   './private/community/searchOnDocLibPage/searchOnDocLibPage-spec.js'
+    // ],
 
     // poll
-    anonymousDocumentDetailsPage: [
-      './private/community/anonymousDocumentDetailsPage/anonymousDocumentDetailsPage-spec.js'
-    ],
+    // documentDetailsPage: [
+    //   './private/community/documentDetailsPage/documentDetailsPage-spec.js'
+    // ],
 
-    shareDocument: [
-      './private/community/shareDocument/shareDocument-spec.js'
-    ],
+    // poll
+    // anonymousDocumentDetailsPage: [
+    //   './private/community/anonymousDocumentDetailsPage/anonymousDocumentDetailsPage-spec.js'
+    // ],
 
-    checkOptInMsgAfterDownloadDoc: [
-      './private/community/checkOptInMsgAfterDownloadDoc/checkOptInMsgAfterDownloadDoc-spec.js'
-    ],
+    // shareDocument: [
+    //   './private/community/shareDocument/shareDocument-spec.js'
+    // ],
 
-    loadMoreOnVendorDirectoryPage: [
-      './private/community/loadMoreOnVendorDirectoryPage/loadMoreOnVendorDirectoryPage-spec.js'
-    ],   
+    // checkOptInMsgAfterDownloadDoc: [
+    //   './private/community/checkOptInMsgAfterDownloadDoc/checkOptInMsgAfterDownloadDoc-spec.js'
+    // ],
+
+    // loadMoreOnVendorDirectoryPage: [
+    //   './private/community/loadMoreOnVendorDirectoryPage/loadMoreOnVendorDirectoryPage-spec.js'
+    // ],   
     
-    searchOnVendorDirectoryPage: [
-      './private/community/searchOnVendorDirectoryPage/searchOnVendorDirectoryPage-spec.js'
-    ],
+    // searchOnVendorDirectoryPage: [
+    //   './private/community/searchOnVendorDirectoryPage/searchOnVendorDirectoryPage-spec.js'
+    // ],
 
-    followUnfollowVendor: [
-      './private/community/followUnfollowVendor/followUnfollowVendor-spec.js'
+    // followUnfollowVendor: [
+    //   './private/community/followUnfollowVendor/followUnfollowVendor-spec.js'
+    // ],
+
+    // checkPollOnDocumentLibPage: [
+    //   './private/community/checkPollOnDocumentLibPage/checkPollOnDocumentLibPage-spec.js'
+    // ],
+
+    // checkPollOnHomePage: [
+    //   './private/community/checkPollOnHomePage/checkPollOnHomePage-spec.js'
+    // ],
+
+    bannersOnVendorDetailsPage: [
+      './private/community/bannersOnVendorDetailsPage/bannersOnVendorDetailsPage-spec.js'
     ],
 
   },
