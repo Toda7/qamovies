@@ -6,15 +6,11 @@ it('Dolazak na Discover stranu', function(){
     discoverPagePopular.landOnDiscoverPagePopular();
 });
 
-it('Provera subtitle-a', function(){
-    discoverPagePopular.checkSubTitleOnPage();
-});
-
 it('Provera da li je tu Popularity tab', function(){
     discoverPagePopular.checkPopularityTab();
 });
 
-it('Provera da li je tu Alphabetical tab', function(){
+it('Provera da li je tu Alphabetical Tab', function(){
     discoverPagePopular.checkAlphabeticalTab();
 });
 
@@ -30,8 +26,8 @@ it('Klik na SPACE na tastaturi', function(){
     discoverPagePopular.clickSpaceOnKeyboard();
 });
 
-it('Klik na SPACE na tastaturi', function(){
-    discoverPagePopular.clickSpaceOnKeyboard();
+it('Provera da li je tu prvih 30 topica na Popularity', function(){
+    discoverPagePopular.count30topics();
 });
     
 beforeAll(function(){
