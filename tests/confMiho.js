@@ -26,17 +26,17 @@ exports.config = {
     //   './private/community/inviteColleagues/inviteColleagues-spec.js'
     // ],
 
-    inviteColleaguesAddEmail: [
-      './private/community/inviteColleaguesAddEmail/inviteColleaguesAddEmail-spec.js'
-    ],
+    // inviteColleaguesAddEmail: [
+    //   './private/community/inviteColleaguesAddEmail/inviteColleaguesAddEmail-spec.js'
+    // ],
 
-    reputationTimelineThankLogs: [
-      './private/community/reputationTimelineThankLogs/reputationTimelineThankLogs-spec.js'
-    ],
+    // reputationTimelineThankLogs: [
+    //   './private/community/reputationTimelineThankLogs/reputationTimelineThankLogs-spec.js'
+    // ],
 
-    reputationTimelineJoinLog: [
-      './private/community/reputationTimelineJoinLog/reputationTimelineJoinLog-spec.js'
-    ],
+    // reputationTimelineJoinLogNewUser: [
+    //   './private/community/reputationTimelineJoinLogNewUsSer/reputationTimelineJoinLogNewUser-spec.js'
+    // ],
 
     reputationTimelinePage: [
       './private/community/reputationTimelinePage/reputationTimelinePage-spec.js'
