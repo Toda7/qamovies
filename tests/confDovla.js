@@ -18,8 +18,12 @@ exports.config = {
       './private/account/login/login-spec.js'
     ],
 
-    discoverPagePopular: [
-      './private/community/discoverPagePopular/discoverPagePopular-spec.js'
+    // discoverPagePopular: [
+    //   './private/community/discoverPagePopular/discoverPagePopular-spec.js'
+    // ],
+
+    discoverPageAlphabetical: [
+      './private/community/discoverPageAlphabetical/discoverPageAlphabetical-spec.js'
     ],
   },
 
