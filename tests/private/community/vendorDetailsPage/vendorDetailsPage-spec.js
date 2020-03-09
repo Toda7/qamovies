@@ -4,10 +4,6 @@ var searchOnVendorDirectoryPage = require('../searchOnVendorDirectoryPage/search
 var followUnfollowVendor = require('../followUnfollowVendor/followUnfollowVendor-po.js');
 var docLibraryCheck = require('../docLibraryCheck/docLibraryCheck-po.js');
 
-
-docLibraryCheck.checkVendorLinkURL
-
-
 describe('Vendor details page', function () {
 
     beforeAll(function () {
