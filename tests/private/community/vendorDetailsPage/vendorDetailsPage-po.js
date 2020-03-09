@@ -32,7 +32,7 @@ function checkEmployeesLink() {
 function checkAboutTitle(){
     // Provera da li se na strani nalazi About link 
     var foo = element.all(by.className('card-content')).get(1);
-    expect(foo.getText()).toEqual('About\nmore...');  
+    expect(foo.getText()).toEqual('About\nmore...\nFeatured\nMYBANNER\nMYSECONDBANNER\nMYTHIRDBANNER');  
 }
 
 function clickOnMore(){
@@ -41,15 +41,9 @@ function clickOnMore(){
 }
 
 function checkMoreDetails(){
-    // Provera da li se na strani nalazi About link 
-    var foo = element.all(by.className('card-content')).get(1);
-    expect(foo.getText()).toEqual('About\nmore...');  
-}
-
-function checkMoreDetails(){
     // Proveravanje more sekcije
     var foo = element.all(by.className('card-content')).get(1);
-    browser.wait(expect(foo.getText()).toEqual('About\nTesting mandrill123\nAddress\nNew York, TC 15434 US\nFFIEC Regulated\nYes\nOwnership\nNot Specified\nSpecialities\nlocal_offer Document Imaginglocal_offer Administration'), 5000);  
+    browser.wait(expect(foo.getText()).toEqual('About\nTesting mandrill123\nAddress\nNew York, TC 15434 US\nFFIEC Regulated\nYes\nOwnership\nNot Specified\nSpecialities\nlocal_offer Document Imaginglocal_offer Administration\nFeatured\nMYBANNER\nMYSECONDBANNER\nMYTHIRDBANNER'), 5000);  
 }
 
 function count15dics() {

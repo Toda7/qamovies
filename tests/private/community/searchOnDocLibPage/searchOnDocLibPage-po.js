@@ -47,7 +47,7 @@ function checkUserName(){
 function checkTopic(){
     // Provera da li su se ucitali topici u kartici
     var xxx = element(by.className('card-content tags'));
-    expect(xxx.getText()).toEqual('Topics: Testing, Stress Testing');
+    expect(xxx.getText()).toEqual('Topics: Stress Testing, Testing');
 }
 
 function checkViewDocumentButton(){
@@ -64,7 +64,7 @@ function clickOnDocToSeeDocDetailsPage() {
 function checkDocumentDetailsURL() {
     // Provera URLa nakon klika na doc iz rezultata
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/documents/view/a271d842-ae40-481b-9327-54c1c56c8f53?q=laqasadipapel'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/documents/view/06aaf193-f96c-48b6-8a5f-ae09e1ae0bb4?q=laqasadipapel'), 5000);
 }
 
  module.exports = {
