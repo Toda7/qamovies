@@ -14,9 +14,9 @@ exports.config = {
     //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluzi nicemu. to je samo primer)
     // ],
 
-    login: [
-      './private/account/login/login-spec.js'
-    ],
+    // login: [
+    //   './private/account/login/login-spec.js'
+    // ],
 
     // docLibraryCheck: [
     //   './private/community/docLibraryCheck/docLibraryCheck-spec.js'
@@ -84,10 +84,17 @@ exports.config = {
     //   './private/community/checkPollOnHomePage/checkPollOnHomePage-spec.js'
     // ],
 
-    bannersOnVendorDetailsPage: [
-      './private/community/bannersOnVendorDetailsPage/bannersOnVendorDetailsPage-spec.js'
-    ],
+    // bannersOnVendorDetailsPage: [
+    //   './private/community/bannersOnVendorDetailsPage/bannersOnVendorDetailsPage-spec.js'
+    // ],
 
+    // loadMoreOnVendorDetailsPage: [
+    //   './private/community/loadMoreOnVendorDetailsPage/loadMoreOnVendorDetailsPage-spec.js'
+    // ],
+
+    discussionDetailsFromVendorDetails: [
+      './private/community/discussionDetailsFromVendorDetails/discussionDetailsFromVendorDetails-spec.js'
+    ],
   },
 
   capabilities: {

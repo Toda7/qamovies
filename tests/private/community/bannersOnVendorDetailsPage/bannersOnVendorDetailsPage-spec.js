@@ -3,7 +3,7 @@ var vendorDirectoryCheck = require('../vendorDirectoryCheck/vendorDirectoryCheck
 var searchOnVendorDirectoryPage = require('../searchOnVendorDirectoryPage/searchOnVendorDirectoryPage-po.js');
 var followUnfollowVendor = require('../followUnfollowVendor/followUnfollowVendor-po.js');
 
-describe('Vendor details page', function () {
+describe('Check bannera na vendor details page', function () {
 
     beforeAll(function () {
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element

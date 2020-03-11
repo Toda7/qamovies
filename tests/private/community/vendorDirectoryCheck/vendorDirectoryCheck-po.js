@@ -46,6 +46,12 @@ function checkSecondVendorInFeaturedSection() {
     expect(xxx.getText()).toEqual('Vendor Sentry Management');
 }
 
+function checkVendorAvatarImage() {
+    // Provera da li je dobar verafin vendor avatar
+    var xxx = element.all(by.tagName('img')).get(1);
+    expect(xxx.getAttribute('src')).toEqual('https://s3.amazonaws.com/cbanc/Public/wp/2016/07/11193900/verafin.png');
+}
+
  module.exports = {
     landOnVendorDirectoryPage,
     checkPageTitle,
@@ -55,4 +61,5 @@ function checkSecondVendorInFeaturedSection() {
     checkFirstVendorInFeaturedSection,
     checkSecondVendorInFeaturedSection,
     checkThirdVendorInFeaturedSection,
+    checkVendorAvatarImage,
 }

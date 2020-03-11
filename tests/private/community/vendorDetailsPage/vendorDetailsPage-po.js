@@ -11,6 +11,17 @@ function checkAFTLogo() {
         expect(xxx.getAttribute('href')).toEqual('https://qa.cbancnetwork.com/community/associations/view/07e78be8-09cf-4917-bf67-f3e3d7a2c3c4');
 }
 
+function clickOnAFTLink() {
+    // Klik on AFT link
+    element(by.className('aft_logo')).click();
+}
+
+function checkAFTURL() {
+    // Provera da li se ucitao AFT link URL
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/associations/view/07e78be8-09cf-4917-bf67-f3e3d7a2c3c4'), 5000);
+}
+
 function checkOverviewLink() {
     //  Provera da li se na strani nalazi OVERVIEW link 
     var foo = element.all(by.className('btn-flat')).get(0);
@@ -82,5 +93,7 @@ function checkVendorLinkURL() {
     checkVendorAvatarImage,
     clickOnVendorURLLink,
     checkVendorLinkURL,
+    clickOnAFTLink,
+    checkAFTURL,
  }
  

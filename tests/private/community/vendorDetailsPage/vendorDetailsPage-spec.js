@@ -50,6 +50,17 @@ describe('Vendor details page', function () {
         browser.sleep(1000);
     });
 
+    it('Klik on AFT link', function () {
+        vendorDetailsPage.clickOnAFTLink();
+        browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao AFT link URL', function () {
+        vendorDetailsPage.checkAFTURL();
+        browser.navigate().back();
+        browser.sleep(1000);
+    });
+
     it('Provera da li se na strani nalazi Overview link', function () {
         vendorDetailsPage.checkOverviewLink();
     });
