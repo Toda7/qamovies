@@ -92,9 +92,34 @@ exports.config = {
     //   './private/community/loadMoreOnVendorDetailsPage/loadMoreOnVendorDetailsPage-spec.js'
     // ],
 
-    discussionDetailsFromVendorDetails: [
-      './private/community/discussionDetailsFromVendorDetails/discussionDetailsFromVendorDetails-spec.js'
+    // discussionDetailsFromVendorDetails: [
+    //   './private/community/discussionDetailsFromVendorDetails/discussionDetailsFromVendorDetails-spec.js'
+    // ],
+
+    // productsPage: [
+    //   './private/community/productsPage/productsPage-spec.js'
+    // ],
+
+    // productDetailsPage: [
+    //   './private/community/productDetailsPage/productDetailsPage-spec.js'
+    // ],
+
+    // contactVendorFromProduct: [
+    //   './private/community/contactVendorFromProduct/contactVendorFromProduct-spec.js'
+    // ],
+
+    // productDetailsPageFromSimilarProducts: [
+    //   './private/community/productDetailsPageFromSimilarProducts/productDetailsPageFromSimilarProducts-spec.js'
+    // ],
+
+    // employeesPage: [
+    //   './private/community/employeesPage/employeesPage-spec.js'
+    // ],
+
+    dmLinkFromEmployees: [
+      './private/community/dmLinkFromEmployees/dmLinkFromEmployees-spec.js'
     ],
+    
   },
 
   capabilities: {
