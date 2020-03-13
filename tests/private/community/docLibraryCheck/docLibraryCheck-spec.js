@@ -1,6 +1,4 @@
 var docLibraryCheck = require('./docLibraryCheck-po.js');
-var loadMoreOnDocLibPage = require('../loadMoreOnDocLibPage/loadMoreOnDocLibPage-po.js');
-
 
 describe('Provera document library page', function () {
 
@@ -241,14 +239,6 @@ describe('Provera document library page', function () {
         docLibraryCheck.checkFIProfessionalsURL();
         browser.navigate().back();
         browser.sleep(1000);
-    });
-
-    it('Klik na Space na tastaturi za Load More na strani', function () {
-        var step;
-        for (step = 0; step < 3; step++) {
-            loadMoreOnDocLibPage.scrollDown();
-            browser.sleep(1000);
-        }
     });
 
     it('Provera da li se START DISCUSSION button ucitao na strani', function () {
