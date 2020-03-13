@@ -14,107 +14,105 @@ exports.config = {
     //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluzi nicemu. to je samo primer)
     // ],
 
-    // login: [
-    //   './private/account/login/login-spec.js'
-    // ],
+    login: [
+      './private/account/login/login-spec.js'
+    ],
 
-    // docLibraryCheck: [
-    //   './private/community/docLibraryCheck/docLibraryCheck-spec.js'
-    // ],
+    docLibraryCheck: [
+      './private/community/docLibraryCheck/docLibraryCheck-spec.js'
+    ],
 
-    // vendorDirectoryCheck: [
-    //   './private/community/vendorDirectoryCheck/vendorDirectoryCheck-spec.js'
-    // ],   
+    vendorDirectoryCheck: [
+      './private/community/vendorDirectoryCheck/vendorDirectoryCheck-spec.js'
+    ],   
 
-    // vendorDetailsPage: [
-    //   './private/community/vendorDetailsPage/vendorDetailsPage-spec.js'
-    // ],
+    vendorDetailsPage: [
+      './private/community/vendorDetailsPage/vendorDetailsPage-spec.js'
+    ],
 
-    // logOut: [
-    //   './private/education/logOutAsAdmin/logOutAsAdmin-spec.js'
-    // ],
+    logOut: [
+      './private/education/logOutAsAdmin/logOutAsAdmin-spec.js'
+    ],
 
     miloslogin: [
       './private/community/milosLogIn/login-spec.js'
     ],
 
-    // loadMoreOnDocLibPage: [
-    //   './private/community/loadMoreOnDocLibPage/loadMoreOnDocLibPage-spec.js'
-    // ],
+    loadMoreOnDocLibPage: [
+      './private/community/loadMoreOnDocLibPage/loadMoreOnDocLibPage-spec.js'
+    ],
 
-    // searchOnDocLibPage: [
-    //   './private/community/searchOnDocLibPage/searchOnDocLibPage-spec.js'
-    // ],
+    searchOnDocLibPage: [
+      './private/community/searchOnDocLibPage/searchOnDocLibPage-spec.js'
+    ],
 
-    // poll
-    // documentDetailsPage: [
-    //   './private/community/documentDetailsPage/documentDetailsPage-spec.js'
-    // ],
+    documentDetailsPage: [
+      './private/community/documentDetailsPage/documentDetailsPage-spec.js'
+    ],
 
-    // poll
-    // anonymousDocumentDetailsPage: [
-    //   './private/community/anonymousDocumentDetailsPage/anonymousDocumentDetailsPage-spec.js'
-    // ],
+    anonymousDocumentDetailsPage: [
+      './private/community/anonymousDocumentDetailsPage/anonymousDocumentDetailsPage-spec.js'
+    ],
 
-    // shareDocument: [
-    //   './private/community/shareDocument/shareDocument-spec.js'
-    // ],
+    shareDocument: [
+      './private/community/shareDocument/shareDocument-spec.js'
+    ],
 
-    // checkOptInMsgAfterDownloadDoc: [
-    //   './private/community/checkOptInMsgAfterDownloadDoc/checkOptInMsgAfterDownloadDoc-spec.js'
-    // ],
+    checkOptInMsgAfterDownloadDoc: [
+      './private/community/checkOptInMsgAfterDownloadDoc/checkOptInMsgAfterDownloadDoc-spec.js'
+    ],
 
-    // loadMoreOnVendorDirectoryPage: [
-    //   './private/community/loadMoreOnVendorDirectoryPage/loadMoreOnVendorDirectoryPage-spec.js'
-    // ],   
+    loadMoreOnVendorDirectoryPage: [
+      './private/community/loadMoreOnVendorDirectoryPage/loadMoreOnVendorDirectoryPage-spec.js'
+    ],   
     
-    // searchOnVendorDirectoryPage: [
-    //   './private/community/searchOnVendorDirectoryPage/searchOnVendorDirectoryPage-spec.js'
-    // ],
+    searchOnVendorDirectoryPage: [
+      './private/community/searchOnVendorDirectoryPage/searchOnVendorDirectoryPage-spec.js'
+    ],
 
-    // followUnfollowVendor: [
-    //   './private/community/followUnfollowVendor/followUnfollowVendor-spec.js'
-    // ],
+    followUnfollowVendor: [
+      './private/community/followUnfollowVendor/followUnfollowVendor-spec.js'
+    ],
 
-    // checkPollOnDocumentLibPage: [
-    //   './private/community/checkPollOnDocumentLibPage/checkPollOnDocumentLibPage-spec.js'
-    // ],
+    checkPollOnDocumentLibPage: [
+      './private/community/checkPollOnDocumentLibPage/checkPollOnDocumentLibPage-spec.js'
+    ],
 
-    // checkPollOnHomePage: [
-    //   './private/community/checkPollOnHomePage/checkPollOnHomePage-spec.js'
-    // ],
+    checkPollOnHomePage: [
+      './private/community/checkPollOnHomePage/checkPollOnHomePage-spec.js'
+    ],
 
-    // bannersOnVendorDetailsPage: [
-    //   './private/community/bannersOnVendorDetailsPage/bannersOnVendorDetailsPage-spec.js'
-    // ],
+    bannersOnVendorDetailsPage: [
+      './private/community/bannersOnVendorDetailsPage/bannersOnVendorDetailsPage-spec.js'
+    ],
 
-    // loadMoreOnVendorDetailsPage: [
-    //   './private/community/loadMoreOnVendorDetailsPage/loadMoreOnVendorDetailsPage-spec.js'
-    // ],
+    loadMoreOnVendorDetailsPage: [
+      './private/community/loadMoreOnVendorDetailsPage/loadMoreOnVendorDetailsPage-spec.js'
+    ],
 
-    // discussionDetailsFromVendorDetails: [
-    //   './private/community/discussionDetailsFromVendorDetails/discussionDetailsFromVendorDetails-spec.js'
-    // ],
+    discussionDetailsFromVendorDetails: [
+      './private/community/discussionDetailsFromVendorDetails/discussionDetailsFromVendorDetails-spec.js'
+    ],
 
-    // productsPage: [
-    //   './private/community/productsPage/productsPage-spec.js'
-    // ],
+    productsPage: [
+      './private/community/productsPage/productsPage-spec.js'
+    ],
 
-    // productDetailsPage: [
-    //   './private/community/productDetailsPage/productDetailsPage-spec.js'
-    // ],
+    productDetailsPage: [
+      './private/community/productDetailsPage/productDetailsPage-spec.js'
+    ],
 
-    // contactVendorFromProduct: [
-    //   './private/community/contactVendorFromProduct/contactVendorFromProduct-spec.js'
-    // ],
+    contactVendorFromProduct: [
+      './private/community/contactVendorFromProduct/contactVendorFromProduct-spec.js'
+    ],
 
-    // productDetailsPageFromSimilarProducts: [
-    //   './private/community/productDetailsPageFromSimilarProducts/productDetailsPageFromSimilarProducts-spec.js'
-    // ],
+    productDetailsPageFromSimilarProducts: [
+      './private/community/productDetailsPageFromSimilarProducts/productDetailsPageFromSimilarProducts-spec.js'
+    ],
 
-    // employeesPage: [
-    //   './private/community/employeesPage/employeesPage-spec.js'
-    // ],
+    employeesPage: [
+      './private/community/employeesPage/employeesPage-spec.js'
+    ],
 
     dmLinkFromEmployees: [
       './private/community/dmLinkFromEmployees/dmLinkFromEmployees-spec.js'

@@ -4,7 +4,7 @@ var searchOnVendorDirectoryPage = require('../searchOnVendorDirectoryPage/search
 var followUnfollowVendor = require('../followUnfollowVendor/followUnfollowVendor-po.js');
 var employeesPage = require('../employeesPage/employeesPage-po.js');
 
-describe('EmployeesPage page', function () {
+describe('Click on DM link from employees page', function () {
 
     beforeAll(function () {
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element

@@ -272,33 +272,6 @@ describe('Provera document library page', function () {
         browser.sleep(1000);
     });
 
-    // ovo treba u odvojeni test
-    // it('Provera da li se poll header ucitao', function () {
-    //     docLibraryCheck.checkPollHeader();
-    //     browser.switchTo().frame(element(by.tagName('iframe')).getWebElement());
-    //     browser.sleep(5000);
-    // });
-
-    // it('Provera da li se poll title ucitao', function () {
-    //     docLibraryCheck.checkPollTitle();
-    // });
-
-    // it('Provera da li se ucitalo prvo pitanje', function () {
-    //     docLibraryCheck.checkFirstQuestion();
-    // });
-
-    // it('Provera da li se prvi radio button u prvom pitanju', function () {
-    //     docLibraryCheck.checkFirstRadioButton();
-    // });
-
-    // it('Provera da li se ucitalo trece pitanje', function () {
-    //     docLibraryCheck.checkThirdQuestion();
-    // });
-
-    // it('Provera da li se ucitalo sesti radio button u trecem pitanju', function () {
-    //     docLibraryCheck.checkRadioButtonInThirdQuestion();
-    // });
-
     afterAll(function () {
         browser.waitForAngularEnabled(true);
     });
