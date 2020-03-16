@@ -8,14 +8,17 @@ describe('Sorting by product name in truglo', function(){
 
     it(' Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(3000);
     });
 
     it('Klik on link from navigation menu', function(){
         testSortingByName.clickOnLinkInNavMenu();
+        browser.sleep(2000);
     });
 
     it('Provera da li se ucitao FIREARM-HUNTING URL', function(){
         testSortingByName.checkFireamHuntingURL();
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao FIREARM-HUNTING page title', function(){
@@ -32,6 +35,7 @@ describe('Sorting by product name in truglo', function(){
 
     it('Klik na 2 page in pagination', function(){
         testSortingByName.clickOn2PageFromPagination();
+        browser.sleep(3000);
     });
 
     it('Provera da li se ucitao product na 2 strani', function(){
@@ -44,6 +48,7 @@ describe('Sorting by product name in truglo', function(){
 
     it('Klik na 1 page in pagination', function(){
         testSortingByName.clickOn1PageFromPagination();
+        browser.sleep(3000);
     });
 
     it('Klik na sort', function(){
@@ -52,6 +57,7 @@ describe('Sorting by product name in truglo', function(){
 
     it('Select Product name za sorting', function(){
         testSortingByName.selectProductNameToSort();
+        browser.sleep(2000);
     });
 
     it('Provera da li se ucitao URL sa parametrom za product name za sorting', function(){
@@ -64,6 +70,7 @@ describe('Sorting by product name in truglo', function(){
 
     it('Klik na 2 page in pagination', function(){
         testSortingByName.clickOn2PageFromPagination();
+        browser.sleep(3000);
     });
 
     it('Provera da li se ucitao product na strani', function(){
