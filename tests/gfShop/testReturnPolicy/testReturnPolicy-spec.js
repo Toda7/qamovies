@@ -11,18 +11,22 @@ describe('Test return policy', function(){
 
     it('Dolazak na shop home page', function(){
         testReturnPolicy.landOnTrugloPage();
+        browser.sleep(6000);
     });
 
     it('Klik on link from navigation menu', function(){
         testSortingByName.clickOnLinkInNavMenu();
+        browser.sleep(4000);
     });
 
     it('Vracanje na home page', function(){
         testReturnPolicy.landOnTrugloPage();
+        browser.sleep(5000);
     });
 
     it('Klik on Return policy link from footer', function(){
         testReturnPolicy.clickOnReturnPolicyLink();
+        browser.sleep(5000);
     });
 
     it('Provera da li se uctao text iz cockpita u return policy window', function(){
@@ -35,10 +39,12 @@ describe('Test return policy', function(){
 
     it('Ucitanje product page da bi proverili return policy', function(){
         testReturnPolicy.landOnProductPage();
+        browser.sleep(5000);
     });
 
     it('Klik on Return policy link from footer on product page', function(){
         testReturnPolicy.clickOnReturnPolicyLink();
+        browser.sleep(5000);
     });
 
     it('Provera da li se uctao text iz cockpita u return policy window', function(){
@@ -51,10 +57,12 @@ describe('Test return policy', function(){
 
     it('Ucitanje my account page da bi proverili return policy', function(){
         testReturnPolicy.landOnMyAccountPage();
+        browser.sleep(5000);
     });
 
     it('Klik on Return policy link from footer on my account page', function(){
         testReturnPolicy.clickOnReturnPolicyLink();
+        browser.sleep(5000);
     });
 
     it('Provera da li se uctao text iz cockpita u return policy window', function(){

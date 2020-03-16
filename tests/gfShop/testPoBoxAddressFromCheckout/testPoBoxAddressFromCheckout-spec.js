@@ -9,6 +9,7 @@ describe('Test PO box address from checkout', function(){
     }); 
     it('Dolazak na product details', function(){
         testPoBoxAddressFromCheckout.lendOnProductDetails();
+        browser.sleep(5000);
     });
 
     it('Klik na Add To Cart', function () {
@@ -18,41 +19,51 @@ describe('Test PO box address from checkout', function(){
 
     it('Otvori mini korpu', function () {
         testTwentyProductsOrder.openMiniCart();
+        browser.sleep(2000);
     });
 
     it('Klik na View And Edit Cart', function () {
         testTwentyProductsOrder.clickViewAndEditCart();
+        browser.sleep(2000);
     });
 
     it('Klik na Proceed to Checkout dugme', function () {
         testTwentyProductsOrder.clickProceedToCheckout();
+        browser.sleep(5000);
     });
 
     it('Klik on NEW ADDRESS button', function () {
         testPoBoxAddressFromCheckout.clickOnNewAddressButton();
+        browser.sleep(2000);
     });
 
     it('Unesi Street', function () {
         testPoBoxAddressFromCheckout.enterStreet();
+        browser.sleep(2000);
     });
 
     it('Unesi city', function () {
         testPoBoxAddressFromCheckout.enterCity();
+        browser.sleep(1000);
     });
     it('Klik to select option from state drop', function () {
         testPoBoxAddressFromCheckout.clickToSelectProvince();
+        browser.sleep(4000);
     });
 
     it('Unesi zip', function () {
         testPoBoxAddressFromCheckout.enterZip();
+        browser.sleep(2000);
     });
 
     it('Unesi phone number', function () {
         testPoBoxAddressFromCheckout.enterPhoneNumber();
+        browser.sleep(2000);
     });
 
     it('Klik on SAVE NEW ADDRESS button', function () {
         testPoBoxAddressFromCheckout.clickOnSaveNewAddressButton();
+        browser.sleep(7000);
     });
 
     it('Provera da li se pojavila restricted message ', function () {

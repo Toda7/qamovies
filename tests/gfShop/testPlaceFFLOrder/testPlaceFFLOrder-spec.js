@@ -8,26 +8,32 @@ describe('Narucivanje FFL ordera', function(){
 
     it('Dolazak u weatherby shop na product details page', function(){
         testPlaceFFLOrder.landOnWeatherbyPage();
+        browser.sleep(2000);
     });
 
     it('Klik to open drop options', function(){
         testPlaceFFLOrder.clickToOpenDrop();
+        browser.sleep(3000);
     });
 
     it('Select option', function(){
         testPlaceFFLOrder.selectOptionFromDrop();
+        browser.sleep(1000);
     });
 
     it('Klik na add to cart button', function(){
         testPlaceFFLOrder.clickOnAddToCart();
+        browser.sleep(2000);
     });
 
     it('Klik to open mini cart', function(){
         testPlaceFFLOrder.clickToOpenCart();
+        browser.sleep(2000);
     });
 
     it('Klik to go to checkout page', function(){
         testPlaceFFLOrder.clickToGoToCheckoutPage();
+        browser.sleep(7000);
     });
 
     it('Provera da li se uctao title on checkout page', function(){
@@ -41,10 +47,12 @@ describe('Narucivanje FFL ordera', function(){
 
     it('Enter zip in search field', function(){
         testPlaceFFLOrder.enterZipInSearchField();
+        browser.sleep(3000);
     });
 
     it('Klik on Search page', function(){
         testPlaceFFLOrder.clickOnSearchButton();
+        browser.sleep(5000);
     });
 
     it('Klik to select dealer from the list', function(){
@@ -53,10 +61,12 @@ describe('Narucivanje FFL ordera', function(){
 
     it('Klik on Next button', function(){
         testPlaceFFLOrder.clickOnNextButton();
+        browser.sleep(5000);
     });
 
     it('Klik on PLACE ORDER button', function(){
         testPlaceFFLOrder.clickOnOrderButton();
+        browser.sleep(5000);
     });
 
     it('Provera da li se uctao Thanks title on Success page', function(){

@@ -9,6 +9,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Hunts By Region', function(){
@@ -25,6 +27,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Klik on Hunts By Species', function(){
@@ -41,6 +45,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Klik on Fishing By Region', function(){
@@ -57,6 +63,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Fishing By species', function(){
@@ -73,6 +81,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Outdoor News Advice', function(){
@@ -89,6 +99,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Hunting Videos', function(){
@@ -105,6 +117,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Guidefitter Giveaways', function(){
@@ -121,6 +135,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Resources', function(){
@@ -137,6 +153,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Obtain a Hunting License', function(){
@@ -154,6 +172,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Brag a Hunting or Fishing Photo', function(){
@@ -167,6 +187,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Create post on the Community feed', function(){
@@ -183,6 +205,8 @@ describe('Footer links', function () {
 
     it(' Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Ask a Question', function(){
@@ -199,6 +223,8 @@ describe('Footer links', function () {
 
     it(' Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on insiders', function(){
@@ -215,6 +241,8 @@ describe('Footer links', function () {
 
     it(' Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Save Money On Gear ', function(){
@@ -231,6 +259,8 @@ describe('Footer links', function () {
 
     it(' Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Invite an Insider', function(){
@@ -247,6 +277,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Create a Free Outfitter Page', function(){
@@ -263,6 +295,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Promote Your Skills', function(){
@@ -280,6 +314,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Help', function(){
@@ -297,6 +333,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Promote Your Pro Program', function(){
@@ -313,6 +351,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on About Us', function(){
@@ -330,6 +370,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Company News', function(){
@@ -347,6 +389,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Contact Guidefitter', function(){
@@ -363,6 +407,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Advertise In Our Journal', function(){
@@ -379,6 +425,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Legal', function(){
@@ -399,6 +447,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on instagram icon', function(){
@@ -483,6 +533,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
 
