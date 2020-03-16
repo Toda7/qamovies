@@ -22,7 +22,7 @@ function lendOnProductDetails(){
 
 function clickOnPoBoxAddress() {
    // Klik on restricted address to select it
-   element.all(by.className('action action-select-shipping-item')).get(3).click();
+   element.all(by.className('action action-select-shipping-item')).last().click();
    browser.sleep(5000);
 }
 

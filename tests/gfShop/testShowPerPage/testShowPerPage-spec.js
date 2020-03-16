@@ -2,7 +2,7 @@ var testShowPerPage = require('./testShowPerPage-po.js');
 var testSortingByName = require('../testSortingByName/testSortingByName-po.js');
 
 
-describe('Test Show 12/24 Per Page', function(){
+describe('Test Show 12 and 24 Per Page', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
@@ -10,10 +10,12 @@ describe('Test Show 12/24 Per Page', function(){
 
     it(' Dolazak na shop home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(3000);
     });
 
     it('Klik on link from navigation menu', function(){
         testSortingByName.clickOnLinkInNavMenu();
+        browser.sleep(3000);
     });
 
     it('Provera da li se ucitao FIREARM-HUNTING URL', function(){
@@ -30,6 +32,7 @@ describe('Test Show 12/24 Per Page', function(){
 
     it('Klik to select show 24 per page', function(){
         testShowPerPage.clickToSelectShow24PerPage();
+        browser.sleep(3000);
     });
 
     it('Provera koliko imamo items nakon koriscenja Show Per Page option', function(){
@@ -42,6 +45,7 @@ describe('Test Show 12/24 Per Page', function(){
 
     it('Klik to select show 9 per page', function(){
         testShowPerPage.clickToSelectShow9PerPage();
+        browser.sleep(3000);
     });
 
     it('Provera koliko imamo items nakon koriscenja Show 9 Per Page option', function(){

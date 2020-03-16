@@ -14,6 +14,7 @@ describe('Provera da li se Zendesk nalazi na strani', function(){
 
    it(' Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(3000);
     });
     
     it('Klik on Zendesk to open form on home page', function(){
@@ -23,11 +24,12 @@ describe('Provera da li se Zendesk nalazi na strani', function(){
 
     it('Klik to open user menu', function(){
         testAddNewAddress.clickToOpenUserMenu();
+        browser.sleep(2000);
     });
 
     it('Klik on my account from user menu', function(){
         testAddNewAddress.clickOnMyAccountLink();
-        browser.sleep(2000);
+        browser.sleep(3000);
     });
 
     it('Klik on Zendesk to open form on my account page', function(){

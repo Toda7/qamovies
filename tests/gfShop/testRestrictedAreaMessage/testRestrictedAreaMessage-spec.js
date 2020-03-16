@@ -84,6 +84,7 @@ describe('Test restricted area message', function(){
 
     it('Dolazak na product details', function(){
         testRestrictedAreaMessage.lendOnProductThatHasRestricted();
+        browser.sleep(2000);
     });
 
     it('Dodaj prvi proizvod u korpu', function () {
@@ -108,7 +109,6 @@ describe('Test restricted area message', function(){
 
     it('Klik on restricted address to select it', function () {
         testRestrictedAreaMessage.clickOnRestrictedAddress();
-        browser.sleep(7000);
     });
 
     it('Provera da li se pojavila restricted message', function () {
