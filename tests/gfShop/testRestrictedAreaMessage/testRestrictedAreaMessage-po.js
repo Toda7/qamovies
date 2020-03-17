@@ -21,7 +21,7 @@ function lendOnProductThatHasRestricted(){
 
 function clickOnRestrictedAddress() {
    // Klik on restricted address to select it
-   element.all(by.className('action action-select-shipping-item')).get(3).click();
+   element.all(by.className('action action-select-shipping-item')).last().click();
 }
 
 function checkRestrictedMessage(){ 
@@ -33,7 +33,7 @@ browser.wait(EC.textToBePresentInElement($('.message.message-error.error'), 'Res
 
 function clickOnDeletetLink() {
    // Klik on delete link for address
-   element.all(by.partialLinkText('DELETE ADDRESS')).get(2).click();
+   element.all(by.partialLinkText('DELETE ADDRESS')).last().click();
 }
 
  module.exports = {

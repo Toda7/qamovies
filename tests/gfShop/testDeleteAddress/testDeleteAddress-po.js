@@ -12,7 +12,7 @@ function checkBoxContent2() {
 
 function clickOnDeletetLink() {
    // Klik on delete link for address
-   element.all(by.className('action delete')).get(2).click();
+   element.all(by.className('action delete')).last().click();
    browser.sleep(3000);
 }
 
