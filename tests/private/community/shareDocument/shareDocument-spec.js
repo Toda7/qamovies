@@ -30,7 +30,7 @@ describe('Share document form', function(){
 
     it('Klik na Send dugme', function(){
         shareDocument.clickOnSendButton();
-        browser.sleep(5000);
+        browser.sleep(1000);
     });
 
     it('Provera snackbar poruke za invalid email', function(){
