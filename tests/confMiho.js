@@ -17,29 +17,87 @@ exports.config = {
     login: [
       './private/account/login/login-spec.js'
     ],
+    
+    // inviteColleaguesAddEmail test ide ispod testa inviteColleagues
 
-    // searchTopic: [
-    //   './private/community/searchTopic/searchTopic-spec.js'
-    // ],
-
-    // inviteColleagues: [
-    //   './private/community/inviteColleagues/inviteColleagues-spec.js'
-    // ],
-
-    // inviteColleaguesAddEmail: [
-    //   './private/community/inviteColleaguesAddEmail/inviteColleaguesAddEmail-spec.js'
-    // ],
-
-    // reputationTimelineThankLogs: [
-    //   './private/community/reputationTimelineThankLogs/reputationTimelineThankLogs-spec.js'
-    // ],
-
-    // reputationTimelineJoinLogNewUser: [
-    //   './private/community/reputationTimelineJoinLogNewUsSer/reputationTimelineJoinLogNewUser-spec.js'
-    // ],
+    inviteColleaguesAddEmail: [
+      './private/community/inviteColleaguesAddEmail/inviteColleaguesAddEmail-spec.js'
+    ],
 
     reputationTimelinePage: [
       './private/community/reputationTimelinePage/reputationTimelinePage-spec.js'
+    ],
+
+    reputationTimelineLoadMore: [
+      './private/community/reputationTimelineLoadMore/reputationTimelineLoadMore-spec.js'
+    ],
+
+    reputationTimelineThankLogs: [
+      './private/community/reputationTimelineThankLogs/reputationTimelineThankLogs-spec.js'
+    ],
+
+    reputationTimelineJoinLogNewUser: [
+      './private/community/reputationTimelineJoinLogNewUsSer/reputationTimelineJoinLogNewUser-spec.js'
+    ],
+
+    reputationLeaderboardPage: [
+      './private/community/reputationLeaderboardPage/reputationLeaderboardPage-spec.js'
+    ],
+
+    reputationLeaderboardLoadMore: [
+      './private/community/reputationLeaderboardLoadMore/reputationLeaderboardLoadMore-spec.js'
+    ],
+
+    reputationLeaderboardNewUser: [
+      './private/community/reputationLeaderboardNewUser/reputationLeaderboardNewUser-spec.js'
+    ],
+
+    groupEdit: [
+      './private/community/groupEdit/groupEdit-spec.js'
+    ],
+
+    groupEditImageRemove: [
+      './private/community/groupEditImageRemove/groupEditImageRemove-spec.js'
+    ],
+
+    groupEditCancel: [
+      './private/community/groupEditCancel/groupEditCancel-spec.js'
+    ],
+
+    groupEditMembersTabLoadMore: [
+      './private/community/groupEditMembersTabLoadMore/groupEditMembersTabLoadMore-spec.js'
+    ],
+
+    groupEditMembersTabSearch: [
+      './private/community/groupEditMembersTabSearch/groupEditMembersTabSearch-spec.js'
+    ],
+
+    groupEditMemberCardDetails: [
+      './private/community/groupEditMemberCardDetails/groupEditMemberCardDetails-spec.js'
+    ],
+
+    groupRemoveUser: [
+      './private/community/groupRemoveUser/groupRemoveUser-spec.js'
+    ],
+
+    groupLeave: [
+      './private/community/groupLeave/groupLeave-spec.js'
+    ],
+
+    groupPageDiscussionTabLoadMore: [
+      './private/community/groupPageDiscussionTabLoadMore/groupPageDiscussionTabLoadMore-spec.js'
+    ],
+
+    groupPageMembersTabLoadMore: [
+      './private/community/groupPageMembersTabLoadMore/groupPageMembersTabLoadMore-spec.js'
+    ],
+
+    groupMemberCardDetails: [
+      './private/community/groupMemberCardDetails/groupMemberCardDetails-spec.js'
+    ],
+
+    groupInvite: [
+      './private/community/groupInvite/groupInvite-spec.js'
     ],
   },
 

@@ -1,4 +1,5 @@
 function landOnHomePage() {
+    // dolazak na dashboard
     browser.get('https://qa.cbancnetwork.com');
     browser.sleep(3000);
 }
@@ -14,19 +15,23 @@ function clickOnSignOut() {
 }
 
 function clickOnSignIn() {
+    // click na sign in
     element(by.className('sign_in')).click();
     browser.sleep(3000)
 }
 
 function enterEmail() {
+    // unos emaila
     element(by.name('email')).sendKeys('mihojoinlog1@boston.com');
 }
 
 function enterPass() {
+    // unos pasworda
     element(by.name('password')).clear().sendKeys('test1234');
 }
 
 function submit() {
+    // klik na submit
     element(by.className('auth0-label-submit')).click();
     browser.sleep(3000)
 }
@@ -34,11 +39,10 @@ function submit() {
 function landOnReputationPage() {
     // Dolazak na Reputation timeline stranu
     browser.get('https://qa.cbancnetwork.com/community/reputation');
-    browser.sleep(3000);
 }
 
 function checkJoinLog() {
-    // Provera log za thankovani document
+    // Provera log za Join novog usera
     var xxx = element(by.className('collection-item avatar'));
     expect(xxx.getText()).toEqual('miho za log\nThank you for joining CBANC Network');
 }

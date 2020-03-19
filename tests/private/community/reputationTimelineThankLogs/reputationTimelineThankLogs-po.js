@@ -1,6 +1,6 @@
 function landOnHomePage() {
+    // dolazak na dashboard
     browser.get('https://qa.cbancnetwork.com');
-    browser.sleep(3000);
 }
 
 function clickOnUserMenu() {
@@ -15,7 +15,6 @@ function clickOnSignOut() {
 
 function clickOnSignIn() {
     element(by.className('sign_in')).click();
-    browser.sleep(3000)
 }
 
 function enterEmail() {
@@ -28,19 +27,16 @@ function enterPass() {
 
 function submit() {
     element(by.className('auth0-label-submit')).click();
-    browser.sleep(3000)
 }
 
 function startDiscusionPage() {
-    // dolazak na Home stranu
+    // dolazak na start discussion stranu
     browser.get('https://qa.cbancnetwork.com/community/discussions/create');
-    browser.sleep(3000);
 }
 
 function discussionTitle() {
     // Unos texta za Discussion Title
     element(by.id('input-field title')).sendKeys('Timeline Title Miho');
-    browser.sleep(1000);
 }
 
 function discussionDesc() {
@@ -50,6 +46,7 @@ function discussionDesc() {
 }
 
 function attachDoc() {
+    // dodavanje documenta u diskusiju
     var path = require('path');
     var fileToUpload = './TextTXT.rtf',
         absolutePath = path.resolve(__dirname, fileToUpload);
@@ -102,7 +99,7 @@ function replyText() {
 }
 
 function postReply() {
-    // klik na Reply dugme
+    // klik na Post Reply dugme
     element(by.buttonText('Reply')).click();
     browser.sleep(2000);
 }
@@ -132,7 +129,7 @@ function commentText() {
 }
 
 function postComment() {
-    // klik na Comment dugme
+    // klik na post Comment dugme
     element(by.buttonText('Comment')).click();
     browser.sleep(2000);
 }
@@ -143,18 +140,22 @@ function clickOnUserMenu2() {
 }
 
 function clickOnSignOut2() {
+    // klik na sign out
     element(by.partialLinkText('Sign out')).click();
 }
 
 function enterEmail2() {
+    // unos emaila
     element(by.name('email')).sendKeys('1@chicago.com');
 }
 
 function enterPass2() {
+    // unos passworda
     element(by.name('password')).clear().sendKeys('test1234');
 }
 
 function landOnReputationPage() {
+    // dolazak na Reputation stranu
     browser.get('https://qa.cbancnetwork.com/community/reputation');
     browser.sleep(3000);
 }
@@ -177,14 +178,13 @@ function clickOnViewDiscussion() {
 }
 
 function clickOnViewDocument() {
-    // 
+    // klik na document 
     element(by.className('file_extension')).click();
 }
 
 function clickOnThank() {
-    //  Klikni na Thank dugme
+    //  Klikni na Thank comment
     element.all(by.className('text_link')).get(4).click();
-    browser.sleep(500);
 }
 
 function checkLogDocument() {
@@ -200,13 +200,23 @@ function checkLogComment() {
 }
 
 function clickOnLog() {
+    // klik na log od obrisane doskusije
     element.all(by.className('truncate')).get(3).click();
 }
 
 function checkMessage() {
+    // cekiranje poruke za obrisanu diskusiju
     var EC = protractor.ExpectedConditions;
     browser.wait(EC.textToBePresentInElement($('.card-content'), 'Thread deleted by the author.'), 5000)
 }
+
+function clickOnThank() {
+    //  Klikni na Thank dugme
+    element.all(by.cssContainingText('span.text_link', 'Thanks')).get(0).click();
+    browser.sleep(500);
+}
+
+
 
 module.exports = {
     startDiscusionPage,
@@ -248,4 +258,5 @@ module.exports = {
     checkLogComment,
     clickOnLog,
     checkMessage,
+    // clickOnThankC,
 }

@@ -1,61 +1,79 @@
-var reputationTimelinePage = require('./reputationTimelinePage-po.js');
+var reputationLeaderboardLoadMore = require('../reputationLeaderboardLoadMore/reputationLeaderboardLoadMore-po.js');
+var reputationTimelinePage = require('../reputationTimelinePage/reputationTimelinePage-po.js');
+var reputationTimelineJoinLogNewUser = require('../reputationTimelineJoinLogNewUser/reputationTimelineJoinLogNewUser-po.js');
 var loadMoreOnDocLibPage = require('../loadMoreOnDocLibPage/loadMoreOnDocLibPage-po.js');
+var reputationLeaderboardPage = require('./reputationLeaderboardPage-po.js');
 var docLibraryCheck = require('../docLibraryCheck/docLibraryCheck-po.js');
+var reputationLeaderboardNewUser = require('../reputationLeaderboardNewUser/reputationLeaderboardNewUser-po.js');
 
-describe('Cekiranje Reputation Timeline strane', function () {
+describe('Reputation Leaderborad Page link i text', function () {
 
     beforeAll(function () {
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
     });
 
-    it('Dolazak na Home stranu', function () {
-        reputationTimelinePage.landOnFIProfessionalsHome();
+    it('Dolazak na Dashboard stranu', function () {
+        reputationTimelineJoinLogNewUser.landOnHomePage();
     });
 
-    it('Klik na Reputation Timeline', function () {
-        reputationTimelinePage.clickReputationTimeline();
-        browser.sleep(3000);
-    });
-
-    it('Cekiranje Reputation Score title', function () {
-        reputationTimelinePage.repScoreTextTitle();
-        browser.sleep(1000);
-    });
-
-    it('Cekiranje Reputation Score texta 1', function () {
-        reputationTimelinePage.repScoreText1();
-        browser.sleep(1000);
-    });
-
-    it('Cekiranje Reputation Score texta 2', function () {
-        reputationTimelinePage.repScoreText2();
-        browser.sleep(1000);
-    });
-
-    it('Cekiranje Reputation Score texta 3', function () {
-        reputationTimelinePage.repScoreText3();
-        browser.sleep(1000);
-    });
-
-    it('Cekiranje Where do you rank? title', function () {
-        reputationTimelinePage.whereDoYouRankTitle();
-        browser.sleep(1000);
-    });
-
-    it('Cekiranje Where do you rank? Linka', function () {
-        reputationTimelinePage.whereDoYouRankLink();
-        browser.sleep(1000);
+    it('Idi na Reputation timeline stranu', function () {
+        reputationTimelineJoinLogNewUser.landOnReputationPage();
+        browser.sleep(2000);
     });
 
     it('Klik na Visit the Leaderborad link', function () {
         reputationTimelinePage.clickVisitTheLeaderboradLink();
-        browser.sleep(1000);
+        browser.sleep(2000);
     });
 
-    it('Cekiranje URL za Reputation Leaderboard i vracanje na Timeline stranu', function () {
-        reputationTimelinePage.checkReputationLeaderboardURL();
-        browser.navigate().back();
-        browser.sleep(1000);
+    it('Cekira da li se ucitao Reputation Leaderboard title', function () {
+        reputationLeaderboardNewUser.checkReputationLeaderboardTitle();
+        browser.sleep(2000);
+    });
+
+    it('Cekira da li se ucitao Reputation Leaderboard text1', function () {
+        reputationLeaderboardNewUser.checkReputationLeaderboardText1();
+        browser.sleep(2000);
+    });
+
+    it('Cekira da li se ucitao Reputation Leaderboard text2', function () {
+        reputationLeaderboardNewUser.checkReputationLeaderboardText2();
+        browser.sleep(2000);
+    });
+
+    it('Cekira da li se ucitao "Your Reputation" section', function () {
+        reputationLeaderboardPage.checkYourReputationSection();
+        browser.sleep(2000);
+    });
+
+    it('Cekira da li se ucitao Want To Earcn More Rep? title', function () {
+        reputationLeaderboardNewUser.checkWantToEarnMoreRepTitle();
+        browser.sleep(2000);
+    });
+
+    it('Cekira da li se ucitao Want To Earcn More Rep? text', function () {
+        reputationLeaderboardNewUser.checkWantToEarnMoreRepText();
+        browser.sleep(2000);
+    });
+
+    it('Cekira da li se ucitao Rank', function () {
+        reputationLeaderboardPage.checkRank();
+        browser.sleep(2000);
+    });
+
+    it('Cekira da li se ucitao Members', function () {
+        reputationLeaderboardPage.checkRank();
+        browser.sleep(2000);
+    });
+
+    it('Cekira da li se ucitao Score', function () {
+        reputationLeaderboardPage.checkRank();
+        browser.sleep(2000);
+    });
+
+    it('Cekira da li se ucitalo 15 usera na listi', function () {
+        reputationLeaderboardLoadMore.count15People();
+        browser.sleep(2000);
     });
 
     // cekeri za side menu i search u headeru
@@ -252,16 +270,16 @@ describe('Cekiranje Reputation Timeline strane', function () {
         browser.sleep(1000);
     });
 
-    // it('Klik na Reputation Timeline link', function () {
-    //     docLibraryCheck.clickOnReputationTimelineLink();
-    //     browser.sleep(1000);
-    // });
+    it('Klik na Reputation Timeline link', function () {
+        docLibraryCheck.clickOnReputationTimelineLink();
+        browser.sleep(1000);
+    });
 
-    // it('Provera da li se ucitao Reputation Timeline URL', function () {
-    //     docLibraryCheck.checkReputationTimelineURL();
-    //     browser.navigate().back();
-    //     browser.sleep(1000);
-    // });
+    it('Provera da li se ucitao Reputation Timeline URL', function () {
+        docLibraryCheck.checkReputationTimelineURL();
+        browser.navigate().back();
+        browser.sleep(1000);
+    });
 
     it('Klik na Invite Colleagues link', function () {
         docLibraryCheck.clickOnInviteColleagueseLink();
@@ -321,7 +339,9 @@ describe('Cekiranje Reputation Timeline strane', function () {
     });
     // ovde se zavrsavaju cekeri za side menu i search u headeru
 
+
     afterAll(function () {
         browser.waitForAngularEnabled(true);
     });
+
 });

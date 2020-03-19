@@ -11,15 +11,16 @@ describe('Reputation Timeline cekiranje Thanks logova', function () {
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
     });
 
-    it('Dolazak na Home stranu', function () {
+    it('Dolazak na Dashboard stranu', function () {
         reputationTimelineThankLogs.landOnHomePage();
+        browser.sleep(2000);
     });
 
-    it('Klik na user menu', function(){
+    it('Klik na user menu', function () {
         reputationTimelineThankLogs.clickOnUserMenu();
     });
 
-    it('Klik na Sign out', function(){
+    it('Klik na Sign out', function () {
         reputationTimelineThankLogs.clickOnSignOut();
         browser.sleep(2000);
     });
@@ -39,15 +40,17 @@ describe('Reputation Timeline cekiranje Thanks logova', function () {
 
     it('Submit', function () {
         reputationTimelineThankLogs.submit();
+        browser.sleep(3000)
     });
 
-    it('Dolazak na Home stranu', function () {
+    it('Dolazak na Start discussion stranu', function () {
         reputationTimelineThankLogs.startDiscusionPage();
         browser.sleep(2000);
     });
 
     it('Unos discusion titla', function () {
         reputationTimelineThankLogs.discussionTitle();
+        browser.sleep(1000);
     });
 
     it('Unos discusion descriptiona', function () {
@@ -69,7 +72,7 @@ describe('Reputation Timeline cekiranje Thanks logova', function () {
 
     it('Klik na View discussion', function () {
         reputationTimelineThankLogs.clickOnViewDiscussion();
-        browser.sleep(2000);
+        browser.sleep(3000);
     });
 
     it('Klik na Reply dugme', function () {
@@ -137,15 +140,18 @@ describe('Reputation Timeline cekiranje Thanks logova', function () {
 
     it('Klik na prvi rezultat', function () {
         reputationTimelineThankLogs.clickFirstResult();
-        browser.sleep(2000);
+        browser.sleep(2500);
     });
 
-    it('Klikni na Thank digme za diskusiju', function () {
+    it('Klikni na Thank dugme za diskusiju', function () {
         thankDiscussion.clickOnThank();
+        browser.sleep(3000);
     });
 
     it('Klikni na Thank dugme za Reply', function () {
-        thankReply.clickOnThank();
+
+        // ne pozivamo vise iz drugog fajla
+        reputationTimelineThankLogs.clickOnThank();
         browser.sleep(2000);
     });
 
@@ -174,14 +180,17 @@ describe('Reputation Timeline cekiranje Thanks logova', function () {
 
     it('Dolazak na Reputation page', function () {
         reputationTimelineThankLogs.landOnReputationPage();
+        browser.sleep(1000);
     });
 
     it('Chekiranje loga za Thanks na Reply', function () {
         reputationTimelineThankLogs.checkLogReply();
+        browser.sleep(1000);
     });
 
     it('Chekiranje loga za Thanks na Discussion', function () {
         reputationTimelineThankLogs.checkLogDiscussion();
+        browser.sleep(1000);
     });
 
     it('Klik na user menu', function () {
@@ -204,7 +213,7 @@ describe('Reputation Timeline cekiranje Thanks logova', function () {
 
     it('Submit', function () {
         reputationTimelineThankLogs.submit();
-        browser.sleep(2000);
+        browser.sleep(3000);
     });
 
     it('Klik na search polje', function () {
@@ -235,6 +244,7 @@ describe('Reputation Timeline cekiranje Thanks logova', function () {
 
     it('Klikni na Thank dugme za Doc', function () {
         thankDoc.thankDoc();
+        browser.sleep(2000);
     });
 
     it('Klik na user menu', function () {
@@ -262,14 +272,17 @@ describe('Reputation Timeline cekiranje Thanks logova', function () {
 
     it('Dolazak na Reputation page', function () {
         reputationTimelineThankLogs.landOnReputationPage();
+        browser.sleep(2000);
     });
 
     it('Chekiranje loga za Thanks na Document', function () {
         reputationTimelineThankLogs.checkLogDocument();
+        browser.sleep(1000);
     });
 
     it('Chekiranje loga za Thanks na Comment', function () {
         reputationTimelineThankLogs.checkLogComment();
+        browser.sleep(1000);
     });
 
     it('Klik na search polje', function () {
@@ -293,6 +306,7 @@ describe('Reputation Timeline cekiranje Thanks logova', function () {
 
     it('Klik na Delete dugme', function () {
         deleteDiscussion.clickDelete();
+        browser.sleep(1000);
     });
 
     it('Provera da li obrisana diskusija', function () {

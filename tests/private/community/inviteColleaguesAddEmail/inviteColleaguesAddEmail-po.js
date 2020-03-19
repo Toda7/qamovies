@@ -1,4 +1,5 @@
 function landOnHomePage() {
+   // dolazak na home page
     browser.get('https://qa.cbancnetwork.com/community/home'); 
     browser.sleep(2000);
 }
@@ -9,11 +10,20 @@ function clickOnAddEmailButton() {
     browser.sleep(2000);
  }
 
- function enterEmailAddress2() {
-    // Unos email adrese
-    element.all(by.css('.input-field input[type=email]')).get(3).sendKeys('atqa2@mail.com'); 
-    browser.sleep(1000);
- }
+ getRandomEmail = function () {
+    // dobijamo random email 
+   var strValues = "abcdefghijk123456789";
+   var strEmail = "";
+   for (var i = 0; i < strValues.length; i++) {
+       strEmail = strEmail + strValues.charAt(Math.round(strValues.length * Math.random()));
+   }
+   return strEmail + "@boston.com" 
+};
+
+function enterEmailAddress2() {
+   // unos random emaila u polje
+   element.all(by.css('.input-field input[type=email]')).get(3).sendKeys(getRandomEmail(5));
+}
 
  function checkSuccess(){
     // Provera da li je uspesno pozvan kolega

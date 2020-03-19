@@ -7,15 +7,15 @@ describe('Reputation Timeline cekiranje Join loga za novog usera', function () {
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
     });
 
-    it('Dolazak na Home stranu', function () {
+    it('Dolazak na Dashboardstranu', function () {
         reputationTimelineJoinLogNewUser.landOnHomePage();
     });
 
-    it('Klik na user menu', function(){
+    it('Klik na user menu', function () {
         reputationTimelineJoinLogNewUser.clickOnUserMenu();
     });
 
-    it('Klik na Sign out', function(){
+    it('Klik na Sign out', function () {
         reputationTimelineJoinLogNewUser.clickOnSignOut();
     });
 
@@ -38,6 +38,7 @@ describe('Reputation Timeline cekiranje Join loga za novog usera', function () {
 
     it('Idi na reputationtime line', function () {
         reputationTimelineJoinLogNewUser.landOnReputationPage();
+        browser.sleep(3000);
     });
 
     it('Cekiranje Join Loga', function () {
@@ -69,6 +70,10 @@ describe('Reputation Timeline cekiranje Join loga za novog usera', function () {
     it('Submit', function () {
         reputationTimelineThankLogs.submit();
         browser.sleep(2000);
+    });
+
+    afterAll(function () {
+        browser.waitForAngularEnabled(true);
     });
 
 
