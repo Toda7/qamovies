@@ -66,6 +66,11 @@ describe('Editovanje Grupe, name, description, avatar, public private', function
         browser.sleep(2000);
     });
 
+    it('Delete description text', function () {
+        groupEdit.deleteDescriptionText();
+        browser.sleep(2000);
+    });
+
     it('Unos texta u description polje', function () {
         groupEdit.editDescriptionText();
         browser.sleep(2000);
@@ -134,11 +139,6 @@ describe('Editovanje Grupe, name, description, avatar, public private', function
     it('Unos orginalnog imena grupe', function () {
         groupEdit.enterGroupNameOriginal();
         browser.sleep(1000);
-    });
-
-    it('Klik na description polje', function () {
-        groupEdit.clickOnGroupDescriptionField();
-        browser.sleep(2000);
     });
 
     it('Klik na description polje', function () {
