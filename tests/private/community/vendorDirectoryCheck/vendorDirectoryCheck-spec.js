@@ -269,6 +269,10 @@ describe('Provera vendor directory page', function () {
         vendorDirectoryCheck.checkFirstVendorInFeaturedSection();
     });
 
+    it('Provera da li je dobar verafin vendor avatar', function () {
+        vendorDirectoryCheck.checkVendorAvatarImage();
+    });
+
     it('Provera drugog vendora u featured sekciji', function () {
         vendorDirectoryCheck.checkSecondVendorInFeaturedSection();
     });

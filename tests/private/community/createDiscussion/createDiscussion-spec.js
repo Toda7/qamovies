@@ -14,8 +14,20 @@ describe('Create Discussion Action', function(){
         createDiscussion.clickOnStartDiscussion();
     });
 
+    it('Provera Select Audience title na strani', function(){
+        createDiscussion.checkSelectAudienceTitleOnPage();
+    });
+
+    it('Provera texta na strani ', function(){
+        createDiscussion.checkTextOnPage();
+    });
+
     it('Odabir grupe', function(){
         createDiscussion.selectGroup();
+    });
+
+    it('Provera da li smo izabrali dobru grupu', function(){
+        createDiscussion.checkSelectedGroup();
     });
 
     it('Discussion title', function(){
@@ -41,6 +53,39 @@ describe('Create Discussion Action', function(){
     it('Provera da li je uspesno objavljena diskusija', function(){
         createDiscussion.checkSuccess();
     });
+
+    it('Klik na View Discussion dugme', function(){
+        createDiscussion.clickOnViewDiscussion();
+    });
+
+    it('Provera title of discussion', function () {
+        createDiscussion.checkTitleOfDiscussion();
+    });
+
+    it('Provera topics of discussion', function () {
+        createDiscussion.checkTopicsOfDiscussion();
+    });
+
+    it('Provera da li se ucitao user name', function () {
+        createDiscussion.checkUserName();
+    });
+
+    it('Provera da li se ucitao user function level', function () {
+        createDiscussion.checkFunctionLevel();
+    });
+
+    it('Provera da li se ucitao org size', function () {
+        createDiscussion.checkOrgSize();
+    });
+
+    it('Provera da li se ucitao org link', function () {
+        createDiscussion.checkOrgLink();
+    });
+
+    it('Provera dokumenta u discussion card', function () {
+        createDiscussion.checkDocumentInDiscussionCard();
+    });
+
 
         afterAll(function(){
         browser.waitForAngularEnabled(true); 
