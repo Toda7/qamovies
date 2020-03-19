@@ -117,6 +117,14 @@ exports.config = {
     dmLinkFromEmployees: [
       './private/community/dmLinkFromEmployees/dmLinkFromEmployees-spec.js'
     ],
+
+    logOut: [
+      './private/education/logOutAsAdmin/logOutAsAdmin-spec.js'
+    ],
+
+    login: [
+      './private/account/login/login-spec.js'
+    ],
     
   },
 
