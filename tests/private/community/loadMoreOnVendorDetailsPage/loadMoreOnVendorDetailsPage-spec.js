@@ -30,7 +30,7 @@ describe('Load more na Vendor details strani', function(){
 
     it('Klik na Space na tastaturi za Load More na strani', function(){
         var step;
-        for (step = 0; step < 5; step++) {
+        for (step = 0; step < 6; step++) {
             loadMoreOnDocLibPage.scrollDown();
             browser.sleep(1000);
         }

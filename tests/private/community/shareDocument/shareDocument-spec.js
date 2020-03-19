@@ -16,7 +16,7 @@ describe('Share document form', function(){
 
     it('Klik on Share button', function(){
         shareDocument.clickOnShareButton();
-        browser.sleep(1000);
+        browser.sleep(2000);
     });
 
     it('Provera da li se Share title ucitao u formi', function(){
@@ -30,6 +30,7 @@ describe('Share document form', function(){
 
     it('Klik na Send dugme', function(){
         shareDocument.clickOnSendButton();
+        browser.sleep(5000);
     });
 
     it('Provera snackbar poruke za invalid email', function(){
