@@ -14,8 +14,8 @@ exports.config = {
     //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluzi nicemu. to je samo primer)
     // ],
 
-    login: [
-      './private/account/login/login-spec.js'
+    timeStampComment: [
+      './private/community/timeStampComment/timeStampComment-spec.js'
     ],
 
     discoverPagePopular: [
