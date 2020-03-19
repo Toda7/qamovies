@@ -6,10 +6,6 @@ describe('Edit diskusije', function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
     }); 
 
-    it('Klik na View Discussion dugme', function(){
-        editDiscussion.clickViewDiscussion();
-    });
-
     it('Klik na Action menu', function(){
         editDiscussion.clickAction();
     });
