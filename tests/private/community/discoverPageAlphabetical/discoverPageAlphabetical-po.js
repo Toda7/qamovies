@@ -10,6 +10,24 @@ function clickOnAlphabeticalTab() {
     browser.sleep(2000);
 }
 
+function checkFirstTopicCard() {
+    // Provera prve Topic kartice
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.textToBePresentInElement($('.card .card-content .card-title'), 'ABA'), 5000);
+}
+
+function checkSecondTopicCard() {
+    // Provera druge Topic kartice
+    var xxx = element.all(by.className('card-title')).get(1);
+    expect(xxx.getText()).toEqual('Ability To Pay');
+}
+
+function checkThirdTopicCard() {
+    // Provera trece Topic kartice
+    var xxx = element.all(by.className('card-title')).get(2);
+    expect(xxx.getText()).toEqual('Acceptable Use');
+}
+
 function count15topics() {
     // Provera da li se na strani nalazi 15 topic kartica
     let list = element.all(by.className('collection-item topic card'));
@@ -34,4 +52,7 @@ module.exports = {
     count15topics,
     clickSpaceOnKeyboard,
     count30topics,
+    checkFirstTopicCard,
+    checkSecondTopicCard,
+    checkThirdTopicCard,
 }
