@@ -31,7 +31,7 @@ describe('Delete Reply Action', function(){
         deleteReply.clickDelete();
     });
 
-    it('Provera da li obrisana diskusija', function(){
+    it('Provera da li obrisan reply', function(){
         deleteReply.checkSnackbar();
     });
 

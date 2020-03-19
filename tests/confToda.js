@@ -26,6 +26,10 @@ exports.config = {
       './private/community/editDiscussion/editDiscussion-spec.js'
     ],
 
+    checkDiscussionOnMyProfile: [
+      './private/community/checkDiscussionOnMyProfile/checkDiscussionOnMyProfile-spec.js'
+    ],
+
     searchVendors: [
       './private/community/searchVendors/searchVendors-spec.js'
     ],
@@ -86,6 +90,14 @@ exports.config = {
       './private/community/undoDeleteDiscussion/undoDeleteDiscussion-spec.js'
     ],
 
+    rundeckReindex: [
+      './private/community/rundeckReindex/rundeckReindex-spec.js'
+    ],
+
+    deleteDiscussionWithUndoneDeletion: [
+      './private/community/deleteDiscussionWithUndoneDeletion/deleteDiscussionWithUndoneDeletion-spec.js'
+    ],
+
     thankReply: [
       './private/community/thankReply/thankReply-spec.js'
     ],
@@ -106,20 +118,96 @@ exports.config = {
       './private/community/reputationSystemAndLeaderboard/reputationSystemAndLeaderboard-spec.js'
     ],
 
-    rundeckReindex: [
-      './private/community/rundeckReindex/rundeckReindex-spec.js'
-    ],
-
-    deleteDiscussionWithUndoneDeletion: [
-      './private/community/deleteDiscussionWithUndoneDeletion/deleteDiscussionWithUndoneDeletion-spec.js'
-    ],
-
     deleteAnonymousDiscussion: [
       './private/community/deleteAnonymousDiscussion/deleteAnonymousDiscussion-spec.js'
     ],
 
     myProfilePage: [
       './private/community/myProfilePage/myProfilePage-spec.js'
+    ],
+
+    myProfilePageLoadMore: [
+      './private/community/myProfilePageLoadMore/myProfilePageLoadMore-spec.js'
+    ],
+
+    memberProfilePage: [
+      './private/community/memberProfilePage/memberProfilePage-spec.js'
+    ],
+
+    followUnfollowMember: [
+      './private/community/followUnfollowMember/followUnfollowMember-spec.js'
+    ],
+
+    checkNewDiscussionOnMemberProfile: [
+      './private/community/checkNewDiscussionOnMemberProfile/checkNewDiscussionOnMemberProfile-spec.js'
+    ],
+
+    memberProfilePageLoadMore: [
+      './private/community/memberProfilePageLoadMore/memberProfilePageLoadMore-spec.js'
+    ],
+
+    fiOrgDetailsPage: [
+      './private/community/fiOrgDetailsPage/fiOrgDetailsPage-spec.js'
+    ],
+
+    fiOrgPageEmployees: [
+      './private/community/fiOrgPageEmployees/fiOrgPageEmployees-spec.js'
+    ],
+
+    globalSearch: [
+      './private/community/globalSearch/globalSearch-spec.js'
+    ],
+
+    globalSearchAll: [
+      './private/community/globalSearchAll/globalSearchAll-spec.js'
+    ],
+
+    globalSearchUserForHisDocs: [
+      './private/community/globalSearchUserForHisDocs/globalSearchUserForHisDocs-spec.js'
+    ],
+
+    globalSearchAllLoadMore: [
+      './private/community/globalSearchAllLoadMore/globalSearchAllLoadMore-spec.js'
+    ],
+
+    globalSearchDiscussionByTitle: [
+      './private/community/globalSearchDiscussionByTitle/globalSearchDiscussionByTitle-spec.js'
+    ],
+
+    globalSearchDiscussionByDescription: [
+      './private/community/globalSearchDiscussionByDescription/globalSearchDiscussionByDescription-spec.js'
+    ],
+
+    globalSearchDiscussionsLoadMore: [
+      './private/community/globalSearchDiscussionsLoadMore/globalSearchDiscussionsLoadMore-spec.js'
+    ],
+
+    globalSearchDocument: [
+      './private/community/globalSearchDocument/globalSearchDocument-spec.js'
+    ],
+
+    globalSearchUserForHisDocsOnDocsTab: [
+      './private/community/globalSearchUserForHisDocsOnDocsTab/globalSearchUserForHisDocsOnDocsTab-spec.js'
+    ],
+
+    globalSearchDocsLoadMore: [
+      './private/community/globalSearchDocsLoadMore/globalSearchDocsLoadMore-spec.js'
+    ],
+
+    globalSearchMember: [
+      './private/community/globalSearchMember/globalSearchMember-spec.js'
+    ],
+
+    globalSearchMembersLoadMore: [
+      './private/community/globalSearchMembersLoadMore/globalSearchMembersLoadMore-spec.js'
+    ],
+
+    globalSearchOrgs: [
+      './private/community/globalSearchOrgs/globalSearchOrgs-spec.js'
+    ],
+
+    globalSearchOrgsLoadMore: [
+      './private/community/globalSearchOrgsLoadMore/globalSearchOrgsLoadMore-spec.js'
     ],
   },
 

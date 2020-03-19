@@ -1,5 +1,6 @@
 var deleteAnonymousDiscussion = require('./deleteAnonymousDiscussion-po.js');
 var replyDiscussion = require('../replyDiscussion/replyDiscussion-po.js');
+
 describe('Obrisi anonimnu diskusiju', function(){
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element

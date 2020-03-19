@@ -1,62 +1,41 @@
-var myProfilePage = require('./myProfilePage-po.js');
+var fiOrgDetailsPage = require('./fiOrgDetailsPage-po.js');
 var docLibraryCheck = require('../docLibraryCheck/docLibraryCheck-po.js');
 
-describe('My Profile strana', function () {
+
+describe('FI Org strana ', function () {
 
     beforeAll(function () {
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
     });
 
-    it('Dolazak na My Profile stranu', function () {
-        myProfilePage.landOnMyProfile();
-        browser.sleep(2000);
-    });
-
-    it('Provera imena membera u Profile boxu', function () {
-        myProfilePage.checkNameInProfileBox();
-        browser.sleep(500);
-    });
-
-    it('Provera avatara membera u Profile boxu', function () {
-        myProfilePage.checkAvatarInProfileBox();
-        browser.sleep(500);
-    });
-
-    it('Klik na ime banke u Profile boxu', function () {
-        myProfilePage.clickBankNameInProfileBox();
+    it('Dolazak na Bank of Chicago stranu', function () {
+        fiOrgDetailsPage.landOnFiOrgPage();
         browser.sleep(1000);
     });
 
-    it('Provera da li se ucitao URL za Bank of Chicago', function () {
-        myProfilePage.checkChicagoBankURL();
+    it('Provera imena FI Orga u Profile boxu', function () {
+        fiOrgDetailsPage.checkFiOrgNameInProfileBox();
+        browser.sleep(500);
+    });
+
+    it('Provera avatara FI Orga u Profile boxu', function () {
+        fiOrgDetailsPage.checkAvatarInProfileBox();
+        browser.sleep(500);
+    });
+
+    it('Klik na link FI Orga u Profile boxu', function () {
+        fiOrgDetailsPage.clickFiOrgLinkInProfileBox();
+        browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao URL za FI Org', function () {
+        fiOrgDetailsPage.checkFiOrgUrl();
         browser.navigate().back();
         browser.sleep(1000);
     });
 
-    it('Klikni na AFT Group link', function () {
-        myProfilePage.clickAftGroup();
-        browser.sleep(2000);
-    });
-
-    it('Provera da li se ucitao URL za AFT grupu', function () {
-        myProfilePage.checkAftGroupURL();
-        browser.sleep(500);
-    });
-
-    it('Provera da li smo na strani AFT grupe', function () {
-        myProfilePage.checkPageTitle();
-        browser.navigate().back();
-        browser.sleep(1000);
-    });
-
-    it('Klikni na FI Professionals Group link', function () {
-        myProfilePage.clickFiProfessionalsGroup();
-        browser.sleep(2000);
-    });
-
-    it('Provera da li se ucitao URL za Fi Professionals grupu', function () {
-        myProfilePage.checkFiProfessionalsGroupURL();
-        browser.navigate().back();
+    it('Provera telefona u Profile boxu FI Orga', function () {
+        fiOrgDetailsPage.checkPhoneNumberInProfileBox();
         browser.sleep(1000);
     });
 
@@ -212,12 +191,12 @@ describe('My Profile strana', function () {
         docLibraryCheck.checkDocumentLibraryInSideMenu();
     });
 
-    it('Klik na Document Library link', function(){
+    it('Klik na Document Library link', function () {
         docLibraryCheck.clickOnDocumentLibraryLink();
         browser.sleep(1000);
     });
 
-    it('Provera da li se ucitao Document Library URL', function(){
+    it('Provera da li se ucitao Document Library URL', function () {
         docLibraryCheck.checkDocumentLibraryURL();
         browser.navigate().back();
         browser.sleep(1000);
@@ -253,10 +232,6 @@ describe('My Profile strana', function () {
         browser.sleep(1000);
     });
 
-    it('Provera da li se ucitao Invite Colleagues link u side meniju', function () {
-        docLibraryCheck.checkInviteColleaguesInSideMenu();
-    });
-
     it('Klik na Invite Colleagues link', function () {
         docLibraryCheck.clickOnInviteColleagueseLink();
         browser.sleep(1000);
@@ -266,6 +241,10 @@ describe('My Profile strana', function () {
         docLibraryCheck.checkInviteColleagueseURL();
         browser.navigate().back();
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Invite Colleagues link u side meniju', function () {
+        docLibraryCheck.checkInviteColleaguesInSideMenu();
     });
 
     it('Provera da li se ucitao My Groups title', function () {

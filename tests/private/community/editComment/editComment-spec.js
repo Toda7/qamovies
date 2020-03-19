@@ -1,5 +1,6 @@
 var editComment = require('./editComment-po.js');
 var replyDiscussion = require('../replyDiscussion/replyDiscussion-po.js');
+
 describe('Edit Comment', function(){
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
