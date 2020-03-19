@@ -31,10 +31,6 @@ describe('Invite Colleagues Add Email Action', function(){
         inviteColleagues.clickOnSendButton();
     });
 
-    // it('Klik na Snack Bar', function(){
-    //     inviteColleagues.clickOnSnackBar();
-    // });
-
     it('Provera da li su uspesno pozvane kolege', function(){
         inviteColleaguesAddEmail.checkSuccess();
     });
