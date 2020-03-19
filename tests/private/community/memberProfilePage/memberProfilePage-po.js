@@ -26,6 +26,17 @@ function checkVendorMandrillUrl() {
    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/vendors/view/d12dd16a-08e7-48e7-9df2-7f4f5e5976d9'), 5000);
 }
 
+function clickSendMessage() {
+   // Klik na Send Message button
+   element.all(by.className('btn btn-flat')).get(0).click();
+}
+
+function checkInboxUrl() {
+   // Provera da li se ucitao URL za Inbox
+   var EC = protractor.ExpectedConditions;
+   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/dm/compose?person_key=aeaeb491-6e60-4827-84b0-19212d48f189'), 5000);
+}
+
 function clickVendorsGroup() {
    //  Klikni na Vendors Group link
    element.all(by.className('collection-item avatar')).get(0).element(by.className('title')).click();
@@ -60,6 +71,8 @@ module.exports = {
    checkAvatarInProfileBox,
    clickVendorNameInProfileBox,
    checkVendorMandrillUrl,
+   clickSendMessage,
+   checkInboxUrl,
    clickVendorsGroup,
    checkVendorsGroupUrl,
    checkRestrictionMessage,

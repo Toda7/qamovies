@@ -1,5 +1,6 @@
 var deleteComment = require('./deleteComment-po.js');
 var replyDiscussion = require('../replyDiscussion/replyDiscussion-po.js');
+
 describe('Delete Comment Action', function(){
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element

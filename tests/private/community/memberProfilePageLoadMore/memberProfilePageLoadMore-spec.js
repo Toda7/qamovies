@@ -1,13 +1,14 @@
-var myProfilePageLoadMore = require('./myProfilePageLoadMore-po.js');
+var memberProfilePage = require('../memberProfilePage/memberProfilePage-po.js');
+var myProfilePageLoadMore = require('../myProfilePageLoadMore/myProfilePageLoadMore-po.js');
 
-describe('Load More na My Profile strani', function(){
+describe('Load more na member profile strani', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
     }); 
 
-    it('Dolazak na My Profile stranu', function(){
-        myProfilePageLoadMore.landOnMyProfile();
+    it('Dolazak na Profile stranu membera', function(){
+        memberProfilePage.landOnMemberProfilePage();
         browser.sleep(2000);
     });
 

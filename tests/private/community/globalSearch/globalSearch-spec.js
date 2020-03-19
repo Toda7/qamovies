@@ -1,62 +1,14 @@
-var myProfilePage = require('./myProfilePage-po.js');
+var createDiscussion = require('../createDiscussion/createDiscussion-po.js');
 var docLibraryCheck = require('../docLibraryCheck/docLibraryCheck-po.js');
 
-describe('My Profile strana', function () {
+describe('Linkovi na Global Search strani', function(){
 
-    beforeAll(function () {
+    beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
-    });
+    }); 
 
-    it('Dolazak na My Profile stranu', function () {
-        myProfilePage.landOnMyProfile();
-        browser.sleep(2000);
-    });
-
-    it('Provera imena membera u Profile boxu', function () {
-        myProfilePage.checkNameInProfileBox();
-        browser.sleep(500);
-    });
-
-    it('Provera avatara membera u Profile boxu', function () {
-        myProfilePage.checkAvatarInProfileBox();
-        browser.sleep(500);
-    });
-
-    it('Klik na ime banke u Profile boxu', function () {
-        myProfilePage.clickBankNameInProfileBox();
-        browser.sleep(1000);
-    });
-
-    it('Provera da li se ucitao URL za Bank of Chicago', function () {
-        myProfilePage.checkChicagoBankURL();
-        browser.navigate().back();
-        browser.sleep(1000);
-    });
-
-    it('Klikni na AFT Group link', function () {
-        myProfilePage.clickAftGroup();
-        browser.sleep(2000);
-    });
-
-    it('Provera da li se ucitao URL za AFT grupu', function () {
-        myProfilePage.checkAftGroupURL();
-        browser.sleep(500);
-    });
-
-    it('Provera da li smo na strani AFT grupe', function () {
-        myProfilePage.checkPageTitle();
-        browser.navigate().back();
-        browser.sleep(1000);
-    });
-
-    it('Klikni na FI Professionals Group link', function () {
-        myProfilePage.clickFiProfessionalsGroup();
-        browser.sleep(2000);
-    });
-
-    it('Provera da li se ucitao URL za Fi Professionals grupu', function () {
-        myProfilePage.checkFiProfessionalsGroupURL();
-        browser.navigate().back();
+    it('Dolazak na Home stranu', function(){
+        createDiscussion.landOnHome();
         browser.sleep(1000);
     });
 
@@ -72,7 +24,6 @@ describe('My Profile strana', function () {
 
     it('Provera da li se ucitao search URL', function () {
         docLibraryCheck.checkSearchURL();
-        browser.navigate().back();
         browser.sleep(1000);
     });
 
@@ -92,15 +43,15 @@ describe('My Profile strana', function () {
     it('Klik na Inbox link', function () {
         docLibraryCheck.clickOnInboxLink();
         browser.getAllWindowHandles().then(function (handles) {
-            browser.switchTo().window(handles[1]);
+        browser.switchTo().window(handles[1]);
         });
     });
 
     it('Provera da li se ucitao Inbox URL', function () {
         docLibraryCheck.checkInboxURL();
         browser.getAllWindowHandles().then(function (handles) {
-            browser.driver.close();
-            browser.driver.switchTo().window(handles[0]);
+        browser.driver.close();
+        browser.driver.switchTo().window(handles[0]);
         });
         browser.sleep(2000);
     });
@@ -253,10 +204,6 @@ describe('My Profile strana', function () {
         browser.sleep(1000);
     });
 
-    it('Provera da li se ucitao Invite Colleagues link u side meniju', function () {
-        docLibraryCheck.checkInviteColleaguesInSideMenu();
-    });
-
     it('Klik na Invite Colleagues link', function () {
         docLibraryCheck.clickOnInviteColleagueseLink();
         browser.sleep(1000);
@@ -266,6 +213,10 @@ describe('My Profile strana', function () {
         docLibraryCheck.checkInviteColleagueseURL();
         browser.navigate().back();
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Invite Colleagues link u side meniju', function () {
+        docLibraryCheck.checkInviteColleaguesInSideMenu();
     });
 
     it('Provera da li se ucitao My Groups title', function () {
@@ -303,7 +254,7 @@ describe('My Profile strana', function () {
     });
     // ovde se zavrsavaju cekeri za side menu i search u headeru
 
-    afterAll(function () {
-        browser.waitForAngularEnabled(true);
+        afterAll(function(){
+        browser.waitForAngularEnabled(true); 
     });
 });
