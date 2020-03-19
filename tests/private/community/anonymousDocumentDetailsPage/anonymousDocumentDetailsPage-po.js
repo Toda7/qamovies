@@ -22,6 +22,12 @@ function checkDefaultUserAvatar() {
     browser.sleep(500);
 }
 
+function checkTimeStamp(){
+    var EC = protractor.ExpectedConditions;
+    // Provera Active now Time Stamp-a
+    browser.wait(EC.textToBePresentInElement($('.community .card.item_card .item_sig .date_time.non_mobile'), 'Active: just now'), 5000);
+}
+
 function checkAnonymousUserName(){
     // Provera da li se ucitao user name
     var EC = protractor.ExpectedConditions;
@@ -54,7 +60,7 @@ function checkTopics(){
 
 function landOnDocDetailsPage() {
     // Dolazak na Documents details page
-    browser.get('https://qa.cbancnetwork.com/community/documents/view/1617b398-48dc-47a4-8f75-a6654f80cde4?q=papeldilaqasa'); 
+    browser.get('https://qa.cbancnetwork.com/community/documents/view/9746fb69-bdeb-49f8-8584-aa011cbe30a0?q=papeldilaqasa'); 
 }
 
 function clickOnDiscussionLink(){
@@ -65,7 +71,7 @@ function clickOnDiscussionLink(){
 function checkDiscussionURL() {
     // Provera da li se ucitao discussion URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/discussions/view/47d0d3b2-fed6-4bdb-9e26-33a98d37771b'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/discussions/view/234ae3e4-aca4-4ec6-a502-4c1c05b906bc'), 5000);
 }
 
 
