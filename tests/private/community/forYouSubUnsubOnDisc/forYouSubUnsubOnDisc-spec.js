@@ -38,6 +38,14 @@ it('Dolazak na For You', function(){
     browser.sleep(5000);
 });
 
+it('Provera Latest taba', function () {
+    forYouSubUnsubOnDisc.checkLatestTab();
+});
+
+it('Provera Subscribed taba', function () {
+    forYouSubUnsubOnDisc.checkSubscribedTab();
+});
+
 it('Provera da nema diskusija na Subscribed tabu', function () {
     forYouSubUnsubOnDisc.checkNoDisc();
 });

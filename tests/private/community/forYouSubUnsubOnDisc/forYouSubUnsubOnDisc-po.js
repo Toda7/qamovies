@@ -64,6 +64,18 @@ function enterChicagoEmail() {
     element(by.name('email')).sendKeys('1@chicago.com');
 }
 
+function checkLatestTab() {
+    //Provera Latest taba
+    var xxx = element.all(by.className('btn-flat')).get(0);
+    expect(xxx.getText()).toEqual('LATEST');
+}
+
+function checkSubscribedTab() {
+    //Provera Subscribed taba
+    var xxx = element.all(by.className('btn-flat')).get(1);
+    expect(xxx.getText()).toEqual('SUBSCRIBED');
+}
+
 module.exports = {
     landOnForYouPage,
     clickOnUserMenu,
@@ -78,4 +90,6 @@ module.exports = {
     checkThereIsDisc,
     landOnHomePage,
     enterChicagoEmail,
+    checkLatestTab,
+    checkSubscribedTab,
 }

@@ -14,73 +14,77 @@ exports.config = {
     //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluzi nicemu. to je samo primer)
     // ],
 
-    timeStampComment: [
-      './private/community/timeStampComment/timeStampComment-spec.js'
+    login: [
+      './private/account/login/login-spec.js'
     ],
 
-    timeStampReply: [
-      './private/community/timeStampReply/timeStampReply-spec.js'
-    ],
+    // timeStampComment: [
+    //   './private/community/timeStampComment/timeStampComment-spec.js'
+    // ],
 
-    timeStampCommentMinute: [
-      './private/community/timeStampCommentMinute/timeStampCommentMinute-spec.js'
-    ],
+    // timeStampReply: [
+    //   './private/community/timeStampReply/timeStampReply-spec.js'
+    // ],
 
-    timeStampReplyMinute: [
-      './private/community/timeStampReplyMinute/timeStampReplyMinute-spec.js'
-    ],
+    // timeStampCommentMinute: [
+    //   './private/community/timeStampCommentMinute/timeStampCommentMinute-spec.js'
+    // ],
 
-    forYouSubUnsubOnTopic: [
-      './private/community/forYouSubUnsubOnTopic/forYouSubUnsubOnTopic-spec.js'
-    ],
+    // timeStampReplyMinute: [
+    //   './private/community/timeStampReplyMinute/timeStampReplyMinute-spec.js'
+    // ],
+
+    // forYouSubUnsubOnTopic: [
+    //   './private/community/forYouSubUnsubOnTopic/forYouSubUnsubOnTopic-spec.js'
+    // ],
 
     forYouSubUnsubOnDisc: [
       './private/community/forYouSubUnsubOnDisc/forYouSubUnsubOnDisc-spec.js'
     ],
 
-    forYouSubUnsubOnVendor: [
-      './private/community/forYouSubUnsubOnVendor/forYouSubUnsubOnVendor-spec.js'
-    ],
+    // forYouSubUnsubOnVendor: [
+    //   './private/community/forYouSubUnsubOnVendor/forYouSubUnsubOnVendor-spec.js'
+    // ],
 
-    forYouSubUnsubOnVendorUser: [
-      './private/community/forYouSubUnsubOnVendorUser/forYouSubUnsubOnVendorUser-spec.js'
-    ],
+    // forYouSubUnsubOnVendorUser: [
+    //   './private/community/forYouSubUnsubOnVendorUser/forYouSubUnsubOnVendorUser-spec.js'
+    // ],
 
-    forYouLoadMore: [
-      './private/community/forYouLoadMore/forYouLoadMore-spec.js'
-    ],
+    // forYouLoadMore: [
+    //   './private/community/forYouLoadMore/forYouLoadMore-spec.js'
+    // ],
 
-    forYouDirectMessage: [
-      './private/community/forYouDirectMessage/forYouDirectMessage-spec.js'
-    ],
+    // forYouDirectMessage: [
+    //   './private/community/forYouDirectMessage/forYouDirectMessage-spec.js'
+    // ],
 
-    discoverPagePopular: [
-      './private/community/discoverPagePopular/discoverPagePopular-spec.js'
-    ],
+    // discoverPagePopular: [
+    //   './private/community/discoverPagePopular/discoverPagePopular-spec.js'
+    // ],
 
-    discoverPageAlphabetical: [
-      './private/community/discoverPageAlphabetical/discoverPageAlphabetical-spec.js'
-    ],
+    // discoverPageAlphabetical: [
+    //   './private/community/discoverPageAlphabetical/discoverPageAlphabetical-spec.js'
+    // ],
 
-    discoverCreateDiscussion: [
-      './private/community/discoverCreateDiscussion/discoverCreateDiscussion-spec.js'
-    ],
+    // discoverCreateDiscussion: [
+    //   './private/community/discoverCreateDiscussion/discoverCreateDiscussion-spec.js'
+    // ],
 
-    discoverTopicCardSubUnsub: [
-      './private/community/discoverTopicCardSubUnsub/discoverTopicCardSubUnsub-spec.js'
-    ],
+    // discoverTopicCardSubUnsub: [
+    //   './private/community/discoverTopicCardSubUnsub/discoverTopicCardSubUnsub-spec.js'
+    // ],
 
-    discoverTopicDetailLoadMore: [
-      './private/community/discoverTopicDetailLoadMore/discoverTopicDetailLoadMore-spec.js'
-    ],
+    // discoverTopicDetailLoadMore: [
+    //   './private/community/discoverTopicDetailLoadMore/discoverTopicDetailLoadMore-spec.js'
+    // ],
 
-    discoverDiscDocTabCheck: [
-      './private/community/discoverDiscDocTabCheck/discoverDiscDocTabCheck-spec.js'
-    ],
+    // discoverDiscDocTabCheck: [
+    //   './private/community/discoverDiscDocTabCheck/discoverDiscDocTabCheck-spec.js'
+    // ],
 
-    discoverTopicDetailSubUnsub: [
-      './private/community/discoverTopicDetailSubUnsub/discoverTopicDetailSubUnsub-spec.js'
-    ],
+    // discoverTopicDetailSubUnsub: [
+    //   './private/community/discoverTopicDetailSubUnsub/discoverTopicDetailSubUnsub-spec.js'
+    // ],
   },
 
   capabilities: {
