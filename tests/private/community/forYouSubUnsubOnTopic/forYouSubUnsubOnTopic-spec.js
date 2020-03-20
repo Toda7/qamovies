@@ -108,6 +108,10 @@ it('Unos passworda', function () {
     forYouSubUnsubOnDisc.enterPass();
 });
 
+it('Submit', function () {
+    forYouSubUnsubOnDisc.submit();
+});
+
 beforeAll(function(){
     browser.waitForAngularEnabled(false);
 });

@@ -18,12 +18,44 @@ exports.config = {
       './private/community/timeStampComment/timeStampComment-spec.js'
     ],
 
-    // discoverPagePopular: [
-    //   './private/community/discoverPagePopular/discoverPagePopular-spec.js'
-    // ],
+    timeStampReply: [
+      './private/community/timeStampReply/timeStampReply-spec.js'
+    ],
 
-    discoverPageAlphabetical: [
-      './private/community/discoverPageAlphabetical/discoverPageAlphabetical-spec.js'
+    timeStampCommentMinute: [
+      './private/community/timeStampCommentMinute/timeStampCommentMinute-spec.js'
+    ],
+
+    timeStampReplyMinute: [
+      './private/community/timeStampReplyMinute/timeStampReplyMinute-spec.js'
+    ],
+
+    forYouSubUnsubOnTopic: [
+      './private/community/forYouSubUnsubOnTopic/forYouSubUnsubOnTopic-spec.js'
+    ],
+
+    forYouSubUnsubOnDisc: [
+      './private/community/forYouSubUnsubOnDisc/forYouSubUnsubOnDisc-spec.js'
+    ],
+
+    forYouSubUnsubOnVendor: [
+      './private/community/forYouSubUnsubOnVendor/forYouSubUnsubOnVendor-spec.js'
+    ],
+
+    forYouSubUnsubOnVendorUser: [
+      './private/community/forYouSubUnsubOnVendorUser/forYouSubUnsubOnVendorUser-spec.js'
+    ],
+
+    forYouLoadMore: [
+      './private/community/forYouLoadMore/forYouLoadMore-spec.js'
+    ],
+
+    forYouDirectMessage: [
+      './private/community/forYouDirectMessage/forYouDirectMessage-spec.js'
+    ],
+
+    discoverPagePopular: [
+      './private/community/discoverPagePopular/discoverPagePopular-spec.js'
     ],
 
     discoverPageAlphabetical: [
@@ -38,18 +70,6 @@ exports.config = {
       './private/community/discoverTopicCardSubUnsub/discoverTopicCardSubUnsub-spec.js'
     ],
 
-    discoverTopicCardSubUnsub: [
-      './private/community/discoverTopicCardSubUnsub/discoverTopicCardSubUnsub-spec.js'
-    ],
-
-    timeStampReply: [
-      './private/community/timeStampReply/timeStampReply-spec.js'
-    ],
-
-    discoverTopicDetailSubUnsub: [
-      './private/community/discoverTopicDetailSubUnsub/discoverTopicDetailSubUnsub-spec.js'
-    ],
-
     discoverTopicDetailLoadMore: [
       './private/community/discoverTopicDetailLoadMore/discoverTopicDetailLoadMore-spec.js'
     ],
@@ -58,36 +78,8 @@ exports.config = {
       './private/community/discoverDiscDocTabCheck/discoverDiscDocTabCheck-spec.js'
     ],
 
-    forYouSubUnsubOnDisc: [
-      './private/community/forYouSubUnsubOnDisc/forYouSubUnsubOnDisc-spec.js'
-    ],
-
-    forYouSubUnsubOnTopic: [
-      './private/community/forYouSubUnsubOnTopic/forYouSubUnsubOnTopic-spec.js'
-    ],
-
-    forYouSubUnsubOnVendor: [
-      './private/community/forYouSubUnsubOnVendor/forYouSubUnsubOnVendor-spec.js'
-    ],
-
-    forYouSubUnsubOnVendorUser: [
-      './private/community/forYouSubUnsubOnVendorUser/forYouSubUnsubOnVendorUser-spec.js'
-    ],
-
-    forYouDirectMessage: [
-      './private/community/forYouDirectMessage/forYouDirectMessage-spec.js'
-    ],
-
-    forYouLoadMore: [
-      './private/community/forYouLoadMore/forYouLoadMore-spec.js'
-    ],
-
-    timeStampReplyMinute: [
-      './private/community/timeStampReplyMinute/timeStampReplyMinute-spec.js'
-    ],
-
-    timeStampCommentMinute: [
-      './private/community/timeStampCommentMinute/timeStampCommentMinute-spec.js'
+    discoverTopicDetailSubUnsub: [
+      './private/community/discoverTopicDetailSubUnsub/discoverTopicDetailSubUnsub-spec.js'
     ],
   },
 
