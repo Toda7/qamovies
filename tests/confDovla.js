@@ -18,8 +18,12 @@ exports.config = {
       './private/community/timeStampComment/timeStampComment-spec.js'
     ],
 
-    discoverPagePopular: [
-      './private/community/discoverPagePopular/discoverPagePopular-spec.js'
+    // discoverPagePopular: [
+    //   './private/community/discoverPagePopular/discoverPagePopular-spec.js'
+    // ],
+
+    discoverPageAlphabetical: [
+      './private/community/discoverPageAlphabetical/discoverPageAlphabetical-spec.js'
     ],
 
     discoverPageAlphabetical: [
