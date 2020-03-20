@@ -28,7 +28,7 @@ function clearTheField(){
 
 function enterEmailAddress() {
     // Unosenje email adrese
-    element.all(by.css('.input-field input[type=email]')).get(0).sendKeys('atqa.share.doc@mail.com');
+    element.all(by.css('.input-field input[type=email]')).get(0).clear().sendKeys('atqa.share.doc@mail.com');
 }
 
 function enter2EmailAddress() {
@@ -48,7 +48,7 @@ function enter3EmailAddress() {
 
 function clickOnSendButton() {
     //  Klik na Send dugme
-    element(by.className('btn-flat right')).click(); 
+    element(by.className('card contact_form')).all(by.className('btn-flat right')).get(0).click();
     browser.sleep(1000);
  }
  

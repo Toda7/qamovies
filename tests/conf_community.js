@@ -302,6 +302,10 @@ exports.config = {
           vendorDetailsPage: [
             './private/community/vendorDetailsPage/vendorDetailsPage-spec.js'
           ],
+
+          shareDocument: [
+            './private/community/shareDocument/shareDocument-spec.js'
+          ],
       
           logOut: [
             './private/education/logOutAsAdmin/logOutAsAdmin-spec.js'
@@ -325,10 +329,6 @@ exports.config = {
       
           anonymousDocumentDetailsPage: [
             './private/community/anonymousDocumentDetailsPage/anonymousDocumentDetailsPage-spec.js'
-          ],
-      
-          shareDocument: [
-            './private/community/shareDocument/shareDocument-spec.js'
           ],
       
           checkOptInMsgAfterDownloadDoc: [
