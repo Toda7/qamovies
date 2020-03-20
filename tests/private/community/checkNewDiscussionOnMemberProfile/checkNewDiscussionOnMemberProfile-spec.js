@@ -34,16 +34,17 @@ describe('Provera da li se napravljena diskusija pojavila na Member strani', fun
 
     it('Unesi password test1234', function () {
         checkNewDiscussionOnMemberProfile.enterPassword1();
-        browser.sleep(1000);
+        browser.sleep(2000);
     });
 
     it('Submit', function () {
         reputationTimelineThankLogs.submit();
-        browser.sleep(2000);
+        browser.sleep(6000);
     });
 
     it('Klik na Start Discussion dugme', function(){
         createDiscussion.clickOnStartDiscussion();
+        browser.sleep(1500);
     });
 
     it('Unos texta za Discussion Title', function(){

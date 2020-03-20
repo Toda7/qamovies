@@ -37,7 +37,7 @@ describe('Load More na Global Search Orgs tabu', function(){
 
     it('Klik na Space na tastaturi za Load More na strani', function () {
         globalSearchDiscussionsLoadMore.scrollPage();
-        browser.sleep(500);
+        browser.sleep(1500);
     });
 
     it('Provera da li se na strani pojavilo 16 rezultata', function () {
