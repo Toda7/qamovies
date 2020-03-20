@@ -8,10 +8,12 @@ describe('Create Discussion Action', function(){
 
     it('Dolazak na Home stranu', function(){
         createDiscussion.landOnHome();
+        browser.sleep(2000);
     });
 
     it('Klik na Start Discussion dugme', function(){
         createDiscussion.clickOnStartDiscussion();
+        browser.sleep(1000);
     });
 
     it('Provera Select Audience title na strani', function(){
@@ -24,6 +26,7 @@ describe('Create Discussion Action', function(){
 
     it('Odabir grupe', function(){
         createDiscussion.selectGroup();
+        browser.sleep(1000);
     });
 
     it('Provera da li smo izabrali dobru grupu', function(){
@@ -32,30 +35,37 @@ describe('Create Discussion Action', function(){
 
     it('Discussion title', function(){
         createDiscussion.discussionTitle();
+        browser.sleep(1000);
     });
 
     it('Discussion Description', function(){
         createDiscussion.discussionDesc();
+        browser.sleep(1000);
     });
 
     it('Attach Document', function(){
         createDiscussion.attachDoc();
+        browser.sleep(500);
     });
 
     it('Dodavanje topika', function(){
         createDiscussion.selectTopic();
+        browser.sleep(200);
     });
 
     it('Klik na Post Discussion', function(){
         createDiscussion.postDiscussion();
+        browser.sleep(2000);
     });
 
     it('Provera da li je uspesno objavljena diskusija', function(){
         createDiscussion.checkSuccess();
+        browser.sleep(2000);
     });
 
     it('Klik na View Discussion dugme', function(){
         createDiscussion.clickOnViewDiscussion();
+        browser.sleep(1000);
     });
 
     it('Provera title of discussion', function () {
@@ -84,6 +94,7 @@ describe('Create Discussion Action', function(){
 
     it('Provera dokumenta u discussion card', function () {
         createDiscussion.checkDocumentInDiscussionCard();
+        browser.sleep(1000);
     });
 
 

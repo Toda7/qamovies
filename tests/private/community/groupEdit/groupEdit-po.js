@@ -70,7 +70,7 @@ function clickOnCancel() {
 function checkEditedDescription() {
     // Proverava editovani description
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('p.about'), "1st test The Association for Financial jTechnology (AFT) is the financial technology industry's premier resource for networking and professional development for those companies and executives serving U.S. financial institutions (FIs) including banks, credit ulnions, lenders and payment companies. Founded in 1972, the organization's members represent virtually every area of technology, data or services neede1d to help FIs succeed in today's dynamic marketplace!EDIT TEST"), 5000);
+    browser.wait(EC.textToBePresentInElement($('p.about'), 'EDIT TEST'), 5000);
 }
 
 function checkEditedGroupName() {
