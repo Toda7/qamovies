@@ -39,7 +39,7 @@ describe('Provera da li se napravljena diskusija pojavila na Member strani', fun
 
     it('Submit', function () {
         reputationTimelineThankLogs.submit();
-        browser.sleep(6000);
+        browser.sleep(8000);
     });
 
     it('Klik na Start Discussion dugme', function(){
