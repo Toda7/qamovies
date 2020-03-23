@@ -13,13 +13,13 @@ function checkThankCount1() {
     // Provera da li se Thank count povecao za 1
     var xxx = element.all(by.className('thanks_count')).get(2);
     expect(xxx.getText()).toEqual('1');
-    browser.sleep(500);
+    browser.sleep(1000);
  } 
  function checkSnackbar1(){
     // Provera Snek Bara
     var foo = element(by.className('snackbar sb_message'));
     expect(foo.getText()).toEqual('Comment was thanked. Nice!');
-    browser.sleep(500);
+    browser.sleep(4000);
  }
  function clickOnThanked() {
     //  Klikni na Thanked dugme
