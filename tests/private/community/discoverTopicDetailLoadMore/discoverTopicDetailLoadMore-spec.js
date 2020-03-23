@@ -31,7 +31,7 @@ it('Refresh page', function(){
 
 it('Klik na Docs Tab', function(){
     discoverTopicDetailLoadMore.clickOnDocsTab();
-    browser.sleep(1000);
+    browser.sleep(3000);
 });
 
 it('Provera da li se na strani nalazi 15 dokumenata', function(){
