@@ -41,8 +41,11 @@ describe('Load More na Global Search Orgs tabu', function(){
     });
 
     it('Provera da li se na strani pojavilo 16 rezultata', function () {
-        globalSearchOrgsLoadMore.checkIfSixteenResultsOnPage();
-        browser.sleep(500);
+        var step;
+        for (step = 0; step < 2; step++) {
+            globalSearchOrgsLoadMore.checkIfSixteenResultsOnPage();
+            browser.sleep(500);
+        }
     });
 
         afterAll(function(){
