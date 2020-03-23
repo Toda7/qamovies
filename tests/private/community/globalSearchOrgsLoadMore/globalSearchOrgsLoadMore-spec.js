@@ -37,12 +37,15 @@ describe('Load More na Global Search Orgs tabu', function(){
 
     it('Klik na Space na tastaturi za Load More na strani', function () {
         globalSearchDiscussionsLoadMore.scrollPage();
-        browser.sleep(500);
+        browser.sleep(1500);
     });
 
     it('Provera da li se na strani pojavilo 16 rezultata', function () {
-        globalSearchOrgsLoadMore.checkIfSixteenResultsOnPage();
-        browser.sleep(500);
+        var step;
+        for (step = 0; step < 2; step++) {
+            globalSearchOrgsLoadMore.checkIfSixteenResultsOnPage();
+            browser.sleep(500);
+        }
     });
 
         afterAll(function(){

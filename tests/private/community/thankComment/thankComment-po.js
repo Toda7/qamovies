@@ -13,7 +13,7 @@ function checkThankCount1() {
     // Provera da li se Thank count povecao za 1
     var xxx = element.all(by.className('thanks_count')).get(2);
     expect(xxx.getText()).toEqual('1');
-    browser.sleep(1000);
+    browser.sleep(2000);
  } 
  function checkSnackbar1(){
     // Provera Snek Bara
@@ -30,13 +30,13 @@ function checkThankCount2() {
     // Provera da li se Thank count smanjio za 1
     var xxx = element.all(by.className('thanks_count')).get(2);
     expect(xxx.getText()).toEqual('0');
-    browser.sleep(500);
+    browser.sleep(1000);
  } 
  function checkSnackbar2(){
     // Provera Snek Bara
     var foo = element(by.className('snackbar sb_message'));
     expect(foo.getText()).toEqual('Thanks was removed.');
-    browser.sleep(500);
+    browser.sleep(1000);
  }
  module.exports = {
     landOnDiscussionDetailsPage, 
