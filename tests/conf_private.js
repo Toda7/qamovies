@@ -462,8 +462,8 @@ exports.config = {
       './private/community/shareDocument/shareDocument-spec.js'
     ],
 
-    milosLogOut: [
-      './private/education/milosLogOut/milosLogOut-spec.js'
+    logOut: [
+      './private/education/logOutAsAdmin/logOutAsAdmin-spec.js'
     ],
 
     miloslogin: [
@@ -750,10 +750,10 @@ exports.config = {
       './private/dumbleform/vendorMapping/vendorMapping-spec.js'
     ],
 
-    logOut: [
-      './private/education/logOutAsAdmin/logOutAsAdmin-spec.js'
+    milosLogOut: [
+      './private/education/milosLogOut/milosLogOut-spec.js'
     ],
-
+    
     loginAsAdmin: [
       './private/education/loginAsAdmin/loginAsAdmin-spec.js'
     ],
