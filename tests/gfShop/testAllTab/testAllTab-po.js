@@ -19,13 +19,13 @@ function clickOnSights() {
 function checkSightsTitle() {
     // Provera da li je Sights u Title-u
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Sights'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Sights'), 7000);
 }
 
 function checkSightsUrl() {
     // Provera da li se ucitao Sights URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/sights.html'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/sights.html'), 7000);
 }
 
 function clickOnQuivers() {
@@ -37,13 +37,13 @@ function clickOnQuivers() {
 function checkQuiversTitle() {
     // Provera da li je Quivers u Title-u
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Quivers'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Quivers'), 7000);
 }
 
 function checkQuiversUrl() {
     // Provera da li se ucitao Quivers URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/quivers.html'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/quivers.html'), 7000);
 }
 
 function clickOnScopes() {
@@ -55,13 +55,13 @@ function clickOnScopes() {
 function checkScopesTitle() {
     // Provera da li je Scopes u Title-u
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Scopes'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Scopes'), 7000);
 }
 
 function checkScopesUrl() {
     // Provera da li se ucitao Scopes URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/scopes.html'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/scopes.html'), 7000);
 }
 
 function clickOnStabilizers() {
@@ -73,13 +73,13 @@ function clickOnStabilizers() {
 function checkStabilizersTitle() {
     // Provera da li je Stabilizers u Title-u
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Stabilizers'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Stabilizers'), 7000);
 }
 
 function checkStabilizersUrl() {
     // Provera da li se ucitao Stabilizers URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/stabilizers.html'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/stabilizers.html'), 7000);
 }
 
 function clickOnReleases() {
@@ -91,13 +91,13 @@ function clickOnReleases() {
 function checkReleasesTitle() {
     // Provera da li je Releases u Title-u
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Releases'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Releases'), 7000);
 }
 
 function checkReleasesUrl() {
     // Provera da li se ucitao Releases URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/releases.html'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/releases.html'), 7000);
 }
 
 function clickOnRests() {
@@ -109,13 +109,13 @@ function clickOnRests() {
 function checkRestsTitle() {
     // Provera da li je Rests u Title-u
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Rests'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Rests'), 7000);
 }
 
 function checkRestsUrl() {
     // Provera da li se ucitao Rests URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/rests.html'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/rests.html'), 7000);
 }
 
 function clickOnBroadheads() {
@@ -127,7 +127,7 @@ function clickOnBroadheads() {
 function checkBroadheadsTitle() {
     // Provera da li je Broadheads u Title-u
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Broadheads'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Broadheads'), 7000);
 }
 
 
@@ -135,7 +135,7 @@ function checkBroadheadsTitle() {
 function checkBroadheadsUrl() {
     // Provera da li se ucitao Broadheads URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/broadheads.html'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/broadheads.html'), 7000);
 }
 
 function clickOnBowfishing() {
@@ -147,13 +147,13 @@ function clickOnBowfishing() {
 function checkBowfishingTitle() {
     // Provera da li je Bowfishing u Title-u
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Bowfishing'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Bowfishing'), 7000);
 }
 
 function checkBowfishingUrl() {
     // Provera da li se ucitao Bowfishing URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/bowfishing.html'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/bowfishing.html'), 7000);
 }
 
 function clickOnBowAccessories() {
@@ -165,13 +165,13 @@ function clickOnBowAccessories() {
 function checkBowAccessoriesTitle() {
     // Provera da li je Bow Accessories u Title-u
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Bow Accessories'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Bow Accessories'), 7000);
 }
 
 function checkBowAccessoriesUrl() {
     // Provera da li se ucitao Bow Accessories URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/bow-accessories.html'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/bow-accessories.html'), 7000);
 }
 
 function clickOnTurkeyHunting() {
@@ -183,13 +183,13 @@ function clickOnTurkeyHunting() {
 function checkTurkeyHuntingTitle() {
     // Provera da li je Turkey Hunting u Title-u
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Turkey Hunting'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Turkey Hunting'), 7000);
 }
 
 function checkTurkeyHuntingUrl() {
     // Provera da li se ucitao Turkey Hunting URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting/turkey-hunting.html'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting/turkey-hunting.html'), 7000);
 }
 
 function clickOnRedDots() {
@@ -201,13 +201,13 @@ function clickOnRedDots() {
 function checkRedDotsTitle() {
     // Provera da li je Red Dots u Title-u
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Red Dots'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Red Dots'), 7000);
 }
 
 function checkRedDotsUrl() {
     // Provera da li se ucitao Red Dots URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting/optics-red-dots.html'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting/optics-red-dots.html'), 7000);
 }
 
 function clickOnHuntingScopes() {
@@ -219,13 +219,13 @@ function clickOnHuntingScopes() {
 function checkHuntingScopesTitle() {
     // Provera da li je Hunting Scopes u Title-u
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Hunting Scopes'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Hunting Scopes'), 7000);
 }
 
 function checkHuntingScopesUrl() {
     // Provera da li se ucitao Hunting Scopes URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting/hunting-scopes.html'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting/hunting-scopes.html'), 7000);
 }
 
 function clickOnSights2() {
@@ -237,13 +237,13 @@ function clickOnSights2() {
 function checkSights2Title() {
     // Provera da li je Sights2 u Title-u
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Sights'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Sights'), 7000);
 }
 
 function checkSights2Url() {
     // Provera da li se ucitao Sights2 URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting/shotgun-sights.html'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting/shotgun-sights.html'), 7000);
 }
 
 function clickOnAccessories() {
@@ -255,13 +255,13 @@ function clickOnAccessories() {
 function checkAccessoriesTitle() {
     // Provera da li je Accessories u Title-u
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Accessories'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Accessories'), 7000);
 }
 
 function checkAccessoriesUrl() {
     // Provera da li se ucitao Accessories URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting/accessories.html'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting/accessories.html'), 7000);
 }
 
 function clickOnRedDots2() {
@@ -273,13 +273,13 @@ function clickOnRedDots2() {
 function checkRedDots2Title() {
     // Provera da li je Red Dots2 u Title-u
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Red Dots'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Red Dots'), 7000);
 }
 
 function checkRedDots2Url() {
     // Provera da li se ucitao Red Dots2 URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-tactical/tactical-red-dots.html'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-tactical/tactical-red-dots.html'), 7000);
 }
 
 function clickOnScopes2() {
@@ -291,13 +291,13 @@ function clickOnScopes2() {
 function checkScopes2Title() {
     // Provera da li je Scopes2 u Title-u
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Scopes'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Scopes'), 7000);
 }
 
 function checkScopes2Url() {
     // Provera da li se ucitao Scopes2 URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-tactical/tactical-scopes.html'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-tactical/tactical-scopes.html'), 7000);
 }
 
 function clickOnSights3() {
@@ -309,13 +309,13 @@ function clickOnSights3() {
 function checkSights3Title() {
     // Provera da li je Sights3 u Title-u
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Sights'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Sights'), 7000);
 }
 
 function checkSights3Url() {
     // Provera da li se ucitao Sights3 URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-tactical/tactical-sights.html'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-tactical/tactical-sights.html'), 7000);
 }
 
 function clickOnAccessories2() {
@@ -327,13 +327,13 @@ function clickOnAccessories2() {
 function checkAccessories2Title() {
     // Provera da li je Accessories2 u Title-u
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Accessories'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page-title'), 'Accessories'), 7000);
 }
 
 function checkAccessories2Url() {
     // Provera da li se ucitao Accessories2 URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-tactical/tactical-accessories.html'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-tactical/tactical-accessories.html'), 7000);
 }
 
 function clickOnX() {
@@ -351,7 +351,7 @@ function clickOnGf() {
 function checkGearDiscountsUrl() {
     // Provera da li se ucitao Gear Discounts URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://www.outfitterextreme.com/gear-discounts'), 5000);
+    browser.wait(EC.urlContains('https://www.outfitterextreme.com/gear-discounts'), 7000);
 }
 
  module.exports = {

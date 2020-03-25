@@ -7,7 +7,7 @@ function clickOnLink() {
 function checkPrivacyURL() {
     // Provera Privacy Policy URL-a
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/support/privacy_policy'), 5000);
+    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/support/privacy_policy'), 7000);
 }
 
 module.exports = {

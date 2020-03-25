@@ -23,7 +23,7 @@ function clickOnDocLink() {
  function checkSuccessfullyMessage(){
     var EC = protractor.ExpectedConditions;
     // Provera dal se ucitala Upload Complete message
-    browser.wait(EC.textToBePresentInElement($('.card-content'), 'photo successfully deleted.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-content'), 'photo successfully deleted.'), 7000);
 }   
 
  module.exports = {

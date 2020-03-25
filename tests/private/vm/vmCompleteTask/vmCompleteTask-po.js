@@ -6,7 +6,7 @@
 
     function checkReOpenButton(){
         var EC = protractor.ExpectedConditions;
-        browser.wait(EC.textToBePresentInElement($('.btn-flat'), 'RE-OPEN'), 5000);
+        browser.wait(EC.textToBePresentInElement($('.btn-flat'), 'RE-OPEN'), 7000);
       }   
 
 

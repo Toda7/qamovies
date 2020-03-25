@@ -6,7 +6,7 @@ function clickOnLink() {
  function checkRaLegacyAppURL() {
    // Provera da li se ucitao RA Legacy App URL
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlIs('https://qa.cbancnetwork.com/risk_assessment/home'), 5000);
+   browser.wait(EC.urlIs('https://qa.cbancnetwork.com/risk_assessment/home'), 7000);
    browser.sleep(2000);
 }
 

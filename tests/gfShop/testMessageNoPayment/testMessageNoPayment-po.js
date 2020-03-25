@@ -13,14 +13,14 @@ function landOnMyPaymentInfo() {
 function checkURLAfterRedirect(){
    // provera urla nakon redirekcije
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/badlands/customer/account/'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/badlands/customer/account/'), 7000);
    browser.sleep(5000);
 }
 
 function checkNoPaymentMessage() {
    // Provera no paymeny message(provera se samo deo poruke)
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('.message-error.error.message'),'My Payment Data will be available after you'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.message-error.error.message'),'My Payment Data will be available after you'), 7000);
    browser.sleep(2000);
 }
 

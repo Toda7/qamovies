@@ -6,7 +6,7 @@ function clickOnCreateHostedWebinarButton() {
 function checkTitleOnPage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao title on page
-    browser.wait(EC.textToBePresentInElement($('#admin_webinars_create_os'), 'Create Outsourced Webinar'), 5000);
+    browser.wait(EC.textToBePresentInElement($('#admin_webinars_create_os'), 'Create Outsourced Webinar'), 7000);
 }   
 function enterTextInTitleField() {
     // Unosenje texta u title field

@@ -37,13 +37,13 @@ function clickOnCheckMark() {
 function checkActivityTab(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je Activity tab tu
-    browser.wait(EC.textToBePresentInElement($('.card-tabs'), 'ACTIVITY'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-tabs'), 'ACTIVITY'), 7000);
 }
 
 function checkTaskTab(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je Task tab tu
-    browser.wait(EC.textToBePresentInElement($('.card-tabs'), 'TASKS'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-tabs'), 'TASKS'), 7000);
 }
 
 module.exports = {

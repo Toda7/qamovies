@@ -14,13 +14,13 @@ function clickOnLink() {
  function checkTopicsUrl() {
     // Provera Topics URL-a
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/topics'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/topics'), 7000);
 }
 
 function checkTopicsText(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao Topics naslov
-    browser.wait(EC.textToBePresentInElement($('.topics_top_title'), 'Topics'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.topics_top_title'), 'Topics'), 7000);
     browser.sleep(2000);
 }  
 
@@ -34,7 +34,7 @@ function counterOfTopics(){
 function checkPagination(){
     var EC = protractor.ExpectedConditions;
     // Waits for the element with id 'abc' to be present on the dom.
-    browser.wait(EC.presenceOf($('.pagination')), 5000);
+    browser.wait(EC.presenceOf($('.pagination')), 7000);
 
 }
 

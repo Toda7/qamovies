@@ -7,13 +7,13 @@ function selectPositionToSort() {
 function checkSortingRL() {
    // Provera da li se ucitao URL sa parametrom za position name za sorting
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html'), 7000);
 }
 
 function checkThatProductIsLoadedOn2Page() {
    // provera da li se ucitao product na strani
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('.product.name.product-item-name'), 'HIP-SHOT™ ADAPTIVE SHOOTING REST'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.product.name.product-item-name'), 'HIP-SHOT™ ADAPTIVE SHOOTING REST'), 7000);
 }
 
  module.exports = {

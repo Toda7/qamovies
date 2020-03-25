@@ -12,13 +12,13 @@ function clickOnCareers() {
 function checkPageTitle()  {
     // Proverava da li se ucitao Home title 
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.titleIs('Careers | CBANC'), 5000);
+    browser.wait(EC.titleIs('Careers | CBANC'), 7000);
 }
 
 function checkCareersUrl() {
     // Provera Careers URL-a
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/careers'), 5000);
+    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/careers'), 7000);
 }
 
 module.exports = {

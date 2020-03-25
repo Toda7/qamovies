@@ -107,7 +107,7 @@ function insertBio() {
 function checkSuccessMessage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je save-ovano
-    browser.wait(EC.textToBePresentInElement($('.message.success'), 'Changes successfully saved.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.message.success'), 'Changes successfully saved.'), 7000);
 }
 
 function insertPrimaryRole(){

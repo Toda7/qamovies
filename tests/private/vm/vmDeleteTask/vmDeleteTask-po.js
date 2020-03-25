@@ -15,7 +15,7 @@ function clickOnDeleteButton() {
 
 function checkDeletedMessage(){
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.col.s10.main'), 'Task successfully deleted.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.col.s10.main'), 'Task successfully deleted.'), 7000);
 }   
 
  module.exports = {

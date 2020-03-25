@@ -7,7 +7,7 @@ function clickMyCart() {
 function checkMyCartUrl() {
    // Provera da li se ucitao dobar URL za My Cart stranu
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/checkout/cart/'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/checkout/cart/'), 7000);
 }
 
 function clickOrderGuidelines() {
@@ -19,7 +19,7 @@ function clickOrderGuidelines() {
 function checkOrderGuidelinesUrl() {
    // Provera da li se ucitao dobar URL za Order Guidelines stranu
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/gear-discounts/truglo'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/gear-discounts/truglo'), 7000);
    browser.sleep(2000);
 }
 
@@ -32,8 +32,8 @@ function clickAllGearDiscounts() {
 function checkAllGearDiscountsUrl() {
    // Provera da li se ucitao dobar URL za Grid stranu
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/gear-discounts'), 5000);
-   browser.sleep(500);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/gear-discounts'), 7000);
+   browser.sleep(1000);
 }
 
 module.exports = {

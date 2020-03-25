@@ -31,7 +31,7 @@ function clickOnLink() {
 function checkDownloadButton()  {
     // Proverava da li se ucitao Download to .CSV button   
      var EC = protractor.ExpectedConditions;
-     browser.wait(EC.textToBePresentInElement($('.download_link'),'DOWNLOAD TO .CSV'), 5000);
+     browser.wait(EC.textToBePresentInElement($('.download_link'),'DOWNLOAD TO .CSV'), 7000);
  }
 
  function checkShareButton()  {

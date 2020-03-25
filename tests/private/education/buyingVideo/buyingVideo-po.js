@@ -18,7 +18,7 @@ function clickOnAgreePayButton() {
 function checkPurchaseMessage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavila treca error poruka
-    browser.wait(EC.textToBePresentInElement($('.buy'), 'This video has been purchased.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.buy'), 'This video has been purchased.'), 7000);
 }   
 
 function enterNumbersInCreditCardField() {

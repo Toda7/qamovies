@@ -23,9 +23,10 @@ exports.config = {
       './gfShop/testPlaceFFLOrder/testPlaceFFLOrder-spec.js'
     ],
 
-    testTwentyProductsOrder: [
-      './gfShop/testTwentyProductsOrder/testTwentyProductsOrder-spec.js'
-    ],
+    // testTwentyProductsOrder: [
+        // imamo tiket - https://guidefitter.atlassian.net/browse/SHOP-1106 
+    //   './gfShop/testTwentyProductsOrder/testTwentyProductsOrder-spec.js'
+    // ],
 
     testBreadcrumbs: [
       './gfShop/testBreadcrumbs/testBreadcrumbs-spec.js'
@@ -135,9 +136,10 @@ exports.config = {
       './gfShop/testSearchShop/testSearchShop-spec.js'
     ],
 
-    testColorLinksonProductsListPage: [
-      './gfShop/testColorLinksonProductsListPage/testColorLinksonProductsListPage-spec.js'
-    ],
+    // testColorLinksonProductsListPage: [
+    //   // imamo tiket - https://guidefitter.atlassian.net/browse/SHOP-1108
+    //   './gfShop/testColorLinksonProductsListPage/testColorLinksonProductsListPage-spec.js'
+    // ],
 
     testPoBoxAddress: [
       './gfShop/testPoBoxAddress/testPoBoxAddress-spec.js'

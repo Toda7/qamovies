@@ -33,7 +33,7 @@ function checkRestrictionMessage() {
    var xxx = element(by.className('message-error error message'));
    expect(xxx.getText()).toEqual('This product could not be added to your cart since it already contains FFL restricted items - please complete your current transaction, then purchase non-FFL restricted items on another order.');
    // var EC = protractor.ExpectedConditions;
-   // browser.wait(EC.textToBePresentInElement($('.message-error.error.message'), 'This product could not be added to your cart since it already contains FFL restricted items - please complete your current transaction, then purchase non-FFL restricted items on another order.'), 5000);
+   // browser.wait(EC.textToBePresentInElement($('.message-error.error.message'), 'This product could not be added to your cart since it already contains FFL restricted items - please complete your current transaction, then purchase non-FFL restricted items on another order.'), 7000);
    browser.sleep(1000);
 }
 

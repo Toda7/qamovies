@@ -18,7 +18,7 @@ function click1Product() {
  function checkSuccessMsg(){
     var EC = protractor.ExpectedConditions;
     // Provera da li smo dobili success poruku
-    browser.wait(EC.textToBePresentInElement($('.message-success.success.message'), 'You added ACCU X™ CAPTURE BOWFISHING REST to your shopping cart.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.message-success.success.message'), 'You added ACCU X™ CAPTURE BOWFISHING REST to your shopping cart.'), 7000);
     browser.sleep(5000);
  }
 
@@ -43,7 +43,7 @@ function click1Product() {
  function checkViewEditCartURL() {
     // Provera da li se ucitao URL view and edit strane
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/checkout/cart/'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/checkout/cart/'), 7000);
  }
 
  function clickOnQtyField() {

@@ -12,7 +12,7 @@ function clickOnMyAccountLink() {
 function checkMyAccountURL() {
    // Provera da li se ucitao My Account URL
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/customer/account/'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/customer/account/'), 7000);
 }
 
 function clickAddressBook() {
@@ -24,7 +24,7 @@ function clickAddressBook() {
 function checkAddressBookURL() {
    // Provera da li se ucitao Address Book URL
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/customer/address/'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/customer/address/'), 7000);
 }
 
 function clickAddNewAddress() {
@@ -48,50 +48,50 @@ function clearLastNameField() {
 function checkRequiredMessageForFirstName(){
    // provera da li se ucitala required message for phone
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('div#firstname-error.mage-error'), 'This is a required field.'), 5000);
+   browser.wait(EC.textToBePresentInElement($('div#firstname-error.mage-error'), 'This is a required field.'), 7000);
 }
 
 function checkRequiredMessageForLastName(){
    // provera da li se ucitala required message for phone
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('div#lastname-error.mage-error'), 'This is a required field.'), 5000);
+   browser.wait(EC.textToBePresentInElement($('div#lastname-error.mage-error'), 'This is a required field.'), 7000);
 }
 
 
 function checkRequiredMessageForPhone(){
 // provera da li se ucitala required message for phone
 var EC = protractor.ExpectedConditions;
-browser.wait(EC.textToBePresentInElement($('div#telephone-error.mage-error'), 'This is a required field.'), 5000);
+browser.wait(EC.textToBePresentInElement($('div#telephone-error.mage-error'), 'This is a required field.'), 7000);
 }
 
 function checkRequiredMessageForStreet(){
    // provera da li se ucitala required message for street
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('div#street_1-error.mage-error'), 'This is a required field.'), 5000);
+   browser.wait(EC.textToBePresentInElement($('div#street_1-error.mage-error'), 'This is a required field.'), 7000);
 }
 
 function checkRequiredMessageForcity(){
    // provera da li se ucitala required message for city
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('div#city-error.mage-error'), 'This is a required field.'), 5000);
+   browser.wait(EC.textToBePresentInElement($('div#city-error.mage-error'), 'This is a required field.'), 7000);
 }
 
 function checkRequiredMessageForState(){
    // provera da li se ucitala required message for State
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('div#region_id-error.mage-error'), 'Please select an option.'), 5000);
+   browser.wait(EC.textToBePresentInElement($('div#region_id-error.mage-error'), 'Please select an option.'), 7000);
 }
 
 function checkRequiredMessageForZip(){
    // provera da li se ucitala required message for zip
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('div#zip-error.mage-error'), 'This is a required field.'), 5000);
+   browser.wait(EC.textToBePresentInElement($('div#zip-error.mage-error'), 'This is a required field.'), 7000);
 }
 
 function checkAddNewAddressURL() {
    // Provera da li se ucitao Add New Address URL
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/customer/address/new/'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/customer/address/new/'), 7000);
 }
 
 function enterFirstName() {
@@ -153,7 +153,7 @@ function clickOnSave() {
 function checkIsAddressIsSaved() {
 // Da li se pojavila success poruka saved
 var EC = protractor.ExpectedConditions;
-browser.wait(EC.textToBePresentInElement($('.message-success.success.message'), 'You saved the address.'), 5000);
+browser.wait(EC.textToBePresentInElement($('.message-success.success.message'), 'You saved the address.'), 7000);
 }
 
 

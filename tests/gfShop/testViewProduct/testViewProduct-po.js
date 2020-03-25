@@ -13,7 +13,7 @@ function clickOnListView() {
  function checkListViewURL() {
     // Provera da li se ucitao URL sa parametrom za position name za sorting
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/bowfishing.html?product_list_mode=list'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/bowfishing.html?product_list_mode=list'), 7000);
  }
 
  function clickOnLimiter() {
@@ -25,7 +25,7 @@ function clickOnListView() {
  function checkListViewLimit5URL() {
     // Provera da li se ucitao URL sa parametrom za position name za sorting
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/bowfishing.html?product_list_mode=list&product_list_limit=5'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/bowfishing.html?product_list_mode=list&product_list_limit=5'), 7000);
  }
 
  function checkItemsNumber(){
@@ -51,7 +51,7 @@ function clickOnListView() {
  function checkPage2URL() {
     // Provera da li se ucitao URL page 2
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/bowfishing.html?p=2&product_list_limit=5&product_list_mode=list'), 5000);
+    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery/bowfishing.html?p=2&product_list_limit=5&product_list_mode=list'), 7000);
  }
 
  function checkItemsNumberOn2Page(){
@@ -59,7 +59,7 @@ function clickOnListView() {
     // Provera da li je dobra paginacija
     var xxx = element.all(by.className('toolbar-amount')).get(0);
     expect(xxx.getText()).toEqual('Items 6-6 of 6');
-   //  browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 6-6 of 6'), 5000);
+   //  browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 6-6 of 6'), 7000);
    //  browser.sleep(2500);
  }
 

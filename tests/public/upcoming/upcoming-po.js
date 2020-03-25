@@ -14,20 +14,20 @@ function HoverToOpenDrop() {
  function checkUpcoming() {
     // Provera upcoming URL-a
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/education/webinars/calendar'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/education/webinars/calendar'), 7000);
     browser.sleep(2000);
 }
 
 function checkUpcomingWebinarsPageTitle(){
     var EC = protractor.ExpectedConditions;
     //  Provera da li se ucitao page title
-    browser.wait(EC.titleIs('CBANC: Upcoming Webinars'), 5000);
+    browser.wait(EC.titleIs('CBANC: Upcoming Webinars'), 7000);
 }
 
 function checkTitleOnPage(){
     var EC = protractor.ExpectedConditions;
     //  Provera da li se ucitao page title
-    browser.wait(EC.textToBePresentInElement($('.header_meta'), 'Upcoming Webinars'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.header_meta'), 'Upcoming Webinars'), 7000);
 }
 
 

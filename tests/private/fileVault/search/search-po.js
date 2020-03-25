@@ -13,7 +13,7 @@ function insertTxtInSearch() {
 function checkSearchResult() {
     // Provera da li je search rezultat dobar
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.collection-item.avatar.task_item'), 'Z1'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.collection-item.avatar.task_item'), 'Z1'), 7000);
 }
 
 module.exports = {

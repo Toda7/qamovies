@@ -13,13 +13,13 @@ function clickOnLink() {
  function checkDoclibUrl() {
     // Provera Doc Library URL-a
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/documents'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/documents'), 7000);
 }
 
 function checkDocText(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao Document Library naslov
-    browser.wait(EC.textToBePresentInElement($('.inner'), 'Document Library'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.inner'), 'Document Library'), 7000);
     browser.sleep(2000);
 }  
 
@@ -33,7 +33,7 @@ function counterOfDocs(){
 function checkPagination(){
     var EC = protractor.ExpectedConditions;
     // Waits for the element with id 'abc' to be present on the dom.
-    browser.wait(EC.presenceOf($('.pagination')), 5000);
+    browser.wait(EC.presenceOf($('.pagination')), 7000);
 
 }
 

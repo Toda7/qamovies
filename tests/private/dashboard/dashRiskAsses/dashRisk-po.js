@@ -18,13 +18,13 @@ function clickOnRisk() {
 function checkButton() {
   // Da li se ucitalo Your Risk Assessments text
   var EC = protractor.ExpectedConditions;
-  browser.wait(EC.textToBePresentInElement($('.inner'), 'Your Risk Assessments'), 5000);
+  browser.wait(EC.textToBePresentInElement($('.inner'), 'Your Risk Assessments'), 7000);
 }
 
 function checkRiskUrl() {
   // Provera Url Risk assessmenta 
   var EC = protractor.ExpectedConditions;
-  browser.wait(EC.urlContains('https://qa.cbancnetwork.com/risk_assessment/home'), 5000);
+  browser.wait(EC.urlContains('https://qa.cbancnetwork.com/risk_assessment/home'), 7000);
 }
 
 module.exports = {

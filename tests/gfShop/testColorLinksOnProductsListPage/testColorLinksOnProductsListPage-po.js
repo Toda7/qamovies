@@ -31,7 +31,7 @@ function clickOnAddToCart(){
 function checkProductURL() {
    // Provera product URL-a
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/hsprecision/pst067-remington-700-and-pro-series-2000-short-action-detachable-box-stock.html'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/hsprecision/pst067-remington-700-and-pro-series-2000-short-action-detachable-box-stock.html'), 7000);
 }
 
 function checkSku() {

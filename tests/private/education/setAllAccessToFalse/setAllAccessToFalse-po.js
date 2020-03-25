@@ -24,7 +24,7 @@ function clickOnEditButton() {
 function checkNoStatus(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao second title of question
-    browser.wait(EC.textToBePresentInElement($('.no'), 'NO'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.no'), 'NO'), 7000);
 }   
 
  function clickOnGrant() {
@@ -36,7 +36,7 @@ function checkNoStatus(){
 function checkYeStatus(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao second title of question
-    browser.wait(EC.textToBePresentInElement($('.yes'), 'YES'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.yes'), 'YES'), 7000);
 }   
 
  module.exports = {

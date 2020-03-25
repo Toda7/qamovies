@@ -7,7 +7,7 @@ function clickOnLink() {
 function checkCareersURL() {
     // Provera Careers URL-a
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/careers'), 5000);
+    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/careers'), 7000);
 }
 
 module.exports = {

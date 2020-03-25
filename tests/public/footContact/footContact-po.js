@@ -7,7 +7,7 @@ function clickOnLink() {
 function checkContactURL() {
     //Provera Contact URL-a
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/support'), 5000);
+    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/support'), 7000);
 }
 
 module.exports = {

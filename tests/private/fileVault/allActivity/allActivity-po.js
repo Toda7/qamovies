@@ -7,7 +7,7 @@ function clickOnAllActivity() {
 function checkAllActivityList() {
     // Provera All Activity liste
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.text_content'), 'Chicago Alberto Diaz FI'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.text_content'), 'Chicago Alberto Diaz FI'), 7000);
 }
 
 module.exports = {

@@ -13,7 +13,7 @@ function clickOnPassResetBtn() {
 function checkSuccessMessageForPassreset(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je poslat email za reset pass
-    browser.wait(EC.textToBePresentInElement($('.message.success'), 'just sent you an email to reset your password. (1@chicago.com)'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.message.success'), 'just sent you an email to reset your password. (1@chicago.com)'), 7000);
 }
 
 module.exports = {

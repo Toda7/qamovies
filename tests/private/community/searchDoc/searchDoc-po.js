@@ -24,7 +24,7 @@ function enterSearchWord() {
 function checkSuccess(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je search uspesan
-    browser.wait(EC.textToBePresentInElement($('.title'), 'Do Not Touch This Document (QA Property)'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.title'), 'Do Not Touch This Document (QA Property)'), 7000);
     browser.sleep(2000);
  } 
 

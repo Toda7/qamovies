@@ -5,13 +5,13 @@ function clickOnBoardofDirectorsLink() {
 
  function checkReportPageTitle(){
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.titleIs('CBANC Vendor Management Report'), 5000);
+    browser.wait(EC.titleIs('CBANC Vendor Management Report'), 7000);
 }
 
 function checkTitleOnPage(){
     var EC = protractor.ExpectedConditions;
     // Provera dal se ucitala Upload Complete message
-    browser.wait(EC.textToBePresentInElement($('.card-content'), 'Vendor Management Report'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-content'), 'Vendor Management Report'), 7000);
 }   
 
 function checkCriticalSectionOnPage(){

@@ -25,7 +25,7 @@ function clickToConfirmToDelete() {
 function checkSucessDeleteMessage() {
    // Da li se pojavila success poruka za delete
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('.message-success.success.message'), 'You deleted the address.'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.message-success.success.message'), 'You deleted the address.'), 7000);
 }
 
  module.exports = {

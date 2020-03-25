@@ -8,7 +8,7 @@ function clickOnSignIn() {
 
 function checkSignInUrl() {
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://cbancnetwork-edge.auth0.com/login'), 5000);
+    browser.wait(EC.urlContains('https://cbancnetwork-edge.auth0.com/login'), 7000);
 }
 
 function enterEmail() {
@@ -25,7 +25,7 @@ function submit() {
 
 function checkLogInUrl() {
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/membership/dashboard/'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/membership/dashboard/'), 7000);
 }
 module.exports = {
     landOnHomePage,

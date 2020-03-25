@@ -12,7 +12,7 @@ function clickOnWorkspace() {
 function checkWorkspaceUrl() {
     // Prowera Workspace Urla
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/file_vault/home'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/file_vault/home'), 7000);
 }
 
 function checkPageText() {
@@ -24,7 +24,7 @@ function checkPageText() {
 function checkPageTitle(){
     // Provera page title  
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.pt_text truncate'),'File Vaults'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.pt_text truncate'),'File Vaults'), 7000);
 }
 
 module.exports = {

@@ -7,7 +7,7 @@ function clickOnSetDescendingDirection() {
 function checkSortingURL() {
    // Provera da li se ucitao URL sa parametrom za Set Descending Direction
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html?product_list_dir=desc'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html?product_list_dir=desc'), 7000);
 }
 
 function clickOnSelectOptionToOpenMenu() {
@@ -25,7 +25,7 @@ browser.sleep(2000);
 function checkSortingURL1() {
    // Provera da li se ucitao URL sa parametrom za Set Descending Direction i selected option 
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html?product_list_dir=desc&truglo_firearm_hunting=3273'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html?product_list_dir=desc&truglo_firearm_hunting=3273'), 7000);
 }
 
 function checkPositonOfProduct() {

@@ -13,13 +13,13 @@ function enterStreet() {
 function enterCity() {
    // Unesi city 
    element(by.name('city')).clear().sendKeys('Austin');
-   browser.sleep(500);
+   browser.sleep(1000);
 }
 
 function enterZip() {
    // Unesi ZIP 
    element(by.name('postcode')).clear().sendKeys('78756');
-   browser.sleep(500);
+   browser.sleep(1000);
 }
 
 function clickUnitedParcelService(){

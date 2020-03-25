@@ -13,7 +13,7 @@ function clickOnAllTasks() {
 function checkIsItURLAllTasks() {
     // Provera da li se ucitao All Tasks URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/file_vault/vault/8a1fd448-0185-42bd-bfba-c27c0efa0c71/tasks?s=all&q='), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/file_vault/vault/8a1fd448-0185-42bd-bfba-c27c0efa0c71/tasks?s=all&q='), 7000);
 }
 
 function insertTaskNameInAllTasks() {
@@ -25,7 +25,7 @@ function insertTaskNameInAllTasks() {
 function checkIsItTaskShows() {
     // Provera da li se pojavio task sa trazenim imenom
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.collection-item.avatar.task_item'), 'Protractor Task 1'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.collection-item.avatar.task_item'), 'Protractor Task 1'), 7000);
 }
 
  function clickOnX() {
@@ -43,7 +43,7 @@ function clickOnOpenTasks() {
 function checkIsItURLOpenTasks() {
     // Provera da li se ucitao Open Tasks URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/file_vault/vault/8a1fd448-0185-42bd-bfba-c27c0efa0c71/tasks?s=open&q='), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/file_vault/vault/8a1fd448-0185-42bd-bfba-c27c0efa0c71/tasks?s=open&q='), 7000);
 }
 
 function insertTaskNameInOpenTasks() {
@@ -55,7 +55,7 @@ function insertTaskNameInOpenTasks() {
 function checkIsItOpenTaskShows() {
     // Provera da li se pojavio task sa trazenim imenom
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.collection-item.avatar.task_item'), 'Protractor Task 1'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.collection-item.avatar.task_item'), 'Protractor Task 1'), 7000);
 }
 
 function clickOnCompletedTasks() {
@@ -67,7 +67,7 @@ function clickOnCompletedTasks() {
 function checkIsItURLCompletedTasks() {
     // Provera da li se ucitao Completed Tasks URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/file_vault/vault/8a1fd448-0185-42bd-bfba-c27c0efa0c71/tasks?s=done&q='), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/file_vault/vault/8a1fd448-0185-42bd-bfba-c27c0efa0c71/tasks?s=done&q='), 7000);
 }
 
 function insertTaskNameInCompletedTasks() {
@@ -79,7 +79,7 @@ function insertTaskNameInCompletedTasks() {
 function checkIsItCompletedTaskShows() {
     // Provera da li se pojavio task sa trazenim imenom
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.collection-item.avatar.task_item'), 'Z1'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.collection-item.avatar.task_item'), 'Z1'), 7000);
 }
 
 module.exports = {

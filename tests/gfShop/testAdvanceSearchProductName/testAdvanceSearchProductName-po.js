@@ -19,7 +19,7 @@ function clickOnSearchField() {
  function checkAdvanceSearchURL() {
    // Provera da li se ucitao URL sa parametrom za position name za sorting
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/catalogsearch/advanced/'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/catalogsearch/advanced/'), 7000);
 }
 
  function enterProductName() {
@@ -37,7 +37,7 @@ function clickOnSearchField() {
  function checkModifyMsg() {
    var EC = protractor.ExpectedConditions;
    // Da li se ucitala Modify message
-   browser.wait(EC.textToBePresentInElement($('.message.notice'), 'Modify your search.'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.message.notice'), 'Modify your search.'), 7000);
    browser.sleep(2000);
 }
 
@@ -69,7 +69,7 @@ function clickSearchButton() {
 function checkErrorMsg() {
    var EC = protractor.ExpectedConditions;
    // Da lis e ucitao trazeni product
-   browser.wait(EC.textToBePresentInElement($('.message.error'), 'find any items matching these search criteria.'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.message.error'), 'find any items matching these search criteria.'), 7000);
    browser.sleep(2000);
 }
 
