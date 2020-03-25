@@ -116,14 +116,13 @@ it('Klik on Find & Attach button', function(){
     createHostedWebinar.clickOnFindttachButton();
 });
 
-// ne radi, imamo tkt
-// it('Select topic tag', function(){
-//     createHostedWebinar.selectTopicTags();
-// });
+it('Select topic tag', function(){
+    createHostedWebinar.selectTopicTags();
+});
 
-// it('Klik to Select Topic', function(){
-//     createHostedWebinar.clickOnTopicToSelect();
-// });
+it('Klik to Select Topic', function(){
+    createHostedWebinar.clickOnTopicToSelect();
+});
 
 it('Klik on Save Topics button', function(){
     createHostedWebinar.clickOnSaveTopicsButton();
