@@ -26,7 +26,7 @@ function checkUserAvatar() {
     // Provera da li je dobar user avatar na document details page
     var xxx = element.all(by.tagName('img')).get(1);
     expect(xxx.getAttribute('src')).toEqual('https://qa.cbancnetwork.com/membership/public/avatar/18c37233-abbf-428a-b586-2cb97014bafc');
-    browser.sleep(1000)));
+    browser.sleep(1000);
 }
 
 function checkUserName(){

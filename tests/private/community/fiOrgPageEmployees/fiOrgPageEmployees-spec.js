@@ -13,27 +13,27 @@ describe('Employees sekcija na FI Org strani ', function () {
 
     it('Provera naslova Employees sekcije', function () {
         fiOrgPageEmployees.checkEmployeesSectionTitle();
-        browser.sleep(1000))));
+        browser.sleep(1000);
     });
 
     it('Provera da li se na strani nalazi 28 zaposlenih', function () {
         fiOrgPageEmployees.count28employees();
-        browser.sleep(1000))));
+        browser.sleep(1000);
     });
 
     it('Provera avatara za prvog zaposlenog u listi', function () {
         fiOrgPageEmployees.checkFirstEmployeeAvatar();
-        browser.sleep(1000))));
+        browser.sleep(1000);
     });
 
     it('Provera imena za prvog zaposlenog u listi', function () {
         fiOrgPageEmployees.checkFirstEmployeeName();
-        browser.sleep(1000))));
+        browser.sleep(1000);
     });
 
     it('Proveri job title za prvog zaposlenog u listi', function () {
         fiOrgPageEmployees.checkFirstEmployeeJobTilte();
-        browser.sleep(1000))));
+        browser.sleep(1000);
     });
 
     it('Klik na Send Message za prvog zaposlenog u listi', function () {
@@ -55,7 +55,7 @@ describe('Employees sekcija na FI Org strani ', function () {
 
     it('Provera default avatara za treceg zaposlenog u listi', function () {
         fiOrgPageEmployees.checkThirdEmployeeDefaultAvatar();
-        browser.sleep(1000))));
+        browser.sleep(1000);
     });
 
     afterAll(function () {

@@ -2,14 +2,14 @@ function checkParentSku() {
    // Provera da li je dobar Parent SKU
    var xxx = element(by.className('product attribute sku'));
    expect(xxx.getText()).toEqual('SKU TG140G');
-   browser.sleep(1000)))));
+   browser.sleep(1000));
 }
 
 function checkFirstChildSku() {
    // Provera da li je dobar SKU za prvi Child
    var xxx = element(by.className('product attribute sku'));
    expect(xxx.getText()).toEqual('SKU TG140F3G');
-   browser.sleep(1000)))));
+   browser.sleep(1000));
 }
 
 function chooseSecondOption() {
@@ -22,7 +22,7 @@ function checkSecondChildSku() {
    // Provera da li je dobar SKU za drugi Child
    var xxx = element(by.className('product attribute sku'));
    expect(xxx.getText()).toEqual('SKU TG140C1G');
-   browser.sleep(1000)))));
+   browser.sleep(1000));
 }
 
 

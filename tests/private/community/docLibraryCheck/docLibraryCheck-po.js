@@ -38,7 +38,7 @@ function checkUserAvatarInHeader() {
     // Provera da li je dobar default avatar in header
     var xxx = element(by.tagName('img'));
     expect(xxx.getAttribute('src')).toEqual('https://qa.cbancnetwork.com/membership/public/avatar/e340806a-b6fd-4fe2-8f52-7858e3ad5408');
-    browser.sleep(1000));
+    browser.sleep(1000);
 }
 
 function clickOnUserAvatarToOpenDropMenu() {

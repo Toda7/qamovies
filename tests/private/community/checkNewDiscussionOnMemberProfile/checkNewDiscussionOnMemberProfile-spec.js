@@ -79,12 +79,12 @@ describe('Provera da li se napravljena diskusija pojavila na Member strani', fun
 
     it('Unosenje emaila', function(){
         login.enterEmail();
-        browser.sleep(1000));
+        browser.sleep(1000);
     });
 
     it('Unosenje lozinke', function(){
         login.enterPass();
-        browser.sleep(1000));
+        browser.sleep(1000);
     });
 
     it('Logovanje', function(){
@@ -169,12 +169,12 @@ describe('Provera da li se napravljena diskusija pojavila na Member strani', fun
 
     it('Unosenje emaila', function(){
         login.enterEmail();
-        browser.sleep(1000));
+        browser.sleep(1000);
     });
 
     it('Unosenje lozinke', function(){
         login.enterPass();
-        browser.sleep(1000));
+        browser.sleep(1000);
     });
 
     it('Logovanje', function(){

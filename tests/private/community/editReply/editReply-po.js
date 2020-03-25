@@ -26,7 +26,7 @@ function checkSuccess(){
    var EC = protractor.ExpectedConditions;
    // Provera da li je uspesno editovan Reply
    browser.wait(EC.textToBePresentInElement($('.community .thread_detail .replies .reply'), 'ATQA Reply EDITED'), 7000);
-   browser.sleep(1000)));
+   browser.sleep(1000);
 }  
 
 module.exports = {

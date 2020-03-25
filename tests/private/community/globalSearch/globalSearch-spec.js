@@ -33,7 +33,7 @@ describe('Linkovi na Global Search strani', function(){
 
     it('Klik na user avatar da otvorimo user menu', function () {
         docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
-        browser.sleep(1000)));
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao Inbox link u user meniju', function () {
@@ -58,7 +58,7 @@ describe('Linkovi na Global Search strani', function(){
 
     it('Klik na user avatar da otvorimo user menu', function () {
         docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
-        browser.sleep(1000)));
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao My Profile link u user meniju', function () {
@@ -78,7 +78,7 @@ describe('Linkovi na Global Search strani', function(){
 
     it('Klik na user avatar da otvorimo user menu', function () {
         docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
-        browser.sleep(1000)));
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao Org link u user meniju', function () {
@@ -98,7 +98,7 @@ describe('Linkovi na Global Search strani', function(){
 
     it('Klik na user avatar da otvorimo user menu', function () {
         docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
-        browser.sleep(1000)));
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao Account Settings link u user meniju', function () {
@@ -118,7 +118,7 @@ describe('Linkovi na Global Search strani', function(){
 
     it('Klik na user avatar da otvorimo user menu', function () {
         docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
-        browser.sleep(1000)));
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao sign out link u user meniju', function () {

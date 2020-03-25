@@ -33,7 +33,7 @@ function checkAllGearDiscountsUrl() {
    // Provera da li se ucitao dobar URL za Grid stranu
    var EC = protractor.ExpectedConditions;
    browser.wait(EC.urlContains('https://www.outfitterextreme.com/gear-discounts'), 7000);
-   browser.sleep(1000));
+   browser.sleep(1000);
 }
 
 module.exports = {

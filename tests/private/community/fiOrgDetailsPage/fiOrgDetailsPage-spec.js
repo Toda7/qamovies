@@ -15,12 +15,12 @@ describe('FI Org strana ', function () {
 
     it('Provera imena FI Orga u Profile boxu', function () {
         fiOrgDetailsPage.checkFiOrgNameInProfileBox();
-        browser.sleep(1000))));
+        browser.sleep(1000);
     });
 
     it('Provera avatara FI Orga u Profile boxu', function () {
         fiOrgDetailsPage.checkAvatarInProfileBox();
-        browser.sleep(1000))));
+        browser.sleep(1000);
     });
 
     it('Klik na link FI Orga u Profile boxu', function () {
@@ -61,7 +61,7 @@ describe('FI Org strana ', function () {
 
     it('Klik na user avatar da otvorimo user menu', function () {
         docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
-        browser.sleep(1000))));
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao Inbox link u user meniju', function () {
@@ -86,7 +86,7 @@ describe('FI Org strana ', function () {
 
     it('Klik na user avatar da otvorimo user menu', function () {
         docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
-        browser.sleep(1000))));
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao My Profile link u user meniju', function () {
@@ -106,7 +106,7 @@ describe('FI Org strana ', function () {
 
     it('Klik na user avatar da otvorimo user menu', function () {
         docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
-        browser.sleep(1000))));
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao Org link u user meniju', function () {
@@ -126,7 +126,7 @@ describe('FI Org strana ', function () {
 
     it('Klik na user avatar da otvorimo user menu', function () {
         docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
-        browser.sleep(1000))));
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao Account Settings link u user meniju', function () {
@@ -146,7 +146,7 @@ describe('FI Org strana ', function () {
 
     it('Klik na user avatar da otvorimo user menu', function () {
         docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
-        browser.sleep(1000))));
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao sign out link u user meniju', function () {

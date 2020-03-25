@@ -19,7 +19,7 @@ function checkDefaultUserAvatar() {
     // Provera da li je dobar default user avatar na document details page
     var xxx = element.all(by.tagName('img')).get(1);
     expect(xxx.getAttribute('src')).toEqual('https://static.cbancnetwork.com/Public/higgins/avatar_gray.png');
-    browser.sleep(1000));
+    browser.sleep(1000);
 }
 
 function checkTimeStamp(){

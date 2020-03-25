@@ -8,21 +8,21 @@ function checkValidationMessage() {
    // Da li se pojavila validation poruka za pogresan kod kupona
    var xxx = element.all(by.className('messages')).get(1);
    expect(xxx.getText()).toEqual('The coupon code "ATQA Coupon" is not valid.');
-   browser.sleep(1000))));
+   browser.sleep(1000);
 }
 
 function checkShippingPrice1() {
    // Provera shipping cene na Shipping strani
    var xxx = element.all(by.className('price')).get(1);
    expect(xxx.getText()).toEqual('$10.00');
-   browser.sleep(1000))));
+   browser.sleep(1000);
 }
 
 function checkShippingPrice2() {
    // Provera shipping cene na Payment strani
    var xxx = element(by.className('totals shipping excl'));
    expect(xxx.getText()).toEqual('Shipping\nFlat Rate - Fixed\n$10.00');
-   browser.sleep(1000))));
+   browser.sleep(1000);
 }
 
 function landOnFirearmTacticalPage() {

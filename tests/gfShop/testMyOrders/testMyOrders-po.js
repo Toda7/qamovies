@@ -20,7 +20,7 @@ function checkSuccess1() {
    // Provera da li je dobar title u Hero Imageu
    var xxx = element(by.className('gf-hero'));
    expect(xxx.getText()).toEqual('Truglo\nWHEN BRIGHTNESS COUNTS');
-   browser.sleep(1000));
+   browser.sleep(1000);
 }
 
 function clickFirstViewOrderLink() {
@@ -33,21 +33,21 @@ function checkSuccess2() {
    // Provera da li postoji Print Order link na strani
    var xxx = element(by.className('action print'));
    expect(xxx.getText()).toEqual('PRINT ORDER');
-   browser.sleep(1000));
+   browser.sleep(1000);
 }
 
 function checkSuccess3() {
    // Provera da li je dobar title za Items Ordered sekciju
    var xxx = element(by.className('order-title'));
    expect(xxx.getText()).toEqual('Items Ordered');
-   browser.sleep(1000));
+   browser.sleep(1000);
 }
 
 function checkSuccess4() {
    // Provera da li je dobar title za Order Information sekciju
    var xxx = element.all(by.className('block-title')).get(2);
    expect(xxx.getText()).toEqual('Order Information');
-   browser.sleep(1000));
+   browser.sleep(1000);
 }
 
 module.exports = {
