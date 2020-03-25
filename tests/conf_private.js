@@ -58,9 +58,10 @@ exports.config = {
       './private/dashboard/dashVendorMng/dashVendorMng-spec.js'
     ],
 
-    dashCbancPremium: [
-      './private/dashboard/dashCbancPremium/dashCbancPremium-spec.js'
-    ],
+    // nemamo vise  premium ad zbog korone
+    // dashCbancPremium: [
+    //   './private/dashboard/dashCbancPremium/dashCbancPremium-spec.js'
+    // ],
 
     dashAbout: [
       './private/dashboard/dashAbout/dashAbout-spec.js'
