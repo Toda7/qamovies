@@ -19,7 +19,7 @@ function clickOnAFTLink() {
 function checkAFTURL() {
     // Provera da li se ucitao AFT link URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/associations/view/07e78be8-09cf-4917-bf67-f3e3d7a2c3c4'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/associations/view/07e78be8-09cf-4917-bf67-f3e3d7a2c3c4'), 7000);
 }
 
 function checkOverviewLink() {
@@ -54,7 +54,7 @@ function clickOnMore(){
 function checkMoreDetails(){
     // Proveravanje more sekcije
     var foo = element.all(by.className('card-content')).get(1);
-    browser.wait(expect(foo.getText()).toEqual('About\nTesting mandrill123\nAddress\nNew York, TC 15434 US\nFFIEC Regulated\nYes\nOwnership\nNot Specified\nSpecialities\nlocal_offer Document Imaginglocal_offer Administration\nFeatured\nMYBANNER\nMYSECONDBANNER\nMYTHIRDBANNER'), 5000);  
+    browser.wait(expect(foo.getText()).toEqual('About\nTesting mandrill123\nAddress\nNew York, TC 15434 US\nFFIEC Regulated\nYes\nOwnership\nNot Specified\nSpecialities\nlocal_offer Document Imaginglocal_offer Administration\nFeatured\nMYBANNER\nMYSECONDBANNER\nMYTHIRDBANNER'), 7000);  
 }
 
 function count15dics() {
@@ -77,7 +77,7 @@ function clickOnVendorURLLink(){
 function checkVendorLinkURL() {
     // Provera da li se ucitao vendor link URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://www.mandrill.com/'), 5000);
+    browser.wait(EC.urlContains('https://www.mandrill.com/'), 7000);
 }
 
  module.exports = {

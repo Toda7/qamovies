@@ -26,20 +26,20 @@ describe('Load More na Global Search All tabu', function(){
 
     it('Provera da li su se na strani pojavilo 30 rezultata', function () {
         globalSearchAllLoadMore.checkIfThirtyResultsOnPage();
-        browser.sleep(500);
+        browser.sleep(1000))))));
     });
 
     it('Klik na Space na tastaturi za Load More na strani', function () {
         var step;
         for (step = 0; step < 3; step++) {
             myProfilePageLoadMore.scrollPage();
-            browser.sleep(500);
+            browser.sleep(1000))))));
         }
     });
 
     it('Provera da li se na strani pojavilo 46 rezultata', function () {
         globalSearchAllLoadMore.checkIfFourtySixResultsOnPage();
-        browser.sleep(500);
+        browser.sleep(1000))))));
     });
 
         afterAll(function(){

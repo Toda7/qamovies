@@ -19,7 +19,7 @@ function clickReputationTimeline() {
 function checkSuccess(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se nalazimo na Reputation Leaderboard strani
-    browser.wait(EC.textToBePresentInElement($('.h1'), 'Reputation Leaderboard'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.h1'), 'Reputation Leaderboard'), 7000);
     browser.sleep(2000);
  } 
   

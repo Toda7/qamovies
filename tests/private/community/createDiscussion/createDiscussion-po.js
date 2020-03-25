@@ -61,7 +61,7 @@ function postDiscussion() {
 function checkSuccess(){
    var EC = protractor.ExpectedConditions;
    // Provera da li je uspesno objavljena diskusija
-   browser.wait(EC.textToBePresentInElement($('.card-title'), 'Your discussion is successfully posted!'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.card-title'), 'Your discussion is successfully posted!'), 7000);
 }  
 
 function clickOnViewDiscussion() {
@@ -85,31 +85,31 @@ function checkTopicsOfDiscussion() {
 function checkUserName(){
    // Provera da li se ucitao user name
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .title .person_name'), 'Chicago Alberto Diaz FI'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .title .person_name'), 'Chicago Alberto Diaz FI'), 7000);
 }
 
 function checkFunctionLevel(){
    // Provera da li se ucitao function level
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .info .org_function'), 'Employee - Technology'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .info .org_function'), 'Employee - Technology'), 7000);
 }
 
 function checkOrgSize(){
    // Provera da li se ucitao org size
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .info .org_size'), '($500M | IL)'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .info .org_size'), '($500M | IL)'), 7000);
 }
 
 function checkOrgLink(){
    // Provera da li se ucitao org link
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .info .org_link'), 'Bank of Chicago'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .info .org_link'), 'Bank of Chicago'), 7000);
 }
 
 function checkDescriptionOfDiscussion(){
    // Provera da li se ucitao description of discussion
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('.community .html_content'), 'ATQA Description description testing credit'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.community .html_content'), 'ATQA Description description testing credit'), 7000);
 }
 
 function checkDocumentInDiscussionCard(){

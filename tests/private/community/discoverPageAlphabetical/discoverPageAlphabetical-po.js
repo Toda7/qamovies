@@ -13,7 +13,7 @@ function clickOnAlphabeticalTab() {
 function checkFirstTopicCard() {
     // Provera prve Topic kartice
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.card .card-content .card-title'), 'ABA'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card .card-content .card-title'), 'ABA'), 7000);
 }
 
 function checkSecondTopicCard() {

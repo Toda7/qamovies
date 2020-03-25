@@ -14,7 +14,7 @@ describe('Load more na member profile strani', function(){
 
     it('Provera da li se na strani pojavilo 15 diskusija', function(){
         myProfilePageLoadMore.checkIfFifteenDiscussionsOnPage();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Klik na Space na tastaturi za Load More na strani', function () {

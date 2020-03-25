@@ -6,12 +6,12 @@ function clickStartNewLink() {
 function checkTitleOfTemplate(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao title of template
-    browser.wait(EC.textToBePresentInElement($('.card-content.top_content'), 'Sima Template - 1 Risk Assessment'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-content.top_content'), 'Sima Template - 1 Risk Assessment'), 7000);
 }   
 function checkFirstTitleOfQuestion(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao title za prvo pitanje
-    browser.wait(EC.textToBePresentInElement($('.collection-item.inherent_risk'), 'Inherent Risk'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.collection-item.inherent_risk'), 'Inherent Risk'), 7000);
 }   
 function enterTextInTheAnswerField() {
     // Unosenje texta u answer polje
@@ -26,7 +26,7 @@ function clickContinueLink() {
  function checkSecondTitleOfQuestion(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao title za drugo pitanje
-    browser.wait(EC.textToBePresentInElement($('.collection-item.controls'), 'Controls'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.collection-item.controls'), 'Controls'), 7000);
 }   
  function enterTextInTheSecondAnswerField() {
     // Unosenje texta u drugo answer polje
@@ -36,7 +36,7 @@ function clickContinueLink() {
 function checkThirdTitleOfQuestion(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao title za trece pitanje
-    browser.wait(EC.textToBePresentInElement($('.collection-item.residual_risk'), 'Residual Risk & Mitigation Steps'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.collection-item.residual_risk'), 'Residual Risk & Mitigation Steps'), 7000);
 }   
 function enterTextInTheThirdAnswerField() {
     // Unosenje texta u trece answer polje
@@ -51,33 +51,33 @@ function clickCloseLink() {
  function checkInProgressURL() {
     // Provera da li smo dobili InProgress stranu, provera URL-a
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/ra/b0fcf98f-a435-4c19-bae0-bb9b15bb94b4/in_progress'), 5000);
+    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/ra/b0fcf98f-a435-4c19-bae0-bb9b15bb94b4/in_progress'), 7000);
     browser.sleep(2000);
 }
 function checkTemplateInProgress(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavio template koji smo zapoceli - treba da bude na in progress strani
-    browser.wait(EC.textToBePresentInElement($('.truncate'), 'Sima Template - 1'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.truncate'), 'Sima Template - 1'), 7000);
 }   
 
 function checkFirstAnswer() {
     var EC = protractor.ExpectedConditions;
     // Unosenje prvog text u polje
-    browser.wait(EC.textToBePresentInElement($('.input-field'), 'Answer on first question'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.input-field'), 'Answer on first question'), 7000);
     browser.sleep(2000);
 }
 
 function checkSecondAnswer() {
     var EC = protractor.ExpectedConditions;
     // Unosenje prvog text u polje
-    browser.wait(EC.textToBePresentInElement($('.input-field'), 'Answer on second question'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.input-field'), 'Answer on second question'), 7000);
     browser.sleep(2000);
 }
 
 function checkThirdAnswer() {
     var EC = protractor.ExpectedConditions;
     // Unosenje prvog text u polje
-    browser.wait(EC.textToBePresentInElement($('.input-field'), 'Answer on third question'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.input-field'), 'Answer on third question'), 7000);
     browser.sleep(2000);
 }
 

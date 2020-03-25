@@ -1,13 +1,13 @@
 function checkNoVendorsMessage(){
     // Provera da li se ucitala poruka za no vendors 
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.row .col'), "Could not find vendors that match 'klasndlkasndlkasndklanskdlnasdnaskldnklasndlanskldnkla'"), 5000);
+    browser.wait(EC.textToBePresentInElement($('.row .col'), "Could not find vendors that match 'klasndlkasndlkasndklanskdlnasdnaskldnklasndlanskldnkla'"), 7000);
 }
 
 function checkURLwithSearchWord() {
     // Provera da li smo dobili search URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/vendors?q=klasndlkasndlkasndklanskdlnasdnaskldnklasndlanskldnkla'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/vendors?q=klasndlkasndlkasndklanskdlnasdnaskldnklasndlanskldnkla'), 7000);
 }
 
 function enterearchWord() {
@@ -24,14 +24,14 @@ function countOneVendor() {
 function checkVendorName(){
     // Provera da li se ucitao vendor name u kartici
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.card .card-content .card-title'), 'Vendor Mandrill'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card .card-content .card-title'), 'Vendor Mandrill'), 7000);
 }
 
 function checkVendorAvatar() {
     // Provera da li je dobar vendor avatar
     var xxx = element.all(by.tagName('img')).get(1);
     expect(xxx.getAttribute('src')).toEqual('https://s3.amazonaws.com/cbanc/Public/education_assets/qa/ORG+AVATARS/Vendor+Mandrill.jpg');
-    browser.sleep(500);
+    browser.sleep(1000);
 }
 
 function checkFollowButton(){

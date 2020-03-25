@@ -42,7 +42,7 @@ function clickDiscussion() {
 function checkDiscussionUrl() {
    // Provera da li se ucitao URL za diskusiju
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/discussions/view/d279020b-5668-44a5-8f1c-3a79d3e9f608?filter=home'), 5000);
+   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/discussions/view/d279020b-5668-44a5-8f1c-3a79d3e9f608?filter=home'), 7000);
 }
 
 function checkDocumentIcon() {
@@ -71,7 +71,7 @@ function clickDocument() {
 function checkDocumentUrl() {
    // Provera da li se ucitao URL za dokument
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/documents/view/a88f47e6-e6b5-4ec7-99e0-51837737b4c7'), 5000);
+   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/documents/view/a88f47e6-e6b5-4ec7-99e0-51837737b4c7'), 7000);
 }
 
 function checkMemberIcon() {
@@ -112,7 +112,7 @@ function clickMember() {
 function checkMemberUrl() {
    // Provera da li se ucitao URL za membera
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/users/view/e8e18bfc-82a5-40e1-85e6-f5d24bd9fdb9'), 5000);
+   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/users/view/e8e18bfc-82a5-40e1-85e6-f5d24bd9fdb9'), 7000);
 }
 
 function checkFiOrgIcon() {
@@ -135,7 +135,7 @@ function clickFiOrg() {
 function checkFiOrgUrl() {
    // Provera da li se ucitao URL za FI Org
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/fis/view/3121c08e-a8ae-4732-98fb-4ab19b12271b'), 5000);
+   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/fis/view/3121c08e-a8ae-4732-98fb-4ab19b12271b'), 7000);
 }
 
  module.exports = {

@@ -18,7 +18,7 @@ function enterSearchWord() {
 function checkTopicSearchSuccess(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je search uspesan
-    browser.wait(EC.textToBePresentInElement($('.card-title'), 'E-Sign'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-title'), 'E-Sign'), 7000);
     browser.sleep(2000);
 }
 
@@ -36,7 +36,7 @@ function clickOnSubscribe() {
 function checkUnsubscribe(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je sada UNSUBSCRIBE
-    browser.wait(EC.textToBePresentInElement($('.topic .card.topic_summary .card-content .subscribe_btn'), 'UNSUBSCRIBE'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.topic .card.topic_summary .card-content .subscribe_btn'), 'UNSUBSCRIBE'), 7000);
 }
 
 function clickOnUnsubscribe() {
@@ -47,7 +47,7 @@ function clickOnUnsubscribe() {
 function checkSubscribe(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je sada SUBSCRIBE
-    browser.wait(EC.textToBePresentInElement($('.topic .card.topic_summary .card-content .subscribe_btn'), 'SUBSCRIBE'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.topic .card.topic_summary .card-content .subscribe_btn'), 'SUBSCRIBE'), 7000);
 }
 
 module.exports = {

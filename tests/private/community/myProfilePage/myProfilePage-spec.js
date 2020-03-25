@@ -14,12 +14,12 @@ describe('My Profile strana', function () {
 
     it('Provera imena membera u Profile boxu', function () {
         myProfilePage.checkNameInProfileBox();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Provera avatara membera u Profile boxu', function () {
         myProfilePage.checkAvatarInProfileBox();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Klik na ime banke u Profile boxu', function () {
@@ -40,7 +40,7 @@ describe('My Profile strana', function () {
 
     it('Provera da li se ucitao URL za AFT grupu', function () {
         myProfilePage.checkAftGroupURL();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Provera da li smo na strani AFT grupe', function () {
@@ -82,7 +82,7 @@ describe('My Profile strana', function () {
 
     it('Klik na user avatar da otvorimo user menu', function () {
         docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao Inbox link u user meniju', function () {
@@ -107,7 +107,7 @@ describe('My Profile strana', function () {
 
     it('Klik na user avatar da otvorimo user menu', function () {
         docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao My Profile link u user meniju', function () {
@@ -127,7 +127,7 @@ describe('My Profile strana', function () {
 
     it('Klik na user avatar da otvorimo user menu', function () {
         docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao Org link u user meniju', function () {
@@ -147,7 +147,7 @@ describe('My Profile strana', function () {
 
     it('Klik na user avatar da otvorimo user menu', function () {
         docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao Account Settings link u user meniju', function () {
@@ -167,7 +167,7 @@ describe('My Profile strana', function () {
 
     it('Klik na user avatar da otvorimo user menu', function () {
         docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao sign out link u user meniju', function () {

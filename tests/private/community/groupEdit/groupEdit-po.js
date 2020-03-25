@@ -59,7 +59,7 @@ function clickOnUpdateGroup() {
 function checkSnackbar() {
     // provera success poruke za editovanu grupu
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.snackbar.sb_message'), 'Group updated.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.snackbar.sb_message'), 'Group updated.'), 7000);
 }
 
 function clickOnCancel() {
@@ -70,7 +70,7 @@ function clickOnCancel() {
 function checkEditedDescription() {
     // Proverava editovani description
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('p.about'), 'EDIT TEST'), 5000);
+    browser.wait(EC.textToBePresentInElement($('p.about'), 'EDIT TEST'), 7000);
 }
 
 function checkEditedGroupName() {
@@ -116,7 +116,7 @@ function changeGroupPhoto2() {
 function checkOriginalDescription() {
     // Proverava orginalnog descriptiona
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('p.about'), "1st test The Association for Financial jTechnology (AFT) is the financial technology industry's premier resource for networking and professional development for those companies and executives serving U.S. financial institutions (FIs) including banks, credit ulnions, lenders and payment companies. Founded in 1972, the organization's members represent virtually every area of technology, data or services neede1d to help FIs succeed in today's dynamic marketplace!"), 5000);
+    browser.wait(EC.textToBePresentInElement($('p.about'), "1st test The Association for Financial jTechnology (AFT) is the financial technology industry's premier resource for networking and professional development for those companies and executives serving U.S. financial institutions (FIs) including banks, credit ulnions, lenders and payment companies. Founded in 1972, the organization's members represent virtually every area of technology, data or services neede1d to help FIs succeed in today's dynamic marketplace!"), 7000);
 }
 
 function checkGroupToBePrivate() {

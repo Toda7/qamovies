@@ -36,13 +36,13 @@ function clickToGoToCheckoutPage() {
 function checkTitleOnPage(){ 
    // Provera da li se uctao title on checkout page 
 var EC = protractor.ExpectedConditions;
-browser.wait(EC.textToBePresentInElement($('.step-title.fat'), 'Find a Local FFL Holder/Dealer'), 5000);
+browser.wait(EC.textToBePresentInElement($('.step-title.fat'), 'Find a Local FFL Holder/Dealer'), 7000);
 }
 
 // function checkDescriptionOnPage(){  NE RADI
 //    // Provera da li se uctao description on checkout page 
 // var EC = protractor.ExpectedConditions;
-// browser.wait(EC.textToBePresentInElement($('#text'), 'if you wish to ship to an FFL not on the list, select the closest FFL to your location and the Guidefitter team will be in touch to coordinate the transfer to the FFL of your choice.'), 5000);
+// browser.wait(EC.textToBePresentInElement($('#text'), 'if you wish to ship to an FFL not on the list, select the closest FFL to your location and the Guidefitter team will be in touch to coordinate the transfer to the FFL of your choice.'), 7000);
 // }
 
 function enterZipInSearchField() {
@@ -78,13 +78,13 @@ function clickOnOrderButton() {
 function checkThanksTitleOnPage(){ 
    // Provera da li se uctao Thanks title on checkout page 
 var EC = protractor.ExpectedConditions;
-browser.wait(EC.textToBePresentInElement($('.legal-disclosures'), 'Thank you for ordering through Guidefitter.'), 5000);
+browser.wait(EC.textToBePresentInElement($('.legal-disclosures'), 'Thank you for ordering through Guidefitter.'), 7000);
 }
 
 function checkSuccessURL() {
    // Provera da li se ucitao success URL
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/weatherby/checkout/onepage/success/'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/weatherby/checkout/onepage/success/'), 7000);
 }
 
  module.exports = {

@@ -13,7 +13,7 @@ function clickReputationTimeline() {
 function repScoreTextTitle() {
     // Proverava da li se usitao Reputation Score title
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.page.three_columns'), 'Reputation Score'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page.three_columns'), 'Reputation Score'), 7000);
 }
 
 function repScoreText1() {

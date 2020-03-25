@@ -7,7 +7,7 @@ function clickOnLink() {
 function checkVendorsURL() {
     // Provera Vendors URL-a
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/view-finder'), 5000);
+    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/view-finder'), 7000);
 }
 
 module.exports = {

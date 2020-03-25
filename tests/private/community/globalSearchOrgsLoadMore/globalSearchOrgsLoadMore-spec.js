@@ -22,7 +22,7 @@ describe('Load More na Global Search Orgs tabu', function(){
 
     it('Idi na Orgs tab', function () {
         globalSearchOrgs.clickOrgsTab();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Unesi text u search polje', function () {
@@ -32,7 +32,7 @@ describe('Load More na Global Search Orgs tabu', function(){
 
     it('Provera da li su se na strani pojavilo 15 rezultata', function () {
         globalSearchDiscussionsLoadMore.checkIfFifteenResultsOnPage();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Klik na Space na tastaturi za Load More na strani', function () {
@@ -44,7 +44,7 @@ describe('Load More na Global Search Orgs tabu', function(){
         var step;
         for (step = 0; step < 2; step++) {
             globalSearchOrgsLoadMore.checkIfSixteenResultsOnPage();
-            browser.sleep(500);
+            browser.sleep(1000);
         }
     });
 

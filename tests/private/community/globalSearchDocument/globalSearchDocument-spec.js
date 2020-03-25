@@ -20,12 +20,12 @@ describe('Pretraga dokumenata na Global Search Docs tabu', function(){
 
     it('Idi na Docs tab', function () {
         globalSearchDocument.clickDocsTab();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Unesi text u search polje', function () {
         globalSearchDocument.enterSearchWord();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Provera broja rezultata pretrage', function () {

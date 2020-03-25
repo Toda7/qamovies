@@ -7,19 +7,19 @@ function checkYourReputationSection() {
 function checkRank() {
     // Proverava da li se usitao Rank sekcija
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.collection.with-header .collection-header'), 'Rank'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.collection.with-header .collection-header'), 'Rank'), 7000);
 }
 
 function checkMember() {
     // Proverava da li se usitao Rank sekcija
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.collection.with-header .collection-header'), 'Member'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.collection.with-header .collection-header'), 'Member'), 7000);
 }
 
 function checkScore() {
     // Proverava da li se usitao Rank sekcija
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.collection.with-header .collection-header'), 'Score'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.collection.with-header .collection-header'), 'Score'), 7000);
 }
 
 module.exports = {

@@ -23,7 +23,7 @@ function clickFiOrgLinkInProfileBox() {
  function checkFiOrgUrl() {
     // Provera da li se ucitao URL za FI Org
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://chicago.com'), 5000);
+    browser.wait(EC.urlContains('https://chicago.com'), 7000);
  }
 
  function checkPhoneNumberInProfileBox() {

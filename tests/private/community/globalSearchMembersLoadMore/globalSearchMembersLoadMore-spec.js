@@ -23,7 +23,7 @@ describe('Load More na Global Search Members tabu', function(){
 
     it('Idi na People tab', function () {
         globalSearchMember.clickPeopleTab();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Unesi text u search polje', function () {
@@ -33,17 +33,17 @@ describe('Load More na Global Search Members tabu', function(){
 
     it('Provera da li su se na strani pojavilo 15 rezultata', function () {
         globalSearchDiscussionsLoadMore.checkIfFifteenResultsOnPage();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Klik na Space na tastaturi za Load More na strani', function () {
         globalSearchDiscussionsLoadMore.scrollPage();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Provera da li se na strani pojavilo 30 rezultata', function () {
         globalSearchAllLoadMore.checkIfThirtyResultsOnPage();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
         afterAll(function(){

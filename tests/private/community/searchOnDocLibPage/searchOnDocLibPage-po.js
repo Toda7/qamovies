@@ -6,13 +6,13 @@ function enterSearchWord() {
 function checkNoDocMessage(){
     // Provera da li se poruka za no documents ucitala
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.card-content'), 'There are no documents that match "klasndlkasndlkasndklanskdlnasdnaskldnklasndlanskldnkla"'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-content'), 'There are no documents that match "klasndlkasndlkasndklanskdlnasdnaskldnklasndlanskldnkla"'), 7000);
 }
 
 function checkURLwithSearchWord() {
     // Provera da li smo dobili search URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/documents?q=klasndlkasndlkasndklanskdlnasdnaskldnklasndlanskldnkla'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/documents?q=klasndlkasndlkasndklanskdlnasdnaskldnklasndlanskldnkla'), 7000);
 }
 
 function removeTextFromTheField() {
@@ -35,13 +35,13 @@ function countOneDoc() {
 function checkDocName(){
     // Provera da li se ucitao doc name u kartici
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.community .card.item_card .item_sig .post_title .constrain .title'), 'laqasadipapel'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.community .card.item_card .item_sig .post_title .constrain .title'), 'laqasadipapel'), 7000);
 }
 
 function checkUserName(){
     // Provera da li se ucitao user name u kartici
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.community .card.item_card .item_sig .post_title .constrain .created_by'), 'Memphis 92 FI Foreva | Quality Assurance'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.community .card.item_card .item_sig .post_title .constrain .created_by'), 'Memphis 92 FI Foreva | Quality Assurance'), 7000);
 }
 
 function checkTopic(){
@@ -64,7 +64,7 @@ function clickOnDocToSeeDocDetailsPage() {
 function checkDocumentDetailsURL() {
     // Provera URLa nakon klika na doc iz rezultata
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/documents/view/06aaf193-f96c-48b6-8a5f-ae09e1ae0bb4?q=laqasadipapel'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/documents/view/06aaf193-f96c-48b6-8a5f-ae09e1ae0bb4?q=laqasadipapel'), 7000);
 }
 
  module.exports = {

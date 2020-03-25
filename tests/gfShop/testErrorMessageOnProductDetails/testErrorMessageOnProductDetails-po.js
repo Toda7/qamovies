@@ -1,7 +1,7 @@
 // function checkRequiredMessageForBox(){
 //    // provera da li se ucitala required message za box
 //    var EC = protractor.ExpectedConditions;
-//    browser.wait(EC.textToBePresentInElement($('div#super_attribute[210]-error.mage-error'), 'This is a required field.'), 5000);
+//    browser.wait(EC.textToBePresentInElement($('div#super_attribute[210]-error.mage-error'), 'This is a required field.'), 7000);
 // }
 
 function checkRequiredMessageForBox() {
@@ -19,7 +19,7 @@ function clearQtyField() {
 function checkRequiredMessageForQTY(){
    // Provera da li se ucitala required message jer nema broja u QTY
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('div#qty-error.mage-error'), 'Please enter a valid number in this field'), 5000);
+   browser.wait(EC.textToBePresentInElement($('div#qty-error.mage-error'), 'Please enter a valid number in this field'), 7000);
 }
 
 function EnterQty() {

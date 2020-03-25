@@ -18,7 +18,7 @@ function clickOnSearchButton(){
 function checkAdvencedSearchURL() {
    // Provera da li se ucitao advenced search url 
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/catalogsearch/advanced/result/?name=&sku=&description=&short_description=Truglo&price%5Bfrom%5D=&price%5Bto%5D='), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/catalogsearch/advanced/result/?name=&sku=&description=&short_description=Truglo&price%5Bfrom%5D=&price%5Bto%5D='), 7000);
 }
 
 function checkIsProductIsHere() {
@@ -37,7 +37,7 @@ function selectPriceToSort() {
 function checkAdvencedSearchAndPriceSortURL() {
    // Provera da li se ucitao advenced search and price sort URL
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/catalogsearch/advanced/result/?description=&name=&price%5Bfrom%5D=&price%5Bto%5D=&short_description=Truglo&sku=&product_list_order=price'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/catalogsearch/advanced/result/?description=&name=&price%5Bfrom%5D=&price%5Bto%5D=&short_description=Truglo&sku=&product_list_order=price'), 7000);
 }
 
 function checkIsProductIsHereAfterSortingByPrice() {
@@ -50,7 +50,7 @@ function checkIsProductIsHereAfterSortingByPrice() {
 function checkNumberOfItems() {
    var EC = protractor.ExpectedConditions;
    // Provera da li je dobar number of items
-   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 1-12 of 28'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 1-12 of 28'), 7000);
    browser.sleep(2500);
 }
 
@@ -63,13 +63,13 @@ function clickPageTwo() {
 function checkAdvencedSearchAndPriceSortOn2PageURL() {
    // Provera da li se ucitao advenced search and price sort on 2 page URL
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/catalogsearch/advanced/result/?description=&name=&p=2&price%5Bfrom%5D=&price%5Bto%5D=&product_list_order=price&short_description=Truglo&sku='), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/catalogsearch/advanced/result/?description=&name=&p=2&price%5Bfrom%5D=&price%5Bto%5D=&product_list_order=price&short_description=Truglo&sku='), 7000);
 }
 
 function checkNumberOfItemsOn2Page() {
    var EC = protractor.ExpectedConditions;
    // Provera da li je dobar number of items on 2 page 
-   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 13-24 of 28'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 13-24 of 28'), 7000);
    browser.sleep(2500);
 }
 
@@ -89,13 +89,13 @@ function clickPageThree() {
 function checkAdvencedSearchAndPriceSortOn3PageURL() {
    // Provera da li se ucitao advenced search and price sort on 3 page URL
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/catalogsearch/advanced/result/?description=&name=&p=3&price%5Bfrom%5D=&price%5Bto%5D=&product_list_order=price&short_description=Truglo&sku='), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/catalogsearch/advanced/result/?description=&name=&p=3&price%5Bfrom%5D=&price%5Bto%5D=&product_list_order=price&short_description=Truglo&sku='), 7000);
 }
 
 function checkNumberOfItemsOn3Page() {
    var EC = protractor.ExpectedConditions;
    // Provera da li je dobar number of items on 2 page 
-   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 25-28 of 28'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 25-28 of 28'), 7000);
    browser.sleep(2500);
 }
 
@@ -115,7 +115,7 @@ function clickOnSetDescendingDirection() {
 function checkAdvencedSearchAndPriceSortOn3PageAfterSetDescendingDirectioURL() {
    // Provera da li se ucitao URL nakon set descending direction 
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/catalogsearch/advanced/result/?description=&name=&p=3&price%5Bfrom%5D=&price%5Bto%5D=&product_list_order=price&short_description=Truglo&sku=&product_list_dir=desc'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/catalogsearch/advanced/result/?description=&name=&p=3&price%5Bfrom%5D=&price%5Bto%5D=&product_list_order=price&short_description=Truglo&sku=&product_list_dir=desc'), 7000);
 }
 
 function checkIsProductIsHereAfterSetDescendingDirectio() {

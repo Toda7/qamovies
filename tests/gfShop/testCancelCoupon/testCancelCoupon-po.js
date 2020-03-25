@@ -8,7 +8,7 @@ function checkCancelCouponSuccessMessage() {
    // Da li se pojavila poruka da je otkazan kupon kod
    var xxx = element(by.className('message-success success message'));
    expect(xxx.getText()).toEqual('You canceled the coupon code.');
-   browser.sleep(500);
+   browser.sleep(1000)));
 }
 
 module.exports = {

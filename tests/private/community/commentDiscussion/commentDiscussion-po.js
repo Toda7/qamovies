@@ -26,8 +26,8 @@ function commentText() {
  function checkSuccess(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je uspesno objavljen Comment
-    browser.wait(EC.textToBePresentInElement($('.comment'), 'ATQA Comment'), 5000);
-    browser.sleep(500);
+    browser.wait(EC.textToBePresentInElement($('.comment'), 'ATQA Comment'), 7000);
+    browser.sleep(1000)));
  }  
 
  module.exports = {

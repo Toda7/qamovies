@@ -20,12 +20,12 @@ describe('Pretraga membera na Global Search People tabu', function(){
 
     it('Idi na People tab', function () {
         globalSearchMember.clickPeopleTab();
-        browser.sleep(500);
+        browser.sleep(1000));
     });
 
     it('Unesi text u search polje', function () {
         globalSearchMember.enterSearchWord();
-        browser.sleep(500);
+        browser.sleep(1000));
     });
 
     it('Provera broja rezultata pretrage', function () {

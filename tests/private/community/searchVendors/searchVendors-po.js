@@ -18,7 +18,7 @@ function enterSearchWord() {
 function checkSuccess(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je search uspesan
-    browser.wait(EC.textToBePresentInElement($('.card-content'), 'Vendor Pet Taxi'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-content'), 'Vendor Pet Taxi'), 7000);
     browser.sleep(2000);
  } 
   

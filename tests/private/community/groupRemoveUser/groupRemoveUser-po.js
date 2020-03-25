@@ -12,7 +12,7 @@ function enterUsersName() {
 function checkSearchedUser() {
     // Provera ime usera kojeg smo trazili
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.collection .collection-item.avatar '), 'Miho Gru'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.collection .collection-item.avatar '), 'Miho Gru'), 7000);
 }
 
 function clickOnRemoveIcon() {
@@ -28,7 +28,7 @@ function confirmRemoveUser() {
 function checkSnackbarRemoveUser() {
     // cekiranje sussces poruke za Removed user
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.snackbar.sb_message'), 'Person removed.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.snackbar.sb_message'), 'Person removed.'), 7000);
 }
 
 function checkGroupMembersCountRemoved() {
@@ -83,7 +83,7 @@ function clickTabGroups() {
 function clickOnJoinToGroup() {
     //  Klikni Join to group
     element.all(by.className('btn-flat blue-text')).get(2).click();
-    browser.sleep(500);
+    browser.sleep(1000);
 }
 
 function checkMessageSuccess() {

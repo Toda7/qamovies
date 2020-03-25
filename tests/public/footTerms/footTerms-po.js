@@ -7,7 +7,7 @@ function clickOnLink() {
 function checkTermsURL() {
     // Provera Terms of Service URL-a
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/support/terms_of_service'), 5000);
+    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/support/terms_of_service'), 7000);
 }
 
 module.exports = {

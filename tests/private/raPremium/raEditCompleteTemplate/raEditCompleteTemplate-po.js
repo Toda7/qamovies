@@ -27,32 +27,32 @@ function clickOn3OptionToEditIt() {
 function checkRatingSummary() {
    var EC = protractor.ExpectedConditions;
    // Provera da li se ucitao rating summery -> Considerable' 
-   browser.wait(EC.textToBePresentInElement($('.card-content'), 'High.'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.card-content'), 'High.'), 7000);
 } 
 function checkAverageResidual() {
    var EC = protractor.ExpectedConditions;
    // Provera da li se ucitao Average Residual
-   browser.wait(EC.textToBePresentInElement($('.card'), '4.0'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.card'), '4.0'), 7000);
 } 
 function checkRiskLevel() {
    var EC = protractor.ExpectedConditions;
    // Provera da li se ucitao Risk Level
-   browser.wait(EC.textToBePresentInElement($('.card'), 'High'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.card'), 'High'), 7000);
 } 
 function checkMyFirstEditedAnswer() {
    var EC = protractor.ExpectedConditions;
    // Provera da li se ucitao my first answer
-   browser.wait(EC.textToBePresentInElement($('.card'), 'This is first edited text'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.card'), 'This is first edited text'), 7000);
 }
 function checkMySecondEditedAnswer() {
    var EC = protractor.ExpectedConditions;
    // Provera da li se ucitao my first answer
-   browser.wait(EC.textToBePresentInElement($('.card'), 'This is second edited text'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.card'), 'This is second edited text'), 7000);
 }
 function checkMyThirEditeddAnswer() {
    var EC = protractor.ExpectedConditions;
    // Provera da li se ucitao my first answer
-   browser.wait(EC.textToBePresentInElement($('.card'), 'This is third edited text'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.card'), 'This is third edited text'), 7000);
 }
 function clickToOpenForm() {
    //  Klik na three dots icon

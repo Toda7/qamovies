@@ -30,37 +30,37 @@ function checkTopicsOfDiscussion() {
  function checkUserName(){
     // Provera da li se ucitao user name
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .title .person_name'), 'Admin User Mandrill'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .title .person_name'), 'Admin User Mandrill'), 7000);
 }
 
 function checkReputationScore(){
     // Provera da li se ucitao reputation score
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .title .reputation_score'), '1'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .title .reputation_score'), '1'), 7000);
 }
 
 function checkDirectMessage(){
     // Provera da li se ucitao direct message link
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .title .direct_message_link'), 'Direct message'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .title .direct_message_link'), 'Direct message'), 7000);
 }
 
 function checkFunctionLevel(){
     // Provera da li se ucitao user function level
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .info .org_function'), 'SVP - Credit and Lending'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .info .org_function'), 'SVP - Credit and Lending'), 7000);
 }
 
 function checkOrgLink(){
     // Provera da li se ucitao org link
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .info .org_link'), 'Vendor Mandrill'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .info .org_link'), 'Vendor Mandrill'), 7000);
 }
 
 function checkDescriptionOfDiscussion(){
     // Provera da li se ucitao description of discussion
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.community .html_content'), 'Load More 30'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.community .html_content'), 'Load More 30'), 7000);
 }
 
 function checkReplyButton(){

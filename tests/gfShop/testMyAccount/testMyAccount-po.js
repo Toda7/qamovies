@@ -1,7 +1,7 @@
 function checkTitleOnMyAccountPage() {
    // Provera da li se ucitao My Account title na My Account strani 
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('.page-title'), 'My Account'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.page-title'), 'My Account'), 7000);
 }
 
 function checkAccountInformationSectionTitle() {
@@ -19,7 +19,7 @@ function checkAddressBookSectionTitle() {
 function checkTitleOnAddressBookPage() {
    // Provera da li se ucitao Address Book title na Address Book strani 
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('.page-title'), 'Address Book'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.page-title'), 'Address Book'), 7000);
 }
 
 function checkDefaultAddressesSectionTitle() {
@@ -79,13 +79,13 @@ function clickMyOrdersLink() {
 function checkMyOrdersURL() {
    // Provera da li se ucitao My Orders URL
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/sales/order/history/'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/sales/order/history/'), 7000);
 }
 
 function checkTitleOnMyOrdersPage() {
    // Provera da li se ucitao My Orders title na My Orders strani 
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('.base'), 'My Orders'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.base'), 'My Orders'), 7000);
 }
 
 function checkFirstViewOrderLink() {
@@ -103,13 +103,13 @@ function clickPageTwo() {
 function checkSecondPageUrl() {
    // Provera da li se ucitao dobar URL za drugu stranu paginacije 
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/sales/order/history/?p=2'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/sales/order/history/?p=2'), 7000);
 }
 
 function checkPaginationSuccess() {
    var EC = protractor.ExpectedConditions;
    // Provera da li je dobra paginacija
-   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 11 to 20'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 11 to 20'), 7000);
    browser.sleep(2500);
 }
 
@@ -122,13 +122,13 @@ function clickMyPaymentDataLink() {
 function checkMyPaymentDataURL() {
    // Provera da li se ucitao My Payment Data URL
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/customer/paymentinfo/'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/customer/paymentinfo/'), 7000);
 }
 
 function checkTitleOnMyPaymentDataPage() {
    // Provera da li se ucitao My Payment Data title na My Payment Data strani 
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('.page-title'), 'My Payment Data'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.page-title'), 'My Payment Data'), 7000);
 }
 
 function checkCreditCardSectionTitle() {

@@ -25,8 +25,8 @@ function clickUpdateCommentButton() {
 function checkSuccess(){
    var EC = protractor.ExpectedConditions;
    // Provera da li je uspesno editovan Comment
-   browser.wait(EC.textToBePresentInElement($('.community .thread_detail .replies .reply .comments'), 'ATQA Comment EDITED'), 5000);
-   browser.sleep(500);
+   browser.wait(EC.textToBePresentInElement($('.community .thread_detail .replies .reply .comments'), 'ATQA Comment EDITED'), 7000);
+   browser.sleep(1000));
 }  
 
 module.exports = {

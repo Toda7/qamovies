@@ -53,7 +53,7 @@ function clickMember() {
 function checkMemberUrl() {
    // Provera da li se ucitao URL za membera
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/users/view/822c348d-535c-407d-b496-9251f844fdf8'), 5000);
+   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/users/view/822c348d-535c-407d-b496-9251f844fdf8'), 7000);
 }
 
  module.exports = {

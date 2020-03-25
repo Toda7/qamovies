@@ -21,12 +21,12 @@ describe('Provera da li se pojavljuju dokumenti u rezultatima kada trazimo ime u
 
     it('Idi na Docs tab', function () {
         globalSearchDocument.clickDocsTab();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Unesi text u search polje', function () {
         globalSearchUserForHisDocsOnDocsTab.enterSearchWord();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Provera broja rezultata pretrage', function () {

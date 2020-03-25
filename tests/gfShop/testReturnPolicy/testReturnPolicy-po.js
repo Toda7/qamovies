@@ -13,7 +13,7 @@ function clickOnReturnPolicyLink() {
 function checkTextInReturnPolicyWindow() {
    // Provera da li se uctao text iz cockpita u return policy window
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('span#return-policy-content'), 'Testing from PROT. We are TRUGLO!'), 5000);
+   browser.wait(EC.textToBePresentInElement($('span#return-policy-content'), 'Testing from PROT. We are TRUGLO!'), 7000);
 }
 
 function landOnProductPage() {

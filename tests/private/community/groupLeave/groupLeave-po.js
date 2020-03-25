@@ -22,7 +22,7 @@ function clickOnLeaveGroup() {
 function clickOnYes() {
     //  Klik na Yes
     element.all(by.className('btn btn-flat')).get(1).click();
-    browser.sleep(500);
+    browser.sleep(1000);
 }
 
 module.exports = {

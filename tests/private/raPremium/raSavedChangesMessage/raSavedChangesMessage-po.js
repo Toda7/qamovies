@@ -7,7 +7,7 @@ function clickOnSaveChanges() {
 function checkIsAnswerEdited(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se text nije promenio nakon sto smo kliknuli na discard changes
-    browser.wait(EC.textToBePresentInElement($('.input-field'), 'This is first edited text'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.input-field'), 'This is first edited text'), 7000);
 }   
 
 module.exports = {

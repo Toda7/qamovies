@@ -21,7 +21,7 @@ function postReply() {
 function checkIsReplyPosted(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je Reply uspesno objavljen
-    browser.wait(EC.textToBePresentInElement($('.reply'), 'Time Stamp Reply'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.reply'), 'Time Stamp Reply'), 7000);
 }
 
 function landOnForYouLatest() {
@@ -32,7 +32,7 @@ function landOnForYouLatest() {
 function checkTimeStamp(){
     var EC = protractor.ExpectedConditions;
     // Provera Active now Time Stamp-a
-    browser.wait(EC.textToBePresentInElement($('.community .card.item_card .item_sig .date_time.non_mobile'), 'Active: just now'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.community .card.item_card .item_sig .date_time.non_mobile'), 'Active: just now'), 7000);
 }
 
 function landOnFiProfessionals() {

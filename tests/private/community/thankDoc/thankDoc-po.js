@@ -35,7 +35,7 @@ function thankDoc() {
 function checkSuccess1(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je dokument uspesno thankovan
-    browser.wait(EC.textToBePresentInElement($('.thanks_count '), '1'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.thanks_count '), '1'), 7000);
 
     browser.sleep(2000);
  }  
@@ -48,7 +48,7 @@ function checkSuccess1(){
 function checkSuccess2(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je dokument uspesno unthankovan
-    browser.wait(EC.textToBePresentInElement($('.thanks_count '), '0'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.thanks_count '), '0'), 7000);
 
     browser.sleep(2000);
  }  

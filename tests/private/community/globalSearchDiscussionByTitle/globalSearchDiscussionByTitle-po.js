@@ -47,7 +47,7 @@ function clickDiscussion() {
 function checkDiscussionUrl() {
    // Provera da li se ucitao URL za diskusiju
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/discussions/view/8b3fe48f-2091-4fed-884a-0274c3a0620c?filter=home'), 5000);
+   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/discussions/view/8b3fe48f-2091-4fed-884a-0274c3a0620c?filter=home'), 7000);
 }
 
  module.exports = {

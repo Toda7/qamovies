@@ -193,7 +193,7 @@ function clickViewAndEditCart() {
 function checkSuccess1() {
    var EC = protractor.ExpectedConditions;
    // Provera da li je dobra paginacija
-   browser.wait(EC.textToBePresentInElement($('.toolbar-number'), 'Items 21 to 21 of 21 total'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.toolbar-number'), 'Items 21 to 21 of 21 total'), 7000);
    browser.sleep(2500);
 }
 

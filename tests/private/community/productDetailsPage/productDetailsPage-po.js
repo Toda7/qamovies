@@ -35,7 +35,7 @@ function clickOnVendorLink() {
 function checkVendorURL() {
     // Provera da li se ucitao vendor URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/vendors/view/d12dd16a-08e7-48e7-9df2-7f4f5e5976d9'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/vendors/view/d12dd16a-08e7-48e7-9df2-7f4f5e5976d9'), 7000);
  }
 
 
@@ -60,7 +60,7 @@ function checkDescriptionOfProduct() {
 //  function checkBreadcrumbs() {
 //     // Provera da li se ucitao breadcrumbs
 //     var EC = protractor.ExpectedConditions;
-//     browser.wait(EC.textToBePresentInElement($('.card-title'), 'test description 123 123 123 123 12 123 '), 5000);
+//     browser.wait(EC.textToBePresentInElement($('.card-title'), 'test description 123 123 123 123 12 123 '), 7000);
 // }
 
 module.exports = {

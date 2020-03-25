@@ -48,7 +48,7 @@ function landOnMyOrdersPage() {
 function checkNoOrdersMessage() {
    // Provera no orders message
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('.message.info.empty'),'You have placed no orders.'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.message.info.empty'),'You have placed no orders.'), 7000);
    browser.sleep(2000);
 }
 

@@ -68,7 +68,7 @@ function checkShippingPriceWithCoupon() {
     // Provera shipping cene sa iskoriscenim kuponom na My Order strani
     var xxx = element(by.className('shipping'));
     expect(xxx.getText()).toEqual('Shipping & Handling $16.00');
-    browser.sleep(500);
+    browser.sleep(1000))));
  }
 
 module.exports = {

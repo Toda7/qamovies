@@ -24,7 +24,7 @@ function clickOnFirstBanner(){
 function checkFirstBannerURL() {
     // Provera da li se ucitao prvi banner URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://www.amazon.com/'), 5000);
+    browser.wait(EC.urlContains('https://www.amazon.com/'), 7000);
  }
 
 function clickOnSecondBanner(){
@@ -35,7 +35,7 @@ function clickOnSecondBanner(){
 function checkSecondBannerURL() {
     // Provera da li se ucitao drugi banner URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://www.figma.com/'), 5000);
+    browser.wait(EC.urlContains('https://www.figma.com/'), 7000);
  }
 
  function clickOnThirdBanner(){
@@ -46,7 +46,7 @@ function checkSecondBannerURL() {
 function checkThirdBannerURL() {
     // Provera da li se ucitao treci banner URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://twitter.com/'), 5000);
+    browser.wait(EC.urlContains('https://twitter.com/'), 7000);
  }
 
 module.exports = {

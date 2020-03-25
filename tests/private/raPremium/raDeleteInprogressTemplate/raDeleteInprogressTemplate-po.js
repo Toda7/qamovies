@@ -6,7 +6,7 @@ function clickInProgressLink() {
  function checkInProgressURL() {
     // Provera da li smo dobili In Progress stranu, provera URL-a
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/ra/b0fcf98f-a435-4c19-bae0-bb9b15bb94b4/in_progress'), 5000);
+    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/ra/b0fcf98f-a435-4c19-bae0-bb9b15bb94b4/in_progress'), 7000);
     browser.sleep(2000);
 }
 function clickToOpenDropDownMenu() {
@@ -26,14 +26,14 @@ function clickDeleteLink() {
  function checkSuccessfullyMessage(){
     //  Provera da li se pojavila successfully message
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.success'), 'Assessment Sima Template - 1 was successfully deleted.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.success'), 'Assessment Sima Template - 1 was successfully deleted.'), 7000);
     browser.sleep(2000);
 }   
 
  function checkNoAssessmentMessage(){
     //  Provera da li se pojavila "There are no assessments in progress" message
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.card-content'), 'There are no assessments in progress'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-content'), 'There are no assessments in progress'), 7000);
     browser.sleep(2000);
 }   
 

@@ -7,25 +7,25 @@ function selectPriceToSort() {
 function checkSortingRL() {
    // Provera da li se ucitao URL sa parametrom za product name za sorting
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html?product_list_order=price'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html?product_list_order=price'), 7000);
 }
 
 function checkThatProductIsLoaded() {
    // provera da li se ucitao product na strani
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('.product.name.product-item-name'), 'INTERCEPT™ ILLUMINATED–RETICLE HUNTING SCOPE SERIES'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.product.name.product-item-name'), 'INTERCEPT™ ILLUMINATED–RETICLE HUNTING SCOPE SERIES'), 7000);
 }
 
 function checkPaginationURL() {
    // Provera da li se ucitao URL sa parametrom za 2 page of pagination
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html?p=2&product_list_order=price'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html?p=2&product_list_order=price'), 7000);
 }
 
 function checkPaginationURLof1Page() {
    // Provera da li se ucitao URL sa parametrom za 2 page of pagination
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html?p=1&product_list_order=price'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html?p=1&product_list_order=price'), 7000);
 }
 
 function checkPrice() {

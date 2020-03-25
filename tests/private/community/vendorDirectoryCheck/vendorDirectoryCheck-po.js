@@ -7,13 +7,13 @@ function landOnVendorDirectoryPage() {
 function checkPageTitle() {
     // check Page title
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.titleIs('CBANC Network'), 5000);
+    browser.wait(EC.titleIs('CBANC Network'), 7000);
 }
 
 function checkBreadcrumbs() {
     // Provera da li se ucitao breadcrumbs
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.nav_title'), 'Vendor Directory'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.nav_title'), 'Vendor Directory'), 7000);
 }
 
 function checkPlaceholderInSearch() {
@@ -25,7 +25,7 @@ function checkPlaceholderInSearch() {
 function checkFeaturedTitleOnPage(){
     // Provera da li se Featured title ucitao
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.vendor_directory .featured_vendors h3'), 'Featured'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.vendor_directory .featured_vendors h3'), 'Featured'), 7000);
 }
 
 function checkFirstVendorInFeaturedSection() {

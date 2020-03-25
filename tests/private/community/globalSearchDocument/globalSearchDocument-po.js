@@ -41,7 +41,7 @@ function clickDoc() {
 function checkDocUrl() {
    // Provera da li se ucitao URL za dokument
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/documents/view/38e2bb2c-82f5-4305-a705-901f432a7d91'), 5000);
+   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/documents/view/38e2bb2c-82f5-4305-a705-901f432a7d91'), 7000);
 }
 
  module.exports = {

@@ -5,7 +5,7 @@
 
 function checkDeletedMessage(){
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.card-content'), 'Vendor FIFA successfully deleted.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-content'), 'Vendor FIFA successfully deleted.'), 7000);
   }   
   
  module.exports = {

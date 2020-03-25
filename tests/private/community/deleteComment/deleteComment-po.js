@@ -12,7 +12,7 @@ function checkSnackbar() {
     // Provera Snek Bara
     var foo = element(by.className('snackbar sb_with_action'));
     expect(foo.getText()).toEqual('Comment deleted\nUNDO');
-    browser.sleep(500);
+    browser.sleep(1000));
 }
 module.exports = {
     clickAction,

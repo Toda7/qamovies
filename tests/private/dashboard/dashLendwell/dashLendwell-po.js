@@ -12,13 +12,13 @@ function clickOnLendwell() {
 function checkContactForm() {
     // Da li se ucitalo Contact us forma
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.top_right'), 'Contact us to learn more'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.top_right'), 'Contact us to learn more'), 7000);
 }
 
 function checkLendwellUrl() {
     // Provera Url Risk assessmenta 
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/lendwell'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/lendwell'), 7000);
 }
 
 module.exports = {

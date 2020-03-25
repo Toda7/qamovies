@@ -122,7 +122,7 @@ function clickSave() {
 // function checkSuccess(){
 //    var EC = protractor.ExpectedConditions;
 //    // Provera da li je uspesno napravljen kupon
-//    browser.wait(EC.textToBePresentInElement($('.td'), 'ATQA_Coupon'), 5000);
+//    browser.wait(EC.textToBePresentInElement($('.td'), 'ATQA_Coupon'), 7000);
 //    browser.sleep(2000);
 // }  
 

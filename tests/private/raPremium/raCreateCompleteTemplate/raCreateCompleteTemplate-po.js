@@ -6,12 +6,12 @@ function clickStartNewLink() {
  function checkTitleOfTemplate(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao title of template
-    browser.wait(EC.textToBePresentInElement($('.card-content.top_content'), 'START UP TEMPLATE Risk Assessment'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-content.top_content'), 'START UP TEMPLATE Risk Assessment'), 7000);
 }   
 function checkFirstTitleOfQuestion(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao first title of question
-    browser.wait(EC.textToBePresentInElement($('#factor_0'), 'Test Factor'), 5000);
+    browser.wait(EC.textToBePresentInElement($('#factor_0'), 'Test Factor'), 7000);
 }   
 function clickOnOption() {
     // In first question click on option
@@ -21,7 +21,7 @@ function clickOnOption() {
  function checkSecondTitleOfQuestion(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao second title of question
-    browser.wait(EC.textToBePresentInElement($('.collection-item.controls'), 'Controls'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.collection-item.controls'), 'Controls'), 7000);
 }   
 function clickOnSecondOption() {
     // In second question click on option
@@ -31,7 +31,7 @@ function clickOnSecondOption() {
  function checkThirdTitleOfQuestion(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao third title of question
-    browser.wait(EC.textToBePresentInElement($('.collection-item.residual_risk'), 'Residual Risk & Mitigation Steps'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.collection-item.residual_risk'), 'Residual Risk & Mitigation Steps'), 7000);
 }   
 function clickOnThirdOption() {
     // In third question click on option
@@ -41,7 +41,7 @@ function clickOnThirdOption() {
  function checkProgress(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je progress 100%
-    browser.wait(EC.textToBePresentInElement($('.progress_text'), '100%'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.progress_text'), '100%'), 7000);
 }   
 function clickOnGenerateReport() {
     //  Klik na Generate Report button
@@ -51,77 +51,77 @@ function clickOnGenerateReport() {
  function checkReportPageTitle(){
     var EC = protractor.ExpectedConditions;
     //  Provera da li se ucitao page title
-    browser.wait(EC.titleIs('CBANC Premium - Risk Assessment'), 5000);
+    browser.wait(EC.titleIs('CBANC Premium - Risk Assessment'), 7000);
 }
 function checkTitleReportInHeader(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao title report in header
-    browser.wait(EC.textToBePresentInElement($('.page-title.truncate'), 'START UP TEMPLATE Report'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page-title.truncate'), 'START UP TEMPLATE Report'), 7000);
 } 
 function checkPrintInHeader(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitala print icon in header
-    browser.wait(EC.textToBePresentInElement($('.right'), 'local_printshop'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.right'), 'local_printshop'), 7000);
 } 
 function checkTitleOnPage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao title on page 
-    browser.wait(EC.textToBePresentInElement($('.card-content'), 'START UP TEMPLATE'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-content'), 'START UP TEMPLATE'), 7000);
 } 
 function checkSummary(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao summary ispod title on page 
-    browser.wait(EC.textToBePresentInElement($('.card-content'), 'Your overall fair lending residual risk is '), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-content'), 'Your overall fair lending residual risk is '), 7000);
 } 
 function checkRatingSummary() {
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao rating summery -> Considerable' 
-    browser.wait(EC.textToBePresentInElement($('.card-content'), 'Considerable.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-content'), 'Considerable.'), 7000);
 } 
 function checkSecondTitleOnPage() {
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao drugi title on page
-    browser.wait(EC.textToBePresentInElement($('.card'), 'Risk Component Snapshot'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card'), 'Risk Component Snapshot'), 7000);
 } 
 function checkRiskComponent() {
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao Risk Component
-    browser.wait(EC.textToBePresentInElement($('.card'), 'Test component'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card'), 'Test component'), 7000);
 } 
 function checkAverageResidual() {
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao Average Residual Risk Rating
-    browser.wait(EC.textToBePresentInElement($('.card'), '3.0'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card'), '3.0'), 7000);
 } 
 function checkRiskLevel() {
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao Risk Level
-    browser.wait(EC.textToBePresentInElement($('.card'), 'Considerable'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card'), 'Considerable'), 7000);
 } 
 function checkThirdTitleOnPage() {
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao drugi title on page
-    browser.wait(EC.textToBePresentInElement($('.card'), 'Risk Component Breakdown'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card'), 'Risk Component Breakdown'), 7000);
 } 
 function checkTestComponentOnPage() {
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao Test component on page
-    browser.wait(EC.textToBePresentInElement($('.card'), 'Test component'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card'), 'Test component'), 7000);
 }
 function checkMyFirstAnswer() {
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao my first answer
-    browser.wait(EC.textToBePresentInElement($('.card'), 'Answer on first question'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card'), 'Answer on first question'), 7000);
 }
 function checkMySecondAnswer() {
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao my second answer
-    browser.wait(EC.textToBePresentInElement($('.card'), 'Answer on second question'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card'), 'Answer on second question'), 7000);
 }
 function checkMyThirdAnswer() {
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao my third answer
-    browser.wait(EC.textToBePresentInElement($('.card'), 'Answer on third question'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card'), 'Answer on third question'), 7000);
 }
 function clickBackIcon() {
     //  Klik na back icon
@@ -131,13 +131,13 @@ function clickBackIcon() {
  function checkCompletedURL() {
     // Provera da li se ucitao complete url'
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/ra/b0fcf98f-a435-4c19-bae0-bb9b15bb94b4/completed'), 5000);
+    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/ra/b0fcf98f-a435-4c19-bae0-bb9b15bb94b4/completed'), 7000);
     browser.sleep(2000);
 }
 function checkCompletedTemplate() {
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavio novi completed template
-    browser.wait(EC.textToBePresentInElement($('.completed'), 'START UP TEMPLATE'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.completed'), 'START UP TEMPLATE'), 7000);
 }
 
 module.exports = {

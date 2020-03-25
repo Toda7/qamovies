@@ -50,8 +50,8 @@ function replyText() {
 function checkSuccess(){
    var EC = protractor.ExpectedConditions;
    // Provera da li je uspesno objavljen Reply
-   browser.wait(EC.textToBePresentInElement($('.reply'), 'ATQA Reply'), 5000);
-   browser.sleep(500);
+   browser.wait(EC.textToBePresentInElement($('.reply'), 'ATQA Reply'), 7000);
+   browser.sleep(1000);
 }  
 
  module.exports = {

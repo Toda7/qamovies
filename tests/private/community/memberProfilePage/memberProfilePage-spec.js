@@ -72,7 +72,7 @@ describe('Member Profile strana', function(){
     
         it('Klik na user avatar da otvorimo user menu', function () {
             docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
-            browser.sleep(500);
+            browser.sleep(1000);
         });
     
         it('Provera da li se ucitao Inbox link u user meniju', function () {
@@ -97,12 +97,12 @@ describe('Member Profile strana', function(){
     
         it('Klik na user avatar da otvorimo user menu', function () {
             docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
-            browser.sleep(500);
+            browser.sleep(1000);
         });
     
         it('Provera da li se ucitao My Profile link u user meniju', function () {
             docLibraryCheck.checkMyProfileInUserMenu();
-            browser.sleep(500);
+            browser.sleep(1000);
         });
     
         it('Klik na My Profile link', function () {
@@ -118,7 +118,7 @@ describe('Member Profile strana', function(){
     
         it('Klik na user avatar da otvorimo user menu', function () {
             docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
-            browser.sleep(500);
+            browser.sleep(1000);
         });
     
         it('Provera da li se ucitao Org link u user meniju', function () {
@@ -138,7 +138,7 @@ describe('Member Profile strana', function(){
     
         it('Klik na user avatar da otvorimo user menu', function () {
             docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
-            browser.sleep(500);
+            browser.sleep(1000);
         });
     
         it('Provera da li se ucitao Account Settings link u user meniju', function () {
@@ -158,7 +158,7 @@ describe('Member Profile strana', function(){
     
         it('Klik na user avatar da otvorimo user menu', function () {
             docLibraryCheck.clickOnUserAvatarToOpenDropMenu();
-            browser.sleep(500);
+            browser.sleep(1000);
         });
     
         it('Provera da li se ucitao sign out link u user meniju', function () {
@@ -316,7 +316,7 @@ describe('Member Profile strana', function(){
 
     it('Provera da li se ucitao URL za Home stranu', function(){
         memberProfilePage.checkHomeUrl();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
         afterAll(function(){

@@ -13,26 +13,26 @@ browser.sleep(2000);
 function checkSortingURL() {
    // Provera da li se ucitao URL sa parametrom za Turkey Hunting za sorting
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html?cat=1104'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html?cat=1104'), 7000);
 }
 
 function checkThatProductIsLoadedForTurkeyFilter() {
    // provera da li se ucitao product na strani
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('.product.name.product-item-name'), 'HEAD-BANGER™ LONG RANGE TURKEY CHOKE TUBE'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.product.name.product-item-name'), 'HEAD-BANGER™ LONG RANGE TURKEY CHOKE TUBE'), 7000);
 }
 
 function checkNumberOfItems(){
    var EC = protractor.ExpectedConditions;
    // Provera da li je dobar number of items on page
-   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), '2 Items'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), '2 Items'), 7000);
    browser.sleep(2500);
 }
 
 function checkNumberOfItems2(){
    var EC = protractor.ExpectedConditions;
    // Provera da li je dobar number of items on page
-   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), '1 Item'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), '1 Item'), 7000);
    browser.sleep(2500);
 }
 
@@ -45,7 +45,7 @@ browser.sleep(2000);
 function checkSortingURL1() {
    // Provera da li se ucitao URL bez parametrom za Turkey Hunting 
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html'), 7000);
 }
 
 function click2OptionInCategoryDrop() {
@@ -57,13 +57,13 @@ browser.sleep(2000);
 function checkSortingURL2() {
    // Provera da li se ucitao URL sa parametrom za Red Dots za sorting
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html?cat=1110'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html?cat=1110'), 7000);
 }
 
 function checkThatProductIsLoadedForRedDotsFilter() {
    // provera da li se ucitao product na strani
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('.product.name.product-item-name'), 'TRITON™ 30mm TRI-COLOR'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.product.name.product-item-name'), 'TRITON™ 30mm TRI-COLOR'), 7000);
 }
 
 function clickOnPriceOptionToOpenMenu() {
@@ -81,19 +81,19 @@ browser.sleep(3000);
 function checkSortingURL3() {
    // Provera da li se ucitao URL sa parametrom za Red Dots and $0.00 - $100.00
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html?cat=1110&price=-100'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html?cat=1110&price=-100'), 7000);
 }
 
 function checkNumberItem() {
    // Provera da li se na strani nalazi 1 item 
 var EC = protractor.ExpectedConditions;
-browser.wait(EC.textToBePresentInElement($('.toolbar-number'), '1'), 5000);
+browser.wait(EC.textToBePresentInElement($('.toolbar-number'), '1'), 7000);
 }
 
 function checkSortingURL4() {
    // Provera da li se ucitao product za Red Dots and $0.00 - $100.00 
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html?cat=1104&product_list_order=price'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html?cat=1104&product_list_order=price'), 7000);
 }
 
  module.exports = {

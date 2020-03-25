@@ -45,7 +45,7 @@ describe('Create Discussion Action', function(){
 
     it('Attach Document', function(){
         createDiscussion.attachDoc();
-        browser.sleep(500);
+        browser.sleep(1000));
     });
 
     it('Dodavanje topika', function(){

@@ -21,7 +21,7 @@ function enterSearchTerm() {
 function checkSearchUrl() {
     // provera topic search url-a
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/topics?q=test'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/topics?q=test'), 7000);
 }
 
 

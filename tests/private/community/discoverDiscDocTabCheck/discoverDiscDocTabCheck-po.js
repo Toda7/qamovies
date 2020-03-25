@@ -16,7 +16,7 @@ function clickOnFirstDoc() {
 function checkDocURL() {
     // Provera da li se ucitao Doc URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/documents/view/54e63390-1ecc-4e09-9b8c-439cfc33264a'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/documents/view/54e63390-1ecc-4e09-9b8c-439cfc33264a'), 7000);
 }
 
 function checkDocTitle() {
@@ -38,7 +38,7 @@ function clickOnFirstDisc() {
 function checkDiscURL() {
     // Provera da li se ucitao Disc URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/discussions/view/ee9fe8f5-b177-4e0c-87cd-0797abb14dd7?filter=topic%2B1ed4b722-6200-4a8c-ade9-0fade9a74ec4'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/discussions/view/ee9fe8f5-b177-4e0c-87cd-0797abb14dd7?filter=topic%2B1ed4b722-6200-4a8c-ade9-0fade9a74ec4'), 7000);
 }
 
 function checkDiscTitle() {

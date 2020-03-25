@@ -19,7 +19,7 @@ function refreshPage() {
  function checkSuccess(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je Dokument uspesno downloadovan
-    browser.wait(EC.textToBePresentInElement($('.download_cta '), '1'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.download_cta '), '1'), 7000);
 
     browser.sleep(2000);
  } 

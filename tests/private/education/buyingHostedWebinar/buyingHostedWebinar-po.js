@@ -23,13 +23,13 @@ function clickOnFirstWebinar() {
 function checkResourcesSection(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao resources section
-    browser.wait(EC.textToBePresentInElement($('.section_title'), 'RESOURCES'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.section_title'), 'RESOURCES'), 7000);
 }   
 
 function checkSpeakersSection(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao speakers section
-    browser.wait(EC.textToBePresentInElement($('.section.speakers'), 'SPEAKERS'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.section.speakers'), 'SPEAKERS'), 7000);
 }   
 
 function clickOnReserveYourSeatButton() {
@@ -74,7 +74,7 @@ function clickOnAgreePayButton() {
 function checkFirstErrorMessage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavila error poruka
-    browser.wait(EC.textToBePresentInElement($('.error'), 'Card Number is invalid.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.error'), 'Card Number is invalid.'), 7000);
 }   
 
 function enterNumbersInCreditCardField() {
@@ -91,7 +91,7 @@ function enterNameOfCreditCard() {
 function checkSecondErrorMessage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavila druga error poruka
-    browser.wait(EC.textToBePresentInElement($('.error'), 'Expiration Month is invalid. Must be between 1-12.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.error'), 'Expiration Month is invalid. Must be between 1-12.'), 7000);
 }   
 
 function enterNumbersInMonthField() {
@@ -103,7 +103,7 @@ function enterNumbersInMonthField() {
 function checkThirdErrorMessage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavila treca error poruka
-    browser.wait(EC.textToBePresentInElement($('.error'), 'Expiration Year is invalid. Must be 4 digits.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.error'), 'Expiration Year is invalid. Must be 4 digits.'), 7000);
 }   
 
 function enterNumbersInYearField() {
@@ -115,7 +115,7 @@ function enterNumbersInYearField() {
 function checkFourthErrorMessage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavila treca error poruka
-    browser.wait(EC.textToBePresentInElement($('.error'), 'CVC is invalid.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.error'), 'CVC is invalid.'), 7000);
 }   
 
 function enterNumbersInCVCField() {
@@ -127,13 +127,13 @@ function enterNumbersInCVCField() {
 function checkFourthErrorMessage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavila treca error poruka
-    browser.wait(EC.textToBePresentInElement($('.error'), 'CVC is invalid.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.error'), 'CVC is invalid.'), 7000);
 }   
 
 function checkErrorMessageForZipCode(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavila treca error poruka
-    browser.wait(EC.textToBePresentInElement($('.error'), 'Zip Code is invalid. Must be 5 digits.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.error'), 'Zip Code is invalid. Must be 5 digits.'), 7000);
 }   
 
 function enterNumbersInZipField() {
@@ -146,7 +146,7 @@ function enterNumbersInZipField() {
 function checkPurchaseMessage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavila treca error poruka
-    browser.wait(EC.textToBePresentInElement($('.buy'), 'This webinar has been purchased.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.buy'), 'This webinar has been purchased.'), 7000);
 }   
 
 function HoverToOpenUserDrop() {

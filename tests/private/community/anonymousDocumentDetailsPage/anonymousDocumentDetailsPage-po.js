@@ -6,44 +6,44 @@ function enterSearchWord() {
 function checkBreadcrumbs() {
     // Provera da li se ucitao breadcrumbs
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.nav_title'), 'papeldilaqasa'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.nav_title'), 'papeldilaqasa'), 7000);
 }
 
 function checkDocTitle(){
     // Provera da li se ucitao doc title
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.community .document_detail .document_title .constrain h1'), 'papeldilaqasa'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.community .document_detail .document_title .constrain h1'), 'papeldilaqasa'), 7000);
 }
 
 function checkDefaultUserAvatar() {
     // Provera da li je dobar default user avatar na document details page
     var xxx = element.all(by.tagName('img')).get(1);
     expect(xxx.getAttribute('src')).toEqual('https://static.cbancnetwork.com/Public/higgins/avatar_gray.png');
-    browser.sleep(500);
+    browser.sleep(1000));
 }
 
 function checkTimeStamp(){
     var EC = protractor.ExpectedConditions;
     // Provera Active now Time Stamp-a
-    browser.wait(EC.textToBePresentInElement($('.community .card.item_card .item_sig .date_time.non_mobile'), 'Active: just now'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.community .card.item_card .item_sig .date_time.non_mobile'), 'Active: just now'), 7000);
 }
 
 function checkAnonymousUserName(){
     // Provera da li se ucitao user name
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .title .person_name'), 'President Payments and Electronic Banking'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .title .person_name'), 'President Payments and Electronic Banking'), 7000);
 }
 
 function checkOrg(){
     // Provera da li se ucitao org 
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .info .org_info'), 'a Bank'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .info .org_info'), 'a Bank'), 7000);
 }
 
 function checkOrgSize(){
     // Provera da li se ucitao org size
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .info .org_size'), '($500M-$1B | South)'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .info .org_size'), '($500M-$1B | South)'), 7000);
 }
 
 function checkDiscussionLinkWhereDocIsPosted(){
@@ -71,7 +71,7 @@ function clickOnDiscussionLink(){
 function checkDiscussionURL() {
     // Provera da li se ucitao discussion URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/discussions/view/234ae3e4-aca4-4ec6-a502-4c1c05b906bc'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/discussions/view/234ae3e4-aca4-4ec6-a502-4c1c05b906bc'), 7000);
 }
 
 

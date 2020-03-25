@@ -7,37 +7,37 @@ function landOnFVPage() {
 function checkFVTitleOnPage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao Title
-    browser.wait(EC.titleIs('Dovla FV'), 5000);
+    browser.wait(EC.titleIs('Dovla FV'), 7000);
 }   
 
 function checkHomeLink(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao Home link
-    browser.wait(EC.textToBePresentInElement($('.side_nav'), 'Home'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.side_nav'), 'Home'), 7000);
 }   
 
 function checkTaskReportLink(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao Task Report link
-    browser.wait(EC.textToBePresentInElement($('.side_nav'), 'Task Report'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.side_nav'), 'Task Report'), 7000);
 }   
 
 function checkAllActivityLink(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao All Activity link
-    browser.wait(EC.textToBePresentInElement($('.side_nav'), 'All Activity'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.side_nav'), 'All Activity'), 7000);
 }   
 
 function checkSearchLink(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao Search link
-    browser.wait(EC.textToBePresentInElement($('.side_nav'), 'Search'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.side_nav'), 'Search'), 7000);
 }   
 
 function checkAdminlandLink(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao Adminland link
-    browser.wait(EC.textToBePresentInElement($('.side_nav'), 'Adminland'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.side_nav'), 'Adminland'), 7000);
 } 
 
 function clickOnCreatedByMe() {
@@ -55,7 +55,7 @@ function clickOnAssignedToMe() {
 function checkAssignedToMeTasks(){
     var EC = protractor.ExpectedConditions;
     // Provera da li su se ucitali Assigned To Me taskovi
-    browser.wait(EC.textToBePresentInElement($('.main_card'), 'Z1'), 5000);}
+    browser.wait(EC.textToBePresentInElement($('.main_card'), 'Z1'), 7000);}
 
 module.exports = {
     landOnFVPage,

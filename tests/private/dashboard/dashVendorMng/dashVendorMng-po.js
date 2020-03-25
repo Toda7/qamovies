@@ -16,7 +16,7 @@ function clickOnVendorMng() {
  function checkVendorMngUrl() {
      // Provera Url Risk assessmenta 
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/vm/home'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/vm/home'), 7000);
 }
 
 

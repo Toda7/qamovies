@@ -6,7 +6,7 @@ function clickOnAddVendorButton() {
 function checkNameOfVendorOnVendorDetails(){
     var EC = protractor.ExpectedConditions;
     // Provera Fifa Vendor name kada na vendor details page
-    browser.wait(EC.textToBePresentInElement($('.card-content'), 'Fifa'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-content'), 'Fifa'), 7000);
 }   
 
 module.exports = {

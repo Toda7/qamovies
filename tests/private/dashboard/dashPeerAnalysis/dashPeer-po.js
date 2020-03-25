@@ -17,7 +17,7 @@
  function checkPeerUrl() {
      // Provera Url Comunity 
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/peer_analysis/'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/peer_analysis/'), 7000);
 }
 
  module.exports = {

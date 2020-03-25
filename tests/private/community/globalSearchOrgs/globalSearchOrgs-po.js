@@ -41,7 +41,7 @@ function clickOrg() {
 function checkOrgUrl() {
    // Provera da li se ucitao URL za banku
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/fis/view/b7aa8e7f-3c72-400c-b437-3d0d92cabff2'), 5000);
+   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/fis/view/b7aa8e7f-3c72-400c-b437-3d0d92cabff2'), 7000);
 }
 
  module.exports = {

@@ -37,7 +37,7 @@ function click6Product() {
  function checkErrorMsg(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je dobra Error poruka
-    browser.wait(EC.textToBePresentInElement($('.message-error.error.message'), '"SPEED SHOT™ BOWFISHING ARROW" as you requested.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.message-error.error.message'), '"SPEED SHOT™ BOWFISHING ARROW" as you requested.'), 7000);
     browser.sleep(5000);
  }
 

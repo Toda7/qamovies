@@ -6,7 +6,7 @@ function clickOnShareButton(){
 function checkTitleInShareForm(){
 // Provera da li se Share title ucitao u formi
 var EC = protractor.ExpectedConditions;
-browser.wait(EC.textToBePresentInElement($('.card .card-content .card-title'), 'Share with your Colleagues'), 5000);
+browser.wait(EC.textToBePresentInElement($('.card .card-content .card-title'), 'Share with your Colleagues'), 7000);
 }
 
 function enterInvalidEmailAddress() {

@@ -39,7 +39,7 @@ function submit() {
 function checkNoDisc(){
     var EC = protractor.ExpectedConditions;
     // Provera da nema diskusija na Subscribed tabu
-    browser.wait(EC.textToBePresentInElement($('.card-content'), "Looks like you're not subscribed to any discussions. Once you subscribe, you'll be able to find them here."), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-content'), "Looks like you're not subscribed to any discussions. Once you subscribe, you'll be able to find them here."), 7000);
     browser.sleep(2000);
 }
 
@@ -56,7 +56,7 @@ function clickOnNotifications() {
 function checkThereIsDisc(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se diskusija pojavila
-    browser.wait(EC.textToBePresentInElement($('.title'), 'Voyage 1'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.title'), 'Voyage 1'), 7000);
     browser.sleep(2000);
 }
 

@@ -7,7 +7,7 @@ function clickOnThank() {
     //  Klikni na Thank dugme
     // element.all(by.cssContainingText('span.text_link', 'Thanks')).get(2).click();
     element.all(by.className('text_link')).get(4).click();
-    browser.sleep(500);
+    browser.sleep(1000);
 }
 function checkThankCount1() {
     // Provera da li se Thank count povecao za 1

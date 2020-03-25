@@ -41,7 +41,7 @@ function clickFirstEmployeeSendMessageButton() {
 function checkInboxUrl() {
     // Provera da li se ucitao URL za Inbox
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/dm/compose?person_key=5d17017e-2dc4-433f-8e09-defbcdab7344'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/dm/compose?person_key=5d17017e-2dc4-433f-8e09-defbcdab7344'), 7000);
  }
 
  function checkThirdEmployeeDefaultAvatar() {

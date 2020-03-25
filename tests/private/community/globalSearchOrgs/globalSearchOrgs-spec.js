@@ -20,12 +20,12 @@ describe('Pretraga organizacija na Global Search Org tabu', function(){
 
     it('Idi na Orgs tab', function () {
         globalSearchOrgs.clickOrgsTab();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Unesi text u search polje', function () {
         globalSearchOrgs.enterSearchWord();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Provera broja rezultata pretrage', function () {
@@ -55,7 +55,7 @@ describe('Pretraga organizacija na Global Search Org tabu', function(){
 
     it('Provera da li se ucitao URL za banku', function () {
         globalSearchOrgs.checkOrgUrl();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
         afterAll(function(){

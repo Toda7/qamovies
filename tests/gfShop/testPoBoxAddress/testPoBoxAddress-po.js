@@ -36,7 +36,7 @@ function clickToSelectProvince() {
 function checkPoBoxNotAllowedMessage(){ 
    // Provera da li se pojavila restricted message 
 var EC = protractor.ExpectedConditions;
-browser.wait(EC.textToBePresentInElement($('.message.message-error.error'), 'Shipping to P.O. Boxes is not allowed'), 5000);
+browser.wait(EC.textToBePresentInElement($('.message.message-error.error'), 'Shipping to P.O. Boxes is not allowed'), 7000);
 }
 
 function openMiniCart() {

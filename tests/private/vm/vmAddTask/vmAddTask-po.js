@@ -39,7 +39,7 @@ function clickOnCreateTaskButton() {
 
 function checkIsTitleIsPresent(){
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.tasks_table'), 'MyTitle'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.tasks_table'), 'MyTitle'), 7000);
 }   
 
 module.exports = {

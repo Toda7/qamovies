@@ -23,7 +23,7 @@ function clickVendorNameInProfileBox() {
 function checkVendorMandrillUrl() {
    // Provera da li se ucitao URL za Vendor Mandrill
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/vendors/view/d12dd16a-08e7-48e7-9df2-7f4f5e5976d9'), 5000);
+   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/vendors/view/d12dd16a-08e7-48e7-9df2-7f4f5e5976d9'), 7000);
 }
 
 function clickSendMessage() {
@@ -34,7 +34,7 @@ function clickSendMessage() {
 function checkInboxUrl() {
    // Provera da li se ucitao URL za Inbox
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/dm/compose?person_key=aeaeb491-6e60-4827-84b0-19212d48f189'), 5000);
+   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/dm/compose?person_key=aeaeb491-6e60-4827-84b0-19212d48f189'), 7000);
 }
 
 function clickVendorsGroup() {
@@ -45,7 +45,7 @@ function clickVendorsGroup() {
 function checkVendorsGroupUrl() {
    // Provera da li se ucitao URL za Vendors grupu
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/groups/view/5e95225e-bfa4-45d2-9956-0bb6b0f18174'), 5000);
+   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/groups/view/5e95225e-bfa4-45d2-9956-0bb6b0f18174'), 7000);
 }
 
 function checkRestrictionMessage() {
@@ -62,7 +62,7 @@ function clickHomeLink() {
 function checkHomeUrl() {
    // Provera da li se ucitao URL za Home stranu
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/home?filter=home&tab=latest'), 5000);
+   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/home?filter=home&tab=latest'), 7000);
 }
 
 module.exports = {

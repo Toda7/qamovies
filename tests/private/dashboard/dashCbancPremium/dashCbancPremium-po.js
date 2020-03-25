@@ -16,20 +16,20 @@ function landOnDashboardPage() {
   function checkPageTitle()  {
     // Proverava da li se ucitao Page title 
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.titleIs('CBANC Premium'), 5000);
+    browser.wait(EC.titleIs('CBANC Premium'), 7000);
 }
 
 function checkShowMeHowButton()  {
   // Proverava da li se ucitao SHow me how button 
   var EC = protractor.ExpectedConditions;
-  browser.wait(EC.textToBePresentInElement($('.cta'),'SHOW ME HOW'), 5000);
+  browser.wait(EC.textToBePresentInElement($('.cta'),'SHOW ME HOW'), 7000);
 }
     
 
  function checkCbancPremiumUrl() {
     // Provera Url 
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/premium?icn=dashboard'), 5000);
+   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/premium?icn=dashboard'), 7000);
 }
 
 

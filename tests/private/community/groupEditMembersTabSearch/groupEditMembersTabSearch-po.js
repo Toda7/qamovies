@@ -17,7 +17,7 @@ function checkOneResult() {
 function checkUserName() {
     // Provera ime 
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.collection .collection-item.avatar '), 'Zoran Radmilovic'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.collection .collection-item.avatar '), 'Zoran Radmilovic'), 7000);
 }
 
 function checkUsersBank() {

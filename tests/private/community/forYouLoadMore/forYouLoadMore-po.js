@@ -13,7 +13,7 @@ function count30Disc() {
 function messageAtTheBottom(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavi poruka na dnu strane
-    browser.wait(EC.textToBePresentInElement($('.btn.btn-flat'), 'DISCOVER NEW TOPICS'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.btn.btn-flat'), 'DISCOVER NEW TOPICS'), 7000);
     browser.sleep(2000);
 }
 

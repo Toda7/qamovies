@@ -11,7 +11,7 @@ function clickOnFollow() {
 function isDiscThere(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se Diskusija pojavila
-    browser.wait(EC.textToBePresentInElement($('.title'), 'For You -> Subscribe Vendor and Vendor user testing'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.title'), 'For You -> Subscribe Vendor and Vendor user testing'), 7000);
     browser.sleep(2000);
 }
 

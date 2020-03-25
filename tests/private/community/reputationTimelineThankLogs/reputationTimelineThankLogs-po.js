@@ -213,7 +213,7 @@ function checkMessage() {
 function clickOnThank() {
     //  Klikni na Thank dugme
     element.all(by.cssContainingText('span.text_link', 'Thanks')).get(0).click();
-    browser.sleep(500);
+    browser.sleep(1000);
 }
 
 

@@ -23,7 +23,7 @@ function clickBankNameInProfileBox() {
 function checkChicagoBankURL() {
    // Provera da li se ucitao URL za Bank of Chicago
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/fis/view/83b7fdaf-7b6f-4934-bca4-a235a725c1af'), 5000);
+   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/fis/view/83b7fdaf-7b6f-4934-bca4-a235a725c1af'), 7000);
 }
 
 function clickAftGroup() {
@@ -34,7 +34,7 @@ function clickAftGroup() {
 function checkAftGroupURL() {
    // Provera da li se ucitao URL za AFT grupu
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/groups/view/1bfdce90-7151-11e6-abb8-7831c1baaeec'), 5000);
+   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/groups/view/1bfdce90-7151-11e6-abb8-7831c1baaeec'), 7000);
 }
 
 function checkPageTitle() {
@@ -51,7 +51,7 @@ function clickFiProfessionalsGroup() {
 function checkFiProfessionalsGroupURL() {
    // Provera da li se ucitao URL za Fi Professionals grupu
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/groups/view/8182a044-d055-427f-ae7b-9dcf06e58e46'), 5000);
+   browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/groups/view/8182a044-d055-427f-ae7b-9dcf06e58e46'), 7000);
 }
 
 module.exports = {

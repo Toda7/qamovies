@@ -20,7 +20,7 @@ function clickOnSignIn() {
 
 function checkSignInUrl() {
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://cbancnetwork-edge.auth0.com/login'), 5000);
+    browser.wait(EC.urlContains('https://cbancnetwork-edge.auth0.com/login'), 7000);
 }
 
 function enterEmail() {
@@ -37,7 +37,7 @@ function submit() {
 
 function checkLogInUrl() {
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/membership/dashboard/'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/membership/dashboard/'), 7000);
 }
 
 function clickOnComunity() {
@@ -49,7 +49,7 @@ function clickOnComunity() {
 function checkComunityUrl() {
      // Provera Url Comunity 
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/home'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/community/home'), 7000);
 }
 
 function clickOnEducation() {
@@ -61,19 +61,19 @@ function clickOnEducation() {
 // function checkSearchField()  {
 //     // Proverava da li se ucitalo "Search Upcoming Webinars"
 //     var EC = protractor.ExpectedConditions;
-//     browser.wait(EC.textToBePresentInElement($('.search_form'),'Search Upcoming Webinars'), 5000);
+//     browser.wait(EC.textToBePresentInElement($('.search_form'),'Search Upcoming Webinars'), 7000);
 // }
 
 function checkWebinarIsPresent(){
     // Provera da li se webinar ucitao
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.presenceOf($('.webinar_item')), 5000);
+    browser.wait(EC.presenceOf($('.webinar_item')), 7000);
     }
 
  function checkEducationUrl() {
      // Provera Url Education 
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/education/webinars/calendar'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/education/webinars/calendar'), 7000);
 }
 
 function clickOnViewFinder() {
@@ -85,7 +85,7 @@ function clickOnViewFinder() {
 function checkViewFinderUrl() {
      // Provera View Finder Url 
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/view_finder/dashboard/8287c4c0-d86a-47b1-9bf9-ee925b78c59b/institutions'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/view_finder/dashboard/8287c4c0-d86a-47b1-9bf9-ee925b78c59b/institutions'), 7000);
 }
 
 function clickOnWorkspace() {
@@ -97,7 +97,7 @@ function clickOnWorkspace() {
 function checkWorkspaceUrl() {
      // Provera View Finder Url 
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/premium'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/premium'), 7000);
 }
 
 function clickOnUserMenu() {
@@ -117,7 +117,7 @@ function clickOnSignInV() {
 
 function checkSignInUrlV() {
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://cbancnetwork-edge.auth0.com/login'), 5000);
+    browser.wait(EC.urlContains('https://cbancnetwork-edge.auth0.com/login'), 7000);
 }
 
 function enterEmailV() {
@@ -134,7 +134,7 @@ function submitV() {
 
 function checkLogInUrlV() {
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/membership/dashboard/'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/membership/dashboard/'), 7000);
 }
 
 

@@ -7,13 +7,13 @@ function clickOnHuntsByRegion() {
 function checkHuntsByRegionURL() {
    // Provera URL-a za Hunts By Region
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/hunts-by-region'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/hunts-by-region'), 7000);
 }
 
 function checkPageTitleOfHuntsByRegion() {
    // Provera page title na Hunts By Region page
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Browse Hunting Trips by Location... | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Browse Hunting Trips by Location... | Guidefitter'), 7000);
 }
 
 function clickOnHuntsBySpecies() {
@@ -25,13 +25,13 @@ function clickOnHuntsBySpecies() {
 function checkHuntsBySpeciesURL() {
    // Provera URL-a za Hunts By Species
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/hunts-by-species'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/hunts-by-species'), 7000);
 }
 
 function checkPageTitleOfHuntsBySpecies() {
    // Provera page title na Hunts By Species page
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Browse Hunting Trips by Game... | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Browse Hunting Trips by Game... | Guidefitter'), 7000);
 }
 
 function clickOnFishingByRegion() {
@@ -43,13 +43,13 @@ function clickOnFishingByRegion() {
 function checkFishingByRegionURL() {
    // Provera URL-a za Fishing By Region
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/fishing-by-region'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/fishing-by-region'), 7000);
 }
 
 function checkPageTitleOfFishingByRegion() {
    // Provera page title na Fishing By Region page
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Browse Fishing Trips by Location... | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Browse Fishing Trips by Location... | Guidefitter'), 7000);
 }
 
 function clickOnFishingBySpecies() {
@@ -61,13 +61,13 @@ function clickOnFishingBySpecies() {
 function checkFishingBySpeciesURL() {
    // Provera URL-a za Fishing By species
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/fishing-by-species'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/fishing-by-species'), 7000);
 }
 
 function checkPageTitleOfFishingBySpecies() {
    // Provera page title na Fishing By species page
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Browse Fishing Trips by Game... | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Browse Fishing Trips by Game... | Guidefitter'), 7000);
 }
 
 
@@ -80,13 +80,13 @@ function clickOnOutdoorNewsAdvice() {
 function checkOutdoorNewsAdviceURL() {
    // Provera URL-a za Outdoor News Advice
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/news-and-advice'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/news-and-advice'), 7000);
 }
 
 function checkPageTitleOfOutdoorNewsAdvice() {
    // Provera page title na Outdoor News Advice
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Hunting News | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Hunting News | Guidefitter'), 7000);
 }
 
 
@@ -99,13 +99,13 @@ function clickOnHuntingVideos() {
 function checkHuntingVideosURL() {
    // Provera URL-a za Hunting Videos
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/videos'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/videos'), 7000);
 }
 
 function checkPageTitleOfHuntingVideos() {
    // Provera page title na Hunting Videos
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Hunting & Fishing Videos | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Hunting & Fishing Videos | Guidefitter'), 7000);
 }
 
 function clickOnGuidefitterGiveaways() {
@@ -117,13 +117,13 @@ function clickOnGuidefitterGiveaways() {
 function checkGuidefitterGiveawaysURL() {
    // Provera URL-a za Guidefitter Giveaways
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/giveaways'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/giveaways'), 7000);
 }
 
 function checkPageTitleOfGuidefitterGiveaways() {
    // Provera page title na Guidefitter Giveaways
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Hunting & Fishing Giveaways | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Hunting & Fishing Giveaways | Guidefitter'), 7000);
 }
 
 function clickOnResources() {
@@ -135,13 +135,13 @@ function clickOnResources() {
 function checkResourcesURL() {
    // Provera URL-a za Resources
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/resources'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/resources'), 7000);
 }
 
 function checkPageTitleOfResources() {
    // Provera page title na Resources page
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Resources | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Resources | Guidefitter'), 7000);
 }
 
 function clickOnObtainaHuntingLicense() {
@@ -153,13 +153,13 @@ function clickOnObtainaHuntingLicense() {
 function checkObtainaHuntingLicenseURL() {
    // Provera URL-a za Obtain a Hunting License
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/hunting-licenses-by-state'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/hunting-licenses-by-state'), 7000);
 }
 
 function checkPageTitleOfObtainaHuntingLicense() {
    // Provera page title na Obtain a Hunting License
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Hunting Licenses & Permits | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Hunting Licenses & Permits | Guidefitter'), 7000);
 }
 
 function clickOnBragHuntingorFishingPhoto() {
@@ -171,13 +171,13 @@ function clickOnBragHuntingorFishingPhoto() {
 function checkBragHuntingorFishingPhotoURL() {
    // Provera URL-a za Obtain a Brag a Hunting or Fishing Photo
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/bragging-wall'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/bragging-wall'), 7000);
 }
 
 // function checkPageTitleOfBragHuntingorFishingPhoto() {
 //    // Provera page title na Obtain a Brag a Hunting or Fishing Photo
 //    var EC = protractor.ExpectedConditions;
-//    browser.wait(EC.titleIs('Braggin' Wall - Brag Your Best Photos | Guidefitter), 5000);
+//    browser.wait(EC.titleIs('Braggin' Wall - Brag Your Best Photos | Guidefitter), 7000);
 // }
 
 function clickOnCreatePostOnTheCommunityfeed() {
@@ -189,13 +189,13 @@ function clickOnCreatePostOnTheCommunityfeed() {
 function checkCreatePostOnTheCommunityfeedURL() {
    // Provera URL-a za Create post on the Community feed
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/feed'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/feed'), 7000);
 }
 
 function checkPageTitleOfCreatePostOnTheCommunityfeed() {
    // Provera page title na Create post on the Community feed
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Hunting Outfitters, Guides, Photos, Expert Advice | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Hunting Outfitters, Guides, Photos, Expert Advice | Guidefitter'), 7000);
 }
 
 function clickOnAskQuestion() {
@@ -207,13 +207,13 @@ function clickOnAskQuestion() {
 function checkAskQuestionURL() {
    // Provera URL-a za ask a Question 
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/feed?type=50'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/feed?type=50'), 7000);
 }
 
 function checkPageTitleOfAskQuestion() {
    // Provera page title na ask question page
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Hunting Outfitters, Guides, Photos, Expert Advice | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Hunting Outfitters, Guides, Photos, Expert Advice | Guidefitter'), 7000);
 }
 
 function clickOnInsiders() {
@@ -225,13 +225,13 @@ function clickOnInsiders() {
 function checkInsidersURL() {
    // Provera URL-a za Insiders
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/insiders'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/insiders'), 7000);
 }
 
 function checkPageTitleOfInsidersPage() {
    // Provera page title na ask question page
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Gear Discounts for Outdoor Industry Insiders | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Gear Discounts for Outdoor Industry Insiders | Guidefitter'), 7000);
 }
 
 function clickOnSaveMoneyOnGear() {
@@ -243,13 +243,13 @@ function clickOnSaveMoneyOnGear() {
 function checkSaveMoneyOnGearURL() {
    // Provera URL-a za Save Money On Gear
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/gear-discounts'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/gear-discounts'), 7000);
 }
 
 function checkPageTitleOfSaveMoneyOnGearPage() {
    // Provera page title na Save Money On Gear
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('The Grid - Gear Discounts | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('The Grid - Gear Discounts | Guidefitter'), 7000);
 }
 
 function clickOnInviteAnInsider() {
@@ -261,13 +261,13 @@ function clickOnInviteAnInsider() {
 function checkInviteAnInsiderURL() {
    // Provera URL-a za Invite an Insider
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/insiders-referral-program'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/insiders-referral-program'), 7000);
 }
 
 function checkPageTitleOfInviteAnInsiderPage() {
    // Provera page title na Invite an Insider
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Invite an Insider Competition | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Invite an Insider Competition | Guidefitter'), 7000);
 }
 
 function clickOnCreateOutfitter() {
@@ -279,13 +279,13 @@ function clickOnCreateOutfitter() {
 function checkCreateOutfitterURL() {
    // Provera URL-a za Create a Free Outfitter Page
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/free-outfitter-page'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/free-outfitter-page'), 7000);
 }
 
 function checkPageTitleOfCreateOutfitterPage() {
    // Provera page title na Create a Free Outfitter Page
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Create a Free Outfitter Page | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Create a Free Outfitter Page | Guidefitter'), 7000);
 }
 
 function clickOnPromoteYourSkills() {
@@ -297,13 +297,13 @@ function clickOnPromoteYourSkills() {
 function checkPromoteYourSkillsURL() {
    // Provera URL-a za Promote Your Skills
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/promote-your-skills'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/promote-your-skills'), 7000);
 }
 
 function checkPageTitleOfPromoteYourSkillsPage() {
    // Provera page title na Promote Your Skills
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Are you a pro guide? | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Are you a pro guide? | Guidefitter'), 7000);
 }
 
 function clickOnHelp() {
@@ -315,13 +315,13 @@ function clickOnHelp() {
 function checkHelpURL() {
    // Provera URL-a za Help
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/help'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/help'), 7000);
 }
 
 function checkPageTitleOfHelpPage() {
    // Provera page title na Help
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Help | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Help | Guidefitter'), 7000);
 }
 
 
@@ -334,13 +334,13 @@ function clickOnPromoteYourProProgram() {
 function checkPromoteYourProProgramURL() {
    // Provera URL-a za Promote Your Pro Program
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/influencer-marketing-outdoor-industry'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/influencer-marketing-outdoor-industry'), 7000);
 }
 
 function checkPageTitleOfPromoteYourProProgramPage() {
    // Provera page title na Promote Your Pro Program
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Influencer Marketing - Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Influencer Marketing - Guidefitter'), 7000);
 }
 
 function clickOnAboutUs() {
@@ -352,13 +352,13 @@ function clickOnAboutUs() {
 function checkAboutUsURL() {
    // Provera URL-a za About Us
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/about-us'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/about-us'), 7000);
 }
 
 function checkPageTitleOfAboutUsPage() {
    // Provera page title na About Us
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('About Guidefitter | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('About Guidefitter | Guidefitter'), 7000);
 }
 
 function clickOnCompanyNews() {
@@ -370,13 +370,13 @@ function clickOnCompanyNews() {
 function checkCompanyNewsURL() {
    // Provera URL-a za Company News
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/news'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/news'), 7000);
 }
 
 function checkPageTitleOfCompanyNewsPage() {
    // Provera page title na Company News
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Company News | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Company News | Guidefitter'), 7000);
 }
 
 function clickOnCareers() {
@@ -388,13 +388,13 @@ function clickOnCareers() {
 function checkCareersURL() {
    // Provera URL-a za Company News
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/careers'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/careers'), 7000);
 }
 
 function checkPageTitleOfCareersPage() {
    // Provera page title na Company News
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Careers | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Careers | Guidefitter'), 7000);
 }
 
 function clickOnContactGuidefitter() {
@@ -406,13 +406,13 @@ function clickOnContactGuidefitter() {
 function checkContactGuidefitterURL() {
    // Provera URL-a za Contact Guidefitter
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/contact'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/contact'), 7000);
 }
 
 function checkPageTitleOfContactGuidefitterPage() {
    // Provera page title na Contact Guidefitter
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Contact Us | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Contact Us | Guidefitter'), 7000);
 }
 
 
@@ -425,13 +425,13 @@ function clickOnAdvertiseInOurJournal() {
 function checkAdvertiseInOurJournalURL() {
    // Provera URL-a za Advertise In Our Journal
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/advertise'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/advertise'), 7000);
 }
 
 function checkPageTitleOfAdvertiseInOurJournalPage() {
    // Provera page title na  Advertise In Our Journal
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Advertise in Guidefitter Journal | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Advertise in Guidefitter Journal | Guidefitter'), 7000);
 }
 
 function clickOnLegal() {
@@ -443,13 +443,13 @@ function clickOnLegal() {
 function checkLegalURL() {
    // Provera URL-a za Legal
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/legal'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/legal'), 7000);
 }
 
 function checkPageTitleOfLegalPage() {
    // Provera page title na Legal page
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Guidefitter Legal Information | Guidefitter'), 5000);
+   browser.wait(EC.titleIs('Guidefitter Legal Information | Guidefitter'), 7000);
 }
 
 function clickOnInstagram() {
@@ -461,7 +461,7 @@ function clickOnInstagram() {
 function checkInstagramURLa() {
    // Provera instagram URLa
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.instagram.com/guidefitter/'), 5000);
+   browser.wait(EC.urlContains('https://www.instagram.com/guidefitter/'), 7000);
 }
 
 function clickOnFacebook() {
@@ -473,7 +473,7 @@ function clickOnFacebook() {
 function checkFacebookURLa() {
    // Provera Facebook URLa
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.facebook.com/guidefitter'), 5000);
+   browser.wait(EC.urlContains('https://www.facebook.com/guidefitter'), 7000);
 }
 
 function clickOnTwitter() {
@@ -485,7 +485,7 @@ function clickOnTwitter() {
 function checkTwitterURLa() {
    // Provera Twitter URLa
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://twitter.com/guidefitter'), 5000);
+   browser.wait(EC.urlContains('https://twitter.com/guidefitter'), 7000);
 }
 
 function clickOnBragIconForAndroid() {
@@ -497,7 +497,7 @@ function clickOnBragIconForAndroid() {
 function checkBragAndoridURLa() {
    // Provera brag android URLa
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://play.google.com/store/apps/details?id=com.guidefitter.brag'), 5000);
+   browser.wait(EC.urlContains('https://play.google.com/store/apps/details?id=com.guidefitter.brag'), 7000);
 }
 
 function clickOnBragIconForiOS() {
@@ -509,7 +509,7 @@ function clickOnBragIconForiOS() {
 function checkBragiOSURLa() {
    // Provera brag iOS URLa
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://apps.apple.com/tm/app/brag-by-guidefitter/id1044250130'), 5000);
+   browser.wait(EC.urlContains('https://apps.apple.com/tm/app/brag-by-guidefitter/id1044250130'), 7000);
 }
 
 

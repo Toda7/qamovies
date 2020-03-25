@@ -1,7 +1,7 @@
 function checkPollHeader() {
     // Provera da li se poll header ucitao
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.collection.with-header.user_poll'), 'CBANC Poll'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.collection.with-header.user_poll'), 'CBANC Poll'), 7000);
 }
 
 function checkPollTitle() {

@@ -20,17 +20,17 @@ describe('Pretraga diskusije po descriptionu na Global Search Discussion tabu', 
 
     it('Idi na Discussions tab', function () {
         globalSearchDiscussionByDescription.clickDiscussionsTab();
-        browser.sleep(500);
+        browser.sleep(1000))));
     });
 
     it('Unesi text u search polje', function () {
         globalSearchDiscussionByDescription.enterSearchWord();
-        browser.sleep(500);
+        browser.sleep(1000))));
     });
 
     it('Provera broja rezultata pretrage', function () {
         globalSearchDiscussionByDescription.checkSearchResultsNumber();
-        browser.sleep(500);
+        browser.sleep(1000))));
     });
 
     it('Provera ikone za diskusiju u rezultatima pretrage', function () {

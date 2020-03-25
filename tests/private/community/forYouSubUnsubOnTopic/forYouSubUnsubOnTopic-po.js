@@ -11,7 +11,7 @@ function landOnTopicDetailPage() {
 function thereIsNoDisc(){
     var EC = protractor.ExpectedConditions;
     // Provera da nema diskusija na Latest tabu
-    browser.wait(EC.textToBePresentInElement($('.card-content'), 'Excellent work. You are all caught up!'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-content'), 'Excellent work. You are all caught up!'), 7000);
     browser.sleep(2000);
 }
 
@@ -23,7 +23,7 @@ function clickOnSubscribe() {
 function checkDiscShows(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je uspesno objavljena diskusija
-    browser.wait(EC.textToBePresentInElement($('.title'), 'Voyage 30'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.title'), 'Voyage 30'), 7000);
     browser.sleep(2000);
 }
 

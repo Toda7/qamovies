@@ -55,7 +55,7 @@ function clickOnViewDiscussion() {
 function checkSuccess(){
    var EC = protractor.ExpectedConditions;
    // Provera da li je uspesno objavljena anonimna diskusija
-   browser.wait(EC.textToBePresentInElement($('.person_name'), 'Employee Technology'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.person_name'), 'Employee Technology'), 7000);
    browser.sleep(2500);
 }  
 
