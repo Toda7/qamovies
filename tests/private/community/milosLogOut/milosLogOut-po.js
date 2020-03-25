@@ -1,3 +1,9 @@
+function landOnEducationPage() {
+    // Dolazak na admin stranu
+    browser.get('https://qa.cbancnetwork.com/education/webinars/calendar'); 
+    browser.sleep(2000);
+}
+
 function HoverToOpenUserDrop() {
     // Hover to open drop menu
     browser.actions().mouseMove(element(by.css('.user_name'))).perform();
@@ -12,6 +18,7 @@ function HoverToOpenUserDrop() {
 }
 
 module.exports = {
+    landOnEducationPage,
     HoverToOpenUserDrop,
     clickOnSignOutLink,
  }
