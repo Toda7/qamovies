@@ -751,7 +751,7 @@ exports.config = {
     ],
 
     milosLogOut: [
-      './private/education/milosLogOut/milosLogOut-spec.js'
+      './private/community/milosLogOut/milosLogOut-spec.js'
     ],
     
     loginAsAdmin: [
