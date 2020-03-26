@@ -14,6 +14,26 @@ exports.config = {
     //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluzi nicemu. to je samo primer)
     // ],
 
+    logInAsUser: [
+        './gfShop/logInAsUser/logInAsUser-spec.js'
+      ],
+
+    // testErrorMessageOnProductDetails: [
+    //     './gfShop/testErrorMessageOnProductDetails/testErrorMessageOnProductDetails-spec.js'
+    //   ],
+    
+    // testPoBoxAddress: [
+    //     './gfShop/testPoBoxAddress/testPoBoxAddress-spec.js'
+    //   ],
+  
+      testPoBoxAddressFromCheckout: [
+        './gfShop/testPoBoxAddressFromCheckout/testPoBoxAddressFromCheckout-spec.js'
+      ],
+
+    // testMyOrders: [
+    //     './gfShop/testMyOrders/testMyOrders-spec.js'
+    //   ],
+
 },
 
 capabilities: {
