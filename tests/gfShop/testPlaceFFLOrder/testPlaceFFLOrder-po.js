@@ -42,7 +42,7 @@ browser.wait(EC.textToBePresentInElement($('.step-title.fat'), 'Find a Local FFL
 
 function enterZipInSearchField() {
    // Enter zip in search field 
-   element(by.name('zip-code')).clear().sendKeys('4431');
+   element(by.name('zip-code')).clear().sendKeys('44221');
 }
 
 function clickOnSearchButton() {
