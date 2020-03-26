@@ -17,7 +17,7 @@ function enterStreet() {
 
 function lendOnProductDetails(){
    // Dolazak na product details 
-   browser.get('https://shop.outfitterextreme.com/hornady/350-legend-170-gr-interlock-american-whitetail.html'); 
+   browser.get('https://shop.outfitterextreme.com/hornady/30-cal-308-190-gr-sub-x.html'); 
 }
 
 function clickOnPoBoxAddress() {

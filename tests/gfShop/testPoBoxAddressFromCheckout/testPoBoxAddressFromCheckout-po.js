@@ -1,6 +1,6 @@
 function lendOnProductDetails(){
    // Dolazak na product details 
-   browser.get('https://shop.outfitterextreme.com/hornady/762-x-39mm-123-gr-hp-match-american-gunner.html'); 
+   browser.get('https://shop.outfitterextreme.com/hornady/6mm-243-90-gr-gmx.html'); 
 }
 
 function clickOnNewAddressButton(){
