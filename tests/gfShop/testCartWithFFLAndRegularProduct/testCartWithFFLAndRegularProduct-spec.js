@@ -1,6 +1,7 @@
 var testTwentyProductsOrder = require('../testTwentyProductsOrder/testTwentyProductsOrder-po.js');
 var testPlaceFFLOrder = require('../testPlaceFFLOrder/testPlaceFFLOrder-po.js');
 var testCartWithFFLAndRegularProduct = require('./testCartWithFFLAndRegularProduct-po.js');
+var testAttentionWindow = require('../testAttentionWindow/testAttentionWindow-po.js');
 
 describe('Cart With FFL And Regular Product', function () {
 
@@ -43,6 +44,18 @@ describe('Cart With FFL And Regular Product', function () {
 
     it('Provera da li se ucitao restriction warning', function () {
         testCartWithFFLAndRegularProduct.checkRestrictionMessage();
+    });
+
+    it('Klik na cart', function(){
+        testAttentionWindow.clickOnCart();
+    });
+
+    it(' Klik on Delete product icon', function(){
+        testAttentionWindow.clickOnDeleteProductIcon();
+    });
+
+    it(' Klik on Ok in confirm message', function(){
+        testAttentionWindow.clickOnDeleteConfirmation();
     });
 
     afterAll(function () {

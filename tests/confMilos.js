@@ -17,7 +17,7 @@ exports.config = {
     testRestrictedAreaMessage: [
       './gfShop/testRestrictedAreaMessage/testRestrictedAreaMessage-spec.js'
     ],
-  
+
     
   },
 
