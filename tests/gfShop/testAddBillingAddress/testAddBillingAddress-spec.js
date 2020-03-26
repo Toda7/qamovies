@@ -14,7 +14,7 @@ describe('Add billing adresu i error poruke za required polja', function () {
         testAddBillingAddress.landOnPeakShop();
     });
 
-    it('Click na Cudelink sekciju', function () {
+    it('Click na Meals sekciju', function () {
         testAddBillingAddress.clickOnMealsLink();
     });
 

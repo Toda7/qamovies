@@ -11,7 +11,7 @@ function clickOnCuddeLink() {
  }
 
  function click1Product() {
-    // Klik na Cetvrti proizvod 
+    // Klik na Prvi proizvod 
     element(by.className('column main')).all(by.className('product-image-photo')).get(0).click();
     browser.sleep(2000);
  }

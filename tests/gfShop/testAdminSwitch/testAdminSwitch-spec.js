@@ -67,14 +67,6 @@ describe('Provera da li se pojavio switch za admina', function(){
         testAdminSwitch.checkPriceAfterUsedSwitch();
     });
 
-    it('Klik na admin switch and select GOP', function(){
-        testAdminSwitch.clickOnAdminGroupToSelectGOP();
-    });
-
-    it('Provera cene za prvi prozivod na strani nakon koriscenja GOP switcha', function(){
-        testAdminSwitch.checkPriceAfterUsedSwitch();
-    });
-
     it('Dolazak na MDP', function(){
         prepareReturnPolicy.landOnMdpAsUser();
     });
