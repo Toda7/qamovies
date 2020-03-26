@@ -24,14 +24,14 @@ function enterZip() {
 
 function clickUnitedParcelService(){
    // Klik on United Parcel Service opciju
-   element(by.id('label_method_03_ups')).click();
+   element(by.id('label_carrier_GND_ups')).click();
    browser.sleep(2000);
 }
 
 function checkUnitedParcelMethodOnPaymentPage() {
    // Provera United Parcel shipping metode na Payment strani
    var xxx = element(by.className('totals shipping excl')).element(by.className('value'));
-   expect(xxx.getText()).toEqual('United Parcel Service - UPS Ground');
+   expect(xxx.getText()).toEqual('United Parcel Service - Ground');
    browser.sleep(100);
 }
 
