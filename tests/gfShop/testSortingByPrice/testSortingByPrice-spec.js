@@ -2,7 +2,7 @@ var testSortingByName = require('../testSortingByName/testSortingByName-po.js');
 var testSortingByPrice = require('./testSortingByPrice-po.js');
 
 
-describe('Sorting by product name in truglo', function(){
+describe('Sorting by product price in truglo', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element

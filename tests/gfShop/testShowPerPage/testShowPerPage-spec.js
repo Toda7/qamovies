@@ -26,7 +26,7 @@ describe('Test Show 12 and 24 Per Page', function(){
         testSortingByName.checkPageTitle();
     });
 
-    it('Provera da li se ucitao FIREARM-HUNTING page title', function(){
+    it('Provera da li se dobar number of items', function(){
         testSortingByName.checkNumberOfItems();
     });
 
