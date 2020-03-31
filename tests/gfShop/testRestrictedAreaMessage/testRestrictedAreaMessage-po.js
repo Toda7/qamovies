@@ -33,7 +33,7 @@ browser.wait(EC.textToBePresentInElement($('.message.message-error.error'), 'Res
 
 function clickOnDeletetLink() {
    // Klik on delete link for address
-   element.all(by.partialLinkText('DELETE ADDRESS')).last().click();
+   element.all(by.partialLinkText('DELETE')).get(0).click();
 }
 
  module.exports = {
