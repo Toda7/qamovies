@@ -24,7 +24,7 @@ describe('Da li se na home, na listOfProduct i na ProductDetails strani nalazi i
         testRegularVSDiscountPrice.checkRegularPriceOnHomeForFirstProduct();
     });
 
-    it('Klik on link from navigation menu', function(){
+    it('Klik on FIREARM-HUNTING link from navigation menu', function(){
         testSortingByName.clickOnLinkInNavMenu();
     });
 

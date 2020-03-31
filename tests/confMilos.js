@@ -10,15 +10,26 @@ exports.config = {
   seleniumAddress: 'http://localhost:4444/wd/hub',
   suites: {
 
+    // prepareProductsForTest: [
+    //   './gfShop/prepareProductsForTest/prepareProductsForTest-spec.js'
+    // ],
     logInAsUser: [
       './gfShop/logInAsUser/logInAsUser-spec.js'
     ],
 
-    testRestrictedAreaMessage: [
-      './gfShop/testRestrictedAreaMessage/testRestrictedAreaMessage-spec.js'
+    testBreadcrumbs: [
+      './gfShop/testBreadcrumbs/testBreadcrumbs-spec.js'
     ],
 
+    testMyAccount: [
+      './gfShop/testMyAccount/testMyAccount-spec.js'
+    ],
     
+    testSortingByPrice: [
+      './gfShop/testSortingByPrice/testSortingByPrice-spec.js'
+    ],
+
+
   },
 
   capabilities: {
