@@ -12,8 +12,8 @@ function enterStreet() {
 
 function checkBoxContent() {
    // Provera da li je nasa nova addresa pojavila na Address Book strani
-   var xxx = element(by.className('items addresses')).all(by.css('li.item')).last();
-   expect(xxx.getText()).toEqual('Bradly Seales\nMy street 4321\nTexas, Texas, 90001\nUnited States\nT: 333444\nEDIT ADDRESS DELETE ADDRESS');
+   var xxx = element(by.tagName(`tbody`)).all(by.tagName(`tr`)).get(0);
+   expect(xxx.getText()).toEqual(`Bradly Seales My street 4321 Texas United States Texas 90001 333444 EDIT DELETE`);
 }
 
  module.exports = {

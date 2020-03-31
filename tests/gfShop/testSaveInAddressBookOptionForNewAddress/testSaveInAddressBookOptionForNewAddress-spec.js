@@ -97,7 +97,7 @@ describe('Test save in address book option for new address on checkout page', fu
 
     it('Klik on Address Book', function(){
         testAddNewAddress.clickAddressBook();
-        browser.sleep(1000);
+        browser.sleep(3000);
     });
 
     it('Provera da li je nasa nova addresa pojavila na Address Book strani', function () {
