@@ -263,6 +263,81 @@ function landProduct45DetailsPage() {
     browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/64157/');
 }
 
+function landProduct46DetailsPage() {
+    // Dolazak na product 46 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/64158/');
+}
+
+function landProduct47DetailsPage() {
+    // Dolazak na product 47 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/41224/');
+}
+
+function landProduct48DetailsPage() {
+    // Dolazak na product 48 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/39194/');
+}
+
+function landProduct49DetailsPage() {
+    // Dolazak na product 49 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/21906/');
+}
+
+function landProduct50DetailsPage() {
+    // Dolazak na product 50 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/39209/');
+}
+
+function landProduct51DetailsPage() {
+    // Dolazak na product 51 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/14977/');
+}
+
+function landProduct52DetailsPage() {
+    // Dolazak na product 52 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/27193/');
+}
+
+function landProduct53DetailsPage() {
+    // Dolazak na product 53 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/27092/');
+}
+
+function landProduct54DetailsPage() {
+    // Dolazak na product 54 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/27130/');
+}
+
+function landProduct55DetailsPage() {
+    // Dolazak na product 55 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/27132/');
+}
+
+function landProduct56DetailsPage() {
+    // Dolazak na product 56 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/27112/');
+}
+
+function landProduct57DetailsPage() {
+    // Dolazak na product 57 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/61615/');
+}
+
+function landProduct58DetailsPage() {
+    // Dolazak na product 58 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/41627/');
+}
+
+function landProduct59DetailsPage() {
+    // Dolazak na product 59 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/26821/');
+}
+
+function landProduct60DetailsPage() {
+    // Dolazak na product 60 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/48181/');
+}
+
 module.exports = {
     clickSwitch,
     enterNumbersOfQTY,
@@ -314,5 +389,20 @@ module.exports = {
     landProduct43DetailsPage,
     landProduct44DetailsPage,
     landProduct45DetailsPage,
+    landProduct46DetailsPage,
+    landProduct47DetailsPage,
+    landProduct48DetailsPage,
+    landProduct49DetailsPage,
+    landProduct50DetailsPage,
+    landProduct51DetailsPage,
+    landProduct52DetailsPage,
+    landProduct53DetailsPage,
+    landProduct54DetailsPage,
+    landProduct55DetailsPage,
+    landProduct56DetailsPage,
+    landProduct57DetailsPage,
+    landProduct58DetailsPage,
+    landProduct59DetailsPage,
+    landProduct60DetailsPage,
 }
 
