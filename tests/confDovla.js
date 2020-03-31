@@ -33,6 +33,34 @@ exports.config = {
     testTwoShippingMethods: [
       './gfShop/testTwoShippingMethods/testTwoShippingMethods-spec.js'
     ],
+
+    testAdminSwitch: [
+      './gfShop/testAdminSwitch/testAdminSwitch-spec.js'
+    ],
+
+    TestSecondAttentionWindow: [
+      './gfShop/TestSecondAttentionWindow/TestSecondAttentionWindow-spec.js'
+    ],
+
+    testFooterLinks: [
+      './gfShop/testFooterLinks/testFooterLinks-spec.js'
+    ],
+
+    testRestrictedAreaMessage: [
+      './gfShop/testRestrictedAreaMessage/testRestrictedAreaMessage-spec.js'
+    ],
+
+    testPoBoxAddress: [
+      './gfShop/testPoBoxAddress/testPoBoxAddress-spec.js'
+    ],
+
+    testPoBoxAddressFromCheckout: [
+      './gfShop/testPoBoxAddressFromCheckout/testPoBoxAddressFromCheckout-spec.js'
+    ],
+
+    testSaveInAddressBookOptionForNewAddress: [
+      './gfShop/testSaveInAddressBookOptionForNewAddress/testSaveInAddressBookOptionForNewAddress-spec.js'
+    ],
   },
 
   capabilities: {
