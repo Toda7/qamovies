@@ -150,16 +150,16 @@ describe('Add billing adresu i error poruke za required polja', function () {
         testAddBillingAddress.clickOnAddressesLink();
     });
 
-    it('Click Remove link', function(){
-        testAddBillingAddress.clickOnRemoveLink();
+    it('Klik na Select link da se otvori drop menu', function(){
+        testAddBillingAddress.clickOnSelectLink();
     });
 
-    it('Confirm delete address', function(){
-        testAddBillingAddress.clickToConfirmDelete();
+    it('Klik na Delete iz drop menija', function(){
+        testAddBillingAddress.clickOnDelete();
     });
 
-    it('Click na Save', function(){
-        testAddBillingAddress.clickOnSaveButton();
+    it('Klik na OK u Confirm Delete modalu', function(){
+        testAddBillingAddress.clickOnOkInModal();
     });
 
     afterAll(function () {
