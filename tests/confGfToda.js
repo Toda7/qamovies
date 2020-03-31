@@ -18,9 +18,13 @@ exports.config = {
       './gfShop/logInAsUser/logInAsUser-spec.js'
     ],
 
-    testPlaceFFLOrder: [
-      './gfShop/testPlaceFFLOrder/testPlaceFFLOrder-spec.js'
-    ],
+    // prepareProductsForTest: [
+    //   './gfShop/prepareProductsForTest/prepareProductsForTest-spec.js'
+    // ],
+
+    // testPlaceFFLOrder: [
+    //   './gfShop/testPlaceFFLOrder/testPlaceFFLOrder-spec.js'
+    // ],
 
     // // testTwentyProductsOrder: [
     // // imamo tiket - https://guidefitter.atlassian.net/browse/SHOP-1106 
@@ -288,9 +292,9 @@ exports.config = {
     //   './gfShop/testCuddebackShipping/testCuddebackShipping-spec.js'
     // ],
 
-    testAddBillingAddress: [
-      './gfShop/testAddBillingAddress/testAddBillingAddress-spec.js'
-    ],
+    // testAddBillingAddress: [
+    //   './gfShop/testAddBillingAddress/testAddBillingAddress-spec.js'
+    // ],
 
   },
 

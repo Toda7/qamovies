@@ -27,11 +27,11 @@ describe('Message for no orders', function () {
         testMessageForNoOrders.clickOnContinueWithEmail();
     });
 
-    it('Unosenje users email', function(){
+    it('Unosenje user emaila', function(){
         testMessageForNoOrders.enterUserEmail();
     });
 
-    it('Unosenje users email', function(){
+    it('Unosenje user passworda', function(){
         testMessageForNoOrders.enterUserPass();
     });
 

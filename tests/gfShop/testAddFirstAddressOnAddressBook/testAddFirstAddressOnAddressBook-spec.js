@@ -44,7 +44,6 @@ describe('Adding first address on Address Book page', function(){
         testAddNewAddress.checkRequiredMessageForLastName();
     });
 
-
     it('Provera da li se ucitala required message for phone', function(){
         testAddNewAddress.checkRequiredMessageForPhone();
     });
@@ -85,7 +84,7 @@ describe('Adding first address on Address Book page', function(){
         testAddNewAddress.enterCity();
     });
 
-    it('Klik on Privince link to get drop down options', function(){
+    it('Klik on Province link to get drop down options', function(){
         testAddNewAddress.clickProvince();
     });
 
@@ -105,7 +104,7 @@ describe('Adding first address on Address Book page', function(){
         testAddNewAddress.checkIsAddressIsSaved();
     });
 
-    it('Dolazak u manento na user details ', function(){
+    it('Dolazak u magento na user details ', function(){
         testAddFirstAddressOnAddressBook.lendOnUserDetailsInAdmin();
     });
 

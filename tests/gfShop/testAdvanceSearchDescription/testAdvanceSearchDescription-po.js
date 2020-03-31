@@ -23,7 +23,7 @@ function clickOnSearchField() {
 }
 
  function enterProductDescription() {
-    // Unos SKU Producta
+    // Unos opisa proizvoda
     element(by.id('description')).clear().sendKeys('magnification');
     browser.sleep(2000);
  }
