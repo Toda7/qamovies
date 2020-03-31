@@ -13,20 +13,13 @@ exports.config = {
     // prepareProductsForTest: [
     //   './gfShop/prepareProductsForTest/prepareProductsForTest-spec.js'
     // ],
+    
     logInAsUser: [
       './gfShop/logInAsUser/logInAsUser-spec.js'
     ],
 
-    testBreadcrumbs: [
-      './gfShop/testBreadcrumbs/testBreadcrumbs-spec.js'
-    ],
-
-    testMyAccount: [
-      './gfShop/testMyAccount/testMyAccount-spec.js'
-    ],
-    
-    testSortingByPrice: [
-      './gfShop/testSortingByPrice/testSortingByPrice-spec.js'
+    testCancelCoupon: [
+      './gfShop/testCancelCoupon/testCancelCoupon-spec.js'
     ],
 
 

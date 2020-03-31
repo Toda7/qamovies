@@ -35,7 +35,7 @@ describe('Setovanje stare addrese za shipping/billing page i brisanje nove addre
     });
 
     it('Klik on edit link for address', function(){
-        testAddressToDefaultShipping.clickOnEditLink();
+        testDeleteAddress.clickOnEditLink();
     });
 
     it('Klik on Use as my default shipping address', function(){

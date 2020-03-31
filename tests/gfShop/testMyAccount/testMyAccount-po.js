@@ -49,25 +49,25 @@ function checkChangeShippingAddressLink() {
 function checkFirstEditAddressLink() {
    // Provera da li se ucitao Prvi Edit Address link 
    var x7 = element.all(by.className('action edit')).get(2);
-   expect(x7.getText()).toEqual('EDIT ADDRESS');
+   expect(x7.getText()).toEqual('EDIT');
 }
 
 function checkSecondEditAddressLink() {
    // Provera da li se ucitao Drugi Edit Address link 
    var x7 = element.all(by.className('action edit')).get(3);
-   expect(x7.getText()).toEqual('EDIT ADDRESS');
+   expect(x7.getText()).toEqual('EDIT');
 }
 
 function checkFirstDeleteAddressLink() {
    // Provera da li se ucitao Prvi Delete Address link 
    var x8 = element.all(by.className('action delete')).get(0);
-   expect(x8.getText()).toEqual('DELETE ADDRESS');
+   expect(x8.getText()).toEqual('DELETE');
 }  
 
 function checkSecondDeleteAddressLink() {
    // Provera da li se ucitao Drugi Delete Address link 
    var x8 = element.all(by.className('action delete')).get(1);
-   expect(x8.getText()).toEqual('DELETE ADDRESS');
+   expect(x8.getText()).toEqual('DELETE');
 } 
 
 function clickMyOrdersLink() {
