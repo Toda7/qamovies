@@ -45,10 +45,6 @@ describe('Cancel coupon order', function () {
         testCouponOrder.checkSuccessMessage();
     });
 
-    it('Klik na Apply Discount Coupon link', function () {
-        testCouponOrder.clickApplyDiscountCoupon();
-    });
-
     it('Klik on Cancel Coupon button', function () {
         testCancelCoupon.clickCancelCoupon();
     });
