@@ -62,7 +62,7 @@ function landOnAddressBookPage() {
 
 function clickLastDeleteAddress() {
    //  Klik na Poslednje Delete Address dugme
-   element.all(by.className('action delete')).last().click();
+   element.all(by.className('action delete')).get(0).click();
    browser.sleep(3000);
 }
 

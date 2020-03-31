@@ -146,10 +146,16 @@ function clickPlaceOrder() {
 }
 
 function lendOnMagento() {
-    // Dolazak u manento na user details
+    // Dolazak u magento 
  browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/admin/dashboard/');
  browser.sleep(3000);
  }
+
+ function goToUserDetail(){
+   // Dolazak na user datail u magentu
+   browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/customer/index/edit/id/14911/');
+   browser.sleep(3000);
+   }
 
  function clickOnAddressesLink(){
     // Klik na Addresses link 
@@ -157,32 +163,24 @@ function lendOnMagento() {
     browser.sleep(5000);
  }
 
- function clickOnRemoveLink(){
-    // Klik na Remove link 
-    element.all(by.className('address-list-item-actions')).get(3).element(by.className('action-delete')).click();
-    browser.sleep(3000);
- }
+ function clickOnSelectLink() {
+   // Klik na Select link da se otvori drop menu 
+   element.all(by.className('action-select')).get(3).click();
+   browser.sleep(1500);
+}
 
- function clickToConfirmDelete(){
-    // Klik to confirm delete link 
+function clickOnDelete() {
+   // Klik na Delete iz drop menija 
+   element(by.className('action-menu _active')).all(by.className('action-menu-item')).get(3).click();
+   browser.sleep(2000);
+}
+
+function clickOnOkInModal() {
+   // Klik na OK u Confirm Delete modalu 
    element(by.className('action-primary action-accept')).click();
-    browser.sleep(3000);
- }
-
- function clickOnSaveButton(){
-    // Klik on SAVE button
-   element(by.className('action- scalable save primary ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only')).click();
-    browser.sleep(4000);
- }
-
- function goToUserDetail(){
-    // Dolazak na user datail u magentu
-    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/customer/index/edit/id/14911/');
-    browser.sleep(3000);
-    }
+   browser.sleep(2000);
+}
  
-
-
 module.exports = {
     landOnPeakShop,
     clickOnMealsLink,
@@ -206,10 +204,10 @@ module.exports = {
     enterZip,
     enterPhone,
     clickPlaceOrder,
-    clickOnAddressesLink,
-    clickToConfirmDelete,
-    clickOnRemoveLink,
+    clickOnAddressesLink,    
     lendOnMagento,
-    clickOnSaveButton,
     goToUserDetail,
+    clickOnSelectLink,
+    clickOnDelete,
+    clickOnOkInModal,
 }

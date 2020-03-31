@@ -18,6 +18,10 @@ exports.config = {
       './gfShop/logInAsUser/logInAsUser-spec.js'
     ],
 
+    // logInAsUser2: [
+    //   './gfShop/logInAsUser2/logInAsUser2-spec.js'
+    // ],
+
     // prepareProductsForTest: [
     //   './gfShop/prepareProductsForTest/prepareProductsForTest-spec.js'
     // ],
@@ -292,9 +296,9 @@ exports.config = {
     //   './gfShop/testCuddebackShipping/testCuddebackShipping-spec.js'
     // ],
 
-    // testAddBillingAddress: [
-    //   './gfShop/testAddBillingAddress/testAddBillingAddress-spec.js'
-    // ],
+    testAddBillingAddress: [
+      './gfShop/testAddBillingAddress/testAddBillingAddress-spec.js'
+    ],
 
   },
 
