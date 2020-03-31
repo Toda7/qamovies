@@ -24,7 +24,7 @@ describe('Advance Search, search po Price range i error poruka', function () {
     });
 
     it('Unos najnize cene prodcuta', function () {
-        testAdvanceSearchPriceRange.enterProductPriceTo();
+        testAdvanceSearchPriceRange.enterProductPriceFrom();
     });
 
     it('Klik na Search button', function () {
@@ -56,7 +56,7 @@ describe('Advance Search, search po Price range i error poruka', function () {
     });
 
     it('Unos najvise cene prodcuta', function () {
-        testAdvanceSearchPriceRange.enterProductPriceFrom();
+        testAdvanceSearchPriceRange.enterProductPriceTo();
     });
 
     it('Klik na Search button', function () {
@@ -84,11 +84,11 @@ describe('Advance Search, search po Price range i error poruka', function () {
     });
 
     it('Unos najnize cene prodcuta', function () {
-        testAdvanceSearchPriceRange.enterProductPriceTo1();
+        testAdvanceSearchPriceRange.enterProductPriceFrom1();
     });
 
     it('Unos najvise cene prodcuta', function () {
-        testAdvanceSearchPriceRange.enterProductPriceFrom1();
+        testAdvanceSearchPriceRange.enterProductPriceTo1();
     });
 
     it('Klik na Search button', function () {
@@ -116,7 +116,7 @@ describe('Advance Search, search po Price range i error poruka', function () {
     });
 
     it('Unos pogresne najnize cene producta', function () {
-        testAdvanceSearchPriceRange.enterProductPriceToWrong();
+        testAdvanceSearchPriceRange.enterProductPriceFromWrong();
     });
 
     it('Klik na Search button', function () {
@@ -140,7 +140,7 @@ describe('Advance Search, search po Price range i error poruka', function () {
     });
 
     it('Unos pogresne Najvise cene producta', function () {
-        testAdvanceSearchPriceRange.enterProductPriceFromWrong();
+        testAdvanceSearchPriceRange.enterProductPriceToWrong();
     });
 
     it('Klik na Search button', function () {
@@ -164,11 +164,11 @@ describe('Advance Search, search po Price range i error poruka', function () {
     });
 
     it('Unos pogresne najnize cene prodcuta', function () {
-        testAdvanceSearchPriceRange.enterProductPriceToWrong1();
+        testAdvanceSearchPriceRange.enterProductPriceFromWrong1();
     });
 
     it('Unos pogresne najvise cene prodcuta', function () {
-        testAdvanceSearchPriceRange.enterProductPriceFromWrong1();
+        testAdvanceSearchPriceRange.enterProductPriceToWrong1();
     });
 
     it('Klik na Search button', function () {
