@@ -26,14 +26,36 @@ exports.config = {
     //     './gfShop/testPoBoxAddress/testPoBoxAddress-spec.js'
     //   ],
   
-      testPoBoxAddressFromCheckout: [
-        './gfShop/testPoBoxAddressFromCheckout/testPoBoxAddressFromCheckout-spec.js'
-      ],
+    //   testPoBoxAddressFromCheckout: [
+    //     './gfShop/testPoBoxAddressFromCheckout/testPoBoxAddressFromCheckout-spec.js'
+    //   ],
 
     // testMyOrders: [
     //     './gfShop/testMyOrders/testMyOrders-spec.js'
     //   ],
 
+    // prepareProductsForTest: [
+    //     './gfShop/prepareProductsForTest/prepareProductsForTest-spec.js'
+    //   ],
+
+      // testEditQtyCart: [
+      //   './gfShop/testEditQtyCart/testEditQtyCart-spec.js'
+      // ],
+      // sljaka
+
+      // testProductMessage: [
+      //   './gfShop/testProductMessage/testProductMessage-spec.js'
+      // ],
+      // promenjena error poruka
+
+      // testDeleteProductCart: [
+      //   './gfShop/testDeleteProductCart/testDeleteProductCart-spec.js'
+      // ],
+      // sljaka
+
+      // testWrongCouponCode: [
+      //   './gfShop/testWrongCouponCode/testWrongCouponCode-spec.js'
+      // ],
 },
 
 capabilities: {
