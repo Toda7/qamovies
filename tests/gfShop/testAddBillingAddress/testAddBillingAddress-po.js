@@ -165,7 +165,7 @@ function lendOnMagento() {
 
  function clickOnSelectLink() {
    // Klik na Select link da se otvori drop menu 
-   element.all(by.className('action-select')).get(3).click();
+   element.all(by.className('action-select')).get(4).click();
    browser.sleep(1500);
 }
 
