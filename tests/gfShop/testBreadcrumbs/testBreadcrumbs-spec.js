@@ -19,22 +19,22 @@ describe('Breadcrumbs', function () {
 
     it('Provera da li se ucitao dobar URL za Product Details stranu', function () {
         testBreadcrumbs.checkProductDetailsPageUrl();
-        browser.sleep(500);
+        browser.sleep(2000);
     });
 
     it('Provera da li se ucitao poslednji breadcrumb (ime proizvoda)', function () {
         testBreadcrumbs.checkProductBreadcrumb();
-        browser.sleep(500);
+        browser.sleep(2000);
     });
 
     it('Provera da li se ucitao srednji breadcrumb (kategorija)', function () {
         testBreadcrumbs.checkCategoryBreadcrumb();
-        browser.sleep(500);
+        browser.sleep(2000);
     });
 
     it('Provera da li se ucitao prvi breadcrumb (Home)', function () {
         testBreadcrumbs.checkHomeBreadcrumb();
-        browser.sleep(500);
+        browser.sleep(2000);
     });
 
     it('Klik srednji breadcrumb (kategorija)', function () {
@@ -44,17 +44,17 @@ describe('Breadcrumbs', function () {
 
     it('Provera da li se ucitao dobar URL za Category stranu', function () {
         testBreadcrumbs.checkCategoryPageUrl();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao srednji breadcrumb (kategorija)', function () {
         testBreadcrumbs.checkCategoryBreadcrumb1();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao prvi breadcrumb (Home)', function () {
         testBreadcrumbs.checkHomeBreadcrumb();
-        browser.sleep(500);
+        browser.sleep(1000);
     });
 
     it('Klik prvi breadcrumb (Home)', function () {

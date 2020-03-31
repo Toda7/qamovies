@@ -12,21 +12,18 @@ function checkPrice() {
    // Provera cene za prvi prozivod na strani
    var xxx = element.all(by.className('price')).get(0);
    expect(xxx.getText()).toEqual('$17.00');
-   browser.sleep(3000);
 
 }
 
 function clickOnAdminGroupToSelectGOP() {
    // Klik na admin switch and select GOP 
 element(by.css('.gf-group-switcher')).all(by.tagName('option')).get(2).click(); 
-browser.sleep(5000);
 }
 
 function checkPriceAfterUsedSwitch() {
    // Provera cene za prvi prozivod na strani nakon koriscenja GOP switcha
    var xxx = element.all(by.className('price')).get(0);
    expect(xxx.getText()).toEqual('$8.55');
-   browser.sleep(3000);
 }
 
  module.exports = {
