@@ -29,7 +29,7 @@ function checkUsersBank() {
 function checkMemberSince() {
     // Proverava od kada je user u grupi
     var xxx = element(by.className('employee_description'));
-    expect(xxx.getText()).toEqual('Actor | in group since Aug 6, 2019');
+    expect(xxx.getText()).toEqual('Actor | in group since Aug 7, 2019');
 }
 
 module.exports = {
