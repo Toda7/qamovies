@@ -1,28 +1,9 @@
 var prepareProductsForTest = require('./prepareProductsForTest-po.js');
-var prepareMagentoCoupon = require('../prepareMagentoCoupon/prepareMagentoCoupon-po.js');
-var testAddBillingAddress = require('../testAddBillingAddress/testAddBillingAddress-po.js');
 
-
-describe('Add to Stock', function () {
+describe('Add products to stock', function () {
 
     beforeAll(function () {
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
-    });
-
-    it('Dolazak u magento', function () {
-        testAddBillingAddress.lendOnMagento();
-    });
-
-    it('Unesi Username', function () {
-        prepareMagentoCoupon.enterUsername();
-    });
-
-    it('Unesi Password', function () {
-        prepareMagentoCoupon.enterPass();
-    });
-
-    it('Klik na Sign In dugme', function () {
-        prepareMagentoCoupon.clickOnSignIn();
     });
 
     // proizvod 1 
