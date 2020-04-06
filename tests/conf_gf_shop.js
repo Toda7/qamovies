@@ -35,6 +35,10 @@ exports.config = {
       './gfShop/prepareTestCreditCardMagento/prepareTestCreditCardMagento-spec.js'
     ],
 
+    prepareProductsForTest: [
+      './gfShop/prepareProductsForTest/prepareProductsForTest-spec.js'
+    ],
+
   },
   
   capabilities: {
