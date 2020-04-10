@@ -1928,6 +1928,70 @@ describe('Add products to stock', function () {
         prepareProductsForTest.checkSuccessMessage();
     });
 
+    // proizvod 61
+    it('Dolazak na product 61 u magento', function () {
+        prepareProductsForTest.landProduct61DetailsPage();
+        browser.sleep(5000);
+        browser.executeScript('window.scrollTo(0,0);');
+        browser.sleep(1000);
+    });
+
+    it('Klik na switch', function () {
+        prepareProductsForTest.clickSwitch();
+        browser.sleep(5000);
+    });
+
+    it('Unosenje numbers u qty polje', function () {
+        prepareProductsForTest.enterNumbersOfQTY();
+        browser.sleep(2000);
+    });
+
+    it('Selektovanje In stock option', function () {
+        prepareProductsForTest.selectInStock();
+        browser.sleep(2000);
+    });
+
+    it('Klik na Save button', function () {
+        prepareProductsForTest.clickOnSave();
+        browser.sleep(5000);
+    });
+
+    it('Provera success poruke', function () {
+        prepareProductsForTest.checkSuccessMessage();
+    });
+
+    // proizvod 62
+    it('Dolazak na product 62 u magento', function () {
+        prepareProductsForTest.landProduct62DetailsPage();
+        browser.sleep(5000);
+        browser.executeScript('window.scrollTo(0,0);');
+        browser.sleep(1000);
+    });
+
+    it('Klik na switch', function () {
+        prepareProductsForTest.clickSwitch();
+        browser.sleep(5000);
+    });
+
+    it('Unosenje numbers u qty polje', function () {
+        prepareProductsForTest.enterNumbersOfQTY();
+        browser.sleep(2000);
+    });
+
+    it('Selektovanje In stock option', function () {
+        prepareProductsForTest.selectInStock();
+        browser.sleep(2000);
+    });
+
+    it('Klik na Save button', function () {
+        prepareProductsForTest.clickOnSave();
+        browser.sleep(5000);
+    });
+
+    it('Provera success poruke', function () {
+        prepareProductsForTest.checkSuccessMessage();
+    });
+
     afterAll(function () {
         browser.waitForAngularEnabled(true);
     });
