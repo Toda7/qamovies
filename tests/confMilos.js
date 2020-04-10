@@ -18,20 +18,24 @@ exports.config = {
       './gfShop/logInAsUser/logInAsUser-spec.js'
     ],
 
-    testCancelCoupon: [
-      './gfShop/testCancelCoupon/testCancelCoupon-spec.js'
+    testSaveInAddressBookOptionForNewAddress: [
+      './gfShop/testSaveInAddresslBookOptionForNewAddress/testSaveInAddressBookOptionForNewAddress-spec.js'
     ],
 
+    testNotSaveInAddressBookForNewAddress: [
+      './gfShop/testNotSaveInAddressBookForNewAddress/testNotSaveInAddressBookForNewAddress-spec.js'
+    ],
 
   },
 
   capabilities: {
     browserName: 'chrome',
+    acceptInsecureCerts : true,
     'chromeOptions': {
       'args': ['--disable-gpu', '--window-size=2880,1800']
     }
   },
-  jasmineNodeOpts: {
+  jasmineNodeOpts: { 
     print: function () { },
     showColors: true,
     defaultTimeoutInterval: 300000
