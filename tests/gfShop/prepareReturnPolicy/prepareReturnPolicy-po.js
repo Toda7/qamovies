@@ -30,14 +30,14 @@ function submit() {
 function landOnSettingsPageInCockpit() {
     // Dolazak u Cockpit na Settings za GOP usere 
     browser.get('https://www.outfitterextreme.com/manage/brand/truglo/guides-and-outfitters/settings'); 
-    browser.sleep(2000);
+    browser.sleep(000);
  }
 
-function enterOurReturnPolicy() {
-    // Unosenje nas text u return policy polje u cockpitu
-    element(by.css('textarea#textarea-return-policy.form-control.hasvalue')).clear().sendKeys('Testing from PROT. We are TRUGLO!');
-    browser.sleep(10000);
- }
+ function enterOurReturnPolicy() {
+   // Unosenje nas text u return policy polje u cockpitu
+   element.all(by.css('.form-control[placeholder]')).get(3).clear().sendKeys('Testing from PROT. We are TRUGLO!');
+   browser.sleep(10000);
+}
 
  module.exports = {
     landOnMdpAsUser,

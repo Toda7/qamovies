@@ -18,48 +18,12 @@ exports.config = {
       './gfShop/logInAsUser/logInAsUser-spec.js'
     ],
 
-    // testCartWithFFLAndRegularProduct: [
-    //   './gfShop/testCartWithFFLAndRegularProduct/testCartWithFFLAndRegularProduct-spec.js'
-    // ],
+    prepareReturnPolicy: [
+      './gfShop/prepareReturnPolicy/prepareReturnPolicy-spec.js'
+    ],
 
-    // testCancelCoupon: [
-    //   './gfShop/testCancelCoupon/testCancelCoupon-spec.js'
-    // ],
-
-    // testMoultrieShipping: [
-    //   './gfShop/testMoultrieShipping/testMoultrieShipping-spec.js'
-    // ],
-
-    // testTwoShippingMethods: [
-    //   './gfShop/testTwoShippingMethods/testTwoShippingMethods-spec.js'
-    // ],
-
-    // testAdminSwitch: [
-    //   './gfShop/testAdminSwitch/testAdminSwitch-spec.js'
-    // ],
-
-    // TestSecondAttentionWindow: [
-    //   './gfShop/TestSecondAttentionWindow/TestSecondAttentionWindow-spec.js'
-    // ],
-
-    // testFooterLinks: [
-    //   './gfShop/testFooterLinks/testFooterLinks-spec.js'
-    // ],
-
-    // testRestrictedAreaMessage: [
-    //   './gfShop/testRestrictedAreaMessage/testRestrictedAreaMessage-spec.js'
-    // ],
-
-    // testPoBoxAddress: [
-    //   './gfShop/testPoBoxAddress/testPoBoxAddress-spec.js'
-    // ],
-
-    // testPoBoxAddressFromCheckout: [
-    //   './gfShop/testPoBoxAddressFromCheckout/testPoBoxAddressFromCheckout-spec.js'
-    // ],
-
-    testSaveInAddressBookOptionForNewAddress: [
-      './gfShop/testSaveInAddressBookOptionForNewAddress/testSaveInAddressBookOptionForNewAddress-spec.js'
+    prepareTestUser: [
+      './gfShop/prepareTestUser/prepareTestUser-spec.js'
     ],
   },
 
