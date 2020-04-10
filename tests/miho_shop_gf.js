@@ -14,9 +14,9 @@ exports.config = {
     //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluzi nicemu. to je samo primer)
     // ],
 
-    // logInAsUser: [
-    //     './gfShop/logInAsUser/logInAsUser-spec.js'
-    //   ],
+    logInAsUser: [
+        './gfShop/logInAsUser/logInAsUser-spec.js'
+      ],
 
     // testErrorMessageOnProductDetails: [
     //     './gfShop/testErrorMessageOnProductDetails/testErrorMessageOnProductDetails-spec.js'
@@ -58,8 +58,16 @@ exports.config = {
       // ],
       // sljaka
 
-      testCancelCoupon: [
-        './gfShop/testCancelCoupon/testCancelCoupon-spec.js'
+      // testCancelCoupon: [
+      //   './gfShop/testCancelCoupon/testCancelCoupon-spec.js'
+      // ],
+
+      testSaveInAddressBookOptionForNewAddress: [
+        './gfShop/testSaveInAddressBookOptionForNewAddress/testSaveInAddressBookOptionForNewAddress-spec.js'
+      ],
+
+      testNotSaveInAddressBookForNewAddress: [
+        './gfShop/testNotSaveInAddressBookForNewAddress/testNotSaveInAddressBookForNewAddress-spec.js'
       ],
 },
 
