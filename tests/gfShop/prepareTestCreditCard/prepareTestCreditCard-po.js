@@ -88,21 +88,6 @@ function clickOnPlaceOrder() {
     browser.sleep(7000);
 }
 
-function enterNumbersCreditCard1() {
-    // Unosenje numbers credit card 
-    element(by.css('.checkout-payment-method .ccard .number .input-text')).clear().sendKeys('4111111111111111');
-    // element(by.id('gf-input-1')).sendKeys('milos@idp.com');
-    browser.sleep(6000);
- }
-
-//  function enterNumbersCreditCard2() {
-//     // Unosenje numbers credit card 
-//     element(by.css('.checkout-payment-method .ccard .number .input-text')).clear().sendKeys('6011000990139424');
-//     // element(by.id('gf-input-1')).sendKeys('milos@idp.com');
-//     browser.sleep(6000);
-//  }
-
-
  module.exports = {
     landOnAplsHomePage,
     clickOnAddToCart,
@@ -118,6 +103,4 @@ function enterNumbersCreditCard1() {
     selectYear,
     enterCvvNumber,
     clickOnPlaceOrder,
-    enterNumbersCreditCard1,
-    // enterNumbersCreditCard2,
  }

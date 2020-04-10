@@ -14,9 +14,25 @@ exports.config = {
     //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluzi nicemu. to je samo primer)
     // ],
 
-    logInAsUser: [
-      './gfShop/logInAsUser/logInAsUser-spec.js'
+    // logInAsUser: [
+    //   './gfShop/logInAsUser/logInAsUser-spec.js'
+    // ],
+
+    // prepareTestCreditCard: [
+    //   './gfShop/prepareTestCreditCard/prepareTestCreditCard-spec.js'
+    // ],
+
+    // prepareMagentoCoupon: [
+    //   './gfShop/prepareMagentoCoupon/prepareMagentoCoupon-spec.js'
+    // ],
+
+    prepareTestCreditCardMagento: [
+      './gfShop/prepareTestCreditCardMagento/prepareTestCreditCardMagento-spec.js'
     ],
+
+    // prepareProductsForTest: [
+    //   './gfShop/prepareProductsForTest/prepareProductsForTest-spec.js'
+    // ],
 
     // logInAsUser2: [
     //   './gfShop/logInAsUser2/logInAsUser2-spec.js'
@@ -296,9 +312,9 @@ exports.config = {
     //   './gfShop/testCuddebackShipping/testCuddebackShipping-spec.js'
     // ],
 
-    testAddBillingAddress: [
-      './gfShop/testAddBillingAddress/testAddBillingAddress-spec.js'
-    ],
+    // testAddBillingAddress: [
+    //   './gfShop/testAddBillingAddress/testAddBillingAddress-spec.js'
+    // ],
 
   },
 
