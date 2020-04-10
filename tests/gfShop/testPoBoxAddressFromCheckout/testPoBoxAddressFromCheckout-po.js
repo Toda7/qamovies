@@ -40,6 +40,12 @@ function clickOnSaveNewAddressButton(){
    element(by.className('action primary action-save-address')).click();
 }
 
+function clickOnShipHereButtonForFirstAddress(){
+   // Klik na Ship here button za prvi adresu
+   element(by.className('action action-select-shipping-item')).click();
+}
+
+
  module.exports = {
    lendOnProductDetails,
    clickOnNewAddressButton,
@@ -49,6 +55,7 @@ function clickOnSaveNewAddressButton(){
    enterZip,
    enterPhoneNumber,
    clickOnSaveNewAddressButton,
+   clickOnShipHereButtonForFirstAddress,
  }
 
 

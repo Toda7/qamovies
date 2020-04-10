@@ -18,13 +18,14 @@ exports.config = {
       './gfShop/logInAsUser/logInAsUser-spec.js'
     ],
 
-    testSaveInAddressBookOptionForNewAddress: [
-      './gfShop/testSaveInAddresslBookOptionForNewAddress/testSaveInAddressBookOptionForNewAddress-spec.js'
+    // testPoBoxAddress: [
+    //   './gfShop/testPoBoxAddress/testPoBoxAddress-spec.js'
+    // ],
+
+    testErrorMessageOnProductDetails: [
+      './gfShop/testErrorMessageOnProductDetails/testErrorMessageOnProductDetails-spec.js'
     ],
 
-    testNotSaveInAddressBookForNewAddress: [
-      './gfShop/testNotSaveInAddressBookForNewAddress/testNotSaveInAddressBookForNewAddress-spec.js'
-    ],
 
   },
 

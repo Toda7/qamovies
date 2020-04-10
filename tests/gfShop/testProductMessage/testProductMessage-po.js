@@ -18,7 +18,7 @@ function click6Product() {
 
  function enterNumber() {
     // Unos broja Producta
-    element(by.id('qty')).clear().sendKeys('100');
+    element(by.id('qty')).clear().sendKeys('300');
     browser.sleep(5000);
  }
 
