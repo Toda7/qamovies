@@ -103,6 +103,7 @@ exports.config = {
 
   capabilities: {
     browserName: 'chrome',
+    acceptInsecureCerts : true,
     'chromeOptions': {
       'args': ['--disable-gpu', '--window-size=2880,1800']
     }
