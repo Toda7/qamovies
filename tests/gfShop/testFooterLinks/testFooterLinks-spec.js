@@ -351,8 +351,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
-        browser.sleep(2000);
-
+        browser.executeScript(`window.scrollTo(0,1000);`);
+        browser.sleep(3000);
     });
 
     it('Klik on About Us', function(){
@@ -370,7 +370,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
-        browser.sleep(2000);
+        browser.executeScript(`window.scrollTo(0,1000);`);
+        browser.sleep(3000);
 
     });
 
@@ -389,7 +390,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
-        browser.sleep(2000);
+        browser.executeScript(`window.scrollTo(0,1000);`);
+        browser.sleep(3000);
 
     });
 
@@ -407,8 +409,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
-        browser.sleep(2000);
-
+        browser.executeScript(`window.scrollTo(0,1000);`);
+        browser.sleep(3000);
     });
 
     it('Klik on Advertise In Our Journal', function(){
@@ -447,8 +449,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
-        browser.sleep(2000);
-
+        browser.executeScript(`window.scrollTo(0,1000);`);
+        browser.sleep(3000);
     });
 
     it('Klik on instagram icon', function(){

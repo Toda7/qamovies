@@ -66,9 +66,26 @@ describe('Test PO box address from checkout', function(){
         browser.sleep(7000);
     });
 
-    it('Provera da li se pojavila restricted message ', function () {
+    it('Provera da li se pojavila restricted message', function () {
         testPoBoxAddress.checkPoBoxNotAllowedMessage();
+        browser.sleep(2000);
     });
+
+    it('Klik na Ship here button za prvi adresu', function () {
+        testPoBoxAddressFromCheckout.clickOnShipHereButtonForFirstAddress();
+        browser.sleep(3000);
+    });
+
+    it('Klik na Next dugme', function () {
+        testTwentyProductsOrder.clickNext();
+        browser.sleep(5000);
+    });
+
+    it('Klik na Place Order dugme', function () {
+        testTwentyProductsOrder.clickPlaceOrder();
+        browser.sleep(4000);
+    });
+    
 
         afterAll(function(){
         browser.waitForAngularEnabled(true); 
