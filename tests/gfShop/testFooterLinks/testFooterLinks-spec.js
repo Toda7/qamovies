@@ -7,347 +7,347 @@ describe('Footer links', function () {
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
     });
 
-    // it('Dolazak na home page', function(){
-    //     testSortingByName.landOnTrugloPage();
-    //     browser.sleep(2000);
+    it('Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
 
-    // });
+    });
 
-    // it('Klik on Hunts By Region', function(){
-    //     testFooterLinks.clickOnHuntsByRegion();
-    // });
+    it('Klik on Hunts By Region', function(){
+        testFooterLinks.clickOnHuntsByRegion();
+    });
 
-    // it('Provera URL-a za Hunts By Region', function(){
-    //     testFooterLinks.checkHuntsByRegionURL();
-    // });
+    it('Provera URL-a za Hunts By Region', function(){
+        testFooterLinks.checkHuntsByRegionURL();
+    });
 
-    // it('Provera page title na hunts by region page', function(){
-    //     testFooterLinks.checkPageTitleOfHuntsByRegion();
-    // });
+    it('Provera page title na hunts by region page', function(){
+        testFooterLinks.checkPageTitleOfHuntsByRegion();
+    });
 
-    // it('Dolazak na home page', function(){
-    //     testSortingByName.landOnTrugloPage();
-    //     browser.sleep(2000);
+    it('Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
 
-    // });
+    });
 
-    // it('Klik on Klik on Hunts By Species', function(){
-    //     testFooterLinks.clickOnHuntsBySpecies();
-    // });
+    it('Klik on Klik on Hunts By Species', function(){
+        testFooterLinks.clickOnHuntsBySpecies();
+    });
 
-    // it('Provera URL-a za Klik on Hunts By Species', function(){
-    //     testFooterLinks.checkHuntsBySpeciesURL();
-    // });
+    it('Provera URL-a za Klik on Hunts By Species', function(){
+        testFooterLinks.checkHuntsBySpeciesURL();
+    });
 
-    // it('Provera page title na Klik on Hunts By Species page', function(){
-    //     testFooterLinks.checkPageTitleOfHuntsBySpecies();
-    // });
+    it('Provera page title na Klik on Hunts By Species page', function(){
+        testFooterLinks.checkPageTitleOfHuntsBySpecies();
+    });
 
-    // it('Dolazak na home page', function(){
-    //     testSortingByName.landOnTrugloPage();
-    //     browser.sleep(2000);
+    it('Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
 
-    // });
+    });
 
-    // it('Klik on Klik on Fishing By Region', function(){
-    //     testFooterLinks.clickOnFishingByRegion();
-    // });
+    it('Klik on Klik on Fishing By Region', function(){
+        testFooterLinks.clickOnFishingByRegion();
+    });
 
-    // it('Provera URL-a za Klik on Fishing By Region', function(){
-    //     testFooterLinks.checkFishingByRegionURL();
-    // });
+    it('Provera URL-a za Klik on Fishing By Region', function(){
+        testFooterLinks.checkFishingByRegionURL();
+    });
 
-    // it('Provera page title na Klik on Fishing By Region page', function(){
-    //     testFooterLinks.checkPageTitleOfFishingByRegion();
-    // });
+    it('Provera page title na Klik on Fishing By Region page', function(){
+        testFooterLinks.checkPageTitleOfFishingByRegion();
+    });
 
-    // it('Dolazak na home page', function(){
-    //     testSortingByName.landOnTrugloPage();
-    //     browser.sleep(2000);
+    it('Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
 
-    // });
+    });
 
-    // it('Klik on Fishing By species', function(){
-    //     testFooterLinks.clickOnFishingBySpecies();
-    // });
+    it('Klik on Fishing By species', function(){
+        testFooterLinks.clickOnFishingBySpecies();
+    });
 
-    // it('Provera URL-a za Fishing By species', function(){
-    //     testFooterLinks.checkFishingBySpeciesURL();
-    // });
+    it('Provera URL-a za Fishing By species', function(){
+        testFooterLinks.checkFishingBySpeciesURL();
+    });
 
-    // it('Provera page title na Fishing By species page', function(){
-    //     testFooterLinks.checkPageTitleOfFishingBySpecies();
-    // });
+    it('Provera page title na Fishing By species page', function(){
+        testFooterLinks.checkPageTitleOfFishingBySpecies();
+    });
 
-    // it('Dolazak na home page', function(){
-    //     testSortingByName.landOnTrugloPage();
-    //     browser.sleep(2000);
+    it('Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
 
-    // });
+    });
 
-    // it('Klik on Outdoor News Advice', function(){
-    //     testFooterLinks.clickOnOutdoorNewsAdvice();
-    // });
+    it('Klik on Outdoor News Advice', function(){
+        testFooterLinks.clickOnOutdoorNewsAdvice();
+    });
 
-    // it('Provera URL-a za Outdoor News Advice', function(){
-    //     testFooterLinks.checkOutdoorNewsAdviceURL();
-    // });
+    it('Provera URL-a za Outdoor News Advice', function(){
+        testFooterLinks.checkOutdoorNewsAdviceURL();
+    });
 
-    // it('Provera page title na Outdoor News Advice page', function(){
-    //     testFooterLinks.checkPageTitleOfOutdoorNewsAdvice();
-    // });
+    it('Provera page title na Outdoor News Advice page', function(){
+        testFooterLinks.checkPageTitleOfOutdoorNewsAdvice();
+    });
 
-    // it('Dolazak na home page', function(){
-    //     testSortingByName.landOnTrugloPage();
-    //     browser.sleep(2000);
+    it('Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
 
-    // });
+    });
 
-    // it('Klik on Hunting Videos', function(){
-    //     testFooterLinks.clickOnHuntingVideos();
-    // });
+    it('Klik on Hunting Videos', function(){
+        testFooterLinks.clickOnHuntingVideos();
+    });
 
-    // it('Provera URL-a za Hunting Videos', function(){
-    //     testFooterLinks.checkHuntingVideosURL();
-    // });
+    it('Provera URL-a za Hunting Videos', function(){
+        testFooterLinks.checkHuntingVideosURL();
+    });
 
-    // it('Provera page title na Hunting Videos page', function(){
-    //     testFooterLinks.checkPageTitleOfHuntingVideos();
-    // });
+    it('Provera page title na Hunting Videos page', function(){
+        testFooterLinks.checkPageTitleOfHuntingVideos();
+    });
 
-    // it('Dolazak na home page', function(){
-    //     testSortingByName.landOnTrugloPage();
-    //     browser.sleep(2000);
+    it('Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
 
-    // });
+    });
 
-    // it('Klik on Guidefitter Giveaways', function(){
-    //     testFooterLinks.clickOnGuidefitterGiveaways();
-    // });
+    it('Klik on Guidefitter Giveaways', function(){
+        testFooterLinks.clickOnGuidefitterGiveaways();
+    });
 
-    // it('Provera URL-a za Guidefitter Giveaways', function(){
-    //     testFooterLinks.checkGuidefitterGiveawaysURL();
-    // });
+    it('Provera URL-a za Guidefitter Giveaways', function(){
+        testFooterLinks.checkGuidefitterGiveawaysURL();
+    });
 
-    // it('Provera page title na Guidefitter Giveaways page', function(){
-    //     testFooterLinks.checkPageTitleOfGuidefitterGiveaways();
-    // });
+    it('Provera page title na Guidefitter Giveaways page', function(){
+        testFooterLinks.checkPageTitleOfGuidefitterGiveaways();
+    });
 
-    // it('Dolazak na home page', function(){
-    //     testSortingByName.landOnTrugloPage();
-    //     browser.sleep(2000);
+    it('Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
 
-    // });
+    });
 
-    // it('Klik on Resources', function(){
-    //     testFooterLinks.clickOnResources();
-    // });
+    it('Klik on Resources', function(){
+        testFooterLinks.clickOnResources();
+    });
 
-    // it('Provera URL-a za Resources', function(){
-    //     testFooterLinks.checkResourcesURL();
-    // });
+    it('Provera URL-a za Resources', function(){
+        testFooterLinks.checkResourcesURL();
+    });
 
-    // it('Provera page title na Resources page', function(){
-    //     testFooterLinks.checkPageTitleOfResources();
-    // });
+    it('Provera page title na Resources page', function(){
+        testFooterLinks.checkPageTitleOfResources();
+    });
 
-    // it('Dolazak na home page', function(){
-    //     testSortingByName.landOnTrugloPage();
-    //     browser.sleep(2000);
+    it('Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
 
-    // });
+    });
 
-    // it('Klik on Obtain a Hunting License', function(){
-    //     testFooterLinks.clickOnObtainaHuntingLicense();
-    // });
+    it('Klik on Obtain a Hunting License', function(){
+        testFooterLinks.clickOnObtainaHuntingLicense();
+    });
 
-    // it('Provera URL-a za Obtain a Hunting License', function(){
-    //     testFooterLinks.checkObtainaHuntingLicenseURL();
-    // });
+    it('Provera URL-a za Obtain a Hunting License', function(){
+        testFooterLinks.checkObtainaHuntingLicenseURL();
+    });
 
-    // it('Provera page title na Obtain a Hunting License page', function(){
-    //     testFooterLinks.checkPageTitleOfObtainaHuntingLicense();
-    // });
+    it('Provera page title na Obtain a Hunting License page', function(){
+        testFooterLinks.checkPageTitleOfObtainaHuntingLicense();
+    });
 
 
-    // it('Dolazak na home page', function(){
-    //     testSortingByName.landOnTrugloPage();
-    //     browser.sleep(2000);
+    it('Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
 
-    // });
+    });
 
-    // it('Klik on Brag a Hunting or Fishing Photo', function(){
-    //     testFooterLinks.clickOnBragHuntingorFishingPhoto();
-    // });
+    it('Klik on Brag a Hunting or Fishing Photo', function(){
+        testFooterLinks.clickOnBragHuntingorFishingPhoto();
+    });
 
-    // it('Provera URL-a za Brag a Hunting or Fishing Photo', function(){
-    //     testFooterLinks.checkBragHuntingorFishingPhotoURL();
-    // });
+    it('Provera URL-a za Brag a Hunting or Fishing Photo', function(){
+        testFooterLinks.checkBragHuntingorFishingPhotoURL();
+    });
 
 
-    // it('Dolazak na home page', function(){
-    //     testSortingByName.landOnTrugloPage();
-    //     browser.sleep(2000);
+    it('Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
 
-    // });
+    });
 
-    // it('Klik on Create post on the Community feed', function(){
-    //     testFooterLinks.clickOnCreatePostOnTheCommunityfeed();
-    // });
+    it('Klik on Create post on the Community feed', function(){
+        testFooterLinks.clickOnCreatePostOnTheCommunityfeed();
+    });
 
-    // it('Provera URL-a za Create post on the Community feed', function(){
-    //     testFooterLinks.checkCreatePostOnTheCommunityfeedURL();
-    // });
+    it('Provera URL-a za Create post on the Community feed', function(){
+        testFooterLinks.checkCreatePostOnTheCommunityfeedURL();
+    });
 
-    // it('Provera page title na Create post on the Community feed', function(){
-    //     testFooterLinks.checkPageTitleOfCreatePostOnTheCommunityfeed();
-    // });
+    it('Provera page title na Create post on the Community feed', function(){
+        testFooterLinks.checkPageTitleOfCreatePostOnTheCommunityfeed();
+    });
 
-    // it(' Dolazak na home page', function(){
-    //     testSortingByName.landOnTrugloPage();
-    //     browser.sleep(2000);
+    it(' Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
 
-    // });
+    });
 
-    // it('Klik on Ask a Question', function(){
-    //     testFooterLinks.clickOnAskQuestion();
-    // });
+    it('Klik on Ask a Question', function(){
+        testFooterLinks.clickOnAskQuestion();
+    });
 
-    // it('Provera URL-a za Ask a Question', function(){
-    //     testFooterLinks.checkAskQuestionURL();
-    // });
+    it('Provera URL-a za Ask a Question', function(){
+        testFooterLinks.checkAskQuestionURL();
+    });
 
-    // it('Provera page title na ask question page', function(){
-    //     testFooterLinks.checkPageTitleOfAskQuestion();
-    // });
+    it('Provera page title na ask question page', function(){
+        testFooterLinks.checkPageTitleOfAskQuestion();
+    });
 
-    // it(' Dolazak na home page', function(){
-    //     testSortingByName.landOnTrugloPage();
-    //     browser.sleep(2000);
+    it(' Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
 
-    // });
+    });
 
-    // it('Klik on insiders', function(){
-    //     testFooterLinks.clickOnInsiders();
-    // });
+    it('Klik on insiders', function(){
+        testFooterLinks.clickOnInsiders();
+    });
 
-    // it('Provera URL-a za insiders', function(){
-    //     testFooterLinks.checkInsidersURL();
-    // });
+    it('Provera URL-a za insiders', function(){
+        testFooterLinks.checkInsidersURL();
+    });
 
-    // it('Provera page title na insiders page', function(){
-    //     testFooterLinks.checkPageTitleOfInsidersPage();
-    // });
+    it('Provera page title na insiders page', function(){
+        testFooterLinks.checkPageTitleOfInsidersPage();
+    });
 
-    // it(' Dolazak na home page', function(){
-    //     testSortingByName.landOnTrugloPage();
-    //     browser.sleep(2000);
+    it(' Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
 
-    // });
+    });
 
-    // it('Klik on Save Money On Gear ', function(){
-    //     testFooterLinks.clickOnSaveMoneyOnGear();
-    // });
+    it('Klik on Save Money On Gear ', function(){
+        testFooterLinks.clickOnSaveMoneyOnGear();
+    });
 
-    // it('Provera URL-a za Save Money On Gear ', function(){
-    //     testFooterLinks.checkSaveMoneyOnGearURL();
-    // });
+    it('Provera URL-a za Save Money On Gear ', function(){
+        testFooterLinks.checkSaveMoneyOnGearURL();
+    });
 
-    // it('Provera page title na Save Money On Gear  page', function(){
-    //     testFooterLinks.checkPageTitleOfSaveMoneyOnGearPage();
-    // });
+    it('Provera page title na Save Money On Gear  page', function(){
+        testFooterLinks.checkPageTitleOfSaveMoneyOnGearPage();
+    });
 
-    // it(' Dolazak na home page', function(){
-    //     testSortingByName.landOnTrugloPage();
-    //     browser.sleep(2000);
+    it(' Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
 
-    // });
+    });
 
-    // it('Klik on Invite an Insider', function(){
-    //     testFooterLinks.clickOnInviteAnInsider();
-    // });
+    it('Klik on Invite an Insider', function(){
+        testFooterLinks.clickOnInviteAnInsider();
+    });
 
-    // it('Provera URL-a za Invite an Insider', function(){
-    //     testFooterLinks.checkInviteAnInsiderURL();
-    // });
+    it('Provera URL-a za Invite an Insider', function(){
+        testFooterLinks.checkInviteAnInsiderURL();
+    });
 
-    // it('Provera page title na Invite an Insider page', function(){
-    //     testFooterLinks.checkPageTitleOfInviteAnInsiderPage();
-    // });
+    it('Provera page title na Invite an Insider page', function(){
+        testFooterLinks.checkPageTitleOfInviteAnInsiderPage();
+    });
 
-    // it('Dolazak na home page', function(){
-    //     testSortingByName.landOnTrugloPage();
-    //     browser.sleep(2000);
+    it('Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
 
-    // });
+    });
 
-    // it('Klik on Create a Free Outfitter Page', function(){
-    //     testFooterLinks.clickOnCreateOutfitter();
-    // });
+    it('Klik on Create a Free Outfitter Page', function(){
+        testFooterLinks.clickOnCreateOutfitter();
+    });
 
-    // it('Provera URL-a za Create a Free Outfitter Page', function(){
-    //     testFooterLinks.checkCreateOutfitterURL();
-    // });
+    it('Provera URL-a za Create a Free Outfitter Page', function(){
+        testFooterLinks.checkCreateOutfitterURL();
+    });
 
-    // it('Provera page title na Create a Free Outfitter Page page', function(){
-    //     testFooterLinks.checkPageTitleOfCreateOutfitterPage();
-    // });
+    it('Provera page title na Create a Free Outfitter Page page', function(){
+        testFooterLinks.checkPageTitleOfCreateOutfitterPage();
+    });
 
-    // it('Dolazak na home page', function(){
-    //     testSortingByName.landOnTrugloPage();
-    //     browser.sleep(2000);
+    it('Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
 
-    // });
+    });
 
-    // it('Klik on Promote Your Skills', function(){
-    //     testFooterLinks.clickOnPromoteYourSkills();
-    // });
+    it('Klik on Promote Your Skills', function(){
+        testFooterLinks.clickOnPromoteYourSkills();
+    });
 
-    // it('Provera URL-a za Promote Your Skills', function(){
-    //     testFooterLinks.checkPromoteYourSkillsURL();
-    // });
+    it('Provera URL-a za Promote Your Skills', function(){
+        testFooterLinks.checkPromoteYourSkillsURL();
+    });
 
-    // it('Provera page title na Promote Your Skills page', function(){
-    //     testFooterLinks.checkPageTitleOfPromoteYourSkillsPage();
-    // });
+    it('Provera page title na Promote Your Skills page', function(){
+        testFooterLinks.checkPageTitleOfPromoteYourSkillsPage();
+    });
 
 
-    // it('Dolazak na home page', function(){
-    //     testSortingByName.landOnTrugloPage();
-    //     browser.sleep(2000);
+    it('Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
 
-    // });
+    });
 
-    // it('Klik on Help', function(){
-    //     testFooterLinks.clickOnHelp();
-    // });
+    it('Klik on Help', function(){
+        testFooterLinks.clickOnHelp();
+    });
 
-    // it('Provera URL-a za Help', function(){
-    //     testFooterLinks.checkHelpURL();
-    // });
+    it('Provera URL-a za Help', function(){
+        testFooterLinks.checkHelpURL();
+    });
 
-    // it('Provera page title na Help page', function(){
-    //     testFooterLinks.checkPageTitleOfHelpPage();
-    // });
+    it('Provera page title na Help page', function(){
+        testFooterLinks.checkPageTitleOfHelpPage();
+    });
 
 
-    // it('Dolazak na home page', function(){
-    //     testSortingByName.landOnTrugloPage();
-    //     browser.sleep(2000);
+    it('Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
 
-    // });
+    });
 
-    // it('Klik on Promote Your Pro Program', function(){
-    //     testFooterLinks.clickOnPromoteYourProProgram();
-    // });
+    it('Klik on Promote Your Pro Program', function(){
+        testFooterLinks.clickOnPromoteYourProProgram();
+    });
 
-    // it('Provera URL-a za Promote Your Pro Program', function(){
-    //     testFooterLinks.checkPromoteYourProProgramURL();
-    // });
+    it('Provera URL-a za Promote Your Pro Program', function(){
+        testFooterLinks.checkPromoteYourProProgramURL();
+    });
 
-    // it('Provera page title na Promote Your Pro Program page', function(){
-    //     testFooterLinks.checkPageTitleOfPromoteYourProProgramPage();
-    // });
+    it('Provera page title na Promote Your Pro Program page', function(){
+        testFooterLinks.checkPageTitleOfPromoteYourProProgramPage();
+    });
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
