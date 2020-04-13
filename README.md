@@ -36,6 +36,7 @@ Ako zelimo da ponistimo editovan kod
 
 
 Komande za pushovanje:
+
 	git add .
 	git commit -m"poruka"
 	git push origin {branch name}   
