@@ -1,6 +1,6 @@
 function landOnProductDetailsPage() {
    // Dolazak na Product Details page
-   browser.get('https://shop.outfitterextreme.com/browning/side-by-side.html'); 
+   browser.get('https://shop.outfitterextreme.com/Browning/side-by-side.html'); 
    browser.sleep(2000);
 }
 
@@ -24,7 +24,7 @@ function enterZip() {
 
 function clickUnitedParcelService(){
    // Klik on United Parcel Service opciju
-   element(by.id('label_method_GND_ups')).click();
+   element(by.id('label_carrier_GND_ups')).click();
    browser.sleep(2000);
 }
 
@@ -37,7 +37,7 @@ function checkUnitedParcelMethodOnPaymentPage() {
 
 function landOnShippingPage() {
    // Dolazak na Shipping page
-   browser.get('https://shop.outfitterextreme.com/browning/checkout/#shipping'); 
+   browser.get('https://shop.outfitterextreme.com/Browning/checkout/#shipping'); 
    browser.sleep(2000);
 }
 
@@ -56,13 +56,13 @@ function checkUnitedStatesPostalService() {
 
 function landOnAddressBookPage() {
    // Dolazak na Address Book page
-   browser.get('https://shop.outfitterextreme.com/browning/customer/address/'); 
+   browser.get('https://shop.outfitterextreme.com/Browning/customer/address/'); 
    browser.sleep(2000);
 }
 
 function clickLastDeleteAddress() {
    //  Klik na Poslednje Delete Address dugme
-   element.all(by.className('action delete')).last().click();
+   element.all(by.className('action delete')).get(0).click();
    browser.sleep(3000);
 }
 

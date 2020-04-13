@@ -49,31 +49,30 @@ function checkChangeShippingAddressLink() {
 function checkFirstEditAddressLink() {
    // Provera da li se ucitao Prvi Edit Address link 
    var x7 = element.all(by.className('action edit')).get(2);
-   expect(x7.getText()).toEqual('EDIT ADDRESS');
+   expect(x7.getText()).toEqual('EDIT');
 }
 
 function checkSecondEditAddressLink() {
    // Provera da li se ucitao Drugi Edit Address link 
    var x7 = element.all(by.className('action edit')).get(3);
-   expect(x7.getText()).toEqual('EDIT ADDRESS');
+   expect(x7.getText()).toEqual('EDIT');
 }
 
 function checkFirstDeleteAddressLink() {
    // Provera da li se ucitao Prvi Delete Address link 
    var x8 = element.all(by.className('action delete')).get(0);
-   expect(x8.getText()).toEqual('DELETE ADDRESS');
+   expect(x8.getText()).toEqual('DELETE');
 }  
 
 function checkSecondDeleteAddressLink() {
    // Provera da li se ucitao Drugi Delete Address link 
    var x8 = element.all(by.className('action delete')).get(1);
-   expect(x8.getText()).toEqual('DELETE ADDRESS');
+   expect(x8.getText()).toEqual('DELETE');
 } 
 
 function clickMyOrdersLink() {
    // Klik na My Orders link
    element(by.partialLinkText('My Orders')).click();
-   browser.sleep(3000);
 }
 
 function checkMyOrdersURL() {
@@ -97,7 +96,6 @@ function checkFirstViewOrderLink() {
 function clickPageTwo() {
    // klik na 2 u paginaciji 
    element(by.className('items pages-items')).all(by.tagName('a')).get(0).click();
-   browser.sleep(2000);
 }
 
 function checkSecondPageUrl() {
@@ -116,7 +114,6 @@ function checkPaginationSuccess() {
 function clickMyPaymentDataLink() {
    // Klik na My Payment Data link
    element(by.partialLinkText('My Payment Data')).click();
-   browser.sleep(3000);
 }
 
 function checkMyPaymentDataURL() {

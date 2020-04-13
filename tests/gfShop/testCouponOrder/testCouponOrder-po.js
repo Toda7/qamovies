@@ -57,6 +57,12 @@ element.all(by.className('action action-select-shipping-item')).get(1).click();
 browser.sleep(5000);
 }
 
+function landOnViewAndEditCart() {
+   // Vracanje na view and edit cart stranu 
+   browser.get('https://shop.outfitterextreme.com/truglo/checkout/cart');
+   browser.sleep(2000);
+}
+
 module.exports = {
    checkShippingPriceWithoutCoupon,
    clickApplyDiscountCoupon,
@@ -67,4 +73,5 @@ module.exports = {
    checkShippingPriceWithCoupon2,
    checkShippingPriceWithCoupon3,
    clickToSelectFirstAddressToShip,
+   landOnViewAndEditCart,
 }

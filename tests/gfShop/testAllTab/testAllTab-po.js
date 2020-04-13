@@ -6,13 +6,13 @@ function landOnTrugloShop() {
 
 function clickOntestAllTab() {
     //  Klik na All tab
-    element(by.className('secondary-navigation-button-wrap')).click();
+    browser.wait(element(by.className('secondary-navigation-button-wrap')).click(), 5000);
     browser.sleep(5000);
 }
 
 function clickOnSights() {
     // Click na Sights link
-    element(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).all(by.tagName('li')).get(0).click();
+    browser.wait(element(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).all(by.tagName('li')).get(0).click(), 5000);
     browser.sleep(5000);
 }
 
@@ -30,7 +30,7 @@ function checkSightsUrl() {
 
 function clickOnQuivers() {
     // Click na Quivers link
-    element(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).all(by.tagName('li')).get(1).click();
+    browser.wait(element(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).all(by.tagName('li')).get(1).click(), 5000);
     browser.sleep(5000);
 }
 
@@ -48,7 +48,7 @@ function checkQuiversUrl() {
 
 function clickOnScopes() {
     // Click na Scopes link
-    element(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).all(by.tagName('li')).get(2).click();
+    browser.wait(element(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).all(by.tagName('li')).get(2).click(), 5000);
     browser.sleep(5000);
 }
 
@@ -66,7 +66,7 @@ function checkScopesUrl() {
 
 function clickOnStabilizers() {
     // Click na Stabilizers link
-    element(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).all(by.tagName('li')).get(3).click();
+    browser.wait(element(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).all(by.tagName('li')).get(3).click(), 5000);
     browser.sleep(5000);
 }
 
@@ -84,7 +84,7 @@ function checkStabilizersUrl() {
 
 function clickOnReleases() {
     // Click na Releases link
-    element(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).all(by.tagName('li')).get(4).click();
+    browser.wait(element(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).all(by.tagName('li')).get(4).click(), 5000);
     browser.sleep(5000);
 }
 
@@ -102,7 +102,7 @@ function checkReleasesUrl() {
 
 function clickOnRests() {
     // Click na Rests link
-    element(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).all(by.tagName('li')).get(5).click();
+    browser.wait(element(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).all(by.tagName('li')).get(5).click(), 5000);
     browser.sleep(5000);
 }
 
@@ -120,7 +120,7 @@ function checkRestsUrl() {
 
 function clickOnBroadheads() {
     // Click na Broadheads link
-    element(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).all(by.tagName('li')).get(6).click();
+    browser.wait(element(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).all(by.tagName('li')).get(6).click(), 5000);
     browser.sleep(5000);
 }
 
@@ -140,7 +140,7 @@ function checkBroadheadsUrl() {
 
 function clickOnBowfishing() {
     // Click na Bowfishing link
-    element(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).all(by.tagName('li')).get(7).click();
+    browser.wait(element(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).all(by.tagName('li')).get(7).click(), 5000);
     browser.sleep(5000);
 }
 
@@ -158,7 +158,7 @@ function checkBowfishingUrl() {
 
 function clickOnBowAccessories() {
     // Click na Bow Accessories link
-    element(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).all(by.tagName('li')).get(8).click();
+    browser.wait(element(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).all(by.tagName('li')).get(8).click(), 5000);
     browser.sleep(5000);
 }
 
@@ -176,7 +176,7 @@ function checkBowAccessoriesUrl() {
 
 function clickOnTurkeyHunting() {
     // Click na Turkey Hunting link
-    element.all(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).get(1).all(by.tagName('li')).get(0).click();
+    browser.wait(element.all(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).get(1).all(by.tagName('li')).get(0).click(), 5000);
     browser.sleep(5000);
 }
 
@@ -194,7 +194,7 @@ function checkTurkeyHuntingUrl() {
 
 function clickOnRedDots() {
     // Click na Red Dots link
-    element.all(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).get(1).all(by.tagName('li')).get(1).click();
+    browser.wait(element.all(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).get(1).all(by.tagName('li')).get(1).click(), 5000);
     browser.sleep(5000);
 }
 
@@ -212,7 +212,7 @@ function checkRedDotsUrl() {
 
 function clickOnHuntingScopes() {
     // Click na Hunting Scopes link
-    element.all(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).get(1).all(by.tagName('li')).get(2).click();
+    browser.wait(element.all(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).get(1).all(by.tagName('li')).get(2).click(), 5000);
     browser.sleep(5000);
 }
 
@@ -230,7 +230,7 @@ function checkHuntingScopesUrl() {
 
 function clickOnSights2() {
     // Click na Sights2 link
-    element.all(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).get(1).all(by.tagName('li')).get(3).click();
+    browser.wait(element.all(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).get(1).all(by.tagName('li')).get(3).click(), 5000);
     browser.sleep(5000);
 }
 
@@ -248,7 +248,7 @@ function checkSights2Url() {
 
 function clickOnAccessories() {
     // Click na Accessories link
-    element.all(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).get(1).all(by.tagName('li')).get(4).click();
+    browser.wait(element.all(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).get(1).all(by.tagName('li')).get(4).click(), 5000);
     browser.sleep(5000);
 }
 
@@ -266,7 +266,7 @@ function checkAccessoriesUrl() {
 
 function clickOnRedDots2() {
     // Click na Red Dots2 link
-    element.all(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).get(2).all(by.tagName('li')).get(0).click();
+    browser.wait(element.all(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).get(2).all(by.tagName('li')).get(0).click(), 5000);
     browser.sleep(5000);
 }
 
@@ -284,7 +284,7 @@ function checkRedDots2Url() {
 
 function clickOnScopes2() {
     // Click na Scopes2 link
-    element.all(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).get(2).all(by.tagName('li')).get(1).click();
+    browser.wait(element.all(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).get(2).all(by.tagName('li')).get(1).click(), 5000);
     browser.sleep(5000);
 }
 
@@ -302,7 +302,7 @@ function checkScopes2Url() {
 
 function clickOnSights3() {
     // Click na Sights3 link
-    element.all(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).get(2).all(by.tagName('li')).get(2).click();
+    browser.wait(element.all(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).get(2).all(by.tagName('li')).get(2).click(), 5000);
     browser.sleep(5000);
 }
 
@@ -320,7 +320,7 @@ function checkSights3Url() {
 
 function clickOnAccessories2() {
     // Click na Accessories2 link
-    element.all(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).get(2).all(by.tagName('li')).get(3).click();
+    browser.wait(element.all(by.css('.level0.submenu.ui-menu.ui-widget.ui-widget-content.ui-corner-all')).get(2).all(by.tagName('li')).get(3).click(), 5000);
     browser.sleep(5000);
 }
 
@@ -338,13 +338,13 @@ function checkAccessories2Url() {
 
 function clickOnX() {
     // Click na X
-    element(by.className('action close fireclose ui-widget-content ui-menu-divider')).click();
+      browser.wait(element(by.className('action close fireclose ui-widget-content ui-menu-divider')).click(), 5000);
     browser.sleep(5000);
 }
 
 function clickOnGf() {
     // Click na GF link
-    element(by.className('backtogf ui-menu-item')).click();
+      browser.wait(element(by.className('backtogf ui-menu-item')).click(), 5000);
     browser.sleep(5000);
 }
 

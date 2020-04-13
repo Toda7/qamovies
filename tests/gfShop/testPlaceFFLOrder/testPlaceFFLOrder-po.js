@@ -1,13 +1,11 @@
 function landOnWeatherbyPage() {
    // Dolazak u weatherby shop na product details page
    browser.get('https://shop.outfitterextreme.com/weatherby/vanguard-synthetic-compact.html'); 
-   browser.sleep(2000);
 }
 
 function clickToOpenDrop() {
    // Klik to open drop options
    element(by.className('super-attribute-select')).click();
-   browser.sleep(3000);
 }
 
 function selectOptionFromDrop() {
@@ -18,19 +16,16 @@ function selectOptionFromDrop() {
 function clickOnAddToCart() {
    // Klik na add to cart button
    element(by.className('action primary tocart btn-lg')).click();
-   browser.sleep(2000);
 }
 
 function clickToOpenCart() {
    //  Klik to open credit cart
    element(by.className('action showcart')).click();
-   browser.sleep(2000);
 }
 
 function clickToGoToCheckoutPage() {
    //  Klik to go to checkout page 
    element(by.className('action primary checkout btn-lg')).click();
-   browser.sleep(5000);
 }
 
 function checkTitleOnPage(){ 
@@ -47,14 +42,12 @@ browser.wait(EC.textToBePresentInElement($('.step-title.fat'), 'Find a Local FFL
 
 function enterZipInSearchField() {
    // Enter zip in search field 
-   element(by.name('zip-code')).clear().sendKeys('4431');
-   browser.sleep(2000);
+   element(by.name('zip-code')).clear().sendKeys('44221');
 }
 
 function clickOnSearchButton() {
    //  Klik on Search page
    element(by.className('action primary')).click();
-   browser.sleep(5000);
 }
 
 function clickToSelectDealer() {
@@ -66,13 +59,11 @@ function clickToSelectDealer() {
 function clickOnNextButton() {
    //  Klik on Next button
    element(by.className('button action continue primary')).click();
-   browser.sleep(5000);
 }
 
 function clickOnOrderButton() {
    //  Klik on Next button
    element(by.className('action primary checkout')).click();
-   browser.sleep(5000);
 }
 
 function checkThanksTitleOnPage(){ 

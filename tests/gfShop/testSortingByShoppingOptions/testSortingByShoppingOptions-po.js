@@ -74,14 +74,14 @@ function clickOnPriceOptionToOpenMenu() {
 
 function clickOptionInPriceDrop() {
    // Klik on 1 option in price drop menu
-element(by.partialLinkText('$0.00')).click();
+element(by.partialLinkText('$40.00')).click();
 browser.sleep(3000);
 }
 
 function checkSortingURL3() {
    // Provera da li se ucitao URL sa parametrom za Red Dots and $0.00 - $100.00
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html?cat=1110&price=-100'), 7000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/firearm-hunting.html?cat=1110&price=40-50'), 5000);
 }
 
 function checkNumberItem() {

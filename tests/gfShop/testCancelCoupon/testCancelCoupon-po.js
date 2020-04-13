@@ -11,6 +11,7 @@ function checkCancelCouponSuccessMessage() {
    browser.sleep(1000);
 }
 
+
 module.exports = {
    clickCancelCoupon,
    checkCancelCouponSuccessMessage,

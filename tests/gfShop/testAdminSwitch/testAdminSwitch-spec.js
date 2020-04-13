@@ -13,6 +13,7 @@ describe('Provera da li se pojavio switch za admina', function(){
 
     it('Dolazak na MDP', function(){
         prepareReturnPolicy.landOnMdpAsUser();
+        browser.sleep(4000);
     });
 
     it('Klik on avatar to open user menu', function(){
@@ -45,34 +46,32 @@ describe('Provera da li se pojavio switch za admina', function(){
 
     it('Dolazak na shop home page', function(){
         testReturnPolicy.landOnTrugloPage();
+        browser.sleep(5000);
     });
 
     it('Klik on link from navigation menu', function(){
         testSortingByName.clickOnLinkInNavMenu();
+        browser.sleep(5000);
     });
 
     it('Provera da li se ucitao FIREARM-HUNTING URL', function(){
         testSortingByName.checkFireamHuntingURL();
+        browser.sleep(1000);
     });
 
     it('Provera cene za prvi prozivod na strani', function(){
         testAdminSwitch.checkPrice();
+        browser.sleep(1000);
     });
 
     it('Klik na admin switch and select GOP', function(){
         testAdminSwitch.clickOnAdminGroupToSelectGOP();
+        browser.sleep(4000);
     });
 
     it('Provera cene za prvi prozivod na strani nakon koriscenja GOP switcha', function(){
         testAdminSwitch.checkPriceAfterUsedSwitch();
-    });
-
-    it('Klik na admin switch and select GOP', function(){
-        testAdminSwitch.clickOnAdminGroupToSelectGOP();
-    });
-
-    it('Provera cene za prvi prozivod na strani nakon koriscenja GOP switcha', function(){
-        testAdminSwitch.checkPriceAfterUsedSwitch();
+        browser.sleep(2000);
     });
 
     it('Dolazak na MDP', function(){

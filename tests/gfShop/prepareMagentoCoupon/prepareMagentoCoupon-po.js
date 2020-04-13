@@ -109,7 +109,7 @@ function clickActions() {
 
 function freeShippingDrop() {
    //  Odaberi iz Free Shipping drop menija
-   element.all(by.className('admin__control-select')).get(2).all(by.tagName('option')).get(3).click();
+   element.all(by.className('admin__control-select')).last().all(by.tagName('option')).get(2).click();
    browser.sleep(2000);
 }
 

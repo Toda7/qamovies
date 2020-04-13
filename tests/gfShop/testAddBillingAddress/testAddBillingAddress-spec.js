@@ -10,11 +10,11 @@ describe('Add billing adresu i error poruke za required polja', function () {
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
     });
 
-    it(' Dolazak u Peak Shop', function () {
+    it('Dolazak u Peak Shop', function () {
         testAddBillingAddress.landOnPeakShop();
     });
 
-    it('Click na Cudelink sekciju', function () {
+    it('Click na Meals sekciju', function () {
         testAddBillingAddress.clickOnMealsLink();
     });
 
@@ -50,6 +50,7 @@ describe('Add billing adresu i error poruke za required polja', function () {
 
     it('Brisanje imena', function () {
         testAddBillingAddress.deleteFirstName();
+        browser.sleep(2000);
     });
 
     it('Check error poruke za first name', function () {
@@ -58,6 +59,7 @@ describe('Add billing adresu i error poruke za required polja', function () {
 
     it('Brisanje prezimena', function () {
         testAddBillingAddress.deleteLastName();
+        browser.sleep(2000);
     });
 
     it('Check error poruke za last name', function () {
@@ -148,16 +150,16 @@ describe('Add billing adresu i error poruke za required polja', function () {
         testAddBillingAddress.clickOnAddressesLink();
     });
 
-    it('Click Remove link', function(){
-        testAddBillingAddress.clickOnRemoveLink();
+    it('Klik na Select link da se otvori drop menu', function(){
+        testAddBillingAddress.clickOnSelectLink();
     });
 
-    it('Confirm delete address', function(){
-        testAddBillingAddress.clickToConfirmDelete();
+    it('Klik na Delete iz drop menija', function(){
+        testAddBillingAddress.clickOnDelete();
     });
 
-    it('Click na Save', function(){
-        testAddBillingAddress.clickOnSaveButton();
+    it('Klik na OK u Confirm Delete modalu', function(){
+        testAddBillingAddress.clickOnOkInModal();
     });
 
     afterAll(function () {

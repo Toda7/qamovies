@@ -1,18 +1,18 @@
 function lendOnBadlands() {
-   // Klik to open user menu 
-browser.get('https://shop.outfitterextreme.com/badlands');
-browser.sleep(3000);
+   // Dolazak na Badlands home page 
+   browser.get('https://shop.outfitterextreme.com/badlands');
+   browser.sleep(3000);
 }
 
 function lendOnUserDetailsInAdmin() {
    // Klik to open user menu 
-browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/customer/index/edit/id/27540/');
-browser.sleep(3000);
+   browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/customer/index/edit/id/27540/');
+   browser.sleep(3000);
 }
 
-function clickOnAddressesLink(){
+function clickOnAddressesLink() {
    // Klik na Addresses link 
-  element(by.partialLinkText('Addresses')).click();
+   element(by.partialLinkText('Addresses')).click();
    browser.sleep(3000);
 }
 
@@ -28,31 +28,31 @@ function enterLastName() {
    browser.sleep(1000);
 }
 
-function clickOnRemoveLink(){
-   // Klik na Remove link 
-  element(by.className('action-delete')).click();
-   browser.sleep(3000);
+function clickOnSelectLink() {
+   // Klik na Select link da se otvori drop menu 
+   element.all(by.className('action-select')).get(1).click();
+   browser.sleep(1500);
 }
 
-function clickToConfirmDelete(){
-   // Klik to confirm delete link 
-  element(by.className('action-primary action-accept')).click();
-   browser.sleep(3000);
+function clickOnDelete() {
+   // Klik na Delete iz drop menija 
+   element(by.className('action-menu _active')).all(by.className('action-menu-item')).get(3).click();
+   browser.sleep(2000);
 }
 
-function clickOnSaveButton(){
-   // Klik on SAVE button
-  element(by.className('action- scalable save primary ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only')).click();
-   browser.sleep(4000);
+function clickOnOkInModal() {
+   // Klik na OK u Confirm Delete modalu 
+   element(by.className('action-primary action-accept')).click();
+   browser.sleep(2000);
 }
 
- module.exports = {
-    lendOnBadlands,
-    lendOnUserDetailsInAdmin,
-    clickOnAddressesLink,
-    enterFirstName,
-    enterLastName,
-    clickOnRemoveLink,
-    clickToConfirmDelete,
-    clickOnSaveButton,
- }
+module.exports = {
+   lendOnBadlands,
+   lendOnUserDetailsInAdmin,
+   clickOnAddressesLink,
+   enterFirstName,
+   enterLastName,
+   clickOnSelectLink,
+   clickOnDelete,
+   clickOnOkInModal,
+}

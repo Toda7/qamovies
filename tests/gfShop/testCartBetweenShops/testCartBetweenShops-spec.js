@@ -9,7 +9,7 @@ describe('Dodavanje producta u cart u 1 shopu i cekiranje carta u drugom shopu',
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
     });
 
-    it(' Dolazak u Trugo shop', function(){
+    it(' Dolazak u Truglo shop', function(){
         testSortingByName.landOnTrugloPage();
     });
 
@@ -49,7 +49,7 @@ describe('Dodavanje producta u cart u 1 shopu i cekiranje carta u drugom shopu',
         testDeleteProductCart.checkEmptyCart();
     });
 
-    it(' Dolazak u Trugo shop', function(){
+    it(' Dolazak u Truglo shop', function(){
         testSortingByName.landOnTrugloPage();
     });
 

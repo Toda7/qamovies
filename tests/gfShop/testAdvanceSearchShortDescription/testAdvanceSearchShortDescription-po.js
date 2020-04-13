@@ -23,7 +23,7 @@ function clickOnSearchField() {
 }
 
  function enterProductShortDescription() {
-    // Unos SKU Producta
+    // Unos kratkog opisa proizvoda (short description)
     element(by.id('short_description')).clear().sendKeys('Polymer construction');
     browser.sleep(2000);
  }

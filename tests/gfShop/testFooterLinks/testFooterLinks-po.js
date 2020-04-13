@@ -1,7 +1,7 @@
 function clickOnHuntsByRegion() {
    // Klik on Hunts By Region
    element(by.partialLinkText('Hunts By Region')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkHuntsByRegionURL() {
@@ -19,7 +19,7 @@ function checkPageTitleOfHuntsByRegion() {
 function clickOnHuntsBySpecies() {
    // Klik on Hunts By Species
    element(by.partialLinkText('Hunts By Species')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkHuntsBySpeciesURL() {
@@ -37,7 +37,7 @@ function checkPageTitleOfHuntsBySpecies() {
 function clickOnFishingByRegion() {
    // Klik on Fishing By Region
    element(by.partialLinkText('Fishing by Region')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkFishingByRegionURL() {
@@ -55,7 +55,7 @@ function checkPageTitleOfFishingByRegion() {
 function clickOnFishingBySpecies() {
    // Klik on Fishing By species
    element(by.partialLinkText('Fishing by Species')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkFishingBySpeciesURL() {
@@ -74,7 +74,7 @@ function checkPageTitleOfFishingBySpecies() {
 function clickOnOutdoorNewsAdvice() {
    // Klik on Outdoor News Advice
    element(by.partialLinkText('Outdoor News & Advice')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkOutdoorNewsAdviceURL() {
@@ -93,7 +93,7 @@ function checkPageTitleOfOutdoorNewsAdvice() {
 function clickOnHuntingVideos() {
    // Klik on Hunting Videos
    element(by.partialLinkText('Hunting Videos')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkHuntingVideosURL() {
@@ -111,7 +111,7 @@ function checkPageTitleOfHuntingVideos() {
 function clickOnGuidefitterGiveaways() {
    // Klik on Guidefitter Giveaways
    element(by.partialLinkText('Guidefitter Giveaways')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkGuidefitterGiveawaysURL() {
@@ -129,7 +129,7 @@ function checkPageTitleOfGuidefitterGiveaways() {
 function clickOnResources() {
    // Klik on Resources
    element(by.partialLinkText('Resources')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkResourcesURL() {
@@ -147,7 +147,7 @@ function checkPageTitleOfResources() {
 function clickOnObtainaHuntingLicense() {
    // Klik on Obtain a Hunting License
    element(by.partialLinkText('Obtain a Hunting License')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkObtainaHuntingLicenseURL() {
@@ -165,7 +165,7 @@ function checkPageTitleOfObtainaHuntingLicense() {
 function clickOnBragHuntingorFishingPhoto() {
    // Klik on Obtain a Brag a Hunting or Fishing Photo
    element(by.partialLinkText('Brag a Hunting or Fishing Photo')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkBragHuntingorFishingPhotoURL() {
@@ -183,7 +183,7 @@ function checkBragHuntingorFishingPhotoURL() {
 function clickOnCreatePostOnTheCommunityfeed() {
    // Klik on Create post on the Community feed
    element(by.partialLinkText('Create post on the Community feed')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkCreatePostOnTheCommunityfeedURL() {
@@ -201,7 +201,7 @@ function checkPageTitleOfCreatePostOnTheCommunityfeed() {
 function clickOnAskQuestion() {
    // Klik on ask a Question 
    element(by.partialLinkText('Ask a Question')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkAskQuestionURL() {
@@ -219,7 +219,7 @@ function checkPageTitleOfAskQuestion() {
 function clickOnInsiders() {
    // Klik on Insiders
    element(by.partialLinkText('Insiders')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkInsidersURL() {
@@ -237,7 +237,7 @@ function checkPageTitleOfInsidersPage() {
 function clickOnSaveMoneyOnGear() {
    // Klik on Save Money On Gear 
    element(by.partialLinkText('Save Money on Gear')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkSaveMoneyOnGearURL() {
@@ -255,7 +255,7 @@ function checkPageTitleOfSaveMoneyOnGearPage() {
 function clickOnInviteAnInsider() {
    // Klik on Invite an Insider
    element(by.partialLinkText('Invite an Insider')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkInviteAnInsiderURL() {
@@ -273,7 +273,7 @@ function checkPageTitleOfInviteAnInsiderPage() {
 function clickOnCreateOutfitter() {
    // Klik on Create a Free Outfitter Page
    element(by.partialLinkText('Create Outfitter Page')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkCreateOutfitterURL() {
@@ -291,7 +291,7 @@ function checkPageTitleOfCreateOutfitterPage() {
 function clickOnPromoteYourSkills() {
    // Klik on Promote Your Skills
    element(by.partialLinkText('Promote Your Skills')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkPromoteYourSkillsURL() {
@@ -309,7 +309,7 @@ function checkPageTitleOfPromoteYourSkillsPage() {
 function clickOnHelp() {
    // Klik on Help
    element(by.partialLinkText('Help')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkHelpURL() {
@@ -328,7 +328,7 @@ function checkPageTitleOfHelpPage() {
 function clickOnPromoteYourProProgram() {
    // Klik on Promote Your Pro Program
    element(by.partialLinkText('Promote Your Pro Program')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkPromoteYourProProgramURL() {
@@ -346,7 +346,7 @@ function checkPageTitleOfPromoteYourProProgramPage() {
 function clickOnAboutUs() {
    // Klik on About Us
    element(by.partialLinkText('About Us')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkAboutUsURL() {
@@ -364,7 +364,7 @@ function checkPageTitleOfAboutUsPage() {
 function clickOnCompanyNews() {
    // Klik on Company News
    element(by.partialLinkText('Company News')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkCompanyNewsURL() {
@@ -382,7 +382,7 @@ function checkPageTitleOfCompanyNewsPage() {
 function clickOnCareers() {
    // Klik on Company News
    element(by.partialLinkText('Careers')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkCareersURL() {
@@ -400,7 +400,7 @@ function checkPageTitleOfCareersPage() {
 function clickOnContactGuidefitter() {
    // Klik on Company News
    element(by.partialLinkText('Contact Guidefitter')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkContactGuidefitterURL() {
@@ -419,7 +419,7 @@ function checkPageTitleOfContactGuidefitterPage() {
 function clickOnAdvertiseInOurJournal() {
    // Klik on Advertise In Our Journal
    element(by.partialLinkText('Advertise In Our Journal')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkAdvertiseInOurJournalURL() {
@@ -437,7 +437,7 @@ function checkPageTitleOfAdvertiseInOurJournalPage() {
 function clickOnLegal() {
    // Klik on Legal
    element(by.partialLinkText('Legal')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkLegalURL() {
@@ -455,7 +455,7 @@ function checkPageTitleOfLegalPage() {
 function clickOnInstagram() {
    // Klik on instagram icon
    element(by.className('btn btn-link p-a-0 btn-link-instagram')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkInstagramURLa() {
@@ -467,7 +467,7 @@ function checkInstagramURLa() {
 function clickOnFacebook() {
    // Klik on Facebook icon
    element(by.className('btn btn-link p-a-0 btn-link-facebook')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkFacebookURLa() {
@@ -479,7 +479,7 @@ function checkFacebookURLa() {
 function clickOnTwitter() {
    // Klik on Twitter icon
    element(by.className('btn btn-link p-a-0 btn-link-twitter')).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkTwitterURLa() {
@@ -491,7 +491,7 @@ function checkTwitterURLa() {
 function clickOnBragIconForAndroid() {
    // Klik on GooglePlay icon for android
    element.all(by.className('img-responsive')).get(0).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkBragAndoridURLa() {
@@ -503,7 +503,7 @@ function checkBragAndoridURLa() {
 function clickOnBragIconForiOS() {
    // Klik on AppStore icon for ios
    element.all(by.className('img-responsive')).get(1).click();
-   browser.sleep(2500);
+   browser.sleep(5000);
 }
 
 function checkBragiOSURLa() {
@@ -512,6 +512,10 @@ function checkBragiOSURLa() {
    browser.wait(EC.urlContains('https://apps.apple.com/tm/app/brag-by-guidefitter/id1044250130'), 7000);
 }
 
+function scrollPage() {
+   // Skrolujemo do dna strani da bi dobili jos 15 dokumenta 
+   element(by.tagName('body')).sendKeys(protractor.Key.SPACE);
+}
 
 
 module.exports = {
@@ -600,6 +604,6 @@ module.exports = {
    checkBragAndoridURLa,
    clickOnBragIconForiOS,
    checkBragiOSURLa,
-
+   scrollPage,
    
 }

@@ -27,11 +27,11 @@ describe('Message for no orders', function () {
         testMessageForNoOrders.clickOnContinueWithEmail();
     });
 
-    it('Unosenje users email', function(){
+    it('Unosenje user emaila', function(){
         testMessageForNoOrders.enterUserEmail();
     });
 
-    it('Unosenje users email', function(){
+    it('Unosenje user passworda', function(){
         testMessageForNoOrders.enterUserPass();
     });
 
@@ -39,8 +39,15 @@ describe('Message for no orders', function () {
         testMessageForNoOrders.submit1();
     });
 
+    it('Dolazak u shop', function () {
+        // ovde ne uradi redirekciju na my order zato moramo jos jednom da pokrenemo istu funkciju
+        testMessageForNoOrders.landOnMyOrdersPage();
+        browser.sleep(6000);
+    });
+
     it('Dolazak na My Orders stranu', function () {
         testMessageForNoOrders.landOnMyOrdersPage();
+        browser.sleep(6000);
     });
 
     it('Provera no orders message', function () {

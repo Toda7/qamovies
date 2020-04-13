@@ -24,7 +24,6 @@ function checkNoPaymentMessage() {
    browser.sleep(2000);
 }
 
-
 module.exports = {
    enterUserEmail,
    landOnMyPaymentInfo,

@@ -80,15 +80,15 @@ describe('Sorting by shopping options in truglo', function(){
         testSortingByShoppingOptions.clickOptionInPriceDrop();
     });
 
-    it('Provera da li se ucitao URL sa parametrom za Red Dots and $0.00 - $100.00', function(){
+    it('Provera da li se ucitao URL sa parametrom za Red Dots and $40.00 - $50.00', function(){
         testSortingByShoppingOptions.checkSortingURL3();
     });
 
-    it('Provera da li se ucitao product za Red Dots and $0.00 - $100.00', function(){
+    it('Provera da li se ucitao product za Red Dots and $40.00 - $50.00', function(){
         testSortingByShoppingOptions.checkThatProductIsLoadedForRedDotsFilter();
     });
 
-    it(' Provera da li je dobar number of items on page kada smo selektovali $0 and Red Dots product', function(){
+    it(' Provera da li je dobar number of items on page kada smo selektovali $40 and 50 and Red Dots product', function(){
         testSortingByShoppingOptions.checkNumberOfItems2();
     });
 
@@ -112,7 +112,7 @@ describe('Sorting by shopping options in truglo', function(){
         testSortingByPrice.selectPriceToSort();
     });
 
-    it('Provera da li se ucitao URL sa parametrom za Red Dots and $0.00 - $100.00 + product name', function(){
+    it('Provera da li se ucitao URL sa parametrom za Red Dots and $40.00 - $50.00 + product name', function(){
         testSortingByShoppingOptions.checkSortingURL4();
     });
 

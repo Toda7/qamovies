@@ -2,7 +2,7 @@ var prepareTestCreditCardMagento = require('./prepareTestCreditCardMagento-po.js
 var prepareMagentoCoupon = require('../prepareMagentoCoupon/prepareMagentoCoupon-po.js');
 
 
-describe('Prepare Credit card user from magento', function(){
+describe('Prepare Credit card in Magento', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
@@ -29,7 +29,7 @@ describe('Prepare Credit card user from magento', function(){
     });
 
     it('Klik on Payment Date', function(){
-        prepareTestCreditCardMagento.clickOnPaymentDate();
+        prepareTestCreditCardMagento.clickOnPaymentData();
     });
 
     it('Unosenje first name', function(){
@@ -81,14 +81,14 @@ describe('Prepare Credit card user from magento', function(){
         prepareTestCreditCardMagento.enterZip();
     });
 
-    it('Klik on CC type', function(){
-        prepareTestCreditCardMagento.clickOnCCType();
-        browser.sleep(2000);
-    });
+    // it('Klik on CC type', function(){
+    //     prepareTestCreditCardMagento.clickOnCCType();
+    //     browser.sleep(2000);
+    // });
 
-    it('Select CC type', function(){
-        prepareTestCreditCardMagento.selectCcType();
-    });
+    // it('Select CC type', function(){
+    //     prepareTestCreditCardMagento.selectCcType();
+    // });
 
     it('Enter CC number', function(){
         prepareTestCreditCardMagento.enterCCNumber();
@@ -112,8 +112,8 @@ describe('Prepare Credit card user from magento', function(){
         prepareTestCreditCardMagento.selectYear();
     });
 
-    it('Enter zip', function(){
-        prepareTestCreditCardMagento.enterZip1();
+    it('Enter CCV', function(){
+        prepareTestCreditCardMagento.enterCCV();
         browser.sleep(2000);
     });
 
