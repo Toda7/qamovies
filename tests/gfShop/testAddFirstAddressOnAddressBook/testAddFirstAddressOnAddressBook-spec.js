@@ -2,7 +2,7 @@ var testAddFirstAddressOnAddressBook = require('./testAddFirstAddressOnAddressBo
 var testAddNewAddress = require('../testAddNewAddress/testAddNewAddress-po.js');
 var prepareMagentoCoupon = require('../prepareMagentoCoupon/prepareMagentoCoupon-po.js');
 
-describe('Pravljenje adrese na Address Book strani', function () {
+describe('Pravljenje prve adrese na Address Book strani', function () {
 
     beforeAll(function () {
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element

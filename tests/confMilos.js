@@ -18,14 +18,9 @@ exports.config = {
       './gfShop/logInAsUser/logInAsUser-spec.js'
     ],
 
-    testPlaceFFLOrder: [
-      './gfShop/testPlaceFFLOrder/testPlaceFFLOrder-spec.js'
+    testAddFirstAddressOnAddressBook: [
+      './gfShop/testAddFirstAddressOnAddressBook/testAddFirstAddressOnAddressBook-spec.js'
     ],
-
-    testFooterLinks: [
-      './gfShop/testFooterLinks/testFooterLinks-spec.js'
-    ],
-
 
   },
 
