@@ -512,6 +512,10 @@ function checkBragiOSURLa() {
    browser.wait(EC.urlContains('https://apps.apple.com/tm/app/brag-by-guidefitter/id1044250130'), 7000);
 }
 
+function scrollPage() {
+   // Skrolujemo do dna strani da bi dobili jos 15 dokumenta 
+   element(by.tagName('body')).sendKeys(protractor.Key.SPACE);
+}
 
 
 module.exports = {
@@ -600,6 +604,6 @@ module.exports = {
    checkBragAndoridURLa,
    clickOnBragIconForiOS,
    checkBragiOSURLa,
-
+   scrollPage,
    
 }
