@@ -30,12 +30,14 @@ function checkNumberOfItems(){
    var EC = protractor.ExpectedConditions;
    // Provera da li je dobra paginacija
    browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 1-12 of 13'), 7000);
+   browser.sleep(2500);
 }
 
 function checkNumberOfItemsOn2Page(){
    var EC = protractor.ExpectedConditions;
    // Provera da li je dobra paginacija
    browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 13-13 of 13'), 7000);
+   browser.sleep(2500);
 }
 
 function checkThatProductIsLoadedOn2Page() {

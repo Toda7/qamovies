@@ -9,7 +9,7 @@ function clickSignUp() {
 
 function checkJoinUrl() {
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/membership/join/'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/membership/join/'), 7000);
 }
 
 function enterNewEmail() {
@@ -34,7 +34,7 @@ function submit() {
 function checkJoinSuccess(){
     var EC = protractor.ExpectedConditions;
     // Provera da li su ucitali brojevi za financial institutions
-    browser.wait(EC.textToBePresentInElement($('.page_content'), 'Welcome to CBANC Network!'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.page_content'), 'Welcome to CBANC Network!'), 7000);
 }
 
 module.exports = {

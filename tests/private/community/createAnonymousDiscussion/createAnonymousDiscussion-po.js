@@ -18,13 +18,13 @@ function clickOnStartDiscussion() {
 
 function discussionTitle() {
    // Unos texta za Discussion Title
-   element(by.id('input-field title')).sendKeys('ATQA Anonymous Discussion Title');
+   element(by.id('input-field title')).sendKeys('Anonymoussssly');
    browser.sleep(2000);
 }
 
 function discussionDesc() {
    // Unos texta za Discussion Desription
-   element(by.className('rte')).sendKeys('ATQA Anonymous Discussion description testing credit');
+   element(by.className('rte')).sendKeys('Anonymoussssly Discussion description testing credit');
    browser.sleep(2000);
 }
 
@@ -55,7 +55,7 @@ function clickOnViewDiscussion() {
 function checkSuccess(){
    var EC = protractor.ExpectedConditions;
    // Provera da li je uspesno objavljena anonimna diskusija
-   browser.wait(EC.textToBePresentInElement($('.person_name'), 'Employee Technology'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.person_name'), 'Employee Technology'), 7000);
    browser.sleep(2500);
 }  
 

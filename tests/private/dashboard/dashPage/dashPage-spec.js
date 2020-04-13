@@ -19,11 +19,12 @@ it('Provera Dashboard urla', function(){
 
 // });
 
-it('Da li se ucitalo Premuim Ad', function(){
-    dashPage.checkPremiumAd();
-    //browser.sleep(5000);
+// nemamo vise premium ad zbog korone
+// it('Da li se ucitalo Premuim Ad', function(){
+//     dashPage.checkPremiumAd();
+//     //browser.sleep(5000);
 
-});
+// });
 
 it('Da li se ucitao Community drop', function(){
     dashPage.checkCommunityDrop();

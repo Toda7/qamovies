@@ -14,7 +14,7 @@ function clickOnAddToCartButton() {
 function checkIsGrowlMessageIsHere() {
    // Ceker - da li se pojavila poruka for need to select option 
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('.message-notice'), 'You need to choose options for your item.'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.message-notice'), 'You need to choose options for your item.'), 7000);
    }
 
  module.exports = {

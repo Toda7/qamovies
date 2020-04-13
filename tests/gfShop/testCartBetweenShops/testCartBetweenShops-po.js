@@ -27,7 +27,7 @@ function hoverToOpenDrop() {
  function checkSuccessMsg(){
     var EC = protractor.ExpectedConditions;
     // Provera da li smo dobili success poruku
-    browser.wait(EC.textToBePresentInElement($('.message-success.success.message'), 'You added OPTIOPTI™SPEED™ VELOCITY CALIBRATED BDC CROSSBOW SCOPE to your shopping cart.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.message-success.success.message'), 'You added OPTIOPTI™SPEED™ VELOCITY CALIBRATED BDC CROSSBOW SCOPE to your shopping cart.'), 7000);
     browser.sleep(5000);
  }
 

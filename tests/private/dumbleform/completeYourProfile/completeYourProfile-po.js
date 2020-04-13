@@ -6,39 +6,39 @@ function landOnCompleteYourProfileDumbleformHomePage() {
 function checkCompleteYourProfileDumbleformURL() {
     // Provera da li se ucitao Complete Your Profile Dumbleform URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/dumbleform/24b2a16c-448f-11e6-81f3-7831c1baaeec/profile_info'), 5000);
+    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/dumbleform/24b2a16c-448f-11e6-81f3-7831c1baaeec/profile_info'), 7000);
     browser.sleep(2000);
 }
 function checkDumbleformPageTitle(){
     var EC = protractor.ExpectedConditions;
     //  Provera da li se ucitao page title
-    browser.wait(EC.titleIs('Onboarding Wizard | CBANC Network'), 5000);
+    browser.wait(EC.titleIs('Onboarding Wizard | CBANC Network'), 7000);
 }
 function checkLogoInHeader(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao logo in header
-    browser.wait(EC.presenceOf($('#logo')), 5000);
+    browser.wait(EC.presenceOf($('#logo')), 7000);
 }
 function checkUserNavInHeader(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao logo in header
-    browser.wait(EC.presenceOf($('.user_nav')), 5000);
+    browser.wait(EC.presenceOf($('.user_nav')), 7000);
 }
 function checkWizardTopInHeader(){
     var EC = protractor.ExpectedConditions;
     // Provera da li su se ucitao top section with the three steps 
-    browser.wait(EC.presenceOf($('.ui_wizard_top')), 5000);
+    browser.wait(EC.presenceOf($('.ui_wizard_top')), 7000);
 }
 function checkTitleOnPage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao title on page
-    browser.wait(EC.textToBePresentInElement($('.dumbleform'), 'Complete Your Profile'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.dumbleform'), 'Complete Your Profile'), 7000);
 }   
 function checkInstructionsOnPage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li su se ucitale instructions
-    browser.wait(EC.textToBePresentInElement($('.instructions'), 'To get the most value out of CBANC, please take a moment to complete your profile.'), 5000);
-    browser.wait(EC.textToBePresentInElement($('.instructions'), 'We use this info to help you connect with the most relevant content and people.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.instructions'), 'To get the most value out of CBANC, please take a moment to complete your profile.'), 7000);
+    browser.wait(EC.textToBePresentInElement($('.instructions'), 'We use this info to help you connect with the most relevant content and people.'), 7000);
 }   
 function deleteTextFromTheFirstNameField() {
     // Brisanje text from the first name field
@@ -73,29 +73,29 @@ function clickOnNextButton() {
 function checkMessageErrorForEmptyFirstName(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavila error poruka za First Name prazno polje
-    browser.wait(EC.textToBePresentInElement($('.message.error'), 'First Name is required'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.message.error'), 'First Name is required'), 7000);
     browser.sleep(2000);
 }   
 function checkMessageErrorForEmptyLastName(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavila error poruka za Last Name prazno polje
-    browser.wait(EC.textToBePresentInElement($('#page_message'), 'Last Name is required'), 5000);
+    browser.wait(EC.textToBePresentInElement($('#page_message'), 'Last Name is required'), 7000);
 }   
 function checkMessageErrorForEmptyJobTitleField(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavila error poruka za Job Title  prazno polje
-    browser.wait(EC.textToBePresentInElement($('#page_message'), 'Job Title is required'), 5000);
+    browser.wait(EC.textToBePresentInElement($('#page_message'), 'Job Title is required'), 7000);
     browser.sleep(2000);
 }   
 function checkMessageErrorForEmptyFunctionalArea(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavila error poruka za Functional Area prazno polje
-    browser.wait(EC.textToBePresentInElement($('#page_message'), 'Primary Role is required'), 5000);
+    browser.wait(EC.textToBePresentInElement($('#page_message'), 'Primary Role is required'), 7000);
 }   
 function checkMessageErrorForEmptyFunctionalLevel(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavila error poruka za Functional Level prazno polje
-    browser.wait(EC.textToBePresentInElement($('#page_message'), 'Role Level is required'), 5000);
+    browser.wait(EC.textToBePresentInElement($('#page_message'), 'Role Level is required'), 7000);
 }    
 function enterTextInTheFirstNameField() {
     // Unosenje text u first name field
@@ -125,17 +125,17 @@ function selectFunctionalLevel() {
 function checkSubscribeToTopicsURL() {
     // Provera da li se ucitao Subscribe To Topics Dumbleform URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/dumbleform/24b2a16c-448f-11e6-81f3-7831c1baaeec/subscribe_topics'), 5000);
+    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/dumbleform/24b2a16c-448f-11e6-81f3-7831c1baaeec/subscribe_topics'), 7000);
 }
 function checkTitleOnSubscribeToTopicPage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao Subscribe To Topics title
-    browser.wait(EC.textToBePresentInElement($('.dumbleform'), 'Subscribe to Topics'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.dumbleform'), 'Subscribe to Topics'), 7000);
 }    
 function checkSummaryOnSubscribeToTopicPage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao summary ispod title on page
-    browser.wait(EC.textToBePresentInElement($('.dumbleform'), 'Pick the topics that interest you most.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.dumbleform'), 'Pick the topics that interest you most.'), 7000);
 }    
 function clickToUnselectTopic() {
     // Klik to unselect selected topic
@@ -146,7 +146,7 @@ function clickToUnselectTopic() {
 function checkMessageErrorForSelecAtLeast3Topics(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavila error poruka for select at least 3 topics
-    browser.wait(EC.textToBePresentInElement($('#page_message'), 'Please select at least 3 topics.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('#page_message'), 'Please select at least 3 topics.'), 7000);
 }   
 function clickToSelectTopic() {
     // Klik to select topic
@@ -156,22 +156,22 @@ function clickToSelectTopic() {
 function checkMessageLooksGood(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavila Looks Good! message
-    browser.wait(EC.textToBePresentInElement($('#page_message'), 'Looks good!'), 5000);
+    browser.wait(EC.textToBePresentInElement($('#page_message'), 'Looks good!'), 7000);
 }   
 function checkUpdateYourProfilePicURL() {
     // Provera da li se ucitao Update Your Profile Pic URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/dumbleform/24b2a16c-448f-11e6-81f3-7831c1baaeec/avatar'), 5000);
+    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/dumbleform/24b2a16c-448f-11e6-81f3-7831c1baaeec/avatar'), 7000);
 }
 function checkTitleOnUpdateYourProfilePicPage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao title on Update Your Profile Pic page
-    browser.wait(EC.textToBePresentInElement($('.dumbleform'), 'Update Your Profile Pic'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.dumbleform'), 'Update Your Profile Pic'), 7000);
 }    
 function checkSummaryOnUpdateYourProfilePicPage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao summary ispod title on page
-    browser.wait(EC.textToBePresentInElement($('.dumbleform'), 'Add a profile pic to make your contributions stand out.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.dumbleform'), 'Add a profile pic to make your contributions stand out.'), 7000);
 }    
 function addPicture() {
     // Upload myphoto to profile picture
@@ -184,7 +184,7 @@ function addPicture() {
  function checkThankYouMessage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavila Thank You message
-    browser.wait(EC.textToBePresentInElement($('.dumbleform'), 'Thank You'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.dumbleform'), 'Thank You'), 7000);
 }    
 function clickOnContinueToCBANCButton() {
     // Klik on Continue to CBANC button

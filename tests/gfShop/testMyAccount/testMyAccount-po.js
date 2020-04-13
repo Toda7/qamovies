@@ -108,6 +108,7 @@ function checkPaginationSuccess() {
    var EC = protractor.ExpectedConditions;
    // Provera da li je dobra paginacija
    browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 11 to 20'), 7000);
+   browser.sleep(2500);
 }
 
 function clickMyPaymentDataLink() {

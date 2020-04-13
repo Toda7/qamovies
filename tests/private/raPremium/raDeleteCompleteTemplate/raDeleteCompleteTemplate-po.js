@@ -5,12 +5,12 @@ function clickDeleteLink() {
  }
 function checkSuccessfullyMessage(){
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.success'), 'Assessment START UP TEMPLATE was successfully deleted.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.success'), 'Assessment START UP TEMPLATE was successfully deleted.'), 7000);
     browser.sleep(2000);
 }   
 function checkNoAssessmentMessage(){
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.card-content'), 'There are no completed assessments'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-content'), 'There are no completed assessments'), 7000);
     browser.sleep(2000);
 }   
 

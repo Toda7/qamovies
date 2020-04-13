@@ -77,7 +77,7 @@ function signOut() {
 // function checkSuccess(){
 //     var EC = protractor.ExpectedConditions;
 //     // Provera da li je uspesno obrisana diskusija
-//     browser.wait(EC.textToBePresentInElement($('.card-content'), 'Excellent work. You are all caught up!'), 5000);
+//     browser.wait(EC.textToBePresentInElement($('.card-content'), 'Excellent work. You are all caught up!'), 7000);
 //     browser.sleep(2000);
 //  }  
 

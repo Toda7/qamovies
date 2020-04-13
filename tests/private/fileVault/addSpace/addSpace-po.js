@@ -7,7 +7,7 @@ function clickOnFABButton() {
 function checkAddSpaceForm(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se otvorila Add Space Forma
-    browser.wait(EC.textToBePresentInElement($('.space_form'), 'Space Name'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.space_form'), 'Space Name'), 7000);
 }
 
 function insertSpaceName() {
@@ -25,7 +25,7 @@ function clickOnCreateButton() {
 function checkConfirmationCard(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavila confirmation kartica
-    browser.wait(EC.textToBePresentInElement($('.main_card'), 'Protractor space was created'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.main_card'), 'Protractor space was created'), 7000);
 }
 
 function clickOnViewSpaceButton() {

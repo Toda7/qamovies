@@ -12,7 +12,7 @@ function clickOnFAQ() {
 function checkFAQUrl() {
     // Provera FAQ URL-a
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlIs('https://support.cbancnetwork.com/hc/en-us'), 5000);
+    browser.wait(EC.urlIs('https://support.cbancnetwork.com/hc/en-us'), 7000);
 }
 
 module.exports = {

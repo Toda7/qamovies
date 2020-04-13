@@ -6,7 +6,7 @@ function clickOnThank() {
 function checkSuccess(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je diskusija uspesno thankovana
-    browser.wait(EC.textToBePresentInElement($('.thanks_count '), '1'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.thanks_count '), '1'), 7000);
 
     browser.sleep(2000);
  }  

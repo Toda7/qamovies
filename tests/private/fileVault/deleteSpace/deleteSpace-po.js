@@ -19,7 +19,7 @@ function clickToConfirmDeleting() {
 function checkIsSpaceDeleted(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je Space obrisan
-    browser.wait(EC.textToBePresentInElement($('div.col.center'), 'The space "Protractor" has been deleted.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('div.col.center'), 'The space "Protractor" has been deleted.'), 7000);
 }
 
 module.exports = {

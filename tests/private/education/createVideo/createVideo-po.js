@@ -12,7 +12,7 @@ function clickOnCreateVideoButton() {
 function checkTitleOnPage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao title on page
-    browser.wait(EC.textToBePresentInElement($('#admin_videos_create'), 'Create Video'), 5000);
+    browser.wait(EC.textToBePresentInElement($('#admin_videos_create'), 'Create Video'), 7000);
 } 
 
 function enterTextInTitleField() {

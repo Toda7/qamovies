@@ -19,13 +19,13 @@ function clickOnAddUser() {
 function checkSpaceUsers(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je Space Users tab tu
-    browser.wait(EC.textToBePresentInElement($('.card-tabs'), 'SPACE USERS'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-tabs'), 'SPACE USERS'), 7000);
 }
 
 function checkAvailableUsers(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je Available Users tab tu
-    browser.wait(EC.textToBePresentInElement($('.card-tabs'), 'AVAILABLE USERS'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-tabs'), 'AVAILABLE USERS'), 7000);
 }
 
 function clickOnAvailableUsers() {
@@ -55,7 +55,7 @@ function clickToConfirmAdding() {
 function checkIsUserAdded(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je User dodat
-    browser.wait(EC.textToBePresentInElement($('div.collection-item.avatar.user_item'), 'Vlada Drobnyak'), 5000);
+    browser.wait(EC.textToBePresentInElement($('div.collection-item.avatar.user_item'), 'Vlada Drobnyak'), 7000);
 }
 
 module.exports = {

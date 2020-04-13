@@ -7,7 +7,7 @@ function clickOnAdminland() {
 function checkAdminlandURL() {
     // Provera da li se ucitao Adminland URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/file_vault/vault/8a1fd448-0185-42bd-bfba-c27c0efa0c71/users'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/file_vault/vault/8a1fd448-0185-42bd-bfba-c27c0efa0c71/users'), 7000);
 }
 
 function clickOnAddUserButton() {
@@ -61,7 +61,7 @@ function clickOnOkToRemove() {
 function checkIsUserThere(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je User u listi
-    browser.wait(EC.textToBePresentInElement($('div.user_item.collection-item.avatar'), 'Austin Numero Uno User FI org'), 5000);
+    browser.wait(EC.textToBePresentInElement($('div.user_item.collection-item.avatar'), 'Austin Numero Uno User FI org'), 7000);
 }
 
 module.exports = {

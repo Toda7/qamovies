@@ -16,7 +16,7 @@ function addProfilePhoto() {
  function checkSuccessMessageForPhoto(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je save-ovano
-    browser.wait(EC.textToBePresentInElement($('.message.success'), 'Avatar successfully updated.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.message.success'), 'Avatar successfully updated.'), 7000);
 }
 
 module.exports = {   

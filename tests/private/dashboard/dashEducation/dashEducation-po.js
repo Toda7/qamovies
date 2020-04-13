@@ -17,19 +17,19 @@
 // function checkSearchField()  {
 //     // Proverava da li se Search polje 
 //     var EC = protractor.ExpectedConditions;
-//     browser.wait(EC.textToBePresentInElement($('.search_term'),'Search Upcoming Webinars'), 5000);
+//     browser.wait(EC.textToBePresentInElement($('.search_term'),'Search Upcoming Webinars'), 7000);
 // }
 
 function checkWebinarIsPresent(){
     // Provera da li se webinar ucitao
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.presenceOf($('.webinar_item')), 5000);
+    browser.wait(EC.presenceOf($('.webinar_item')), 7000);
     }
 
  function checkEducationUrl() {
      // Provera Url Education 
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/education/webinars/calendar'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/education/webinars/calendar'), 7000);
 }
 
  module.exports = {

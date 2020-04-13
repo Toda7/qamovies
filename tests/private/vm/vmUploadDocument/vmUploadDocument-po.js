@@ -22,7 +22,7 @@ function clickOnTBDLink() {
 function checkUploadCompleteMessage(){
     var EC = protractor.ExpectedConditions;
     // Provera dal se ucitala Upload Complete message
-    browser.wait(EC.textToBePresentInElement($('.card-content'), 'Upload Complete'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-content'), 'Upload Complete'), 7000);
 }   
 
 function clickOnOkLink() {

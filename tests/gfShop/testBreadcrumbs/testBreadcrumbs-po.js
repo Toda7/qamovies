@@ -8,18 +8,21 @@ function checkProductBreadcrumb() {
    // Provera da li se ucitao poslednji breadcrumb (ime proizvoda)
    var xxx = element(by.className('item product'));
    expect(xxx.getText()).toEqual('ACCU X™ CAPTURE BOWFISHING REST');
+   browser.sleep(1000);
 }
 
 function checkCategoryBreadcrumb() {
    // Provera da li se ucitao srednji breadcrumb (kategorija)
    var xxx = element(by.className('item category'));
    expect(xxx.getText()).toEqual('ARCHERY');
+   browser.sleep(1000);
 }
 
 function checkHomeBreadcrumb() {
    // Provera da li se ucitao prvi breadcrumb (Home)
    var xxx = element(by.className('item home'));
    expect(xxx.getText()).toEqual('Home');
+   browser.sleep(1000);
 }
 
 function clickCategoryBreadcrumb() {

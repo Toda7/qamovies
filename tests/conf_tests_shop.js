@@ -25,7 +25,7 @@ exports.config = {
 
     // testTwentyProductsOrder: [
     // imamo tiket - https://guidefitter.atlassian.net/browse/SHOP-1106 
-    //   './gfShop/testTwentyProductsOrder/testTwentyProductsOrder-spec.js'
+        // imamo tiket - https://guidefitter.atlassian.net/browse/SHOP-1106 
     // ],
 
     testBreadcrumbs: [

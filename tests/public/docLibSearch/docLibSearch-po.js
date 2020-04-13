@@ -20,7 +20,7 @@ function enterSearchTerm() {
 function checkSearchUrl() {
     // Provera DOC search URL-a
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/documents?q=test'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/documents?q=test'), 7000);
 }
 
 module.exports = {

@@ -12,13 +12,13 @@ function clickOnBlog() {
 function checkMediaContact()  {
     // Proverava da li se ucitao Media contact section  
      var EC = protractor.ExpectedConditions;
-     browser.wait(EC.textToBePresentInElement($('.cbanc_media'),'Media Contact:'), 5000);
+     browser.wait(EC.textToBePresentInElement($('.cbanc_media'),'Media Contact:'), 7000);
  }
 
 function checkBlogUrl() {
     // Provera Blog URL-a
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/blog'), 5000);
+    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/blog'), 7000);
 }
 
 module.exports = {

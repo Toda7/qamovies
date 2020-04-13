@@ -24,7 +24,7 @@ function submit() {
 function checkWebinarIsPresent(){
     // Provera da li se webinar ucitao
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.presenceOf($('.webinar_item')), 5000);
+    browser.wait(EC.presenceOf($('.webinar_item')), 7000);
     }
 
  module.exports = {

@@ -5,12 +5,12 @@ function landOnVendorMappingHomePage() {
 function checkHelpTitleOnHomePage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavio help title on page
-    browser.wait(EC.textToBePresentInElement($('.wizard_home'), 'Help us understand what Vendors your institution uses so we can help you.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.wizard_home'), 'Help us understand what Vendors your institution uses so we can help you.'), 7000);
 }   
 function checkHelpSummaryOnHomePage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavio summary ispod title on page
-    browser.wait(EC.textToBePresentInElement($('.middle'), 'Many of you want to know which other institutions are using the same Vendors that your institution uses. '), 5000);
+    browser.wait(EC.textToBePresentInElement($('.middle'), 'Many of you want to know which other institutions are using the same Vendors that your institution uses. '), 7000);
 }  
 function clickOnGetStartedButton() {
     // Klik on GET STARTED button
@@ -20,7 +20,7 @@ function clickOnGetStartedButton() {
 function checkVendorMappingURL() {
     // Provera vendor mapping URL-a
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/dumbleform/e1ada22d-219a-48ff-8d7f-401125176fe1/vendor_mapping'), 5000);
+    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/dumbleform/e1ada22d-219a-48ff-8d7f-401125176fe1/vendor_mapping'), 7000);
     browser.sleep(2000);
 }
 function selectFirstProduct() {

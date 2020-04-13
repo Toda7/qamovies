@@ -1,17 +1,26 @@
 var downloadDoc = require('./downloadDoc-po.js');
+var replyDiscussion = require('../replyDiscussion/replyDiscussion-po.js');
 
-describe('Delete Discussion Action', function(){
+describe('Download dokument', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
     }); 
 
     it('Dolazak na FI Professionals', function(){
-        downloadDoc.landOnFIProfessionalsHome();
+        replyDiscussion.landOnFIProfessionalsHome();
     });
 
-    it('Pronadji napravljenu diskusiju i klikni', function(){
-        downloadDoc.findDiscussion();
+    it('Klikni na Search polje', function(){
+        replyDiscussion.clickSearch();
+    });
+
+    it('Unesi rec za pretragu u Search polje', function(){
+        replyDiscussion.enterSearchWord();
+    });
+
+    it('Klikni na prvi search rezultat', function(){
+        replyDiscussion.clickFirstResult();
     });
 
     it('Klik na Dokument', function(){

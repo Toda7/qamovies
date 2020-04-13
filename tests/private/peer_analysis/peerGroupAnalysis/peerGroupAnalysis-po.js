@@ -19,26 +19,26 @@ function clickOnLink() {
  function checkPaUrl() {
     // Provera Peer Group Analysis URL-a
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/peer-group-analysis'), 5000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/peer-group-analysis'), 7000);
 }
 
 function checkRAPageTitle(){
     var EC = protractor.ExpectedConditions;
     //  Provera da li se ucitao page title
-    browser.wait(EC.titleIs('CBANC Peer Group Analysis Tool'), 5000);
+    browser.wait(EC.titleIs('CBANC Peer Group Analysis Tool'), 7000);
 }
 
 function checkTitleOnPage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao text on page 
-    browser.wait(EC.textToBePresentInElement($('.content'),'Streamlined peer analysis, for free!'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.content'),'Streamlined peer analysis, for free!'), 7000);
     browser.sleep(2000);
 }    
 
 function checkButton(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitao demo button
-    browser.wait(EC.textToBePresentInElement($('.button'),'LAUNCH PEER ANALYSIS TOOL'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.button'),'LAUNCH PEER ANALYSIS TOOL'), 7000);
     browser.sleep(2000);
 }    
 

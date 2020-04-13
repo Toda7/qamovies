@@ -35,7 +35,7 @@ function clickOnSaveButton() {
 
 function checkIsTitleIsPresent(){
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.card-title'), 'EditedMyTitle'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.card-title'), 'EditedMyTitle'), 7000);
 }   
 
 

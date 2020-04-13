@@ -12,7 +12,7 @@ function clickOnInvoiceLink() {
  function checkPurchaseMessage(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se pojavila treca error poruka
-    browser.wait(EC.textToBePresentInElement($('.buy'), 'This webinar has been purchased by invoice, but it is not approved. Invoice orders are approved once our team processes the order and sends the invoice.'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.buy'), 'This webinar has been purchased by invoice, but it is not approved. Invoice orders are approved once our team processes the order and sends the invoice.'), 7000);
 }   
 module.exports = {
     enterTextInSearchField,

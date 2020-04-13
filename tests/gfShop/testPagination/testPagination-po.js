@@ -13,13 +13,13 @@ function clickPageTwo() {
 function checkUrl() {
    // Provera da li se ucitao dobar URL
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery.html?p=2'), 5000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/archery.html?p=2'), 7000);
 }
 
 function checkSuccess() {
    var EC = protractor.ExpectedConditions;
    // Provera da li je dobra paginacija
-   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 13-24 of 24'), 5000);
+   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 13-24 of 24'), 7000);
    browser.sleep(2500);
 }
 

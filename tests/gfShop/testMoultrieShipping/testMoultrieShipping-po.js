@@ -74,7 +74,7 @@ function landOnMyOrdersPage() {
  function checkShippingPrice2() {
     // Provera da li je shipping $27,00 na My Orders
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.shipping'), '$27.00'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.shipping'), '$27.00'), 7000);
 }
 
 module.exports = {

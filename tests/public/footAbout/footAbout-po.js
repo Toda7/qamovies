@@ -7,7 +7,7 @@ function clickOnLink() {
 function checkAboutURL() {
     // Provera About URL-a
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/about'), 5000);
+    browser.wait(EC.urlIs('https://qa.cbancnetwork.com/about'), 7000);
 }
 
 module.exports = {

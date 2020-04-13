@@ -14,6 +14,7 @@ function checkURLAfterRedirect(){
    // provera urla nakon redirekcije
    var EC = protractor.ExpectedConditions;
    browser.wait(EC.urlContains('https://shop.outfitterextreme.com/badlands/customer/account/'), 7000);
+   browser.sleep(5000);
 }
 
 function checkNoPaymentMessage() {
