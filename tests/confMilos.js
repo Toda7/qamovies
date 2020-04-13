@@ -18,12 +18,12 @@ exports.config = {
       './gfShop/logInAsUser/logInAsUser-spec.js'
     ],
 
-    // testPoBoxAddress: [
-    //   './gfShop/testPoBoxAddress/testPoBoxAddress-spec.js'
-    // ],
+    testPlaceFFLOrder: [
+      './gfShop/testPlaceFFLOrder/testPlaceFFLOrder-spec.js'
+    ],
 
-    testErrorMessageOnProductDetails: [
-      './gfShop/testErrorMessageOnProductDetails/testErrorMessageOnProductDetails-spec.js'
+    testFooterLinks: [
+      './gfShop/testFooterLinks/testFooterLinks-spec.js'
     ],
 
 
