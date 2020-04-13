@@ -1,3 +1,46 @@
+Osnovne komande gita:
+
+Kako obrisati granu iz lokala;
+
+    git branch -d {branch name}
+    git branch -D {branch name} <- veliko D da forsiramo brisnaje i ako imamo neki commit ili merge koji nije pushovan/zavrsen 
+
+Kako obrisati remote granu 
+
+    git branch -d -r origin/{branch name}   
+
+Kako da se prebacimo na drugu granu
+
+	git checkout {branch name}
+
+Kako da proverimo na kojoj smo grani i vidimo koje sve grane imamo fetchovane
+
+	git branch -a 
+
+Kako da fetchujemo novi kod 
+
+	git fetch origin {branch name} ili mozemo git fetch --all ako zelimo sve grane da povucemo kod nas 
+
+Ako smo na grani koju smo fetchovali onda radimo:
+
+	git pull
+
+Ako smo na drugoj grani a hocemo da spojimo kod sa fetchovanom granom
+
+	git rebase origin/{branch name}   
+
+Ako zelimo da ponistimo editovan kod 
+
+	git stash 
+
+	
+
+Komande za pushovanje:
+git add .
+git commit -m"poruka"
+git push origin {branch name}   
+
+
 PROTACTOR (linkovi):
 
 ====   https://www.protractortest.org/#/
@@ -113,17 +156,6 @@ Steps for merge
 5. Klik na create pull request 
 6. Klik na merge pull reguest 
 
-
-Kako obrisati granu iz lokala;
-
-    git branch -d {branch name}
-    git branch -D {branch name} <- veliko D da forsiramo brisnaje i ako imamo neki commit ili merge koji nije pushovan/zavrsen 
-
-Kako obrisati remote granu 
-
-    git branch -d -r origin/{branch name}   
-
-    
     
    <<<< Da bi testovi nastavli da rade cak i ako neki padne >>>> 
 		
