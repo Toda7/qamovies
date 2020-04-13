@@ -21,6 +21,7 @@ describe('Comment Discussion Action', function(){
 
     it('Klikni na prvi search rezultat', function(){
         replyDiscussion.clickFirstResult();
+        browser.sleep(3000);
     });
 
     it('Klik na Comment dugme', function(){

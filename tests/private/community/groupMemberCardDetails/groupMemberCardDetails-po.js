@@ -1,7 +1,7 @@
 function checkUserName() {
     // Provera sadrzaj kartice za prvog usera sa liste
     var xxx = element(by.className('collection-item avatar'));
-    expect(xxx.getText()).toEqual('Sima Simoski\nCBANC Network\nStalker | in group since Aug 20, 2018\nchat' );
+    expect(xxx.getText()).toEqual('Sima Simoski\nCBANC Network\nStalker | in group since Aug 21, 2018\nchat' );
 }
 
 function clickOnUserName() {
