@@ -33,12 +33,12 @@ Ako zelimo da ponistimo editovan kod
 
 	git stash 
 
-	
+
 
 Komande za pushovanje:
-git add .
-git commit -m"poruka"
-git push origin {branch name}   
+	git add .
+	git commit -m"poruka"
+	git push origin {branch name}   
 
 
 PROTACTOR (linkovi):
