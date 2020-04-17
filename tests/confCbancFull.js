@@ -994,9 +994,9 @@ exports.config = {
         timeStamp = today.getMonth() + 1 + '-' + today.getDate() + '-' + today.getFullYear() + '-' + today.getHours() + '-' + today.getMinutes() + '-' + + today.getSeconds();
 
       testConfig = {
-        reportTitle: 'CBANC Private Test Report',
+        reportTitle: 'CBANC Full Test Report',
         outputPath: './reports/Cbanc/',
-        outputFilename: 'CBANC Private Report - ' + timeStamp,
+        outputFilename: 'CBANC Full Test Report - ' + timeStamp,
         screenshotPath: './screenshots',
         testBrowser: browserName,
         browserVersion: browserVersion,
