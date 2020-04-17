@@ -61,5 +61,4 @@ function checkLendwellLinkInDropMenu(){
     checkVendorManagmentLinkInDropMenu,
     checkEducationLinkInDropMenu,
     checkLendwellLinkInDropMenu,
-    checkCielostarLinkInDropMenu,
  }
