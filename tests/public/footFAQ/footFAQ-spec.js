@@ -20,6 +20,11 @@ describe('Public FAQ Link iz Footera', function(){
 
     it('Provera FAQ URL-a', function(){
         footFAQ.checkFAQURL();
+        browser.getAllWindowHandles().then(function (handles) {
+        browser.driver.switchTo().window(handles[1]);
+        browser.driver.close();
+        browser.driver.switchTo().window(handles[0]);
+    });
     });
 
     afterAll(function(){

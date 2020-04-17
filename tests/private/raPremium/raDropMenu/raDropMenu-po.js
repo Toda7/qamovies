@@ -43,11 +43,13 @@ function checkLendwellLinkInDropMenu(){
     //  Provera da li se ucitao lendwell link u drop meniju
     browser.wait(EC.presenceOf($('.left.icon-lendwell_logo.blue-text.text-darken-4')), 7000);
 }
-function checkCielostarLinkInDropMenu(){
-    var EC = protractor.ExpectedConditions;
-    //  Provera da li se ucitao cielostar link u drop meniju
-    browser.wait(EC.presenceOf($('.left.icon-cielostar_logo.pink-text.text-lighten-1')), 7000);
-}
+
+// cielostart nemamo vise u drop meniju
+// function checkCielostarLinkInDropMenu(){
+//     var EC = protractor.ExpectedConditions;
+//     //  Provera da li se ucitao cielostar link u drop meniju
+//     browser.wait(EC.presenceOf($('.left.icon-cielostar_logo.pink-text.text-lighten-1')), 7000);
+// }
 
  module.exports = {
     clickToOpenDropMenu,
