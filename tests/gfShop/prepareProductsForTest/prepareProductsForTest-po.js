@@ -1,7 +1,7 @@
 function checkSaveButton(){
     // Provera da li se ucitao Save button, ovo koristimo za browser.wait da bi sacekali da se strana ucita
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.page-actions .actions-split .action-default'), "Save"), 200000);
+    browser.wait(EC.textToBePresentInElement($('.page-actions .actions-split .action-default'), "Save"), 20000);
 }
 
     
