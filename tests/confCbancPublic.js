@@ -41,9 +41,10 @@ exports.config = {
     pa: [
       './public/peer_analysis/peer_analysis-spec.js',
     ],
-    cielostar: [
-      './public/cielostar/cielostar-spec.js',
-    ],
+    // ne postoji vise stranica
+    // cielostar: [
+    //   './public/cielostar/cielostar-spec.js',
+    // ],
 
     upcoming: [
       './public/upcoming/upcoming-spec.js',

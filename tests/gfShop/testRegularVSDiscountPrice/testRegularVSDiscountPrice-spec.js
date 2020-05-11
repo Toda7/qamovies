@@ -3,16 +3,16 @@ var testSortingByName = require('../testSortingByName/testSortingByName-po.js');
 var testAttentionWindow = require('../testAttentionWindow/testAttentionWindow-po.js');
 var testPlaceFFLOrder = require('../testPlaceFFLOrder/testPlaceFFLOrder-po.js');
 var testTwentyProductsOrder = require('../testTwentyProductsOrder/testTwentyProductsOrder-po.js');
+var testAttentionWindow = require('../testAttentionWindow/testAttentionWindow-po.js');
 
 
-
-describe('Da li se na home/listOfProduct/ProductDetails strani nalazi i regular i discount cena', function(){
+describe('Da li se na home, na listOfProduct i na ProductDetails strani nalazi i regular i discount cena', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
     }); 
 
-    it(' Dolazak na home page', function(){
+    it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
     });
 
@@ -24,7 +24,7 @@ describe('Da li se na home/listOfProduct/ProductDetails strani nalazi i regular 
         testRegularVSDiscountPrice.checkRegularPriceOnHomeForFirstProduct();
     });
 
-    it('Klik on link from navigation menu', function(){
+    it('Klik on FIREARM-HUNTING link from navigation menu', function(){
         testSortingByName.clickOnLinkInNavMenu();
     });
 

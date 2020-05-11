@@ -1,13 +1,11 @@
 function landOnTrugloPage() {
    // Dolazak na home page
    browser.get('https://shop.outfitterextreme.com/truglo'); 
-   browser.sleep(2000);
 }
 
 function clickOnLinkInNavMenu() {
    // Klik on link from navigation menu
    element(by.partialLinkText('FIREARM-HUNTING')).click();
-   browser.sleep(3000);
 }
 
 function checkFireamHuntingURL() {
@@ -62,7 +60,6 @@ function clickOnSort () {
 function selectProductNameToSort() {
    // Select Product name za sorting
    element(by.css('select#sorter.sorter-options')).all(by.tagName('option')).get(1).click(); 
-   browser.sleep(3000);
 }
 
 function checkSortingRL() {

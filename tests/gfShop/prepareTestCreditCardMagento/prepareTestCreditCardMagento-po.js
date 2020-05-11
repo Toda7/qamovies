@@ -4,7 +4,7 @@ function landOnMagentoPage() {
     browser.sleep(2000);
 }
 
-function clickOnPaymentDate() {
+function clickOnPaymentData() {
     // Klik on Payment Date
        element(by.id('tab_block_tokenbase_cards')).click();
        browser.sleep(3000);
@@ -17,7 +17,7 @@ function enterFirstName() {
 
 function enterLastName() {
     // Enter first name
-    element(by.id('authnetcim-lastname')).clear().sendKeys('Seale');
+    element(by.id('authnetcim-lastname')).clear().sendKeys('Seales');
  }
 
 function enterNumber() {
@@ -61,16 +61,16 @@ function enterCountry() {
     element(by.css('select#authnetcim-country.admin__control-select')).all(by.tagName('option')).get(2).click();
 }
 
-function clickOnCCType(){
-    // Enter country 
-    element(by.id('authnetcim-cc-type')).click();
-}
+// function clickOnCCType(){
+//     // Enter country 
+//     element(by.id('authnetcim-cc-type')).click();
+// }
 
-function selectCcType() {
-    // Odaberi iz Free Shipping drop menija
-    element(by.css('select#authnetcim-cc-type.admin__control-select')).all(by.tagName('option')).get(2).click();
-    browser.sleep(2000);
-}
+// function selectCcType() {
+//     // Odaberi iz Free Shipping drop menija
+//     element(by.css('select#authnetcim-cc-type.admin__control-select')).all(by.tagName('option')).get(2).click();
+//     browser.sleep(2000);
+// }
 
 function enterCCNumber() {
     // Enter country 
@@ -100,8 +100,8 @@ function selectYear() {
     browser.sleep(2000);
 }
 
-function enterZip1() {
-    // Enter country 
+function enterCCV() {
+    // Enter CCV 
     element(by.id('authnetcim-cc-cid')).clear().sendKeys('1234');
 }
 
@@ -113,7 +113,7 @@ function clickOnSave() {
 
 module.exports = {
     landOnMagentoPage,
-    clickOnPaymentDate,
+    clickOnPaymentData,
     enterFirstName,
     enterLastName,
     enterNumber,
@@ -124,13 +124,13 @@ module.exports = {
     enterProvince,
     clickOnCountry,
     enterCountry,
-    clickOnCCType,
-    selectCcType,
+    // clickOnCCType,
+    // selectCcType,
     enterCCNumber,
     clickOnMonth,
     selectMonth,
     clickOnYear,
     selectYear,
-    enterZip1,
+    enterCCV,
     clickOnSave,
 }

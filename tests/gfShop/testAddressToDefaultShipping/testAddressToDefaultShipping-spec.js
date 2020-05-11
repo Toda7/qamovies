@@ -10,7 +10,7 @@ describe('Setovanje nase nove addrese za shipping/billing page', function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
     }); 
 
-    it(' Dolazak na home page', function(){
+    it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
     });
 

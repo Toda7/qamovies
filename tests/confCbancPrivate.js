@@ -45,10 +45,11 @@ exports.config = {
     dashRisk: [
       './private/dashboard/dashRiskAsses/dashRisk-spec.js'
     ],
-
-    dashCielostar: [
-      './private/dashboard/dashCielostar/dashCielostar-spec.js'
-    ],
+    
+    // ne postoji vise stranica
+    // dashCielostar: [
+    //   './private/dashboard/dashCielostar/dashCielostar-spec.js'
+    // ],
 
     dashEducation: [
       './private/dashboard/dashEducation/dashEducation-spec.js'

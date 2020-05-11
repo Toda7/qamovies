@@ -33,11 +33,11 @@ describe('Sorting by position in truglo', function(){
         testSortingByName.clickOnSort();
     });
 
-    it('Select Product name za sorting', function(){
+    it('Select Product price za sorting', function(){
         testSortingByPrice.selectPriceToSort();
     });
 
-    it('Provera da li se ucitao URL sa parametrom za product name za sorting', function(){
+    it('Provera da li se ucitao URL sa parametrom za product price za sorting', function(){
         testSortingByPrice.checkSortingRL();
     });
 

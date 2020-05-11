@@ -65,7 +65,7 @@ describe('Provera error poruke kada ne selektujemo option or box i kada ne stavi
 
     it('Klik on ADD TO CART button', function () {
         testTwentyProductsOrder.addToCart();
-        browser.sleep(5000);
+        browser.sleep(6000);
     });
 
     it('Provera da li se ucitala required message za drop', function () {

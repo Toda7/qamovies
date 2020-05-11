@@ -15,7 +15,7 @@ function enterSearchWord1() {
 function checkSuccess1() {
    var EC = protractor.ExpectedConditions;
    // Provera da li je dobar prvi search 
-   var xxx = element.all(by.className('product-item-link')).get(0);
+   var xxx = element.all(by.className('product-item-link')).get(2);
    expect(xxx.getText()).toEqual('TITANIUM X BACKFLIP™ MECHANICAL-BLADE BROADHEADS');
 }
 

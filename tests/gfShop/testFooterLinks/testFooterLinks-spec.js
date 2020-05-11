@@ -9,6 +9,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Hunts By Region', function(){
@@ -25,6 +27,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Klik on Hunts By Species', function(){
@@ -41,6 +45,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Klik on Fishing By Region', function(){
@@ -57,6 +63,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Fishing By species', function(){
@@ -73,6 +81,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Outdoor News Advice', function(){
@@ -89,6 +99,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Hunting Videos', function(){
@@ -105,6 +117,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Guidefitter Giveaways', function(){
@@ -121,6 +135,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Resources', function(){
@@ -137,6 +153,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Obtain a Hunting License', function(){
@@ -154,6 +172,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Brag a Hunting or Fishing Photo', function(){
@@ -167,6 +187,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Create post on the Community feed', function(){
@@ -183,6 +205,8 @@ describe('Footer links', function () {
 
     it(' Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Ask a Question', function(){
@@ -199,6 +223,8 @@ describe('Footer links', function () {
 
     it(' Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on insiders', function(){
@@ -215,6 +241,8 @@ describe('Footer links', function () {
 
     it(' Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Save Money On Gear ', function(){
@@ -231,6 +259,8 @@ describe('Footer links', function () {
 
     it(' Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Invite an Insider', function(){
@@ -247,6 +277,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Create a Free Outfitter Page', function(){
@@ -263,6 +295,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Promote Your Skills', function(){
@@ -280,6 +314,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Help', function(){
@@ -297,6 +333,8 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+
     });
 
     it('Klik on Promote Your Pro Program', function(){
@@ -313,6 +351,15 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(3000);
+    });
+
+    it('Klik na Space na tastaturi za Load More na strani', function () {
+        var step;
+        for (step = 0; step < 5; step++) {
+            testFooterLinks.scrollPage();
+            browser.sleep(1000);
+        }
     });
 
     it('Klik on About Us', function(){
@@ -330,6 +377,15 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(3000);
+    });
+
+    it('Klik na Space na tastaturi za Load More na strani', function () {
+        var step;
+        for (step = 0; step < 5; step++) {
+            testFooterLinks.scrollPage();
+            browser.sleep(1000);
+        }
     });
 
     it('Klik on Company News', function(){
@@ -337,16 +393,51 @@ describe('Footer links', function () {
     });
 
     it('Provera URL-a za Company News', function(){
-        testFooterLinks.checkPageTitleOfCompanyNewsPage();
+        testFooterLinks.checkCompanyNewsURL();
     });
 
     it('Provera page title na Company News page', function(){
-        testFooterLinks.clickOnCareers();
+        testFooterLinks.checkPageTitleOfCompanyNewsPage();
     });
 
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(3000);
+    });
+
+    it('Klik na Space na tastaturi za Load More na strani', function () {
+        var step;
+        for (step = 0; step < 5; step++) {
+            testFooterLinks.scrollPage();
+            browser.sleep(1000);
+        }
+    });
+
+    it('Klik on Careers', function(){
+        testFooterLinks.clickOnCareers();
+    });
+
+    it('Provera URL-a za Careers', function(){
+        testFooterLinks.checkCareersURL();
+    });
+
+    it('Provera page title na Careers page', function(){
+        testFooterLinks.checkPageTitleOfCareersPage();
+    });
+
+
+    it('Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(3000);
+    });
+
+    it('Klik na Space na tastaturi za Load More na strani', function () {
+        var step;
+        for (step = 0; step < 5; step++) {
+            testFooterLinks.scrollPage();
+            browser.sleep(1000);
+        }
     });
 
     it('Klik on Contact Guidefitter', function(){
@@ -363,6 +454,15 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(3000);
+    });
+
+    it('Klik na Space na tastaturi za Load More na strani', function () {
+        var step;
+        for (step = 0; step < 5; step++) {
+            testFooterLinks.scrollPage();
+            browser.sleep(1000);
+        }
     });
 
     it('Klik on Advertise In Our Journal', function(){
@@ -379,6 +479,15 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
+    });
+
+    it('Klik na Space na tastaturi za Load More na strani', function () {
+        var step;
+        for (step = 0; step < 5; step++) {
+            testFooterLinks.scrollPage();
+            browser.sleep(1000);
+        }
     });
 
     it('Klik on Legal', function(){
@@ -399,6 +508,7 @@ describe('Footer links', function () {
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(3000);
     });
 
     it('Klik on instagram icon', function(){
@@ -406,6 +516,7 @@ describe('Footer links', function () {
         browser.getAllWindowHandles().then(function (handles) {
         browser.switchTo().window(handles[1]);
         });
+        browser.sleep(3000);
     });
 
     it('Provera instagram URLa', function(){
@@ -415,6 +526,7 @@ describe('Footer links', function () {
         browser.driver.close();
         browser.driver.switchTo().window(handles[0]);
         });
+        browser.sleep(3000);
     });
 
     it('Klik on facebook icon', function(){
@@ -422,6 +534,7 @@ describe('Footer links', function () {
         browser.getAllWindowHandles().then(function (handles) {
         browser.switchTo().window(handles[1]);
         });
+        browser.sleep(3000);
     });
 
     it('Provera facebook URLa', function(){
@@ -431,6 +544,7 @@ describe('Footer links', function () {
         browser.driver.close();
         browser.driver.switchTo().window(handles[0]);
         });
+        browser.sleep(3000);
     });
 
     it('Klik on Twitter icon', function(){
@@ -438,6 +552,7 @@ describe('Footer links', function () {
         browser.getAllWindowHandles().then(function (handles) {
         browser.switchTo().window(handles[1]);
         });
+        browser.sleep(3000);
     });
 
     it('Provera Twitter URLa', function(){
@@ -447,6 +562,7 @@ describe('Footer links', function () {
         browser.driver.close();
         browser.driver.switchTo().window(handles[0]);
         });
+        browser.sleep(3000);
     });
 
     it('Klik on GooglePlay icon for android', function(){
@@ -454,6 +570,7 @@ describe('Footer links', function () {
         browser.getAllWindowHandles().then(function (handles) {
         browser.switchTo().window(handles[1]);
         });
+        browser.sleep(3000);
     });
 
     it('Provera brag android URLa', function(){
@@ -463,6 +580,7 @@ describe('Footer links', function () {
         browser.driver.close();
         browser.driver.switchTo().window(handles[0]);
         });
+        browser.sleep(3000);
     });
 
     it('Klik on AppStore icon for ios', function(){
@@ -470,6 +588,7 @@ describe('Footer links', function () {
         browser.getAllWindowHandles().then(function (handles) {
         browser.switchTo().window(handles[1]);
         });
+        browser.sleep(3000);
     });
 
     it('Provera brag iOS URLa', function(){
@@ -479,10 +598,12 @@ describe('Footer links', function () {
         browser.driver.close();
         browser.driver.switchTo().window(handles[0]);
         });
+        browser.sleep(3000);
     });
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
     });
 
 

@@ -56,9 +56,10 @@ it('Provera da li se ucitao lendwell link u drop meniju', function(){
     raDropMenu.checkLendwellLinkInDropMenu();
 });
 
-it('Provera da li se ucitao cielostart link u drop meniju', function(){
-    raDropMenu.checkCielostarLinkInDropMenu();
-});
+// cielostart nemamo vise u drop meniju
+// it('Provera da li se ucitao cielostart link u drop meniju', function(){
+//     raDropMenu.checkCielostarLinkInDropMenu();
+// });
 
 
 afterAll(function(){

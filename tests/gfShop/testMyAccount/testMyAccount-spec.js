@@ -12,14 +12,17 @@ describe('My Account', function () {
 
     it('Dolazak na Truglo Shop homepage', function () {
         testSearchShop.landOnShopHomepage();
+        browser.sleep(2000);
     });
 
     it('Klik na avatar u hederu', function () {
         testTwentyProductsOrder.clickAvatarInHeader();
+        browser.sleep(2000);
     });
 
     it('Klik na My Account', function () {
         testTwentyProductsOrder.clickMyAccount();
+        browser.sleep(3000);
     });
 
     it('Provera da li se ucitao My Account URL', function () {
@@ -40,6 +43,7 @@ describe('My Account', function () {
 
     it('Klik on Address Book link', function () {
         testAddNewAddress.clickAddressBook();
+        browser.sleep(3000);
     });
 
     it('Provera da li se ucitao Address Book URL', function () {
@@ -52,16 +56,17 @@ describe('My Account', function () {
 
     it('Provera da li se ucitao title za Default Addresses sekciju', function () {
         testMyAccount.checkDefaultAddressesSectionTitle();
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao title za Additional Address Entries sekciju', function () {
         testMyAccount.checkAdditionalAddressEntriesSectionTitle();
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao Change Billing Address link', function () {
         testMyAccount.checkChangeBillingAddressLink();
     });
-
 
     it('Provera da li se ucitao Change Shipping Address link', function () {
         testMyAccount.checkChangeShippingAddressLink();
@@ -69,6 +74,7 @@ describe('My Account', function () {
 
     it('Provera da li se ucitao Prvi Edit Address link', function () {
         testMyAccount.checkFirstEditAddressLink();
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao Drugi Edit Address link', function () {
@@ -77,6 +83,7 @@ describe('My Account', function () {
 
     it('Provera da li se ucitao Prvi Delete Address link', function () {
         testMyAccount.checkFirstDeleteAddressLink();
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao Drugi Delete Address link', function () {
@@ -85,10 +92,12 @@ describe('My Account', function () {
 
     it('Klik na My Orders link', function () {
         testMyAccount.clickMyOrdersLink();
+        browser.sleep(3000);
     });
 
     it('Provera da li se ucitao My Orders URL', function () {
         testMyAccount.checkMyOrdersURL();
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao Prvi View Order link', function () {
@@ -97,6 +106,7 @@ describe('My Account', function () {
 
     it('klik na 2 u paginaciji', function () {
         testMyAccount.clickPageTwo();
+        browser.sleep(3000);
     });
 
     it('Provera da li se ucitao dobar URL za drugu stranu paginacije', function () {
@@ -109,10 +119,12 @@ describe('My Account', function () {
 
     it('Klik na My Payment Data link', function () {
         testMyAccount.clickMyPaymentDataLink();
+        browser.sleep(2000);
     });
 
     it('Provera da li se ucitao My Payment Data URL', function () {
         testMyAccount.checkMyPaymentDataURL();
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitao My Payment Data title na My Payment Data strani', function () {

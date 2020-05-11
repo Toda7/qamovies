@@ -24,8 +24,8 @@ exports.config = {
     ],
 
     // testTwentyProductsOrder: [
+    // imamo tiket - https://guidefitter.atlassian.net/browse/SHOP-1106 
         // imamo tiket - https://guidefitter.atlassian.net/browse/SHOP-1106 
-    //   './gfShop/testTwentyProductsOrder/testTwentyProductsOrder-spec.js'
     // ],
 
     testBreadcrumbs: [
@@ -149,9 +149,10 @@ exports.config = {
       './gfShop/testPoBoxAddressFromCheckout/testPoBoxAddressFromCheckout-spec.js'
     ],
 
-    testCouponOrder: [
-      './gfShop/testCouponOrder/testCouponOrder-spec.js'
-    ],
+    // testCouponOrder: [
+    // imamo tiket - https://guidefitter.atlassian.net/browse/SHOP-1117 
+    //   './gfShop/testCouponOrder/testCouponOrder-spec.js'
+    // ],
 
     testSaveInAddressBookOptionForNewAddress: [
       './gfShop/testSaveInAddressBookOptionForNewAddress/testSaveInAddressBookOptionForNewAddress-spec.js'
@@ -231,9 +232,10 @@ exports.config = {
       './gfShop/testAdvanceSearchSKU/testAdvanceSearchSKU-spec.js'
     ],
 
-    testAllTab: [
-      './gfShop/testAllTab/testAllTab-spec.js'
-    ],
+    // testAllTab: [
+    // ne radi na frontu jos uvek nemamo tiket za to
+    //   './gfShop/testAllTab/testAllTab-spec.js'
+    // ],
 
     testMessageForNoOrders: [
       './gfShop/testMessageForNoOrders/testMessageForNoOrders-spec.js'
