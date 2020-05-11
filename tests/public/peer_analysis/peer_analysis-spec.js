@@ -1,6 +1,6 @@
 var register = require('../registracija/registracija-po');
 var lendwell = require('../lendwell/lendwell-po');
-var home = require('../home/home-po');
+var lendwell = require('../lendwell/lendwell-po');
 var pa = require('./peer_analysis-po');
 
 describe('Peer analysis strana', function(){
@@ -38,10 +38,11 @@ beforeAll(function(){
 
     it('Provera da li se ucitala premium ad', function(){
         pa.checkAdOnPage();
+        browser.sleep(4000);
     }); 
 
     it('Provera da li se ucitao intercom', function(){
-        home.checkIntercom();
+        lendwell.checkIntercom();
     });
     
     afterAll(function(){

@@ -25,17 +25,11 @@ function checkFooter(){
     browser.wait(EC.textToBePresentInElement($('.copy'), 'Copyright © 2008 - 2020 CBANC Network. All rights reserved.'), 7000);
     browser.sleep(2000);
 }    
-function checkIntercom(){
-    // Provera da li se ucitao intercom
-    var interc = element(by.id('intercom-modal-container'));
-    expect(interc.isDisplayed()).toBe(false);
-}
 
 module.exports = {
     clickOnVendor,
     checkVendorUrl,
     checkCBANCbox,
     checkButton,
-    checkIntercom,
     checkFooter,
 }

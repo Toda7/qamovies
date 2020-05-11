@@ -1,6 +1,6 @@
 var register = require('../registracija/registracija-po');
 var lendwell = require('./lendwell-po');
-var home = require('../home/home-po');
+
 
 describe('Public lendwell strana', function(){
 
@@ -22,6 +22,7 @@ beforeAll(function(){
 
     it('Provera lendwell URL-a', function(){
         lendwell.checkLendwell();
+        browser.sleep(3000);
     }); 
 
     it('Provera da li se ucitao page title', function(){
@@ -38,10 +39,11 @@ beforeAll(function(){
 
     it('Provera da li se ucitao footer', function(){
         lendwell.checkFooter();
+        browser.sleep(3000);
     });
 
     it('Provera da li se ucitao intercom', function(){
-        home.checkIntercom();
+        lendwell.checkIntercom();
     });
 
     afterAll(function(){

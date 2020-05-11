@@ -37,6 +37,12 @@ function checkFooter(){
     browser.sleep(2000);
 }    
 
+function checkIntercom(){
+    // Provera da li se ucitao intercom
+    var interc = element(by.id('intercom-frame'));
+    expect(interc.isDisplayed()).toBe(false);
+}
+
 module.exports = {
     HoverToOpenDrop,
     clickOnLink,
@@ -45,4 +51,5 @@ module.exports = {
     checkForm,
     checkPSbox,
     checkFooter,
+    checkIntercom,
  }

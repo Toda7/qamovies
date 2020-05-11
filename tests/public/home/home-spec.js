@@ -31,6 +31,7 @@ describe('Public home page', function(){
 
         it('Provera da li su se ucitali brojevi za financial institutions', function(){
             home.checkNumbersOfFinancialInstitutions();
+            browser.sleep(2000);
         });
         
         it('Provera da li se ucitao intercom', function(){

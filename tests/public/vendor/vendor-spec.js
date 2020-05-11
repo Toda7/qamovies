@@ -1,5 +1,7 @@
 var register = require('../registracija/registracija-po');
 var vendor = require('./vendor-po')
+var lendwell = require('../lendwell/lendwell-po');
+
 
 describe('Public vendor strana', function(){
 
@@ -29,10 +31,11 @@ beforeAll(function(){
 
     it('Provera da li se ucitao footer', function(){
         vendor.checkFooter();
+        browser.sleep(2000);
     });
 
     it('Provera da li se ucitao intercom', function(){
-        vendor.checkIntercom();
+        lendwell.checkIntercom();
     });
 
     afterAll(function(){
