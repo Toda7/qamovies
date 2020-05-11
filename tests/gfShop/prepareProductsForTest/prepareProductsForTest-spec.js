@@ -14,6 +14,12 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -47,6 +53,12 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -78,6 +90,12 @@ describe('Add products to stock', function () {
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
     });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
 
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
@@ -112,6 +130,12 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -143,6 +167,12 @@ describe('Add products to stock', function () {
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
     });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
 
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
@@ -176,6 +206,12 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -208,6 +244,12 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -238,6 +280,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -272,6 +319,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -302,6 +354,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -336,6 +393,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -366,6 +428,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -400,6 +467,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -430,6 +502,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -464,6 +541,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -494,6 +576,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -528,6 +615,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -558,6 +650,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    }); 
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -592,6 +689,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -622,6 +724,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    }); 
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -656,6 +763,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -686,6 +798,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -720,6 +837,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -750,6 +872,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -784,6 +911,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -814,6 +946,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -848,6 +985,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -878,6 +1020,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -912,6 +1059,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -942,6 +1094,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -976,6 +1133,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -1006,6 +1168,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -1040,6 +1207,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -1070,6 +1242,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -1104,6 +1281,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -1134,6 +1316,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -1168,6 +1355,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -1198,6 +1390,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -1232,6 +1429,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -1262,6 +1464,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -1296,6 +1503,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -1326,6 +1538,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -1360,6 +1577,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -1390,6 +1612,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -1424,6 +1651,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -1454,6 +1686,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -1488,6 +1725,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -1518,6 +1760,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -1552,6 +1799,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -1582,6 +1834,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -1616,6 +1873,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -1646,6 +1908,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -1680,6 +1947,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -1710,6 +1982,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -1744,6 +2021,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -1774,6 +2056,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -1808,6 +2095,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -1838,6 +2130,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -1872,6 +2169,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -1902,6 +2204,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
@@ -1936,6 +2243,11 @@ describe('Add products to stock', function () {
         browser.sleep(1000);
     });
 
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
+
     it('Klik na switch', function () {
         prepareProductsForTest.clickSwitch();
         browser.sleep(5000);
@@ -1966,6 +2278,11 @@ describe('Add products to stock', function () {
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
+    });
+
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
     });
 
     it('Klik na switch', function () {
