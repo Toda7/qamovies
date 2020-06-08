@@ -1,7 +1,7 @@
 function checkYourReputationSection() {
     // Provera Reputation section text
     var xxx = element(by.className('my_reputation'));
-    expect(xxx.getText()).toEqual('Your Reputation\nstars\nReputation Score: 0\nshow_chart\nReputation Rank: In top of 0% of CBANC Members\npie_chart\nReputation Trend: Moved up 0 spots this week');
+    expect(xxx.getText()).toEqual('Your Reputation\nstars\nReputation Score: 1\nshow_chart\nReputation Rank: In top of 27% of CBANC Members\npie_chart\nReputation Trend: Moved up 0 spots this week');
 }
 
 function checkWantToEarnMoreRepTitle() {
