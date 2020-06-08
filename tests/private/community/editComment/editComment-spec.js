@@ -16,18 +16,23 @@ describe('Edit Comment', function(){
     });
     it('Klikni na prvi search rezultat', function(){
         replyDiscussion.clickFirstResult();
+        browser.sleep(2000);
     });
     it('Klik na Action menu', function(){
         editComment.clickAction();
+        browser.sleep(1000);
     });
     it('Klik na Edit dugme', function(){
         editComment.clickEditButton();
+        browser.sleep(1000);
     });
     it('Edit Comment texta', function(){
         editComment.editCommentText();
+        browser.sleep(1000);
     });
     it('Klik na Update Comment dugme', function(){
         editComment.clickUpdateCommentButton();
+        browser.sleep(1000);
     });
     it('Provera da li je uspesno editovan Comment', function(){
         editComment.checkSuccess();

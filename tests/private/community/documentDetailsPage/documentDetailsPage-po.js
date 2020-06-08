@@ -38,7 +38,7 @@ function checkUserName(){
 function checkReputationScore(){
     // Provera da li se ucitao reputation score
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .title .reputation_score'), '1'), 7000);
+    browser.wait(EC.textToBePresentInElement($('.community .signature .constrain .title .reputation_score'), '2'), 7000);
 }
 
 function checkDirectMessage(){
