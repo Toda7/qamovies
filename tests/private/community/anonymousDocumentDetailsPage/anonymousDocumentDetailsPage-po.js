@@ -55,7 +55,7 @@ function checkDiscussionLinkWhereDocIsPosted(){
 function checkTopics(){
     // Provera da li su se ucitali topici u kartici
     var xxx = element(by.className('tags'));
-    expect(xxx.getText()).toEqual('Topics: Stress Testing, Testing');
+    expect(xxx.getText()).toEqual('Topics: Testing, Stress Testing');
 }
 
 function landOnDocDetailsPage() {

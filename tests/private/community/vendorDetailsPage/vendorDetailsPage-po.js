@@ -77,7 +77,7 @@ function clickOnVendorURLLink(){
 function checkVendorLinkURL() {
     // Provera da li se ucitao vendor link URL
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://www.mandrill.com/'), 7000);
+    browser.wait(EC.urlContains('https://mailchimp.com/features/transactional-email/?utm_source=mandrill&utm_medium=mc-site&utm_campaign=aoc_product-mktg_tnx_redirect_wld_20200515'), 7000);
 }
 
  module.exports = {
