@@ -18,6 +18,12 @@ describe('Edit Comment', function(){
         replyDiscussion.clickFirstResult();
         browser.sleep(2000);
     });
+
+    it('Pomeranje fokusa do comment sekcije', function(){
+        editComment.moveFocus();
+        browser.sleep(2000);
+    });
+
     it('Klik na Action menu', function(){
         editComment.clickAction();
         browser.sleep(1000);

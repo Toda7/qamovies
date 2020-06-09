@@ -1,4 +1,5 @@
 var deleteComment = require('./deleteComment-po.js');
+var editComment = require('../editComment/editComment-po.js');
 var replyDiscussion = require('../replyDiscussion/replyDiscussion-po.js');
 
 describe('Delete Comment Action', function(){
@@ -18,6 +19,11 @@ describe('Delete Comment Action', function(){
         replyDiscussion.clickFirstResult();
         browser.sleep(2000);
     });
+    it('Pomeranje fokusa do comment sekcije', function(){
+        editComment.moveFocus();
+        browser.sleep(2000);
+    });
+
     it('Klik na Action menu', function(){
         deleteComment.clickAction();
         browser.sleep(1000);
