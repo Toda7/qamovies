@@ -1,3 +1,8 @@
+function moveFocus() {
+   // Pomeranje fokusa do comment sekcije
+   element(by.tagName('body')).sendKeys(protractor.Key.SPACE);
+}
+
 function clickAction() {
    // Klik na Action menu
    element.all(by.className('dropdown_menu')).get(2).click();
@@ -22,14 +27,15 @@ function clickUpdateCommentButton() {
    browser.sleep(1000);
 }
 
-function checkSuccess(){
+function checkSuccess() {
    var EC = protractor.ExpectedConditions;
    // Provera da li je uspesno editovan Comment
    browser.wait(EC.textToBePresentInElement($('.community .thread_detail .replies .reply .comments'), 'ATQA Comment EDITED'), 7000);
    browser.sleep(1000);
-}  
+}
 
 module.exports = {
+   moveFocus,
    clickAction,
    clickEditButton,
    editCommentText,
