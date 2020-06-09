@@ -65,7 +65,7 @@ describe('Provera Reputation Leaderborad strane za novog usera', function () {
         browser.sleep(2000);
     });
 
-    it('Cekira da li se ucitao "Your Reputation" section', function () {
+    it('Cekira da li se ucitao Your Reputation section', function () {
         reputationLeaderboardNewUser.checkYourReputationSection();
         browser.sleep(2000);
     });

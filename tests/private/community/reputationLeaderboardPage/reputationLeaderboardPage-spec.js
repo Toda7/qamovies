@@ -41,7 +41,7 @@ describe('Reputation Leaderborad Page link i text', function () {
         browser.sleep(2000);
     });
 
-    it('Cekira da li se ucitao "Your Reputation" section', function () {
+    it('Cekira da li se ucitao Your Reputation section', function () {
         reputationLeaderboardPage.checkYourReputationSection();
         browser.sleep(2000);
     });

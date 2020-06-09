@@ -27,7 +27,7 @@ function checkNumberOfAnswers(){
 function checkNumbersOfFinancialInstitutions(){
     var EC = protractor.ExpectedConditions;
     // Provera da li su se ucitali brojevi za financial institutions
-    browser.wait(EC.textToBePresentInElement($('.numbers_section'), '8,261'), 7000);
+    browser.wait(EC.textToBePresentInElement($('.numbers_section'), '8,545'), 7000);
     browser.sleep(2000);
 }
 function checkIntercom(){

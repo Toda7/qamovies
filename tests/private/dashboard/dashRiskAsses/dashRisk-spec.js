@@ -20,7 +20,7 @@ describe('Click na Risk A. na dashboardu', function () {
         });
     });
 
-    it('Proverava da li se ucitao "Your Risk Assessments" title', function(){
+    it('Proverava da li se ucitao Your Risk Assessments title', function(){
         dashRisk.checkButton();
 });
 

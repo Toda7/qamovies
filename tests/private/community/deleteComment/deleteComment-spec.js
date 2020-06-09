@@ -16,15 +16,19 @@ describe('Delete Comment Action', function(){
     });
     it('Klikni na prvi search rezultat', function(){
         replyDiscussion.clickFirstResult();
+        browser.sleep(2000);
     });
     it('Klik na Action menu', function(){
         deleteComment.clickAction();
+        browser.sleep(1000);
     });
     it('Klik na Delete dugme', function(){
         deleteComment.clickDelete();
+        browser.sleep(1000);
     });
     it('Provera da li obrisana diskusija', function(){
         deleteComment.checkSnackbar();
+        browser.sleep(1000);
     });
         afterAll(function(){
         browser.waitForAngularEnabled(true); 
