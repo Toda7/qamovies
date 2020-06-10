@@ -10,7 +10,7 @@ describe('Attention window kada hocemo da dodamo vise od 1000 proizvoda u cart',
 
     it('Dolazak na product details page', function(){
         testAttentionWindow.landOnProductPage();
-        browser.sleep(3000);
+        browser.sleep(5000);
     });
 
     it('Klik on ADD TO CART button', function(){
@@ -20,7 +20,7 @@ describe('Attention window kada hocemo da dodamo vise od 1000 proizvoda u cart',
 
     it('Klik na cart', function(){
         testAttentionWindow.clickOnCart();
-        browser.sleep(3000);
+        browser.sleep(6000);
     });
 
     it('Unos broja Producta', function(){
@@ -44,17 +44,17 @@ describe('Attention window kada hocemo da dodamo vise od 1000 proizvoda u cart',
 
     it('Klik on OK', function(){
         testAttentionWindow.clickOnOK();
-        browser.sleep(3000);
+        browser.sleep(4000);
     });
 
     it('Klik na cart', function(){
         testAttentionWindow.clickOnCart();
-        browser.sleep(3000);
+        browser.sleep(4000);
     });
 
     it(' Klik on Delete product icon', function(){
         testAttentionWindow.clickOnDeleteProductIcon();
-        browser.sleep(3000);
+        browser.sleep(4000);
     });
 
     it(' Klik on Ok in confirm message', function(){
