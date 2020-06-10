@@ -18,10 +18,12 @@ describe('Pravljenje prve adrese na Address Book strani', function () {
 
     it('Klik on my account from user menu', function () {
         testAddNewAddress.clickOnMyAccountLink();
+        browser.sleep(3000);
     });
 
     it('Klik on Address Book', function () {
         testAddNewAddress.clickAddressBook();
+        browser.sleep(7000);
     });
 
     it('Brisanje texta iz first name polja', function () {

@@ -63,7 +63,7 @@ describe('Test PO box address from checkout', function(){
 
     it('Klik on SAVE NEW ADDRESS button', function () {
         testPoBoxAddressFromCheckout.clickOnSaveNewAddressButton();
-        browser.sleep(7000);
+        browser.sleep(4000);
     });
 
     it('Provera da li se pojavila restricted message', function () {

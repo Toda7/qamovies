@@ -31,15 +31,15 @@ describe('Footer links', function () {
 
     });
 
-    it('Klik on Klik on Hunts By Species', function(){
+    it('Klik on Hunts By Species', function(){
         testFooterLinks.clickOnHuntsBySpecies();
     });
 
-    it('Provera URL-a za Klik on Hunts By Species', function(){
+    it('Provera URL-a za Hunts By Species', function(){
         testFooterLinks.checkHuntsBySpeciesURL();
     });
 
-    it('Provera page title na Klik on Hunts By Species page', function(){
+    it('Provera page title na Hunts By Species page', function(){
         testFooterLinks.checkPageTitleOfHuntsBySpecies();
     });
 
@@ -49,15 +49,15 @@ describe('Footer links', function () {
 
     });
 
-    it('Klik on Klik on Fishing By Region', function(){
+    it('Klik on on Fishing By Region', function(){
         testFooterLinks.clickOnFishingByRegion();
     });
 
-    it('Provera URL-a za Klik on Fishing By Region', function(){
+    it('Provera URL-a za on Fishing By Region', function(){
         testFooterLinks.checkFishingByRegionURL();
     });
 
-    it('Provera page title na Klik on Fishing By Region page', function(){
+    it('Provera page title na on Fishing By Region page', function(){
         testFooterLinks.checkPageTitleOfFishingByRegion();
     });
 
@@ -516,7 +516,7 @@ describe('Footer links', function () {
         browser.getAllWindowHandles().then(function (handles) {
         browser.switchTo().window(handles[1]);
         });
-        browser.sleep(3000);
+        browser.sleep(4000);
     });
 
     it('Provera instagram URLa', function(){
@@ -526,7 +526,7 @@ describe('Footer links', function () {
         browser.driver.close();
         browser.driver.switchTo().window(handles[0]);
         });
-        browser.sleep(3000);
+        browser.sleep(4000);
     });
 
     it('Klik on facebook icon', function(){
@@ -534,7 +534,7 @@ describe('Footer links', function () {
         browser.getAllWindowHandles().then(function (handles) {
         browser.switchTo().window(handles[1]);
         });
-        browser.sleep(3000);
+        browser.sleep(4000);
     });
 
     it('Provera facebook URLa', function(){
@@ -544,7 +544,7 @@ describe('Footer links', function () {
         browser.driver.close();
         browser.driver.switchTo().window(handles[0]);
         });
-        browser.sleep(3000);
+        browser.sleep(4000);
     });
 
     it('Klik on Twitter icon', function(){
@@ -552,7 +552,7 @@ describe('Footer links', function () {
         browser.getAllWindowHandles().then(function (handles) {
         browser.switchTo().window(handles[1]);
         });
-        browser.sleep(3000);
+        browser.sleep(4000);
     });
 
     it('Provera Twitter URLa', function(){
@@ -562,7 +562,7 @@ describe('Footer links', function () {
         browser.driver.close();
         browser.driver.switchTo().window(handles[0]);
         });
-        browser.sleep(3000);
+        browser.sleep(4000);
     });
 
     it('Klik on GooglePlay icon for android', function(){
@@ -570,7 +570,7 @@ describe('Footer links', function () {
         browser.getAllWindowHandles().then(function (handles) {
         browser.switchTo().window(handles[1]);
         });
-        browser.sleep(3000);
+        browser.sleep(4000);
     });
 
     it('Provera brag android URLa', function(){
@@ -580,7 +580,7 @@ describe('Footer links', function () {
         browser.driver.close();
         browser.driver.switchTo().window(handles[0]);
         });
-        browser.sleep(3000);
+        browser.sleep(4000);
     });
 
     it('Klik on AppStore icon for ios', function(){
@@ -588,7 +588,7 @@ describe('Footer links', function () {
         browser.getAllWindowHandles().then(function (handles) {
         browser.switchTo().window(handles[1]);
         });
-        browser.sleep(3000);
+        browser.sleep(4000);
     });
 
     it('Provera brag iOS URLa', function(){
@@ -598,7 +598,7 @@ describe('Footer links', function () {
         browser.driver.close();
         browser.driver.switchTo().window(handles[0]);
         });
-        browser.sleep(3000);
+        browser.sleep(4000);
     });
 
     it('Dolazak na home page', function(){
