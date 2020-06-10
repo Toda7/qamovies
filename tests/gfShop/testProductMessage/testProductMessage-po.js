@@ -18,7 +18,7 @@ function click6Product() {
 
  function enterNumber() {
     // Unos broja Producta
-    element(by.id('qty')).clear().sendKeys('300');
+    element(by.className('input-text qty')).clear().sendKeys('300');
     browser.sleep(5000);
  }
 
@@ -31,7 +31,7 @@ function click6Product() {
  function checkErrorMsg(){
     var EC = protractor.ExpectedConditions;
     // Provera da li je dobra Error poruka
-    browser.wait(EC.textToBePresentInElement($('.message-error.error.message'), '"SPEED SHOT™ BOWFISHING ARROW" as you requested.'), 7000);
+    browser.wait(EC.textToBePresentInElement($('.message-error.error.message'), 'The requested qty is not available'), 7000);
     browser.sleep(5000);
  }
 
