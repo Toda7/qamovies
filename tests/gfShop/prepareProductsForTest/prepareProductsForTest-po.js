@@ -120,10 +120,11 @@ function landProduct15DetailsPage() {
     browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/27223/');
 }
 
-function landProduct16DetailsPage() {
-    // Dolazak na product 16 u magento
-    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/7797/');
-}
+// ovo je parent product 
+// function landProduct16DetailsPage() {
+//     // Dolazak na product 16 u magento
+//     browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/7797/');
+// }
 
 function landProduct17DetailsPage() {
     // Dolazak na product 17 u magento
@@ -160,10 +161,11 @@ function landProduct23DetailsPage() {
     browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/7796/');
 }
 
-function landProduct24DetailsPage() {
-    // Dolazak na product 24 u magento
-    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/7797/');
-}
+// ovo je parent product
+// function landProduct24DetailsPage() {
+//     // Dolazak na product 24 u magento
+//     browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/7797/');
+// }
 
 function landProduct25DetailsPage() {
     // Dolazak na product 25 u magento
@@ -180,20 +182,22 @@ function landProduct27DetailsPage() {
     browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/42698/');
 }
 
-function landProduct28DetailsPage() {
-    // Dolazak na product 28 u magento
-    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/42694/');
-}
+// ovo je parent product
+// function landProduct28DetailsPage() {
+//     // Dolazak na product 28 u magento
+//     browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/42694/');
+// }
 
 function landProduct29DetailsPage() {
     // Dolazak na product 29 u magento
     browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/42695/');
 }
 
-function landProduct30DetailsPage() {
-    // Dolazak na product 30 u magento
-    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/29155/');
-}
+// ovo je parent product
+// function landProduct30DetailsPage() {
+//     // Dolazak na product 30 u magento
+//     browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/29155/');
+// }
 
 function landProduct31DetailsPage() {
     // Dolazak na product 31 u magento
@@ -215,10 +219,11 @@ function landProduct34DetailsPage() {
     browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/29181/');
 }
 
-function landProduct35DetailsPage() {
-    // Dolazak na product 35 u magento
-    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/27149/');
-}
+// ovo je parent product 
+// function landProduct35DetailsPage() {
+//     // Dolazak na product 35 u magento
+//     browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/27149/');
+// }
 
 function landProduct36DetailsPage() {
     // Dolazak na product 36 u magento
@@ -250,10 +255,11 @@ function landProduct41DetailsPage() {
     browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/48284/');
 }
 
-function landProduct42DetailsPage() {
-    // Dolazak na product 42 u magento
-    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/27094/');
-}
+// ovo je parent product
+// function landProduct42DetailsPage() {
+//     // Dolazak na product 42 u magento
+//     browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/27094/');
+// }
 
 function landProduct43DetailsPage() {
     // Dolazak na product 43 u magento
@@ -377,7 +383,7 @@ module.exports = {
     landProduct13DetailsPage,
     landProduct14DetailsPage,
     landProduct15DetailsPage,
-    landProduct16DetailsPage,
+    // landProduct16DetailsPage,
     landProduct17DetailsPage,
     landProduct18DetailsPage,
     landProduct19DetailsPage,
@@ -385,25 +391,25 @@ module.exports = {
     landProduct21DetailsPage,
     landProduct22DetailsPage,
     landProduct23DetailsPage,
-    landProduct24DetailsPage,
+    // landProduct24DetailsPage,
     landProduct25DetailsPage,
     landProduct26DetailsPage,
     landProduct27DetailsPage,
-    landProduct28DetailsPage,
+    // landProduct28DetailsPage,
     landProduct29DetailsPage,
-    landProduct30DetailsPage,
+    // landProduct30DetailsPage,
     landProduct31DetailsPage,
     landProduct32DetailsPage,
     landProduct33DetailsPage,
     landProduct34DetailsPage,
-    landProduct35DetailsPage,
+    // landProduct35DetailsPage,
     landProduct36DetailsPage,
     landProduct37DetailsPage,
     landProduct38DetailsPage,
     landProduct39DetailsPage,
     landProduct40DetailsPage,
     landProduct41DetailsPage,
-    landProduct42DetailsPage,
+    // landProduct42DetailsPage,
     landProduct43DetailsPage,
     landProduct44DetailsPage,
     landProduct45DetailsPage,
