@@ -528,11 +528,13 @@ describe('Footer links', function () {
         browser.sleep(4000);
     });
 
-    it('Dolazak na home page', function(){
-        testSortingByName.landOnTrugloPage();
-        browser.sleep(2000);
+    it('Klik na Space na tastaturi za Load More na strani', function () {
+        var step;
+        for (step = 0; step < 2; step++) {
+            testFooterLinks.scrollPage();
+            browser.sleep(1000);
+        }
     });
-
 
     it('Klik on facebook icon', function(){
         testFooterLinks.clickOnFacebook();
@@ -550,11 +552,6 @@ describe('Footer links', function () {
         browser.driver.switchTo().window(handles[0]);
         });
         browser.sleep(4000);
-    });
-
-    it('Dolazak na home page', function(){
-        testSortingByName.landOnTrugloPage();
-        browser.sleep(2000);
     });
 
     it('Klik on Twitter icon', function(){

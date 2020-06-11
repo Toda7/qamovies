@@ -517,7 +517,6 @@ function scrollPage() {
    element(by.tagName('body')).sendKeys(protractor.Key.SPACE);
 }
 
-
 module.exports = {
    clickOnHuntsByRegion,
    checkHuntsByRegionURL,
