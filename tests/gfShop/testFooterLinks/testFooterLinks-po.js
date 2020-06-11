@@ -13,7 +13,7 @@ function checkHuntsByRegionURL() {
 function checkPageTitleOfHuntsByRegion() {
    // Provera page title na Hunts By Region page
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Browse Hunting Trips by Location... | Guidefitter'), 7000);
+   browser.wait(EC.titleIs('Browse Hunting Trips by Location'), 7000);
 }
 
 function clickOnHuntsBySpecies() {
@@ -31,7 +31,7 @@ function checkHuntsBySpeciesURL() {
 function checkPageTitleOfHuntsBySpecies() {
    // Provera page title na Hunts By Species page
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Browse Hunting Trips by Game... | Guidefitter'), 7000);
+   browser.wait(EC.titleIs('Browse Hunting Trips by Game'), 7000);
 }
 
 function clickOnFishingByRegion() {
@@ -49,7 +49,7 @@ function checkFishingByRegionURL() {
 function checkPageTitleOfFishingByRegion() {
    // Provera page title na Fishing By Region page
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Browse Fishing Trips by Location... | Guidefitter'), 7000);
+   browser.wait(EC.titleIs('Browse Fishing Trips by Location'), 7000);
 }
 
 function clickOnFishingBySpecies() {
@@ -67,7 +67,7 @@ function checkFishingBySpeciesURL() {
 function checkPageTitleOfFishingBySpecies() {
    // Provera page title na Fishing By species page
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.titleIs('Browse Fishing Trips by Game... | Guidefitter'), 7000);
+   browser.wait(EC.titleIs('Browse Fishing Trips by Game'), 7000);
 }
 
 
@@ -516,7 +516,6 @@ function scrollPage() {
    // Skrolujemo do dna strani da bi dobili jos 15 dokumenta 
    element(by.tagName('body')).sendKeys(protractor.Key.SPACE);
 }
-
 
 module.exports = {
    clickOnHuntsByRegion,

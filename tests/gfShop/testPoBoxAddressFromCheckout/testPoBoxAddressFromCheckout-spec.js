@@ -63,27 +63,27 @@ describe('Test PO box address from checkout', function(){
 
     it('Klik on SAVE NEW ADDRESS button', function () {
         testPoBoxAddressFromCheckout.clickOnSaveNewAddressButton();
-        browser.sleep(7000);
+        browser.sleep(4000);
     });
 
     it('Provera da li se pojavila restricted message', function () {
         testPoBoxAddress.checkPoBoxNotAllowedMessage();
-        browser.sleep(2000);
+        browser.sleep(4000);
     });
 
     it('Klik na Ship here button za prvi adresu', function () {
         testPoBoxAddressFromCheckout.clickOnShipHereButtonForFirstAddress();
-        browser.sleep(3000);
+        browser.sleep(8000);
     });
 
     it('Klik na Next dugme', function () {
         testTwentyProductsOrder.clickNext();
-        browser.sleep(5000);
+        browser.sleep(7000);
     });
 
     it('Klik na Place Order dugme', function () {
         testTwentyProductsOrder.clickPlaceOrder();
-        browser.sleep(4000);
+        browser.sleep(7000);
     });
     
 
