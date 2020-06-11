@@ -557,7 +557,6 @@ describe('Footer links', function () {
         browser.sleep(2000);
     });
 
-
     it('Klik on Twitter icon', function(){
         testFooterLinks.clickOnTwitter();
         browser.getAllWindowHandles().then(function (handles) {
@@ -574,6 +573,11 @@ describe('Footer links', function () {
         browser.driver.switchTo().window(handles[0]);
         });
         browser.sleep(4000);
+    });
+
+    it('Dolazak na home page', function(){
+        testSortingByName.landOnTrugloPage();
+        browser.sleep(2000);
     });
 
     it('Klik on GooglePlay icon for android', function(){
