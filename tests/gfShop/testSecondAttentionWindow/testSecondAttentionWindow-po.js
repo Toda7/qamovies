@@ -1,3 +1,9 @@
+function clearNumberFromField() {
+   // Brisanje broja iz polja
+   element(by.css('.block-minicart .minicart-items .item-qty')).clear();
+   browser.sleep(5000);
+}
+
 function enterNumber() {
    // Unos broja Producta
    element(by.css('.block-minicart .minicart-items .item-qty')).clear().sendKeys('200');
@@ -15,10 +21,11 @@ function checkAttentionContentOfBox() {
    // Provera da li se ucitala poruka u windowsu
    var EC = protractor.ExpectedConditions;
    var xxx = element.all(by.className('modal-content')).get(2);
-   browser.wait(EC.textToBePresentInElement((xxx),'have as many "SPRING SHOT™ BOWFISHING REST" as you requested.'), 7000);
+   browser.wait(EC.textToBePresentInElement((xxx),'The requested qty is not available'), 7000);
 }
 
  module.exports = {
+   clearNumberFromField,
    enterNumber,
    checkAttentionTitleOfBox,
    checkAttentionContentOfBox,
