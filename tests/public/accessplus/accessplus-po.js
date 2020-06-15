@@ -19,7 +19,7 @@ function checkAccessPlusPageTitle(){
 function checkTitleOnPage(){
     var EC = protractor.ExpectedConditions;
     //  Provera da li se ucitao page title
-    browser.wait(EC.textToBePresentInElement($('.hero_text_wrapper'), 'Hassle-free training for your entire financial institution'), 7000);
+    browser.wait(EC.textToBePresentInElement($('.hero_text_wrapper'), 'Training for your Entire Financial Institution'), 7000);
 }
 
 
