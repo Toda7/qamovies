@@ -104,15 +104,17 @@ describe('Test restricted area message', function(){
 
     it('Klik na Proceed to Checkout dugme', function () {
         testTwentyProductsOrder.clickProceedToCheckout();
-        browser.sleep(5000);
+        browser.sleep(7000);
     });
 
     it('Klik on restricted address to select it', function () {
         testRestrictedAreaMessage.clickOnRestrictedAddress();
+        browser.sleep(3000);
     });
 
     it('Provera da li se pojavila restricted message', function () {
         testRestrictedAreaMessage.checkRestrictedMessage();
+        browser.sleep(3000);
     });
 
     it(' Dolazak na home page', function(){
