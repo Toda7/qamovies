@@ -46,7 +46,7 @@ describe('Provera da li se pojavio switch za admina', function(){
 
     it('Dolazak na shop home page', function(){
         testReturnPolicy.landOnTrugloPage();
-        browser.sleep(5000);
+        browser.sleep(7000);
     });
 
     it('Klik on link from navigation menu', function(){

@@ -39,23 +39,27 @@ describe('Cart With FFL And Regular Product', function () {
 
     it('Dodaj proizvod u korpu', function () {
         testTwentyProductsOrder.addToCart();
-        browser.sleep(7000);
+        browser.sleep(5000);
     });
 
     it('Provera da li se ucitao restriction warning', function () {
         testCartWithFFLAndRegularProduct.checkRestrictionMessage();
+        browser.sleep(2000);
     });
 
     it('Klik na cart', function(){
         testAttentionWindow.clickOnCart();
+        browser.sleep(3000);
     });
 
     it(' Klik on Delete product icon', function(){
         testAttentionWindow.clickOnDeleteProductIcon();
+        browser.sleep(3000);
     });
 
     it(' Klik on Ok in confirm message', function(){
         testAttentionWindow.clickOnDeleteConfirmation();
+        browser.sleep(3000);
     });
 
     afterAll(function () {

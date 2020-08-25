@@ -15,7 +15,7 @@ describe('Test SKU change - 1 drop down menu', function () {
     });
 
     it('Klik na Cetvrti proizvod', function () {
-        testTwentyProductsOrder.click4thProduct();
+        testTwentyProductsOrder.click5thProduct();
     });
 
     it('Provera da li je dobar Parent SKU', function () {

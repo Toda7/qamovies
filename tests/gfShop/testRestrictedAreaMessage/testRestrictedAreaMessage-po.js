@@ -26,10 +26,9 @@ function clickOnRestrictedAddress() {
 
 function checkRestrictedMessage(){ 
    // Provera da li se pojavila restricted message 
-var EC = protractor.ExpectedConditions;
-browser.wait(EC.textToBePresentInElement($('.message.message-error.error'), 'Restrictions prevent us from shipping this item to CA, LA, MN, and NJ'), 7000);
+      var xxx = element(by.className('message error'));
+      expect(xxx.getText()).toEqual('Restrictions prevent us from shipping this item to CA, LA, MN, and NJ');
 }
-
 
 function clickOnDeletetLink() {
    // Klik on delete link for address

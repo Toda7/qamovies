@@ -18,7 +18,7 @@ function click1Product() {
  function checkSuccessMsg(){
     var EC = protractor.ExpectedConditions;
     // Provera da li smo dobili success poruku
-    browser.wait(EC.textToBePresentInElement($('.message-success.success.message'), 'You added ACCU X™ CAPTURE BOWFISHING REST to your shopping cart.'), 7000);
+    browser.wait(EC.textToBePresentInElement($('.message-success.success.message'), 'You added ACCU X™ CAPTURE BOWFISHING REST-disc to your shopping cart.'), 7000);
     browser.sleep(5000);
  }
 
