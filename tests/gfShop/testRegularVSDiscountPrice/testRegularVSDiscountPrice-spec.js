@@ -59,6 +59,7 @@ describe('Da li se na home, na listOfProduct i na ProductDetails strani nalazi i
 
     it('Otvori mini korpu', function () {
         testTwentyProductsOrder.openMiniCart();
+        browser.sleep(3000);
     });
 
     it('Provera discount cene za prvi prozivod in mini cart', function(){
@@ -71,6 +72,7 @@ describe('Da li se na home, na listOfProduct i na ProductDetails strani nalazi i
 
     it('Klik na View And Edit Cart', function () {
         testTwentyProductsOrder.clickViewAndEditCart();
+        browser.sleep(3000);
     });
 
     it('Provera discount cene za prvi prozivod on view and edit cart page', function(){
@@ -83,10 +85,12 @@ describe('Da li se na home, na listOfProduct i na ProductDetails strani nalazi i
 
     it('Klik na Proceed to Checkout dugme', function () {
         testTwentyProductsOrder.clickProceedToCheckout();
+        browser.sleep(3000);
     });
 
     it('Klik to open items section', function () {
         testRegularVSDiscountPrice.clickToOpenItemsSection();
+        browser.sleep(3000);
     });
 
     it('Provera regular cene za prvi prozivod na checkout strani', function () {
@@ -95,14 +99,17 @@ describe('Da li se na home, na listOfProduct i na ProductDetails strani nalazi i
 
     it('Dolazak na product details page', function(){
         testAttentionWindow.landOnProductPage();
+        browser.sleep(3000);
     });
 
     it('Klik na cart', function(){
         testAttentionWindow.clickOnCart();
+        browser.sleep(3000);
     });
 
     it(' Klik on Delete product icon', function(){
         testAttentionWindow.clickOnDeleteProductIcon();
+        browser.sleep(3000);
     });
 
     it(' Klik on Ok in confirm message', function(){

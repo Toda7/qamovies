@@ -1,13 +1,13 @@
 function checkProductDetailsPageUrl() {
    // Provera da li se ucitao dobar URL za Product Details stranu
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/accu-x-capture-bowfishing-rest.html'), 7000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/carbon-xs-drop-away-arrow-rest.html'), 7000);
 }
 
 function checkProductBreadcrumb() {
    // Provera da li se ucitao poslednji breadcrumb (ime proizvoda)
    var xxx = element(by.className('item product'));
-   expect(xxx.getText()).toEqual('ACCU X™ CAPTURE BOWFISHING REST');
+   expect(xxx.getText()).toEqual('CARBON XS™ DROP-AWAY ARROW REST');
    browser.sleep(1000);
 }
 

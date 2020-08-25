@@ -55,22 +55,27 @@ describe('Pravljenje adrese na Checkout strani', function () {
 
     it('Unesi Company name', function () {
         testAddFirstAddressOnCheckout.enterCompanyName();
+        browser.sleep(2000);
     });
 
     it('Unesi Street name', function () {
         testAddFirstAddressOnCheckout.enterStreetName();
+        browser.sleep(2000);
     });
 
     it('Unesi City name', function () {
         testAddFirstAddressOnCheckout.enterCityName();
+        browser.sleep(2000);
     });
     
     it('Klik to select Province from drop', function () {
         testAddFirstAddressOnCheckout.clickToSelectProvince();
+        browser.sleep(2000);
     });
 
     it('Unesi Zip', function () {
         testAddFirstAddressOnCheckout.enterZipCode();
+        browser.sleep(2000);
     });
 
     it('Unesi broj telefona', function () {
@@ -80,32 +85,39 @@ describe('Pravljenje adrese na Checkout strani', function () {
 
     it('Klik on NEXT', function () {
         testAddFirstAddressOnCheckout.clickOnNext();
+        browser.sleep(2000);
     });
 
     it('Provera da li je Adresa vidljiva na Review & Payments', function () {
         testAddFirstAddressOnCheckout.checkEnteredAddress();
+        browser.sleep(2000);
     });
 
     // Order treba da se zavrsi kada prorade kartice
 
     it('Dolazak na detail stranu Product-a', function () {
         testAddFirstAddressOnCheckout.landOnSpypointProductDetailPage();
+        browser.sleep(2000);
     });
 
     it('Klik na add to cart button', function () {
         testAddFirstAddressOnCheckout.clickOnAddToCart();
+        browser.sleep(2000);
     });
 
     it('Klik to open cart', function () {
         testAddFirstAddressOnCheckout.clickToOpenCart();
+        browser.sleep(2000);
     });
 
     it(' Klik on Delete product icon', function(){
         testAttentionWindow.clickOnDeleteProductIcon();
+        browser.sleep(2000);
     });
 
     it(' Klik on Ok in confirm message', function(){
         testAttentionWindow.clickOnDeleteConfirmation();
+        browser.sleep(2000);
     });
 
     afterAll(function () {

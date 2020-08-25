@@ -144,22 +144,27 @@ describe('Add billing adresu i error poruke za required polja', function () {
 
     it('Dolazak na user datail', function(){
         testAddBillingAddress.goToUserDetail();
+        browser.sleep(7000);
     });
 
     it('Click na address', function(){
         testAddBillingAddress.clickOnAddressesLink();
+        browser.sleep(4000);
     });
 
     it('Klik na Select link da se otvori drop menu', function(){
         testAddBillingAddress.clickOnSelectLink();
+        browser.sleep(2000);
     });
 
     it('Klik na Delete iz drop menija', function(){
         testAddBillingAddress.clickOnDelete();
+        browser.sleep(2000);
     });
 
     it('Klik na OK u Confirm Delete modalu', function(){
         testAddBillingAddress.clickOnOkInModal();
+        browser.sleep(2000);
     });
 
     afterAll(function () {

@@ -11,34 +11,42 @@ describe('Provera error poruke kada ne selektujemo option or box i kada ne stavi
 
     it('Dolazak na product with one box details page', function () {
         testProductWithOneBox.landOnProductDetailsPage();
+        browser.sleep(1000);
     });
 
     it('Klik on ADD TO CART button', function () {
         testTwentyProductsOrder.addToCart();
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitala required message za box', function () {
         testErrorMessageOnProductDetails.checkRequiredMessageForBox();
+        browser.sleep(1000);
     });
 
     it('Klik to select Medium box', function(){
         testProductWithOneBox.clickOnMediumBox();
+        browser.sleep(1000);
     }); 
 
     it('Brisanje broja iz qty polja', function () {
         testErrorMessageOnProductDetails.clearQtyField();
+        browser.sleep(1000);
     });
 
     it('Klik on ADD TO CART button', function () {
         testTwentyProductsOrder.addToCart();
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitala required message jer nema broja u QTY', function () {
         testErrorMessageOnProductDetails.checkRequiredMessageForQTY();
+        browser.sleep(1000);
     });
 
     it('Unesi broja iz qty polja', function () {
         testErrorMessageOnProductDetails.EnterQty();
+        browser.sleep(1000);
     });
 
     it('Klik on ADD TO CART button', function () {
@@ -53,43 +61,52 @@ describe('Provera error poruke kada ne selektujemo option or box i kada ne stavi
 
     it(' Klik on Delete product icon', function(){
         testAttentionWindow.clickOnDeleteProductIcon();
+        browser.sleep(2000);
     });
 
     it(' Klik on Ok in confirm message', function(){
         testAttentionWindow.clickOnDeleteConfirmation();
+        browser.sleep(3000);
     });
 
     it('Dolazak na product koji ima drop ', function () {
         testErrorMessageOnProductDetails.landOnProductDetailsPage();
+        browser.sleep(1000);
     });
 
     it('Klik on ADD TO CART button', function () {
         testTwentyProductsOrder.addToCart();
-        browser.sleep(6000);
+        browser.sleep(64000);
     });
 
     it('Provera da li se ucitala required message za drop', function () {
         testErrorMessageOnProductDetails.checkRequiredMessageForDrop();
+        browser.sleep(1000);
     });
 
     it('Select option from drop', function () {
         testErrorMessageOnProductDetails.selectOptionFromDrop();
+        browser.sleep(1000);
     });
 
     it('Brisanje broja iz qty polja', function () {
         testErrorMessageOnProductDetails.clearQtyField();
+        browser.sleep(1000);
     });
 
     it('Klik on ADD TO CART button', function () {
         testTwentyProductsOrder.addToCart();
+        browser.sleep(1000);
     });
 
     it('Provera da li se ucitala required message jer nema broja u QTY', function () {
         testErrorMessageOnProductDetails.checkRequiredMessageForQTY();
+        browser.sleep(1000);
     });
 
     it('Unesi broja iz qty polja', function () {
         testErrorMessageOnProductDetails.EnterQty();
+        browser.sleep(1000);
     });
 
     it('Klik on ADD TO CART button', function () {
@@ -104,10 +121,12 @@ describe('Provera error poruke kada ne selektujemo option or box i kada ne stavi
 
     it(' Klik on Delete product icon', function(){
         testAttentionWindow.clickOnDeleteProductIcon();
+        browser.sleep(4000);
     });
 
     it(' Klik on Ok in confirm message', function(){
         testAttentionWindow.clickOnDeleteConfirmation();
+        browser.sleep(1000);
     });
 
 
