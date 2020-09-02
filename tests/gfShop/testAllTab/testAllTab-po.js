@@ -6,7 +6,7 @@ function landOnTrugloShop() {
 
 function clickOntestAllTab() {
     //  Klik na All tab
-    browser.wait(element(by.className('secondary-navigation-button-wrap')).click(), 5000);
+    element(by.className('secondary-navigation-button')).click()
     browser.sleep(5000);
 }
 

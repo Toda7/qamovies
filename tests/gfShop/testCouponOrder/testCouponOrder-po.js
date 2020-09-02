@@ -40,14 +40,14 @@ function checkShippingPriceWithCoupon() {
 function checkShippingPriceWithCoupon2() {
    // Provera shipping cene sa iskoriscenim kuponom na Payment strani
    var xxx = element(by.className('totals shipping excl'));
-   expect(xxx.getText()).toEqual('Shipping\nFlat Rate - Fixed\n$0.00');
+   expect(xxx.getText()).toEqual('Shipping (ATQA_Coupon)\nFlat Rate - Fixed\n$0.00');
    browser.sleep(1000);
 }
 
 function checkShippingPriceWithCoupon3() {
    // Provera shipping cene sa iskoriscenim kuponom na My Order strani
    var xxx = element(by.className('shipping'));
-   expect(xxx.getText()).toEqual('Shipping & Handling $0.00');
+   expect(xxx.getText()).toEqual('Shipping & Handling (ATQA_Coupon) $0.00');
    browser.sleep(1000);
 }
 
