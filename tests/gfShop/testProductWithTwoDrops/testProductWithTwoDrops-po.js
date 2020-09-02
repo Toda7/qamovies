@@ -19,7 +19,7 @@ function selectFristOptionForFirstDrop(){
 function checkFirstOptonFirstDropSku() {
    // Provera SKU-a for first option in frist drop
    var xxx = element(by.className('product attribute sku'));
-   expect(xxx.getText()).toEqual('SKU ESN1226PGM');
+   expect(xxx.getText()).toEqual('SKU ESN');
 }
 
 function selectFirstOptionForSecondDrop(){
@@ -37,6 +37,12 @@ function selectSecondOptionForSecondDrop(){
 function checkSecondOptonSecondDropSku() {
    // Provera SKU-a for first option in first drop and second option in second drop
    var xxx = element(by.className('product attribute sku'));
+   expect(xxx.getText()).toEqual('SKU ESN1226PGM');
+}
+
+function checkFirstInFirstSecondInSecond() {
+   // Provera SKU-a for first option in first drop and second option in second drop
+   var xxx = element(by.className('product attribute sku'));
    expect(xxx.getText()).toEqual('SKU ESN1228PGM');
 }
 
@@ -49,7 +55,7 @@ function selectSecondOptionForFirstDrop(){
 function checkSecondOptonFirstDropSku() {
    // Provera SKU-a for second option in first drop and second option in second drop
    var xxx = element(by.className('product attribute sku'));
-   expect(xxx.getText()).toEqual('SKU ESN2026PGM');
+   expect(xxx.getText()).toEqual('SKU ESN');
    browser.sleep(3000);
 }
 
@@ -57,6 +63,13 @@ function checkSecondOptonsFirstSecondDropSku() {
    // Provera SKU-a for second option in second drop and second option in second drop
    var xxx = element(by.className('product attribute sku'));
    expect(xxx.getText()).toEqual('SKU ESN2028PGM');
+   browser.sleep(3000);
+}
+
+function checkSecondInFirstAndFirstInSecond() {
+   // Provera SKU-a for second option in second drop and second option in second drop
+   var xxx = element(by.className('product attribute sku'));
+   expect(xxx.getText()).toEqual('SKU ESN2026PGM');
    browser.sleep(3000);
 }
 
@@ -71,4 +84,6 @@ function checkSecondOptonsFirstSecondDropSku() {
    selectSecondOptionForFirstDrop,
    checkSecondOptonFirstDropSku,
    checkSecondOptonsFirstSecondDropSku,
+   checkFirstInFirstSecondInSecond,
+   checkSecondInFirstAndFirstInSecond,
 }

@@ -28,7 +28,7 @@ describe('Test product with two drops', function(){
 
     it('Provera SKU-a for first option in first drop and first option in second drop', function(){
         // sku je isti kao i kada smo selektovali frist option/drop zato je ista funkcija u ovom itu
-        testProductWithTwoDrops.checkFirstOptonFirstDropSku();
+        testProductWithTwoDrops.checkSecondOptonSecondDropSku();
     });
 
     it('Klik to select Second option in Second drop', function(){
@@ -36,14 +36,14 @@ describe('Test product with two drops', function(){
     });
 
     it('Provera SKU-a for first option in first drop and second option in second drop', function(){
-        testProductWithTwoDrops.checkSecondOptonSecondDropSku();
+        testProductWithTwoDrops.checkFirstInFirstSecondInSecond();
     });
 
     it('Klik to select Second option in first drop', function(){
         testProductWithTwoDrops.selectSecondOptionForFirstDrop();
     });
 
-    it('Provera SKU-a for second option in first drop and second option in second drop', function(){
+    it('Provera SKU-a for second option in first drop', function(){
         testProductWithTwoDrops.checkSecondOptonFirstDropSku();
     });
 
@@ -52,8 +52,7 @@ describe('Test product with two drops', function(){
     });
 
     it('Provera SKU-a for second option in first drop and first option in second drop', function(){
-        // sku je isti kao i kada smo selektovali second option for first drop zato je ista funkcija u ovom itu
-        testProductWithTwoDrops.checkSecondOptonFirstDropSku();
+        testProductWithTwoDrops.checkSecondInFirstAndFirstInSecond();
     });
 
     it('Klik to select Second option in second drop', function(){
