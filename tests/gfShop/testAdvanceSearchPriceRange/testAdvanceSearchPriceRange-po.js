@@ -68,8 +68,8 @@ function enterProductPriceFrom() {
 
  function checkSerchedProducts() {
     var EC = protractor.ExpectedConditions;
-    // Da li smo dobili 48 produkta
-    browser.wait(EC.textToBePresentInElement($('.search.found'), '48 items'), 5000);
+    // Da li smo dobili 47 produkta
+    browser.wait(EC.textToBePresentInElement($('.search.found'), '47 items'), 5000);
     browser.sleep(2000);
  }
 
