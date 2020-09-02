@@ -28,12 +28,6 @@ function click3rdProduct() {
    browser.sleep(2000);
 }
 
-function click4thProduct() {
-   // Klik na Cetvrti proizvod 
-   element(by.className('column main')).all(by.className('product-image-photo')).get(5).click();
-   browser.sleep(2000);
-}
-
 function chooseOption() {
    // Izaberi opciju iz dropa 
    element(by.name('super_attribute[412]')).all(by.tagName('option')).get(1).click();
@@ -46,39 +40,16 @@ function click5thProduct() {
    browser.sleep(2000);
 }
 
-function click6thProduct() {
-   // Klik na Sesti proizvod 
-   element(by.className('column main')).all(by.className('product-image-photo')).get(7).click();
-   browser.sleep(2000);
-}
-
-function click7thProduct() {
-   // Klik na Sedmi proizvod 
-   element(by.className('column main')).all(by.className('product-image-photo')).get(8).click();
-   browser.sleep(2000);
-}
-
 function chooseOption() {
    // Izaberi opciju iz dropa 
    element(by.name('super_attribute[412]')).all(by.tagName('option')).get(1).click();
    browser.sleep(2000);
 }
 
-function click8thProduct() {
-   // Klik na Osmi proizvod 
-   element(by.className('column main')).all(by.className('product-image-photo')).get(10).click();
-   browser.sleep(2000);
-}
 
 function chooseOption() {
    // Izaberi opciju iz dropa 
    element(by.name('super_attribute[412]')).all(by.tagName('option')).get(1).click();
-   browser.sleep(2000);
-}
-
-function click9thProduct() {
-   // Klik na Deveti proizvod 
-   element(by.className('column main')).all(by.className('product-image-photo')).get(11).click();
    browser.sleep(2000);
 }
 
@@ -88,11 +59,6 @@ function clickNextArrowInPagination() {
    browser.sleep(2000);
 }
 
-function click10thProduct() {
-   // Klik na Deseti proizvod 
-   element(by.className('column main')).all(by.className('product-image-photo')).get(0).click();
-   browser.sleep(2000);
-}
 
 function landOnSecondArcheryPage() {
    // Dolazak na drugu Archery stranu 
@@ -100,76 +66,10 @@ function landOnSecondArcheryPage() {
    browser.sleep(2000);
 }
 
-function click11thProduct() {
-   // Klik na Jedanaesti proizvod 
-   element(by.className('column main')).all(by.className('product-image-photo')).get(1).click();
-   browser.sleep(2000);
-}
-
-function click12thProduct() {
-   // Klik na Dvanaesti proizvod 
-   element(by.className('column main')).all(by.className('product-image-photo')).get(2).click();
-   browser.sleep(2000);
-}
-
-function click13thProduct() {
-   // Klik na Trinaesti proizvod 
-   element(by.className('column main')).all(by.className('product-image-photo')).get(3).click();
-   browser.sleep(2000);
-}
-
-function click14thProduct() {
-   // Klik na Cetrnaesti proizvod 
-   element(by.className('column main')).all(by.className('product-image-photo')).get(5).click();
-   browser.sleep(2000);
-}
-
-function click15thProduct() {
-   // Klik na Petnaesti proizvod 
-   element(by.className('column main')).all(by.className('product-image-photo')).get(6).click();
-   browser.sleep(2000);
-}
-
-function click16thProduct() {
-   // Klik na Sesnaesti proizvod 
-   element(by.className('column main')).all(by.className('product-image-photo')).get(7).click();
-   browser.sleep(2000);
-}
-
-function click17thProduct() {
-   // Klik na Sedamnaesti proizvod 
-   element(by.className('column main')).all(by.className('product-image-photo')).get(8).click();
-   browser.sleep(2000);
-}
-
-function click18thProduct() {
-   // Klik na Osamnaesti proizvod 
-   element(by.className('column main')).all(by.className('product-image-photo')).get(9).click();
-   browser.sleep(2000);
-}
-
-function click19thProduct() {
-   // Klik na Devetnaesti proizvod 
-   element(by.className('column main')).all(by.className('product-image-photo')).get(10).click();
-   browser.sleep(2000);
-}
-
-function click20thProduct() {
-   // Klik na Dvadeseti proizvod 
-   element(by.className('column main')).all(by.className('product-image-photo')).get(11).click();
-   browser.sleep(2000);
-}
-
 function clickFirearmHuntingLink() {
    // Klik na Firearm Hunting Link(
    element(by.className('level0 nav-2 uno parent')).click();
    browser.sleep(3000);
-}
-
-function click21stProduct() {
-   // Klik na Dvadeset Prvi  
-   element(by.className('column main')).all(by.className('product-image-photo')).get(0).click();
-   browser.sleep(2000);
 }
 
 function chooseOption414() {
@@ -233,6 +133,139 @@ function clickViewOrder() {
    browser.sleep(2000);
 }
 
+// testove za click on product nisam brisao jer neke od njih koristimo jos u nekim testovima, neka ih za sad 
+
+function landOnProduct1() {
+   // Dolazak na product 1  
+   browser.get('https://shop.outfitterextreme.com/truglo/carbon-xs-drop-away-arrow-rest.html');
+   browser.sleep(2000);
+}
+
+function landOnProduct2() {
+   // Dolazak na product 2  
+   browser.get('https://shop.outfitterextreme.com/truglo/accu-x-capture-bowfishing-rest.html');
+   browser.sleep(2000);
+}
+
+function landOnProduct3() {
+   // Dolazak na product 3 
+   browser.get('https://shop.outfitterextreme.com/truglo/spring-shot-bowfishing-rest.html');
+   browser.sleep(2000);
+}
+
+function landOnProduct4() {
+   // Dolazak na product 4
+   browser.get('https://shop.outfitterextreme.com/truglo/springfisher-bowfishing-arrow.html');
+   browser.sleep(2000);
+}
+
+function landOnProduct5() {
+   // Dolazak na product 5
+   browser.get('https://shop.outfitterextreme.com/truglo/carpedo-bowfishing-arrow.html');
+   browser.sleep(2000);
+}
+
+function landOnProduct6() {
+   // Dolazak na product 6
+   browser.get('https://shop.outfitterextreme.com/truglo/lunker-bowfishing-arrow.html');
+   browser.sleep(2000);
+}
+
+function landOnProduct7() {
+   // Dolazak na product 7
+   browser.get('https://shop.outfitterextreme.com/truglo/optioptispeed-velocity-calibrated-bdc-crossbow-scope.html');
+   browser.sleep(2000);
+}
+
+function landOnProduct8() {
+   // Dolazak na product 8
+   browser.get('https://shop.outfitterextreme.com/truglo/titanium-x-fixed-crossbow-broadheads.html');
+   browser.sleep(2000);
+}
+
+function landOnProduct9() {
+   // Dolazak na product 9
+   browser.get('https://shop.outfitterextreme.com/truglo/titanium-x-mechanical-crossbow-broadheads.html');
+   browser.sleep(2000);
+}
+
+function landOnProduct10() {
+   // Dolazak na product 10
+   browser.get('https://shop.outfitterextreme.com/truglo/tru-fit-universal-replacement-release-strap.html');
+   browser.sleep(2000);
+}
+
+function landOnProduct11() {
+   // Dolazak na product 11
+   browser.get('https://shop.outfitterextreme.com/truglo/tru-point-xtreme-universal-shotgun-sights.html');
+   browser.sleep(2000);
+}
+
+function landOnProduct12() {
+   // Dolazak na product 12
+   browser.get('https://shop.outfitterextreme.com/truglo/tru-brite-dual-color-multi-reticle.html');
+   browser.sleep(2000);
+}
+
+function landOnProduct13() {
+   // Dolazak na product 13
+   browser.get('https://shop.outfitterextreme.com/truglo/tru-tec-micro-subcompact-open-red-dot-sight.html');
+   browser.sleep(2000);
+}
+
+function landOnProduct14() {
+   // Dolazak na product 14
+   browser.get('https://shop.outfitterextreme.com/truglo/hip-shot-adaptive-shooting-rest.html');
+   browser.sleep(2000);
+}
+
+function landOnProduct15() {
+   // Dolazak na product 15
+   browser.get('https://shop.outfitterextreme.com/truglo/tfx-pro-remington-shotgun-sights.html');
+   browser.sleep(2000);
+}
+
+function landOnProduct16() {
+   // Dolazak na product 16
+   browser.get('https://shop.outfitterextreme.com/truglo/omnia-1-6x24-30mm-ir-sp-1pc-illuminated-reticle-tactical-scope.html');
+   browser.sleep(2000);
+}
+
+function landOnProduct17() {
+   // Dolazak na product 17
+   browser.get('https://shop.outfitterextreme.com/truglo/eminus4-16x44-30mm-ir-ml-1pc-illuminated-reticle-tactical-scope.html');
+   browser.sleep(2000);
+}
+
+function landOnProduct18() {
+   // Dolazak na product 18
+   browser.get('https://shop.outfitterextreme.com/truglo/tfx-pro-handgun-day-night-sights-tfx-ber-px4-storm-frnt-pro-orn.html');
+   browser.sleep(2000);
+}
+
+function landOnProduct19() {
+   // Dolazak na product 19
+   browser.get('https://shop.outfitterextreme.com/truglo/new-head-banger-long-range-turkey-choke-tube.html');
+   browser.sleep(2000);
+}
+
+function chooseOption1ForProduct19() {
+   // Izaberi opciju 1 iz dropa 414
+   element(by.name('super_attribute[414]')).all(by.tagName('option')).get(1).click();
+   browser.sleep(2000);
+}
+
+function chooseOption2ForProduct19() {
+   // Izaberi opciju 2 iz dropa 414
+   element(by.name('super_attribute[414]')).all(by.tagName('option')).get(2).click();
+   browser.sleep(2000);
+}
+
+function chooseOption3ForProduct19() {
+   // Izaberi opciju 3 iz dropa 414
+   element(by.name('super_attribute[414]')).all(by.tagName('option')).get(3).click();
+   browser.sleep(2000);
+}
 
 module.exports = {
    landOnArcheryPage,
@@ -240,30 +273,13 @@ module.exports = {
    addToCart,
    click2ndProduct,
    click3rdProduct,
-   click4thProduct,
    chooseOption,
    click5thProduct,
-   click6thProduct,
-   click7thProduct,
    chooseOption,
-   click8thProduct,
    chooseOption,
-   click9thProduct,
    clickNextArrowInPagination,
-   click10thProduct,
    landOnSecondArcheryPage,
-   click11thProduct,
-   click12thProduct,
-   click13thProduct,
-   click14thProduct,
-   click15thProduct,
-   click16thProduct,
-   click17thProduct,
-   click18thProduct,
-   click19thProduct,
-   click20thProduct,
    clickFirearmHuntingLink,
-   click21stProduct,
    chooseOption414,
    openMiniCart,
    clickViewAndEditCart,
@@ -274,4 +290,27 @@ module.exports = {
    clickAvatarInHeader,
    clickMyAccount,
    clickViewOrder,
+   landOnProduct1,
+   landOnProduct2,
+   landOnProduct3,
+   landOnProduct4,
+   landOnProduct5,
+   landOnProduct6,
+   landOnProduct7,
+   landOnProduct8,
+   landOnProduct9,
+   landOnProduct10,
+   landOnProduct11,
+   landOnProduct12,
+   landOnProduct13,
+   landOnProduct14,
+   landOnProduct15,
+   landOnProduct16,
+   landOnProduct17,
+   landOnProduct18,
+   landOnProduct19,
+   chooseOption1ForProduct19,
+   chooseOption2ForProduct19,
+   chooseOption3ForProduct19,
+
 }
