@@ -361,6 +361,56 @@ function landProduct62DetailsPage() {
     browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/7793/');
 }
 
+function landProduct63DetailsPage() {
+    // Dolazak na product 63 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/48310/');
+}
+
+function landProduct64DetailsPage() {
+    // Dolazak na product 64 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/7793/');
+}
+
+function landProduct65DetailsPage() {
+    // Dolazak na product 65 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/27128/');
+}
+
+function landProduct66DetailsPage() {
+    // Dolazak na product 66 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/27105/');
+}
+
+function landProduct67DetailsPage() {
+    // Dolazak na product 67 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/27080/');
+}
+
+function landProduct68DetailsPage() {
+    // Dolazak na product 68 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/72540/');
+}
+
+function landProduct69DetailsPage() {
+    // Dolazak na product 69 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/72541/');
+}
+
+function landProduct70DetailsPage() {
+    // Dolazak na product 70 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/27150/');
+}
+
+function landProduct71DetailsPage() {
+    // Dolazak na product 71 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/27136/');
+}
+
+function landProduct72DetailsPage() {
+    // Dolazak na product 72 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/27137/');
+}
+
 module.exports = {
     checkSaveButton,
     clickSwitch,
@@ -430,5 +480,15 @@ module.exports = {
     landProduct60DetailsPage,
     landProduct61DetailsPage,
     landProduct62DetailsPage,
+    landProduct63DetailsPage,
+    landProduct64DetailsPage,
+    landProduct65DetailsPage,
+    landProduct66DetailsPage,
+    landProduct67DetailsPage,
+    landProduct68DetailsPage,
+    landProduct69DetailsPage,
+    landProduct70DetailsPage,
+    landProduct71DetailsPage,
+    landProduct72DetailsPage,
 }
 

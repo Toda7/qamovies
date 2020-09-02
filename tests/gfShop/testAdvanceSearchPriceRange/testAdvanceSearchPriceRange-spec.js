@@ -35,7 +35,7 @@ describe('Advance Search, search po Price range i error poruka', function () {
         testAdvanceSearchShortDescription.checkModifyMsg();
     });
 
-    it('Da li smo dobili 48 producta na search', function () {
+    it('Da li smo dobili 47 producta na search', function () {
         testAdvanceSearchPriceRange.checkSerchedProducts();
     });
 
