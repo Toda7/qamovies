@@ -85,7 +85,7 @@ describe('Pravljenje adrese na Checkout strani', function () {
 
     it('Klik on NEXT', function () {
         testAddFirstAddressOnCheckout.clickOnNext();
-        browser.sleep(2000);
+        browser.sleep(5000);
     });
 
     it('Provera da li je Adresa vidljiva na Review & Payments', function () {

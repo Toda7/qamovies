@@ -149,10 +149,9 @@ exports.config = {
       './gfShop/testPoBoxAddressFromCheckout/testPoBoxAddressFromCheckout-spec.js'
     ],
 
-    // testCouponOrder: [
-    // imamo tiket - https://guidefitter.atlassian.net/browse/SHOP-1117 
-    //   './gfShop/testCouponOrder/testCouponOrder-spec.js'
-    // ],
+    testCouponOrder: [
+      './gfShop/testCouponOrder/testCouponOrder-spec.js'
+    ],
 
     testSaveInAddressBookOptionForNewAddress: [
       './gfShop/testSaveInAddressBookOptionForNewAddress/testSaveInAddressBookOptionForNewAddress-spec.js'
@@ -178,14 +177,13 @@ exports.config = {
       './gfShop/testCartWithFFLAndRegularProduct/testCartWithFFLAndRegularProduct-spec.js'
     ],
 
-    // testPrintOrderPage: [
-    // ne radimo testove za Print strane na windowsu, jer imamo problem sa zatvaranjem print windowsa
-    //   './gfShop/testPrintOrderPage/testPrintOrderPage-spec.js'
-    // ],
+    testPrintOrderPage: [
+      './gfShop/testPrintOrderPage/testPrintOrderPage-spec.js'
+    ],
 
-    // testPrintInvoicePage: [
-    //   './gfShop/testPrintInvoicePage/testPrintInvoicePage-spec.js'
-    // ],
+    testPrintInvoicePage: [
+      './gfShop/testPrintInvoicePage/testPrintInvoicePage-spec.js'
+    ],
 
     // testSaveCcForNextTime: [
     //   // Ovo sranje ne radi dok ne provalimo u cemu je fora sa Authorize.net errorom na Payment strani

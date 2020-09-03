@@ -19,7 +19,7 @@ function checkUrl() {
 function checkSuccess() {
    var EC = protractor.ExpectedConditions;
    // Provera da li je dobra paginacija
-   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 13-24 of 24'), 7000);
+   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 13-23 of 23'), 7000);
    browser.sleep(2500);
 }
 

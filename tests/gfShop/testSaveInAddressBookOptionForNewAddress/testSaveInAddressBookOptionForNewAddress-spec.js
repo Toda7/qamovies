@@ -73,7 +73,7 @@ describe('Test save in address book option for new address on checkout page', fu
 
     it('Klik na Next dugme', function () {
         testTwentyProductsOrder.clickNext();
-        browser.sleep(4000);
+        browser.sleep(5000);
     });
 
     it('Klik na Place Order dugme', function () {
