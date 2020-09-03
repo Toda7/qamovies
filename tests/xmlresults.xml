@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="15" time="89.676">
+ <testsuite name="Log in as Bradly Seales" timestamp="2020-09-03T14:36:11" hostname="localhost" time="12.319" errors="0" tests="5" skipped="0" disabled="0" failures="0">
+  <testcase classname="Log in as Bradly Seales" name="Dolazak na home page" time="3.947" />
+  <testcase classname="Log in as Bradly Seales" name="Klik na Contine with email button" time="2.057" />
+  <testcase classname="Log in as Bradly Seales" name="Unosenje user email" time="0.126" />
+  <testcase classname="Log in as Bradly Seales" name="Unosenje user passworda" time="0.106" />
+  <testcase classname="Log in as Bradly Seales" name="Klik on Sign in button" time="6.075" />
+ </testsuite>
+ <testsuite name="Edit qty na edit cart strani" timestamp="2020-09-03T14:36:23" hostname="localhost" time="77.357" errors="0" tests="10" skipped="0" disabled="0" failures="0">
+  <testcase classname="Edit qty na edit cart strani" name="Dolazak na Bowfishing page" time="10.225" />
+  <testcase classname="Edit qty na edit cart strani" name="Klik na Product" time="5.775" />
+  <testcase classname="Edit qty na edit cart strani" name="Click Add to Cart" time="8.071" />
+  <testcase classname="Edit qty na edit cart strani" name="Click On Cart" time="8.073" />
+  <testcase classname="Edit qty na edit cart strani" name="Click On View and Edit" time="9.943" />
+  <testcase classname="Edit qty na edit cart strani" name="Check URL View and Edit" time="3.012" />
+  <testcase classname="Edit qty na edit cart strani" name="klik na qty opolje" time="8.056" />
+  <testcase classname="Edit qty na edit cart strani" name="Unos broja Productae" time="8.084" />
+  <testcase classname="Edit qty na edit cart strani" name="Click na Update button" time="8.069" />
+  <testcase classname="Edit qty na edit cart strani" name="Check edit success" time="8.045" />
+ </testsuite>
+</testsuites>

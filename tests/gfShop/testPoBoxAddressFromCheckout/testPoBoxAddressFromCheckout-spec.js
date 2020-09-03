@@ -71,6 +71,11 @@ describe('Test PO box address from checkout', function(){
         browser.sleep(4000);
     });
 
+    it('Klik na SPACE', function () {
+        testPoBoxAddressFromCheckout.clickOnSpace();
+        browser.sleep(1000);
+    });
+
     it('Klik na Ship here button za prvi adresu', function () {
         testPoBoxAddressFromCheckout.clickOnShipHereButtonForFirstAddress();
         browser.sleep(8000);

@@ -45,6 +45,11 @@ function clickOnShipHereButtonForFirstAddress(){
    element(by.className('action action-select-shipping-item')).click();
 }
 
+function clickOnSpace(){
+   // Klik na SPACE
+   element(by.tagName('body')).sendKeys(protractor.Key.SPACE);
+}
+
 
  module.exports = {
    lendOnProductDetails,
@@ -56,6 +61,7 @@ function clickOnShipHereButtonForFirstAddress(){
    enterPhoneNumber,
    clickOnSaveNewAddressButton,
    clickOnShipHereButtonForFirstAddress,
+   clickOnSpace,
  }
 
 
