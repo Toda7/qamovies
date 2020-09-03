@@ -154,12 +154,12 @@ describe('Add billing adresu i error poruke za required polja', function () {
 
     it('Klik na Select link da se otvori drop menu', function(){
         testAddBillingAddress.clickOnSelectLink();
-        browser.sleep(2000);
+        browser.sleep(3000);
     });
 
     it('Klik na Delete iz drop menija', function(){
         testAddBillingAddress.clickOnDelete();
-        browser.sleep(2000);
+        browser.sleep(3000);
     });
 
     it('Klik na OK u Confirm Delete modalu', function(){
