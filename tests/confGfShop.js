@@ -290,6 +290,7 @@ exports.config = {
     testAddBillingAddress: [
       './gfShop/testAddBillingAddress/testAddBillingAddress-spec.js'
     ],
+
   },
 
   capabilities: {

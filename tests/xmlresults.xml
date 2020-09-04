@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites disabled="0" errors="0" failures="0" tests="15" time="89.676">
- <testsuite name="Log in as Bradly Seales" timestamp="2020-09-03T14:36:11" hostname="localhost" time="12.319" errors="0" tests="5" skipped="0" disabled="0" failures="0">
-  <testcase classname="Log in as Bradly Seales" name="Dolazak na home page" time="3.947" />
-  <testcase classname="Log in as Bradly Seales" name="Klik na Contine with email button" time="2.057" />
-  <testcase classname="Log in as Bradly Seales" name="Unosenje user email" time="0.126" />
-  <testcase classname="Log in as Bradly Seales" name="Unosenje user passworda" time="0.106" />
+<testsuites disabled="0" errors="0" failures="0" tests="22" time="74.462">
+ <testsuite name="Log in as Bradly Seales" timestamp="2020-09-03T21:12:06" hostname="localhost" time="12.119" errors="0" tests="5" skipped="0" disabled="0" failures="0">
+  <testcase classname="Log in as Bradly Seales" name="Dolazak na home page" time="3.737" />
+  <testcase classname="Log in as Bradly Seales" name="Klik na Contine with email button" time="2.062" />
+  <testcase classname="Log in as Bradly Seales" name="Unosenje user email" time="0.129" />
+  <testcase classname="Log in as Bradly Seales" name="Unosenje user passworda" time="0.107" />
   <testcase classname="Log in as Bradly Seales" name="Klik on Sign in button" time="6.075" />
  </testsuite>
- <testsuite name="Edit qty na edit cart strani" timestamp="2020-09-03T14:36:23" hostname="localhost" time="77.357" errors="0" tests="10" skipped="0" disabled="0" failures="0">
-  <testcase classname="Edit qty na edit cart strani" name="Dolazak na Bowfishing page" time="10.225" />
-  <testcase classname="Edit qty na edit cart strani" name="Klik na Product" time="5.775" />
-  <testcase classname="Edit qty na edit cart strani" name="Click Add to Cart" time="8.071" />
-  <testcase classname="Edit qty na edit cart strani" name="Click On Cart" time="8.073" />
-  <testcase classname="Edit qty na edit cart strani" name="Click On View and Edit" time="9.943" />
-  <testcase classname="Edit qty na edit cart strani" name="Check URL View and Edit" time="3.012" />
-  <testcase classname="Edit qty na edit cart strani" name="klik na qty opolje" time="8.056" />
-  <testcase classname="Edit qty na edit cart strani" name="Unos broja Productae" time="8.084" />
-  <testcase classname="Edit qty na edit cart strani" name="Click na Update button" time="8.069" />
-  <testcase classname="Edit qty na edit cart strani" name="Check edit success" time="8.045" />
+ <testsuite name="Unos i brisanje kartice na My Payment Data strani" timestamp="2020-09-03T21:12:18" hostname="localhost" time="62.343" errors="0" tests="17" skipped="0" disabled="0" failures="0">
+  <testcase classname="Unos i brisanje kartice na My Payment Data strani" name="Dolazak na My Payment Data page" time="10.675" />
+  <testcase classname="Unos i brisanje kartice na My Payment Data strani" name="Unesi First Name" time="4.113" />
+  <testcase classname="Unos i brisanje kartice na My Payment Data strani" name="Unesi Last Name" time="4.099" />
+  <testcase classname="Unos i brisanje kartice na My Payment Data strani" name="Unesi Phone Number" time="4.106" />
+  <testcase classname="Unos i brisanje kartice na My Payment Data strani" name="Unesi Street" time="4.137" />
+  <testcase classname="Unos i brisanje kartice na My Payment Data strani" name="Unesi City" time="2.1" />
+  <testcase classname="Unos i brisanje kartice na My Payment Data strani" name="Select Texas from drop" time="2.061" />
+  <testcase classname="Unos i brisanje kartice na My Payment Data strani" name="Unesi Zip" time="2.106" />
+  <testcase classname="Unos i brisanje kartice na My Payment Data strani" name="Unesi CC Number" time="2.158" />
+  <testcase classname="Unos i brisanje kartice na My Payment Data strani" name="Select December from drop" time="2.063" />
+  <testcase classname="Unos i brisanje kartice na My Payment Data strani" name="Select 2022. from drop" time="2.057" />
+  <testcase classname="Unos i brisanje kartice na My Payment Data strani" name="Unesi CCV Number" time="2.1" />
+  <testcase classname="Unos i brisanje kartice na My Payment Data strani" name="Klik on SAVE button" time="2.127" />
+  <testcase classname="Unos i brisanje kartice na My Payment Data strani" name="Provera da li se pojavila success message posle saveovanja kartice" time="7.167" />
+  <testcase classname="Unos i brisanje kartice na My Payment Data strani" name="Klik on DELETE button" time="2.106" />
+  <testcase classname="Unos i brisanje kartice na My Payment Data strani" name="Klik on OK button da potvrdis brisanje" time="4.118" />
+  <testcase classname="Unos i brisanje kartice na My Payment Data strani" name="Provera da li se pojavila success message posle brisanja kartice" time="5.046" />
  </testsuite>
 </testsuites>
