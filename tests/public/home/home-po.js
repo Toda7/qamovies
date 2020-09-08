@@ -17,17 +17,17 @@ function checkTitleOnPage(){
 function checkNumbersOfDownloads(){
     var EC = protractor.ExpectedConditions;
     // Provera da li su se ucitali brojevi za downloads
-    browser.wait(EC.textToBePresentInElement($('.numbers_section'), '2,178,744'), 7000);
+    browser.wait(EC.textToBePresentInElement($('.numbers_section'), '3MM+'), 7000);
 }
 function checkNumberOfAnswers(){
     var EC = protractor.ExpectedConditions;
     // Provera da li su se ucitali brojevi za answers
-    browser.wait(EC.textToBePresentInElement($('.numbers_section'), '69,298'), 7000);
+    browser.wait(EC.textToBePresentInElement($('.numbers_section'), '100K'), 7000);
 }
 function checkNumbersOfFinancialInstitutions(){
     var EC = protractor.ExpectedConditions;
     // Provera da li su se ucitali brojevi za financial institutions
-    browser.wait(EC.textToBePresentInElement($('.numbers_section'), '8,545'), 7000);
+    browser.wait(EC.textToBePresentInElement($('.numbers_section'), '8600+'), 7000);
     browser.sleep(2000);
 }
 function checkIntercom(){
