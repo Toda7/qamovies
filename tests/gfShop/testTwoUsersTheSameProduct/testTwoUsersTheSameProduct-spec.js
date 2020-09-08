@@ -53,7 +53,7 @@ describe('Kupovina producta sa jednim userom, zatim logovanje sa drugim da cekir
         browser.sleep(5000);
     });
 
-    it('Unosenje numbers u qty polje', function () {
+    it('Unosenje number u qty polje', function () {
         testTwoUsersTheSameProduct.enterNumbersOfQTY();
         browser.sleep(2000);
     });
@@ -256,7 +256,51 @@ describe('Kupovina producta sa jednim userom, zatim logovanje sa drugim da cekir
 
     it('Cekira da li je Cart Empty', function () {
         testDeleteProductEditCart.checkEmptyCart();
+        browser.sleep(2000);
     });
+
+    it('Dolazak na MDP page da bi uradili sign out', function(){
+        testMessageForNoOrders.landOnMdpAsSecondUser();
+        browser.sleep(2000);
+    });
+
+    it('Klik on avatar to open user menu', function(){
+        testMessageForNoOrders.clickOnAvatarToOpenDropMenu();
+        browser.sleep(2000);
+    });
+
+    it('Klik on Sign Out link', function(){
+        testMessageForNoOrders.clickOnSignOut();
+        browser.sleep(2000);
+    });
+
+    // ponovo log in sa userom 1 
+
+    it('Dolazak na MDP page da bi uradili sign in', function(){
+        testMessageForNoOrders.landOnMdpAsSecondUser();
+        browser.sleep(2000);
+    });
+
+    it('Klik on click On Continue With Email', function(){
+        testMessageForNoOrders.clickOnContinueWithEmail();
+        browser.sleep(2000);
+    });
+
+    it('Unosenje user email', function(){
+        logInAsUser.enterEmail();
+        browser.sleep(2000);
+    });
+
+    it('Unosenje users email', function(){
+        testMessageForNoOrders.enterUserPass();
+        browser.sleep(2000);
+    });
+
+    it('Klik on Sign in with bradlyseales@gmail.com', function(){
+        testMessageForNoOrders.submit1();
+        browser.sleep(2000);
+    });
+
 
     afterAll(function () {
         browser.waitForAngularEnabled(true);

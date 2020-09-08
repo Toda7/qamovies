@@ -1,17 +1,16 @@
 function landProductMyDetailsPageInMagento() {
    // Dolazak na product product details u magentu
-   browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/72541/');
+   browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/26272/');
 }
 
 function landProductMyDetailsPage() {
    // Dolazak na product product details 
-   browser.get('https://shop.outfitterextreme.com/cuddeback/cuddelink-black-flash-model.html');
+   browser.get('https://shop.outfitterextreme.com/cuddeback/solid-aim-shooting-stick.html');
 }
 function landOnShippingCartPage() {
    // Dolazak na edit cart page 
    browser.get('https://shop.outfitterextreme.com/cuddeback/checkout/cart/');
 }
-
 
 function enterNumbersOfQTY() {
    // Unosenje numbers u qty polje
