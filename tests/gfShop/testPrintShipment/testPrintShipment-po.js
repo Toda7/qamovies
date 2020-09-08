@@ -50,7 +50,6 @@ module.exports = {
     clickOnOrderShippmentsTab,
     clickOnPrintShipment,
     clickOnEscButton,
-    checkGFLogo,
     checkTrugloLogo,
     checkOrderStatus,
     clickOnPrintAllShipments,
