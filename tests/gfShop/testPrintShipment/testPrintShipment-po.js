@@ -25,13 +25,6 @@ function clickOnEscButton() {
    browser.sleep(1000);
 }
 
-function checkGFLogo() {
-    // Provera da li je dobar GF logo na print shipment strani
-    var xxx = element.all(by.tagName('img')).get(0);
-    expect(xxx.getAttribute('src')).toEqual('https://shop.outfitterextreme.com/pub/static/version1576082407/frontend/Guidefitter/luma/en_US/images/logo-shop-print.jpg');
-    browser.sleep(1000);
-}
- 
 function checkTrugloLogo() {
     // Provera da li je dobar Truglo logo na print shipment strani
     var xxx = element.all(by.tagName('img')).get(1);
@@ -43,20 +36,6 @@ function checkOrderStatus() {
     // Provera da li je dobar Order Status
     var xxx = element(by.className('order-status'));
     expect(xxx.getText()).toEqual('COMPLETE');
-    browser.sleep(1000);
-}
-
-function checkSkuNumber() {
-    // Provera da li je dobar SKU
-    var xxx = element(by.className('col sku'));
-    expect(xxx.getText()).toEqual('99119');
-    browser.sleep(1000);
-}
-
-function checkQtyNumber() {
-    // Provera da li je dobar Qty Number
-    var xxx = element(by.className('col qty'));
-    expect(xxx.getText()).toEqual('2');
     browser.sleep(1000);
 }
 
@@ -74,7 +53,5 @@ module.exports = {
     checkGFLogo,
     checkTrugloLogo,
     checkOrderStatus,
-    checkSkuNumber,
-    checkQtyNumber,
     clickOnPrintAllShipments,
 }
