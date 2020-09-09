@@ -290,6 +290,37 @@ exports.config = {
     testAddBillingAddress: [
       './gfShop/testAddBillingAddress/testAddBillingAddress-spec.js'
     ],
+
+    // Novi testovi 
+
+    testOrderComplete: [
+      './gfShop/testOrderComplete/testOrderComplete-spec.js'
+    ],
+
+    testPrintShipment: [
+      './gfShop/testPrintShipment/testPrintShipment-spec.js'
+    ],
+
+    testTrackShipment: [
+      './gfShop/testTrackShipment/testTrackShipment-spec.js'
+    ],
+
+    testCreditMemo: [
+      './gfShop/testCreditMemo/testCreditMemo-spec.js'
+    ],
+
+    testPrintRefundPage: [
+      './gfShop/testPrintRefundPage/testPrintRefundPage-spec.js'
+    ],
+
+    testTwoUsersTheSameProduct: [
+      './gfShop/testTwoUsersTheSameProduct/testTwoUsersTheSameProduct-spec.js'
+    ],
+    
+    testMyPaymentDataPage: [
+      './gfShop/testMyPaymentDataPage/testMyPaymentDataPage-spec.js'
+    ],  
+
   },
 
   capabilities: {

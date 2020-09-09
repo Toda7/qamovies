@@ -13,7 +13,7 @@ describe('Test restricted area message', function(){
 
     it(' Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
-        browser.sleep(5000);
+        browser.sleep(7000);
     });
 
     it('Klik to open user menu', function(){
