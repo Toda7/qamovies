@@ -1,4 +1,7 @@
 var prepareProductsForTest = require('./prepareProductsForTest-po.js');
+var prepareMagentoCoupon = require('../prepareMagentoCoupon/prepareMagentoCoupon-po.js');
+
+
 
 describe('Add products to stock', function () {
 
@@ -1014,42 +1017,68 @@ describe('Add products to stock', function () {
         prepareProductsForTest.checkSuccessMessage();
     });
 
+    it('Dolazak na Magento log in page', function(){
+        prepareMagentoCoupon.LandOnLogInPage();
+    });
+
+    it('Unesi Username', function(){
+        prepareMagentoCoupon.enterUsername();
+    });
+
+    it('Unesi Password', function(){
+        prepareMagentoCoupon.enterPass();
+    });
+
+    it('Klik na Sign In dugme', function(){
+        prepareMagentoCoupon.clickOnSignIn();
+    });
+
     // proizvod 28 je parent product
-    // it('Dolazak na product 28 u magento', function () {
-    //     prepareProductsForTest.landProduct28DetailsPage();
-    //     browser.sleep(5000);
-    //     browser.executeScript('window.scrollTo(0,0);');
-    //     browser.sleep(1000);
-    // });
+    it('Dolazak na product 28 u magento', function () {
+        prepareProductsForTest.landProduct28DetailsPage();
+        browser.sleep(5000);
+        browser.executeScript('window.scrollTo(0,0);');
+        browser.sleep(1000);
+    });
 
-    // it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
-    //     prepareProductsForTest.checkSaveButton();
-    //     browser.sleep(5000);
-    // });
+    it('Provera da li se ucitao Save button, tj da li se ucitala strana', function () {
+        prepareProductsForTest.checkSaveButton();
+        browser.sleep(5000);
+    });
 
-    // it('Klik na switch', function () {
-    //     prepareProductsForTest.clickSwitch();
-    //     browser.sleep(5000);
-    // });
+    it('Klik na switch', function () {
+        prepareProductsForTest.clickSwitch();
+        browser.sleep(5000);
+    });
 
-    // it('Unosenje numbers u qty polje', function () {
-    //     prepareProductsForTest.enterNumbersOfQTY();
-    //     browser.sleep(2000);
-    // });
+    it('Selektovanje In stock option', function () {
+        prepareProductsForTest.selectInStock();
+        browser.sleep(2000);
+    });
 
-    // it('Selektovanje In stock option', function () {
-    //     prepareProductsForTest.selectInStock();
-    //     browser.sleep(2000);
-    // });
+    it('Klik on Advanced Inventory', function () {
+        prepareProductsForTest.clickOnAdvancedInventoryLink();
+        browser.sleep(5000);
+    });
 
-    // it('Klik na Save button', function () {
-    //     prepareProductsForTest.clickOnSave();
-    //     browser.sleep(5000);
-    // });
+    it('Unosenje numbers u qty polje', function () {
+        prepareProductsForTest.enterNumbersOfQTYForParrent();
+        browser.sleep(3000);
+    });
 
-    // it('Provera success poruke', function () {
-    //     prepareProductsForTest.checkSuccessMessage();
-    // });
+    it('Klik na DONE button', function () {
+        prepareProductsForTest.clickOnDoneButton();
+        browser.sleep(5000);
+    });
+
+    it('Klik na Save button', function () {
+        prepareProductsForTest.clickOnSave();
+        browser.sleep(6000);
+    });
+
+    it('Provera success poruke', function () {
+        prepareProductsForTest.checkSuccessMessage();
+    });
 
     // proizvod 29
     it('Dolazak na product 29 u magento', function () {
