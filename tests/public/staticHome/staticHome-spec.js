@@ -1,5 +1,5 @@
 var register = require('../registracija/registracija-po');
-var home = require('./home-po');
+var staticHome = require('./staticHome-po');
 
 describe('Public home page', function(){
 
@@ -11,60 +11,60 @@ describe('Public home page', function(){
         });
 
         it('Provera da li se ucitao page title', function(){
-            home.checkPageTitle();
+            staticHome.checkPageTitle();
         });
 
         it('Provera da li se ucitao title on page', function(){
-            home.checkTitleOnPage();
+            staticHome.checkTitleOnPage();
         });
 
         it('Provera da li se ucitao join button', function(){
-            home.checkButton();
+            staticHome.checkButton();
         });
 
         it('Provera da li su se ucitali brojevi za downloads', function(){
-            home.checkNumbersOfDownloads();
+            staticHome.checkNumbersOfDownloads();
         });
 
         it('Provera da li su se ucitali brojevi za answers', function(){
-            home.checkNumberOfAnswers();
+            staticHome.checkNumberOfAnswers();
         });
 
         it('Provera da li su se ucitali brojevi za financial institutions', function(){
-            home.checkNumbersOfFinancialInstitutions();
+            staticHome.checkNumbersOfFinancialInstitutions();
             browser.sleep(2000);
         });
 
         it('Provera da li se ucitao document icon', function(){
-            home.checkDocImage();
+            staticHome.checkDocImage();
         });
 
         it('Provera document section', function(){
-            home.checkDocumentSection();
+            staticHome.checkDocumentSection();
         });
 
         it('Provera da li se ucitao peers icon ', function(){
-            home.checkPeersImage();
+            staticHome.checkPeersImage();
         });
 
         it('Provera peers section', function(){
-            home.checkPeersSection();
+            staticHome.checkPeersSection();
         });
 
         it('Provera da li se ucitao vendor icon ', function(){
-            home.checkVendorImage();
+            staticHome.checkVendorImage();
         });
 
         it('Provera vendor section', function(){
-            home.checkVendorSection();
+            staticHome.checkVendorSection();
         });
 
         it('Provera da li se ucitao bottom section', function(){
-            home.checkBottomSection();
+            staticHome.checkBottomSection();
         });
         
         it('Provera da li se ucitao intercom', function(){
-            home.checkIntercom();
+            staticHome.checkIntercom();
         });
 
     afterAll(function(){

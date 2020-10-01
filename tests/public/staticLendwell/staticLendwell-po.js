@@ -40,31 +40,31 @@ function checkMiddleSectionOnPage() {
 
 function checkFooter(){
     var EC = protractor.ExpectedConditions;
-    // Provera da li se ucitao footer
+    // Provera da li se ucitalaucitao footer
     browser.wait(EC.textToBePresentInElement($('.legal'), '2008 - 2020 CBANC Network. All rights reserved.'), 7000);
     browser.sleep(2000);
 }    
 
 function checkIntercom(){
-    // Provera da li se ucitao intercom
+    // Provera da li se ucitalaucitao intercom
     var interc = element(by.id('intercom-frame'));
     expect(interc.isDisplayed()).toBe(false);
 }
 
 function checkIconForStreamlineYourProcess() {
-    // Provera da li se image icon za Streamline Your Process
+    // Provera da li se ucitalaimage icon za Streamline Your Process
     var xxx = element(by.className('clock_image'));
     expect(xxx.getAttribute('src')).toEqual('https://qa.cbancnetwork.com/lendwell/clock.png');
 }
 
 function checkIconForCloseWithConfidence() {
-    // Provera da li se image icon za Close with Confidence
+    // Provera da li se ucitalaimage icon za Close with Confidence
     var xxx = element(by.className('shield_image'));
     expect(xxx.getAttribute('src')).toEqual('https://qa.cbancnetwork.com/lendwell/document.png');
 }
 
 function checkIconForLowerYourCosts() {
-    // Provera da li se image icon za Lower Your Costs 
+    // Provera da li se ucitalaimage icon za Lower Your Costs 
     var xxx = element(by.className('arrow_image'));
     expect(xxx.getAttribute('src')).toEqual('https://qa.cbancnetwork.com/lendwell/arrow.png');
 }
@@ -76,37 +76,37 @@ function checkBottomSectionOnPage() {
 }
 
 function checkFloodDeterminationsImageIcon() {
-    // Provera da li se image icon za Flood Determinations 
+    // Provera da li se ucitalaimage icon za Flood Determinations 
     var xxx = element.all(by.tagName('img')).get(7);
     expect(xxx.getAttribute('src')).toEqual('https://qa.cbancnetwork.com/lendwell/icon-flood.png');
 }
 
 function checkPropertyValuationsImageIcon() {
-    // Provera da li se image icon za Property Valuations
+    // Provera da li se ucitalaimage icon za Property Valuations
     var xxx = element.all(by.tagName('img')).get(8);
     expect(xxx.getAttribute('src')).toEqual('https://qa.cbancnetwork.com/lendwell/icon-property.png');
 }
 
 function checkPortfolioAnalysisImageIcon() {
-    // Provera da li se image icon za Portfolio Analysis
+    // Provera da li se ucitalaimage icon za Portfolio Analysis
     var xxx = element.all(by.tagName('img')).get(9);
     expect(xxx.getAttribute('src')).toEqual('https://qa.cbancnetwork.com/lendwell/icon-pcr.png');
 }
 
 function checkEquityLienProtectionImageIcon() {
-    // Provera da li se image icon za Equity & Lien Protection
+    // Provera da li se ucitalaimage icon za Equity & Lien Protection
     var xxx = element.all(by.tagName('img')).get(10);
     expect(xxx.getAttribute('src')).toEqual('https://qa.cbancnetwork.com/lendwell/icon-lien.png');
 }
 
 function checkVerificationServicesImageIcon() {
-    // Provera da li se image icon za Verification Services
+    // Provera da li se ucitalaimage icon za Verification Services
     var xxx = element.all(by.tagName('img')).get(11);
     expect(xxx.getAttribute('src')).toEqual('https://qa.cbancnetwork.com/lendwell/icon-legal-vesting.png');
 }
 
 function checkTitleServicesImageIcon() {
-    // Provera da li se image icon za Title Services
+    // Provera da li se ucitalaimage icon za Title Services
     var xxx = element.all(by.tagName('img')).get(12);
     expect(xxx.getAttribute('src')).toEqual('https://qa.cbancnetwork.com/lendwell/icon-title.png');
 }
@@ -163,7 +163,7 @@ function checkSuccessMessages() {
 
 function landOnQaSuccessPage() {
     // Dolazak na Success Page na QA
-    browser.get('https://qa.cbancnetwork.com/lendwell?success=true'); 
+    browser.get('https://www.cbancnetwork.com/lendwell?success=true'); 
 }
 
 function landOnLendwellPage() {

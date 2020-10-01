@@ -73,7 +73,6 @@ describe('Lead Generation for Fintech strana', function(){
         browser.sleep(4000);
     });
 
-
     it('Klik na Sign in button', function(){
         login.clickOnSignIn();
     });

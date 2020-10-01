@@ -97,6 +97,10 @@ describe('Advertise get-started strana', function(){
         browser.sleep(1000);
     });
 
+    it('Provera success poruke', function(){
+        staticAdvertiseGetStarted.checkSuccessMessage();
+    });
+
     it('Dolazak na Success stranu na beti', function(){
         staticAdvertiseGetStarted.landOnSuccess();
         browser.sleep(4000);

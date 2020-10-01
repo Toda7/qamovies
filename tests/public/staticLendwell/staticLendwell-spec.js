@@ -43,15 +43,15 @@ beforeAll(function(){
         staticLendwell.checkMiddleSectionOnPage();
     });
 
-    it('Provera da li se image icon za Streamline Your Process', function(){
+    it('Provera da li se ucitala image icon za Streamline Your Process', function(){
         staticLendwell.checkIconForStreamlineYourProcess();
     });
 
-    it('Provera da li se image icon za Close with Confidence', function(){
+    it('Provera da li se ucitala image icon za Close with Confidence', function(){
         staticLendwell.checkIconForCloseWithConfidence();
     });
 
-    it('Provera da li se image icon za Lower Your Costs', function(){
+    it('Provera da li se ucitala image icon za Lower Your Costs', function(){
         staticLendwell.checkIconForLowerYourCosts();
     });
 
@@ -59,35 +59,35 @@ beforeAll(function(){
         staticLendwell.checkMiddleSectionOnPage();
     });
 
-    it('Provera da li se image icon za Flood Determinations ', function(){
+    it('Provera da li se ucitala image icon za Flood Determinations ', function(){
         staticLendwell.checkFloodDeterminationsImageIcon();
     });
 
-    it('Provera da li se image icon za Property Valuations ', function(){
+    it('Provera da li se ucitala image icon za Property Valuations ', function(){
         staticLendwell.checkPropertyValuationsImageIcon();
     });
     
-    it('Provera da li se image icon za Portfolio Analysis', function(){
+    it('Provera da li se ucitala image icon za Portfolio Analysis', function(){
         staticLendwell.checkPortfolioAnalysisImageIcon();
     });
     
-    it('Provera da li se image icon za Equity & Lien Protection', function(){
+    it('Provera da li se ucitala image icon za Equity & Lien Protection', function(){
         staticLendwell.checkEquityLienProtectionImageIcon();
     });
     
-    it('Provera da li se image icon za Verification Services', function(){
+    it('Provera da li se ucitala image icon za Verification Services', function(){
         staticLendwell.checkVerificationServicesImageIcon();
     });
     
-    it('Provera da li se image icon za Title Services', function(){
+    it('Provera da li se ucitala image icon za Title Services', function(){
         staticLendwell.checkTitleServicesImageIcon();
     });
     
-    it('Provera da li se image icon za Document Preparation', function(){
+    it('Provera da li se ucitala image icon za Document Preparation', function(){
         staticLendwell.checkDocumentPreparationImageIcon();
     });
 
-    it('Provera da li se image icon za Closing Services', function(){
+    it('Provera da li se ucitala image icon za Closing Services', function(){
         staticLendwell.checkClosingServicesImageIcon();
     });
     
@@ -144,7 +144,7 @@ beforeAll(function(){
         browser.sleep(5000);
     });
 
-    it('Provera Success URL-a', function(){
+    it('Provera Success URL-a na produkciji', function(){
         staticLendwell.checkSuccessURL();
         browser.sleep(2000);
     });
@@ -284,7 +284,7 @@ beforeAll(function(){
         browser.sleep(5000);
     });
 
-    it('Provera Success URL-a', function(){
+    it('Provera Success URL-a na produkciji', function(){
         staticLendwell.checkSuccessURL();
         browser.sleep(2000);
     });
@@ -302,6 +302,16 @@ beforeAll(function(){
     it('Provera success poruke', function(){
         staticLendwell.checkSuccessMessages();
     });
+
+    it('Hover to open user drop menu', function(){
+        staticAdvertiseGetStarted.HoverToOpenUserDrop();
+        browser.sleep(1000);
+    }); 
+
+    it('Click on Sign out link', function(){
+        staticAdvertiseGetStarted.clickOnSignOutLink();
+        browser.sleep(2000);
+    }); 
 
 
     afterAll(function(){
