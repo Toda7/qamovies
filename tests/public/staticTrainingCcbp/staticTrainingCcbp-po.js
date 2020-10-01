@@ -1,7 +1,6 @@
 function landOnTrainingCcbpPage() {
     // dolazak na Certified Cannabis Banking Professional stranu 
     browser.get('https://qa.cbancnetwork.com/training/ccbp'); 
-    browser.sleep(2000);
 }
 
 function checkTrainingCcbpPageTitle(){

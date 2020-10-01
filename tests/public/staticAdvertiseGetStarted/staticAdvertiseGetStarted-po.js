@@ -1,7 +1,6 @@
 function landOnAdvertiseGetStarted() {
     // dolazak na Certified Cannabis Banking Professional stranu 
     browser.get('https://qa.cbancnetwork.com/advertise/get-started'); 
-    browser.sleep(2000);
 }
 
 function checkAdvertiseGetStartedTitle(){
@@ -16,38 +15,141 @@ function checkTitlesOnPage() {
     expect(xxx.getText()).toEqual("Want to learn more about CBANC's Marketing Solutions?\nFill in the form below and we will be in touch shortly.");
 }
 
+function checkLabelForFirstNameField() {
+    // Provera First Name labele iznad polja 
+    var xxx = element(by.className('field text_field'));
+    expect(xxx.getText()).toEqual("First Name");
+}
+
+function checkLabelForLastNameField() {
+    // Provera Last Name labele iznad polja 
+    var xxx = element.all(by.className('field text_field')).get(1);
+    expect(xxx.getText()).toEqual("Last Name");
+}
+
+function checkLabelForEmailField() {
+    // Provera Email labele iznad polja 
+    var xxx = element.all(by.className('field text_field')).get(2);
+    expect(xxx.getText()).toEqual("Email");
+}
+
+function checkLabelForCompanyField() {
+    // Provera Company labele iznad polja 
+    var xxx = element.all(by.className('field text_field')).get(3);
+    expect(xxx.getText()).toEqual("Company");
+}
+
+function checkLabelForPhoneField() {
+    // Provera Phone labele iznad polja 
+    var xxx = element.all(by.className('field text_field')).get(4);
+    expect(xxx.getText()).toEqual("Phone");
+}
+
+function checkLabelForLastFieldInForm() {
+    // Provera "How'd you find out about us?"" labele iznad polja 
+    var xxx = element.all(by.className('field text_field')).get(5);
+    expect(xxx.getText()).toEqual("How'd you find out about us?\n                    Ad\n                    Email\n                    Conference/Event\n                    Search Engine\n                    Referral\n                  ");
+}
+
 function enterFirstName(){
-   //  Unesi text u first name field
+   //  Unosenje text u first name field
    element(by.id('first_name')).clear().sendKeys('QA');
 }
 
 function enterLastName(){
-   //  Unesi text u last name field
+   //  Unosenje text u last name field
    element(by.id('last_name')).clear().sendKeys('Testing');
 }
 
 function enterGmail(){
-    //  Unesi text u email field
+    //  Unosenje text u email field
     element(by.id('email')).clear().sendKeys('qa@testing.com');
 }
  
 function enterCompany(){
-    //  Unesi text u company field
+    //  Unosenje text u company field
     element(by.id('company')).clear().sendKeys('QA Company');
 }
 
 function enterPhone(){
-    //  Unesi numbers u phone field
+    //  Unosenje numbers u phone field
     element(by.id('phone')).clear().sendKeys('555333');
+}
+
+
+function checkMikeAvatar() {
+    // Provera da li se ucitao Majkov avatar
+    var xxx = element.all(by.tagName('img')).get(1);
+    expect(xxx.getAttribute('src')).toEqual('https://qa.cbancnetwork.com/advertise/get-started/mike_snavely.jpg');
+}
+
+function checkTextNextToAvatar() {
+    // Provera texta pored majkovog avatara
+    var xxx = element(by.className('details'));
+    expect(xxx.getText()).toEqual("I look forward to chatting with you!\nMike Snavely - Chief Commercial Officer at CBANC Network");
+}
+
+function clickOnContactMeButton(){
+    //  Klik na CONTACT ME button
+    element(by.className('contact_me')).click();
+}
+
+function checkSuccessURLFromProduction() {
+    // Provera da li se ucitao Success url u produkciji
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains("https://www.cbancnetwork.com/advertise/get-started?success=true"), 3000);
+}
+
+function landOnSuccess() {
+    // Dolazak na Success stranu na beti
+    browser.get('https://qa.cbancnetwork.com/advertise/get-started?success=true'); 
+}
+
+function checkSuccessMessage() {
+    // Provera success poruke
+    var xxx = element(by.id('lead_success'));
+    expect(xxx.getText()).toEqual("×\nThank You for contacting us!\nWe will be in contact with you as soon as possible.");
+}
+
+function checkIntercom(){
+    // Provera da li se ucitao intercom
+    var interc = element(by.id('intercom-frame'));
+    expect(interc.isDisplayed()).toBe(false);
+}
+
+function HoverToOpenUserDrop() {
+    // Hover to open drop menu
+    browser.actions().mouseMove(element(by.css('.user_name'))).perform();
+    expect(element(by.css('.user_name')).isDisplayed()).toBeTruthy();
+}
+
+ function clickOnSignOutLink() {
+    //  Klik on Sign out link
+    element(by.className('sign_out')).click();
 }
 
 module.exports = {
     landOnAdvertiseGetStarted,
     checkAdvertiseGetStartedTitle,
+    checkLabelForFirstNameField,
+    checkLabelForLastNameField,
+    checkLabelForEmailField,
+    checkLabelForCompanyField,
+    checkLabelForPhoneField,
+    checkLabelForLastFieldInForm,
     checkTitlesOnPage,
     enterFirstName,
     enterLastName,
     enterGmail,
     enterCompany,
-    enterPhone
+    enterPhone,
+    checkMikeAvatar,
+    checkTextNextToAvatar,
+    clickOnContactMeButton,
+    checkSuccessURLFromProduction,
+    landOnSuccess,
+    checkSuccessMessage,
+    checkIntercom,
+    HoverToOpenUserDrop,
+    clickOnSignOutLink,
 }
