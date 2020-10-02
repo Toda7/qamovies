@@ -81,12 +81,6 @@ function checkBottomSection(){
     expect(xxx.getText()).toEqual('Join the largest online network of verified banking and credit union professionals.\nGet your questions answered, exchange ideas, and build your industry reputation.\nJOIN FOR FREE');
 }
 
-function checkIntercom(){
-    // Provera da li se ucitao intercom
-    var interc = element(by.id('intercom-modal-container'));
-    expect(interc.isDisplayed()).toBe(false);
-} 
-
 module.exports = {
     checkPageTitle,
     checkButton,
@@ -94,7 +88,6 @@ module.exports = {
     checkNumbersOfDownloads,
     checkNumberOfAnswers,
     checkNumbersOfFinancialInstitutions,
-    checkIntercom,
     checkDocImage,
     checkDocumentSection,
     checkPeersImage,

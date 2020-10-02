@@ -1,5 +1,7 @@
 var register = require('../registracija/registracija-po');
 var staticHome = require('./staticHome-po');
+var staticLendwell = require('../staticLendwell/staticLendwell-po');
+
 
 describe('Public home page', function(){
 
@@ -8,6 +10,7 @@ describe('Public home page', function(){
     });
         it('Dolazak na home stranu', function(){
             register.landOnHomePage();
+            browser.sleep(5000);
         });
 
         it('Provera da li se ucitao page title', function(){
@@ -61,10 +64,11 @@ describe('Public home page', function(){
 
         it('Provera da li se ucitao bottom section', function(){
             staticHome.checkBottomSection();
+            browser.sleep(1000);
         });
         
         it('Provera da li se ucitao intercom', function(){
-            staticHome.checkIntercom();
+            staticLendwell.checkIntercom();
         });
 
     afterAll(function(){

@@ -163,7 +163,7 @@ function checkSuccessMessages() {
 
 function landOnQaSuccessPage() {
     // Dolazak na Success Page na QA
-    browser.get('https://www.cbancnetwork.com/lendwell?success=true'); 
+    browser.get('https://qa.cbancnetwork.com/lendwell?success=true'); 
 }
 
 function landOnLendwellPage() {
