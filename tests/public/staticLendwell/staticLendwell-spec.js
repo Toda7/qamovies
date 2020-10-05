@@ -4,7 +4,7 @@ var staticAdvertiseGetStarted = require('../staticAdvertiseGetStarted/staticAdve
 var login = require('../login/login-po');
 
 
-describe('Public lendwell strana', function(){
+describe('Lendwell strana', function(){
 
 beforeAll(function(){
     browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element

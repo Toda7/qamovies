@@ -3,7 +3,7 @@ var staticHome = require('./staticHome-po');
 var staticLendwell = require('../staticLendwell/staticLendwell-po');
 
 
-describe('Public home page', function(){
+describe('Home page', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);
