@@ -71,11 +71,34 @@ function enterCompany(){
     element(by.id('company')).clear().sendKeys('QA Company');
 }
 
+function checkIsFristNameInTheField() {
+    // Provera da li se u First name polju nalazi ime od logovanog usera
+    var inputValue = element(by.id('first_name'));
+    expect(inputValue.getAttribute('value')).toEqual('Chicago Alberto');
+}
+
+function checkIsLastNameInTheField() {
+    // Provera da li se u Last name polju nalazi ime od logovanog usera
+    var inputValue = element(by.id('last_name'));
+    expect(inputValue.getAttribute('value')).toEqual('Diaz FI');
+}
+
+function checkIsEmailInTheField() {
+    // Provera da li se u Email polju nalazi email od logovanog usera
+    var inputValue = element(by.id('email'));
+    expect(inputValue.getAttribute('value')).toEqual('1@chicago.com');
+}
+
+function checkICompanyInTheField() {
+    // Provera da li se u company polju nalazi company od logovanog usera
+    var inputValue = element(by.id('company'));
+    expect(inputValue.getAttribute('value')).toEqual('Bank of Chicago');
+}
+
 function enterPhone(){
     //  Unosenje numbers u phone field
     element(by.id('phone')).clear().sendKeys('555333');
 }
-
 
 function checkMikeAvatar() {
     // Provera da li se ucitao Majkov avatar
@@ -152,4 +175,8 @@ module.exports = {
     checkIntercom,
     HoverToOpenUserDrop,
     clickOnSignOutLink,
+    checkIsFristNameInTheField,
+    checkIsLastNameInTheField,
+    checkIsEmailInTheField,
+    checkICompanyInTheField,
 }

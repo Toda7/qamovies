@@ -93,7 +93,7 @@ beforeAll(function(){
     
     it('Provera da li se ucitao footer', function(){
         staticLendwell.checkIconForStreamlineYourProcess();
-        browser.sleep(3000);
+        browser.sleep(5000);
     });
 
     it('Provera da li se ucitao intercom', function(){
@@ -146,10 +146,10 @@ beforeAll(function(){
 
     it('Provera Success URL-a na produkciji', function(){
         staticLendwell.checkSuccessURL();
-        browser.sleep(2000);
+        browser.sleep(5000);
     });
 
-    it('Provera success poruke', function(){
+    it('Provera success poruke na produkciji', function(){
         staticLendwell.checkSuccessMessages();
         browser.sleep(5000);
     });
@@ -159,7 +159,7 @@ beforeAll(function(){
         browser.sleep(5000);
     });
 
-    it('Provera success poruke', function(){
+    it('Provera success poruke na QA', function(){
         staticLendwell.checkSuccessMessages();
     });
 
@@ -269,6 +269,21 @@ beforeAll(function(){
         staticLendwell.checkForm();
     });
 
+    it(' Provera da li se u First name polju nalazi ime od logovanog usera', function(){
+        staticAdvertiseGetStarted.checkIsFristNameInTheField();
+        browser.sleep(500);
+    });
+
+    it('Provera da li se u Last name polju nalazi ime od logovanog usera', function(){
+        staticAdvertiseGetStarted.checkIsLastNameInTheField();
+        browser.sleep(500);
+    });
+
+    it('Provera da li se u Email polju nalazi email od logovanog usera', function(){
+        staticAdvertiseGetStarted.checkIsEmailInTheField();
+        browser.sleep(500);
+    });
+
     it('Unosenje numbers u phone field', function(){
         staticAdvertiseGetStarted.enterPhone();
         browser.sleep(500);
@@ -286,10 +301,10 @@ beforeAll(function(){
 
     it('Provera Success URL-a na produkciji', function(){
         staticLendwell.checkSuccessURL();
-        browser.sleep(2000);
+        browser.sleep(5000);
     });
 
-    it('Provera success poruke', function(){
+    it('Provera success poruke na produkciji', function(){
         staticLendwell.checkSuccessMessages();
         browser.sleep(5000);
     });
@@ -299,7 +314,7 @@ beforeAll(function(){
         browser.sleep(5000);
     });
 
-    it('Provera success poruke', function(){
+    it('Provera success poruke na QA', function(){
         staticLendwell.checkSuccessMessages();
     });
 

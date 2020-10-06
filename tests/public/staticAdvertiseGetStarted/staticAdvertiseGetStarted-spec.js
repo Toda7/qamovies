@@ -180,6 +180,26 @@ describe('Advertise get-started strana', function(){
         browser.sleep(500);
     });
 
+    it(' Provera da li se u First name polju nalazi ime od logovanog usera', function(){
+        staticAdvertiseGetStarted.checkIsFristNameInTheField();
+        browser.sleep(500);
+    });
+
+    it('Provera da li se u Last name polju nalazi ime od logovanog usera', function(){
+        staticAdvertiseGetStarted.checkIsLastNameInTheField();
+        browser.sleep(500);
+    });
+
+    it('Provera da li se u Email polju nalazi email od logovanog usera', function(){
+        staticAdvertiseGetStarted.checkIsEmailInTheField();
+        browser.sleep(500);
+    });
+
+    it('Provera da li se u company polju nalazi company od logovanog usera', function(){
+        staticAdvertiseGetStarted.checkICompanyInTheField();
+        browser.sleep(500);
+    });
+
     it('Unosenje numbers u phone field', function(){
         staticAdvertiseGetStarted.enterPhone();
         browser.sleep(500);
