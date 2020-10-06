@@ -134,12 +134,6 @@ function checkSuccessMessage() {
     expect(xxx.getText()).toEqual("×\nThank You for contacting us!\nWe will be in contact with you as soon as possible.");
 }
 
-function checkIntercom(){
-    // Provera da li se ucitao intercom
-    var interc = element(by.id('intercom-frame'));
-    expect(interc.isDisplayed()).toBe(false);
-}
-
 function HoverToOpenUserDrop() {
     // Hover to open drop menu
     browser.actions().mouseMove(element(by.css('.user_name'))).perform();
@@ -172,7 +166,6 @@ module.exports = {
     checkSuccessURLFromProduction,
     landOnSuccess,
     checkSuccessMessage,
-    checkIntercom,
     HoverToOpenUserDrop,
     clickOnSignOutLink,
     checkIsFristNameInTheField,

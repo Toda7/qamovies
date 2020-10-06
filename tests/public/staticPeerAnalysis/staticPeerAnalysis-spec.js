@@ -27,7 +27,18 @@ beforeAll(function(){
 
     it('Provera PA URL-a', function(){
         staticPeerAnalysis.checkPaUrl();
+        browser.sleep(1000);
     });  
+
+    it('Otvori intercome', function(){
+        staticLendwell.openIntercom();
+        browser.sleep(5000);
+    });
+
+    it('Zatvori intercome', function(){
+        staticLendwell.closeIntercom();
+        browser.sleep(2000);
+    });
 
     it('Provera da li se ucitao page title', function(){
         staticPeerAnalysis.checkRAPageTitle();
@@ -82,10 +93,6 @@ beforeAll(function(){
     it("Provera sekcije Premium reklama", function(){
         staticPeerAnalysis.CheckPremiumAd();
     });  
-
-    it('Provera da li se ucitao intercom', function(){
-        staticLendwell.checkIntercom();
-    });
 
     it('Klik na LAUNCH PEER ANALYSIS TOOL button', function(){
         staticPeerAnalysis.clickOnLaunchPeerAnalysisToolButton();

@@ -113,7 +113,7 @@ function clickOnCommunity() {
 function HoverToOpenCommunityDrop() {
     // Hover to open Community drop menu
     browser.actions().mouseMove(element(by.css('.menu_item.link_community.has_submenu'))).perform();
-    expect(element(by.css('.menu_item.link_community.has_submenu')).isDisplayed()).toBeTruthy();
+    // expect(element(by.css('.menu_item.link_community.has_submenu')).isDisplayed()).toBeTruthy();
 }
 
 function checkSubmenuSectionFromCommunityDrop(){
@@ -338,6 +338,112 @@ function checkJoinURL() {
     browser.wait(EC.urlContains('https://qa.cbancnetwork.com/membership/join/'), 7000);
 }
 
+// chekeri za footer 
+
+function checkFooter(){
+    // Provera footer sekcije
+    var xxx = element(by.id('footer'));
+    expect(xxx.getText()).toEqual('About FAQ Contact Vendors Careers Blog\nPrivacy Policy Terms of Service Code of Conduct\nCopyright 2008 - 2020 CBANC Network. All rights reserved.');
+}
+
+function clickOnAboutLink() {
+    //  Klik na About link u footer
+    element(by.partialLinkText('About')).click();
+}
+
+function checkAboutURL() {
+    // Provera About URL-a nakon klika na About link 
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/about'), 7000);
+}
+
+function clickOnFAQLink() {
+    //  Klik na FAQ link u footer
+    element(by.partialLinkText('FAQ')).click();
+}
+
+function checkFAQURL() {
+    // Provera FAQ URL-a nakon klika na FAQ link 
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://support.cbancnetwork.com/hc/en-us'), 7000);
+}
+
+function clickOnContactLink() {
+    //  Klik na Contact link u footer
+    element(by.partialLinkText('Contact')).click();
+}
+
+function checkContactURL() {
+    // Provera Contact URL-a nakon klika na Contact link 
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/support'), 7000);
+}
+
+function clickOnVendorstLink() {
+    //  Klik na Vendorst link u footer
+    element(by.partialLinkText('Vendors')).click();
+}
+
+function checkVendorstURL() {
+    // Provera Vendors URL-a nakon klika na Vendors link 
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/view-finder'), 7000);
+}
+
+function clickOnCareersLink() {
+    //  Klik na Careers link u footer
+    element(by.partialLinkText('Careers')).click();
+}
+
+function checkCareersURL() {
+    // Provera Careers URL-a nakon klika na Careers link 
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/careers'), 7000);
+}
+
+function clickOnBlogLink() {
+    //  Klik na Blog link u footer
+    element(by.partialLinkText('Blog')).click();
+}
+
+function checkBlogURL() {
+    // Provera Blog URL-a nakon klika na Blog link 
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/blog'), 7000);
+}
+
+function clickOnPrivacyPolicyLink() {
+    //  Klik na Privacy Policy link u footer
+    element(by.partialLinkText('Privacy Policy')).click();
+}
+
+function checkPrivacyPolicyURL() {
+    // Provera Privacy Policy URL-a nakon klika na Privacy Policy link 
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/support/privacy_policy'), 7000);
+}
+
+function clickOnTermsofServiceLink() {
+    //  Klik na Terms of Service link u footer
+    element(by.partialLinkText('Terms of Service')).click();
+}
+
+function checkTermsofServiceURL() {
+    // Provera Terms of Service URL-a nakon klika na Terms of Service link 
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/support/terms_of_service'), 7000);
+}
+
+function clickOnCodeOfConductLink() {
+    //  Klik na Code of Conduct link u footer
+    element(by.partialLinkText('Code of Conduct')).click();
+}
+
+function checkCodeOfConductURL() {
+    // Provera Code of Conduct URL-a nakon klika na Code of Conduct link 
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/support/code_of_conduct'), 7000);
+}
 
 module.exports = {
     checkPageTitle,
@@ -399,5 +505,24 @@ module.exports = {
     clickOnSignInButton,
     clickOnJoinButton,
     checkJoinURL,
-
+    checkFooter,
+    clickOnAboutLink,
+    checkAboutURL,
+    clickOnFAQLink,
+    checkFAQURL,
+    clickOnContactLink,
+    checkContactURL,
+    clickOnVendorstLink,
+    checkVendorstURL,
+    clickOnCareersLink,
+    checkCareersURL,
+    clickOnBlogLink,
+    checkBlogURL,
+    clickOnPrivacyPolicyLink,
+    checkPrivacyPolicyURL,
+    clickOnTermsofServiceLink,
+    checkTermsofServiceURL,
+    checkTermsofServiceURL,
+    clickOnCodeOfConductLink,
+    checkCodeOfConductURL,
 }

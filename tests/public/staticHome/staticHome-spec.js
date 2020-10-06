@@ -14,6 +14,16 @@ describe('Home page', function(){
             browser.sleep(5000);
         });
 
+        it('Otvori', function(){
+            staticLendwell.openIntercom();
+            browser.sleep(5000);
+        });
+
+        it('Zatvori', function(){
+            staticLendwell.closeIntercom();
+            browser.sleep(2000);
+        });
+
         it('Provera da li se ucitao page title', function(){
             staticHome.checkPageTitle();
         });
@@ -65,13 +75,10 @@ describe('Home page', function(){
 
         it('Provera da li se ucitao bottom section', function(){
             staticHome.checkBottomSection();
-            browser.sleep(1000);
+            browser.sleep(5000);
         });
         
-        it('Provera da li se ucitao intercom', function(){
-            staticLendwell.checkIntercom();
-        });
-
+  
         // Chekeri za Header linkove
         it('Provera da li se ucitao Cbanc Logo u headeru', function(){
             staticHome.checkCBlogoInHeader();
@@ -404,7 +411,127 @@ describe('Home page', function(){
             browser.navigate().back();
             browser.sleep(2000);
         });
+ 
+        // chekeri za footer 
 
+        it('Provera footer sekcije', function(){
+            staticHome.checkFooter();
+            browser.sleep(2000);
+        });
+
+        it('Klik na About link u footeru', function(){
+            staticHome.clickOnAboutLink();
+            browser.sleep(2000);
+        });
+
+        it('Provera About URL-a nakon klika na About link', function(){
+            staticHome.checkAboutURL();
+            browser.sleep(1000);
+            browser.navigate().back();
+            browser.sleep(2000);
+        });
+
+        it('Klik na FAQ link u footeru', function(){
+            staticHome.clickOnFAQLink();
+            browser.sleep(2000);
+            browser.getAllWindowHandles().then(function (handles) {
+            browser.switchTo().window(handles[1]);
+            });
+        });
+
+        it('Provera FAQ URL-a nakon klika na FAQ link ', function(){
+            staticHome.checkFAQURL();
+            browser.sleep(1000);
+            browser.getAllWindowHandles().then(function (handles) {
+            browser.driver.switchTo().window(handles[1]);
+            browser.driver.close();
+            browser.driver.switchTo().window(handles[0]);
+            });
+        });
+
+        it('Klik na Contact link u footeru', function(){
+            staticHome.clickOnContactLink();
+            browser.sleep(2000);
+        });
+
+        it('Provera Contact URL-a nakon klika na Contact link', function(){
+            staticHome.checkContactURL();
+            browser.sleep(1000);
+            browser.navigate().back();
+            browser.sleep(2000);
+        });
+        
+        it('Klik na Vendors link u footeru', function(){
+            staticHome.clickOnVendorstLink();
+            browser.sleep(2000);
+        });
+
+        it('Provera Vendors URL-a nakon klika na Vendors link ', function(){
+            staticHome.checkVendorstURL();
+            browser.sleep(1000);
+            browser.navigate().back();
+            browser.sleep(2000);
+        });
+
+        it('Klik na Careers link u footeru', function(){
+            staticHome.clickOnCareersLink();
+            browser.sleep(2000);
+        });
+
+        it('Provera Careers URL-a nakon klika na Careers link ', function(){
+            staticHome.checkCareersURL();
+            browser.sleep(1000);
+            browser.navigate().back();
+            browser.sleep(2000);
+        });
+
+        it('Klik na Blog link u footeru', function(){
+            staticHome.clickOnBlogLink();
+            browser.sleep(2000);
+        });
+
+        it('Provera Blog URL-a nakon klika na Blog link ', function(){
+            staticHome.checkBlogURL();
+            browser.sleep(1000);
+            browser.navigate().back();
+            browser.sleep(2000);
+        });
+
+        it('Klik na Privacy Policy link u footeru', function(){
+            staticHome.clickOnPrivacyPolicyLink();
+            browser.sleep(2000);
+        });
+
+        it('Provera Privacy Policy URL-a nakon klika na Privacy Policy link ', function(){
+            staticHome.checkPrivacyPolicyURL();
+            browser.sleep(1000);
+            browser.navigate().back();
+            browser.sleep(2000);
+        });
+        
+        it('Klik na Terms of Service link u footeru', function(){
+            staticHome.clickOnTermsofServiceLink();
+            browser.sleep(2000);
+        });
+
+        it('Provera Terms of Service URL-a nakon klika na Terms of Service link ', function(){
+            staticHome.checkTermsofServiceURL();
+            browser.sleep(1000);
+            browser.navigate().back();
+            browser.sleep(2000);
+        });
+
+        it(' Klik na Code of Conduct link u footeru', function(){
+            staticHome.clickOnCodeOfConductLink();
+            browser.sleep(2000);
+        });
+
+        it('Provera Code of Conduct URL-a nakon klika na Code of Conduct link', function(){
+            staticHome.checkCodeOfConductURL();
+            browser.sleep(1000);
+            browser.navigate().back();
+            browser.sleep(2000);
+        });
 
     afterAll(function(){
         browser.waitForAngularEnabled(true); 

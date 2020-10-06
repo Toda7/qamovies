@@ -1,6 +1,7 @@
 var staticLeadGenerationForFintech = require('./staticLeadGenerationForFintech-po.js');
 var staticAdvertiseGetStarted = require('../staticAdvertiseGetStarted/staticAdvertiseGetStarted-po.js');
 var login = require('../login/login-po.js');
+var staticLendwell = require('../staticLendwell/staticLendwell-po');
 
 describe('Lead Generation for Fintech strana', function(){
 
@@ -10,6 +11,16 @@ describe('Lead Generation for Fintech strana', function(){
 
     it('Dolazak na Certified Cannabis Banking Professional stranu', function(){
         staticLeadGenerationForFintech.landOnLeadGenerationForFintech();
+        browser.sleep(2000);
+    });
+
+    it('Otvori intercome', function(){
+        staticLendwell.openIntercom();
+        browser.sleep(5000);
+    });
+
+    it('Zatvori intercome', function(){
+        staticLendwell.closeIntercom();
         browser.sleep(2000);
     });
 

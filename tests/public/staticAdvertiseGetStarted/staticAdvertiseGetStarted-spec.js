@@ -1,5 +1,7 @@
 var staticAdvertiseGetStarted = require('./staticAdvertiseGetStarted-po.js');
+var staticLendwell = require('../staticLendwell/staticLendwell-po');
 var login = require('../login/login-po');
+
 
 
 describe('Advertise get-started strana', function(){
@@ -11,6 +13,16 @@ describe('Advertise get-started strana', function(){
     it('Dolazak na Certified Cannabis Banking Professional stranu', function(){
         staticAdvertiseGetStarted.landOnAdvertiseGetStarted();
         browser.sleep(1000);
+    });
+
+    it('Otvori intercome', function(){
+        staticLendwell.openIntercom();
+        browser.sleep(5000);
+    });
+
+    it('Zatvori intercome', function(){
+        staticLendwell.closeIntercom();
+        browser.sleep(2000);
     });
 
     it('Provera da li se ucitao page title', function(){
@@ -104,10 +116,6 @@ describe('Advertise get-started strana', function(){
     it('Dolazak na Success stranu na beti', function(){
         staticAdvertiseGetStarted.landOnSuccess();
         browser.sleep(4000);
-    });
-
-    it('Provera da li se ucitao intercom', function(){
-        staticAdvertiseGetStarted.checkIntercom();
     });
 
     it('Provera success poruke', function(){
@@ -228,10 +236,6 @@ describe('Advertise get-started strana', function(){
     it('Dolazak na Success stranu na beti', function(){
         staticAdvertiseGetStarted.landOnSuccess();
         browser.sleep(4000);
-    });
-
-    it('Provera da li se ucitao intercom', function(){
-        staticAdvertiseGetStarted.checkIntercom();
     });
 
     it('Provera success poruke', function(){

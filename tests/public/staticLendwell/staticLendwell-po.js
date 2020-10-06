@@ -45,11 +45,15 @@ function checkFooter(){
     browser.sleep(2000);
 }    
 
-function checkIntercom(){
-    // Provera da li se ucitalaucitao intercom
-    var interc = element(by.id('intercom-frame'));
-    expect(interc.isDisplayed()).toBe(false);
-}
+function openIntercom() {
+    //  Otvori Intercom
+    element(by.className('intercom-lightweight-app-launcher-icon intercom-lightweight-app-launcher-icon-open')).click();
+ }
+ 
+ function closeIntercom() {
+    //  Zatvori Intercom
+    element(by.className('intercom-launcher-frame intercom-cqrjjr e1ur5zlj0')).click();
+ }
 
 function checkIconForStreamlineYourProcess() {
     // Provera da li se ucitalaimage icon za Streamline Your Process
@@ -180,7 +184,8 @@ module.exports = {
     checkLearnMoreButton,
     checkMiddleSectionOnPage,
     checkFooter,
-    checkIntercom,
+    openIntercom,
+    closeIntercom,
     checkIconForStreamlineYourProcess,
     checkIconForCloseWithConfidence,
     checkIconForLowerYourCosts,

@@ -1,5 +1,6 @@
 var staticTrainingCcbp = require('./staticTrainingCcbp-po.js');
-var staticAdvertiseGetStarted = require('../staticAdvertiseGetStarted/staticAdvertiseGetStarted-po.js');
+var staticLendwell = require('../staticLendwell/staticLendwell-po');
+
 
 describe('Certified Cannabis Banking Professional strana', function(){
 
@@ -9,7 +10,17 @@ describe('Certified Cannabis Banking Professional strana', function(){
 
     it('Dolazak na Certified Cannabis Banking Professional stranu', function(){
         staticTrainingCcbp.landOnTrainingCcbpPage();
-        browser.sleep(1000);
+        browser.sleep(2000);
+    });
+
+    it('Otvori intercome', function(){
+        staticLendwell.openIntercom();
+        browser.sleep(5000);
+    });
+
+    it('Zatvori intercome', function(){
+        staticLendwell.closeIntercom();
+        browser.sleep(2000);
     });
 
     it('Provera da li se ucitao page title', function(){
@@ -31,14 +42,6 @@ describe('Certified Cannabis Banking Professional strana', function(){
     it('Provera cele Benefits: sekcije i poslednjeg buttna na strani', function(){
         staticTrainingCcbp.checkBenefitsTitleOnPage();
     });
-
-    it('Provera da li se ucitao intercom', function(){
-        staticAdvertiseGetStarted.checkIntercom();
-    });
-
-
-
-
 
     afterAll(function(){
         browser.waitForAngularEnabled(true); //stavlja se na kraj fajla

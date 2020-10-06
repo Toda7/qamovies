@@ -20,12 +20,23 @@ beforeAll(function(){
 
     it('Klik na lendwell link iz drop menu', function(){
         staticLendwell.clickOnLink();
+        browser.sleep(3000);
     }); 
 
     it('Provera lendwell URL-a', function(){
         staticLendwell.checkLendwell();
         browser.sleep(3000);
     }); 
+
+    it('Otvori intercome', function(){
+        staticLendwell.openIntercom();
+        browser.sleep(5000);
+    });
+
+    it('Zatvori intercome', function(){
+        staticLendwell.closeIntercom();
+        browser.sleep(2000);
+    });
 
     it('Provera da li se ucitao page title', function(){
         staticLendwell.checkLendwellPageTitle();
@@ -94,10 +105,6 @@ beforeAll(function(){
     it('Provera da li se ucitao footer', function(){
         staticLendwell.checkIconForStreamlineYourProcess();
         browser.sleep(5000);
-    });
-
-    it('Provera da li se ucitao intercom', function(){
-        staticLendwell.checkIntercom();
     });
 
     it('Klik na prvi Learn More button', function(){
@@ -254,10 +261,6 @@ beforeAll(function(){
     it('Provera da li se ucitao footer', function(){
         staticLendwell.checkIconForStreamlineYourProcess();
         browser.sleep(3000);
-    });
-
-    it('Provera da li se ucitao intercom', function(){
-        staticLendwell.checkIntercom();
     });
 
     it('Klik na prvi Learn More button', function(){
