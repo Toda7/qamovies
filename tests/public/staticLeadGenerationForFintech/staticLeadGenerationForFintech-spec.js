@@ -112,7 +112,7 @@ describe('Lead Generation for Fintech strana', function () {
         browser.sleep(500);
     });
 
-    it('Provera da li se ucitao href za Vendor link', function () {
+    it('Provera da li se ucitao href za Vendor link u headeru', function () {
         staticHome.checkVendorLink();
         browser.sleep(500);
     });
@@ -122,7 +122,7 @@ describe('Lead Generation for Fintech strana', function () {
         browser.sleep(2000);
     });
 
-    it('Provera submenu sekcije u Comunity drop downu', function () {
+    it('Provera texta sekcije u Comunity drop downu', function () {
         staticHome.checkSubmenuSectionFromCommunityDrop();
     });
 
@@ -146,7 +146,7 @@ describe('Lead Generation for Fintech strana', function () {
         browser.sleep(2000);
     });
 
-    it('Provera submenu sekcije u Education drop downu', function () {
+    it('Provera texta sekcije u Education drop downu', function () {
         staticHome.checkSubmenuSectionFromEducationyDrop();
         browser.sleep(500);
     });
@@ -176,12 +176,17 @@ describe('Lead Generation for Fintech strana', function () {
         browser.sleep(500);
     });
 
+    it('Provera da li se ucitao href za Orders link u Education dropu', function () {
+        staticHome.checkMyOrdersLink();
+        browser.sleep(500);
+    });
+
     it('Hover to open More drop menu', function () {
         staticHome.HoverToOpenMoreDrop();
         browser.sleep(2000);
     });
 
-    it('Provera submenu sekcije u More drop downu', function () {
+    it('Provera texta sekcije u More drop downu', function () {
         staticHome.checkSubmenuSectionFromMoreyDrop();
     });
 
@@ -209,6 +214,8 @@ describe('Lead Generation for Fintech strana', function () {
         staticHome.checkJoinButton();
         browser.sleep(500);
     });
+
+    // href za vendors
 
     it('Klik na Sign In button', function () {
         staticHome.clickOnSignInButton();
@@ -394,7 +401,7 @@ describe('Lead Generation for Fintech strana', function () {
         browser.sleep(2000);
     });
 
-    it('Provera submenu sekcije u Comunity drop downu', function () {
+    it('Provera texta sekcije u Comunity drop downu', function () {
         staticHome.checkSubmenuSectionFromCommunityDropForPrivate();
     });
 
@@ -423,7 +430,7 @@ describe('Lead Generation for Fintech strana', function () {
         browser.sleep(2000);
     });
 
-    it('Provera submenu sekcije u Education drop downu', function () {
+    it('Provera texta sekcije u Education drop downu', function () {
         staticHome.checkSubmenuSectionFromEducationyDrop();
         browser.sleep(500);
     });
@@ -449,6 +456,11 @@ describe('Lead Generation for Fintech strana', function () {
     });
 
     it('Provera da li se ucitao href za All Access link u Education dropu', function () {
+        staticHome.checkAllAccessLink();
+        browser.sleep(500);
+    });
+
+    it('Provera da li se ucitao href za Orders link u Education dropu', function () {
         staticHome.checkMyOrdersLink();
         browser.sleep(500);
     });
@@ -458,7 +470,7 @@ describe('Lead Generation for Fintech strana', function () {
         browser.sleep(2000);
     });
 
-    it('Provera submenu sekcije u More drop downu', function () {
+    it('Provera texta sekcije u More drop downu', function () {
         staticHome.checkSubmenuSectionFromMoreyDrop();
     });
 

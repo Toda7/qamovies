@@ -574,6 +574,13 @@ function checkCodeOfConductURL() {
         expect(xxx.getAttribute('href')).toEqual('https://qa.cbancnetwork.com/lendwell');
     }
 
+    function checkVendorsLink() {
+        // Provera da li se ucitao href za My Orders link u Education dropu
+        var xxx = element(by.className('submenu_item link_orders')).element(by.tagName('a'));
+        expect(xxx.getAttribute('href')).toEqual('https://qa.cbancnetwork.com/education/orders/my_orders');
+    }
+
+
     function checkJoinButton() {
         // Provera da li se ucitao href za Join button
         var xxx = element(by.className('join'));
@@ -826,8 +833,11 @@ function checkCodeOfConductURL() {
         expect(xxx.getAttribute('href')).toEqual('https://qa.cbancnetwork.com/community/vendors');
     }
 
-
-
+    function checkVendorsLinkInHeader() {
+        // Provera da li se ucitao href za Vendors u headeru
+        var xxx = element(by.className('vendors'));
+        expect(xxx.getAttribute('href')).toEqual('https://qa.cbancnetwork.com/community/vendors');
+    }
 
 
 
@@ -979,4 +989,5 @@ module.exports = {
     checkPrivateDocumentsLink,
     checkPrivateTopicsLink,
     checkPrivateVendorsLink,
+    checkVendorsLinkInHeader,
 }
