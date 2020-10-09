@@ -137,7 +137,6 @@ function checkSuccessMessage() {
 function HoverToOpenUserDrop() {
     // Hover to open drop menu
     browser.actions().mouseMove(element(by.css('.user_name'))).perform();
-    expect(element(by.css('.user_name')).isDisplayed()).toBeTruthy();
 }
 
  function clickOnSignOutLink() {
