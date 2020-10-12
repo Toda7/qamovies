@@ -1,0 +1,22 @@
+    function checkText1 () {
+        var EC = protractor.ExpectedConditions;
+        browser.wait(EC.textToBePresentInElement($('#main'), 'Too long, didn’t read: Treat others as you would want to be treated. Don’t SPAM folks and don’t use the discussions section of the website to sell something.Why do we have a Code of Conduct?We are building the foremost professional network for bank and credit union professionals to share their valuable knowledge with each other. We see it as our duty to protect that community so that members continue to share freely and help others.We want you to remember that by using CBANC you have a unique opportunity to represent yourself as a thought leader in the banking community and build your reputation. CBANC is the place to demonstrate expertise, share knowledge/insights, and otherwise help educate and assist CBANC members. If you provide helpful information, you’ll be widely respected, which is priceless.GuidelinesTreat others as you would want to be treated. This never goes out of style.When someone goes out of their way to help you by providing a great document, comment or answer, hit ‘Thanks!’ This helps the community understand that this person helped you out, lets them build their reputation as a helpful member of the community, and provides you the opportunity to give them a virtual high five.No SPAM allowed. Nobody likes SPAM, the pre-cooked meat or the internet version.Discussions is not the place to hawk your latest and greatest products, solicit leads, share brochures or promotional material that are not educational, or otherwise be too “salesy”. There are many other places where this is appropriate and good for business (except maybe the salesy part). The discussions portion of CBANC is not. We recommend using other avenues for these purposes. Your profile page would be a good resource for announcing new products or pointing folks to materials that you believe they’ll find valuable. If your post sounds like it’s out of a sales deck it’s not appropriate.Be mindful with the words that you choose. We are a community of professionals, and we conduct ourselves professionally. Do not insult or put down other participants. Harassment and other exclusionary behavior aren’t acceptable. This includes, but is not limited to:Violent threats or language directed against another person.Discriminatory jokes and language.Posting sexually explicit or violent material.Personal insults, especially those using racist or sexist terms.Unwelcome sexual attention.Advocating for, or encouraging, any of the above behavior.Repeated harassment of others. In general, if someone asks you to stop, then stop.Don’t disclose any personal identifiable information. Contributions to this website are publicly available and can be viewed by others with whom you may not wish to share such information. Do not include any personal or personally identifiable information about you or others (including your own or anyone else’s email address).Helpful tipsTyping in ALL CAPS is the Internet equivalent of shouting. Your message will be much more effective if they aren’t used.You’ll have more success in getting answers if you ask pointed questions, one at a time.ConsequencesIt will be our sole decision as to whether there has been a breach of this Code of Conduct. We have the right (but not the obligation) to edit, refuse to post, or to remove any contribution in whole or in part that we deem to be in breach of the Code of Conduct. Where we believe there is a breach of the Code of Conduct, we may take whatever action we feel is appropriate in the circumstances. Failure to comply with this Code of Conduct constitutes a material breach of the website terms, which could result in us taking any of the following actions:issuing a warning to youreducing your reputation pointsimmediate, temporary or permanent withdrawal of any contribution or of your right to use our websites'), 5000);
+
+    }
+
+    function clickOnCode() {
+        //klik na Terms and services u footeru
+        element(by.partialLinkText('Code of Conduct')).click();   
+    }
+
+    function checkCodeURL() {
+        // Provera Code of Conduct URL-a
+        var EC = protractor.ExpectedConditions;
+        browser.wait(EC.urlIs('https://qa.cbancnetwork.com/support/code_of_conduct'), 7000);
+    }
+
+    module.exports = {
+        checkText1,
+        clickOnCode,
+        checkCodeURL,
+    }
