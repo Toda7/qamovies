@@ -1,6 +1,7 @@
 function landOnAdvertise() {
     // dolazak na Advertise stranu 
     browser.get('https://qa.cbancnetwork.com/advertise'); 
+<<<<<<< HEAD
     browser.sleep(3000);
 }
 
@@ -12,6 +13,9 @@ function openIntercom() {
 function closeIntercom() {
     //  Zatvori Intercom
     element(by.className('intercom-launcher-frame intercom-cqrjjr e1ur5zlj0')).click();
+=======
+    browser.sleep(2000);
+>>>>>>> 2bc4865bed9d9b9437164c4d2cf19e0fe3972504
 }
 
 function checkPageTitle() {
@@ -174,6 +178,7 @@ function clickOnButton() {
     browser.sleep(500);
 }
 
+<<<<<<< HEAD
 function checkGetStartedURL() {
     // Provera da li se ucitao Get Started page URL
     var EC = protractor.ExpectedConditions;
@@ -184,6 +189,10 @@ module.exports = {
     landOnAdvertise,
     openIntercom,
     closeIntercom,
+=======
+module.exports = {
+    landOnAdvertise,
+>>>>>>> 2bc4865bed9d9b9437164c4d2cf19e0fe3972504
     checkPageTitle,
     checkTextRowOne,
     checkPhotoRowOne,
@@ -207,6 +216,9 @@ module.exports = {
     checkAngelaSignature,
     checkBottomText,
     clickOnButton,
+<<<<<<< HEAD
     checkGetStartedURL,
+=======
+>>>>>>> 2bc4865bed9d9b9437164c4d2cf19e0fe3972504
 
 }
