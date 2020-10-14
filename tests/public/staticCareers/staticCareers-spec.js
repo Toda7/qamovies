@@ -33,12 +33,12 @@ describe('Careers strana', function(){
 
     it('Otvori Intercom', function(){
         staticCareers.openIntercom();
-        browser.sleep(1000)
+        browser.sleep(2500)
     });
 
     it('Zatvori Intercom', function(){
         staticCareers.closeIntercom();
-        browser.sleep(1000)
+        browser.sleep(2500)
     });
 
     afterAll(function(){

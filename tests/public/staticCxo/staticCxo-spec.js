@@ -13,7 +13,7 @@ describe('CXO strana', function(){
 
     it('Otvori Intercom', function(){
         staticCxo.openIntercom();
-        browser.sleep(1000)
+        browser.sleep(2500)
     });
 
     it('Zatvori Intercom', function(){
@@ -53,7 +53,7 @@ describe('CXO strana', function(){
 
     it('Klik na Sign In dugme', function(){
         staticCxo.clickOnSignIn();
-        browser.sleep(2000)
+        browser.sleep(2500)
     });   
 
     it('Unesi 1@chicago.com email adresu', function(){
@@ -73,7 +73,7 @@ describe('CXO strana', function(){
 
     it('Dolazak na CXO stranu', function(){
         staticCxo.landOnCxoPage();
-        browser.sleep(2000)
+        browser.sleep(2500)
     });
 
     it('Provera texta u email input polju', function(){

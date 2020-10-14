@@ -14,9 +14,9 @@ exports.config = {
     //   './public/staticVendorManagementStandardTerms/staticVendorManagementStandardTerms-spec.js',
     // ],
 
-    // staticAbout: [
-    //   './public/staticAbout/staticAbout-spec.js',
-    // ],
+    staticAbout: [
+      './public/staticAbout/staticAbout-spec.js',
+    ],
 
     // staticRiskAssessment: [
     //   './public/staticRiskAssessment/staticRiskAssessment-spec.js',
@@ -34,9 +34,9 @@ exports.config = {
     //   './public/staticCxo/staticCxo-spec.js',
     // ],
 
-    staticWebinarsCallForSpeakers: [
-      './public/staticWebinarsCallForSpeakers/staticWebinarsCallForSpeakers-spec.js',
-    ],
+    // staticWebinarsCallForSpeakers: [
+    //   './public/staticWebinarsCallForSpeakers/staticWebinarsCallForSpeakers-spec.js',
+    // ],
 
   },
 

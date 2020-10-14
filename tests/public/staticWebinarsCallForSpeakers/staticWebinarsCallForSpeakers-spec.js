@@ -13,7 +13,7 @@ describe('Webinars Call For Speakers strana', function () {
 
     it('Otvori Intercom', function () {
         staticWebinarsCallForSpeakers.openIntercom();
-        browser.sleep(1000)
+        browser.sleep(2500)
     });
 
     it('Zatvori Intercom', function () {
@@ -66,7 +66,7 @@ describe('Webinars Call For Speakers strana', function () {
 
     it('Klik na Log In dugme', function () {
         staticWebinarsCallForSpeakers.submit();
-        browser.sleep(2000)
+        browser.sleep(2500)
     });
 
     it('Provera da li se ucitao URL za Call for Webinar Speakers formu', function () {
@@ -188,7 +188,7 @@ describe('Webinars Call For Speakers strana', function () {
 
     it('Klik na Submit dugme', function () {
         staticWebinarsCallForSpeakers.clickSubmitButton();
-        browser.sleep(2000)
+        browser.sleep(2500)
     });
 
     it('Provera da li se ucitao URL za Success stranu u produkciji', function () {
@@ -203,7 +203,7 @@ describe('Webinars Call For Speakers strana', function () {
 
     it('Dolazak na Beta Success stranu', function () {
         staticWebinarsCallForSpeakers.landBetaSuccessPage();
-        browser.sleep(2000)
+        browser.sleep(2500)
     });
 
     it('Provera Success poruke na Beti', function () {
