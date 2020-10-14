@@ -1,7 +1,17 @@
 function landOnAdvertise() {
     // dolazak na Advertise stranu 
     browser.get('https://qa.cbancnetwork.com/advertise'); 
-    browser.sleep(2000);
+    browser.sleep(3000);
+}
+
+function openIntercom() {
+    //  Otvori Intercom
+    element(by.className('intercom-lightweight-app-launcher-icon intercom-lightweight-app-launcher-icon-open')).click();
+}
+
+function closeIntercom() {
+    //  Zatvori Intercom
+    element(by.className('intercom-launcher-frame intercom-cqrjjr e1ur5zlj0')).click();
 }
 
 function checkPageTitle() {
@@ -164,8 +174,16 @@ function clickOnButton() {
     browser.sleep(500);
 }
 
+function checkGetStartedURL() {
+    // Provera da li se ucitao Get Started page URL
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/advertise/get-started?action=marketing-solutions'), 5000);
+}
+
 module.exports = {
     landOnAdvertise,
+    openIntercom,
+    closeIntercom,
     checkPageTitle,
     checkTextRowOne,
     checkPhotoRowOne,
@@ -189,5 +207,6 @@ module.exports = {
     checkAngelaSignature,
     checkBottomText,
     clickOnButton,
+    checkGetStartedURL,
 
 }

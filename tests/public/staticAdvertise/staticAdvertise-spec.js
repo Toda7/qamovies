@@ -11,6 +11,16 @@ describe('Provera Advertise strane', function () {
         browser.sleep(4000);
     });
 
+    it('Otvori Intercom', function(){
+        staticAdvertise.openIntercom();
+        browser.sleep(1000)
+    });
+
+    it('Zatvori Intercom', function(){
+        staticAdvertise.closeIntercom();
+        browser.sleep(1000)
+    });
+
     it('Provera Page Title-a', function () {
         staticAdvertise.checkPageTitle();
         browser.sleep(4000);
@@ -123,6 +133,11 @@ describe('Provera Advertise strane', function () {
 
     it('Klik na GET STARTED button', function () {
         staticAdvertise.clickOnButton();
+        browser.sleep(4000);
+    });
+
+    it('Provera da li se ucitao Get Started page URL', function () {
+        staticAdvertise.checkGetStartedURL();
         browser.sleep(4000);
     });
 
