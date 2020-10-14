@@ -122,7 +122,7 @@ describe('Advertise get-started strana', function () {
         staticHome.checkEducationURL();
         browser.sleep(1000);
         browser.navigate().back();
-        browser.sleep(2000);
+        browser.sleep(4000);
     });
 
     it('Hover to open Education drop menu', function () {
@@ -168,7 +168,7 @@ describe('Advertise get-started strana', function () {
         staticHome.checkUpcomingURL();
         browser.sleep(1000);
         browser.navigate().back();
-        browser.sleep(2000);
+        browser.sleep(4000);
     });
 
     it('Hover to open Education drop menu', function () {

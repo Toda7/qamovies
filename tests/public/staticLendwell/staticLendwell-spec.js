@@ -344,7 +344,7 @@ describe('Lendwell strana', function () {
 
     it('Klik na SUBMIT button', function () {
         staticLendwell.clickOnSubmitButton();
-        browser.sleep(5000);
+        browser.sleep(8000);
     });
 
     it('Provera Success URL-a na produkciji', function () {
@@ -495,7 +495,7 @@ describe('Lendwell strana', function () {
 
     it('Klik na SUBMIT button', function () {
         staticLendwell.clickOnSubmitButton();
-        browser.sleep(5000);
+        browser.sleep(8000);
     });
 
     it('Provera Success URL-a na produkciji', function () {
