@@ -294,7 +294,7 @@ function enterPhone(){
 function clickOnSubmitButton(){
     //  Klik na Submit button
     element(by.className('cta')).click();
-    browser.sleep(2000);
+    browser.sleep(5000);
 }
 
 function checkSuccessURLOnProduction() {

@@ -15,12 +15,12 @@ describe('Provera Education strane i popuna forme', function () {
 
     it('Otvori Intercom', function () {
         staticEducation.openIntercom();
-        browser.sleep(1000);
+        browser.sleep(5000);
     });
 
     it('Zatvori Intercom', function () {
         staticEducation.closeIntercom();
-        browser.sleep(1000);
+        browser.sleep(2000);
     });
 
     it('Provera Page Title-a', function () {
@@ -249,7 +249,7 @@ describe('Provera Education strane i popuna forme', function () {
 
     it('Klik na Submit button', function () {
         staticEducation.clickOnSubmitButton();
-        browser.sleep(1000);
+        browser.sleep(5000);
     });
 
     it('Provera da li se ucitao Success url u produkciji', function () {
