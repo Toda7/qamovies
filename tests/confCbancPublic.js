@@ -12,149 +12,149 @@ exports.config = {
 
   suites: {
 
-    staticHome: [
-      './public/staticHome/staticHome-spec.js',
-    ],
+    // staticHome: [
+    //   './public/staticHome/staticHome-spec.js',
+    // ],
 
-    staticLendwell: [
-      './public/staticLendwell/staticLendwell-spec.js',
-    ],
+    // staticLendwell: [
+    //   './public/staticLendwell/staticLendwell-spec.js',
+    // ],
 
-    staticViewFinder: [
-      './public/staticViewFinder/staticViewFinder-spec.js',
-    ],
+    // staticViewFinder: [
+    //   './public/staticViewFinder/staticViewFinder-spec.js',
+    // ],
 
-    staticVendorManagement: [
-      './public/staticVendorManagement/staticVendorManagement-spec.js',
-    ],
+    // staticVendorManagement: [
+    //   './public/staticVendorManagement/staticVendorManagement-spec.js',
+    // ],
 
-    staticRiskAssessment: [
-      './public/staticRiskAssessment/staticRiskAssessment-spec.js',
-    ],
+    // staticRiskAssessment: [
+    //   './public/staticRiskAssessment/staticRiskAssessment-spec.js',
+    // ],
 
-    staticPeerAnalysis: [
-      './public/staticPeerAnalysis/staticPeerAnalysis-spec.js',
-    ],
+    // staticPeerAnalysis: [
+    //   './public/staticPeerAnalysis/staticPeerAnalysis-spec.js',
+    // ],
 
-    staticEducation: [
-      './public/staticEducation/staticEducation-spec.js',
-    ],
+    // staticEducation: [
+    //   './public/staticEducation/staticEducation-spec.js',
+    // ],
 
-    upcoming: [
-      './public/upcoming/upcoming-spec.js',
-    ],
+    // upcoming: [
+    //   './public/upcoming/upcoming-spec.js',
+    // ],
 
-    ondemand: [
-      './public/ondemand/ondemand-spec.js',
-    ],
+    // ondemand: [
+    //   './public/ondemand/ondemand-spec.js',
+    // ],
 
-    orders: [
-      './public/orders/orders-spec.js',
-    ],
+    // orders: [
+    //   './public/orders/orders-spec.js',
+    // ],
 
-    reserveseat: [
-      './public/reserveseat/reserveseat-spec.js',
-    ],
+    // reserveseat: [
+    //   './public/reserveseat/reserveseat-spec.js',
+    // ],
 
-    searchWebinars: [
-      './public/searchWebinars/searchWebinars-spec.js',
-    ],
+    // searchWebinars: [
+    //   './public/searchWebinars/searchWebinars-spec.js',
+    // ],
 
-    topics: [
-      './public/topics/topics-spec.js',
-    ],
+    // topics: [
+    //   './public/topics/topics-spec.js',
+    // ],
 
-    topicsearch: [
-      './public/topicSearch/topicSearch-spec.js',
-    ],
+    // topicsearch: [
+    //   './public/topicSearch/topicSearch-spec.js',
+    // ],
 
-    docLib: [
-      './public/docLib/docLib-spec.js',
-    ],
+    // docLib: [
+    //   './public/docLib/docLib-spec.js',
+    // ],
 
-    docLibSearch: [
-      './public/docLibSearch/docLibSearch-spec.js',
-    ],
+    // docLibSearch: [
+    //   './public/docLibSearch/docLibSearch-spec.js',
+    // ],
 
-    questions: [
-      './questions/questions-spec.js',
-    ],
+    // questions: [
+    //   './questions/questions-spec.js',
+    // ],
 
-    staticAbout: [
-      './public/staticAbout/staticAbout-spec.js',
-    ],
+    // staticAbout: [
+    //   './public/staticAbout/staticAbout-spec.js',
+    // ],
 
-    footFAQ: [
-      './public/footFAQ/footFAQ-spec.js',
-    ],
+    // footFAQ: [
+    //   './public/footFAQ/footFAQ-spec.js',
+    // ],
 
-    staticSupport: [
-      './public/staticSupport/staticSupport-spec.js'
-    ],
+    // staticSupport: [
+    //   './public/staticSupport/staticSupport-spec.js'
+    // ],
 
-    staticTrainingCcbp: [
-      './public/staticTrainingCcbp/staticTrainingCcbp-spec.js'
-    ],
+    // staticTrainingCcbp: [
+    //   './public/staticTrainingCcbp/staticTrainingCcbp-spec.js'
+    // ],
 
-    staticAdvertiseGetStarted: [
-      './public/staticAdvertiseGetStarted/staticAdvertiseGetStarted-spec.js'
-    ],
+    // staticAdvertiseGetStarted: [
+    //   './public/staticAdvertiseGetStarted/staticAdvertiseGetStarted-spec.js'
+    // ],
 
-    staticLeadGenerationForFintech: [
-      './public/staticLeadGenerationForFintech/staticLeadGenerationForFintech-spec.js'
-    ],
+    // staticLeadGenerationForFintech: [
+    //   './public/staticLeadGenerationForFintech/staticLeadGenerationForFintech-spec.js'
+    // ],
 
-    staticPremium: [
-      './public/staticPremium/staticPremium-spec.js'
-    ],
+    // staticPremium: [
+    //   './public/staticPremium/staticPremium-spec.js'
+    // ],
 
-    staticCodeOfConduct: [
-      './public/staticCodeOfConduct/staticCodeOfConduct-spec.js'
-    ],
+    // staticCodeOfConduct: [
+    //   './public/staticCodeOfConduct/staticCodeOfConduct-spec.js'
+    // ],
 
-    staticPrivacyPolicy: [
-      './public/staticPrivacyPolicy/staticPrivacyPolicy-spec.js'
-    ],
+    // staticPrivacyPolicy: [
+    //   './public/staticPrivacyPolicy/staticPrivacyPolicy-spec.js'
+    // ],
 
-    staticTermsOfService: [
-      './public/staticTermsOfService/staticTermsOfService-spec.js'
-    ],
+    // staticTermsOfService: [
+    //   './public/staticTermsOfService/staticTermsOfService-spec.js'
+    // ],
 
-    staticVendorManagementStandardTerms: [
-      './public/staticVendorManagementStandardTerms/staticVendorManagementStandardTerms-spec.js'
-    ],
+    // staticVendorManagementStandardTerms: [
+    //   './public/staticVendorManagementStandardTerms/staticVendorManagementStandardTerms-spec.js'
+    // ],
 
-    staticWebinarsCallForSpeakers: [
-      './public/staticWebinarsCallForSpeakers/staticWebinarsCallForSpeakers-spec.js'
-    ],
+    // staticWebinarsCallForSpeakers: [
+    //   './public/staticWebinarsCallForSpeakers/staticWebinarsCallForSpeakers-spec.js'
+    // ],
 
-    staticCxo: [
-      './public/staticCxo/staticCxo-spec.js'
-    ],
+    // staticCxo: [
+    //   './public/staticCxo/staticCxo-spec.js'
+    // ],
 
-    staticAft: [
-      './public/staticAft/staticAft-spec.js'
-    ],
+    // staticAft: [
+    //   './public/staticAft/staticAft-spec.js'
+    // ],
 
-    staticCareers: [
-      './public/staticCareers/staticCareers-spec.js'
-    ],
+    // staticCareers: [
+    //   './public/staticCareers/staticCareers-spec.js'
+    // ],
 
     staticLwbenefit: [
       './public/staticLwbenefit/staticLwbenefit-spec.js'
     ],
 
-    staticLoanMarketPrivacy: [
-      './public/staticLoanMarketPrivacy/staticLoanMarketPrivacy-spec.js'
-    ],
+    // staticLoanMarketPrivacy: [
+    //   './public/staticLoanMarketPrivacy/staticLoanMarketPrivacy-spec.js'
+    // ],
 
-    staticAdvertise: [
-      './public/staticAdvertise/staticAdvertise-spec.js'
-    ],
+    // staticAdvertise: [
+    //   './public/staticAdvertise/staticAdvertise-spec.js'
+    // ],
 
-    staticLoanMarketplace: [
-      './public/staticLoanMarketplace/staticLoanMarketplace-spec.js'
-    ],
+    // staticLoanMarketplace: [
+    //   './public/staticLoanMarketplace/staticLoanMarketplace-spec.js'
+    // ],
     
   },
   
