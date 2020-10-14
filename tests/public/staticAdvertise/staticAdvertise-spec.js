@@ -11,7 +11,6 @@ describe('Provera Advertise strane', function () {
         browser.sleep(4000);
     });
 
-<<<<<<< HEAD
     it('Otvori Intercom', function(){
         staticAdvertise.openIntercom();
         browser.sleep(1000)
@@ -22,8 +21,6 @@ describe('Provera Advertise strane', function () {
         browser.sleep(1000)
     });
 
-=======
->>>>>>> 2bc4865bed9d9b9437164c4d2cf19e0fe3972504
     it('Provera Page Title-a', function () {
         staticAdvertise.checkPageTitle();
         browser.sleep(4000);
@@ -139,14 +136,11 @@ describe('Provera Advertise strane', function () {
         browser.sleep(4000);
     });
 
-<<<<<<< HEAD
     it('Provera da li se ucitao Get Started page URL', function () {
         staticAdvertise.checkGetStartedURL();
         browser.sleep(4000);
     });
 
-=======
->>>>>>> 2bc4865bed9d9b9437164c4d2cf19e0fe3972504
     afterAll(function () {
         browser.waitForAngularEnabled(true);
     });

@@ -12,39 +12,33 @@ exports.config = {
 
   suites: {
 
-    // opt: [
-    //   './todo-spec.js',     (poziva 'todo' fajl koji ne sluzi nicemu. to je samo primer)
-    // ],
-
-    // reg smo stavili u comment da ne bi okidali non stop emailove za novu registraciju(slobodno upaliti po potrebi)
-    // registracija: [
-    //   './public/registracija/registracija-spec.js',
-    // ],
-
-    home: [
-      './public/home/home-spec.js',
+    staticHome: [
+      './public/staticHome/staticHome-spec.js',
     ],
 
-    lendwell: [
-      './public/lendwell/lendwell-spec.js',
+    staticLendwell: [
+      './public/staticLendwell/staticLendwell-spec.js',
     ],
 
-    vendor: [
-      './public/vendor/vendor-spec.js',
+    staticViewFinder: [
+      './public/staticViewFinder/staticViewFinder-spec.js',
     ],
-    vm: [
-      './public/vendor_management/vendor_management-spec.js',
+
+    staticVendorManagement: [
+      './public/staticVendorManagement/staticVendorManagement-spec.js',
     ],
-    ra: [
-      './public/risk_assessment/risk_assessment-spec.js',
+
+    staticRiskAssessment: [
+      './public/staticRiskAssessment/staticRiskAssessment-spec.js',
     ],
-    pa: [
-      './public/peer_analysis/peer_analysis-spec.js',
+
+    staticPeerAnalysis: [
+      './public/staticPeerAnalysis/staticPeerAnalysis-spec.js',
     ],
-    // ne postoji vise stranica
-    // cielostar: [
-    //   './public/cielostar/cielostar-spec.js',
-    // ],
+
+    staticEducation: [
+      './public/staticEducation/staticEducation-spec.js',
+    ],
 
     upcoming: [
       './public/upcoming/upcoming-spec.js',
@@ -58,12 +52,12 @@ exports.config = {
       './public/orders/orders-spec.js',
     ],
 
-    accessplus: [
-      './public/accessplus/accessplus-spec.js',
-    ],
-
     reserveseat: [
       './public/reserveseat/reserveseat-spec.js',
+    ],
+
+    searchWebinars: [
+      './public/searchWebinars/searchWebinars-spec.js',
     ],
 
     topics: [
@@ -74,58 +68,94 @@ exports.config = {
       './public/topicSearch/topicSearch-spec.js',
     ],
 
-    docss: [
-      './public/docLibSearch/docLibSearch-spec.js',
+    docLib: [
+      './public/docLib/docLib-spec.js',
     ],
 
-    doc: [
-      './public/docLib/docLib-spec.js',
+    docLibSearch: [
+      './public/docLibSearch/docLibSearch-spec.js',
     ],
 
     questions: [
       './questions/questions-spec.js',
     ],
 
-    searchWebinars: [
-      './public/searchWebinars/searchWebinars-spec.js',
-    ],
-
-    footAbout: [
-      './public/footAbout/footAbout-spec.js',
+    staticAbout: [
+      './public/staticAbout/staticAbout-spec.js',
     ],
 
     footFAQ: [
       './public/footFAQ/footFAQ-spec.js',
     ],
 
-    footContact: [
-      './public/footContact/footContact-spec.js'
+    staticSupport: [
+      './public/staticSupport/staticSupport-spec.js'
     ],
 
-    footVendors: [
-      './public/footVendors/footVendors-spec.js'
+    staticTrainingCcbp: [
+      './public/staticTrainingCcbp/staticTrainingCcbp-spec.js'
     ],
 
-    footCareers: [
-      './public/footCareers/footCareers-spec.js'
+    staticAdvertiseGetStarted: [
+      './public/staticAdvertiseGetStarted/staticAdvertiseGetStarted-spec.js'
     ],
 
-    footBlog: [
-      './public/footBlog/footBlog-spec.js'
+    staticLeadGenerationForFintech: [
+      './public/staticLeadGenerationForFintech/staticLeadGenerationForFintech-spec.js'
     ],
 
-    footPrivacy: [
-      './public/footPrivacy/footPrivacy-spec.js'
+    staticPremium: [
+      './public/staticPremium/staticPremium-spec.js'
     ],
 
-    footTerms: [
-      './public/footTerms/footTerms-spec.js'
+    staticCodeOfConduct: [
+      './public/staticCodeOfConduct/staticCodeOfConduct-spec.js'
     ],
 
-    footCode: [
-      './public/footCode/footCode-spec.js'
+    staticPrivacyPolicy: [
+      './public/staticPrivacyPolicy/staticPrivacyPolicy-spec.js'
     ],
 
+    staticTermsOfService: [
+      './public/staticTermsOfService/staticTermsOfService-spec.js'
+    ],
+
+    staticVendorManagementStandardTerms: [
+      './public/staticVendorManagementStandardTerms/staticVendorManagementStandardTerms-spec.js'
+    ],
+
+    staticWebinarsCallForSpeakers: [
+      './public/staticWebinarsCallForSpeakers/staticWebinarsCallForSpeakers-spec.js'
+    ],
+
+    staticCxo: [
+      './public/staticCxo/staticCxo-spec.js'
+    ],
+
+    staticAft: [
+      './public/staticAft/staticAft-spec.js'
+    ],
+
+    staticCareers: [
+      './public/staticCareers/staticCareers-spec.js'
+    ],
+
+    staticLwbenefit: [
+      './public/staticLwbenefit/staticLwbenefit-spec.js'
+    ],
+
+    staticLoanMarketPrivacy: [
+      './public/staticLoanMarketPrivacy/staticLoanMarketPrivacy-spec.js'
+    ],
+
+    staticAdvertise: [
+      './public/staticAdvertise/staticAdvertise-spec.js'
+    ],
+
+    staticLoanMarketplace: [
+      './public/staticLoanMarketplace/staticLoanMarketplace-spec.js'
+    ],
+    
   },
   
   capabilities: {

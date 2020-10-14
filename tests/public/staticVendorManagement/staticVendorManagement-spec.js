@@ -1,6 +1,5 @@
 var register = require('../registracija/registracija-po');
 var login = require('../login/login-po.js');
-var home = require('../home/home-po');
 var vm = require('./staticVendorManagement-po');
 var staticVendorManagement = require('./staticVendorManagement-po');
 var staticPremium = require('../staticPremium/staticPremium-po.js');
