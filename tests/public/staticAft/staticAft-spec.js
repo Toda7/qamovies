@@ -8,7 +8,7 @@ describe('AFT public strana', function(){
    
     it('Dolazak na AFT stranu', function(){
         staticAft.landOnAft();
-        browser.sleep(1000)
+        browser.sleep(2000)
     });
 
     it('Provera da li se ucitao text u Hero sekciji', function(){
@@ -88,17 +88,17 @@ describe('AFT public strana', function(){
 
     it('Klik na prvo CTA dugme', function(){
         staticAft.clickFirstCtaButton();
-        browser.sleep(2000)
+        browser.sleep(3000)
     });
 
     it('Provera gornjeg Thank You texta', function(){
         staticAft.checkThankYouTextOne();
-        browser.sleep(500)
+        browser.sleep(1000)
     });
 
     it('Refresh page', function(){
         browser.refresh(); 
-        browser.sleep(2000);
+        browser.sleep(3000);
     });
 
     it('Unesi email adresu u drugo input polje', function(){
@@ -108,17 +108,17 @@ describe('AFT public strana', function(){
 
     it('Klik na drugo CTA dugme', function(){
         staticAft.clickSecondCtaButton();
-        browser.sleep(2000)
+        browser.sleep(3000)
     });
 
     it('Provera donjeg Thank You texta', function(){
         staticAft.checkThankYouTextTwo();
-        browser.sleep(500)
+        browser.sleep(100)
     });
 
     it('Otvori Intercom', function(){
         staticAft.openIntercom();
-        browser.sleep(1000)
+        browser.sleep(2500)
     });
 
     it('Zatvori Intercom', function(){
@@ -128,12 +128,12 @@ describe('AFT public strana', function(){
 
     it('Dolazak na Home page', function(){
         staticAft.landOnHomePage();
-        browser.sleep(1000)
+        browser.sleep(2000)
     });   
 
     it('Klik na Sign In dugme', function(){
         staticAft.clickOnSignIn();
-        browser.sleep(2000)
+        browser.sleep(2500)
     });   
 
     it('Unesi 1@phoenix.com email adresu', function(){
@@ -153,7 +153,7 @@ describe('AFT public strana', function(){
 
     it('Dolazak na AFT stranu', function(){
         staticAft.landOnAft();
-        browser.sleep(1000)
+        browser.sleep(2500)
     });
 
     it('Provera texta u prvom email input polju', function(){
@@ -163,7 +163,7 @@ describe('AFT public strana', function(){
 
     it('Klik na prvo CTA dugme', function(){
         staticAft.clickFirstCtaButton();
-        browser.sleep(2000)
+        browser.sleep(2500)
     });
 
     it('Provera gornjeg Thank You texta', function(){
@@ -173,7 +173,7 @@ describe('AFT public strana', function(){
 
     it('Refresh page', function(){
         browser.refresh(); 
-        browser.sleep(2000);
+        browser.sleep(2500);
     });
 
     it('Provera texta u drugom email input polju', function(){
@@ -183,7 +183,7 @@ describe('AFT public strana', function(){
 
     it('Klik na drugo CTA dugme', function(){
         staticAft.clickSecondCtaButton();
-        browser.sleep(2000)
+        browser.sleep(2500)
     });
 
     it('Provera donjeg Thank You texta', function(){
@@ -208,7 +208,7 @@ describe('AFT public strana', function(){
 
     it('Klik na Sign In dugme', function () {
         staticAft.clickOnSignIn();
-        browser.sleep(2000)
+        browser.sleep(2500)
     });
 
     it('Unesi email adresu', function () {
@@ -228,17 +228,17 @@ describe('AFT public strana', function(){
 
     it('Dolazak na AFT stranu', function () {
         staticAft.landOnAft();
-        browser.sleep(1000)
+        browser.sleep(2500)
     });
 
     it('Provera texta u prvom cta dugmetu', function () {
         staticAft.checkFirstCtaButtonText();
-        browser.sleep(500)
+        browser.sleep(1000)
     });
 
     it('Klik na prvo CTA dugme', function () {
         staticAft.clickFirstCtaButton();
-        browser.sleep(2000)
+        browser.sleep(2500)
     });
 
     it('Provera da li se ucitao URL za AFT Group stranu', function () {
@@ -248,7 +248,7 @@ describe('AFT public strana', function(){
 
     it('Dolazak na AFT stranu', function () {
         staticAft.landOnAft();
-        browser.sleep(1000)
+        browser.sleep(2500)
     });
 
     it('Provera texta u drugom cta dugmetu', function () {
@@ -258,7 +258,7 @@ describe('AFT public strana', function(){
 
     it('Klik na drugo CTA dugme', function () {
         staticAft.clickSecondCtaButton();
-        browser.sleep(2000)
+        browser.sleep(2500)
     });
 
     it('Provera da li se ucitao URL za AFT Group stranu', function () {
@@ -268,7 +268,7 @@ describe('AFT public strana', function(){
 
     it('Dolazak na AFT stranu', function () {
         staticAft.landOnAft();
-        browser.sleep(1000)
+        browser.sleep(2000)
     });
 
     it('Klik na User meni', function () {
