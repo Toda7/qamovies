@@ -223,7 +223,16 @@ describe('Webinars Call For Speakers strana', function () {
 
     it('Klik na Sign Out', function () {
         staticWebinarsCallForSpeakers.clickOnSignOut();
+        browser.getAllWindowHandles().then(function (handles) {
+            browser.driver.close();
+            browser.driver.switchTo().window(handles[0]);
+        });
         browser.sleep(1500)
+    });
+
+    it('Refresh page', function(){
+        browser.refresh(); 
+        browser.sleep(2000);
     });
 
     afterAll(function () {
