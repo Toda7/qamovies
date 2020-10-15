@@ -1,6 +1,7 @@
 var staticLwbenefit = require('./staticLwbenefit-po.js');
 var staticHome = require('../staticHome/staticHome-po.js');
 // var login = require('../login/login-po.js');
+var staticLendwell = require('../staticLendwell/staticLendwell-po.js');
 
 
 describe('Lendwell benefit strana', function () {
@@ -11,7 +12,7 @@ describe('Lendwell benefit strana', function () {
 
     it('Dolazak na Lendwell benefit strana', function () {
         staticLwbenefit.landOnLwbenefit();
-        browser.sleep(4000);
+        browser.sleep(6000);
     });
 
     it('Otvori intercome', function () {

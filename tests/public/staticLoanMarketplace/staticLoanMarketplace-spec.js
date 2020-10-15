@@ -15,12 +15,12 @@ describe('Provera Loan Marketplace strane i popuna forme', function () {
 
     it('Otvori Intercom', function(){
         staticLoanMarketplace.openIntercom();
-        browser.sleep(1000)
+        browser.sleep(5000)
     });
 
     it('Zatvori Intercom', function(){
         staticLoanMarketplace.closeIntercom();
-        browser.sleep(1000)
+        browser.sleep(3000)
     });
 
     it('Provera Page Title-a', function(){

@@ -303,7 +303,7 @@ describe('Advertise get-started strana', function () {
         staticHome.checkPeerAnalysisURL();
         browser.sleep(1000);
         browser.navigate().back();
-        browser.sleep(2000);
+        browser.sleep(5000);
     });
 
     it('Hover to open More drop menu', function () {
@@ -998,7 +998,7 @@ describe('Advertise get-started strana', function () {
         staticHome.checkPeerAnalysisURL();
         browser.sleep(1000);
         browser.navigate().back();
-        browser.sleep(2000);
+        browser.sleep(5000);
     });
 
     it('Hover to open More drop menu', function () {

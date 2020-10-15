@@ -364,6 +364,7 @@ describe('Lendwell strana', function () {
 
     it('Provera success poruke na QA', function () {
         staticLendwell.checkSuccessMessages();
+        browser.sleep(3000);
     });
 
     it('Klik na Sign in button', function () {
@@ -515,6 +516,7 @@ describe('Lendwell strana', function () {
 
     it('Provera success poruke na QA', function () {
         staticLendwell.checkSuccessMessages();
+        browser.sleep(6000);
     });
 
     // cekeri za private 

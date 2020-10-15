@@ -8,17 +8,17 @@ describe('Provera Advertise strane', function () {
 
     it('Dolazak na Advertise stranu', function () {
         staticAdvertise.landOnAdvertise();
-        browser.sleep(4000);
+        browser.sleep(5000);
     });
 
     it('Otvori Intercom', function(){
         staticAdvertise.openIntercom();
-        browser.sleep(1000)
+        browser.sleep(5000)
     });
 
     it('Zatvori Intercom', function(){
         staticAdvertise.closeIntercom();
-        browser.sleep(1000)
+        browser.sleep(2000)
     });
 
     it('Provera Page Title-a', function () {
