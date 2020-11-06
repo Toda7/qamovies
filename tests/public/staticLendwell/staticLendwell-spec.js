@@ -352,13 +352,23 @@ describe('Lendwell strana', function () {
         browser.sleep(6000);
     });
 
+    it('Refresh page', function(){
+        browser.refresh(); 
+        browser.sleep(9000);
+    });
+
     it('Provera success poruke na produkciji', function () {
         staticLendwell.checkSuccessMessages();
-        browser.sleep(5000);
+        browser.sleep(1000);
     });
 
     it('Dolazak na Success Page na QA', function () {
         staticLendwell.landOnQaSuccessPage();
+        browser.sleep(9000);
+    });
+
+    it('Refresh page', function(){
+        browser.refresh(); 
         browser.sleep(9000);
     });
 
@@ -504,6 +514,11 @@ describe('Lendwell strana', function () {
         browser.sleep(5000);
     });
 
+    it('Refresh page', function(){
+        browser.refresh(); 
+        browser.sleep(9000);
+    });
+
     it('Provera success poruke na produkciji', function () {
         staticLendwell.checkSuccessMessages();
         browser.sleep(5000);
@@ -511,6 +526,11 @@ describe('Lendwell strana', function () {
 
     it('Dolazak na Success Page na QA', function () {
         staticLendwell.landOnQaSuccessPage();
+        browser.sleep(7000);
+    });
+
+    it('Refresh page', function(){
+        browser.refresh(); 
         browser.sleep(9000);
     });
 

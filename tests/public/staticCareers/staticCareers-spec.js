@@ -21,16 +21,6 @@ describe('Careers strana', function(){
         browser.sleep(500)
     });
 
-    it('Provera da li je prvo Email Us dugme dobro linkovano', function(){
-        staticCareers.checkFirstEmailUsButton();
-        browser.sleep(500)
-    });
-
-    it('Provera da li je drugo Email Us dugme dobro linkovano', function(){
-        staticCareers.checkSecondEmailUsButton();
-        browser.sleep(500)
-    });
-
     it('Otvori Intercom', function(){
         staticCareers.openIntercom();
         browser.sleep(2500)

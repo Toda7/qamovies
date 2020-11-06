@@ -30,7 +30,7 @@ describe('Kupovina webinara preko invoice', function(){
 
     it('Click na Reserve Button Link', function(){
         reserveseat.clickOnReserveButton();
-        browser.sleep(2000);
+        browser.sleep(5000);
     });
 
     it('Unosenje Imena', function(){
@@ -60,7 +60,7 @@ describe('Kupovina webinara preko invoice', function(){
 
     it('Rezervisanje Mesta za Webinar', function(){
         reserveseat.clickOnReserveMySpot();
-        browser.sleep(3000);
+        browser.sleep(5000);
     });
 
     it('Click na Invoice Link', function(){
