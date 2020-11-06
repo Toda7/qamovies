@@ -359,7 +359,7 @@ describe('Lendwell strana', function () {
 
     it('Dolazak na Success Page na QA', function () {
         staticLendwell.landOnQaSuccessPage();
-        browser.sleep(6000);
+        browser.sleep(9000);
     });
 
     it('Provera success poruke na QA', function () {
@@ -511,7 +511,7 @@ describe('Lendwell strana', function () {
 
     it('Dolazak na Success Page na QA', function () {
         staticLendwell.landOnQaSuccessPage();
-        browser.sleep(6000);
+        browser.sleep(9000);
     });
 
     it('Provera success poruke na QA', function () {

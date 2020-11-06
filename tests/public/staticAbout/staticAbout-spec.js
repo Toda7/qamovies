@@ -38,7 +38,7 @@ describe('About strana', function(){
 
     it('Otvori Intercom', function(){
         staticAbout.openIntercom();
-        browser.sleep(1000)
+        browser.sleep(3000)
     });
 
     it('Zatvori Intercom', function(){

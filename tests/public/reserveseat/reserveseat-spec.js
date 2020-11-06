@@ -10,20 +10,22 @@ describe('Kupovina webinara preko invoice', function(){
 
     it('Dolazak na home stranu', function(){
         register.landOnHomePage();
+        browser.sleep(3000);
     });
 
     it('Hoverujem Education link za drop', function(){
         upcoming.HoverToOpenDrop();
+        browser.sleep(3000);
     });
 
     it('Click na Upcoming link', function(){
         upcoming.clickOnLink();
-        browser.sleep(5000);
+        browser.sleep(8000);
     });
 
     it('Click na Webinar Karticu', function(){
         reserveseat.clickOnWebinarCard();
-        browser.sleep(2000);
+        browser.sleep(5000);
     });
 
     it('Click na Reserve Button Link', function(){
@@ -33,10 +35,12 @@ describe('Kupovina webinara preko invoice', function(){
 
     it('Unosenje Imena', function(){
         reserveseat.addFirstName();
+        browser.sleep(1000);
     });
 
     it('Unosenje Prezimena', function(){
         reserveseat.addLastName();
+        browser.sleep(1000);
     });
 
     it('Unosenje Emaila', function(){
@@ -61,6 +65,7 @@ describe('Kupovina webinara preko invoice', function(){
 
     it('Click na Invoice Link', function(){
         reserveseat.clickOnInvoice();
+        browser.sleep(1000);
     });
 
     it('Unosenje Invoice Emaila', function(){
