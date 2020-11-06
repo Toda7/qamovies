@@ -10,26 +10,32 @@ describe('Provera On Demand strane', function(){
 
     it('Dolazak na home stranu', function(){
         register.landOnHomePage();
+        browser.sleep(4000);
     });
 
     it('Hoverujem Education link za drop', function(){
         upcoming.HoverToOpenDrop();
+        browser.sleep(1000);
     });
 
     it('Click na Ondemand link', function(){
         ondemand.clickOnLink();
+        browser.sleep(5000);
     });
 
     it('Check On demand URL', function(){
         ondemand.checkOnDemand();
+        browser.sleep(1000);
     });
 
     it('Check On Demand Title', function(){
         ondemand.checkOnDemandWebinarsPageTitle();
+        browser.sleep(1000);
     });
 
     it('Provera Title na strani', function(){
         ondemand.checkTitleOnPage();
+        browser.sleep(1000);
     });   
 
 
