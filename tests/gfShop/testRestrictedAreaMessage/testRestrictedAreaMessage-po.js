@@ -27,7 +27,7 @@ function clickOnRestrictedAddress() {
 function checkRestrictedMessage(){ 
    // Provera da li se pojavila restricted message 
       var xxx = element(by.className('message error'));
-      expect(xxx.getText()).toEqual('Restrictions prevent us from shipping this item to CA, LA, MN, and NJ');
+      expect(xxx.getText()).toEqual('We are sorry, Spike and Chogori can not be shipped to New Jersey.');
 }
 
 function clickOnDeletetLink() {

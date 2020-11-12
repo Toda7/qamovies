@@ -411,6 +411,33 @@ function landProduct72DetailsPage() {
     browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/27137/');
 }
 
+function landProduct73DetailsPage() {
+    // Dolazak na PARENT product 73 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/42983/');
+}
+
+function landProduct74DetailsPage() {
+    // Dolazak na product 74 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/42986/');
+}
+
+function landProduct75DetailsPage() {
+    // Dolazak na PARENT product 75 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/41688/');
+}
+
+function landProduct76DetailsPage() {
+    // Dolazak na product 76 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/43016/');
+}
+
+function landProduct77DetailsPage() {
+    // Dolazak na product 77 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/52538/');
+}
+
+
+
 function clickOnAdvancedInventoryLink(){
     // Klik on Advanced Inventory
     element(by.buttonText('Advanced Inventory')).click();
@@ -505,6 +532,11 @@ module.exports = {
     landProduct70DetailsPage,
     landProduct71DetailsPage,
     landProduct72DetailsPage,
+    landProduct73DetailsPage,
+    landProduct74DetailsPage,
+    landProduct75DetailsPage,
+    landProduct76DetailsPage,
+    landProduct77DetailsPage,
     clickOnAdvancedInventoryLink,
     clickOnDoneButton,
     enterNumbersOfQTYForParrent,

@@ -149,7 +149,7 @@ describe('Add billing adresu i error poruke za required polja', function () {
 
     it('Click na address', function(){
         testAddBillingAddress.clickOnAddressesLink();
-        browser.sleep(4000);
+        browser.sleep(6000);
     });
 
     it('Klik na Select link da se otvori drop menu', function(){

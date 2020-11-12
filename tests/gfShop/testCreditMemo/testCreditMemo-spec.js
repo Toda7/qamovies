@@ -9,7 +9,7 @@ var testMyOrders = require('../testMyOrders/testMyOrders-po.js');
 var testReturnPolicy = require('../testReturnPolicy/testReturnPolicy-po.js');
 
 
-describe('Complete order i cekiranje na my orders', function(){
+describe('Refunded order i cekiranje na my orders', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element

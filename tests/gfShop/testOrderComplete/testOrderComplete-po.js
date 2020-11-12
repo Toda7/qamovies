@@ -1,6 +1,6 @@
 function lendOnProductDetails(){
     //dolazak na stranu producta
-    browser.get('https://shop.outfitterextreme.com/hornady/license-plate-frame.html'); 
+    browser.get('https://shop.outfitterextreme.com/truglo/hip-shot-adaptive-shooting-rest.html'); 
     browser.sleep(2000);
 }
 
@@ -73,12 +73,12 @@ function checkTrackNumber() {
 
 function checkProductName() {
    var xxx = element.all(by.className('product name product-item-name'));
-   expect(xxx.getText()).toEqual([ 'License Plate Frame' ]);
+   expect(xxx.getText()).toEqual([ 'HIP-SHOT™ ADAPTIVE SHOOTING REST' ]);
 }
 
 function checkProductSKU() {
    var xxx = element.all(by.className('col sku'));
-   expect(xxx.getText()).toEqual([ 'SKU', '99119' ]);
+   expect(xxx.getText()).toEqual([ 'SKU', 'TG8935XB' ]);
 }
 
 function checkQtyShipped() {

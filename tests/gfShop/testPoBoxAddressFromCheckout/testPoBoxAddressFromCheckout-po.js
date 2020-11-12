@@ -1,6 +1,6 @@
 function lendOnProductDetails(){
    // Dolazak na product details 
-   browser.get('https://shop.outfitterextreme.com/hornady/6mm-243-90-gr-gmx.html'); 
+   browser.get('https://shop.outfitterextreme.com/coldsteel/fgx-ring-dagger.html'); 
 }
 
 function clickOnNewAddressButton(){

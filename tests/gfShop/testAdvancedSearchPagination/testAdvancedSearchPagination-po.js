@@ -7,14 +7,14 @@ function enterProductName() {
 function checkSuccess1() {
    var EC = protractor.ExpectedConditions;
    // Provera da li je dobra paginacija na prvoj strani
-   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 1-12 of 27'), 7000);
+   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 1-12 of 26'), 7000);
    browser.sleep(2500);
 }
 
 function checkSuccess2() {
    var EC = protractor.ExpectedConditions;
    // Provera da li je dobra paginacija na drugoj strani
-   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 13-24 of 27'), 7000);
+   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 13-24 of 26'), 7000);
    browser.sleep(2500);
 }
 
@@ -27,7 +27,7 @@ function clickPageThree() {
 function checkSuccess3() {
    var EC = protractor.ExpectedConditions;
    // Provera da li je dobra paginacija na trecoj strani
-   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 25-27 of 27'), 7000);
+   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 25-26 of 26'), 7000);
    browser.sleep(2500);
 }
 
