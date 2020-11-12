@@ -183,10 +183,10 @@ function landProduct27DetailsPage() {
 }
 
 // ovo je parent product
-// function landProduct28DetailsPage() {
-//     // Dolazak na product 28 u magento
-//     browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/42694/');
-// }
+function landProduct28DetailsPage() {
+    // Dolazak na product 28 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/42694/');
+}
 
 function landProduct29DetailsPage() {
     // Dolazak na product 29 u magento
@@ -411,6 +411,48 @@ function landProduct72DetailsPage() {
     browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/27137/');
 }
 
+function landProduct73DetailsPage() {
+    // Dolazak na PARENT product 73 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/42983/');
+}
+
+function landProduct74DetailsPage() {
+    // Dolazak na product 74 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/42986/');
+}
+
+function landProduct75DetailsPage() {
+    // Dolazak na PARENT product 75 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/41688/');
+}
+
+function landProduct76DetailsPage() {
+    // Dolazak na product 76 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/43016/');
+}
+
+function landProduct77DetailsPage() {
+    // Dolazak na product 77 u magento
+    browser.get('https://shop.outfitterextreme.com/admin_vomn3fspk1/catalog/product/edit/id/52538/');
+}
+
+
+
+function clickOnAdvancedInventoryLink(){
+    // Klik on Advanced Inventory
+    element(by.buttonText('Advanced Inventory')).click();
+}
+
+function clickOnDoneButton(){
+    // Klik na DONE button
+    element.all(by.className('page-actions-buttons')).get('1').click();
+}
+
+function enterNumbersOfQTYForParrent() {
+    // Unosenje numbers u qty polje
+    browser.wait(element.all(by.className('admin__control-text')).get(12).clear().sendKeys('100'), 10000);
+}
+
 module.exports = {
     checkSaveButton,
     clickSwitch,
@@ -445,7 +487,7 @@ module.exports = {
     landProduct25DetailsPage,
     landProduct26DetailsPage,
     landProduct27DetailsPage,
-    // landProduct28DetailsPage,
+    landProduct28DetailsPage,
     landProduct29DetailsPage,
     // landProduct30DetailsPage,
     landProduct31DetailsPage,
@@ -490,5 +532,13 @@ module.exports = {
     landProduct70DetailsPage,
     landProduct71DetailsPage,
     landProduct72DetailsPage,
+    landProduct73DetailsPage,
+    landProduct74DetailsPage,
+    landProduct75DetailsPage,
+    landProduct76DetailsPage,
+    landProduct77DetailsPage,
+    clickOnAdvancedInventoryLink,
+    clickOnDoneButton,
+    enterNumbersOfQTYForParrent,
 }
 

@@ -50,7 +50,7 @@ function checkIsProductIsHereAfterSortingByPrice() {
 function checkNumberOfItems() {
    var EC = protractor.ExpectedConditions;
    // Provera da li je dobar number of items
-   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 1-12 of 27'), 7000);
+   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 1-12 of 26'), 7000);
    browser.sleep(2500);
 }
 
@@ -69,7 +69,7 @@ function checkAdvencedSearchAndPriceSortOn2PageURL() {
 function checkNumberOfItemsOn2Page() {
    var EC = protractor.ExpectedConditions;
    // Provera da li je dobar number of items on 2 page 
-   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 13-24 of 27'), 7000);
+   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 13-24 of 26'), 7000);
    browser.sleep(2500);
 }
 
@@ -95,7 +95,7 @@ function checkAdvencedSearchAndPriceSortOn3PageURL() {
 function checkNumberOfItemsOn3Page() {
    var EC = protractor.ExpectedConditions;
    // Provera da li je dobar number of items on 2 page 
-   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 25-27 of 27'), 7000);
+   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 25-26 of 26'), 7000);
    browser.sleep(2500);
 }
 
@@ -121,7 +121,7 @@ function checkAdvencedSearchAndPriceSortOn3PageAfterSetDescendingDirectioURL() {
 function checkIsProductIsHereAfterSetDescendingDirectio() {
    // Provera da li se prvi prozivod ucitao na advanced search 2 strani nakon sortiranja by Price 
    var xxx = element.all(by.className('product name product-item-name')).get(0);
-   expect(xxx.getText()).toEqual('FAT-BEAD™ DUAL-COLOR');
+   expect(xxx.getText()).toEqual('TRU-SEE™ SPLATTER TARGET');
    browser.sleep(3000);
 }
 
@@ -134,7 +134,7 @@ function selectProductNameToSort() {
 function checkIsProductIsHereAfterSetProductNameToSort() {
    // Provera da li se prvi prozivod ucitao nakon setovanja product name 
    var xxx = element.all(by.className('product name product-item-name')).get(0);
-   expect(xxx.getText()).toEqual("ARCHER'S CHOICE® RANGE ROVER™ PRO");
+   expect(xxx.getText()).toEqual("ARCHER'S CHOICE® RANGE ROVER™");
    browser.sleep(3000);
 }
 

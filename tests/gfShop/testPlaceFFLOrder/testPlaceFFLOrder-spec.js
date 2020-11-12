@@ -61,7 +61,7 @@ describe('Narucivanje FFL ordera', function(){
 
     it('Klik on Next button', function(){
         testPlaceFFLOrder.clickOnNextButton();
-        browser.sleep(5000);
+        browser.sleep(8000);
     });
 
     it('Klik on PLACE ORDER button', function(){
