@@ -94,16 +94,10 @@ function backToQa() {
     browser.sleep(2000);
 }
 
-function checkSucessMessage1() {
+function checkSucessMessage() {
     //  Cekiranje success poruke nakon slanja forme
-    var xxx = element.all(by.className('center')).get(10);
-    expect(xxx.getText()).toEqual('Thank You!');
-}
-
-function checkSucessMessage2() {
-    //  Cekiranje success poruke nakon slanja forme
-    var xxx = element.all(by.className('center')).get(11);
-    expect(xxx.getText()).toEqual("We received your info and we'll be in touch soon.");
+    var xxx = element(by.id('lead_success'));
+    expect(xxx.getText()).toEqual("×\nThank You!\nWe received your info and we'll be in touch soon.");
 }
 
 function checkInputFieldFirstName() {
@@ -200,8 +194,7 @@ module.exports = {
     enterPhoneNumber,
     clickOnSubmit,
     backToQa,
-    checkSucessMessage1,
-    checkSucessMessage2,
+    checkSucessMessage,
     checkInputFieldFirstName,
     checkInputFieldLastName,
     checkInputFieldEmail,
