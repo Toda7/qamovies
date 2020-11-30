@@ -917,8 +917,8 @@ describe('Advertise get-started strana', function () {
         browser.sleep(2000);
     });
 
-    it('Provera More URL-a nakon klika na More link u headeru', function () {
-        staticHome.checkMoreURL();
+    it('Provera More Private URL-a nakon klika na More link u headeru', function () {
+        staticHome.checkMorePrivateURL();
         browser.sleep(1000);
         browser.navigate().back();
         browser.sleep(3000);
