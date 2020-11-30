@@ -287,20 +287,9 @@ function HoverToOpenMoreDrop() {
 }
 
 function checkSubmenuSectionFromMoreyDrop(){
-    // Provera submenu sekcije u More drop downu
+    // Provera texta sekcije u More drop downu
     var xxx = element.all(by.className('submenu')).get(2);
-    expect(xxx.getText()).toEqual('VENDOR MANAGEMENT\nCompliance management application for banks and credit unions.\nRISK ASSESSMENT\nFree, secure risk analysis tool for banks and credit unions.\nPEER ANALYSIS\nCustom peer group analysis for free.\nMORTGAGE SETTLEMENT SERVICES\nIntegrated mortgage settlement services software and provider marketplace.');
-}
-
-function clickOnVendorManagementLink() {
-    //  Klik na vendor management link iz Education drop down menu
-     element(by.className("vendor_management")).click();
-}
-
-function checkVendorManagementURL() {
-    // Provera vendor management URL-a nakon klika na vendor management link 
-    var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/vendor-management'), 7000);
+    expect(xxx.getText()).toEqual('RISK ASSESSMENT\nFree, secure risk analysis tool for banks and credit unions.\nPEER ANALYSIS\nCustom peer group analysis for free.\nMORTGAGE SETTLEMENT SERVICES\nIntegrated mortgage settlement services software and provider marketplace.');
 }
 
 function clickOnRiskAssessmentLink() {
@@ -487,7 +476,7 @@ function checkCodeOfConductURL() {
     function checkMoreLink() {
         // Provera da li se ucitao href za More link
         var xxx = element(by.className('menu_item link_apps has_submenu')).element(by.tagName('a'));
-        expect(xxx.getAttribute('href')).toEqual('https://qa.cbancnetwork.com/vendor-management');
+        expect(xxx.getAttribute('href')).toEqual('https://qa.cbancnetwork.com/risk_assessment');
     }
 
     function checkVendorLink() {
@@ -548,12 +537,6 @@ function checkCodeOfConductURL() {
         // Provera da li se ucitao href za My Orders link u Education dropu
         var xxx = element(by.className('submenu_item link_orders')).element(by.tagName('a'));
         expect(xxx.getAttribute('href')).toEqual('https://qa.cbancnetwork.com/education/orders/my_orders');
-    }
-
-    function checkVendorManagementLink() {
-        // Provera da li se ucitao href za Vendor Management link u More dropu
-        var xxx = element(by.className('submenu_item link_vendor_management')).element(by.tagName('a'));
-        expect(xxx.getAttribute('href')).toEqual('https://qa.cbancnetwork.com/vendor-management');
     }
 
     function checkRiskAssessmentLink() {
@@ -892,8 +875,6 @@ module.exports = {
     checkMoreURL,
     HoverToOpenMoreDrop,
     checkSubmenuSectionFromMoreyDrop,
-    clickOnVendorManagementLink,
-    checkVendorManagementURL,
     clickOnRiskAssessmentLink,
     checkRiskAssessmentURL,
     clickOnPeerAnalysisLink,
@@ -939,7 +920,6 @@ module.exports = {
     checkOnDemandLink,
     checkAllAccessLink,
     checkMyOrdersLink,
-    checkVendorManagementLink,
     checkRiskAssessmentLink,
     checkPeerAnalysisLink,
     checkLendwellLink,

@@ -260,23 +260,6 @@ describe('Advertise get-started strana', function () {
         staticHome.checkSubmenuSectionFromMoreyDrop();
     });
 
-    it('Klik na vendor management link iz Education drop down menu', function () {
-        staticHome.clickOnVendorManagementLink();
-        browser.sleep(2000);
-    });
-
-    it('Provera vendor management URL-a nakon klika na vendor management link', function () {
-        staticHome.checkVendorManagementURL();
-        browser.sleep(1000);
-        browser.navigate().back();
-        browser.sleep(2000);
-    });
-
-    it('Hover to open More drop menu', function () {
-        staticHome.HoverToOpenMoreDrop();
-        browser.sleep(2000);
-    });
-
     it('Klik na Risk Assessment link iz Education drop down menu', function () {
         staticHome.clickOnRiskAssessmentLink();
         browser.sleep(2000);
@@ -949,24 +932,7 @@ describe('Advertise get-started strana', function () {
     it('Provera texta u More drop downu', function () {
         staticHome.checkSubmenuSectionFromMoreyDrop();
     });
-
-    it('Klik na vendor management link iz Education drop down menu', function () {
-        staticHome.clickOnVendorManagementLink();
-        browser.sleep(2000);
-    });
-
-    it('Provera vendor management URL-a nakon klika na vendor management link', function () {
-        staticHome.checkVendorManagementURL();
-        browser.sleep(1000);
-        browser.navigate().back();
-        browser.sleep(2000);
-    });
-
-    it('Hover to open More drop menu', function () {
-        staticHome.HoverToOpenMoreDrop();
-        browser.sleep(2000);
-    });
-
+    
     it('Klik na Risk Assessment link iz Education drop down menu', function () {
         staticHome.clickOnRiskAssessmentLink();
         browser.sleep(2000);
