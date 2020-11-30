@@ -277,7 +277,13 @@ function clickOnMoreLink() {
  function checkMoreURL() {
     // Provera More URL-a nakon klika na More link u headeru
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/vendor-management'), 7000);
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/risk_assessment'), 7000);
+}
+
+function checkMorePrivateURL() {
+    // Provera More URL-a nakon klika na More link u headeru
+    var EC = protractor.ExpectedConditions;
+    browser.wait(EC.urlContains('https://qa.cbancnetwork.com/risk_assessment/home'), 7000);
 }
 
 function HoverToOpenMoreDrop() {
@@ -873,6 +879,7 @@ module.exports = {
     checkOrdersURL,
     clickOnMoreLink,
     checkMoreURL,
+    checkMorePrivateURL,
     HoverToOpenMoreDrop,
     checkSubmenuSectionFromMoreyDrop,
     clickOnRiskAssessmentLink,
