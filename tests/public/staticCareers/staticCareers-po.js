@@ -13,7 +13,7 @@ function checkMainSectionText() {
 function checkCultureSectionText() {
     // Provera da li se ucitao text u Culture sekciji
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('#culture'), "CultureWe work smart. We have fun. We care a lot.If you think you can contribute, we'd love to hear from you.Financially stable, successful company with a ten-year track record of growth and successOffices in the 38th and Lamar corridor with free parkingBest-in-class health, dental, vision, disability, and 401K benefitsFlexible paid time offFresh, healthy lunches provided three days a week"), 5000);
+    browser.wait(EC.textToBePresentInElement($('#culture'), "CultureWe work smart. We have fun. We care a lot.If you think you can contribute, we'd love to hear from you.Financially stable, successful company with a ten-year track record of growth and successAustin Offices in the 38th and Lamar corridor with free parkingBest-in-class health, dental, vision, disability, and 401K benefitsParental leave and family medical leaveFlexible work schedule and remote work policyFlexible paid time offContinuing educationFresh, healthy lunches provided three days a week"), 5000);
 }
 
  function openIntercom() {

@@ -66,10 +66,6 @@ describe('Public "Premium" strana', function () {
         staticPremium.checkPolicyProcedureAvatar();
     });
 
-    it('Cekiranje VM Avatara', function () {
-        staticPremium.checkVmAvatar();
-    });
-
     it('Cekiranje Peer A. Avatara', function () {
         staticPremium.checkPeerAAvatar();
     });

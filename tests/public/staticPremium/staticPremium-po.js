@@ -166,13 +166,6 @@ function checkWorkspaceAvatar() {
     browser.sleep(500);
  }
 
- function checkVmAvatar() {
-    // Provera da li je dobar GF logo na print order strani
-    var xxx = element (by.className('icon_default vendor_management'));
-    expect(xxx.getAttribute('src')).toEqual('https://qa.cbancnetwork.com/premium/vendor_management.svg');
-    browser.sleep(500);
- }
-
  function checkPeerAAvatar() {
     // Provera da li je dobar GF logo na print order strani
     var xxx = element (by.className('icon_default peer_analysis'));
@@ -219,7 +212,6 @@ module.exports = {
     checkWorkspaceAvatar,
     checkRaSolutionsAvatar,
     checkPolicyProcedureAvatar,
-    checkVmAvatar,
     checkPeerAAvatar,
     checkAllAccessAvatar,
 }
