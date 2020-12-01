@@ -24,9 +24,10 @@ exports.config = {
       './public/staticViewFinder/staticViewFinder-spec.js',
     ],
 
-    staticVendorManagement: [
-      './public/staticVendorManagement/staticVendorManagement-spec.js',
-    ],
+    // ne koristimo vise VM app 
+    // staticVendorManagement: [
+    //   './public/staticVendorManagement/staticVendorManagement-spec.js',
+    // ],
 
     staticRiskAssessment: [
       './public/staticRiskAssessment/staticRiskAssessment-spec.js',
@@ -120,9 +121,10 @@ exports.config = {
       './public/staticTermsOfService/staticTermsOfService-spec.js'
     ],
 
-    staticVendorManagementStandardTerms: [
-      './public/staticVendorManagementStandardTerms/staticVendorManagementStandardTerms-spec.js'
-    ],
+    // ne koristimo vise VM app
+    // staticVendorManagementStandardTerms: [
+    //   './public/staticVendorManagementStandardTerms/staticVendorManagementStandardTerms-spec.js'
+    // ],
 
     staticWebinarsCallForSpeakers: [
       './public/staticWebinarsCallForSpeakers/staticWebinarsCallForSpeakers-spec.js'
