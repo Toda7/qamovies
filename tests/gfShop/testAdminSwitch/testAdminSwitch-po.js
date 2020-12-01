@@ -1,6 +1,6 @@
 function enterEmail() {
    // Unosenje admin's email
-   element(by.id('gf-input-1')).sendKeys('vladimir.drobnjak@guidefiiter.com');
+   element(by.id('gf-input-1')).sendKeys('vladimir.drobnjak@guidefitter.com');
 }
 
 function enterPass() {
