@@ -16,12 +16,12 @@ it('Dolazak na admin stranu', function(){
 
 it('Klik on video link', function(){
     createVideo.clickOnVideoLink();
-    browser.sleep(1000);
+    browser.sleep(4000);
 });
 
 it('Klik on create video button', function(){
     createVideo.clickOnCreateVideoButton();
-    browser.sleep(1000);
+    browser.sleep(5000);
 });
  
 it('Provera da li se ucitao title on page', function(){
