@@ -66,10 +66,6 @@ describe('Public "Premium" strana', function () {
         staticPremium.checkPolicyProcedureAvatar();
     });
 
-    it('Cekiranje VM Avatara', function () {
-        staticPremium.checkVmAvatar();
-    });
-
     it('Cekiranje Peer A. Avatara', function () {
         staticPremium.checkPeerAAvatar();
     });
@@ -114,14 +110,9 @@ describe('Public "Premium" strana', function () {
         browser.sleep(5000);
     });
 
-    it('Cekiranje Sucess poruke 1 na Produkciji', function () {
-        staticPremium.checkSucessMessage1();
+    it('Cekiranje Sucess poruke na Produkciji', function () {
+        staticPremium.checkSucessMessage();
         browser.sleep(3000);
-    });
-
-    it('Cekiranje Sucess poruke 2 na Produkciji', function () {
-        staticPremium.checkSucessMessage2();
-        browser.sleep(2000);
     });
 
     it('Back to QA', function () {
@@ -130,12 +121,7 @@ describe('Public "Premium" strana', function () {
     });
 
     it('Cekiranje Sucess poruke 1', function () {
-        staticPremium.checkSucessMessage1();
-        browser.sleep(1000);
-    });
-
-    it('Cekiranje Sucess poruke 2', function () {
-        staticPremium.checkSucessMessage2();
+        staticPremium.checkSucessMessage();
         browser.sleep(1000);
     });
 
@@ -203,13 +189,8 @@ describe('Public "Premium" strana', function () {
         browser.sleep(5000);
     });
 
-    it('Cekiranje Sucess poruke 1 na Produkciji', function () {
-        staticPremium.checkSucessMessage1();
-        browser.sleep(1000);
-    });
-
-    it('Cekiranje Sucess poruke 2 na Produkciji', function () {
-        staticPremium.checkSucessMessage2();
+    it('Cekiranje Sucess poruke na Produkciji', function () {
+        staticPremium.checkSucessMessage();
         browser.sleep(1000);
     });
 
@@ -219,12 +200,7 @@ describe('Public "Premium" strana', function () {
     });
 
     it('Cekiranje Sucess poruke 1', function () {
-        staticPremium.checkSucessMessage1();
-        browser.sleep(1000);
-    });
-
-    it('Cekiranje Sucess poruke 2', function () {
-        staticPremium.checkSucessMessage2();
+        staticPremium.checkSucessMessage();
         browser.sleep(1000);
     });
 

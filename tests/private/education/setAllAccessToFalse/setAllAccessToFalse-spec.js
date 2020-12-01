@@ -10,30 +10,37 @@ beforeAll(function(){
 
 it('Dolazak na admin stranu', function(){
     createHostedWebinar.landOnEducationAdminPage();
+    browser.sleep(5000);
 });
 
 it('Klik on All Access', function(){
     setAllAccessToFalse.clickOnAllAccessLink();
+    browser.sleep(5000);
 });
 
 it('Unosenje texa u search field', function(){
     setAllAccessToFalse.enterTextInSearchField();
+    browser.sleep(1000);
 });
 
 it('Klik on option for search', function(){
     setAllAccessToFalse.clickToOptionForSearch();
+    browser.sleep(3000);
 });
 
 it('Klik on edit button', function(){
     setAllAccessToFalse.clickOnEditButton();
+    browser.sleep(3000);
 });
 
 it('Check Yes Status', function(){
     setAllAccessToFalse.checkYeStatus();
+    browser.sleep(3000);
 });
 
 it('Klik on grant button', function(){
     setAllAccessToFalse.clickOnGrant();
+    browser.sleep(5000);
 });
 
 it('Check No Status', function(){

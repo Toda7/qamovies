@@ -190,11 +190,6 @@ describe('Lead Generation for Fintech strana', function () {
         staticHome.checkSubmenuSectionFromMoreyDrop();
     });
 
-    it('Provera da li se ucitao href za Vendor Management link u More dropu', function () {
-        staticHome.checkVendorManagementLink();
-        browser.sleep(500);
-    });
-
     it('Provera da li se ucitao href za Risk Assessment link u More dropu', function () {
         staticHome.checkRiskAssessmentLink();
         browser.sleep(500);
@@ -472,11 +467,6 @@ describe('Lead Generation for Fintech strana', function () {
 
     it('Provera texta sekcije u More drop downu', function () {
         staticHome.checkSubmenuSectionFromMoreyDrop();
-    });
-
-    it('Provera da li se ucitao href za Vendor Management link u More dropu', function () {
-        staticHome.checkVendorManagementLink();
-        browser.sleep(500);
     });
 
     it('Provera da li se ucitao href za Risk Assessment link u More dropu', function () {
