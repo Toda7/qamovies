@@ -11,6 +11,11 @@ describe('Prepare Test Users', function(){
         browser.sleep(2000);
     });
 
+    it('Klik na Space na tastaturi za scrollovanje na strani', function(){
+        prepareTestUser.scrollPage();
+        browser.sleep(2000);
+    });
+
     it('Klik on Choose Password button', function(){
         prepareTestUser.clickOnChoosePasswordButton();
     });
@@ -34,6 +39,10 @@ describe('Prepare Test Users', function(){
         browser.sleep(2000);
     });
 
+    it('Klik na Space na tastaturi za scrollovanje na strani', function(){
+        prepareTestUser.scrollPage();
+        browser.sleep(2000);
+    });
 
     it('Klik on Choose Password button', function(){
         prepareTestUser.clickOnChoosePasswordButton();
