@@ -1016,23 +1016,7 @@ describe('Add products to stock', function () {
     it('Provera success poruke', function () {
         prepareProductsForTest.checkSuccessMessage();
     });
-
-    it('Dolazak na Magento log in page', function(){
-        prepareMagentoCoupon.LandOnLogInPage();
-    });
-
-    it('Unesi Username', function(){
-        prepareMagentoCoupon.enterUsername();
-    });
-
-    it('Unesi Password', function(){
-        prepareMagentoCoupon.enterPass();
-    });
-
-    it('Klik na Sign In dugme', function(){
-        prepareMagentoCoupon.clickOnSignIn();
-    });
-
+    
     // proizvod 28 je parent product
     it('Dolazak na product 28 u magento', function () {
         prepareProductsForTest.landProduct28DetailsPage();
