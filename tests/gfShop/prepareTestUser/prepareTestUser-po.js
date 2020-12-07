@@ -94,6 +94,11 @@ function submit1() {
       browser.sleep(3000);
 }
 
+function scrollPage() {
+   // Klik na Space na tastaturi za scrollovanje na strani
+      element(by.tagName('body')).sendKeys(protractor.Key.SPACE);
+}
+
  module.exports = {
    landOnBradlySealesAccountUsersPage,
    landOnBrentSnyderAccountUsersPage,
@@ -111,4 +116,5 @@ function submit1() {
    enterUserPass,
    submit1,
    enterSecondUserEmail,
+   scrollPage,
  }

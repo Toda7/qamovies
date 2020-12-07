@@ -39,7 +39,7 @@ describe('Prepare Return policy in cockpit', function(){
 
     it('Unosenje nas text u return policy polje u cockpitu', function(){
         prepareReturnPolicy.enterOurReturnPolicy();
-        browser.sleep(1000);
+        browser.sleep(6000);
     });
 
 
