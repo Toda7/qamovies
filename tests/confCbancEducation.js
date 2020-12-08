@@ -145,7 +145,7 @@ exports.config = {
       testConfig = {
         reportTitle: 'CBANC Full Test Report',
         outputPath: './reports/Cbanc/',
-        outputFilename: 'CBANC Full Test Report - ' + timeStamp,
+        outputFilename: 'CBANC Education Test Report - ' + timeStamp,
         screenshotPath: './screenshots',
         testBrowser: browserName,
         browserVersion: browserVersion,
