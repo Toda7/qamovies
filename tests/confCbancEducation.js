@@ -143,7 +143,7 @@ exports.config = {
         timeStamp = today.getMonth() + 1 + '-' + today.getDate() + '-' + today.getFullYear() + '-' + today.getHours() + '-' + today.getMinutes() + '-' + + today.getSeconds();
 
       testConfig = {
-        reportTitle: 'CBANC Full Test Report',
+        reportTitle: 'CBANC Education Test Report',
         outputPath: './reports/Cbanc/',
         outputFilename: 'CBANC Education Test Report - ' + timeStamp,
         screenshotPath: './screenshots',
