@@ -37,7 +37,7 @@ function clickToAddNewCard() {
 
 function enterNumbersCreditCard() {
     // Unosenje numbers credit card 
-    element(by.css('.checkout-payment-method .ccard .number .input-text')).clear().sendKeys('5105105105105100');
+    element(by.css('.checkout-payment-method .ccard .number .input-text')).clear().sendKeys('371449635398431');
     // element(by.id('gf-input-1')).sendKeys('milos@idp.com');
  }
 

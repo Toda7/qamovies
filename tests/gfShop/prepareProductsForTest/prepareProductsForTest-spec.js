@@ -2694,7 +2694,7 @@ describe('Add products to stock', function () {
 
 // proizvod 73
     it('Dolazak na PARENT product 73 u magento ', function () {
-        prepareProductsForTest.landProduct72DetailsPage();
+        prepareProductsForTest.landProduct73DetailsPage();
         browser.sleep(5000);
         browser.executeScript('window.scrollTo(0,0);');
         browser.sleep(1000);
