@@ -12,14 +12,17 @@ describe('Setovanje nase nove addrese za shipping/billing page', function(){
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(8000);
     });
 
     it('Klik to open user menu', function(){
         testAddNewAddress.clickToOpenUserMenu();
+        browser.sleep(8000);
     });
 
     it('Klik on my account from user menu', function(){
         testAddNewAddress.clickOnMyAccountLink();
+        browser.sleep(8000);
     });
 
     it('Provera da li se ucitao My Account URL', function(){

@@ -42,6 +42,7 @@ describe('Provera da li se pojavio switch za admina', function(){
 
     it('Klik on Sign in', function(){
         prepareReturnPolicy.submit();
+        browser.sleep(3000);
     });
 
     it('Dolazak na shop home page', function(){

@@ -1,12 +1,13 @@
 function clickToOpenUserMenu() {
    // Klik to open user menu 
    element(by.id('header-avatar')).click();
-   browser.sleep(3000);
+   browser.sleep(8000);
 }
 
 function clickOnMyAccountLink() {
    // Klik on my account from user menu
    element(by.partialLinkText('My Account')).click();
+   browser.sleep(5000);
 }
 
 function checkMyAccountURL() {
