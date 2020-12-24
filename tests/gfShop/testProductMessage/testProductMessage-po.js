@@ -1,7 +1,6 @@
 function landOnBowfishingPage() {
     // Dolazak na Bowfishing page
     browser.get('https://shop.outfitterextreme.com/truglo/archery/bowfishing.html');
-    browser.sleep(2000)
 }
 
 function click6Product() {

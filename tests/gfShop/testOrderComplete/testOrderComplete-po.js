@@ -38,98 +38,121 @@ function clickOnSubmitShip(){
     element(by.buttonText('Submit Shipment')).click();
 }
 
-function landOnMyAccount() {
-    // dolazak My account u shopy
-    browser.get('https://shop.outfitterextreme.com/airarmortech/customer/account/'); 
+function landOnMyOrders() {
+    // dolazak My Orders stranu
+    browser.get('https://www.outfitterextreme.com/my-orders'); 
     browser.sleep(2000);
  }
 
-//  function checkIfOrderComplete() {
-//      // cekiranje da li je order complete
-//      var EC = protractor.ExpectedConditions;
-//     browser.wait(EC.textToBePresentInElement($('col_status'), 'Complete'), 5000); 
-//  }
-
  function clickOnOrderView(){
-    // Klik na poslednji naruceni ordcer 
-    element.all(by.className('action view')).get(1).click();
+    // Klik na poslednji naruceni order 
+    element.all(by.className('avatar-listing')).get(0).click();
  }
  
- function checkIfOrderComplete() {
-    // cekiranje da li je order complete
-    var xxx = element.all(by.className('col status')).get(1);
-    expect(xxx.getText()).toEqual('Complete');
+ function checkOrderShippedLabelInOrderList() {
+    // Cekiranje Order Shipped labele u Order listi
+    var xxx = element(by.className('avatar-listing-active avatar-listing')).element(by.className('thicker text-capitalize p-t-25'));
+    expect(xxx.getText()).toEqual('Order Shipped');
  }
 
- function clickOnOrderShippments(){
-   // Klik na poslednji naruceni ordcer 
-   element.all(by.className('nav item')).get(2).click();
+ function checkOrderShippedLabelInOrderDetails() {
+   // Cekiranje Order Shipped labele u Order Details
+   var xxx = element(by.className('container-fluid max520 p-y-05')).element(by.className('thicker text-capitalize p-t-25'));
+   expect(xxx.getText()).toEqual('Order Shipped');
 }
 
-function checkTrackNumber() {
-        var xxx = element.all(by.className('tracking-content'));
-        expect(xxx.getText()).toEqual([ '121312' ]);
+function clickProductName() {
+   // Klik na naziv proizvoda u orderu
+   element(by.partialLinkText('HIP-SHOT™ ADAPTIVE SHOOTING REST')).click();
 }
 
-function checkProductName() {
-   var xxx = element.all(by.className('product name product-item-name'));
-   expect(xxx.getText()).toEqual([ 'HIP-SHOT™ ADAPTIVE SHOOTING REST' ]);
+function checkShopProductUrl() {
+   // Provera URL-a na product details u Shopu
+   var EC = protractor.ExpectedConditions;
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/hip-shot-adaptive-shooting-rest.html'), 7000);
 }
 
 function checkProductSKU() {
-   var xxx = element.all(by.className('col sku'));
-   expect(xxx.getText()).toEqual([ 'SKU', 'TG8935XB' ]);
+   // Provera SKU-a u Order Details
+   var xxx = element.all(by.className('breakit'));
+   expect(xxx.getText()).toEqual([ 'SKU# TG8935XB' ]);
 }
 
-function checkQtyShipped() {
-   var xxx = element.all(by.className('col qty'));
-   expect(xxx.getText()).toEqual([ 'Qty Shipped', '1' ]);
+function checkQtyAndPrice() {
+   // Provera Qty i Cene
+   var xxx = element.all(by.className('StyledFlex-web__sc-1o7egg3-0 hBRpUq')).get(1);
+   expect(xxx.getText()).toEqual('Qty: 1\n$20.70');
 }
 
-function checkPrintOrderLink() {
-   var xxx = element.all(by.className('col qty')).get(0);
-   expect(xxx.getText()).toEqual('Print Order');
+function clickLeaveReview() {
+   // Klik na Leave Review link u orderu
+   element(by.className('btn btn-link btn-sm wrap p-l-0')).click();
 }
 
-function checkPrintAllShipLink() {
-   var xxx = element.all(by.className('col qty')).get(1);
-   expect(xxx.getText()).toEqual('Print All Shipments');
+function checkCreateReviewUrl() {
+   // Provera URL-a na Create Review stranu
+   var EC = protractor.ExpectedConditions;
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/reviews/create-review/27156'), 7000);
 }
 
-function checkPrintShippmentLink() {
-   var xxx = element.all(by.className('col qty')).get(2);
-   expect(xxx.getText()).toEqual('Print Shipment');
+function checkShippingAddress() {
+   // Provera Shipping adrese
+   var xxx = element.all(by.className('Column-web__k6dai2-0 fUNTPk')).get(1);
+   expect(xxx.getText()).toEqual('SHIPPING ADDRESS:\nBradly Seales \n2690 COUNTY ROAD 64\nPLANTERSVILLE, Alabama 36758\nUnited States\n334-467-0770');
 }
 
-function checkTrackAllShipmentsLink() {
-   var xxx = element.all(by.className('action track')).get(0);
-   expect(xxx.getText()).toEqual('Track All Shipments');
+function checkShippingMethod() {
+   // Provera Shipping Method
+   var xxx = element.all(by.className('Column-web__k6dai2-0 fUNTPk')).get(2);
+   expect(xxx.getText()).toEqual('SHIPPING METHOD:\nFlat Rate - Fixed');
 }
 
-function checkTrackThisShipmentsLink() {
-   var xxx = element.all(by.className('action track')).get(1);
-   expect(xxx.getText()).toEqual('Track this shipment');
+function checkBillingAddress() {
+   // Provera Billing adrese
+   var xxx = element.all(by.className('Column-web__k6dai2-0 fUNTPk')).get(3);
+   expect(xxx.getText()).toEqual('BILLING ADDRESS:\nBradly Seales \n2690 COUNTY ROAD 64\nPLANTERSVILLE, Alabama 36758\nUnited States\n334-467-0770');
 }
 
-function checkShippingAddressSection() {
-var xxx = element.all(by.className('box-content')).get(0);
-   expect(xxx.getText()).toEqual('Bradly Seales 2690 COUNTY ROAD 64 PLANTERSVILLE United States Alabama 36758 334-467-0770');
-
+function checkPaymentMethod() {
+   // Provera Payment Method
+   var xxx = element.all(by.className('Column-web__k6dai2-0 fUNTPk')).get(4);
+   expect(xxx.getText()).toEqual('PAYMENT METHOD:\nCredit Card\nAmericanExpress\n•••• •••••• •8431');
 }
 
-function checkBilingAddressSection() {
-   // cekiranje Biling adrese
-   var xxx = element.all(by.className('box-content')).get(2);
-      expect(xxx.getText()).toEqual('Bradly Seales 2690 COUNTY ROAD 64 PLANTERSVILLE United States Alabama 36758 334-467-0770');
-   
-   }
+// function clickPrintLink() {
+//    // Klik na Print link
+//    element(by.partialLinkText('PRINT')).click();
+// }
 
-   function checkPaymentSection() {
-      // cekiranje Biling adrese
-      var xxx = element.all(by.className('box-content')).get(3);
-         expect(xxx.getText()).toEqual('Payment Method');
-      
-      }
+// function clickEsc() {
+//    //  Klik Escape na tastaturi
+//    element(by.tagName('print-preview-app')).sendKeys(protractor.Key.ESCAPE);
+// }
+
+// function checkOrderShippedLabelInPrintOrder() {
+//    // Cekiranje Order Shipped labele na Print Order strani
+//    var xxx = element(by.className('thicker text-capitalize p-t-25'));
+//    expect(xxx.getText()).toEqual('Order Shipped');
+// }
+
+function checkIfPrintLinkIsPresent() {
+   // Provera da li na strani postoji Print link
+   var xxx = element.all(by.className('btn btn-link')).get(5);
+   expect(xxx.getText()).toEqual('PRINT');
+}
+
+function clickCloseLink() {
+   // Klik na Close link
+   element(by.className('btn btn-link btn-link-secondary')).click();
+}
+
+function checkImportantText2() {
+   // Provera da li se ucitao text u glavnoj sekciji
+   var EC = protractor.ExpectedConditions;
+   var c = element(by.className('container-fluid max520'));
+   browser.wait(EC.textToBePresentInElement(c, "Important!Here you will find all of your recent and past orders. Check this page for your current order status, or to double check the broadheads you ordered last year or the load of ammo you ordered last month, to make sure you get the exact same product on your next order.All orders through Guidefitter are shipped directly from the brand’s warehouse. If you have not received tracking yet on an order just know we will get it to you as soon as we have it from the brand.Timing on shipping varies from brand to brand - to find out the average ship time for a brand, reference that brand’s “brand page” on The Grid. If you recently placed an order with a brand, you will receive an email shortly that outlines that particular brand’s average shipping times.Should you have any questions on you order(s) please reach out to the Guidefitter team, and not the brand, as the Guidefitter team should always be your point of contact on orders placed on The Grid."), 5000);
+}
+
 
  module.exports = {
     clickOnOrdersLink,
@@ -139,22 +162,25 @@ function checkBilingAddressSection() {
     addNumber,
     scrollPage,
     clickOnSubmitShip,
-    landOnMyAccount,
-    checkIfOrderComplete,
+    landOnMyOrders,
     lendOnProductDetails,
     clickOnOrderView,
-    clickOnOrderShippments,
-    checkTrackNumber,
-    checkProductName,
+    checkOrderShippedLabelInOrderList,
+    checkOrderShippedLabelInOrderDetails,
+    clickProductName,
+    checkShopProductUrl,
     checkProductSKU,
-    checkQtyShipped,
-    checkPrintOrderLink,
-    checkPrintAllShipLink,
-    checkPrintShippmentLink,
-    checkTrackAllShipmentsLink,
-    checkTrackThisShipmentsLink,
-    checkShippingAddressSection,
-    checkBilingAddressSection,
-    checkPaymentSection,
-    
+    checkQtyAndPrice,
+    clickLeaveReview,
+    checkCreateReviewUrl,
+    checkShippingAddress,
+    checkShippingMethod,
+    checkBillingAddress,
+    checkPaymentMethod,
+    //  clickPrintLink,
+    //  clickEsc,
+    //  checkOrderShippedLabelInPrintOrder,
+    checkIfPrintLinkIsPresent,
+    clickCloseLink,
+    checkImportantText2,
  }
