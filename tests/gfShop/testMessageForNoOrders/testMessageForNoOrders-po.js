@@ -1,18 +1,18 @@
 function landOnMdpAsSecondUser() {
    // Dolazak na MDP stranu -> za log in log out
-   browser.get('https://www.outfitterextreme.com/manage/member/93867/');
+   browser.get('https://www.outfitterextreme.com/manage/member/93867/'); 
    browser.sleep(2000);
 }
 
 function clickOnAvatarToOpenDropMenu() {
    // Klik on avatar to open user menu
-   element(by.className('avatar-flex inline alone ellipsis')).click();
+   element(by.className('avatar-flex inline alone ellipsis')).click(); 
    browser.sleep(3000);
 }
 
 function clickOnSignOut() {
    // Klik on Sign out link
-   element(by.className('text-muted')).click();
+   element(by.className('text-muted')).click(); 
    browser.sleep(3000);
 }
 
@@ -35,8 +35,8 @@ function enterUserPass() {
 
 function submit1() {
    // Klik on Sign in button
-   element(by.className('btn btn-lg wrap btn-block btn-primary')).click();
-   browser.sleep(3000);
+      element(by.className('btn btn-lg wrap btn-block btn-primary')).click();
+      browser.sleep(3000);
 }
 
 function landOnMyOrdersPage() {
@@ -45,21 +45,31 @@ function landOnMyOrdersPage() {
 }
 
 function checkNoOrdersMessage() {
-   // Provera cene
-   var xxx = element.all(by.className('card card-starter text-xs-center')).get(0);
-   expect(xxx.getText(0)).toEqual(':(\nNo orders, yet.\nVisit grid and subscribe to brands to start shopping.\nGO TO GRID\nNeed help getting started? Contact us');
+   // Provera no orders message
+   var xxx = element(by.className('card card-starter text-xs-center'));
+   expect(xxx.getText()).toEqual(':(\nNo orders, yet.\nVisit grid and subscribe to brands to start shopping.\nGO TO GRID\nNeed help getting started? Contact us');
 }
 
-function clickOnGOTOGRID() {
-   //  Klik na Go to Grid 
-   element(by.buttonText('Go To Grid')).click();
-   browser.sleep(2000);
+function clickOnGoToGridButton() {
+   // Klik na Go To Grid button
+   element(by.className('btn btn-link btn-lg wrap ')).click();
 }
 
 function checkGridURL() {
    // Provera da li se ucitao Grid URL
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://www.outfitterextreme.com/gear-discounts'), 7000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/customer/address/new/'), 5000);
+}
+
+function clickOnContactUs() {
+   // Klik na Contact Us link 
+   element(by.className('owrap')).click();
+}
+
+function checkContactURL() {
+   // Provera da li se ucitao Contact URL
+   var EC = protractor.ExpectedConditions;
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/contact'), 5000);
 }
 
 
@@ -74,6 +84,8 @@ module.exports = {
    submit1,
    landOnMyOrdersPage,
    checkNoOrdersMessage,
+   clickOnGoToGridButton,
    checkGridURL,
-   clickOnGOTOGRID,
+   clickOnContactUs,
+   checkContactURL,
 }

@@ -153,7 +153,6 @@ function checkImportantText2() {
    browser.wait(EC.textToBePresentInElement(c, "Important!Here you will find all of your recent and past orders. Check this page for your current order status, or to double check the broadheads you ordered last year or the load of ammo you ordered last month, to make sure you get the exact same product on your next order.All orders through Guidefitter are shipped directly from the brand’s warehouse. If you have not received tracking yet on an order just know we will get it to you as soon as we have it from the brand.Timing on shipping varies from brand to brand - to find out the average ship time for a brand, reference that brand’s “brand page” on The Grid. If you recently placed an order with a brand, you will receive an email shortly that outlines that particular brand’s average shipping times.Should you have any questions on you order(s) please reach out to the Guidefitter team, and not the brand, as the Guidefitter team should always be your point of contact on orders placed on The Grid."), 5000);
 }
 
-
  module.exports = {
     clickOnOrdersLink,
     clickOnOrdersLastOrder,

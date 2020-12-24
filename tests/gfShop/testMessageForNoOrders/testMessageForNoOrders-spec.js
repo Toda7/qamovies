@@ -7,35 +7,35 @@ describe('Message for no orders', function () {
     });
 
 
-    it('Dolazak na MDP page da bi uradili sign out', function () {
+    it('Dolazak na MDP page da bi uradili sign out', function(){
         testMessageForNoOrders.landOnMdpAsSecondUser();
     });
 
-    it('Klik on avatar to open user menu', function () {
+    it('Klik on avatar to open user menu', function(){
         testMessageForNoOrders.clickOnAvatarToOpenDropMenu();
     });
 
-    it('Klik on Sign Out link', function () {
+    it('Klik on Sign Out link', function(){
         testMessageForNoOrders.clickOnSignOut();
     });
 
-    it('Dolazak na MDP page da bi uradili sign in', function () {
+    it('Dolazak na MDP page da bi uradili sign in', function(){
         testMessageForNoOrders.landOnMdpAsSecondUser();
     });
 
-    it('Klik on click On Continue With Email', function () {
+    it('Klik on click On Continue With Email', function(){
         testMessageForNoOrders.clickOnContinueWithEmail();
     });
 
-    it('Unosenje user emaila', function () {
+    it('Unosenje user emaila', function(){
         testMessageForNoOrders.enterUserEmail();
     });
 
-    it('Unosenje user passworda', function () {
+    it('Unosenje user passworda', function(){
         testMessageForNoOrders.enterUserPass();
     });
 
-    it('Klik on Sign in', function () {
+    it('Klik on Sign in', function(){
         testMessageForNoOrders.submit1();
     });
 
@@ -46,20 +46,36 @@ describe('Message for no orders', function () {
 
     it('Provera no orders message', function () {
         testMessageForNoOrders.checkNoOrdersMessage();
+        browser.sleep(1000);
     });
 
-    it('Klik na GO TO GRID', function () {
-        testMessageForNoOrders.clickOnGOTOGRID();
+    it('Klik na Go To Grid button', function () {
+        testMessageForNoOrders.clickOnGoToGridButton();
+        browser.sleep(3000);
     });
 
-    it('Cekiranje grid URL-a', function () {
-        testMessageForNoOrders.checkGridURL();
+    it('Provera da li se ucitao Grid URL', function () {
+        testMessageForNoOrders.clickOnGoToGridButton();
+        browser.sleep(1000);
+        browser.navigate().back();
+        browser.sleep(3000);
     });
 
-    it('Povratak na My Orders stranu', function () {
-        testMessageForNoOrders.landOnMyOrdersPage();
-        browser.sleep(6000);
+    it('Klik na Contact Us link', function () {
+        testMessageForNoOrders.clickOnContactUs();
+        browser.sleep(4000);
     });
+
+    it('Provera da li se ucitao Contact URL', function () {
+        testMessageForNoOrders.checkContactURL();
+        browser.sleep(1000);
+        browser.navigate().back();
+        browser.sleep(4000);
+    });
+
+    
+    
+
 
     afterAll(function () {
         browser.waitForAngularEnabled(true);

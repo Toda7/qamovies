@@ -71,8 +71,8 @@ describe('Provera cene shipping-a za odredjene proizvode', function(){
         browser.sleep(5000);
     });
 
-    it('Klik na prvi View Order link', function(){
-        testMoultrieShipping.clickFirstViewOrderLink();
+    it('Klik na prvi  order na my orders strani', function(){
+        testMoultrieShipping.clickOrderOnPage();
         browser.sleep(5000);
     });
 
