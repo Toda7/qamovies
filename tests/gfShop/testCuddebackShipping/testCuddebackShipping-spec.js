@@ -126,12 +126,12 @@ describe('Test Shipping Cuddeback shop', function () {
     });
 
     it('Dolazak na My Orders stranu', function () {
-        testMyOrders.landOnMyOrdersPage();
+        testCuddebackShipping.landOnMyOrdersPage();
         browser.sleep(5000);
     });
 
     it('Klik na prvi View Order link', function () {
-        testMyOrders.clickFirstViewOrderLink();
+        testCuddebackShipping.clickOnLastOrder();
         browser.sleep(3000);
     });
 

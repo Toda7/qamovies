@@ -17,7 +17,7 @@ function clickOnListView() {
  }
 
  function clickOnLimiter() {
-    // klik na Limiter 5 procucta po strani 
+    // klik na Limiter 5 producta po strani 
     element.all(by.className('limiter-options')).get(1).all(by.tagName('option')).get(0).click();
     browser.sleep(5000);
  }

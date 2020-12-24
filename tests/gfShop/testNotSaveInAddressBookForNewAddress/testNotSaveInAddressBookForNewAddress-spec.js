@@ -16,6 +16,11 @@ describe('Test unselect Save in address book option for new address on checkout 
         testSaveInAddressBookOptionForNewAddress.lendOnProductDetails();
     });
 
+    it('Refresh page', function(){
+        browser.refresh(); 
+        browser.sleep(3000);
+    });
+
     it('Add product to cart', function () {
         testTwentyProductsOrder.addToCart();
         browser.sleep(6000);

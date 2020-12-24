@@ -14,7 +14,7 @@ describe('Test Product view sort', function () {
         testViewProduct.clickOnListView();
     });
 
-    it('Proverava dali se ucitao URL sa parametrima za List vieew producta', function () {
+    it('Proverava dali se ucitao URL sa parametrima za List view producta', function () {
         testViewProduct.checkListViewURL();
     });
 
@@ -28,6 +28,7 @@ describe('Test Product view sort', function () {
 
     it('Provera da li je dobar number of items on page', function () {
         testViewProduct.checkItemsNumber();
+        browser.sleep(1000);
     });
 
     it('Klik na 2 stranu u paginaciji', function () {

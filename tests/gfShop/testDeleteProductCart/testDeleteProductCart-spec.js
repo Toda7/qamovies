@@ -18,7 +18,7 @@ describe('Brisanje Producta iz Mini Carta', function () {
 
     it('Click Add to Cart', function () {
         testDeleteProductCart.clickAddToCart();
-        browser.sleep(3000);
+        browser.sleep(5000);
     });
 
     it('Check Success message', function () {

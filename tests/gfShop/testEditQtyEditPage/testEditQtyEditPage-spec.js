@@ -36,19 +36,19 @@ describe('Edit qty na edit cart strani', function () {
         browser.sleep(3000);
     });
 
-    it('klik na qty opolje', function () {
+    it('klik na qty polje', function () {
         testEditQtyEditPage.clickOnQtyField();
         browser.sleep(3000);
     });
     
-    it('Unos broja Productae', function () {
+    it('Unos broja Producta', function () {
         testEditQtyEditPage.enterNumber();
         browser.sleep(3000);
     });
 
     it('Click na Update button', function () {
         testEditQtyEditPage.clickOnUpadateCart();
-        browser.sleep(3000);
+        browser.sleep(5000);
     });
 
     it('Check edit success', function () {
