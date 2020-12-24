@@ -1,6 +1,6 @@
 var testProductMessage = require('./testProductMessage-po.js');
 
-describe('Ubacivanje 50+ Producta u cart i Error Msg', function () {
+describe('Validation poruka za dodavanje previse proizvoda u korpu', function () {
 
     beforeAll(function () {
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
@@ -8,6 +8,7 @@ describe('Ubacivanje 50+ Producta u cart i Error Msg', function () {
 
     it('Dolazak na Bowfishing page', function () {
         testProductMessage.landOnBowfishingPage();
+        browser.sleep(4000)
     });
 
     it('Klik na Product', function () {

@@ -11,6 +11,8 @@ describe('Cart With FFL And Regular Product', function () {
 
     it('Dolazak u Weatherby shop na FFL product details page', function () {
         testPlaceFFLOrder.landOnWeatherbyPage();
+        browser.refresh();
+        browser.sleep(4000);
     });
 
     it('Izaberi opciju iz dropa', function () {
