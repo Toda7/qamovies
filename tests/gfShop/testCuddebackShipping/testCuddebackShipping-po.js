@@ -66,10 +66,22 @@ function checkShipping3Product(){
 
 function checkShippingPriceWithCoupon() {
     // Provera shipping cene sa iskoriscenim kuponom na My Order strani
-    var xxx = element(by.className('shipping'));
-    expect(xxx.getText()).toEqual('Shipping & Handling $16.00');
+    var xxx = element.all(by.className('gflexdata gflexdata-centered')).get(1);
+    expect(xxx.getText()).toEqual('Shipping\n$16.00');
     browser.sleep(1000);
  }
+
+ function clickOnLastOrder() {
+   // Klik na Cetvrti proizvod 
+   element(by.className('col-lg-6')).all(by.className('avatar-flex-wrap p-x-05')).get(0).click();
+   browser.sleep(2000);
+}
+
+function landOnMyOrdersPage() {
+   // povratak na Account stranu
+   browser.get('https://www.outfitterextreme.com/my-orders'); 
+   browser.sleep(2000);
+}
 
 module.exports = {
     landOnCuddebackShop,
@@ -83,4 +95,6 @@ module.exports = {
     click3Product,
     checkShipping3Product,
     checkShippingPriceWithCoupon,
+    clickOnLastOrder,
+    landOnMyOrdersPage,
 }

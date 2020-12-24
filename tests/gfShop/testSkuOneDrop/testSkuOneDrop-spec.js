@@ -14,8 +14,8 @@ describe('Test SKU change - 1 drop down menu', function () {
         testTwentyProductsOrder.landOnArcheryPage();
     });
 
-    it('Klik na Cetvrti proizvod', function () {
-        testTwentyProductsOrder.click5thProduct();
+    it('Klik na Sesti proizvod', function () {
+        testSkuOneDrop.click6thProduct();
     });
 
     it('Provera da li je dobar Parent SKU', function () {

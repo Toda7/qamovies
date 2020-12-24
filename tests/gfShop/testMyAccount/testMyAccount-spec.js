@@ -100,21 +100,13 @@ describe('My Account', function () {
         browser.sleep(1000);
     });
 
-    it('Provera da li se ucitao Prvi View Order link', function () {
-        testMyAccount.checkFirstViewOrderLink();
+    it('Cekiranje My Orders Title', function () {
+        testMyAccount.checkMyOrdersTitle();
     });
 
-    it('klik na 2 u paginaciji', function () {
-        testMyAccount.clickPageTwo();
-        browser.sleep(3000);
-    });
-
-    it('Provera da li se ucitao dobar URL za drugu stranu paginacije', function () {
-        testMyAccount.checkSecondPageUrl();
-    });
-
-    it('Provera da li je dobra paginacija', function () {
-        testMyAccount.checkPaginationSuccess();
+    it('Povratak na My Account stranu', function () {
+        testMyAccount.landOnMyAccountPage();
+        browser.sleep(2000);
     });
 
     it('Klik na My Payment Data link', function () {
