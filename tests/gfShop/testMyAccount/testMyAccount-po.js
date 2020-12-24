@@ -78,37 +78,13 @@ function clickMyOrdersLink() {
 function checkMyOrdersURL() {
    // Provera da li se ucitao My Orders URL
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/sales/order/history/'), 7000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/my-orders'), 7000);
 }
 
 function checkTitleOnMyOrdersPage() {
    // Provera da li se ucitao My Orders title na My Orders strani 
    var EC = protractor.ExpectedConditions;
    browser.wait(EC.textToBePresentInElement($('.base'), 'My Orders'), 7000);
-}
-
-function checkFirstViewOrderLink() {
-   // Provera da li se ucitao Prvi View Order link 
-   var x9 = element.all(by.className('action view')).get(0);
-   expect(x9.getText()).toEqual('VIEW ORDER');
-}  
-
-function clickPageTwo() {
-   // klik na 2 u paginaciji 
-   element(by.className('items pages-items')).all(by.tagName('a')).get(0).click();
-}
-
-function checkSecondPageUrl() {
-   // Provera da li se ucitao dobar URL za drugu stranu paginacije 
-   var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/sales/order/history/?p=2'), 7000);
-}
-
-function checkPaginationSuccess() {
-   var EC = protractor.ExpectedConditions;
-   // Provera da li je dobra paginacija
-   browser.wait(EC.textToBePresentInElement($('.toolbar-amount'), 'Items 11 to 20'), 7000);
-   browser.sleep(2500);
 }
 
 function clickMyPaymentDataLink() {
@@ -140,6 +116,20 @@ function checkAddCreditCardSectionTitle() {
    expect(x4.getText()).toEqual('Add A Credit Card');
 }
 
+function landOnMyAccountPage() {
+   // povratak na Account stranu
+   browser.get('https://shop.outfitterextreme.com/truglo/customer/account/'); 
+   browser.sleep(2000);
+}
+
+function checkMyOrdersTitle() {
+   // Provera cene
+   var xxx = element.all(by.className('d-flex flex-items-xs-middle flex-items-xs-between p-t-3 p-b-1')).get(0);
+   expect(xxx.getText(0)).toEqual('My Orders');
+
+}   
+
+
 module.exports = {
    checkTitleOnMyAccountPage,
    checkAccountInformationSectionTitle,
@@ -156,13 +146,11 @@ module.exports = {
    clickMyOrdersLink,
    checkMyOrdersURL,
    checkTitleOnMyOrdersPage,
-   checkFirstViewOrderLink,
-   clickPageTwo,
-   checkSecondPageUrl,
-   checkPaginationSuccess,
    clickMyPaymentDataLink,
    checkMyPaymentDataURL,
    checkTitleOnMyPaymentDataPage,
    checkCreditCardSectionTitle,
    checkAddCreditCardSectionTitle,
+   landOnMyAccountPage,
+   checkMyOrdersTitle,
 }

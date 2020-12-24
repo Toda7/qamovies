@@ -1,14 +1,14 @@
 function checkDicountPriceOnHomeForFirstProduct() {
    // Provera cene za prvi prozivod na strani
    var xxx = element.all(by.css('.product-item .price-box .price')).get(0);
-   expect(xxx.getText()).toEqual('$63.43');
+   expect(xxx.getText()).toEqual('$69.88');
    browser.sleep(3000);
 }
 
 function checkRegularPriceOnHomeForFirstProduct() {
    // Provera regular cene za prvi prozivod na home strani
    var xxx = element.all(by.css('.product-item .price-box .price')).get(1);
-   expect(xxx.getText()).toEqual('$121.00');       
+   expect(xxx.getText()).toEqual('$133.00');       
    browser.sleep(3000);
 
 }
@@ -71,8 +71,9 @@ function checkRegularPriceOnViewAndEditpagetForFirstProduct() {
 }
 
 function clickToOpenItemsSection() {
-   element(by.className('block items-in-cart')).click();
-   browser.sleep(3000);
+   // element(by.className('block items-in-cart')).click();
+   // browser.sleep(3000);
+   element(by.className('block items-in-cart')).element(by.className('title')).click();
 }
 
 function checkDicountPriceOCheckouttForFirstProduct() {

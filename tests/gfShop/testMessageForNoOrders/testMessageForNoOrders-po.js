@@ -1,18 +1,18 @@
 function landOnMdpAsSecondUser() {
    // Dolazak na MDP stranu -> za log in log out
-   browser.get('https://www.outfitterextreme.com/manage/member/93867/'); 
+   browser.get('https://www.outfitterextreme.com/manage/member/93867/');
    browser.sleep(2000);
 }
 
 function clickOnAvatarToOpenDropMenu() {
    // Klik on avatar to open user menu
-   element(by.className('avatar-flex inline alone ellipsis')).click(); 
+   element(by.className('avatar-flex inline alone ellipsis')).click();
    browser.sleep(3000);
 }
 
 function clickOnSignOut() {
    // Klik on Sign out link
-   element(by.className('text-muted')).click(); 
+   element(by.className('text-muted')).click();
    browser.sleep(3000);
 }
 
@@ -35,20 +35,31 @@ function enterUserPass() {
 
 function submit1() {
    // Klik on Sign in button
-      element(by.className('btn btn-lg wrap btn-block btn-primary')).click();
-      browser.sleep(3000);
+   element(by.className('btn btn-lg wrap btn-block btn-primary')).click();
+   browser.sleep(3000);
 }
 
 function landOnMyOrdersPage() {
    // Dolazak na My Orders stranu 
-   browser.get('https://shop.outfitterextreme.com/badlands/sales/order/history/');
+   browser.get('https://www.outfitterextreme.com/my-orders');
 }
 
 function checkNoOrdersMessage() {
-   // Provera no orders message
-   var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('.message.info.empty'),'You have placed no orders.'), 7000);
+   // Provera cene
+   var xxx = element.all(by.className('card card-starter text-xs-center')).get(0);
+   expect(xxx.getText(0)).toEqual(':(\nNo orders, yet.\nVisit grid and subscribe to brands to start shopping.\nGO TO GRID\nNeed help getting started? Contact us');
+}
+
+function clickOnGOTOGRID() {
+   //  Klik na Go to Grid 
+   element(by.buttonText('Go To Grid')).click();
    browser.sleep(2000);
+}
+
+function checkGridURL() {
+   // Provera da li se ucitao Grid URL
+   var EC = protractor.ExpectedConditions;
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/gear-discounts'), 7000);
 }
 
 
@@ -63,4 +74,6 @@ module.exports = {
    submit1,
    landOnMyOrdersPage,
    checkNoOrdersMessage,
+   checkGridURL,
+   clickOnGOTOGRID,
 }

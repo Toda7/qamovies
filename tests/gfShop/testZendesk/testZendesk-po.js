@@ -10,7 +10,21 @@ function clickOnZendesk() {
    xxx.click();
 }
 
+function clickOnDelete() {
+   // Klik na delete ikonicu
+   element(by.className('action delete')).click();
+}
+   
+
+function clickOnCart() {
+   // Klik on Cart
+   element(by.className('action showcart')).click();
+}
+
+
  module.exports = {
    landOnTrugloPage,
    clickOnZendesk,
+   clickOnDelete,
+   clickOnCart,
 }
