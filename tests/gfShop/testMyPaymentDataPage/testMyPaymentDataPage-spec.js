@@ -68,7 +68,7 @@ describe('Unos i brisanje kartice na My Payment Data strani', function () {
 
     it('Klik on SAVE button', function () {
         testMyPaymentDataPage.clickOnSaveButton();
-        browser.sleep(2000);
+        browser.sleep(9000);
     });
 
     it('Provera da li se pojavila success message posle saveovanja kartice', function () {
@@ -83,7 +83,7 @@ describe('Unos i brisanje kartice na My Payment Data strani', function () {
 
     it('Klik on OK button da potvrdis brisanje', function () {
         testMyPaymentDataPage.clickOnOkButton();
-        browser.sleep(3000);
+        browser.sleep(5000);
     });
 
     it('Provera da li se pojavila success message posle brisanja kartice', function () {

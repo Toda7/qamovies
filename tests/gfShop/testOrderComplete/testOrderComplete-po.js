@@ -128,7 +128,6 @@ function checkBilingAddressSection() {
       // cekiranje Biling adrese
       var xxx = element.all(by.className('box-content')).get(3);
          expect(xxx.getText()).toEqual('Payment Method');
-      
       }
 
  module.exports = {
@@ -156,5 +155,4 @@ function checkBilingAddressSection() {
     checkShippingAddressSection,
     checkBilingAddressSection,
     checkPaymentSection,
-    
  }

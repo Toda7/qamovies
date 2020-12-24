@@ -41,14 +41,35 @@ function submit1() {
 
 function landOnMyOrdersPage() {
    // Dolazak na My Orders stranu 
-   browser.get('https://shop.outfitterextreme.com/badlands/sales/order/history/');
+   browser.get('https://www.outfitterextreme.com/my-orders');
 }
 
 function checkNoOrdersMessage() {
    // Provera no orders message
+   var xxx = element(by.className('card card-starter text-xs-center'));
+   expect(xxx.getText()).toEqual(':(\nNo orders, yet.\nVisit grid and subscribe to brands to start shopping.\nGO TO GRID\nNeed help getting started? Contact us');
+}
+
+function clickOnGoToGridButton() {
+   // Klik na Go To Grid button
+   element(by.className('btn btn-link btn-lg wrap ')).click();
+}
+
+function checkGridURL() {
+   // Provera da li se ucitao Grid URL
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.textToBePresentInElement($('.message.info.empty'),'You have placed no orders.'), 7000);
-   browser.sleep(2000);
+   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/customer/address/new/'), 5000);
+}
+
+function clickOnContactUs() {
+   // Klik na Contact Us link 
+   element(by.className('owrap')).click();
+}
+
+function checkContactURL() {
+   // Provera da li se ucitao Contact URL
+   var EC = protractor.ExpectedConditions;
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/contact'), 5000);
 }
 
 
@@ -63,4 +84,8 @@ module.exports = {
    submit1,
    landOnMyOrdersPage,
    checkNoOrdersMessage,
+   clickOnGoToGridButton,
+   checkGridURL,
+   clickOnContactUs,
+   checkContactURL,
 }
