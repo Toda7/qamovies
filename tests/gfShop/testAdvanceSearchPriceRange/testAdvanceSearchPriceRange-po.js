@@ -21,7 +21,7 @@ function enterProductPriceFrom() {
     var EC = protractor.ExpectedConditions;
     // Da li se ucitao trazeni product 2
     var xxx = element.all(by.className('product name product-item-name')).get(1);
-    expect(xxx.getText()).toEqual('FAT-BEAD™ DUAL-COLOR');
+    expect(xxx.getText()).toEqual('CARPEDO™ BOWFISHING ARROW');
     }
 
  function enterProductPriceFrom1() {
@@ -41,7 +41,7 @@ function enterProductPriceFrom() {
     var xxx = element.all(by.className('product name product-item-name')).get(0);
     expect(xxx.getText()).toEqual("SPRINGFISHER™ BOWFISHING ARROW");
  }
-
+ 
  function enterProductPriceFromWrong() {
     // Unos pogresne cene od
     element(by.id('price')).clear().sendKeys('1312');
@@ -69,7 +69,7 @@ function enterProductPriceFrom() {
  function checkSerchedProducts() {
     var EC = protractor.ExpectedConditions;
     // Da li smo dobili 40 produkta
-    browser.wait(EC.textToBePresentInElement($('.search.found'), '37 items'), 5000);
+    browser.wait(EC.textToBePresentInElement($('.search.found'), '40 items'), 5000);
     browser.sleep(2000);
  }
 

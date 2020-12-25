@@ -82,17 +82,17 @@ describe('Test save in address book option for new address on checkout page', fu
     
     it(' Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
-        browser.sleep(1000);
+        browser.sleep(8000);
     });
 
     it('Klik to open user menu', function(){
         testAddNewAddress.clickToOpenUserMenu();
-        browser.sleep(1000);
+        browser.sleep(8000);
     });
 
     it('Klik on my account from user menu', function(){
         testAddNewAddress.clickOnMyAccountLink();
-        browser.sleep(1000);
+        browser.sleep(8000);
     });
 
     it('Klik on Address Book', function(){
@@ -107,12 +107,12 @@ describe('Test save in address book option for new address on checkout page', fu
 
     it('Klik on delete link for address', function(){
         testRestrictedAreaMessage.clickOnDeletetLink();
-        browser.sleep(2000);
+        browser.sleep(5000);
     });
 
     it('Klik on OK link to confirm delete ', function(){
         testDeleteAddress.clickToConfirmToDelete();
-        browser.sleep(1000);
+        browser.sleep(5000);
     });
 
     it(' Da li se pojavila success poruka za delete', function(){

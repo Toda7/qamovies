@@ -81,7 +81,7 @@ describe('Refunded order i cekiranje na my orders', function(){
     });
 
     it('Klik na Orders', function(){
-        testOrderComplete.clickOnOrdersLink();
+        testCreditMemo.clickOnOrdersLink();
         browser.sleep(7000);
     });
 
@@ -111,7 +111,7 @@ describe('Refunded order i cekiranje na my orders', function(){
     });
 
     it('Klik na prvi View Order link', function () {
-        testOrderComplete.clickOnOrderView();
+        testCreditMemo.clickOnOrderLink();
         browser.sleep(3000);
     });
 

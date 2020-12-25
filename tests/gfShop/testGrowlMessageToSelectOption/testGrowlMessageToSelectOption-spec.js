@@ -11,6 +11,12 @@ describe('Test da li se pojavljuje growl message to select option for product', 
         testSortingByName.landOnTrugloPage();
     });
 
+    it('Refresh page', function(){
+        // ovo koristimo zbog "Invalid session" errora u shopu 
+        browser.refresh(); 
+        browser.sleep(3000);
+    });
+
     it('Klik on link from navigation menu', function(){
         testSortingByName.clickOnLinkInNavMenu();
     });

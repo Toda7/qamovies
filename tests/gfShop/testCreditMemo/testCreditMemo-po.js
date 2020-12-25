@@ -76,6 +76,17 @@ function checkPaymentMethod() {
   expect(xxx.getText()).toEqual('PAYMENT METHOD:\nCredit Card\nAmericanExpress\n•••• •••••• •8431');
 }
 
+function clickOnOrdersLink(){
+  // Klik na Orders link 
+ element(by.id('tab_orders_content')).click();
+}
+
+function clickOnOrderLink(){
+  // Klik na Order link 
+ element.all(by.className('action view')).get(1).click();
+}
+
+
  module.exports = {
    clickOnCreditMemoLink,
    clickOnRefundedOfflineButton,
@@ -91,4 +102,6 @@ function checkPaymentMethod() {
    checkShippingMethod,
    checkBillingAddress,
    checkPaymentMethod,
+   clickOnOrdersLink,
+   clickOnOrderLink,
  }
