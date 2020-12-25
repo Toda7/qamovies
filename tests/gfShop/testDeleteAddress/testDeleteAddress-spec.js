@@ -27,54 +27,67 @@ describe('Setovanje stare addrese za shipping/billing page i brisanje nove addre
 
     it('Provera da li se ucitao My Account URL', function(){
         testAddNewAddress.checkMyAccountURL();
+        browser.sleep(3000);
     });
 
     it('Klik on Address Book', function(){
         testAddNewAddress.clickAddressBook();
+        browser.sleep(3000);
     });
 
     it('Provera da li se ucitao Address Book URL', function(){
         testAddNewAddress.checkAddressBookURL();
+        browser.sleep(3000);
     });
 
     it('Klik on edit link for address', function(){
         testDeleteAddress.clickOnEditLink();
+        browser.sleep(3000);
     });
 
     it('Klik on Use as my default shipping address', function(){
         testAddressToDefaultShipping.clickOnBilling();
+        browser.sleep(3000);
     });
 
     it('Klik on Use as my default billing address', function(){
         testAddressToDefaultShipping.clickOnShipping();
+        browser.sleep(3000);
     });
 
     it('Klik on Save button', function(){
         testAddNewAddress.clickOnSave();
+        browser.sleep(8000);
     });
 
     it('Da li se pojavila success poruka saved', function(){
         testAddNewAddress.checkIsAddressIsSaved();
+        browser.sleep(3000);
     });
 
     it('Provera da li je stara addresa otisla na mesto billing addrese', function(){
         testDeleteAddress.checkBoxContent();
+        browser.sleep(3000);
     });
 
     it('Provera da li je stara addresa otisla na mesto Shipping addrese', function(){
         testDeleteAddress.checkBoxContent2();
+        browser.sleep(3000);
     });
 
     it('Klik on delete link for address', function(){
         testDeleteAddress.clickOnDeletetLink();
+        browser.sleep(3000);
     });
 
     it('Klik on OK link to confirm delete ', function(){
         testDeleteAddress.clickToConfirmToDelete();
+        browser.sleep(3000);
     });
 
     it(' Da li se pojavila success poruka za delete', function(){
         testDeleteAddress.checkSucessDeleteMessage();
+        browser.sleep(3000);
     });
 
         afterAll(function(){
