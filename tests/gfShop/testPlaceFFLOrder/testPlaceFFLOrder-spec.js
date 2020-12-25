@@ -11,6 +11,12 @@ describe('Narucivanje FFL ordera', function(){
         browser.sleep(2000);
     });
 
+    it('Refresh page', function(){
+        // ovo sto stavili zbog problema sa "Invalid session" u shopu
+        browser.refresh(); 
+        browser.sleep(3000);
+    });
+
     it('Klik to open drop options', function(){
         testPlaceFFLOrder.clickToOpenDrop();
         browser.sleep(3000);
@@ -61,12 +67,12 @@ describe('Narucivanje FFL ordera', function(){
 
     it('Klik on Next button', function(){
         testPlaceFFLOrder.clickOnNextButton();
-        browser.sleep(8000);
+        browser.sleep(10000);
     });
 
     it('Klik on PLACE ORDER button', function(){
         testPlaceFFLOrder.clickOnOrderButton();
-        browser.sleep(5000);
+        browser.sleep(7000);
     });
 
     it('Provera da li se uctao Thanks title on Success page', function(){
