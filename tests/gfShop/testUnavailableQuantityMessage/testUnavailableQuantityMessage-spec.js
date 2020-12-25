@@ -1,4 +1,4 @@
-var testProductMessage = require('./testProductMessage-po.js');
+var testUnavailableQuantityMessage = require('./testUnavailableQuantityMessage-po.js');
 
 describe('Validation poruka za dodavanje previse proizvoda u korpu', function () {
 
@@ -7,32 +7,32 @@ describe('Validation poruka za dodavanje previse proizvoda u korpu', function ()
     });
 
     it('Dolazak na Bowfishing page', function () {
-        testProductMessage.landOnBowfishingPage();
+        testUnavailableQuantityMessage.landOnBowfishingPage();
         browser.sleep(4000)
     });
 
     it('Klik na Product', function () {
-        testProductMessage.click6Product();
+        testUnavailableQuantityMessage.click6Product();
     });
 
     it('Klik na Options', function () {
-        testProductMessage.clickOnOptions();
+        testUnavailableQuantityMessage.clickOnOptions();
     });
 
     it('Selektovanje opcije', function () {
-        testProductMessage.clickOnOptions();
+        testUnavailableQuantityMessage.clickOnOptions();
     });
 
     it('Unos broja producta', function () {
-        testProductMessage.enterNumber();
+        testUnavailableQuantityMessage.enterNumber();
     });
 
     it('Click Add to Cart', function () {
-        testProductMessage.clickAddToCart();
+        testUnavailableQuantityMessage.clickAddToCart();
     });
 
     it('Check error message', function () {
-        testProductMessage.checkErrorMsg();
+        testUnavailableQuantityMessage.checkErrorMsg();
     });
 
     afterAll(function () {
