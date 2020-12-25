@@ -177,13 +177,13 @@ exports.config = {
       './gfShop/testCartWithFFLAndRegularProduct/testCartWithFFLAndRegularProduct-spec.js'
     ],
 
-    testPrintOrderPage: [
-      './gfShop/testPrintOrderPage/testPrintOrderPage-spec.js'
-    ],
+    // testPrintOrderPage: [
+    //   './gfShop/testPrintOrderPage/testPrintOrderPage-spec.js'
+    // ],
 
-    testPrintInvoicePage: [
-      './gfShop/testPrintInvoicePage/testPrintInvoicePage-spec.js'
-    ],
+    // testPrintInvoicePage: [
+    //   './gfShop/testPrintInvoicePage/testPrintInvoicePage-spec.js'
+    // ],
 
     // testSaveCcForNextTime: [
     //   // Ovo sranje ne radi dok ne provalimo u cemu je fora sa Authorize.net errorom na Payment strani
@@ -202,8 +202,8 @@ exports.config = {
       './gfShop/testViewProduct/testViewProduct-spec.js'
     ],
 
-    testProductMessage: [
-      './gfShop/testProductMessage/testProductMessage-spec.js'
+    testUnavailableQuantityMessage: [
+      './gfShop/testUnavailableQuantityMessage/testUnavailableQuantityMessage-spec.js'
     ],
 
     testEditQtyCart: [
@@ -297,21 +297,21 @@ exports.config = {
       './gfShop/testOrderComplete/testOrderComplete-spec.js'
     ],
 
-    testPrintShipment: [
-      './gfShop/testPrintShipment/testPrintShipment-spec.js'
-    ],
+    // testPrintShipment: [
+    //   './gfShop/testPrintShipment/testPrintShipment-spec.js'
+    // ],
 
-    testTrackShipment: [
-      './gfShop/testTrackShipment/testTrackShipment-spec.js'
-    ],
+    // testTrackShipment: [
+    //   './gfShop/testTrackShipment/testTrackShipment-spec.js'
+    // ],
 
     testCreditMemo: [
       './gfShop/testCreditMemo/testCreditMemo-spec.js'
     ],
 
-    testPrintRefundPage: [
-      './gfShop/testPrintRefundPage/testPrintRefundPage-spec.js'
-    ],
+    // testPrintRefundPage: [
+    //   './gfShop/testPrintRefundPage/testPrintRefundPage-spec.js'
+    // ],
 
     testTwoUsersTheSameProduct: [
       './gfShop/testTwoUsersTheSameProduct/testTwoUsersTheSameProduct-spec.js'

@@ -20,6 +20,12 @@ describe('Refunded order i cekiranje na my orders', function(){
         browser.sleep(5000);
     });
 
+    it('Refresh page', function(){
+        // ovo koristimo zbog "Invalid session" errora u shopu 
+        browser.refresh(); 
+        browser.sleep(3000);
+    });
+
     it('Klik na Add To Cart', function () {
         testTwentyProductsOrder.addToCart();
         browser.sleep(6000);
@@ -71,27 +77,27 @@ describe('Refunded order i cekiranje na my orders', function(){
 
     it('Dolazak na user datails stranu u magentu', function(){
         testAddBillingAddress.goToUserDetail();
-        browser.sleep(5000);
+        browser.sleep(8000);
     });
 
     it('Klik na Orders', function(){
-        testOrderComplete.clickOnOrdersLink();
-        browser.sleep(2000);
+        testCreditMemo.clickOnOrdersLink();
+        browser.sleep(7000);
     });
 
     it('Klik na poslednji Order', function(){
         testOrderComplete.clickOnOrdersLastOrder();
-        browser.sleep(5000);
+        browser.sleep(7000);
     });
 
     it('Klik na Credit Memo link', function(){
         testCreditMemo.clickOnCreditMemoLink();
-        browser.sleep(5000);
+        browser.sleep(7000);
     });
 
     it('Klik na Refunded offline ', function(){
         testCreditMemo.clickOnRefundedOfflineButton();
-        browser.sleep(5000);
+        browser.sleep(7000);
     });
 
     it('Dolazak na my account page page', function(){
@@ -105,59 +111,67 @@ describe('Refunded order i cekiranje na my orders', function(){
     });
 
     it('Klik na prvi View Order link', function () {
-        testOrderComplete.clickOnOrderView();
+        testCreditMemo.clickOnOrderLink();
         browser.sleep(3000);
     });
 
-    it('Provera da li se ucitala Closed labela na order details strani', function () {
-        testCreditMemo.checkClosedLabelOnOrderDetailsPage();
+    it('Provera da li se ucitala Refunded labela u listi ordera', function () {
+        testCreditMemo.checkRefundedLabelInOrdersList();
         browser.sleep(3000);
     });
 
-    it('Klik na Refunds da bi dobili Refund tab', function () {
-        testCreditMemo.clickOnRefundsToGetRefundTab();
+    it('Provera da li se ucitao Close button za order details', function () {
+        testCreditMemo.checkCloseButtonForOrderDetails();
         browser.sleep(3000);
     });
 
-    it('Cekiranje Imena Producta', function () {
-        testOrderComplete.checkProductName();
-        browser.sleep(1000);
+    it('Provera da li se ucitao Print link', function () {
+        testCreditMemo.checkPrintLink();
+        browser.sleep(3000);
     });
 
-    it('Cekiranje SKU-a', function () {
-        testOrderComplete.checkProductSKU();
-        browser.sleep(1000);
+    it('Provera da li se ucitao logo trijicon brenda', function () {
+        testCreditMemo.checkBrandLogoLink();
+        browser.sleep(3000);
     });
 
-    it('Cekiranje QTY-a', function () {
-        testOrderComplete.checkQtyShipped;
-        browser.sleep(1000);
+    it('Provera da li se ucitala Refunded labela in order details', function () {
+        testCreditMemo.checkRefundedLabelInOrderDetails();
+        browser.sleep(3000);
     });
 
-    it('Da li se ucitao Print Order Link', function () {
-        testOrderComplete.checkPrintOrderLink;
-        browser.sleep(1000);
+    it('Provera da li se ucitala Refunded labela in order details ', function () {
+        testCreditMemo.checkProductDetails();
+        browser.sleep(3000);
     });
 
-    it('Cekiranje Shipping Address', function () {
-        testOrderComplete.checkShippingAddressSection;
-        browser.sleep(1000);
+    it('Provera cene za Subtotal, Shipping, Taxes, Total, Saving', function () {
+        testCreditMemo.checkPricesSectionDetails();
+        browser.sleep(3000);
     });
 
-    it('Cekiranje Billing Addrese', function () {
-        testOrderComplete.checkBilingAddressSection;
-        browser.sleep(1000);
+    it('Provera Shipping adrese', function () {
+        testCreditMemo.checkShippingAddress();
+        browser.sleep(3000);
     });
 
-    it('Cekiranje Payment Metod sekcije', function () {
-        testOrderComplete.checkPaymentSection;
-        browser.sleep(1000);
+    it('Provera Shipping Method', function () {
+        testCreditMemo.checkShippingMethod();
+        browser.sleep(3000);
     });
 
-    it('Da li se ucitao Print Refunded link', function () {
-        testCreditMemo.checkPrintRefundedLink;
-        browser.sleep(1000);
+    it('Provera Billing adrese', function () {
+        testCreditMemo.checkBillingAddress();
+        browser.sleep(3000);
     });
+
+    it('PProvera Shipping Method', function () {
+        testCreditMemo.checkPaymentMethod();
+        browser.sleep(3000);
+    });
+
+
+
 
 
 

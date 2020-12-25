@@ -46,8 +46,8 @@ function checkShippingPriceWithCoupon2() {
 
 function checkShippingPriceWithCoupon3() {
    // Provera shipping cene sa iskoriscenim kuponom na My Order strani
-   var xxx = element(by.className('shipping'));
-   expect(xxx.getText()).toEqual('Shipping & Handling (ATQA_Coupon) $0.00');
+   var xxx = element.all(by.className('gflexdata gflexdata-centered')).get(1);
+   expect(xxx.getText()).toEqual('Shipping\n$0.00');
    browser.sleep(1000);
 }
 
@@ -63,6 +63,19 @@ function landOnViewAndEditCart() {
    browser.sleep(2000);
 }
 
+function landOnMyOrdersPage() {
+   // Dolazak na My Orders stranu 
+   browser.get('https://www.outfitterextreme.com/my-orders');
+   browser.sleep(2000);
+}
+
+function clickOnFirstOrder(){
+   // Klik na poslednji naruceni order 
+   element.all(by.className('avatar-listing')).get(0).click();
+}
+
+
+
 module.exports = {
    checkShippingPriceWithoutCoupon,
    clickApplyDiscountCoupon,
@@ -74,4 +87,6 @@ module.exports = {
    checkShippingPriceWithCoupon3,
    clickToSelectFirstAddressToShip,
    landOnViewAndEditCart,
+   landOnMyOrdersPage,
+   clickOnFirstOrder,
 }

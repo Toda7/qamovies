@@ -108,38 +108,47 @@ describe('Pravljenje prve adrese na Address Book strani', function () {
 
     it('Dolazak u magento na user details ', function () {
         testAddFirstAddressOnAddressBook.lendOnUserDetailsInAdmin();
+        browser.sleep(5000);
     });
 
     it('Unesi Username', function () {
         prepareMagentoCoupon.enterUsername();
+        browser.sleep(3000);
     });
 
     it('Unesi Password', function () {
         prepareMagentoCoupon.enterPass();
+        browser.sleep(3000);
     });
 
     it('Klik na Sign In dugme', function () {
         prepareMagentoCoupon.clickOnSignIn();
+        browser.sleep(5000);
     });
 
     it('Dolazak u magento na user details ', function () {
         testAddFirstAddressOnAddressBook.lendOnUserDetailsInAdmin();
+        browser.sleep(5000);
     });
 
     it('Klik na Addresses link', function () {
         testAddFirstAddressOnAddressBook.clickOnAddressesLink();
+        browser.sleep(5000);
     });
 
     it('Klik na Select link da se otvori drop menu', function () {
         testAddFirstAddressOnAddressBook.clickOnSelectLink();
+        browser.sleep(5000);
     });
 
     it('Klik na Delete iz drop menija', function () {
         testAddFirstAddressOnAddressBook.clickOnDelete();
+        browser.sleep(5000);
     });
 
     it('Klik na OK u Confirm Delete modalu', function () {
         testAddFirstAddressOnAddressBook.clickOnOkInModal();
+        browser.sleep(5000);
     });
 
     afterAll(function () {

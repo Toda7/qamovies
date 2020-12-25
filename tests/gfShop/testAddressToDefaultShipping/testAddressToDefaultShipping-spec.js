@@ -4,7 +4,7 @@ var testAddressToDefaultShipping = require('./testAddressToDefaultShipping-po.js
 var testTwentyProductsOrder = require('../testTwentyProductsOrder/testTwentyProductsOrder-po.js');
 
 
-describe('Setovanje nase nove addrese za shipping/billing page', function(){
+describe('Setovanje nase nove addrese za shipping billing page', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
@@ -12,14 +12,17 @@ describe('Setovanje nase nove addrese za shipping/billing page', function(){
 
     it('Dolazak na home page', function(){
         testSortingByName.landOnTrugloPage();
+        browser.sleep(8000);
     });
 
     it('Klik to open user menu', function(){
         testAddNewAddress.clickToOpenUserMenu();
+        browser.sleep(8000);
     });
 
     it('Klik on my account from user menu', function(){
         testAddNewAddress.clickOnMyAccountLink();
+        browser.sleep(8000);
     });
 
     it('Provera da li se ucitao My Account URL', function(){

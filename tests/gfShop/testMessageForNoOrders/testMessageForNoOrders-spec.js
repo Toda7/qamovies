@@ -39,12 +39,6 @@ describe('Message for no orders', function () {
         testMessageForNoOrders.submit1();
     });
 
-    it('Dolazak u shop', function () {
-        // ovde ne uradi redirekciju na my order zato moramo jos jednom da pokrenemo istu funkciju
-        testMessageForNoOrders.landOnMyOrdersPage();
-        browser.sleep(6000);
-    });
-
     it('Dolazak na My Orders stranu', function () {
         testMessageForNoOrders.landOnMyOrdersPage();
         browser.sleep(6000);
@@ -52,7 +46,36 @@ describe('Message for no orders', function () {
 
     it('Provera no orders message', function () {
         testMessageForNoOrders.checkNoOrdersMessage();
+        browser.sleep(1000);
     });
+
+    it('Klik na Go To Grid button', function () {
+        testMessageForNoOrders.clickOnGoToGridButton();
+        browser.sleep(3000);
+    });
+
+    it('Provera da li se ucitao Grid URL', function () {
+        testMessageForNoOrders.checkGridURL();
+        browser.sleep(1000);
+        browser.navigate().back();
+        browser.sleep(3000);
+    });
+
+    it('Klik na Contact Us link', function () {
+        testMessageForNoOrders.clickOnContactUs();
+        browser.sleep(4000);
+    });
+
+    it('Provera da li se ucitao Contact URL', function () {
+        testMessageForNoOrders.checkContactURL();
+        browser.sleep(1000);
+        browser.navigate().back();
+        browser.sleep(4000);
+    });
+
+    
+    
+
 
     afterAll(function () {
         browser.waitForAngularEnabled(true);

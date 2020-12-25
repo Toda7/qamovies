@@ -15,6 +15,7 @@ describe('Complete order i cekiranje na my orders', function(){
 
     it('Dolazak na product details', function(){
         testOrderComplete.lendOnProductDetails();
+        browser.refresh();
         browser.sleep(5000);
     });
 
@@ -71,7 +72,7 @@ describe('Complete order i cekiranje na my orders', function(){
 
     it('Klik na Orders', function(){
         testOrderComplete.clickOnOrdersLink();
-        browser.sleep(2000);
+        browser.sleep(6000);
     });
 
     it('Klik na poslednji Order', function(){
@@ -107,13 +108,8 @@ describe('Complete order i cekiranje na my orders', function(){
         browser.sleep(3000);
     });
 
-    it('Dolazak na My Account', function(){
-        testOrderComplete.landOnMyAccount();
-        browser.sleep(3000);
-    });
-
-    it('Cekiranje da li je Order Complete', function(){
-        testOrderComplete.checkIfOrderComplete();
+    it('Dolazak My Orders stranu', function(){
+        testOrderComplete.landOnMyOrders();
         browser.sleep(2000);
     });
 
@@ -122,72 +118,109 @@ describe('Complete order i cekiranje na my orders', function(){
         browser.sleep(3000);
     });
 
-    it('Klik na Order Shippment', function () {
-        testOrderComplete.clickOnOrderShippments();
-        browser.sleep(5000);
-    });
-
-    it('Cekiranje Tracking Numbera', function () {
-        testOrderComplete.checkTrackNumber();
+    it('Cekiranje Order Shipped labele u Order listi', function () {
+        testOrderComplete.checkOrderShippedLabelInOrderList();
         browser.sleep(1000);
     });
 
-    it('Cekiranje Imena Producta', function () {
-        testOrderComplete.checkProductName();
+    it('Cekiranje Order Shipped labele u Order Details', function () {
+        testOrderComplete.checkOrderShippedLabelInOrderDetails();
         browser.sleep(1000);
     });
 
-    it('Cekiranje SKU-a', function () {
+    it('Klik na naziv proizvoda u orderu', function () {
+        testOrderComplete.clickProductName();
+        browser.getAllWindowHandles().then(function (handles) {
+            browser.switchTo().window(handles[1]);
+        });
+        browser.sleep(3000);
+    });
+
+    it('Provera URL-a na product details u Shopu', function () {
+        testOrderComplete.checkShopProductUrl();
+        browser.getAllWindowHandles().then(function (handles) {
+            browser.driver.close();
+            browser.driver.switchTo().window(handles[0]);
+        });
+        browser.sleep(1000);
+    });
+
+    it('Provera SKU-a u Order Details', function () {
         testOrderComplete.checkProductSKU();
         browser.sleep(1000);
     });
 
-    it('Cekiranje QTY-a', function () {
-        testOrderComplete.checkQtyShipped;
+    it('Provera Qty i Cene', function () {
+        testOrderComplete.checkQtyAndPrice();
         browser.sleep(1000);
     });
 
-    it('Da li se ucitao Print Order Link', function () {
-        testOrderComplete.checkPrintOrderLink;
+    it('Klik na Leave Review link u orderu', function () {
+        testOrderComplete.clickLeaveReview();
         browser.sleep(1000);
     });
 
-    it('Da li se ucitao Print All Shippments Link', function () {
-        testOrderComplete.checkPrintAllShipLink;
+    it('Provera URL-a na Create Review strani', function () {
+        testOrderComplete.checkCreateReviewUrl();
+        browser.navigate().back();
+        browser.sleep(2000);
+    });
+
+    it('Provera Shipping adrese', function () {
+        testOrderComplete.checkShippingAddress();
         browser.sleep(1000);
     });
 
-    it('Da li se ucitao Print Shippment Link', function () {
-        testOrderComplete.checkPrintShippmentLink;
+    it('Provera Shipping Method', function () {
+        testOrderComplete.checkShippingMethod();
         browser.sleep(1000);
     });
 
-    it('Da li se ucitao Track All Shippments Link', function () {
-        testOrderComplete.checkTrackAllShipmentsLink;
+    it('Provera Billing adrese', function () {
+        testOrderComplete.checkBillingAddress();
         browser.sleep(1000);
     });
 
-    it('Da li se ucitao Track This Shippment Link', function () {
-        testOrderComplete.checkTrackThisShipmentsLink;
+    it('Provera Payment Method', function () {
+        testOrderComplete.checkPaymentMethod();
         browser.sleep(1000);
     });
 
-    it('Cekiranje Shipping Address', function () {
-        testOrderComplete.checkShippingAddressSection;
+    // it('Klik na Print link', function () {
+    //     testOrderComplete.clickPrintLink();
+    //     browser.getAllWindowHandles().then(function (handles) {
+    //         browser.switchTo().window(handles[1]);
+    //         browser.sleep(5000);
+    //     });
+    // });
+
+    // it('Klik Escape na tastaturi', function () {
+    //     testOrderComplete.clickEsc();
+    //     browser.getAllWindowHandles().then(function (handles) {
+    //         browser.switchTo().window(handles[1]);
+    //         browser.sleep(3000);
+    //     });
+    // });
+
+    // it('Cekiranje Order Shipped labele na Print Order strani', function () {
+    //     testOrderComplete.checkOrderShippedLabelInPrintOrder();
+    //     browser.sleep(2000);
+    // });
+
+    it('Provera da li na strani postoji Print link', function () {
+        testOrderComplete.checkIfPrintLinkIsPresent();
         browser.sleep(1000);
     });
 
-    it('Cekiranje Billing Addrese', function () {
-        testOrderComplete.checkBilingAddressSection;
+    it('Klik na Close link', function () {
+        testOrderComplete.clickCloseLink();
         browser.sleep(1000);
     });
 
-    it('Cekiranje Payment Metod sekcije', function () {
-        testOrderComplete.checkPaymentSection;
+    it('Provera Important texta kada je zatvorena Order Details sekcija', function () {
+        testOrderComplete.checkImportantText2();
         browser.sleep(1000);
     });
-
-
 
     afterAll(function () {
         browser.waitForAngularEnabled(true);

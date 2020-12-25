@@ -10,36 +10,63 @@ describe('My Orders', function () {
         testMyOrders.landOnMyOrdersPage();
     });
 
-    it('Klik na logo shopa u prvom orderu', function () {
-        testMyOrders.clickShopLogoInOrder();
+    it('Provera My Orders title-a', function () {
+        testMyOrders.checkMyOrdersTitle();
     });
 
-    it('Provera da li se ucitao dobar URL za Truglo Shop homepage', function () {
-        testMyOrders.checkTrugloShopeHomepageUrl();
+    it('Provera Important Section-a', function () {
+        testMyOrders.checkImportantSection();
     });
 
-    it('Provera da li je dobar title u Hero Imageu', function () {
-        testMyOrders.checkSuccess1();
+    it('Klik na prvi Order', function () {
+        testMyOrders.clickOnFirstOrder();
     });
 
-    it('Dolazak na My Orders stranu', function () {
-        testMyOrders.landOnMyOrdersPage();
+    it('Provera da li postoji Print btn na strani', function () {
+        testMyOrders.checkIsPrintBtnThere();
     });
 
-    it('Klik na prvi View Order link', function () {
-        testMyOrders.clickFirstViewOrderLink();
+    it('Provera da li postoji Close btn na strani', function () {
+        testMyOrders.checkIsCloseBtnThere();
     });
 
-    it('Provera da li postoji Print Order link na strani', function () {
-        testMyOrders.checkSuccess2();
+    it('Provera Shipping adrese', function () {
+        testMyOrders.checkShippingAddress();
     });
 
-    it('Provera da li je dobar title za Items Ordered sekciju', function () {
-        testMyOrders.checkSuccess3();
+    it('Provera Shipping Method-a', function () {
+        testMyOrders.checkShippingMethod();
     });
 
-    it('Provera da li je dobar title za Order Information sekciju', function () {
-        testMyOrders.checkSuccess4();
+    it('Provera Billing adrese', function () {
+        testMyOrders.checkBillingAddress();
+    });
+
+    it('Provera Payment Method-a', function () {
+        testMyOrders.checkPaymentMethod();
+    });
+
+    it('Provera Brand logoa', function () {
+        testMyOrders.checkBrandLogo();
+    });
+
+    it('Klik na produkt', function() {
+        testMyOrders.clickOnProduct();
+        browser.getAllWindowHandles().then(function (handles) {
+        browser.switchTo().window(handles[1]);
+        });
+    });
+
+    it('Provera URL-a product strane', function () {
+        testMyOrders.checkProductUrl();
+    });
+
+    it('Vracanje fokusa', function () {
+        browser.getAllWindowHandles().then(function (handles) {
+        browser.driver.switchTo().window(handles[1]);
+        browser.driver.close();
+        browser.driver.switchTo().window(handles[0]);
+        });
     });
 
     afterAll(function () {

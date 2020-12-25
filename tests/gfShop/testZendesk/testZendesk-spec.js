@@ -68,17 +68,13 @@ describe('Provera da li se Zendesk nalazi na strani', function(){
     //     testZendesk.clickOnZendesk();
     // });
 
-    it('Dolazak na product details page', function(){
-        testAttentionWindow.landOnProductPage();
-    });
-
     it('Klik na cart', function(){
-        testAttentionWindow.clickOnCart();
+        testZendesk.clickOnCart();
         browser.sleep(2000);
     });
 
     it(' Klik on Delete product icon', function(){
-        testAttentionWindow.clickOnDeleteProductIcon();
+        testZendesk.clickOnDelete();
         browser.sleep(2000);
     });
 

@@ -12,6 +12,13 @@ describe('Two Shipping methods', function () {
 
     it('Dolazak na Product Details page', function () {
         testTwoShippingMethods.landOnProductDetailsPage();
+        browser.sleep(5000);
+    });
+
+    it('Refresh page', function(){
+        // ovo koristimo zbog "Invalid session" errora u shopu 
+        browser.refresh(); 
+        browser.sleep(3000);
     });
 
     it('Dodaj proizvod u korpu', function () {
@@ -25,7 +32,7 @@ describe('Two Shipping methods', function () {
 
     it('Klik Go To Checkout page', function(){
         prepareTestCreditCard.clickToGoToCheckoutPage();
-        browser.sleep(2000);
+        browser.sleep(6000);
     });
 
     it('Klik on NEW ADDRESS button', function () {
@@ -102,14 +109,17 @@ describe('Two Shipping methods', function () {
 
     it('Dolazak na Address Book page', function () {
         testTwoShippingMethods.landOnAddressBookPage();
+        browser.sleep(5000);
     });
 
     it('Klik na Poslednje Delete Address dugme', function () {
         testTwoShippingMethods.clickLastDeleteAddress();
+        browser.sleep(5000);
     });
 
     it('Klik on OK link to confirm delete ', function(){
         testDeleteAddress.clickToConfirmToDelete();
+        browser.sleep(5000);
     });
 
     afterAll(function () {

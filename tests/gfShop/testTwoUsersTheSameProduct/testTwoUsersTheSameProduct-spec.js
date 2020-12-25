@@ -78,9 +78,15 @@ describe('Kupovina producta sa jednim userom, zatim logovanje sa drugim da cekir
         browser.sleep(4000);
     });
 
+    it('Refresh page', function(){
+        // ovo koristimo zbog "Invalid session" errora u shopu 
+        browser.refresh(); 
+        browser.sleep(5000);
+    });
+
     it('Klik on Add to cart', function () {
         testColorLinksOnProductsListPage.clickOnAddToCart();
-        browser.sleep(4000);
+        browser.sleep(5000);
     });
 
     // log in sa userom 2 
@@ -130,9 +136,15 @@ describe('Kupovina producta sa jednim userom, zatim logovanje sa drugim da cekir
         browser.sleep(4000);
     });
 
+    it('Refresh page', function(){
+        // ovo koristimo zbog "Invalid session" errora u shopu 
+        browser.refresh(); 
+        browser.sleep(5000);
+    });
+
     it('Klik on Add to cart', function () {
         testColorLinksOnProductsListPage.clickOnAddToCart();
-        browser.sleep(4000);
+        browser.sleep(5000);
     });
 
     // log in sa userom 1 
@@ -181,12 +193,12 @@ describe('Kupovina producta sa jednim userom, zatim logovanje sa drugim da cekir
 
     it('Klik na Next dugme', function () {
         testTwentyProductsOrder.clickNext();
-        browser.sleep(4000);
+        browser.sleep(5000);
     });
 
     it('Klik na Place Order dugme', function () {
         testTwentyProductsOrder.clickPlaceOrder();
-        browser.sleep(4000);
+        browser.sleep(5000);
     });
 
     // log in sa userom 2 

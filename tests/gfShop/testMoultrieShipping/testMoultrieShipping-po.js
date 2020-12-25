@@ -61,21 +61,19 @@ function clickOnPlaceOrder() {
 
 function landOnMyOrdersPage() {
     // Dolazak na My Orders stranu 
-    browser.get('https://shop.outfitterextreme.com/Moultrie/sales/order/history/');
-    browser.sleep(2000);
+    browser.get('https://www.outfitterextreme.com/my-orders');
  }
 
- function clickFirstViewOrderLink() {
-    // Klik na prvi View Order link 
-    element.all(by.className('action view')).get(0).click();
-    browser.sleep(2000);
+ function clickOrderOnPage() {
+    // Klik na prvi  order na my orders strani
+    element.all(by.className('avatar-section')).get(0).click();
  }
 
  function checkShippingPrice2() {
     // Provera da li je shipping $27,00 na My Orders
-    var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.shipping'), '$27.00'), 7000);
-}
+    var xxx = element.all(by.className('gflexdata gflexdata-centered ')).get(1);
+    expect(xxx.getText()).toEqual('Shipping\n$27.00');
+ }
 
 module.exports = {
     landOnMoultrieHomePage,
@@ -89,6 +87,6 @@ module.exports = {
     clickOnNext,
     clickOnPlaceOrder,
     landOnMyOrdersPage,
-    clickFirstViewOrderLink,
+    clickOrderOnPage,
     checkShippingPrice2,
 }

@@ -22,11 +22,11 @@ function enterProductPriceFrom() {
     // Da li se ucitao trazeni product 2
     var xxx = element.all(by.className('product name product-item-name')).get(1);
     expect(xxx.getText()).toEqual('CARPEDO™ BOWFISHING ARROW');
- }
+    }
 
  function enterProductPriceFrom1() {
     // Unos cene od 16$
-    element(by.id('price')).clear().sendKeys('16');
+        element(by.id('price')).clear().sendKeys('16');
     browser.sleep(2000);
  }
 
@@ -41,7 +41,7 @@ function enterProductPriceFrom() {
     var xxx = element.all(by.className('product name product-item-name')).get(0);
     expect(xxx.getText()).toEqual("SPRINGFISHER™ BOWFISHING ARROW");
  }
-
+ 
  function enterProductPriceFromWrong() {
     // Unos pogresne cene od
     element(by.id('price')).clear().sendKeys('1312');
