@@ -14,9 +14,9 @@ exports.config = {
       './gfShop/logInAsUser/logInAsUser-spec.js'
     ],
 
-    // testOrderComplete: [
-    //   './gfShop/testOrderComplete/testOrderComplete-spec.js'
-    // ],
+    testOrderComplete: [
+      './gfShop/testOrderComplete/testOrderComplete-spec.js'
+    ],
 
     // testCartWithFFLAndRegularProduct: [
     //   './gfShop/testCartWithFFLAndRegularProduct/testCartWithFFLAndRegularProduct-spec.js'
@@ -34,9 +34,9 @@ exports.config = {
     //   './gfShop/testDeleteProductCart/testDeleteProductCart-spec.js'
     // ],
 
-    testEditQtyEditPage: [
-      './gfShop/testEditQtyEditPage/testEditQtyEditPage-spec.js'
-    ],
+    // testEditQtyEditPage: [
+    //   './gfShop/testEditQtyEditPage/testEditQtyEditPage-spec.js'
+    // ],
 
   },
 
