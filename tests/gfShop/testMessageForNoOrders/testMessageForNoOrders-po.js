@@ -58,12 +58,12 @@ function clickOnGoToGridButton() {
 function checkGridURL() {
    // Provera da li se ucitao Grid URL
    var EC = protractor.ExpectedConditions;
-   browser.wait(EC.urlContains('https://shop.outfitterextreme.com/truglo/customer/address/new/'), 5000);
+   browser.wait(EC.urlContains('https://www.outfitterextreme.com/gear-discounts'), 5000);
 }
 
 function clickOnContactUs() {
    // Klik na Contact Us link 
-   element(by.className('owrap')).click();
+   element(by.className('nowrap')).click();
 }
 
 function checkContactURL() {

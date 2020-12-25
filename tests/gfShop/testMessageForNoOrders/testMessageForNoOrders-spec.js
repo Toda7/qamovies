@@ -55,7 +55,7 @@ describe('Message for no orders', function () {
     });
 
     it('Provera da li se ucitao Grid URL', function () {
-        testMessageForNoOrders.clickOnGoToGridButton();
+        testMessageForNoOrders.checkGridURL();
         browser.sleep(1000);
         browser.navigate().back();
         browser.sleep(3000);

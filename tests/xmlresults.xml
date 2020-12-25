@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="19" time="60.008">
+ <testsuite name="Log in as Bradly Seales" timestamp="2020-12-25T16:20:46" hostname="localhost" time="13.003" errors="0" tests="5" skipped="0" disabled="0" failures="0">
+  <testcase classname="Log in as Bradly Seales" name="Dolazak na home page" time="4.579" />
+  <testcase classname="Log in as Bradly Seales" name="Klik na Contine with email button" time="2.051" />
+  <testcase classname="Log in as Bradly Seales" name="Unosenje user email" time="0.142" />
+  <testcase classname="Log in as Bradly Seales" name="Unosenje user passworda" time="0.12" />
+  <testcase classname="Log in as Bradly Seales" name="Klik on Sign in button" time="6.108" />
+ </testsuite>
+ <testsuite name="Message for no orders" timestamp="2020-12-25T16:20:59" hostname="localhost" time="47.005" errors="0" tests="14" skipped="0" disabled="0" failures="0">
+  <testcase classname="Message for no orders" name="Dolazak na MDP page da bi uradili sign out" time="2.849" />
+  <testcase classname="Message for no orders" name="Klik on avatar to open user menu" time="3.072" />
+  <testcase classname="Message for no orders" name="Klik on Sign Out link" time="5.962" />
+  <testcase classname="Message for no orders" name="Dolazak na MDP page da bi uradili sign in" time="3.533" />
+  <testcase classname="Message for no orders" name="Klik on click On Continue With Email" time="2.048" />
+  <testcase classname="Message for no orders" name="Unosenje user emaila" time="0.11" />
+  <testcase classname="Message for no orders" name="Unosenje user passworda" time="0.096" />
+  <testcase classname="Message for no orders" name="Klik on Sign in" time="3.086" />
+  <testcase classname="Message for no orders" name="Dolazak na My Orders stranu" time="6.676" />
+  <testcase classname="Message for no orders" name="Provera no orders message" time="1.038" />
+  <testcase classname="Message for no orders" name="Klik na Go To Grid button" time="3.068" />
+  <testcase classname="Message for no orders" name="Provera da li se ucitao Grid URL" time="4.124" />
+  <testcase classname="Message for no orders" name="Klik na Contact Us link" time="5.699" />
+  <testcase classname="Message for no orders" name="Provera da li se ucitao Contact URL" time="5.638" />
+ </testsuite>
+</testsuites>

@@ -14,7 +14,7 @@ describe('Test SKU change - 1 drop down menu', function () {
         testTwentyProductsOrder.landOnArcheryPage();
     });
 
-    it('Klik na Sesti proizvod', function () {
+    it('Klik na Sedmi proizvod', function () {
         testSkuOneDrop.click6thProduct();
     });
 
