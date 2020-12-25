@@ -4,7 +4,7 @@ var testAddressToDefaultShipping = require('./testAddressToDefaultShipping-po.js
 var testTwentyProductsOrder = require('../testTwentyProductsOrder/testTwentyProductsOrder-po.js');
 
 
-describe('Setovanje nase nove addrese za shipping/billing page', function(){
+describe('Setovanje nase nove addrese za shipping billing page', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element

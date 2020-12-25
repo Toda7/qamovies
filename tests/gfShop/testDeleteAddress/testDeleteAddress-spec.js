@@ -4,7 +4,7 @@ var testAddressToDefaultShipping = require('../testAddressToDefaultShipping/test
 var testDeleteAddress = require('./testDeleteAddress-po.js');
 
 
-describe('Setovanje stare addrese za shipping/billing page i brisanje nove addresse', function(){
+describe('Setovanje stare addrese za shipping i billing page i brisanje nove addresse', function(){
 
     beforeAll(function(){
         browser.waitForAngularEnabled(false);//stavlja se na pocetak fajla da ne bi cekao Angular element
