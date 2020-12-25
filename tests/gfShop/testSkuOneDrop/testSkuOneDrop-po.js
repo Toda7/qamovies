@@ -27,7 +27,7 @@ function checkSecondChildSku() {
 
 function click6thProduct() {
    // Klik na sesti proizvod 
-   element(by.className('column main')).all(by.className('product-image-photo')).get(5).click();
+   element(by.className('column main')).all(by.className('product-image-photo')).get(6).click();
    browser.sleep(2000);
 }
 
