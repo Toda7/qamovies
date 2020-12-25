@@ -49,21 +49,21 @@ describe('Complete order i cekiranje na my orders', function(){
         browser.sleep(10000);
     });
     
-    it('Dolazak u magento', function(){
-        testAddBillingAddress.lendOnMagento();
-    });
+    // it('Dolazak u magento', function(){
+    //     testAddBillingAddress.lendOnMagento();
+    // });
 
-    it('Unesi Username', function(){
-        prepareMagentoCoupon.enterUsername();
-    });
+    // it('Unesi Username', function(){
+    //     prepareMagentoCoupon.enterUsername();
+    // });
 
-    it('Unesi Password', function(){
-        prepareMagentoCoupon.enterPass();
-    });
+    // it('Unesi Password', function(){
+    //     prepareMagentoCoupon.enterPass();
+    // });
 
-    it('Klik na Sign In dugme', function(){
-        prepareMagentoCoupon.clickOnSignIn();
-    });
+    // it('Klik na Sign In dugme', function(){
+    //     prepareMagentoCoupon.clickOnSignIn();
+    // });
 
     it('Dolazak na user datail', function(){
         testAddBillingAddress.goToUserDetail();
