@@ -49,21 +49,21 @@ describe('Complete order i cekiranje na my orders', function(){
         browser.sleep(10000);
     });
     
-    // it('Dolazak u magento', function(){
-    //     testAddBillingAddress.lendOnMagento();
-    // });
+    it('Dolazak u magento', function(){
+        testAddBillingAddress.lendOnMagento();
+    });
 
-    // it('Unesi Username', function(){
-    //     prepareMagentoCoupon.enterUsername();
-    // });
+    it('Unesi Username', function(){
+        prepareMagentoCoupon.enterUsername();
+    });
 
-    // it('Unesi Password', function(){
-    //     prepareMagentoCoupon.enterPass();
-    // });
+    it('Unesi Password', function(){
+        prepareMagentoCoupon.enterPass();
+    });
 
-    // it('Klik na Sign In dugme', function(){
-    //     prepareMagentoCoupon.clickOnSignIn();
-    // });
+    it('Klik na Sign In dugme', function(){
+        prepareMagentoCoupon.clickOnSignIn();
+    });
 
     it('Dolazak na user datail', function(){
         testAddBillingAddress.goToUserDetail();
@@ -186,26 +186,26 @@ describe('Complete order i cekiranje na my orders', function(){
         browser.sleep(1000);
     });
 
-    it('Klik na Print link', function () {
-        testOrderComplete.clickPrintLink();
-        browser.getAllWindowHandles().then(function (handles) {
-            browser.switchTo().window(handles[1]);
-            browser.sleep(5000);
-        });
-    });
+    // it('Klik na Print link', function () {
+    //     testOrderComplete.clickPrintLink();
+    //     browser.getAllWindowHandles().then(function (handles) {
+    //         browser.switchTo().window(handles[1]);
+    //         browser.sleep(5000);
+    //     });
+    // });
 
-    it('Klik Escape na tastaturi', function () {
-        testOrderComplete.clickEsc();
-        browser.getAllWindowHandles().then(function (handles) {
-            browser.switchTo().window(handles[1]);
-            browser.sleep(3000);
-        });
-    });
+    // it('Klik Escape na tastaturi', function () {
+    //     testOrderComplete.clickEsc();
+    //     browser.getAllWindowHandles().then(function (handles) {
+    //         browser.switchTo().window(handles[1]);
+    //         browser.sleep(3000);
+    //     });
+    // });
 
-    it('Cekiranje Order Shipped labele na Print Order strani', function () {
-        testOrderComplete.checkOrderShippedLabelInPrintOrder();
-        browser.sleep(2000);
-    });
+    // it('Cekiranje Order Shipped labele na Print Order strani', function () {
+    //     testOrderComplete.checkOrderShippedLabelInPrintOrder();
+    //     browser.sleep(2000);
+    // });
 
     it('Provera da li na strani postoji Print link', function () {
         testOrderComplete.checkIfPrintLinkIsPresent();
