@@ -11,6 +11,12 @@ describe('Narucivanje FFL ordera', function(){
         browser.sleep(2000);
     });
 
+    it('Refresh page', function(){
+        // ovo sto stavili zbog problema sa "Invalid session" u shopu
+        browser.refresh(); 
+        browser.sleep(3000);
+    });
+
     it('Klik to open drop options', function(){
         testPlaceFFLOrder.clickToOpenDrop();
         browser.sleep(3000);

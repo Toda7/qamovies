@@ -1,5 +1,4 @@
 var testTwentyProductsOrder = require('../testTwentyProductsOrder/testTwentyProductsOrder-po.js');
-var testMyOrders = require('../testMyOrders/testMyOrders-po.js');
 var testCouponOrder = require('./testCouponOrder-po.js');
 
 describe('Coupon order', function () {
@@ -11,6 +10,12 @@ describe('Coupon order', function () {
     it('Dolazak na Archery page', function () {
         testTwentyProductsOrder.landOnArcheryPage();
         browser.sleep(5000);
+    });
+
+    it('Refresh page', function(){
+        // ovo koristimo zbog "Invalid session" errora u shopu 
+        browser.refresh(); 
+        browser.sleep(3000);
     });
 
     it('Klik na prvi proizvod', function () {
@@ -75,7 +80,7 @@ describe('Coupon order', function () {
 
     it('Provera shipping cene sa iskoriscenim kuponom na Shipping strani', function () {
         testCouponOrder.checkShippingPriceWithCoupon();
-        browser.sleep(1000);
+        browser.sleep(2000);
     });
 
     
@@ -100,12 +105,12 @@ describe('Coupon order', function () {
     });
 
     it('Dolazak na My Orders stranu', function () {
-        testMyOrders.landOnMyOrdersPage();
+        testCouponOrder.landOnMyOrdersPage();
         browser.sleep(3000);
     });
 
-    it('Klik na prvi View Order link', function () {
-        testMyOrders.clickFirstViewOrderLink();
+    it('Klik na poslednji naruceni order ', function () {
+        testCouponOrder.clickOnFirstOrder();
         browser.sleep(3000);
     });
 

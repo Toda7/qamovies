@@ -87,6 +87,12 @@ describe('Test restricted area message', function(){
         browser.sleep(2000);
     });
 
+    it('Refresh page', function(){
+        // ovo koristimo zbog "Invalid session" errora u shopu 
+        browser.refresh(); 
+        browser.sleep(3000);
+    });
+
     it('Dodaj prvi proizvod u korpu', function () {
         testTwentyProductsOrder.addToCart();
         browser.sleep(2000);
