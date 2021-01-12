@@ -75,6 +75,13 @@ function checkDiscussionURL() {
 }
 
 
+
+function landOnAnonymousDocumentDetailsPage() {
+    // Dolazak na anonimnu dokument details stranu 
+    browser.get('https://qa.cbancnetwork.com/community/documents/view/9746fb69-bdeb-49f8-8584-aa011cbe30a0'); 
+    browser.sleep(2000);
+ }
+
  module.exports = {
     enterSearchWord,
     checkBreadcrumbs,
@@ -88,4 +95,5 @@ function checkDiscussionURL() {
     landOnDocDetailsPage,
     clickOnDiscussionLink,
     checkDiscussionURL,
+    landOnAnonymousDocumentDetailsPage,
 }
