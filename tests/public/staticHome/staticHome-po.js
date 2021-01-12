@@ -363,7 +363,7 @@ function checkJoinURL() {
 function checkFooter(){
     // Provera footer sekcije
     var xxx = element(by.id('footer'));
-    expect(xxx.getText()).toEqual('About FAQ Contact Vendors Careers Blog\nPrivacy Policy Terms of Service Code of Conduct\nCopyright 2008 - 2020 CBANC Network. All rights reserved.');
+    expect(xxx.getText()).toEqual('About FAQ Contact Vendors Careers Blog\nPrivacy Policy Terms of Service Code of Conduct\nCopyright 2008 - 2021 CBANC Network. All rights reserved.');
 }
 
 function clickOnAboutLink() {

@@ -41,7 +41,7 @@ function checkMoreDrop()  {
 function checkFooter()  {
     // Proverava da li se ucitao Copyright text u footeru
     var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.copy'),'2008 - 2020 CBANC Network. All rights reserved.'), 7000);
+    browser.wait(EC.textToBePresentInElement($('.copy'),'2008 - 2021 CBANC Network. All rights reserved.'), 7000);
 }
 
 

@@ -56,21 +56,6 @@ describe('AFT public strana', function(){
         browser.sleep(500)
     });
 
-    it('Provera texta u drugom citatu', function(){
-        staticAft.checkSecondQuoteText();
-        browser.sleep(500)
-    });
-
-    it('Provera da li se ucitao avatar za Brajana Kunca', function(){
-        staticAft.checkBryanKoontzAvatar();
-        browser.sleep(500)
-    });
-
-    it('Provera da li se ucitao signature za Brajana Kunca', function(){
-        staticAft.checkBryanKoontzSignature();
-        browser.sleep(500)
-    });
-
     it('Provera placeholdera u drugom input polju', function(){
         staticAft.checkSecondInputPlaceholder();
         browser.sleep(500)

@@ -41,9 +41,9 @@ describe('Load more na Vendor details strani', function(){
         browser.sleep(2000);
     });
 
-    it('Refresh page', function(){
-        browser.refresh(); 
-        browser.sleep(2000);
+    it('Dolazak na vendor details page, umesto refresha strane', function () {
+        loadMoreOnVendorDetailsPage.landOnVendorDetailsPage();
+        browser.sleep(4000);
     });
 
     it('Provera da li se na strani nalazi 15 diskusija', function(){

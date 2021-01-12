@@ -145,7 +145,7 @@ describe('Document details page', function(){
 
     it('Dolazak na Documents details page', function(){
         documentDetailsPage.landOnDocDetailsPage();
-        browser.sleep(2000);
+        browser.sleep(6000);
     });
 
     it('Provera da li se poll header ucitao', function(){

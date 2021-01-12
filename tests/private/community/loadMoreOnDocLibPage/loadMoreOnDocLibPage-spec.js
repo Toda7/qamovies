@@ -28,9 +28,9 @@ describe('Load more na Document Library strani', function(){
         browser.sleep(2000);
     });
 
-    it('Refresh page', function(){
-        browser.refresh(); 
-        browser.sleep(2000);
+    it('Dolazak opet na Documents Library page, da bi se strana refreshovala', function(){
+        docLibraryCheck.landOnDocsLibraryPage();
+        browser.sleep(4000);
     });
 
     it('Provera da li se na strani nalazi 15 documenta', function(){

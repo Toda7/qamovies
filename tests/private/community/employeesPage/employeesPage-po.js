@@ -47,7 +47,7 @@ function clickOnFirstUserFromEmployeesList() {
 function checkVendorOrgLinkOnUserDetails() {
     //  Provera da li se ucitao profile section 
     var foo = element(by.className('content'));
-     expect(foo.getText()).toEqual('VPP+VCA User Mandrill\naccount_balance\nVendor Mandrill\nlocation_on\nTC\nstars\nReputation Score: 1\nshow_chart\nIn top of 97% of CBANC Members\npie_chart\nMoved up 0 spots this week');                          
+     expect(foo.getText()).toEqual('VPP+VCA User Mandrill\naccount_balance\nVendor Mandrill\nlocation_on\nTC\nstars\nReputation Score: 1\nshow_chart\nIn top of 99% of CBANC Members\npie_chart\nMoved up 0 spots this week');                          
 } 
 
 function checkVendorsGroupLink() {
