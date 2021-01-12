@@ -41,7 +41,7 @@ function checkMiddleSectionOnPage() {
 function checkFooter(){
     var EC = protractor.ExpectedConditions;
     // Provera da li se ucitalaucitao footer
-    browser.wait(EC.textToBePresentInElement($('.legal'), '2008 - 2020 CBANC Network. All rights reserved.'), 7000);
+    browser.wait(EC.textToBePresentInElement($('.legal'), '2008 - 2021 CBANC Network. All rights reserved.'), 7000);
     browser.sleep(2000);
 }    
 

@@ -60,25 +60,6 @@ function checkScottMillsSignature() {
     browser.wait(EC.textToBePresentInElement(c, "Scott MillsDirector & Chairman, Membership and Marketing CommitteeAFT"), 5000);
 }
 
-function checkSecondQuoteText() {
-    // Provera texta u drugom citatu
-    var xxx = element.all(by.className('quote')).get(1);
-    expect(xxx.getText()).toEqual('“CBANC is thrilled to help grow AFT’s member base and provide a place for AFT members to connect throughout the year while simultaneously growing our network.”');
-}
-
-function checkBryanKoontzAvatar() {
-    // Provera da li se ucitao avatar za Brajana Kunca
-    var xxx = element.all(by.className('avatar_labels')).get(1).element(by.tagName('img'));
-    expect(xxx.getAttribute('src')).toEqual('https://qa.cbancnetwork.com/aft/bryan.jpg');
-}
-
-function checkBryanKoontzSignature() {
-    // Provera da li se ucitao signature za Brajana Kunca
-    var EC = protractor.ExpectedConditions;
-    var c = element.all(by.className('label')).get(1);
-    browser.wait(EC.textToBePresentInElement(c, "Bryan KoontzCEOCBANC Network"), 5000);
-}
-
 function checkSecondInputPlaceholder() {
     // Provera placeholdera u drugom input polju
     var xxx = element(by.id('email_two'));
@@ -286,9 +267,6 @@ module.exports = {
     checkFirstQuoteText,
     checkScottMillsAvatar,
     checkScottMillsSignature,
-    checkSecondQuoteText,
-    checkBryanKoontzAvatar,
-    checkBryanKoontzSignature,
     checkSecondInputPlaceholder,
     checkPublicSecondCtaButtonText,
     enterEmailAddressInFirstInputField,

@@ -33,16 +33,10 @@ function checkContactURL() {
     browser.wait(EC.urlIs('https://qa.cbancnetwork.com/support'), 7000);
 }
 
-function checkTextBK() {
-    //provera Contact us title
+function checkText() {
+    // provera texta na strani 
     var EC = protractor.ExpectedConditions;
     browser.wait(EC.textToBePresentInElement($('.quote'), "We pride ourselves in offering amazing service to our members. If you have any questions, problems, or concerns please don't hesitate to reach out!"), 5000);
-}
-
-function checkBkSignature() {
-    //provera Office location text 
-    var EC = protractor.ExpectedConditions;
-    browser.wait(EC.textToBePresentInElement($('.signature'), 'Bryan Koontz - President & CEO at CBANC Network'), 5000);
 }
 
 function checkAddress() {
@@ -51,8 +45,8 @@ function checkAddress() {
     browser.wait(EC.textToBePresentInElement($('#location'), 'Office Location4200 N Lamar Blvd Suite 250 Austin, TX 78756'), 5000);
 }
 
-function checkBKavatar() {
-    // Provera da li je dobar GF logo na print order strani
+function checkCbancLogo() {
+    // Provera da li se ucitoa CBANC logo u headeru 
     var xxx = element.all(by.tagName('img')).get(0);
     expect(xxx.getAttribute('src')).toEqual('https://static.cbancnetwork.com/Public/higgins/0.0.1/img/cbanc-logo-transparent.svg');
     browser.sleep(500);
@@ -64,8 +58,7 @@ module.exports = {
     checkContactUsTitle,
     checkContactUsText,
     checkContactURL,
-    checkTextBK,
+    checkText,
     checkAddress,
-    checkBKavatar,
-    checkBkSignature,
+    checkCbancLogo,
 }

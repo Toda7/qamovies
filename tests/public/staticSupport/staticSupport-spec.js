@@ -35,18 +35,13 @@ describe('Public "Support" strana', function(){
         browser.sleep(2000);
      });
 
-     it('Cekiranje BK text', function(){
-        staticSupport.checkTextBK();
+     it('Cekiranje text', function(){
+        staticSupport.checkText();
         browser.sleep(2000);
      });
 
-     it('Cekiranje BK signature', function(){
-        staticSupport.checkBkSignature();
-        browser.sleep(2000);
-     });
-
-     it('Cekiranje BK Avatar', function(){
-        staticSupport.checkBKavatar();
+     it('Provera da li se ucitoa CBANC logo u headeru ', function(){
+        staticSupport.checkCbancLogo();
         browser.sleep(2000);
      });
 
