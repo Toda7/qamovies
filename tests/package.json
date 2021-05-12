@@ -5,7 +5,7 @@
         "driver": "^1.0.0",
         "firefox": "0.0.1",
         "imap": "0.8.19",
-        "nodemailer": "^6.3.1",
+        "nodemailer": "^6.4.16",
         "protractor-fail-fast": "3.1.0",
         "protractor-html-reporter-2": "^1.0.4",
         "quoted-printable": "1.0.1"
